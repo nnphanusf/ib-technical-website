@@ -215,6 +215,9 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 .who{border:1px solid var(--line-2);background:var(--panel);color:var(--ink-2);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;flex:none}
 .who:hover{border-color:var(--accent);color:var(--accent)}
 .who span{color:var(--ink)}
+.alert{margin:12px 20px 0;padding:11px 14px;border-radius:14px;background:var(--warn-soft);color:var(--warn);
+  font-size:13px;font-weight:600;max-width:1200px;line-height:1.5}
+.alert span{display:block;font-weight:400;margin-top:3px}
 .gatetheme{position:absolute;top:calc(env(safe-area-inset-top,0px) + 16px);right:16px}
 @media (prefers-reduced-motion:no-preference){
   :root.theming,:root.theming *{
@@ -247,6 +250,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     </button>
   </div>
 </header>
+
+<div class="alert" id="alert" hidden></div>
 
 <div class="layout">
   <aside class="rail" id="rail"></aside>
@@ -581,6 +586,21 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
      follow the student to any device. With it empty, everything above keeps
      working against localStorage and none of this runs. */
   var cloud = null, cloudReady = false, dirtyIds = {}, cloudTimer = null;
+  var alertBox = $("#alert");
+
+  function cloudTrouble(err) {
+    if (!err) return false;
+    var denied = (err.code === "42501") || /permission denied/i.test(err.message || "");
+    alertBox.innerHTML = denied
+      ? "Your progress is not being saved."
+        + "<span>The database refused the request (42501). The study deck still works, but nothing "
+        + "you mark, bookmark or write down will be kept. Whoever set this site up needs to run the "
+        + "grant statements in supabase/schema.sql.</span>"
+      : "Your progress is not being saved."
+        + "<span>" + esc(err.message || "The database could not be reached.") + "</span>";
+    alertBox.hidden = false;
+    return true;
+  }
   var recoveryPending = new URLSearchParams(location.search).has("reset") || /type=recovery/.test(location.hash);
 
   async function passwordSubmit(email, pw) {
@@ -680,6 +700,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   function cloudEnter(session) {
     cloud.from("profiles").select("name,email,role").eq("id", session.user.id).maybeSingle()
       .then(function (r) {
+        if (r && r.error) cloudTrouble(r.error);
         var prof = (r && r.data) || {};
         user = session.user.id;
         role = prof.role || "student";
@@ -700,6 +721,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (DATA) render();
     cloud.from("progress").select("card_id,mastered,bookmarked,flagged,seen,note")
       .then(function (r) {
+        if (r.error && cloudTrouble(r.error)) { if (DATA) render(); return; }
         (r.data || []).forEach(function (row) {
           if (row.mastered) save.mastered[row.card_id] = 1;
           if (row.bookmarked) save.bookmarked[row.card_id] = 1;
@@ -728,7 +750,12 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       });
       cloud.from("progress").upsert(rows, {onConflict: "user_id,card_id"}).then(function (r) {
         /* keep the ids queued if the write failed, so the next change retries them */
-        if (r && r.error) ids.forEach(function (id) { dirtyIds[id] = 1; });
+        if (r && r.error) {
+          ids.forEach(function (id) { dirtyIds[id] = 1; });
+          cloudTrouble(r.error);
+        } else if (!alertBox.hidden) {
+          alertBox.hidden = true;   /* a later write got through: clear the warning */
+        }
       });
     }, 700);
   }
