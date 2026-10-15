@@ -394,7 +394,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     } catch (e) {}
   }
 
-  var DATA = null, byId = {};
+  var DATA = null, byId = {}, bootWatchdog = null;
   var $ = function (s) { return document.querySelector(s); };
   var rail = $("#rail"), main = $("#main");
 
@@ -1291,6 +1291,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     var a = b.dataset.act, c2 = current();
     if (a === "reveal") { ui.revealed = true; render(); }
     else if (a === "hide") { hideAnswer(); }
+    else if (a === "retry") { location.reload(); }
     else if (a === "prev") go(-1);
     else if (a === "next") go(1);
     else if (a === "flag" && c2) { toggle(save.flagged, c2.id); render(); }
@@ -1406,6 +1407,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   /* ---------------- render ---------------- */
   function render() {
     if (!user) return;
+    clearTimeout(bootWatchdog);
     document.querySelectorAll('[role="tab"]').forEach(function (t) {
       t.setAttribute("aria-selected", t.id === "tab-" + ui.tab ? "true" : "false");
     });
@@ -1433,6 +1435,18 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     s.onerror = fail;
     document.body.appendChild(s);
   }
+
+  /* If the deck has not appeared after 15 seconds, say what is missing rather
+     than leaving "Loading 3,200+ cards..." on screen forever. */
+  bootWatchdog = setTimeout(function () {
+    if (!gate.hidden) return;              /* the sign-in card is up: nothing is stuck */
+    main.innerHTML = '<div class="panel"><h3>The deck has not finished loading</h3>' +
+      '<div class="empty">Deck file: ' + (DATA ? "loaded" : "not loaded — still downloading, or blocked") +
+      "<br>Signed in: " + (user ? "yes" : "no") +
+      "<br><br>Try a hard reload (Cmd+Shift+R, or Ctrl+Shift+R on Windows). If it keeps happening, " +
+      "the deck file may be failing to download on this connection — it is about 3.4 MB.</div>" +
+      '<div style="margin-top:12px"><button class="btn primary" data-act="retry">Reload the page</button></div></div>';
+  }, 15000);
 
   initCloud();
 
