@@ -127,3 +127,14 @@ select
 from public.profiles p
 left join public.progress pr on pr.user_id = p.id
 group by p.id, p.name, p.email, p.role;
+
+-- --------------------------------------------------------------- grants --
+-- Row level security decides which rows a request may see; these grants
+-- decide which roles may touch the tables at all. Newer projects do not hand
+-- them out automatically. Only signed-in users are granted anything, so an
+-- anonymous request is refused before any policy runs.
+grant usage on schema public to authenticated;
+
+grant select, update            on public.profiles      to authenticated;
+grant select, insert, update, delete on public.progress to authenticated;
+grant select                    on public.class_summary to authenticated;

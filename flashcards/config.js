@@ -1,11 +1,10 @@
 /* Supabase connection.
-   Fill these in from your project's Settings -> API Keys, then redeploy.
-   Leave them empty and the page stays in browser-only mode: profiles and
-   progress live in localStorage, exactly as before.
+   From the project's Settings -> API Keys. Leave both empty to drop the page
+   back to browser-only mode (profiles and progress in localStorage).
 
-   SUPA_KEY is the PUBLISHABLE key (starts with sb_publishable_). Older
-   projects show a legacy "anon" key instead, a long string starting with
-   eyJ; either works. Both are meant to ship in public code — the row level
-   security policies in supabase/schema.sql are what protect the data. */
+   SUPA_KEY is the PUBLISHABLE key: it is meant to ship in public page code and
+   carries no more privilege than an anonymous visitor. The row level security
+   policies in supabase/schema.sql are what protect the data. Never put a
+   secret key (sb_secret_...) or the database password in this file. */
 window.SUPA_URL = "https://luijiocpivkzszbqmulh.supabase.co";
 window.SUPA_KEY = "sb_publishable_YuXqBZehemSAtTIK3X4MJA_K15a85Cj";
