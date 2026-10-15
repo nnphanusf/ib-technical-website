@@ -1458,11 +1458,29 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         "data.js is missing from this folder. Re-run <code>python3 build_data.py</code> next to index.html.</div></div>";
     });
   } else {
-    fetch("data.json").then(function (r) { return r.json(); }).then(boot).catch(function () {
-      main.innerHTML = '<div class="panel"><h3>Cards could not load</h3><div class="empty">' +
-        "data.json did not load. If you opened this file directly from disk, serve the folder instead: " +
-        "<code>python3 -m http.server</code> in the flashcards folder, then open http://localhost:8000.</div></div>";
-    });
+    /* A cached copy of the 3.4 MB deck can come back truncated — Safari in
+       particular — so a failure retries past the cache before giving up. */
+    (function loadDeck(attempt) {
+      var url = attempt ? "data.json?cb=" + Date.now() : "data.json";
+      var opts = attempt ? {cache: "reload"} : {};
+      fetch(url, opts).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      }).then(boot).catch(function (err) {
+        if (attempt < 2) {
+          setTimeout(function () { loadDeck(attempt + 1); }, 500);
+          return;
+        }
+        clearTimeout(bootWatchdog);
+        main.innerHTML = '<div class="panel"><h3>The deck file would not load</h3><div class="empty">' +
+          "Three attempts failed (" + esc(String((err && err.message) || err)) + "). This is almost always a " +
+          "damaged cached copy of data.json.<br><br><b>Safari:</b> hold Option and press Reload, or " +
+          "Safari \u2192 Settings \u2192 Privacy \u2192 Manage Website Data, search for this site and remove it.<br>" +
+          "<b>Chrome:</b> hold Shift and click Reload.<br><br>" +
+          "Signing in again afterwards is enough \u2014 your progress lives in the database, not in the browser." +
+          '</div><div style="margin-top:12px"><button class="btn primary" data-act="retry">Try again</button></div></div>';
+      });
+    })(0);
   }
 })();
 </script>
