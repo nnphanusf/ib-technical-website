@@ -285,6 +285,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   <div style="margin-top:16px;text-align:right"><button class="btn" id="helpClose">Close</button></div>
 </div></dialog>
 
+<script src="config.js"></script>
 <script>
 (function () {
   "use strict";
@@ -299,7 +300,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   function profileKey(part) { return KEY + ".u." + user + "." + part; }
   function loadSave() {
     save = blankSave();
-    if (!user) return;
+    if (!user || cloudReady) return;
     var p = null;
     try { p = JSON.parse(localStorage.getItem(profileKey("save")) || "null"); } catch (e) {}
     /* progress saved before profiles existed moves into the first profile that asks for it */
@@ -319,6 +320,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   var saveTimer = null;
   function persist() {
     if (!user) return;
+    if (cloudReady) return persistCloud();
     clearTimeout(saveTimer);
     saveTimer = setTimeout(function () {
       save.ts = Date.now();
@@ -503,6 +505,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (DATA) render();
   }
   function signOut() {
+    if (cloudReady && cloud) cloud.auth.signOut();
     persist();
     persistUI();
     user = null;
@@ -525,6 +528,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     var key = email.toLowerCase();
     var pw = gatePw.value;
     if (!email) return fail("Type your email address.");
+    if (cloudReady) return cloudSubmit(email, pw, gateName.value.trim().replace(/\s+/g, " "), gateClass.value.trim());
     if (mode === "create") {
       var name = gateName.value.trim().replace(/\s+/g, " ");
       var code = pwHash(gateClass.value.trim());
@@ -550,6 +554,167 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (last && accounts()[last]) gateUser.value = accounts()[last].e || last;
   } catch (e) {}
   setTimeout(function () { (gateUser.value ? gatePw : gateUser).focus(); }, 60);
+
+  /* ---------------- cloud sync (Supabase, optional) ----------------
+     With config.js filled in, accounts and progress live in Postgres and
+     follow the student to any device. With it empty, everything above keeps
+     working against localStorage and none of this runs. */
+  var cloud = null, cloudReady = false, dirtyIds = {}, cloudTimer = null;
+
+  function touch(id) { if (cloudReady && user) dirtyIds[id] = 1; }
+
+  function initCloud() {
+    if (!window.SUPA_URL || !window.SUPA_KEY) return;
+    var sc = document.createElement("script");
+    sc.src = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js";
+    sc.onload = function () {
+      try {
+        cloud = window.supabase.createClient(window.SUPA_URL, window.SUPA_KEY);
+      } catch (err) { return; }
+      cloudReady = true;
+      gateMsg.textContent = "Sign in with your email. Your progress follows you to any device.";
+      cloud.auth.getSession().then(function (r) {
+        if (r.data && r.data.session) cloudEnter(r.data.session);
+      });
+    };
+    document.body.appendChild(sc);
+  }
+
+  function cloudSubmit(email, pw, name, code) {
+    gateGo.disabled = true;
+    var done = function () { gateGo.disabled = false; };
+    if (mode === "create") {
+      if (!name) { done(); return fail("Type the name you want to study under."); }
+      if (pw.length < 6) { done(); return fail("Use a password of at least 6 characters."); }
+      cloud.auth.signUp({
+        email: email, password: pw, options: {data: {name: name, code: code}}
+      }).then(function (r) {
+        done();
+        if (r.error) {
+          return fail(/database|code/i.test(r.error.message)
+            ? "That registration code is not right."
+            : r.error.message);
+        }
+        if (r.data.session) cloudEnter(r.data.session);
+        else fail("Account made. Confirm it from the email we sent, then sign in.");
+      });
+      return;
+    }
+    cloud.auth.signInWithPassword({email: email, password: pw}).then(function (r) {
+      done();
+      if (r.error) return fail(r.error.message);
+      cloudEnter(r.data.session);
+    });
+  }
+
+  function cloudEnter(session) {
+    cloud.from("profiles").select("name,email,role").eq("id", session.user.id).maybeSingle()
+      .then(function (r) {
+        var prof = (r && r.data) || {};
+        user = session.user.id;
+        role = prof.role || "student";
+        whoName.textContent = (prof.name || session.user.email) + (role === "teacher" ? " · teacher" : "");
+        whoBtn.hidden = false;
+        $("#tab-Class").hidden = role !== "teacher";
+        if (role !== "teacher" && ui.tab === "Class") ui.tab = "Technical";
+        gate.hidden = true;
+        gatePw.value = "";
+        gateClass.value = "";
+        loadUI();
+        loadCloudSave();
+      });
+  }
+
+  function loadCloudSave() {
+    save = blankSave();
+    if (DATA) render();
+    cloud.from("progress").select("card_id,mastered,bookmarked,flagged,seen,note")
+      .then(function (r) {
+        (r.data || []).forEach(function (row) {
+          if (row.mastered) save.mastered[row.card_id] = 1;
+          if (row.bookmarked) save.bookmarked[row.card_id] = 1;
+          if (row.flagged) save.flagged[row.card_id] = 1;
+          if (row.seen) save.seen[row.card_id] = 1;
+          if (row.note) save.notes[row.card_id] = row.note;
+        });
+        if (DATA) render();
+      });
+  }
+
+  function persistCloud() {
+    clearTimeout(cloudTimer);
+    cloudTimer = setTimeout(function () {
+      var ids = Object.keys(dirtyIds);
+      if (!ids.length || !user) return;
+      dirtyIds = {};
+      var now = new Date().toISOString();
+      var rows = ids.map(function (id) {
+        return {
+          user_id: user, card_id: id,
+          mastered: !!save.mastered[id], bookmarked: !!save.bookmarked[id],
+          flagged: !!save.flagged[id], seen: !!save.seen[id],
+          note: save.notes[id] || null, updated_at: now
+        };
+      });
+      cloud.from("progress").upsert(rows, {onConflict: "user_id,card_id"}).then(function (r) {
+        /* keep the ids queued if the write failed, so the next change retries them */
+        if (r && r.error) ids.forEach(function (id) { dirtyIds[id] = 1; });
+      });
+    }, 700);
+  }
+
+  function renderClassCloud() {
+    main.innerHTML = '<div class="panel"><h3>Class</h3><div class="empty">Loading class progress…</div></div>';
+    cloud.from("class_summary").select("*").then(function (r) {
+      var rows = (r.data || []).filter(function (x) { return x.role !== "teacher"; });
+      var total = DATA.cards.length;
+      var sumMastered = rows.reduce(function (a, x) { return a + (x.mastered || 0); }, 0);
+      var avg = rows.length ? sumMastered / rows.length / total * 100 : 0;
+
+      var h = '<div class="panel"><h3>Class summary</h3><div class="stats">' +
+        '<div class="stat"><div class="v">' + rows.length + '</div><div class="k">Students registered</div></div>' +
+        '<div class="stat"><div class="v">' + avg.toFixed(1) + '%</div><div class="k">Average completion</div></div>' +
+        '<div class="stat"><div class="v">' + sumMastered + '</div><div class="k">Cards mastered in total</div></div>' +
+        '<div class="stat"><div class="v">' + rows.reduce(function (a, x) { return a + (x.flagged || 0); }, 0) +
+        '</div><div class="k">Cards flagged</div></div></div></div>';
+
+      h += '<div class="panel"><h3>Students</h3>';
+      if (!rows.length) {
+        h += '<div class="empty">Nobody has registered yet.</div>';
+      } else {
+        rows.sort(function (a, b) { return (b.mastered || 0) - (a.mastered || 0); });
+        h += '<div class="bars">' + rows.map(function (x) {
+          var pct = (x.mastered || 0) / total * 100;
+          return '<div class="bar"><span class="name">' + esc(x.name || x.email) +
+            '<span class="sub">' + esc(x.email) + ' · ' + (x.seen || 0) + ' seen · ' +
+            (x.flagged || 0) + ' flagged · ' + (x.notes || 0) + ' notes' +
+            (x.last_studied ? ' · last studied ' + new Date(x.last_studied).toLocaleDateString() : "") +
+            '</span></span><span class="num">' + (x.mastered || 0) + "/" + total +
+            '</span><span class="meter"><i style="width:' + pct.toFixed(2) + '%"></i></span></div>';
+        }).join("") + "</div>";
+      }
+      h += "</div>";
+      main.innerHTML = h;
+
+      /* second pass: what the class flags most */
+      cloud.from("progress").select("card_id").eq("flagged", true).then(function (f) {
+        var topic = {};
+        (f.data || []).forEach(function (row) {
+          var c = byId[row.card_id];
+          if (c) topic[c.tp] = (topic[c.tp] || 0) + 1;
+        });
+        var hard = Object.keys(topic).map(function (k) { return [k, topic[k]]; })
+          .sort(function (a, b) { return b[1] - a[1]; }).slice(0, 8);
+        if (!hard.length || ui.tab !== "Class") return;
+        var extra = '<div class="panel"><h3>Most flagged topics</h3><div class="bars">' +
+          hard.map(function (t) {
+            return '<div class="bar"><span class="name">' + esc(t[0]) + '</span><span class="num">' + t[1] +
+              '</span><span class="meter"><i style="width:' + (t[1] / hard[0][1] * 100).toFixed(1) + '%"></i></span></div>';
+          }).join("") + "</div></div>";
+        main.insertAdjacentHTML("beforeend", extra);
+      });
+    });
+  }
 
   /* ---------------- deck selection ---------------- */
   function tabCards() {
@@ -734,7 +899,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     var i = Math.min(Math.max(ui.idx[ui.tab], 0), total - 1);
     ui.idx[ui.tab] = i;
     var c = d[i];
-    save.seen[c.id] = 1; persist();
+    save.seen[c.id] = 1; touch(c.id); persist();
     var mastered = Object.keys(save.mastered).length;
     var deckMastered = d.filter(function (x) { return save.mastered[x.id]; }).length;
 
@@ -889,6 +1054,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   }
 
   function renderClass() {
+    if (cloudReady) return renderClassCloud();
     if (role !== "teacher") {
       main.innerHTML = '<div class="panel"><h3>Class</h3><div class="empty">This view is for teacher profiles.</div></div>';
       return;
@@ -955,6 +1121,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   }
   function toggle(map, id) {
     if (map[id]) delete map[id]; else map[id] = 1;
+    touch(id);
     persist();
   }
   var reduceMotion = false;
@@ -1001,13 +1168,17 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     else if (a === "book" && c2) { toggle(save.bookmarked, c2.id); render(); }
     else if (a === "master" && c2) { toggle(save.mastered, c2.id); render(); }
     else if (a === "note" && c2) { ui.revealed = true; render(); var n = $("#noteBox"); if (n) n.focus(); }
-    else if (a === "gotit" && c2) { save.mastered[c2.id] = 1; persist(); go(1); }
-    else if (a === "again" && c2) { delete save.mastered[c2.id]; save.flagged[c2.id] = 1; persist(); go(1); }
+    else if (a === "gotit" && c2) { save.mastered[c2.id] = 1; touch(c2.id); persist(); go(1); }
+    else if (a === "again" && c2) { delete save.mastered[c2.id]; save.flagged[c2.id] = 1; touch(c2.id); persist(); go(1); }
     else if (a === "more") { ui.gridLimit += 60; render(); }
     else if (a === "clearall") { ui.filters[ui.tab] = blankFilters(); ui.search = ""; $("#search").value = ""; persistUI(); render(); }
     else if (a === "reset") {
       if (b.dataset.armed) {
-        save = {mastered: {}, bookmarked: {}, flagged: {}, notes: {}, seen: {}};
+        var wipe = Object.keys(save.seen).concat(Object.keys(save.mastered), Object.keys(save.notes),
+          Object.keys(save.flagged), Object.keys(save.bookmarked));
+        save = blankSave();
+        if (cloudReady && cloud) cloud.from("progress").delete().eq("user_id", user);
+        else wipe.forEach(touch);
         persist(); render();
       } else { b.dataset.armed = "1"; b.textContent = "Tap again to erase everything"; }
     }
@@ -1026,6 +1197,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         ["mastered", "bookmarked", "flagged", "notes", "seen"].forEach(function (k) {
           if (p[k] && typeof p[k] === "object") save[k] = p[k];
         });
+        Object.keys(save.seen).concat(Object.keys(save.mastered), Object.keys(save.notes))
+          .forEach(touch);
         persist(); render();
       } catch (err) { $("#ioMsg").textContent = "That is not valid progress JSON."; }
     }
@@ -1043,6 +1216,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     var c = current();
     if (!c) return;
     if (e.target.value.trim()) save.notes[c.id] = e.target.value; else delete save.notes[c.id];
+    touch(c.id);
     persist();
   });
 
@@ -1080,8 +1254,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     } else if (e.key === "ArrowRight" || e.key.toLowerCase() === "j") { e.preventDefault(); go(1); }
     else if (e.key === "ArrowLeft" || e.key.toLowerCase() === "k") { e.preventDefault(); go(-1); }
     else if (!c) return;
-    else if (e.key.toLowerCase() === "m") { save.mastered[c.id] = 1; persist(); go(1); }
-    else if (e.key.toLowerCase() === "n") { delete save.mastered[c.id]; persist(); render(); }
+    else if (e.key.toLowerCase() === "m") { save.mastered[c.id] = 1; touch(c.id); persist(); go(1); }
+    else if (e.key.toLowerCase() === "n") { delete save.mastered[c.id]; touch(c.id); persist(); render(); }
     else if (e.key.toLowerCase() === "b") { toggle(save.bookmarked, c.id); render(); }
     else if (e.key.toLowerCase() === "f") { toggle(save.flagged, c.id); render(); }
     else if (e.key.toLowerCase() === "s") {
@@ -1125,6 +1299,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     s.onerror = fail;
     document.body.appendChild(s);
   }
+
+  initCloud();
 
   if (window.DECK) boot(window.DECK);
   else if (location.protocol === "file:") {
