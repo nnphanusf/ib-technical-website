@@ -14,6 +14,7 @@ alter table public.app_config enable row level security;
 
 insert into public.app_config (key, value) values
   ('join_code',    'JLA2026'),
+  ('join_code_usf', 'USFFTP2026'),
   ('teacher_code', 'JLA2026@')
 on conflict (key) do update set value = excluded.value;
 
@@ -61,7 +62,9 @@ begin
 
   if supplied = teacher_code then
     assigned := 'teacher';
-  elsif supplied = join_code then
+  elsif supplied = join_code or exists (
+    select 1 from public.app_config where key = 'join_code_usf' and value = supplied
+  ) then
     assigned := 'student';
   else
     raise exception 'invalid registration code';

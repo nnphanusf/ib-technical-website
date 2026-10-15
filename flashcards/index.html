@@ -264,6 +264,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     <button class="btn primary" type="submit" id="gateGo">Sign in</button>
     <span class="gateerr" id="gateErr" hidden></span>
     <button type="button" class="linkbtn" id="gateSwitch">New here? Create a profile</button>
+    <button type="button" class="linkbtn" id="gateForgot">Forgot password?</button>
   </form>
 </div>
 
@@ -452,6 +453,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       whoBtn = $("#whoBtn"), whoName = $("#whoName");
   var ACC_KEY = KEY + ".accounts", LAST_KEY = KEY + ".last";
   var JOIN_CODE = "13g350k";     /* registers a student profile */
+  var EXTRA_JOIN_CODE = "e7t2ap"; /* additional student registration code */
   var TEACHER_CODE = "n6um04";  /* registers a profile that can see the class */
   var mode = "signin";
   var role = "student";
@@ -488,6 +490,15 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     gateSwitch.textContent = creating ? "Already registered? Sign in" : "New here? Register";
     gatePw.setAttribute("autocomplete", creating ? "new-password" : "current-password");
     gateErr.hidden = true;
+    gateUser.hidden = m === "recover";
+    gatePw.hidden = m === "reset";
+    $("#gateForgot").hidden = m !== "signin";
+    if (m === "reset" || m === "recover") {
+      gateMsg.textContent = m === "reset" ? "Enter your email to receive a password reset link." : "Choose a new password of at least 6 characters.";
+      gateGo.textContent = m === "reset" ? "Send reset link" : "Save new password";
+      gateSwitch.textContent = "Back to sign in";
+      gatePw.setAttribute("autocomplete", "new-password");
+    }
   }
   function signIn(key, display, r) {
     user = key;
@@ -521,12 +532,17 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   }
   gateSwitch.addEventListener("click", function () { setMode(mode === "signin" ? "create" : "signin"); });
   whoBtn.addEventListener("click", signOut);
+  $("#gateForgot").addEventListener("click", function () { setMode("reset"); });
 
   gateForm.addEventListener("submit", function (e) {
     e.preventDefault();
     var email = gateUser.value.trim();
     var key = email.toLowerCase();
     var pw = gatePw.value;
+    if (mode === "reset" || mode === "recover") {
+      passwordSubmit(email, pw);
+      return;
+    }
     if (!email) return fail("Type your email address.");
     if (cloudReady) return cloudSubmit(email, pw, gateName.value.trim().replace(/\s+/g, " "), gateClass.value.trim());
     if (mode === "create") {
@@ -535,7 +551,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       var asTeacher = code === TEACHER_CODE;
       if (!name) return fail("Type the name you want to study under.");
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return fail("That does not look like an email address.");
-      if (!asTeacher && code !== JOIN_CODE) return fail("That registration code is not right.");
+      if (!asTeacher && code !== JOIN_CODE && code !== EXTRA_JOIN_CODE) return fail("That registration code is not right.");
       if (pw.length < 4) return fail("Use a password of at least 4 characters.");
       if (accounts()[key]) return fail("That email is already registered here — sign in instead.");
       putAccount(key, {h: pwHash(pw), n: name, e: email, r: asTeacher ? "teacher" : "student", c: Date.now()});
@@ -560,6 +576,42 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
      follow the student to any device. With it empty, everything above keeps
      working against localStorage and none of this runs. */
   var cloud = null, cloudReady = false, dirtyIds = {}, cloudTimer = null;
+  var recoveryPending = new URLSearchParams(location.search).has("reset") || /type=recovery/.test(location.hash);
+
+  async function passwordSubmit(email, pw) {
+    if (!cloudReady) return fail("Password reset requires a connection to Supabase. Reload and try again.");
+    if (mode === "reset" && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return fail("Enter your email address.");
+    if (mode === "recover" && pw.length < 6) return fail("Use a password of at least 6 characters.");
+    gateGo.disabled = true;
+    gateSwitch.disabled = true;
+    try {
+      if (mode === "reset") {
+        var redirect = new URL(location.pathname, location.origin);
+        redirect.searchParams.set("reset", "1");
+        var sent = await cloud.auth.resetPasswordForEmail(email, {redirectTo: redirect.href});
+        if (sent.error) throw sent.error;
+        gateErr.hidden = true;
+        gateMsg.textContent = "If an account exists for that email, you’ll receive a reset link. Check your inbox and spam folder.";
+      } else {
+        var session = await cloud.auth.getSession();
+        if (session.error) throw session.error;
+        if (!session.data.session) throw new Error("This reset link has expired or is invalid. Request a new link using Forgot password.");
+        var updated = await cloud.auth.updateUser({password: pw});
+        if (updated.error) throw updated.error;
+        recoveryPending = false;
+        history.replaceState(null, "", location.pathname);
+        gatePw.value = "";
+        setMode("signin");
+        gateMsg.textContent = "Password updated. Sign in with your new password.";
+        await cloud.auth.signOut();
+      }
+    } catch (err) {
+      fail(err.message || "Unable to reset your password. Please try again.");
+    } finally {
+      gateGo.disabled = false;
+      gateSwitch.disabled = false;
+    }
+  }
 
   function touch(id) { if (cloudReady && user) dirtyIds[id] = 1; }
 
@@ -572,8 +624,21 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         cloud = window.supabase.createClient(window.SUPA_URL, window.SUPA_KEY);
       } catch (err) { return; }
       cloudReady = true;
+      cloud.auth.onAuthStateChange(function (event) {
+        if (event === "PASSWORD_RECOVERY") {
+          recoveryPending = true;
+          gate.hidden = false;
+          gatePw.value = "";
+          setMode("recover");
+        }
+      });
       gateMsg.textContent = "Sign in with your email. Your progress follows you to any device.";
       cloud.auth.getSession().then(function (r) {
+        if (recoveryPending) {
+          setMode("recover");
+          if (r.error || !r.data || !r.data.session) fail("This reset link has expired or is invalid. Go back to sign in and request a new link.");
+          return;
+        }
         if (r.data && r.data.session) cloudEnter(r.data.session);
       });
     };

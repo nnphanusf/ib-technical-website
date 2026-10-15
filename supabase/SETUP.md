@@ -83,3 +83,14 @@ it in one click. Term-time use keeps it awake.
   protects accounts, not the questions
 - The artifact copy on claude.ai cannot reach Supabase (its sandbox blocks
   outside connections), so that one stays browser-only
+# Password resets
+
+In Supabase **Authentication → URL Configuration**, add this exact URL to
+**Redirect URLs**, then save:
+
+`https://nnphanusf.github.io/ib-technical-website/flashcards/?reset=1`
+
+Deploy the updated website. On the sign-in screen choose **Forgot password?**,
+enter your account email, and open the emailed link to choose a new password.
+An expired link requires a new reset request. This flow applies to Supabase
+accounts; old browser-only accounts cannot receive reset emails.
