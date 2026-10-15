@@ -719,7 +719,10 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   function loadCloudSave() {
     save = blankSave();
     if (DATA) render();
+    /* scope to this user explicitly: a teacher is allowed to read every row,
+       so relying on the policy alone would load the class into their own deck */
     cloud.from("progress").select("card_id,mastered,bookmarked,flagged,seen,note")
+      .eq("user_id", user)
       .then(function (r) {
         if (r.error && cloudTrouble(r.error)) { if (DATA) render(); return; }
         (r.data || []).forEach(function (row) {
