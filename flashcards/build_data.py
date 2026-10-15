@@ -261,6 +261,19 @@ ABBREV = re.compile(
     re.I)
 
 
+def tidy_punctuation(text):
+    """Repair transcription artefacts: stray spacing and welded-together questions."""
+    if not text:
+        return text
+    # "pitchbook., Which is higher" - two questions joined by a stray comma
+    text = re.sub(r"([a-z])([.?!]),\s+([A-Z])", r"\1\2 \3", text)
+    # "private company ?" / "Fintech ?"
+    text = re.sub(r"\s+([,.?!;:])", r"\1", text)
+    # "5x....what" - keep the ellipsis, drop the extra stops
+    text = re.sub(r"\.{4,}", "...", text)
+    return re.sub(r"\s{2,}", " ", text).strip()
+
+
 def tidy_case(text, firms=FIRMS):
     """Capitalise sentence starts, the pronoun I, finance acronyms and firm names."""
     if not text:
@@ -420,7 +433,7 @@ def main():
         is_guide = any(s.startswith(GUIDE_SOURCE) for s in sources) or \
             q.get("answer_status") == "guide_answer"
         firms = sorted({f for f in (parent_firm(s) for s in firm_srcs) if f})
-        q["question"] = tidy_case(q["question"])
+        q["question"] = tidy_case(tidy_punctuation(q["question"]))
         text = q["question"] + " " + (q.get("answer") or "")
         topic = classify(q["question"] + " " + q.get("topic", ""),
                          TECH_TOPIC_RULES, "Industry & Company Analysis")
@@ -460,7 +473,7 @@ def main():
     blocks = re.findall(r"^(B\d{4})\.\s+(.+?)\nSources:\s*(.+?)\s*$",
                         btxt, re.M | re.S)
     for bid, question, src in blocks:
-        question = tidy_case(" ".join(question.split()))
+        question = tidy_case(tidy_punctuation(" ".join(question.split())))
         sources = [s.strip() for s in src.split(";") if s.strip()]
         firm_srcs = [s for s in sources if not s.startswith(GUIDE_SOURCE)]
         is_guide = any(s.startswith(GUIDE_SOURCE) for s in sources)

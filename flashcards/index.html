@@ -135,7 +135,9 @@ a{color:var(--accent)}
 .tag.mastered::before{content:"\2665 "}
 .answer{padding:16px 18px 0}
 .answer .label{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
-.answer .body{font-size:15.5px;line-height:1.65;color:var(--ink);max-width:68ch;white-space:pre-wrap}
+.answer .body{font-size:15.5px;line-height:1.7;color:var(--ink);max-width:66ch}
+.answer .body p{margin:0 0 .9em}
+.answer .body p:last-child{margin-bottom:0}
 .origin{margin-top:12px;padding:10px 12px;border-left:2px solid var(--line-2);background:var(--panel-2);border-radius:0 8px 8px 0;font-size:12.5px;color:var(--muted);max-width:68ch}
 .reveal{margin:18px;padding:12px 18px;border:1.5px dashed var(--line-2);border-radius:16px;background:var(--panel);cursor:pointer;font-weight:600;width:calc(100% - 36px)}
 .reveal:hover{border-color:var(--accent);color:var(--accent)}
@@ -992,6 +994,48 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   });
 
   /* ---------------- study view ---------------- */
+  /* Answers arrive as one long run of prose. Break them into paragraphs at
+     sentence boundaries so a card can be read rather than waded through. */
+  var ABBR_END = /(?:\b(?:vs|e\.g|i\.e|etc|approx|no|fig|est|ex|mr|ms|dr|inc|co|corp|ltd|jr|sr|u\.s|u\.k|st|al)\.|\b[A-Za-z]\.)$/i;
+
+  function splitSentences(t) {
+    var out = [], start = 0;
+    for (var i = 0; i < t.length; i++) {
+      var ch = t.charAt(i);
+      if (ch !== "." && ch !== "?" && ch !== "!") continue;
+      if (t.charAt(i + 1) !== " ") continue;
+      var after = t.charAt(i + 2);
+      if (!/[A-Z("'\u2018\u201c]/.test(after)) continue;
+      var head = t.slice(start, i + 1);
+      if (ABBR_END.test(head)) continue;
+      out.push(head.trim());
+      start = i + 2;
+    }
+    var tail = t.slice(start).trim();
+    if (tail) out.push(tail);
+    return out;
+  }
+
+  function paragraphs(text) {
+    var ss = splitSentences(String(text || "").replace(/\s+/g, " ").trim());
+    var paras = [], cur = [], len = 0;
+    ss.forEach(function (sent) {
+      cur.push(sent);
+      len += sent.length;
+      if (len >= 280 || cur.length >= 3) { paras.push(cur.join(" ")); cur = []; len = 0; }
+    });
+    if (cur.length) paras.push(cur.join(" "));
+    /* never leave a one-sentence orphan hanging off the end */
+    if (paras.length > 1 && paras[paras.length - 1].length < 90) {
+      paras[paras.length - 2] += " " + paras.pop();
+    }
+    return paras.length ? paras : [""];
+  }
+
+  function proseHTML(text) {
+    return paragraphs(text).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+  }
+
   function tagsHTML(c, withFirms) {
     var t = '<span class="tag">' + esc(c.c[0]) + "</span>" +
       '<span class="tag">' + esc(c.tp) + "</span>" +
@@ -1041,8 +1085,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (show) {
       h += '<div class="answer"><div class="label">' +
         (c.t === "Behavioral" ? "How to answer" : "Answer") + "</div>" +
-        '<div class="body">' + esc(c.a) + "</div>";
-      if (c.nt && c.nt.length) h += '<div class="body" style="margin-top:12px">' + esc(c.nt.join(" ")) + "</div>";
+        '<div class="body">' + proseHTML(c.a) + "</div>";
+      if (c.nt && c.nt.length) h += '<div class="body" style="margin-top:12px">' + proseHTML(c.nt.join(" ")) + "</div>";
       h += '<div class="origin">' + esc(c.ao) + "</div></div>";
       if (c.sr && c.sr.length) {
         h += '<div class="srcs"><b>Reported by</b>' + esc(c.sr.join(" · ")) + "</div>";
