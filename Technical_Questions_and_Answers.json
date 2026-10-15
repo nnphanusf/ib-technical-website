@@ -18684,8 +18684,8 @@
       "question_references": [
         "Houlihan Lokey NY Insights/HL NY Insight 2.png"
       ],
-      "answer_type": "Date-dependent answer framework",
-      "answer": "This is date-dependent and has no permanent numerical answer. Before the interview, retrieve the relevant dated data from a primary source: company investor relations/SEC filings for company figures, Federal Reserve releases for policy, Treasury for government yields, and the exchange/index provider for market levels. State the observation date, distinguish price return from total return, and separate fact from forecast. For an outlook, identify the driver, the transmission to cash flows/discount rates, the market’s apparent expectation and a contrary scenario. Historical wording should be answered as of its stated date. LIBOR questions require historical context; do not invent a current LIBOR quotation after cessation.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "An increase in operating current liabilities (accounts payable, accrued expenses, deferred revenue) reduces operating net working capital, which releases cash and therefore increases FCFF, because FCFF subtracts the increase in operating NWC. A decrease does the reverse. Two cautions: the item must be an operating, non-debt liability - an increase in short-term borrowings or the current portion of long-term debt is financing, so it does not affect FCFF at all - and if the liability rose because an expense was accrued rather than paid, record the expense effect on EBIT first and then the offsetting working-capital change, rather than counting the cash benefit alone.",
       "notes": [],
       "topic": "markets",
       "original_question_ids": [
@@ -18693,7 +18693,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "requires_dated_research",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {
@@ -34307,7 +34307,7 @@
         "William Blair SF Insights/WB SF Insight 11.png"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "Identical current statements do not guarantee identical future cash flows or risk. One may have stronger customer retention, better products, patents, management, governance, backlog, lower future reinvestment needs or less concentration. Liquidity, control rights and market expectations can also differ. If all future cash flows, risk, rights and information are truly identical, intrinsic value should be identical; a price difference would then reflect market mispricing or omitted assumptions.",
+      "answer": "Take the two differences separately. Higher CapEx reduces unlevered free cash flow directly, because FCFF = EBIT(1-t) + D&A - CapEx - increase in operating NWC, so the higher-CapEx company has a lower DCF value if nothing else changes. That is only the mechanical answer: distinguish maintenance from growth CapEx, since productive investment can raise future revenue, margins or asset life by more than its cost, and the associated tax depreciation partly offsets the outlay. The dividend difference does not affect an unlevered DCF at all. Dividends are a distribution to shareholders, paid out of cash flow that FCFF has already measured; they are not an operating cash flow and do not enter FCFF or enterprise value. A higher payout can matter indirectly - it leaves less cash on the balance sheet, which changes the EV-to-equity bridge, and it signals management's view of reinvestment opportunities - but it is not a DCF value driver on its own.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -41258,7 +41258,7 @@
         "guide:p91:item159"
       ],
       "answer_type": "Answer from supplied M&I guide",
-      "answer": "equals Net Operating Profit After Taxes (NOPAT) + D&A and sometimes other non-cash adjustments +/- Change in Working Capital – CapEx. Levered Free Cash Flow equals Net Income to Common + D&A and sometimes other non-cash adjustments +/- Change in Working Capital – CapEx +/- Net Change in Debt. You normally use UFCF in DCF-based valuations because it lets you evaluate a company independently of its capital structure, which produces more consistent numbers. LFCF is far less widely used (and people disagree about the basic definition), but it is more common in certain specialized contexts/industries (e.g., equity REITs ).",
+      "answer": "Unlevered Free Cash Flow equals Net Operating Profit After Taxes (NOPAT) + D&A and sometimes other non-cash adjustments +/- Change in Working Capital – CapEx. Levered Free Cash Flow equals Net Income to Common + D&A and sometimes other non-cash adjustments +/- Change in Working Capital – CapEx +/- Net Change in Debt. You normally use UFCF in DCF-based valuations because it lets you evaluate a company independently of its capital structure, which produces more consistent numbers. LFCF is far less widely used (and people disagree about the basic definition), but it is more common in certain specialized contexts/industries (e.g., equity REITs ).",
       "notes": [
         "Transcribed from the supplied guide; retain its stated assumptions. Some guide examples use specific illustrative deal facts rather than a universal answer."
       ],
@@ -41854,7 +41854,7 @@
         "guide:p105:item193"
       ],
       "answer_type": "Answer from supplied M&I guide",
-      "answer": "You should use the appropriate yield on the government bonds denominated in the currency of the company’s cash flows. So, if the company reports its financials in USD, you might use the yield on 10-year U.S. Treasuries; if it reports them in EUR or GBP, you might use the yield on 10-year bonds issued by the European Central Bank or the Bank of England.",
+      "answer": "You should use the appropriate yield on the government bonds denominated in the currency of the company’s cash flows. So, if the company reports its financials in USD, you might use the yield on 10-year U.S. Treasuries; if it reports in EUR, the standard euro-area benchmark is the 10-year German Bund; if it reports in GBP, the 10-year UK gilt. Note that the European Central Bank and the Bank of England are monetary authorities and do not issue government bonds — euro-area and UK sovereign debt is issued by national treasuries and debt management offices.",
       "notes": [
         "Transcribed from the supplied guide; retain its stated assumptions. Some guide examples use specific illustrative deal facts rather than a universal answer."
       ],
@@ -45838,7 +45838,7 @@
         "guide:p197:item380"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "For a cash dividend D with no change in the operating business, cash and common equity value each fall D; EV is unchanged because the equity decline is offset by subtracting less cash. Debt-financed dividends add a debt/cash issuance step and then the distribution. Taxes, distress risk and market signaling can change real-world value, but the mechanical dividend alone does not change operating EV.",
+      "answer": "All three can be built, but they suit a REIT differently. A DDM fits REIT economics most directly: a REIT must distribute most of its taxable income to keep its tax status, so dividends are close to the cash flow actually available to shareholders, and the payout is both large and relatively predictable. Discount dividends at the cost of equity. A levered DCF is the next most natural, because property-level debt is central to how REITs are financed and because the sector's own metrics (FFO and AFFO) are after-interest equity measures; discount levered cash flow at the cost of equity and you reach equity value directly, with no bridge. An unlevered DCF is the weakest fit: it values the whole property portfolio before financing, which cuts against both the sector's leverage profile and its standard metrics, and it requires a terminal value for assets usually valued on a cap rate or NAV basis instead. In practice NAV - appraised or cap-rate-derived property value less net debt - plus P/FFO and P/AFFO multiples carry more weight than any of the three, with a DDM or levered DCF as the cash-flow cross-check.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [

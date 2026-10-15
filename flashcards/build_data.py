@@ -336,7 +336,8 @@ INSTRUCTION_VERBS = re.compile(
     r"work out|go through)", re.I)
 
 TIME_PAT = re.compile(
-    r"\b(current|currently|today|right now|this (year|quarter|week)|latest|recent(ly)?|"
+    r"\b(current(?! (assets?|liabilit|portion|ratio|maturit))|currently|today|right now|"
+    r"this (year|quarter|week)|latest|recent(ly)?|"
     r"at the moment|these days)\b|\boutlook\b|where (do you see|are) .*(rates|markets|economy)", re.I)
 
 
