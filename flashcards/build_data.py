@@ -231,6 +231,17 @@ BEHAV_FRAMEWORKS = {
 }
 
 
+DROP_NOTES = (
+    "Transcribed from the supplied guide; retain its stated assumptions.",
+)
+
+
+def clean_notes(notes):
+    """Drop boilerplate notes that only repeat provenance."""
+    return [n for n in (notes or [])
+            if not any(n.startswith(d) for d in DROP_NOTES)]
+
+
 def classify(text, rules, default):
     low = text.lower()
     for name, pat in rules:
@@ -310,7 +321,7 @@ def main():
             "st": q.get("answer_status", ""),
             "ao": q.get("answer_origin", ""),
             "sr": sources,
-            "nt": q.get("notes") or [],
+            "nt": clean_notes(q.get("notes")),
             "ur": q.get("supporting_reference_urls") or [],
         })
 

@@ -44,9 +44,22 @@ and re-run it.
 Firm labels record where a question was reported in your source material. The answers are
 prepared study answers; they were not supplied or endorsed by those firms.
 
+## Signing in
+
+The page opens on a sign-in card. Each student creates a profile with a name and their own
+password; creating one also needs the class password (set in `index.html` — share it with the
+class, not in this repo). Profiles keep students on a shared computer out of each other's
+progress, bookmarks and notes.
+
+This is browser-side only: there is no server, so a profile lives in the browser it was made in
+and the check can be bypassed by anyone who reads the page source. Treat it as a doorlatch
+between classmates, not as security.
+
 ## Using it
 
 Space reveals the answer and moves on, arrow keys navigate, `M` marks mastered, `B` bookmarks,
 `F` flags for review, `S` reshuffles, `E` jumps to your notes, `?` lists every shortcut.
-Progress, bookmarks and your own notes are saved in the browser you study in — they do not
-follow you to another device, so use **Copy progress** on the Mastery tab before switching.
+Progress, bookmarks and your own notes are saved per profile in the browser you study in — they
+do not follow you to another device, so use **Copy progress** on the Mastery tab before switching.
+`T` switches the light and dark themes, and **Always show answers** in the filter rail reveals
+every card without pressing space, for revision runs.

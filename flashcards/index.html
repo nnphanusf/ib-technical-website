@@ -2,45 +2,49 @@
 <title>Banking Interview Deck</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap">
 <style>
 /* Layout: fixed filter rail on the left, one study card centred in the reading column.
    Tearsheet identity — plex serif for the prompt, plex mono for IDs, firms and counts. */
 :root{
-  --paper:#FAFAFB; --panel:#FFFFFF; --panel-2:#F3F4F7;
-  --ink:#14151B; --ink-2:#4B4E5C; --muted:#777B8A;
-  --line:#E2E3EA; --line-2:#CFD1DC;
-  --accent:#2A3F8F; --accent-soft:#E8EBF8;
-  --good:#1A6F4E; --good-soft:#E2F1EA;
-  --warn:#9A5B0B; --warn-soft:#FBEEDC;
-  --shadow:0 1px 2px rgba(20,21,27,.05), 0 8px 24px -16px rgba(20,21,27,.35);
-  --sans:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;
-  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --paper:#FFF4F8; --panel:#FFFFFF; --panel-2:#FDEAF2;
+  --ink:#3A2230; --ink-2:#6E4357; --muted:#A3758A;
+  --line:#F8DAE7; --line-2:#F0BFD4;
+  --accent:#E04A86; --accent-soft:#FDE2EE;
+  --good:#2E9E7E; --good-soft:#DEF4EC;
+  --warn:#C2711C; --warn-soft:#FCEBD8;
+  --dot:#FBDCE8;
+  --shadow:0 1px 2px rgba(224,74,134,.08), 0 10px 26px -16px rgba(224,74,134,.45);
+  --sans:"Quicksand",ui-rounded,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Fredoka","Quicksand",ui-rounded,-apple-system,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#0E0F14; --panel:#16181F; --panel-2:#1D2029;
-  --ink:#ECEDF3; --ink-2:#B6B9C6; --muted:#8B8F9E;
-  --line:#272A34; --line-2:#363A47;
-  --accent:#93A7F5; --accent-soft:#1E2440;
-  --good:#5FC79B; --good-soft:#15291F;
-  --warn:#E0A860; --warn-soft:#2A2113;
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+  --paper:#1B0F16; --panel:#261522; --panel-2:#321C2A;
+  --ink:#FCE9F1; --ink-2:#E2BDCF; --muted:#B58DA1;
+  --line:#3C2333; --line-2:#523046;
+  --accent:#FF8FBF; --accent-soft:#3C2030;
+  --good:#79D9B8; --good-soft:#17302A;
+  --warn:#E6AE6B; --warn-soft:#302217;
+  --dot:#2B1823;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -18px rgba(0,0,0,.85);
   color-scheme:dark;
 }}
 :root[data-theme="dark"]{
-  --paper:#0E0F14; --panel:#16181F; --panel-2:#1D2029;
-  --ink:#ECEDF3; --ink-2:#B6B9C6; --muted:#8B8F9E;
-  --line:#272A34; --line-2:#363A47;
-  --accent:#93A7F5; --accent-soft:#1E2440;
-  --good:#5FC79B; --good-soft:#15291F;
-  --warn:#E0A860; --warn-soft:#2A2113;
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+  --paper:#1B0F16; --panel:#261522; --panel-2:#321C2A;
+  --ink:#FCE9F1; --ink-2:#E2BDCF; --muted:#B58DA1;
+  --line:#3C2333; --line-2:#523046;
+  --accent:#FF8FBF; --accent-soft:#3C2030;
+  --good:#79D9B8; --good-soft:#17302A;
+  --warn:#E6AE6B; --warn-soft:#302217;
+  --dot:#2B1823;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -18px rgba(0,0,0,.85);
   color-scheme:dark;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{height:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{margin:0;background-color:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.5px);background-size:22px 22px;color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
 button,input,select,textarea{font:inherit;color:inherit}
 h1,h2,h3{text-wrap:balance;margin:0}
 a{color:var(--accent)}
@@ -48,8 +52,10 @@ a{color:var(--accent)}
 /* ---------- header ---------- */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .top-in{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.brand{display:flex;align-items:baseline;gap:9px;min-width:0}
-.brand b{font-family:var(--serif);font-weight:600;font-size:18px;letter-spacing:-.01em}
+.brand{display:flex;align-items:center;gap:9px;min-width:0}
+.brand b{font-family:var(--serif);font-weight:500;font-size:18px;letter-spacing:.005em}
+.kitty{flex:none;display:block;width:36px;height:28px}
+.kitty svg{display:block;width:100%;height:100%;overflow:visible}
 .brand span{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .grow{flex:1 1 auto;min-width:0}
 .search{position:relative;flex:0 1 300px;min-width:170px}
@@ -59,7 +65,7 @@ a{color:var(--accent)}
 .search .clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:var(--muted);cursor:pointer;padding:4px;border-radius:50%}
 .tabs{display:flex;gap:2px;background:var(--panel-2);border-radius:10px;padding:3px}
 .tabs button{border:0;background:none;padding:7px 15px;border-radius:8px;cursor:pointer;color:var(--ink-2);font-weight:500;white-space:nowrap}
-.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--paper)}
 .iconbtn{border:1px solid var(--line-2);background:var(--panel);width:34px;height:34px;border-radius:9px;display:grid;place-items:center;cursor:pointer;color:var(--ink-2);flex:none}
 .iconbtn:hover{border-color:var(--accent);color:var(--accent)}
 
@@ -74,7 +80,7 @@ a{color:var(--accent)}
 .rail-head h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .linkbtn{border:0;background:none;color:var(--accent);cursor:pointer;font-size:12.5px;padding:2px 4px;border-radius:6px;text-decoration:underline;text-underline-offset:3px}
 .linkbtn:hover{background:var(--accent-soft)}
-.fgroup{border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.fgroup{border:1px solid var(--line);border-radius:16px;background:var(--panel)}
 .fgroup>summary{list-style:none;cursor:pointer;padding:10px 12px;display:flex;align-items:center;gap:8px;border-radius:12px}
 .fgroup>summary::-webkit-details-marker{display:none}
 .fgroup[open]>summary{border-bottom:1px solid var(--line);border-radius:12px 12px 0 0}
@@ -90,10 +96,10 @@ a{color:var(--accent)}
 .opt span.lbl{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .opt span.n{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
 .selchips{display:flex;flex-wrap:wrap;gap:4px;padding:0 12px 10px}
-.chip{font-size:11px;padding:3px 8px;border-radius:999px;background:var(--ink);color:var(--paper);display:inline-flex;align-items:center;gap:5px}
+.chip{font-size:11px;padding:3px 8px;border-radius:999px;background:var(--accent);color:var(--paper);display:inline-flex;align-items:center;gap:5px;font-weight:600}
 .chip button{border:0;background:none;color:inherit;cursor:pointer;padding:0;line-height:1;opacity:.7}
 .chip button:hover{opacity:1}
-.toggles{display:flex;flex-direction:column;gap:9px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.toggles{display:flex;flex-direction:column;gap:9px;padding:12px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
 .tog{display:flex;align-items:center;gap:9px;cursor:pointer;font-size:13px}
 .tog input{position:absolute;opacity:0;pointer-events:none}
 .track{width:34px;height:19px;border-radius:999px;background:var(--line-2);position:relative;transition:background .15s;flex:none}
@@ -108,7 +114,7 @@ a{color:var(--accent)}
 .count b{color:var(--ink);font-weight:600}
 .progress{flex:1 1 120px;height:5px;border-radius:999px;background:var(--panel-2);overflow:hidden;min-width:90px}
 .progress i{display:block;height:100%;background:var(--good);width:0}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
 .card-top{display:flex;gap:10px;padding:16px 18px 0}
 .qid{font-family:var(--mono);font-size:11px;color:var(--muted);padding-top:4px}
 .acts{margin-left:auto;display:flex;gap:2px}
@@ -124,11 +130,12 @@ a{color:var(--accent)}
 .tag.adv{background:var(--warn-soft);color:var(--warn)}
 .tag.firm{font-family:var(--mono);font-size:10.5px}
 .tag.mastered{background:var(--good-soft);color:var(--good)}
+.tag.mastered::before{content:"\2665 "}
 .answer{padding:16px 18px 0}
 .answer .label{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
 .answer .body{font-size:15.5px;line-height:1.65;color:var(--ink);max-width:68ch;white-space:pre-wrap}
 .origin{margin-top:12px;padding:10px 12px;border-left:2px solid var(--line-2);background:var(--panel-2);border-radius:0 8px 8px 0;font-size:12.5px;color:var(--muted);max-width:68ch}
-.reveal{margin:18px;padding:11px 18px;border:1px solid var(--line-2);border-radius:10px;background:var(--panel);cursor:pointer;font-weight:500;width:calc(100% - 36px)}
+.reveal{margin:18px;padding:12px 18px;border:1.5px dashed var(--line-2);border-radius:16px;background:var(--panel);cursor:pointer;font-weight:600;width:calc(100% - 36px)}
 .reveal:hover{border-color:var(--accent);color:var(--accent)}
 .srcs{padding:14px 18px 0;font-size:12.5px;color:var(--muted)}
 .srcs b{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--muted);display:block;margin-bottom:4px}
@@ -136,26 +143,26 @@ a{color:var(--accent)}
 .notes textarea{width:100%;min-height:74px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);resize:vertical;outline:none;font-size:14px}
 .notes textarea:focus{border-color:var(--accent);background:var(--panel)}
 .footrow{display:flex;align-items:center;gap:8px;padding:16px 18px;margin-top:14px;border-top:1px solid var(--line);flex-wrap:wrap}
-.nav{border:1px solid var(--line-2);background:var(--panel);width:36px;height:36px;border-radius:10px;display:grid;place-items:center;cursor:pointer}
+.nav{border:1px solid var(--line-2);background:var(--panel);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;cursor:pointer}
 .nav:hover{border-color:var(--accent);color:var(--accent)}
 .nav:disabled{opacity:.4;cursor:not-allowed}
-.btn{border:1px solid var(--line-2);background:var(--panel);padding:8px 14px;border-radius:10px;cursor:pointer;font-weight:500;font-size:13.5px}
+.btn{border:1px solid var(--line-2);background:var(--panel);padding:8px 16px;border-radius:999px;cursor:pointer;font-weight:600;font-size:13.5px}
 .btn:hover{border-color:var(--accent);color:var(--accent)}
-.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.primary{background:var(--accent);color:var(--paper);border-color:var(--accent)}
 .btn.primary:hover{opacity:.88;color:var(--paper)}
 .btn.good{background:var(--good-soft);color:var(--good);border-color:transparent}
 .spacer{flex:1 1 auto}
 
 /* ---------- browse grid ---------- */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:12px}
-.mini{text-align:left;border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:14px;cursor:pointer;display:flex;flex-direction:column;gap:9px;min-width:0}
+.mini{text-align:left;border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:14px;cursor:pointer;display:flex;flex-direction:column;gap:9px;min-width:0}
 .mini:hover{border-color:var(--accent);box-shadow:var(--shadow)}
 .mini .mq{font-family:var(--serif);font-size:14.5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .mini .mt{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto}
 .more{display:grid;place-items:center;padding:18px}
 
 /* ---------- mastery ---------- */
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}
 .panel+.panel{margin-top:14px}
 .panel h3{font-size:13px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:14px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:12px}
@@ -187,12 +194,31 @@ dialog::backdrop{background:rgba(10,11,15,.45)}
 .kb{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:13.5px;align-items:center}
 kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border-bottom-width:2px;border-radius:6px;padding:2px 7px;background:var(--panel-2);white-space:nowrap}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.answer,.srcs,.notes{animation:fadeUp .3s ease both}
+.reveal{animation:fadeUp .22s ease both}
+.card.leaving .answer,.card.leaving .srcs,.card.leaving .notes,.card.leaving .reveal{animation:none;opacity:0;transition:opacity .14s ease}
+.mini .ma{font-size:12.5px;color:var(--ink-2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}
+.gate{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background-color:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.5px);background-size:22px 22px}
+.gatecard{background:var(--panel);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:26px 24px;width:min(360px,100%);display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center}
+.gatecard .kitty{width:66px;height:50px}
+.gatecard h2{font-family:var(--serif);font-weight:500;font-size:20px}
+.gatecard p{margin:0;color:var(--muted);font-size:13.5px}
+.gatecard input{width:100%;padding:10px 14px;border:1px solid var(--line-2);border-radius:999px;background:var(--panel-2);text-align:center;letter-spacing:.2em;outline:none}
+.gatecard input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.gatecard button{width:100%}
+.gateerr{color:var(--accent);font-size:12.5px;font-weight:600}
+.who{border:1px solid var(--line-2);background:var(--panel);color:var(--ink-2);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;flex:none}
+.who:hover{border-color:var(--accent);color:var(--accent)}
+.who span{color:var(--ink)}
+.shake{animation:shake .28s}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
 <header class="top">
   <div class="top-in">
-    <div class="brand"><b>Banking Interview Deck</b><span id="brandCount">loading</span></div>
+    <div class="brand"><span class="kitty" aria-hidden="true"><svg viewBox="0 0 54 40"><path d="M9 15 11 4.5 21.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><path d="M45 15 43 4.5 32.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><ellipse cx="27" cy="23" rx="18" ry="14" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2"/><path d="M3 17 12.5 20M2.5 23.5H12M3 30 12.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><path d="M51 17 41.5 20M51.5 23.5H42M51 30 41.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="20" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="34" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="27" cy="26.5" rx="2.6" ry="1.9" fill="var(--accent)"/><path d="M41 10 35.5 6 35.5 14.5Z" fill="var(--accent)"/><path d="M41 10 46.5 6 46.5 14.5Z" fill="var(--accent)"/><circle cx="41" cy="10.2" r="2.6" fill="var(--accent)" stroke="var(--panel)" stroke-width="1.2"/></svg></span><b>Banking Interview Deck</b><span id="brandCount">loading</span></div>
     <div class="tabs" role="tablist">
       <button role="tab" id="tab-Technical" aria-selected="true">Technicals</button>
       <button role="tab" id="tab-Behavioral" aria-selected="false">Behaviorals</button>
@@ -204,6 +230,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       <input id="search" type="search" placeholder="Search questions…" autocomplete="off">
       <button class="clear" id="searchClear" hidden aria-label="Clear search">✕</button>
     </label>
+    <button class="who" id="whoBtn" title="Sign out" hidden><span id="whoName"></span> · sign out</button>
+    <button class="iconbtn" id="themeBtn" title="Switch theme" aria-label="Switch between light and dark theme"></button>
     <button class="iconbtn" id="helpBtn" title="Keyboard shortcuts" aria-label="Keyboard shortcuts">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg>
     </button>
@@ -213,6 +241,20 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 <div class="layout">
   <aside class="rail" id="rail"></aside>
   <main id="main"><div class="loading">Loading 3,200+ cards…</div></main>
+</div>
+
+<div class="gate" id="gate">
+  <form class="gatecard" id="gateForm">
+    <span class="kitty" aria-hidden="true"><svg viewBox="0 0 54 40"><path d="M9 15 11 4.5 21.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><path d="M45 15 43 4.5 32.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><ellipse cx="27" cy="23" rx="18" ry="14" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2"/><path d="M3 17 12.5 20M2.5 23.5H12M3 30 12.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><path d="M51 17 41.5 20M51.5 23.5H42M51 30 41.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="20" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="34" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="27" cy="26.5" rx="2.6" ry="1.9" fill="var(--accent)"/><path d="M41 10 35.5 6 35.5 14.5Z" fill="var(--accent)"/><path d="M41 10 46.5 6 46.5 14.5Z" fill="var(--accent)"/><circle cx="41" cy="10.2" r="2.6" fill="var(--accent)" stroke="var(--panel)" stroke-width="1.2"/></svg></span>
+    <h2>Banking Interview Deck</h2>
+    <p id="gateMsg">Sign in to pick up where you left off.</p>
+    <input id="gateUser" type="text" placeholder="Your name" aria-label="Your name" autocomplete="username" autocapitalize="words">
+    <input id="gatePw" type="password" placeholder="Password" aria-label="Password" autocomplete="current-password">
+    <input id="gateClass" type="password" placeholder="Class password" aria-label="Class password" autocomplete="off" hidden>
+    <button class="btn primary" type="submit" id="gateGo">Sign in</button>
+    <span class="gateerr" id="gateErr" hidden></span>
+    <button type="button" class="linkbtn" id="gateSwitch">New here? Create a profile</button>
+  </form>
 </div>
 
 <dialog id="help"><div class="dlg">
@@ -227,6 +269,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     <kbd>S</kbd><span>Reshuffle the deck</span>
     <kbd>E</kbd><span>Jump to your notes</span>
     <kbd>/</kbd><span>Search</span>
+    <kbd>T</kbd><span>Light / dark theme</span>
     <kbd>?</kbd><span>This dialog</span>
   </div>
   <div style="margin-top:16px;text-align:right"><button class="btn" id="helpClose">Close</button></div>
@@ -238,21 +281,28 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 
   /* ---------------- storage ---------------- */
   var KEY = "ibdeck.v1";
-  var save = {mastered: {}, bookmarked: {}, flagged: {}, notes: {}, seen: {}};
-  try {
-    var raw = localStorage.getItem(KEY);
-    if (raw) {
-      var p = JSON.parse(raw);
+  var user = null;                       /* the signed-in profile, lower-cased */
+  function blankSave() {
+    return {mastered: {}, bookmarked: {}, flagged: {}, notes: {}, seen: {}};
+  }
+  var save = blankSave();
+  function profileKey(part) { return KEY + ".u." + user + "." + part; }
+  function loadSave() {
+    save = blankSave();
+    if (!user) return;
+    try {
+      var p = JSON.parse(localStorage.getItem(profileKey("save")) || "null");
       ["mastered", "bookmarked", "flagged", "notes", "seen"].forEach(function (k) {
         if (p && p[k] && typeof p[k] === "object") save[k] = p[k];
       });
-    }
-  } catch (e) {}
+    } catch (e) {}
+  }
   var saveTimer = null;
   function persist() {
+    if (!user) return;
     clearTimeout(saveTimer);
     saveTimer = setTimeout(function () {
-      try { localStorage.setItem(KEY, JSON.stringify(save)); } catch (e) {}
+      try { localStorage.setItem(profileKey("save"), JSON.stringify(save)); } catch (e) {}
     }, 250);
   }
 
@@ -276,27 +326,36 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     search: "",
     filters: {Technical: blankFilters(), Behavioral: blankFilters()},
     cardView: false,
+    alwaysShow: false,
     shuffled: {Technical: true, Behavioral: true},
     idx: {Technical: 0, Behavioral: 0},
     revealed: false,
     seed: {Technical: 1, Behavioral: 2},
     gridLimit: 60
   };
-  try {
-    var u = JSON.parse(localStorage.getItem(KEY + ".ui") || "null");
-    if (u) {
-      if (u.tab) ui.tab = u.tab;
-      if (u.filters) ui.filters = u.filters;
-      if (typeof u.cardView === "boolean") ui.cardView = u.cardView;
-      if (u.shuffled) ui.shuffled = u.shuffled;
-      if (u.idx) ui.idx = u.idx;
-      if (u.seed) ui.seed = u.seed;
-    }
-  } catch (e) {}
-  function persistUI() {
+  function loadUI() {
+    ui.filters = {Technical: blankFilters(), Behavioral: blankFilters()};
+    ui.idx = {Technical: 0, Behavioral: 0};
+    ui.revealed = false;
+    if (!user) return;
     try {
-      localStorage.setItem(KEY + ".ui", JSON.stringify({
-        tab: ui.tab, filters: ui.filters, cardView: ui.cardView,
+      var u = JSON.parse(localStorage.getItem(profileKey("ui")) || "null");
+      if (u) {
+        if (u.tab) ui.tab = u.tab;
+        if (u.filters) ui.filters = u.filters;
+        if (typeof u.cardView === "boolean") ui.cardView = u.cardView;
+        if (typeof u.alwaysShow === "boolean") ui.alwaysShow = u.alwaysShow;
+        if (u.shuffled) ui.shuffled = u.shuffled;
+        if (u.idx) ui.idx = u.idx;
+        if (u.seed) ui.seed = u.seed;
+      }
+    } catch (e) {}
+  }
+  function persistUI() {
+    if (!user) return;
+    try {
+      localStorage.setItem(profileKey("ui"), JSON.stringify({
+        tab: ui.tab, filters: ui.filters, cardView: ui.cardView, alwaysShow: ui.alwaysShow,
         shuffled: ui.shuffled, idx: ui.idx, seed: ui.seed
       }));
     } catch (e) {}
@@ -323,6 +382,130 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     }[name];
     return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">' + p + "</svg>";
   }
+
+  /* ---------------- theme ---------------- */
+  var SUN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="16" height="16"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg>';
+  var MOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" width="16" height="16"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5"/></svg>';
+  var THEME_KEY = KEY + ".theme";
+  var themeBtn = $("#themeBtn");
+  function systemDark() {
+    try { return matchMedia("(prefers-color-scheme: dark)").matches; } catch (e) { return false; }
+  }
+  function applyTheme(t) {
+    var root = document.documentElement;
+    if (t === "dark" || t === "light") root.setAttribute("data-theme", t);
+    else root.removeAttribute("data-theme");
+    var dark = t === "dark" || (!t && systemDark());
+    themeBtn.innerHTML = dark ? SUN : MOON;
+    themeBtn.title = dark ? "Switch to the light theme" : "Switch to the dark theme";
+    try { t ? localStorage.setItem(THEME_KEY, t) : localStorage.removeItem(THEME_KEY); } catch (e) {}
+  }
+  themeBtn.addEventListener("click", function () {
+    var t = document.documentElement.getAttribute("data-theme");
+    applyTheme((t === "dark" || (!t && systemDark())) ? "light" : "dark");
+  });
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem(THEME_KEY); } catch (e) {}
+    applyTheme(t);
+  })();
+
+  /* ---------------- sign in ----------------
+     Profiles live in this browser's storage: they keep students on a shared
+     computer out of each other's progress. It is not server-side security. */
+  var gate = $("#gate"), gateForm = $("#gateForm"), gateMsg = $("#gateMsg"),
+      gateUser = $("#gateUser"), gatePw = $("#gatePw"), gateClass = $("#gateClass"),
+      gateGo = $("#gateGo"), gateErr = $("#gateErr"), gateSwitch = $("#gateSwitch"),
+      whoBtn = $("#whoBtn"), whoName = $("#whoName");
+  var ACC_KEY = KEY + ".accounts", LAST_KEY = KEY + ".last";
+  var CLASS_PW = "13g350k";
+  var mode = "signin";
+
+  function pwHash(v) {
+    var h = 5381;
+    for (var i = 0; i < v.length; i++) h = ((h * 33) ^ v.charCodeAt(i)) >>> 0;
+    return h.toString(36);
+  }
+  function accounts() {
+    try { return JSON.parse(localStorage.getItem(ACC_KEY) || "{}") || {}; } catch (e) { return {}; }
+  }
+  function putAccount(key, rec) {
+    var a = accounts();
+    a[key] = rec;
+    try { localStorage.setItem(ACC_KEY, JSON.stringify(a)); } catch (e) {}
+  }
+  function fail(msg) {
+    gateErr.textContent = msg;
+    gateErr.hidden = false;
+    gateForm.classList.remove("shake");
+    void gateForm.offsetWidth;
+    gateForm.classList.add("shake");
+  }
+  function setMode(m) {
+    mode = m;
+    var creating = m === "create";
+    gateMsg.textContent = creating
+      ? "Pick a name and a password. The class password is needed once, to create the profile."
+      : "Sign in to pick up where you left off.";
+    gateClass.hidden = !creating;
+    gateGo.textContent = creating ? "Create profile" : "Sign in";
+    gateSwitch.textContent = creating ? "Already have a profile? Sign in" : "New here? Create a profile";
+    gatePw.setAttribute("autocomplete", creating ? "new-password" : "current-password");
+    gateErr.hidden = true;
+  }
+  function signIn(key, display) {
+    user = key;
+    try { localStorage.setItem(LAST_KEY, key); } catch (e) {}
+    loadSave();
+    loadUI();
+    whoName.textContent = display;
+    whoBtn.hidden = false;
+    gate.hidden = true;
+    gatePw.value = "";
+    gateClass.value = "";
+    if (DATA) render();
+  }
+  function signOut() {
+    persist();
+    persistUI();
+    user = null;
+    save = blankSave();
+    whoBtn.hidden = true;
+    gate.hidden = false;
+    setMode("signin");
+    main.innerHTML = "";
+    rail.innerHTML = "";
+    setTimeout(function () { gatePw.focus(); }, 60);
+  }
+  gateSwitch.addEventListener("click", function () { setMode(mode === "signin" ? "create" : "signin"); });
+  whoBtn.addEventListener("click", signOut);
+
+  gateForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var name = gateUser.value.trim().replace(/\s+/g, " ");
+    var pw = gatePw.value;
+    var key = name.toLowerCase();
+    if (!name) return fail("Type the name you want to study under.");
+    if (mode === "create") {
+      if (pwHash(gateClass.value.trim()) !== CLASS_PW) return fail("That class password is not right.");
+      if (pw.length < 4) return fail("Use a password of at least 4 characters.");
+      if (accounts()[key]) return fail("Someone already uses that name here — sign in instead.");
+      putAccount(key, {h: pwHash(pw), n: name});
+      signIn(key, name);
+      return;
+    }
+    var acc = accounts()[key];
+    if (!acc) return fail("No profile with that name in this browser. Create one first.");
+    if (acc.h !== pwHash(pw)) return fail("That password does not match.");
+    signIn(key, acc.n || name);
+  });
+
+  setMode("signin");
+  try {
+    var last = localStorage.getItem(LAST_KEY);
+    if (last && accounts()[last]) gateUser.value = accounts()[last].n || last;
+  } catch (e) {}
+  setTimeout(function () { (gateUser.value ? gatePw : gateUser).focus(); }, 60);
 
   /* ---------------- deck selection ---------------- */
   function tabCards() {
@@ -433,6 +616,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     h += '<div class="toggles">' +
       '<label class="tog"><input type="checkbox" id="togCard"' + (ui.cardView ? " checked" : "") + '><span class="track"></span>Browse all as cards</label>' +
       '<label class="tog"><input type="checkbox" id="togSort"' + (!ui.shuffled[ui.tab] ? " checked" : "") + '><span class="track"></span>Sorted (not shuffled)</label>' +
+      '<label class="tog"><input type="checkbox" id="togAll"' + (ui.alwaysShow ? " checked" : "") + '><span class="track"></span>Always show answers</label>' +
       "</div>";
     rail.innerHTML = h;
   }
@@ -455,6 +639,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       ui.cardView = t.checked; ui.gridLimit = 60; persistUI(); render();
     } else if (t.id === "togSort") {
       ui.shuffled[ui.tab] = !t.checked; ui.idx[ui.tab] = 0; persistUI(); render();
+    } else if (t.id === "togAll") {
+      ui.alwaysShow = t.checked; ui.revealed = false; persistUI(); render();
     }
   });
 
@@ -524,7 +710,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       '<h2 class="q">' + esc(c.q) + "</h2>" +
       '<div class="tagrow">' + tagsHTML(c, true) + "</div>";
 
-    if (ui.revealed) {
+    var show = ui.revealed || ui.alwaysShow;
+    if (show) {
       h += '<div class="answer"><div class="label">' +
         (c.t === "Behavioral" ? "How to answer" : "Answer") + "</div>" +
         '<div class="body">' + esc(c.a) + "</div>";
@@ -543,13 +730,11 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       '<button class="nav" data-act="prev"' + (i === 0 ? " disabled" : "") + ' aria-label="Previous">' + icon("left") + "</button>" +
       '<button class="nav" data-act="next"' + (i === total - 1 ? " disabled" : "") + ' aria-label="Next">' + icon("right") + "</button>" +
       '<span class="spacer"></span>' +
-      (ui.revealed
+      (show
         ? '<button class="btn" data-act="again">Needs work</button><button class="btn good" data-act="gotit">Got it · M</button>'
         : '<button class="btn primary" data-act="reveal">Show answer · Space</button>') +
       "</div></article>";
 
-    h += '<p class="note">Topic, difficulty, industry and firm tags are derived automatically from each question and its reported source — useful for filtering, not an official taxonomy. ' +
-      "Firm labels show where a question was reported in the source material; the answers are prepared study answers, not answers supplied or endorsed by those firms.</p>";
     main.innerHTML = h;
   }
 
@@ -559,6 +744,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     shown.forEach(function (c, n) {
       h += '<button class="mini" data-open="' + n + '"><span class="qid">' + c.id +
         (save.mastered[c.id] ? " · mastered" : "") + '</span><span class="mq">' + esc(c.q) + "</span>" +
+        (ui.alwaysShow ? '<span class="ma">' + esc(c.a) + "</span>" : "") +
         '<span class="mt">' + tagsHTML(c, false) + "</span></button>";
     });
     h += "</div>";
@@ -623,7 +809,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       '<span class="count" id="ioMsg"></span></div>' +
       '<div id="importWrap" hidden style="margin-top:10px"><textarea id="importBox" placeholder="Paste progress JSON here"></textarea>' +
       '<div style="margin-top:8px"><button class="btn primary" data-act="doimport">Restore</button></div></div>' +
-      '<p class="note">Progress lives in this browser only — it is not synced between devices and clearing site data erases it. Copy it out before switching browsers.</p></div>';
+      '<p class="note">Each profile on this browser keeps its own progress, and it stays in this browser — it does not follow you to another device, and clearing site data erases it. Copy it out before switching browsers.</p></div>';
     main.innerHTML = h;
   }
 
@@ -636,11 +822,18 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (map[id]) delete map[id]; else map[id] = 1;
     persist();
   }
+  var reduceMotion = false;
+  try { reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) {}
   function go(n) {
     var d = deck();
     var i = ui.idx[ui.tab] + n;
     if (i < 0 || i > d.length - 1) return;
-    ui.idx[ui.tab] = i; ui.revealed = false; persistUI(); render();
+    var step = function () { ui.idx[ui.tab] = i; ui.revealed = false; persistUI(); render(); };
+    var card = document.querySelector(".card");
+    if (card && !reduceMotion && (ui.revealed || ui.alwaysShow)) {
+      card.classList.add("leaving");
+      setTimeout(step, 140);
+    } else step();
   }
 
   main.addEventListener("click", function (e) {
@@ -738,6 +931,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   $("#helpClose").addEventListener("click", function () { $("#help").close(); });
 
   document.addEventListener("keydown", function (e) {
+    if (gate && !gate.hidden) return;
     var tag = (e.target.tagName || "").toLowerCase();
     var typing = tag === "input" || tag === "textarea";
     if (e.key === "/" && !typing) { e.preventDefault(); si.focus(); return; }
@@ -747,7 +941,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     var c = current();
     if (e.key === " " || e.key === "Enter") {
       e.preventDefault();
-      if (!ui.revealed) { ui.revealed = true; render(); } else go(1);
+      if (!ui.revealed && !ui.alwaysShow) { ui.revealed = true; render(); } else go(1);
     } else if (e.key === "ArrowRight" || e.key.toLowerCase() === "j") { e.preventDefault(); go(1); }
     else if (e.key === "ArrowLeft" || e.key.toLowerCase() === "k") { e.preventDefault(); go(-1); }
     else if (!c) return;
@@ -758,6 +952,9 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     else if (e.key.toLowerCase() === "s") {
       ui.seed[ui.tab] = Math.floor(Math.random() * 2e9) + 1;
       ui.shuffled[ui.tab] = true; ui.idx[ui.tab] = 0; ui.revealed = false; persistUI(); render();
+    } else if (e.key.toLowerCase() === "t") {
+      var cur = document.documentElement.getAttribute("data-theme");
+      applyTheme((cur === "dark" || (!cur && systemDark())) ? "light" : "dark");
     } else if (e.key.toLowerCase() === "e") {
       ui.revealed = true; render();
       var nb = $("#noteBox"); if (nb) { nb.focus(); nb.setSelectionRange(nb.value.length, nb.value.length); }
@@ -766,6 +963,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 
   /* ---------------- render ---------------- */
   function render() {
+    if (!user) return;
     document.querySelectorAll('[role="tab"]').forEach(function (t) {
       t.setAttribute("aria-selected", t.id === "tab-" + ui.tab ? "true" : "false");
     });
