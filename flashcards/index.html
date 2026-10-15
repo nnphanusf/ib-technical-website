@@ -694,25 +694,38 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       done();
       if (r.error) return fail(r.error.message);
       cloudEnter(r.data.session);
+    }, function (err) {
+      done();
+      fail((err && err.message) || "Could not reach the sign-in service.");
     });
   }
 
   function cloudEnter(session) {
+    /* Open the deck first. The profile lookup only decides the display name and
+       whether the Class tab appears, so it must never stand between a signed-in
+       student and their cards. */
+    user = session.user.id;
+    role = "student";
+    whoName.textContent = session.user.email;
+    whoBtn.hidden = false;
+    gate.hidden = true;
+    gatePw.value = "";
+    gateClass.value = "";
+    loadUI();
+    if (DATA) render();
+    loadCloudSave();
+
     cloud.from("profiles").select("name,email,role").eq("id", session.user.id).maybeSingle()
       .then(function (r) {
-        if (r && r.error) cloudTrouble(r.error);
+        if (r && r.error) { cloudTrouble(r.error); return; }
         var prof = (r && r.data) || {};
-        user = session.user.id;
         role = prof.role || "student";
         whoName.textContent = (prof.name || session.user.email) + (role === "teacher" ? " · teacher" : "");
-        whoBtn.hidden = false;
         $("#tab-Class").hidden = role !== "teacher";
         if (role !== "teacher" && ui.tab === "Class") ui.tab = "Technical";
-        gate.hidden = true;
-        gatePw.value = "";
-        gateClass.value = "";
-        loadUI();
-        loadCloudSave();
+        render();
+      }, function (err) {
+        cloudTrouble({message: (err && err.message) || "Could not reach the database."});
       });
   }
 
@@ -732,6 +745,9 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
           if (row.seen) save.seen[row.card_id] = 1;
           if (row.note) save.notes[row.card_id] = row.note;
         });
+        if (DATA) render();
+      }, function (err) {
+        cloudTrouble({message: (err && err.message) || "Could not load your saved progress."});
         if (DATA) render();
       });
   }
