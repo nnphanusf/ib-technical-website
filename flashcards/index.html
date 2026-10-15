@@ -1,0 +1,811 @@
+<meta charset="utf-8">
+<title>Banking Interview Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: fixed filter rail on the left, one study card centred in the reading column.
+   Tearsheet identity — plex serif for the prompt, plex mono for IDs, firms and counts. */
+:root{
+  --paper:#FAFAFB; --panel:#FFFFFF; --panel-2:#F3F4F7;
+  --ink:#14151B; --ink-2:#4B4E5C; --muted:#777B8A;
+  --line:#E2E3EA; --line-2:#CFD1DC;
+  --accent:#2A3F8F; --accent-soft:#E8EBF8;
+  --good:#1A6F4E; --good-soft:#E2F1EA;
+  --warn:#9A5B0B; --warn-soft:#FBEEDC;
+  --shadow:0 1px 2px rgba(20,21,27,.05), 0 8px 24px -16px rgba(20,21,27,.35);
+  --sans:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;
+  --serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0E0F14; --panel:#16181F; --panel-2:#1D2029;
+  --ink:#ECEDF3; --ink-2:#B6B9C6; --muted:#8B8F9E;
+  --line:#272A34; --line-2:#363A47;
+  --accent:#93A7F5; --accent-soft:#1E2440;
+  --good:#5FC79B; --good-soft:#15291F;
+  --warn:#E0A860; --warn-soft:#2A2113;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --paper:#0E0F14; --panel:#16181F; --panel-2:#1D2029;
+  --ink:#ECEDF3; --ink-2:#B6B9C6; --muted:#8B8F9E;
+  --line:#272A34; --line-2:#363A47;
+  --accent:#93A7F5; --accent-soft:#1E2440;
+  --good:#5FC79B; --good-soft:#15291F;
+  --warn:#E0A860; --warn-soft:#2A2113;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3{text-wrap:balance;margin:0}
+a{color:var(--accent)}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:9px;min-width:0}
+.brand b{font-family:var(--serif);font-weight:600;font-size:18px;letter-spacing:-.01em}
+.brand span{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.grow{flex:1 1 auto;min-width:0}
+.search{position:relative;flex:0 1 300px;min-width:170px}
+.search input{width:100%;padding:8px 30px 8px 32px;border:1px solid var(--line-2);border-radius:999px;background:var(--panel);outline:none}
+.search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:var(--muted)}
+.search .clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:var(--muted);cursor:pointer;padding:4px;border-radius:50%}
+.tabs{display:flex;gap:2px;background:var(--panel-2);border-radius:10px;padding:3px}
+.tabs button{border:0;background:none;padding:7px 15px;border-radius:8px;cursor:pointer;color:var(--ink-2);font-weight:500;white-space:nowrap}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.iconbtn{border:1px solid var(--line-2);background:var(--panel);width:34px;height:34px;border-radius:9px;display:grid;place-items:center;cursor:pointer;color:var(--ink-2);flex:none}
+.iconbtn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ---------- layout ---------- */
+.layout{max-width:1240px;margin:0 auto;padding-block:22px 64px;padding-left:20px;padding-right:20px;display:grid;grid-template-columns:272px minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);gap:16px}}
+
+/* ---------- filters ---------- */
+.rail{display:flex;flex-direction:column;gap:12px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px)}
+@media (max-width:900px){.rail{position:static}}
+.rail-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.rail-head h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.linkbtn{border:0;background:none;color:var(--accent);cursor:pointer;font-size:12.5px;padding:2px 4px;border-radius:6px;text-decoration:underline;text-underline-offset:3px}
+.linkbtn:hover{background:var(--accent-soft)}
+.fgroup{border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.fgroup>summary{list-style:none;cursor:pointer;padding:10px 12px;display:flex;align-items:center;gap:8px;border-radius:12px}
+.fgroup>summary::-webkit-details-marker{display:none}
+.fgroup[open]>summary{border-bottom:1px solid var(--line);border-radius:12px 12px 0 0}
+.fname{font-size:12.5px;font-weight:600;letter-spacing:.01em}
+.fsum{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto;white-space:nowrap}
+.chev{width:13px;height:13px;color:var(--muted);transition:transform .15s}
+.fgroup[open] .chev{transform:rotate(180deg)}
+.fbody{padding:8px;max-height:252px;overflow:auto;display:flex;flex-direction:column;gap:2px}
+.fbody .ffilter{width:100%;margin-bottom:4px;padding:6px 9px;border:1px solid var(--line);border-radius:8px;background:var(--panel-2);outline:none}
+.opt{display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:8px;cursor:pointer;font-size:13px}
+.opt:hover{background:var(--panel-2)}
+.opt input{accent-color:var(--accent);margin:0;flex:none}
+.opt span.lbl{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.opt span.n{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.selchips{display:flex;flex-wrap:wrap;gap:4px;padding:0 12px 10px}
+.chip{font-size:11px;padding:3px 8px;border-radius:999px;background:var(--ink);color:var(--paper);display:inline-flex;align-items:center;gap:5px}
+.chip button{border:0;background:none;color:inherit;cursor:pointer;padding:0;line-height:1;opacity:.7}
+.chip button:hover{opacity:1}
+.toggles{display:flex;flex-direction:column;gap:9px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.tog{display:flex;align-items:center;gap:9px;cursor:pointer;font-size:13px}
+.tog input{position:absolute;opacity:0;pointer-events:none}
+.track{width:34px;height:19px;border-radius:999px;background:var(--line-2);position:relative;transition:background .15s;flex:none}
+.track::after{content:"";position:absolute;top:2px;left:2px;width:15px;height:15px;border-radius:50%;background:var(--panel);transition:transform .15s;box-shadow:0 1px 2px rgba(0,0,0,.3)}
+.tog input:checked+.track{background:var(--accent)}
+.tog input:checked+.track::after{transform:translateX(15px)}
+.tog input:focus-visible+.track{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- study card ---------- */
+.deckbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.count{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.count b{color:var(--ink);font-weight:600}
+.progress{flex:1 1 120px;height:5px;border-radius:999px;background:var(--panel-2);overflow:hidden;min-width:90px}
+.progress i{display:block;height:100%;background:var(--good);width:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.card-top{display:flex;gap:10px;padding:16px 18px 0}
+.qid{font-family:var(--mono);font-size:11px;color:var(--muted);padding-top:4px}
+.acts{margin-left:auto;display:flex;gap:2px}
+.act{border:0;background:none;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;cursor:pointer;color:var(--muted)}
+.act:hover{background:var(--panel-2);color:var(--ink)}
+.act.on{color:var(--accent);background:var(--accent-soft)}
+.act.on.flag{color:var(--warn);background:var(--warn-soft)}
+.act svg{width:16px;height:16px}
+.q{font-family:var(--serif);font-size:21px;line-height:1.4;padding:6px 18px 0;letter-spacing:-.005em}
+@media (max-width:560px){.q{font-size:19px}}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px;padding:14px 18px 0}
+.tag{font-size:11px;padding:3px 9px;border-radius:999px;background:var(--panel-2);color:var(--ink-2);white-space:nowrap}
+.tag.adv{background:var(--warn-soft);color:var(--warn)}
+.tag.firm{font-family:var(--mono);font-size:10.5px}
+.tag.mastered{background:var(--good-soft);color:var(--good)}
+.answer{padding:16px 18px 0}
+.answer .label{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.answer .body{font-size:15.5px;line-height:1.65;color:var(--ink);max-width:68ch;white-space:pre-wrap}
+.origin{margin-top:12px;padding:10px 12px;border-left:2px solid var(--line-2);background:var(--panel-2);border-radius:0 8px 8px 0;font-size:12.5px;color:var(--muted);max-width:68ch}
+.reveal{margin:18px;padding:11px 18px;border:1px solid var(--line-2);border-radius:10px;background:var(--panel);cursor:pointer;font-weight:500;width:calc(100% - 36px)}
+.reveal:hover{border-color:var(--accent);color:var(--accent)}
+.srcs{padding:14px 18px 0;font-size:12.5px;color:var(--muted)}
+.srcs b{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--muted);display:block;margin-bottom:4px}
+.notes{padding:14px 18px 0}
+.notes textarea{width:100%;min-height:74px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);resize:vertical;outline:none;font-size:14px}
+.notes textarea:focus{border-color:var(--accent);background:var(--panel)}
+.footrow{display:flex;align-items:center;gap:8px;padding:16px 18px;margin-top:14px;border-top:1px solid var(--line);flex-wrap:wrap}
+.nav{border:1px solid var(--line-2);background:var(--panel);width:36px;height:36px;border-radius:10px;display:grid;place-items:center;cursor:pointer}
+.nav:hover{border-color:var(--accent);color:var(--accent)}
+.nav:disabled{opacity:.4;cursor:not-allowed}
+.btn{border:1px solid var(--line-2);background:var(--panel);padding:8px 14px;border-radius:10px;cursor:pointer;font-weight:500;font-size:13.5px}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.primary:hover{opacity:.88;color:var(--paper)}
+.btn.good{background:var(--good-soft);color:var(--good);border-color:transparent}
+.spacer{flex:1 1 auto}
+
+/* ---------- browse grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:12px}
+.mini{text-align:left;border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:14px;cursor:pointer;display:flex;flex-direction:column;gap:9px;min-width:0}
+.mini:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.mini .mq{font-family:var(--serif);font-size:14.5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.mini .mt{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto}
+.more{display:grid;place-items:center;padding:18px}
+
+/* ---------- mastery ---------- */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.panel+.panel{margin-top:14px}
+.panel h3{font-size:13px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:12px}
+.stat{padding:13px 15px;border-radius:12px;background:var(--panel-2)}
+.stat .v{font-family:var(--mono);font-size:25px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .k{font-size:12px;color:var(--muted);margin-top:2px}
+.bars{display:flex;flex-direction:column;gap:9px}
+.bar{display:grid;grid-template-columns:minmax(0,1fr) 54px;gap:10px;align-items:center;font-size:13px}
+.bar .name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .meter{grid-column:1/-1;height:6px;border-radius:999px;background:var(--panel-2);overflow:hidden}
+.bar .meter i{display:block;height:100%;background:var(--accent)}
+.bar .num{font-family:var(--mono);font-size:11.5px;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.listrow{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line);cursor:pointer}
+.listrow:first-of-type{border-top:0}
+.listrow:hover .lq{color:var(--accent)}
+.listrow .lid{font-family:var(--mono);font-size:11px;color:var(--muted);flex:none;padding-top:2px}
+.lq{font-size:13.5px;min-width:0}
+.empty{color:var(--muted);font-size:13.5px;padding:8px 0}
+.io{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.io textarea{width:100%;min-height:70px;font-family:var(--mono);font-size:11.5px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);resize:vertical}
+
+/* ---------- misc ---------- */
+.note{color:var(--muted);font-size:12.5px;max-width:72ch;margin-top:20px;line-height:1.6}
+.loading{padding:60px 0;text-align:center;color:var(--muted);font-family:var(--mono);font-size:13px}
+dialog{border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--ink);padding:0;max-width:430px;width:calc(100% - 32px);box-shadow:var(--shadow)}
+dialog::backdrop{background:rgba(10,11,15,.45)}
+.dlg{padding:18px}
+.dlg h3{font-size:15px;margin-bottom:12px;font-family:var(--sans);font-weight:600;letter-spacing:0;text-transform:none;color:var(--ink)}
+.kb{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:13.5px;align-items:center}
+kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border-bottom-width:2px;border-radius:6px;padding:2px 7px;background:var(--panel-2);white-space:nowrap}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><b>Banking Interview Deck</b><span id="brandCount">loading</span></div>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-Technical" aria-selected="true">Technicals</button>
+      <button role="tab" id="tab-Behavioral" aria-selected="false">Behaviorals</button>
+      <button role="tab" id="tab-Mastery" aria-selected="false">Mastery</button>
+    </div>
+    <div class="grow"></div>
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search" type="search" placeholder="Search questions…" autocomplete="off">
+      <button class="clear" id="searchClear" hidden aria-label="Clear search">✕</button>
+    </label>
+    <button class="iconbtn" id="helpBtn" title="Keyboard shortcuts" aria-label="Keyboard shortcuts">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M8 14h8"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="rail" id="rail"></aside>
+  <main id="main"><div class="loading">Loading 3,200+ cards…</div></main>
+</div>
+
+<dialog id="help"><div class="dlg">
+  <h3>Keyboard shortcuts</h3>
+  <div class="kb">
+    <kbd>Space</kbd><span>Show answer / next card</span>
+    <kbd>← →</kbd><span>Previous / next question</span>
+    <kbd>M</kbd><span>Mark mastered (and advance)</span>
+    <kbd>N</kbd><span>Mark unmastered</span>
+    <kbd>B</kbd><span>Bookmark</span>
+    <kbd>F</kbd><span>Flag for review</span>
+    <kbd>S</kbd><span>Reshuffle the deck</span>
+    <kbd>E</kbd><span>Jump to your notes</span>
+    <kbd>/</kbd><span>Search</span>
+    <kbd>?</kbd><span>This dialog</span>
+  </div>
+  <div style="margin-top:16px;text-align:right"><button class="btn" id="helpClose">Close</button></div>
+</div></dialog>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------------- storage ---------------- */
+  var KEY = "ibdeck.v1";
+  var save = {mastered: {}, bookmarked: {}, flagged: {}, notes: {}, seen: {}};
+  try {
+    var raw = localStorage.getItem(KEY);
+    if (raw) {
+      var p = JSON.parse(raw);
+      ["mastered", "bookmarked", "flagged", "notes", "seen"].forEach(function (k) {
+        if (p && p[k] && typeof p[k] === "object") save[k] = p[k];
+      });
+    }
+  } catch (e) {}
+  var saveTimer = null;
+  function persist() {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      try { localStorage.setItem(KEY, JSON.stringify(save)); } catch (e) {}
+    }, 250);
+  }
+
+  /* ---------------- state ---------------- */
+  var FACETS = [
+    {key: "c", id: "collections", name: "Collections"},
+    {key: "f", id: "firms", name: "Firms"},
+    {key: "g", id: "groups", name: "Industry / group"},
+    {key: "tp", id: "topics", name: "Topics"},
+    {key: "d", id: "difficulty", name: "Difficulty"}
+  ];
+  var MASTERY_OPTS = ["Unmastered", "Mastered", "Bookmarked", "Flagged", "Unseen"];
+
+  function blankFilters() {
+    var f = {mastery: []};
+    FACETS.forEach(function (x) { f[x.id] = []; });
+    return f;
+  }
+  var ui = {
+    tab: "Technical",
+    search: "",
+    filters: {Technical: blankFilters(), Behavioral: blankFilters()},
+    cardView: false,
+    shuffled: {Technical: true, Behavioral: true},
+    idx: {Technical: 0, Behavioral: 0},
+    revealed: false,
+    seed: {Technical: 1, Behavioral: 2},
+    gridLimit: 60
+  };
+  try {
+    var u = JSON.parse(localStorage.getItem(KEY + ".ui") || "null");
+    if (u) {
+      if (u.tab) ui.tab = u.tab;
+      if (u.filters) ui.filters = u.filters;
+      if (typeof u.cardView === "boolean") ui.cardView = u.cardView;
+      if (u.shuffled) ui.shuffled = u.shuffled;
+      if (u.idx) ui.idx = u.idx;
+      if (u.seed) ui.seed = u.seed;
+    }
+  } catch (e) {}
+  function persistUI() {
+    try {
+      localStorage.setItem(KEY + ".ui", JSON.stringify({
+        tab: ui.tab, filters: ui.filters, cardView: ui.cardView,
+        shuffled: ui.shuffled, idx: ui.idx, seed: ui.seed
+      }));
+    } catch (e) {}
+  }
+
+  var DATA = null, byId = {};
+  var $ = function (s) { return document.querySelector(s); };
+  var rail = $("#rail"), main = $("#main");
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c];
+    });
+  }
+  function icon(name) {
+    var p = {
+      flag: '<path d="M4 21V4h11l-1 3 1 3H4"/>',
+      book: '<path d="M18 21l-6-4.2L6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/>',
+      check: '<path d="M20 6 9 17l-5-5"/>',
+      pen: '<path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17z"/>',
+      left: '<path d="m15 18-6-6 6-6"/>',
+      right: '<path d="m9 6 6 6-6 6"/>',
+      chev: '<path d="m6 9 6 6 6-6"/>'
+    }[name];
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">' + p + "</svg>";
+  }
+
+  /* ---------------- deck selection ---------------- */
+  function tabCards() {
+    return DATA.cards.filter(function (c) { return c.t === ui.tab; });
+  }
+  function matchesFacets(c, f) {
+    for (var i = 0; i < FACETS.length; i++) {
+      var fa = FACETS[i], sel = f[fa.id];
+      if (!sel.length) continue;
+      var v = c[fa.key];
+      var vals = Array.isArray(v) ? v : [v];
+      var hit = false;
+      for (var j = 0; j < sel.length; j++) if (vals.indexOf(sel[j]) > -1) { hit = true; break; }
+      if (!hit) return false;
+    }
+    if (f.mastery.length) {
+      var ok = f.mastery.some(function (m) {
+        if (m === "Mastered") return !!save.mastered[c.id];
+        if (m === "Unmastered") return !save.mastered[c.id];
+        if (m === "Bookmarked") return !!save.bookmarked[c.id];
+        if (m === "Flagged") return !!save.flagged[c.id];
+        if (m === "Unseen") return !save.seen[c.id];
+        return true;
+      });
+      if (!ok) return false;
+    }
+    return true;
+  }
+  function deck() {
+    var f = ui.filters[ui.tab];
+    var q = ui.search.trim().toLowerCase();
+    var out = tabCards().filter(function (c) {
+      if (!matchesFacets(c, f)) return false;
+      if (q) {
+        var hay = (c.q + " " + c.a + " " + c.f.join(" ") + " " + c.tp + " " + c.id).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+    if (ui.shuffled[ui.tab]) {
+      var seed = ui.seed[ui.tab] || 1;
+      out.forEach(function (c) {
+        var h = seed, s = c.id;
+        for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 2147483647;
+        c.__r = (h * 1103515245 + 12345) % 2147483647;
+      });
+      out.sort(function (a, b) { return a.__r - b.__r; });
+    } else {
+      out.sort(function (a, b) { return a.id < b.id ? -1 : a.id > b.id ? 1 : 0; });
+    }
+    return out;
+  }
+  /* option counts honour every other facet, so the numbers track the live deck */
+  function optionsFor(facet) {
+    var f = ui.filters[ui.tab];
+    var probe = {};
+    FACETS.forEach(function (x) { probe[x.id] = x.id === facet.id ? [] : f[x.id]; });
+    probe.mastery = f.mastery;
+    var counts = {};
+    tabCards().forEach(function (c) {
+      if (!matchesFacets(c, probe)) return;
+      var v = c[facet.key];
+      (Array.isArray(v) ? v : [v]).forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+    });
+    var list = Object.keys(counts).map(function (k) { return [k, counts[k]]; });
+    list.sort(function (a, b) { return b[1] - a[1] || (a[0] < b[0] ? -1 : 1); });
+    f[facet.id].forEach(function (s) {
+      if (!counts[s]) list.unshift([s, 0]);
+    });
+    return list;
+  }
+
+  /* ---------------- filter rail ---------------- */
+  var openGroups = {};
+  function renderRail() {
+    if (ui.tab === "Mastery") { rail.innerHTML = ""; return; }
+    var f = ui.filters[ui.tab];
+    var n = FACETS.reduce(function (a, x) { return a + f[x.id].length; }, 0) + f.mastery.length;
+    var h = '<div class="rail-head"><h2>Filters</h2>' +
+      (n ? '<button class="linkbtn" data-clear-all>Clear all (' + n + ")</button>" : "") + "</div>";
+
+    FACETS.concat([{id: "mastery", name: "Mastery", synthetic: true}]).forEach(function (fa) {
+      var opts = fa.synthetic
+        ? MASTERY_OPTS.map(function (m) { return [m, null]; })
+        : optionsFor(fa);
+      var sel = f[fa.id];
+      var open = !!openGroups[fa.id];
+      h += '<details class="fgroup" data-g="' + fa.id + '"' + (open ? " open" : "") + ">" +
+        '<summary><span class="fname">' + fa.name + "</span>" +
+        '<span class="fsum">' + (sel.length ? sel.length + " selected" : opts.length) + "</span>" +
+        '<span class="chev">' + icon("chev") + "</span></summary>" +
+        '<div class="fbody">';
+      if (opts.length > 12) h += '<input class="ffilter" type="text" placeholder="Filter ' + fa.name.toLowerCase() + '…" data-of="' + fa.id + '">';
+      opts.forEach(function (o) {
+        h += '<label class="opt"><input type="checkbox" data-f="' + fa.id + '" value="' + esc(o[0]) + '"' +
+          (sel.indexOf(o[0]) > -1 ? " checked" : "") + '><span class="lbl" title="' + esc(o[0]) + '">' + esc(o[0]) + "</span>" +
+          (o[1] === null ? "" : '<span class="n">' + o[1] + "</span>") + "</label>";
+      });
+      h += "</div>";
+      if (sel.length) {
+        h += '<div class="selchips">' + sel.map(function (s) {
+          return '<span class="chip">' + esc(s) + '<button data-rm="' + fa.id + '" data-v="' + esc(s) + '" aria-label="Remove ' + esc(s) + '">✕</button></span>';
+        }).join("") + "</div>";
+      }
+      h += "</details>";
+    });
+
+    h += '<div class="toggles">' +
+      '<label class="tog"><input type="checkbox" id="togCard"' + (ui.cardView ? " checked" : "") + '><span class="track"></span>Browse all as cards</label>' +
+      '<label class="tog"><input type="checkbox" id="togSort"' + (!ui.shuffled[ui.tab] ? " checked" : "") + '><span class="track"></span>Sorted (not shuffled)</label>' +
+      "</div>";
+    rail.innerHTML = h;
+  }
+
+  rail.addEventListener("toggle", function (e) {
+    var d = e.target.closest("details[data-g]");
+    if (d) openGroups[d.dataset.g] = d.open;
+  }, true);
+
+  rail.addEventListener("change", function (e) {
+    var t = e.target;
+    if (t.dataset.f) {
+      var arr = ui.filters[ui.tab][t.dataset.f];
+      var i = arr.indexOf(t.value);
+      if (t.checked && i === -1) arr.push(t.value);
+      if (!t.checked && i > -1) arr.splice(i, 1);
+      ui.idx[ui.tab] = 0; ui.revealed = false; ui.gridLimit = 60;
+      persistUI(); render();
+    } else if (t.id === "togCard") {
+      ui.cardView = t.checked; ui.gridLimit = 60; persistUI(); render();
+    } else if (t.id === "togSort") {
+      ui.shuffled[ui.tab] = !t.checked; ui.idx[ui.tab] = 0; persistUI(); render();
+    }
+  });
+
+  rail.addEventListener("input", function (e) {
+    if (!e.target.dataset.of) return;
+    var q = e.target.value.toLowerCase();
+    e.target.parentNode.querySelectorAll(".opt").forEach(function (o) {
+      o.hidden = o.textContent.toLowerCase().indexOf(q) === -1;
+    });
+  });
+
+  rail.addEventListener("click", function (e) {
+    var rm = e.target.closest("[data-rm]");
+    if (rm) {
+      var arr = ui.filters[ui.tab][rm.dataset.rm];
+      var i = arr.indexOf(rm.dataset.v);
+      if (i > -1) arr.splice(i, 1);
+      ui.idx[ui.tab] = 0; persistUI(); render(); return;
+    }
+    if (e.target.closest("[data-clear-all]")) {
+      ui.filters[ui.tab] = blankFilters();
+      ui.idx[ui.tab] = 0; persistUI(); render();
+    }
+  });
+
+  /* ---------------- study view ---------------- */
+  function tagsHTML(c, withFirms) {
+    var t = '<span class="tag">' + esc(c.c[0]) + "</span>" +
+      '<span class="tag">' + esc(c.tp) + "</span>" +
+      '<span class="tag' + (c.d === "Advanced" ? " adv" : "") + '">' + c.d + "</span>";
+    c.g.slice(0, withFirms ? 2 : 1).forEach(function (g) { t += '<span class="tag">' + esc(g) + "</span>"; });
+    if (withFirms) {
+      c.f.slice(0, 3).forEach(function (f) { t += '<span class="tag firm">' + esc(f) + "</span>"; });
+      if (c.f.length > 3) t += '<span class="tag firm">+' + (c.f.length - 3) + "</span>";
+    }
+    if (save.mastered[c.id]) t += '<span class="tag mastered">Mastered</span>';
+    return t;
+  }
+
+  function renderStudy(d) {
+    var total = d.length;
+    if (!total) {
+      main.innerHTML = '<div class="panel"><h3>No cards match</h3><div class="empty">Loosen a filter or clear the search to bring cards back.</div>' +
+        '<div style="margin-top:12px"><button class="btn" data-act="clearall">Clear filters</button></div></div>';
+      return;
+    }
+    var i = Math.min(Math.max(ui.idx[ui.tab], 0), total - 1);
+    ui.idx[ui.tab] = i;
+    var c = d[i];
+    save.seen[c.id] = 1; persist();
+    var mastered = Object.keys(save.mastered).length;
+    var deckMastered = d.filter(function (x) { return save.mastered[x.id]; }).length;
+
+    var h = '<div class="deckbar">' +
+      '<span class="count">Question <b>' + (i + 1) + "</b> of <b>" + total + "</b></span>" +
+      '<span class="progress"><i style="width:' + (total ? (deckMastered / total * 100).toFixed(1) : 0) + '%"></i></span>' +
+      '<span class="count">' + deckMastered + " mastered in this deck · " + mastered + " overall</span></div>";
+
+    h += '<article class="card">' +
+      '<div class="card-top"><span class="qid">' + c.id + "</span>" +
+      '<div class="acts">' +
+      '<button class="act flag' + (save.flagged[c.id] ? " on" : "") + '" data-act="flag" title="Flag for review (F)">' + icon("flag") + "</button>" +
+      '<button class="act' + (save.bookmarked[c.id] ? " on" : "") + '" data-act="book" title="Bookmark (B)">' + icon("book") + "</button>" +
+      '<button class="act' + (save.mastered[c.id] ? " on" : "") + '" data-act="master" title="Mastered (M)">' + icon("check") + "</button>" +
+      '<button class="act' + (save.notes[c.id] ? " on" : "") + '" data-act="note" title="Your notes (E)">' + icon("pen") + "</button>" +
+      "</div></div>" +
+      '<h2 class="q">' + esc(c.q) + "</h2>" +
+      '<div class="tagrow">' + tagsHTML(c, true) + "</div>";
+
+    if (ui.revealed) {
+      h += '<div class="answer"><div class="label">' +
+        (c.t === "Behavioral" ? "How to answer" : "Answer") + "</div>" +
+        '<div class="body">' + esc(c.a) + "</div>";
+      if (c.nt && c.nt.length) h += '<div class="body" style="margin-top:12px">' + esc(c.nt.join(" ")) + "</div>";
+      h += '<div class="origin">' + esc(c.ao) + "</div></div>";
+      if (c.sr && c.sr.length) {
+        h += '<div class="srcs"><b>Reported by</b>' + esc(c.sr.join(" · ")) + "</div>";
+      }
+      h += '<div class="notes"><textarea id="noteBox" placeholder="Your own answer, numbers or story for this card…">' +
+        esc(save.notes[c.id] || "") + "</textarea></div>";
+    } else {
+      h += '<button class="reveal" data-act="reveal">Show answer</button>';
+    }
+
+    h += '<div class="footrow">' +
+      '<button class="nav" data-act="prev"' + (i === 0 ? " disabled" : "") + ' aria-label="Previous">' + icon("left") + "</button>" +
+      '<button class="nav" data-act="next"' + (i === total - 1 ? " disabled" : "") + ' aria-label="Next">' + icon("right") + "</button>" +
+      '<span class="spacer"></span>' +
+      (ui.revealed
+        ? '<button class="btn" data-act="again">Needs work</button><button class="btn good" data-act="gotit">Got it · M</button>'
+        : '<button class="btn primary" data-act="reveal">Show answer · Space</button>') +
+      "</div></article>";
+
+    h += '<p class="note">Topic, difficulty, industry and firm tags are derived automatically from each question and its reported source — useful for filtering, not an official taxonomy. ' +
+      "Firm labels show where a question was reported in the source material; the answers are prepared study answers, not answers supplied or endorsed by those firms.</p>";
+    main.innerHTML = h;
+  }
+
+  function renderGrid(d) {
+    var shown = d.slice(0, ui.gridLimit);
+    var h = '<div class="deckbar"><span class="count"><b>' + d.length + '</b> cards match</span></div><div class="grid">';
+    shown.forEach(function (c, n) {
+      h += '<button class="mini" data-open="' + n + '"><span class="qid">' + c.id +
+        (save.mastered[c.id] ? " · mastered" : "") + '</span><span class="mq">' + esc(c.q) + "</span>" +
+        '<span class="mt">' + tagsHTML(c, false) + "</span></button>";
+    });
+    h += "</div>";
+    if (d.length > shown.length) h += '<div class="more"><button class="btn" data-act="more">Show ' + Math.min(60, d.length - shown.length) + " more</button></div>";
+    main.innerHTML = h;
+  }
+
+  /* ---------------- mastery view ---------------- */
+  function renderMastery() {
+    var all = DATA.cards;
+    var mastered = all.filter(function (c) { return save.mastered[c.id]; });
+    var seen = all.filter(function (c) { return save.seen[c.id]; });
+    var book = all.filter(function (c) { return save.bookmarked[c.id]; });
+    var flag = all.filter(function (c) { return save.flagged[c.id]; });
+    var noted = all.filter(function (c) { return save.notes[c.id]; });
+
+    function group(key) {
+      var m = {};
+      all.forEach(function (c) {
+        var vals = Array.isArray(c[key]) ? c[key] : [c[key]];
+        vals.forEach(function (v) {
+          m[v] = m[v] || [0, 0];
+          m[v][1]++;
+          if (save.mastered[c.id]) m[v][0]++;
+        });
+      });
+      return Object.keys(m).map(function (k) { return [k, m[k][0], m[k][1]]; })
+        .sort(function (a, b) { return b[2] - a[2]; });
+    }
+    function bars(rows, limit) {
+      return '<div class="bars">' + rows.slice(0, limit).map(function (r) {
+        var pct = r[2] ? r[1] / r[2] * 100 : 0;
+        return '<div class="bar"><span class="name">' + esc(r[0]) + '</span><span class="num">' + r[1] + "/" + r[2] +
+          '</span><span class="meter"><i style="width:' + pct.toFixed(1) + '%"></i></span></div>';
+      }).join("") + "</div>";
+    }
+    function list(cards, empty) {
+      if (!cards.length) return '<div class="empty">' + empty + "</div>";
+      return cards.slice(0, 40).map(function (c) {
+        return '<div class="listrow" data-jump="' + c.id + '"><span class="lid">' + c.id + '</span><span class="lq">' + esc(c.q) + "</span></div>";
+      }).join("") + (cards.length > 40 ? '<div class="empty">+ ' + (cards.length - 40) + " more</div>" : "");
+    }
+
+    var h = '<div class="panel"><h3>Progress</h3><div class="stats">' +
+      '<div class="stat"><div class="v">' + mastered.length + '</div><div class="k">Mastered of ' + all.length + "</div></div>" +
+      '<div class="stat"><div class="v">' + (all.length ? (mastered.length / all.length * 100).toFixed(1) : 0) + '%</div><div class="k">Deck complete</div></div>' +
+      '<div class="stat"><div class="v">' + seen.length + '</div><div class="k">Cards seen</div></div>' +
+      '<div class="stat"><div class="v">' + book.length + '</div><div class="k">Bookmarked</div></div>' +
+      '<div class="stat"><div class="v">' + flag.length + '</div><div class="k">Flagged</div></div>' +
+      '<div class="stat"><div class="v">' + noted.length + '</div><div class="k">With your notes</div></div>' +
+      "</div></div>";
+
+    h += '<div class="panel"><h3>By topic</h3>' + bars(group("tp"), 30) + "</div>";
+    h += '<div class="panel"><h3>By industry / group</h3>' + bars(group("g"), 20) + "</div>";
+    h += '<div class="panel"><h3>By firm</h3>' + bars(group("f"), 25) + "</div>";
+    h += '<div class="panel"><h3>Flagged for review</h3>' + list(flag, "Nothing flagged yet. Press F on a card you want to come back to.") + "</div>";
+    h += '<div class="panel"><h3>Bookmarked</h3>' + list(book, "No bookmarks yet. Press B to save a card here.") + "</div>";
+    h += '<div class="panel"><h3>Your progress data</h3>' +
+      '<div class="io"><button class="btn" data-act="copyprog">Copy progress</button>' +
+      '<button class="btn" data-act="showimport">Restore from a copy</button>' +
+      '<button class="btn" data-act="reset">Reset all progress</button>' +
+      '<span class="count" id="ioMsg"></span></div>' +
+      '<div id="importWrap" hidden style="margin-top:10px"><textarea id="importBox" placeholder="Paste progress JSON here"></textarea>' +
+      '<div style="margin-top:8px"><button class="btn primary" data-act="doimport">Restore</button></div></div>' +
+      '<p class="note">Progress lives in this browser only — it is not synced between devices and clearing site data erases it. Copy it out before switching browsers.</p></div>';
+    main.innerHTML = h;
+  }
+
+  /* ---------------- actions ---------------- */
+  function current() {
+    var d = deck();
+    return d[Math.min(ui.idx[ui.tab], d.length - 1)];
+  }
+  function toggle(map, id) {
+    if (map[id]) delete map[id]; else map[id] = 1;
+    persist();
+  }
+  function go(n) {
+    var d = deck();
+    var i = ui.idx[ui.tab] + n;
+    if (i < 0 || i > d.length - 1) return;
+    ui.idx[ui.tab] = i; ui.revealed = false; persistUI(); render();
+  }
+
+  main.addEventListener("click", function (e) {
+    var jump = e.target.closest("[data-jump]");
+    if (jump) {
+      var c = byId[jump.dataset.jump];
+      if (!c) return;
+      ui.tab = c.t; ui.cardView = false; ui.search = ""; $("#search").value = "";
+      ui.filters[ui.tab] = blankFilters();
+      ui.shuffled[ui.tab] = false;
+      var d = deck();
+      ui.idx[ui.tab] = Math.max(0, d.findIndex(function (x) { return x.id === c.id; }));
+      ui.revealed = false; persistUI(); render();
+      window.scrollTo({top: 0, behavior: "smooth"});
+      return;
+    }
+    var open = e.target.closest("[data-open]");
+    if (open) {
+      ui.idx[ui.tab] = +open.dataset.open; ui.cardView = false; ui.revealed = false;
+      persistUI(); render(); window.scrollTo({top: 0, behavior: "smooth"});
+      return;
+    }
+    var b = e.target.closest("[data-act]");
+    if (!b) return;
+    var a = b.dataset.act, c2 = current();
+    if (a === "reveal") { ui.revealed = true; render(); }
+    else if (a === "prev") go(-1);
+    else if (a === "next") go(1);
+    else if (a === "flag" && c2) { toggle(save.flagged, c2.id); render(); }
+    else if (a === "book" && c2) { toggle(save.bookmarked, c2.id); render(); }
+    else if (a === "master" && c2) { toggle(save.mastered, c2.id); render(); }
+    else if (a === "note" && c2) { ui.revealed = true; render(); var n = $("#noteBox"); if (n) n.focus(); }
+    else if (a === "gotit" && c2) { save.mastered[c2.id] = 1; persist(); go(1); }
+    else if (a === "again" && c2) { delete save.mastered[c2.id]; save.flagged[c2.id] = 1; persist(); go(1); }
+    else if (a === "more") { ui.gridLimit += 60; render(); }
+    else if (a === "clearall") { ui.filters[ui.tab] = blankFilters(); ui.search = ""; $("#search").value = ""; persistUI(); render(); }
+    else if (a === "reset") {
+      if (b.dataset.armed) {
+        save = {mastered: {}, bookmarked: {}, flagged: {}, notes: {}, seen: {}};
+        persist(); render();
+      } else { b.dataset.armed = "1"; b.textContent = "Tap again to erase everything"; }
+    }
+    else if (a === "copyprog") {
+      var txt = JSON.stringify(save);
+      var msg = $("#ioMsg");
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(function () { msg.textContent = "Copied to clipboard."; },
+          function () { showImport(txt); msg.textContent = "Copy failed — select the text below."; });
+      } else { showImport(txt); msg.textContent = "Select the text below to copy."; }
+    }
+    else if (a === "showimport") { showImport(""); }
+    else if (a === "doimport") {
+      try {
+        var p = JSON.parse($("#importBox").value);
+        ["mastered", "bookmarked", "flagged", "notes", "seen"].forEach(function (k) {
+          if (p[k] && typeof p[k] === "object") save[k] = p[k];
+        });
+        persist(); render();
+      } catch (err) { $("#ioMsg").textContent = "That is not valid progress JSON."; }
+    }
+  });
+  function showImport(v) {
+    var w = $("#importWrap");
+    if (!w) return;
+    w.hidden = false;
+    $("#importBox").value = v;
+    $("#importBox").select();
+  }
+
+  main.addEventListener("input", function (e) {
+    if (e.target.id !== "noteBox") return;
+    var c = current();
+    if (!c) return;
+    if (e.target.value.trim()) save.notes[c.id] = e.target.value; else delete save.notes[c.id];
+    persist();
+  });
+
+  /* ---------------- chrome ---------------- */
+  document.querySelectorAll('[role="tab"]').forEach(function (t) {
+    t.addEventListener("click", function () {
+      ui.tab = t.id.replace("tab-", "");
+      ui.revealed = false; ui.gridLimit = 60; persistUI(); render();
+    });
+  });
+  var si = $("#search");
+  si.addEventListener("input", function () {
+    ui.search = si.value;
+    $("#searchClear").hidden = !si.value;
+    ui.idx[ui.tab] = 0; ui.gridLimit = 60; render();
+  });
+  $("#searchClear").addEventListener("click", function () {
+    si.value = ""; ui.search = ""; $("#searchClear").hidden = true; render(); si.focus();
+  });
+  $("#helpBtn").addEventListener("click", function () { $("#help").showModal(); });
+  $("#helpClose").addEventListener("click", function () { $("#help").close(); });
+
+  document.addEventListener("keydown", function (e) {
+    var tag = (e.target.tagName || "").toLowerCase();
+    var typing = tag === "input" || tag === "textarea";
+    if (e.key === "/" && !typing) { e.preventDefault(); si.focus(); return; }
+    if (e.key === "?" && !typing) { e.preventDefault(); $("#help").showModal(); return; }
+    if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (ui.tab === "Mastery" || ui.cardView) return;
+    var c = current();
+    if (e.key === " " || e.key === "Enter") {
+      e.preventDefault();
+      if (!ui.revealed) { ui.revealed = true; render(); } else go(1);
+    } else if (e.key === "ArrowRight" || e.key.toLowerCase() === "j") { e.preventDefault(); go(1); }
+    else if (e.key === "ArrowLeft" || e.key.toLowerCase() === "k") { e.preventDefault(); go(-1); }
+    else if (!c) return;
+    else if (e.key.toLowerCase() === "m") { save.mastered[c.id] = 1; persist(); go(1); }
+    else if (e.key.toLowerCase() === "n") { delete save.mastered[c.id]; persist(); render(); }
+    else if (e.key.toLowerCase() === "b") { toggle(save.bookmarked, c.id); render(); }
+    else if (e.key.toLowerCase() === "f") { toggle(save.flagged, c.id); render(); }
+    else if (e.key.toLowerCase() === "s") {
+      ui.seed[ui.tab] = Math.floor(Math.random() * 2e9) + 1;
+      ui.shuffled[ui.tab] = true; ui.idx[ui.tab] = 0; ui.revealed = false; persistUI(); render();
+    } else if (e.key.toLowerCase() === "e") {
+      ui.revealed = true; render();
+      var nb = $("#noteBox"); if (nb) { nb.focus(); nb.setSelectionRange(nb.value.length, nb.value.length); }
+    }
+  });
+
+  /* ---------------- render ---------------- */
+  function render() {
+    document.querySelectorAll('[role="tab"]').forEach(function (t) {
+      t.setAttribute("aria-selected", t.id === "tab-" + ui.tab ? "true" : "false");
+    });
+    renderRail();
+    if (ui.tab === "Mastery") renderMastery();
+    else {
+      var d = deck();
+      if (ui.cardView) renderGrid(d); else renderStudy(d);
+    }
+  }
+
+  function boot(data) {
+    DATA = data;
+    data.cards.forEach(function (c) { byId[c.id] = c; });
+    $("#brandCount").textContent = data.meta.technical.toLocaleString() + " technical · " +
+      data.meta.behavioral.toLocaleString() + " behavioral";
+    render();
+  }
+
+  function loadLocalScript(done, fail) {
+    var s = document.createElement("script");
+    s.src = "data.js";
+    s.onload = function () { window.DECK ? done(window.DECK) : fail(); };
+    s.onerror = fail;
+    document.body.appendChild(s);
+  }
+
+  if (window.DECK) boot(window.DECK);
+  else if (location.protocol === "file:") {
+    // opened straight from disk: fetch() is blocked, so pull the deck in as a script
+    loadLocalScript(boot, function () {
+      main.innerHTML = '<div class="panel"><h3>Cards could not load</h3><div class="empty">' +
+        "data.js is missing from this folder. Re-run <code>python3 build_data.py</code> next to index.html.</div></div>";
+    });
+  } else {
+    fetch("data.json").then(function (r) { return r.json(); }).then(boot).catch(function () {
+      main.innerHTML = '<div class="panel"><h3>Cards could not load</h3><div class="empty">' +
+        "data.json did not load. If you opened this file directly from disk, serve the folder instead: " +
+        "<code>python3 -m http.server</code> in the flashcards folder, then open http://localhost:8000.</div></div>";
+    });
+  }
+})();
+</script>
