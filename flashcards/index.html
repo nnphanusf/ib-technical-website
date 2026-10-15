@@ -180,6 +180,8 @@ a{color:var(--accent)}
 .listrow:hover .lq{color:var(--accent)}
 .listrow .lid{font-family:var(--mono);font-size:11px;color:var(--muted);flex:none;padding-top:2px}
 .lq{font-size:13.5px;min-width:0}
+.yournote{display:block;color:var(--muted);font-size:12.5px;margin-top:3px;white-space:pre-wrap}
+.bar .sub{display:block;font-size:11.5px;color:var(--muted);font-weight:400}
 .empty{color:var(--muted);font-size:13.5px;padding:8px 0}
 .io{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .io textarea{width:100%;min-height:70px;font-family:var(--mono);font-size:11.5px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);resize:vertical}
@@ -223,6 +225,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       <button role="tab" id="tab-Technical" aria-selected="true">Technicals</button>
       <button role="tab" id="tab-Behavioral" aria-selected="false">Behaviorals</button>
       <button role="tab" id="tab-Mastery" aria-selected="false">Mastery</button>
+      <button role="tab" id="tab-Class" aria-selected="false" hidden>Class</button>
     </div>
     <div class="grow"></div>
     <label class="search">
@@ -248,9 +251,10 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     <span class="kitty" aria-hidden="true"><svg viewBox="0 0 54 40"><path d="M9 15 11 4.5 21.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><path d="M45 15 43 4.5 32.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><ellipse cx="27" cy="23" rx="18" ry="14" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2"/><path d="M3 17 12.5 20M2.5 23.5H12M3 30 12.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><path d="M51 17 41.5 20M51.5 23.5H42M51 30 41.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="20" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="34" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="27" cy="26.5" rx="2.6" ry="1.9" fill="var(--accent)"/><path d="M41 10 35.5 6 35.5 14.5Z" fill="var(--accent)"/><path d="M41 10 46.5 6 46.5 14.5Z" fill="var(--accent)"/><circle cx="41" cy="10.2" r="2.6" fill="var(--accent)" stroke="var(--panel)" stroke-width="1.2"/></svg></span>
     <h2>Banking Interview Deck</h2>
     <p id="gateMsg">Sign in to pick up where you left off.</p>
-    <input id="gateUser" type="text" placeholder="Your name" aria-label="Your name" autocomplete="username" autocapitalize="words">
+    <input id="gateName" type="text" placeholder="Your name" aria-label="Your name" autocomplete="name" autocapitalize="words" hidden>
+    <input id="gateUser" type="email" placeholder="Email" aria-label="Email" autocomplete="username" inputmode="email">
     <input id="gatePw" type="password" placeholder="Password" aria-label="Password" autocomplete="current-password">
-    <input id="gateClass" type="password" placeholder="Class password" aria-label="Class password" autocomplete="off" hidden>
+    <input id="gateClass" type="password" placeholder="Registration code" aria-label="Registration code" autocomplete="off" hidden>
     <button class="btn primary" type="submit" id="gateGo">Sign in</button>
     <span class="gateerr" id="gateErr" hidden></span>
     <button type="button" class="linkbtn" id="gateSwitch">New here? Create a profile</button>
@@ -290,18 +294,28 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   function loadSave() {
     save = blankSave();
     if (!user) return;
-    try {
-      var p = JSON.parse(localStorage.getItem(profileKey("save")) || "null");
-      ["mastered", "bookmarked", "flagged", "notes", "seen"].forEach(function (k) {
-        if (p && p[k] && typeof p[k] === "object") save[k] = p[k];
-      });
-    } catch (e) {}
+    var p = null;
+    try { p = JSON.parse(localStorage.getItem(profileKey("save")) || "null"); } catch (e) {}
+    /* progress saved before profiles existed moves into the first profile that asks for it */
+    if (!p) {
+      try {
+        if (!localStorage.getItem(KEY + ".adopted")) {
+          var legacy = JSON.parse(localStorage.getItem(KEY) || "null");
+          if (legacy) { p = legacy; localStorage.setItem(KEY + ".adopted", user); }
+        }
+      } catch (e) {}
+    }
+    ["mastered", "bookmarked", "flagged", "notes", "seen"].forEach(function (k) {
+      if (p && p[k] && typeof p[k] === "object") save[k] = p[k];
+    });
+    if (p) persist();
   }
   var saveTimer = null;
   function persist() {
     if (!user) return;
     clearTimeout(saveTimer);
     saveTimer = setTimeout(function () {
+      save.ts = Date.now();
       try { localStorage.setItem(profileKey("save"), JSON.stringify(save)); } catch (e) {}
     }, 250);
   }
@@ -414,12 +428,14 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
      Profiles live in this browser's storage: they keep students on a shared
      computer out of each other's progress. It is not server-side security. */
   var gate = $("#gate"), gateForm = $("#gateForm"), gateMsg = $("#gateMsg"),
-      gateUser = $("#gateUser"), gatePw = $("#gatePw"), gateClass = $("#gateClass"),
+      gateName = $("#gateName"), gateUser = $("#gateUser"), gatePw = $("#gatePw"), gateClass = $("#gateClass"),
       gateGo = $("#gateGo"), gateErr = $("#gateErr"), gateSwitch = $("#gateSwitch"),
       whoBtn = $("#whoBtn"), whoName = $("#whoName");
   var ACC_KEY = KEY + ".accounts", LAST_KEY = KEY + ".last";
-  var CLASS_PW = "13g350k";
+  var JOIN_CODE = "13g350k";     /* registers a student profile */
+  var TEACHER_CODE = "n6um04";  /* registers a profile that can see the class */
   var mode = "signin";
+  var role = "student";
 
   function pwHash(v) {
     var h = 5381;
@@ -445,21 +461,25 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     mode = m;
     var creating = m === "create";
     gateMsg.textContent = creating
-      ? "Pick a name and a password. The class password is needed once, to create the profile."
-      : "Sign in to pick up where you left off.";
+      ? "Register with your name, email and a password. The registration code is needed once."
+      : "Sign in with your email to pick up where you left off.";
+    gateName.hidden = !creating;
     gateClass.hidden = !creating;
-    gateGo.textContent = creating ? "Create profile" : "Sign in";
-    gateSwitch.textContent = creating ? "Already have a profile? Sign in" : "New here? Create a profile";
+    gateGo.textContent = creating ? "Register" : "Sign in";
+    gateSwitch.textContent = creating ? "Already registered? Sign in" : "New here? Register";
     gatePw.setAttribute("autocomplete", creating ? "new-password" : "current-password");
     gateErr.hidden = true;
   }
-  function signIn(key, display) {
+  function signIn(key, display, r) {
     user = key;
+    role = r || "student";
     try { localStorage.setItem(LAST_KEY, key); } catch (e) {}
     loadSave();
     loadUI();
-    whoName.textContent = display;
+    whoName.textContent = display + (role === "teacher" ? " · teacher" : "");
     whoBtn.hidden = false;
+    $("#tab-Class").hidden = role !== "teacher";
+    if (role !== "teacher" && ui.tab === "Class") ui.tab = "Technical";
     gate.hidden = true;
     gatePw.value = "";
     gateClass.value = "";
@@ -469,8 +489,10 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     persist();
     persistUI();
     user = null;
+    role = "student";
     save = blankSave();
     whoBtn.hidden = true;
+    $("#tab-Class").hidden = true;
     gate.hidden = false;
     setMode("signin");
     main.innerHTML = "";
@@ -482,28 +504,33 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 
   gateForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    var name = gateUser.value.trim().replace(/\s+/g, " ");
+    var email = gateUser.value.trim();
+    var key = email.toLowerCase();
     var pw = gatePw.value;
-    var key = name.toLowerCase();
-    if (!name) return fail("Type the name you want to study under.");
+    if (!email) return fail("Type your email address.");
     if (mode === "create") {
-      if (pwHash(gateClass.value.trim()) !== CLASS_PW) return fail("That class password is not right.");
+      var name = gateName.value.trim().replace(/\s+/g, " ");
+      var code = pwHash(gateClass.value.trim());
+      var asTeacher = code === TEACHER_CODE;
+      if (!name) return fail("Type the name you want to study under.");
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return fail("That does not look like an email address.");
+      if (!asTeacher && code !== JOIN_CODE) return fail("That registration code is not right.");
       if (pw.length < 4) return fail("Use a password of at least 4 characters.");
-      if (accounts()[key]) return fail("Someone already uses that name here — sign in instead.");
-      putAccount(key, {h: pwHash(pw), n: name});
-      signIn(key, name);
+      if (accounts()[key]) return fail("That email is already registered here — sign in instead.");
+      putAccount(key, {h: pwHash(pw), n: name, e: email, r: asTeacher ? "teacher" : "student", c: Date.now()});
+      signIn(key, name, asTeacher ? "teacher" : "student");
       return;
     }
     var acc = accounts()[key];
-    if (!acc) return fail("No profile with that name in this browser. Create one first.");
+    if (!acc) return fail("No profile with that email in this browser. Register first.");
     if (acc.h !== pwHash(pw)) return fail("That password does not match.");
-    signIn(key, acc.n || name);
+    signIn(key, acc.n || acc.e || email, acc.r);
   });
 
   setMode("signin");
   try {
     var last = localStorage.getItem(LAST_KEY);
-    if (last && accounts()[last]) gateUser.value = accounts()[last].n || last;
+    if (last && accounts()[last]) gateUser.value = accounts()[last].e || last;
   } catch (e) {}
   setTimeout(function () { (gateUser.value ? gatePw : gateUser).focus(); }, 60);
 
@@ -581,7 +608,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   /* ---------------- filter rail ---------------- */
   var openGroups = {};
   function renderRail() {
-    if (ui.tab === "Mastery") { rail.innerHTML = ""; return; }
+    if (ui.tab === "Mastery" || ui.tab === "Class") { rail.innerHTML = ""; return; }
     var f = ui.filters[ui.tab];
     var n = FACETS.reduce(function (a, x) { return a + f[x.id].length; }, 0) + f.mastery.length;
     var h = '<div class="rail-head"><h2>Filters</h2>' +
@@ -800,6 +827,15 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     h += '<div class="panel"><h3>By topic</h3>' + bars(group("tp"), 30) + "</div>";
     h += '<div class="panel"><h3>By industry / group</h3>' + bars(group("g"), 20) + "</div>";
     h += '<div class="panel"><h3>By firm</h3>' + bars(group("f"), 25) + "</div>";
+    if (noted.length) {
+      h += '<div class="panel"><h3>Your notes</h3>' + noted.slice(0, 40).map(function (c) {
+        return '<div class="listrow" data-jump="' + c.id + '"><span class="lid">' + c.id +
+          '</span><span class="lq">' + esc(c.q) +
+          '<span class="yournote">' + esc(save.notes[c.id]) + "</span></span></div>";
+      }).join("") + (noted.length > 40 ? '<div class="empty">+ ' + (noted.length - 40) + " more</div>" : "") + "</div>";
+    } else {
+      h += '<div class="panel"><h3>Your notes</h3><div class="empty">Nothing written yet. Reveal a card\'s answer and type in the box under it — notes save as you type and come back when you return to that card.</div></div>';
+    }
     h += '<div class="panel"><h3>Flagged for review</h3>' + list(flag, "Nothing flagged yet. Press F on a card you want to come back to.") + "</div>";
     h += '<div class="panel"><h3>Bookmarked</h3>' + list(book, "No bookmarks yet. Press B to save a card here.") + "</div>";
     h += '<div class="panel"><h3>Your progress data</h3>' +
@@ -810,6 +846,88 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       '<div id="importWrap" hidden style="margin-top:10px"><textarea id="importBox" placeholder="Paste progress JSON here"></textarea>' +
       '<div style="margin-top:8px"><button class="btn primary" data-act="doimport">Restore</button></div></div>' +
       '<p class="note">Each profile on this browser keeps its own progress, and it stays in this browser — it does not follow you to another device, and clearing site data erases it. Copy it out before switching browsers.</p></div>';
+    main.innerHTML = h;
+  }
+
+  /* ---------------- class view (teacher) ---------------- */
+  function profileStats() {
+    var accs = accounts();
+    return Object.keys(accs).map(function (k) {
+      var rec = accs[k], st = null;
+      try { st = JSON.parse(localStorage.getItem(KEY + ".u." + k + ".save") || "null"); } catch (e) {}
+      st = st || {};
+      return {
+        key: k,
+        name: rec.n || k,
+        email: rec.e || "—",
+        role: rec.r || "student",
+        mastered: Object.keys(st.mastered || {}).length,
+        seen: Object.keys(st.seen || {}).length,
+        flagged: Object.keys(st.flagged || {}).length,
+        notes: Object.keys(st.notes || {}).length,
+        flags: st.flagged || {},
+        ts: st.ts || rec.c || 0
+      };
+    }).sort(function (a, b) { return b.mastered - a.mastered; });
+  }
+
+  function renderClass() {
+    if (role !== "teacher") {
+      main.innerHTML = '<div class="panel"><h3>Class</h3><div class="empty">This view is for teacher profiles.</div></div>';
+      return;
+    }
+    var rows = profileStats();
+    var students = rows.filter(function (r) { return r.role !== "teacher"; });
+    var total = DATA.cards.length;
+    var sumMastered = students.reduce(function (a, r) { return a + r.mastered; }, 0);
+    var avg = students.length ? sumMastered / students.length / total * 100 : 0;
+
+    var h = '<div class="panel"><h3>Class summary</h3><div class="stats">' +
+      '<div class="stat"><div class="v">' + students.length + '</div><div class="k">Students on this browser</div></div>' +
+      '<div class="stat"><div class="v">' + avg.toFixed(1) + '%</div><div class="k">Average completion</div></div>' +
+      '<div class="stat"><div class="v">' + sumMastered + '</div><div class="k">Cards mastered in total</div></div>' +
+      '<div class="stat"><div class="v">' + students.reduce(function (a, r) { return a + r.flagged; }, 0) +
+      '</div><div class="k">Cards flagged</div></div></div></div>';
+
+    h += '<div class="panel"><h3>Students</h3>';
+    if (!students.length) {
+      h += '<div class="empty">No student profiles have been registered in this browser yet.</div>';
+    } else {
+      h += '<div class="bars">' + students.map(function (r) {
+        var pct = r.mastered / total * 100;
+        return '<div class="bar"><span class="name">' + esc(r.name) +
+          '<span class="sub">' + esc(r.email) + ' · ' + r.seen + ' seen · ' + r.flagged +
+          ' flagged · ' + r.notes + ' notes' + (r.ts ? ' · last studied ' + new Date(r.ts).toLocaleDateString() : "") +
+          '</span></span><span class="num">' + r.mastered + "/" + total +
+          '</span><span class="meter"><i style="width:' + pct.toFixed(2) + '%"></i></span></div>';
+      }).join("") + "</div>";
+    }
+    h += "</div>";
+
+    /* what the class as a whole is struggling with */
+    var topicFlags = {};
+    students.forEach(function (r) {
+      Object.keys(r.flags).forEach(function (id) {
+        var c = byId[id];
+        if (c) topicFlags[c.tp] = (topicFlags[c.tp] || 0) + 1;
+      });
+    });
+    var hard = Object.keys(topicFlags).map(function (k) { return [k, topicFlags[k]]; })
+      .sort(function (a, b) { return b[1] - a[1]; }).slice(0, 8);
+    h += '<div class="panel"><h3>Most flagged topics</h3>';
+    h += hard.length
+      ? '<div class="bars">' + hard.map(function (r) {
+          var pct = r[1] / hard[0][1] * 100;
+          return '<div class="bar"><span class="name">' + esc(r[0]) + '</span><span class="num">' + r[1] +
+            '</span><span class="meter"><i style="width:' + pct.toFixed(1) + '%"></i></span></div>';
+        }).join("") + "</div>"
+      : '<div class="empty">Nothing flagged yet.</div>';
+    h += "</div>";
+
+    h += '<div class="panel"><h3>What this can and cannot see</h3><p class="note">' +
+      "These figures come from the profiles stored in <b>this browser</b>. A student who studies on their own " +
+      "phone or laptop keeps their progress there, so it will not appear here. Reading progress across devices " +
+      "needs a server behind the page, which this static site does not have.</p></div>";
     main.innerHTML = h;
   }
 
@@ -937,7 +1055,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (e.key === "/" && !typing) { e.preventDefault(); si.focus(); return; }
     if (e.key === "?" && !typing) { e.preventDefault(); $("#help").showModal(); return; }
     if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
-    if (ui.tab === "Mastery" || ui.cardView) return;
+    if (ui.tab === "Mastery" || ui.tab === "Class" || ui.cardView) return;
     var c = current();
     if (e.key === " " || e.key === "Enter") {
       e.preventDefault();
@@ -968,7 +1086,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       t.setAttribute("aria-selected", t.id === "tab-" + ui.tab ? "true" : "false");
     });
     renderRail();
-    if (ui.tab === "Mastery") renderMastery();
+    if (ui.tab === "Class") renderClass();
+    else if (ui.tab === "Mastery") renderMastery();
     else {
       var d = deck();
       if (ui.cardView) renderGrid(d); else renderStudy(d);

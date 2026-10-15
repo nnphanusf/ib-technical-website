@@ -46,14 +46,20 @@ prepared study answers; they were not supplied or endorsed by those firms.
 
 ## Signing in
 
-The page opens on a sign-in card. Each student creates a profile with a name and their own
-password; creating one also needs the class password (set in `index.html` — share it with the
-class, not in this repo). Profiles keep students on a shared computer out of each other's
-progress, bookmarks and notes.
+Students register with a name, an email and a password, plus a registration code; after that
+they sign in with the email and password. The email is the account key, so two people cannot
+take the same profile by typing the same name. Registering with the *teacher* code instead
+creates a profile that also sees a **Class** tab: completion per student, class averages and
+the most-flagged topics. Both codes live in `index.html` — share them with the class directly,
+not through this repo.
 
-This is browser-side only: there is no server, so a profile lives in the browser it was made in
-and the check can be bypassed by anyone who reads the page source. Treat it as a doorlatch
-between classmates, not as security.
+Two limits worth knowing before you rely on it:
+
+- **Everything is per browser.** Profiles, progress and the Class view all read `localStorage`,
+  so a student who studies on their own phone is invisible to the teacher view on another
+  machine, and profiles do not travel between the Pages, Netlify and artifact URLs.
+- **It is not security.** The checks run in page code that anyone can read. Treat it as a
+  doorlatch between classmates. Real accounts across devices need a server.
 
 ## Using it
 
