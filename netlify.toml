@@ -1,0 +1,4 @@
+# Netlify serves only this folder, so the question sources and the M&I PDF
+# stay in the (private) repository and are never published to the site.
+[build]
+  publish = "flashcards"
