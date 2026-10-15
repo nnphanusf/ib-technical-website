@@ -130,6 +130,8 @@ a{color:var(--accent)}
 .tag.adv{background:var(--warn-soft);color:var(--warn)}
 .tag.firm{font-family:var(--mono);font-size:10.5px}
 .tag.mastered{background:var(--good-soft);color:var(--good)}
+.tag.issue{background:var(--warn-soft);color:var(--warn)}
+.tag.ok{background:var(--good-soft);color:var(--good)}
 .tag.mastered::before{content:"\2665 "}
 .answer{padding:16px 18px 0}
 .answer .label{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
@@ -271,7 +273,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 <dialog id="help"><div class="dlg">
   <h3>Keyboard shortcuts</h3>
   <div class="kb">
-    <kbd>Space</kbd><span>Show answer / next card</span>
+    <kbd>Space</kbd><span>Show, then hide the answer</span>
+    <kbd>Enter</kbd><span>Show the answer, then move on</span>
     <kbd>← →</kbd><span>Previous / next question</span>
     <kbd>M</kbd><span>Mark mastered (and advance)</span>
     <kbd>N</kbd><span>Mark unmastered</span>
@@ -335,7 +338,9 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     {key: "f", id: "firms", name: "Firms"},
     {key: "g", id: "groups", name: "Industry / group"},
     {key: "tp", id: "topics", name: "Topics"},
-    {key: "d", id: "difficulty", name: "Difficulty"}
+    {key: "d", id: "difficulty", name: "Difficulty"},
+    {key: "vf", id: "verify", name: "Verification"},
+    {key: "iss", id: "issues", name: "Known issues"}
   ];
   var MASTERY_OPTS = ["Unmastered", "Mastered", "Bookmarked", "Flagged", "Unseen"];
 
@@ -950,6 +955,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       c.f.slice(0, 3).forEach(function (f) { t += '<span class="tag firm">' + esc(f) + "</span>"; });
       if (c.f.length > 3) t += '<span class="tag firm">+' + (c.f.length - 3) + "</span>";
     }
+    (c.iss || []).forEach(function (x) { t += '<span class="tag issue">' + esc(x) + "</span>"; });
+    if (c.t === "Technical" && !(c.iss || []).length) t += '<span class="tag ok">\u2713 Verified</span>';
     if (save.mastered[c.id]) t += '<span class="tag mastered">Mastered</span>';
     return t;
   }
@@ -1005,7 +1012,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       '<button class="nav" data-act="next"' + (i === total - 1 ? " disabled" : "") + ' aria-label="Next">' + icon("right") + "</button>" +
       '<span class="spacer"></span>' +
       (show
-        ? '<button class="btn" data-act="again">Needs work</button><button class="btn good" data-act="gotit">Got it · M</button>'
+        ? (ui.alwaysShow ? "" : '<button class="btn" data-act="hide">Hide · Space</button>') +
+          '<button class="btn" data-act="again">Needs work</button><button class="btn good" data-act="gotit">Got it · M</button>'
         : '<button class="btn primary" data-act="reveal">Show answer · Space</button>') +
       "</div></article>";
 
@@ -1203,6 +1211,15 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     } else step();
   }
 
+  function hideAnswer() {
+    var card = document.querySelector(".card");
+    var step = function () { ui.revealed = false; render(); };
+    if (card && !reduceMotion) {
+      card.classList.add("leaving");
+      setTimeout(step, 140);
+    } else step();
+  }
+
   main.addEventListener("click", function (e) {
     var jump = e.target.closest("[data-jump]");
     if (jump) {
@@ -1227,6 +1244,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (!b) return;
     var a = b.dataset.act, c2 = current();
     if (a === "reveal") { ui.revealed = true; render(); }
+    else if (a === "hide") { hideAnswer(); }
     else if (a === "prev") go(-1);
     else if (a === "next") go(1);
     else if (a === "flag" && c2) { toggle(save.flagged, c2.id); render(); }
@@ -1313,7 +1331,12 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
     if (ui.tab === "Mastery" || ui.tab === "Class" || ui.cardView) return;
     var c = current();
-    if (e.key === " " || e.key === "Enter") {
+    if (e.key === " ") {
+      e.preventDefault();
+      if (ui.alwaysShow) go(1);
+      else if (ui.revealed) hideAnswer();
+      else { ui.revealed = true; render(); }
+    } else if (e.key === "Enter") {
       e.preventDefault();
       if (!ui.revealed && !ui.alwaysShow) { ui.revealed = true; render(); } else go(1);
     } else if (e.key === "ArrowRight" || e.key.toLowerCase() === "j") { e.preventDefault(); go(1); }

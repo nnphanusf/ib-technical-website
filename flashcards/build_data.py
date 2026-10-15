@@ -242,6 +242,69 @@ def clean_notes(notes):
             if not any(n.startswith(d) for d in DROP_NOTES)]
 
 
+# ---------------------------------------------------- card integrity ----
+# These check the SHAPE of a card: is the prompt self-contained, and does the
+# card carry a specific answer? They do not check whether the finance in the
+# answer is correct.
+
+INCOMPLETE_PAT = re.compile(
+    r"\[[^\]]*(not recorded|not identified|not specified|not given|missing|unclear|unknown)[^\]]*\]", re.I)
+
+DANGLING_PAT = re.compile(
+    r"\b(this|that) (company|firm|stock|trend|deal|business|article|case|transaction|fund|industry|product)\b"
+    r"|\bthe (deal|stock|company|case|trend|article) (you|we|just|above|mentioned|discussed|pitched)"
+    r"|\byou (just )?(mentioned|discussed|pitched)\b"
+    r"|\bthe supplied (case|company|data)\b"
+    r"|\bin the case\b|\bthe case study\b", re.I)
+
+INSTRUCTION_VERBS = re.compile(
+    r"\b(calculat|comput|find|determin|walk|explain|value|rank|estimat|forecast|discuss|describ|"
+    r"assess|evaluat|build|deriv|solv|prove|compar|list|name|pitch|tell|show|analy[sz]|"
+    r"work out|go through)", re.I)
+
+TIME_PAT = re.compile(
+    r"\b(current|currently|today|right now|this (year|quarter|week)|latest|recent(ly)?|"
+    r"at the moment|these days)\b|\boutlook\b|where (do you see|are) .*(rates|markets|economy)", re.I)
+
+
+def looks_like_question_set(text):
+    """A list of separate interview prompts crammed into one card (e.g. F0942)."""
+    if "?" in text or INSTRUCTION_VERBS.search(text):
+        return False
+    parts = [p.strip() for p in re.split(r"[,;]", text) if p.strip()]
+    if len(parts) < 3:
+        return False
+    # a worked case states numbers in several of its clauses; an interview list does not
+    if sum(1 for p in parts if re.search(r"\d", p)) >= 2:
+        return False
+    bare = sum(1 for p in parts
+               if not re.search(r"\b(is|are|was|were|do|does|did|would|should|can|will|have|has)\b", p, re.I))
+    return bare >= 3
+
+
+def card_issues(question, answer, status, is_behavioral):
+    """Structural defects, most serious first. An empty list means usable as written."""
+    issues = []
+    if INCOMPLETE_PAT.search(question):
+        issues.append("Incomplete prompt")
+    if looks_like_question_set(question):
+        issues.append("Question set")
+    if DANGLING_PAT.search(question):
+        issues.append("Needs the missing context")
+    if is_behavioral:
+        return issues
+    if status == "requires_missing_inputs" and "Incomplete prompt" not in issues:
+        issues.append("Missing inputs")
+    if status == "requires_dated_research" or TIME_PAT.search(question):
+        issues.append("Needs fresh research")
+    if status == "open_ended_framework":
+        issues.append("No single right answer")
+    return issues
+
+
+SERIOUS = {"Incomplete prompt", "Question set", "Needs the missing context", "Missing inputs"}
+
+
 def classify(text, rules, default):
     low = text.lower()
     for name, pat in rules:
@@ -308,9 +371,14 @@ def main():
             collections.append("Firm Interview Insights")
         if not collections:
             collections.append("IB Fundamentals (M&I 400)")
+        issues = card_issues(q["question"], ans, q.get("answer_status", ""), False)
+        verified = not issues
         cards.append({
             "id": q["question_id"],
             "t": "Technical",
+            "vf": "Verified" if verified else "Not verified",
+            "iss": issues,
+            "ser": bool(SERIOUS & set(issues)),
             "q": q["question"],
             "a": ans,
             "tp": topic,
@@ -342,9 +410,13 @@ def main():
             collections.append("IB Fundamentals (M&I 400)")
         if firm_srcs:
             collections.append("Firm Interview Insights")
+        bissues = card_issues(question, "", "", True)
         cards.append({
             "id": bid,
             "t": "Behavioral",
+            "vf": "Verified" if not bissues else "Not verified",
+            "iss": bissues,
+            "ser": bool(SERIOUS & set(bissues)),
             "q": question,
             "a": BEHAV_FRAMEWORKS[topic],
             "tp": topic,
@@ -381,6 +453,8 @@ def main():
             "topics": facet("tp").most_common(),
             "collections": facet("c").most_common(),
             "difficulty": facet("d").most_common(),
+            "verification": facet("vf").most_common(),
+            "issues": facet("iss").most_common(),
         },
     }
 

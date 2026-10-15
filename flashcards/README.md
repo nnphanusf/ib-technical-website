@@ -61,9 +61,28 @@ Two limits worth knowing before you rely on it:
 - **It is not security.** The checks run in page code that anyone can read. Treat it as a
   doorlatch between classmates. Real accounts across devices need a server.
 
+## Verification flags
+
+Every technical card is checked for shape, not for financial accuracy:
+
+- **Verified** — the prompt is self-contained (no missing numbers, no reference to a case or
+  company that is not on the card, not several questions in one) and the card carries a specific
+  answer. 1,406 of 2,049.
+- **Not verified** — carries at least one issue chip. 643 cards, of which 230 have a *serious*
+  defect (Incomplete prompt, Question set, Needs the missing context, Missing inputs) and 413 are
+  soft (Needs fresh research, No single right answer).
+
+Filter on **Verification** or **Known issues** in the rail to study one group at a time, or to
+skip the broken ones entirely. `question_flags.md` and `question_flags.csv` in the repo root hold
+the full audit, including which M&I 400 cards are not intact.
+
+Nobody has checked the finance in 2,049 answers line by line. "Verified" means askable and
+answerable as written — not certified correct.
+
 ## Using it
 
-Space reveals the answer and moves on, arrow keys navigate, `M` marks mastered, `B` bookmarks,
+Space shows the answer and shows it again to hide it, Enter reveals then moves on,
+arrow keys navigate, `M` marks mastered, `B` bookmarks,
 `F` flags for review, `S` reshuffles, `E` jumps to your notes, `?` lists every shortcut.
 Progress, bookmarks and your own notes are saved per profile in the browser you study in — they
 do not follow you to another device, so use **Copy progress** on the Mastery tab before switching.
