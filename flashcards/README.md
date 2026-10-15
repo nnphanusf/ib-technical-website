@@ -1,4 +1,4 @@
-# Banking Interview Deck
+# Banking Interview Prep Website
 
 Flashcard app built from the question bank in the parent folder.
 

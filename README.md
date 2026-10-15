@@ -1,4 +1,4 @@
-# IB Interview Prep
+# Banking Interview Prep Website
 
 Source question bank and the flashcard app built from it.
 

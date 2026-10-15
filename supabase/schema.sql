@@ -1,4 +1,4 @@
--- Banking Interview Deck — Supabase schema
+-- Banking Interview Prep Website — Supabase schema
 -- Run once, whole file, in the project's SQL editor (New query → paste → Run).
 -- Safe to re-run: every statement is idempotent.
 
