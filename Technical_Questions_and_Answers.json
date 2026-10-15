@@ -13334,8 +13334,8 @@
       "question_references": [
         "Evercore M&A NY Insights/EVR M&A NY Insight 17.png"
       ],
-      "answer_type": "Concept explanation / solution framework",
-      "answer": "An option gives the holder a right, not an obligation. A call payoff is max(S-K,0); a put is max(K-S,0). Value depends on underlying price, strike, maturity, volatility, rates, dividends and exercise/settlement terms. In a one-period arbitrage-free binomial model, q = [(1+r)S0-Sdown]/(Sup-Sdown) and option value = [q*payoff_up+(1-q)*payoff_down]/(1+r). Use risk-neutral probabilities when replication assumptions apply; a stated real-world 50% probability is not automatically q. More volatility generally benefits plain long options. Hedges reduce a specified risk but introduce costs, basis risk and possibly collateral/liquidity requirements; a swap exchanges contracted cash-flow streams.",
+      "answer_type": "Worked / question-specific answer",
+      "answer": "Work to the offer price first, then to diluted shares, then bridge. The per-share offer price is the current price grossed up by the premium: X * (1 + Y%). Build the fully diluted share count at that offer price, not at the unaffected price. Under the treasury stock method, in-the-money options are exercised and the proceeds buy back stock, so each tranche adds options * (offer price - strike) / offer price net new shares; out-of-the-money options add nothing. RSUs are added in full, since there are no exercise proceeds. For convertible debt, compare the offer price with the conversion price: if it is in the money, apply the if-converted method, adding principal / conversion price shares and removing that principal from debt in the bridge; if it is out of the money, leave it in debt and add no shares. Never count the same convertible as both debt and shares. Diluted equity value = offer price * fully diluted shares. Then enterprise value = diluted equity value + debt (including any unconverted convertible principal) + preferred + noncontrolling interests - cash and other non-operating assets.",
       "notes": [],
       "topic": "options",
       "original_question_ids": [
@@ -13343,7 +13343,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "concept_and_method",
+      "answer_status": "model_answer",
       "supporting_reference_urls": []
     },
     {
@@ -40191,7 +40191,7 @@
         "guide:p72:item111"
       ],
       "answer_type": "Answer from supplied M&I guide",
-      "answer": "represents the value of EVERYTHING a company has (its Net Assets) but only to the EQUITY INVESTORS (i.e., the common shareholders). Enterprise Value represents the value of the company’s CORE BUSINESS OPERATIONS (its Net Operating Assets) but to ALL INVESTORS (Equity, Debt, Preferred, and possibly others).",
+      "answer": "Equity Value represents the value of EVERYTHING a company has (its Net Assets) but only to the EQUITY INVESTORS (i.e., the common shareholders). Enterprise Value represents the value of the company’s CORE BUSINESS OPERATIONS (its Net Operating Assets) but to ALL INVESTORS (Equity, Debt, Preferred, and possibly others).",
       "notes": [
         "Transcribed from the supplied guide; retain its stated assumptions. Some guide examples use specific illustrative deal facts rather than a universal answer."
       ],
@@ -40509,7 +40509,7 @@
         "guide:p77:item125"
       ],
       "answer_type": "Answer from supplied M&I guide",
-      "answer": "still increases by $200, so Eq Val is up by $200. If this Asset is considered “Operating” or “Core,” such as a factory, then NOA increases by $100, so TEV also increases by $100. If not – for example, the Asset is a short-term investment – then NOA does not change, and TEV stays the same.",
+      "answer": "CSE still increases by $200, so Eq Val is up by $200. If this Asset is considered “Operating” or “Core,” such as a factory, then NOA increases by $100, so TEV also increases by $100. If not – for example, the Asset is a short-term investment – then NOA does not change, and TEV stays the same.",
       "notes": [
         "Transcribed from the supplied guide; retain its stated assumptions. Some guide examples use specific illustrative deal facts rather than a universal answer."
       ],
@@ -40752,7 +40752,7 @@
         "guide:p82:item136"
       ],
       "answer_type": "Answer from supplied M&I guide",
-      "answer": "are useful because they’re based on real market data, are quick to calculate and explain, and do not depend on far-in-the-future assumptions. However, there may not be truly comparable companies, the analysis will be less accurate for volatile or thinly traded companies, and it may undervalue companies’ long-term potential. Precedent Transactions are useful because they’re based on the real prices that companies have paid for other companies, and they may better reflect industry trends than Public Comps. However, the data is often spotty and misleading, there may not be truly comparable transactions, and specific deal terms and market conditions might distort the multiples. DCF Analysis is the most “correct” methodology according to finance theory, it’s less subject to market fluctuations, and it better reflects company-specific factors and long-term trends. However, it’s also very dependent on far-in-the-future assumptions, and there’s disagreement over the proper calculations for key figures like the Cost of Equity and WACC.",
+      "answer": "Public Comps are useful because they’re based on real market data, are quick to calculate and explain, and do not depend on far-in-the-future assumptions. However, there may not be truly comparable companies, the analysis will be less accurate for volatile or thinly traded companies, and it may undervalue companies’ long-term potential. Precedent Transactions are useful because they’re based on the real prices that companies have paid for other companies, and they may better reflect industry trends than Public Comps. However, the data is often spotty and misleading, there may not be truly comparable transactions, and specific deal terms and market conditions might distort the multiples. DCF Analysis is the most “correct” methodology according to finance theory, it’s less subject to market fluctuations, and it better reflects company-specific factors and long-term trends. However, it’s also very dependent on far-in-the-future assumptions, and there’s disagreement over the proper calculations for key figures like the Cost of Equity and WACC.",
       "notes": [
         "Transcribed from the supplied guide; retain its stated assumptions. Some guide examples use specific illustrative deal facts rather than a universal answer."
       ],
