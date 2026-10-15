@@ -21,7 +21,7 @@ cd "/Users/jimphan/Downloads/new folder/flashcards" && python3 -m http.server 87
 | `data.js` | The same deck as a script, used when the page is opened from the filesystem. |
 
 Sources read by the build script (parent folder):
-`Technical_Questions_and_Answers.json` and `Investment_Banking_Questions.txt`.
+`Technical_Questions_and_Answers.json` and `IB_Behavioral_Questions.txt`.
 
 ## What's in the deck
 

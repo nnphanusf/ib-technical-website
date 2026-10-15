@@ -3,7 +3,7 @@
 
 Inputs (parent directory):
   - Technical_Questions_and_Answers.json   (2,049 technical Q&A with firm sources)
-  - Investment_Banking_Questions.txt       (behavioral question list with sources)
+  - IB_Behavioral_Questions.txt       (behavioral question list with sources)
 
 Output:
   - data.json  consumed by index.html
@@ -20,7 +20,7 @@ from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 TECH_JSON = os.path.join(SRC, "Technical_Questions_and_Answers.json")
-BEHAV_TXT = os.path.join(SRC, "Investment_Banking_Questions.txt")
+BEHAV_TXT = os.path.join(SRC, "IB_Behavioral_Questions.txt")
 OUT = os.path.join(HERE, "data.json")
 
 # ---------------------------------------------------------------- firms ----
