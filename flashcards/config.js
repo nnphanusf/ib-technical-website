@@ -7,5 +7,5 @@
    projects show a legacy "anon" key instead, a long string starting with
    eyJ; either works. Both are meant to ship in public code — the row level
    security policies in supabase/schema.sql are what protect the data. */
-window.SUPA_URL = "";
-window.SUPA_KEY = "";
+window.SUPA_URL = "https://luijiocpivkzszbqmulh.supabase.co";
+window.SUPA_KEY = "sb_publishable_YuXqBZehemSAtTIK3X4MJA_K15a85Cj";
