@@ -242,6 +242,66 @@ def clean_notes(notes):
             if not any(n.startswith(d) for d in DROP_NOTES)]
 
 
+# ------------------------------------------------------ sentence case ----
+# The source questions are transcriptions, so a few carry a bare "i", a
+# lower-cased word after a full stop, or a finance term in lower case. These
+# fix presentation only; the source files are never rewritten.
+
+ACRONYMS = {
+    "ebitda": "EBITDA", "ebit": "EBIT", "ebiat": "EBIAT", "dcf": "DCF", "lbo": "LBO",
+    "wacc": "WACC", "irr": "IRR", "moic": "MOIC", "ipo": "IPO", "capex": "CapEx",
+    "cogs": "COGS", "roe": "ROE", "roic": "ROIC", "roa": "ROA", "gaap": "GAAP",
+    "ifrs": "IFRS", "reit": "REIT", "saas": "SaaS", "nwc": "NWC", "fcf": "FCF",
+    "fcff": "FCFF", "fcfe": "FCFE", "pik": "PIK", "nol": "NOL", "dta": "DTA",
+    "dtl": "DTL", "ddm": "DDM", "tev": "TEV", "arr": "ARR", "cagr": "CAGR",
+    "ceo": "CEO", "cfo": "CFO", "ipos": "IPOs",
+}
+ABBREV = re.compile(
+    r"\b(?:vs|e\.g|i\.e|etc|approx|no|fig|est|ex|mr|ms|dr|inc|co|corp|ltd|u\.s|u\.k|jr|sr)$",
+    re.I)
+
+
+def tidy_case(text, firms=FIRMS):
+    """Capitalise sentence starts, the pronoun I, finance acronyms and firm names."""
+    if not text:
+        return text
+
+    # the pronoun, but never the "i" of "i.e."
+    text = re.sub(r"(?<![\w.])i(?=[\s,])", "I", text)
+
+    # a lower-case word straight after a full stop, question mark or exclamation
+    def after_stop(m):
+        before = text[:m.start()]
+        if ABBREV.search(before):
+            return m.group(0)
+        return m.group(1) + m.group(2).upper()
+    text = re.sub(r"([.?!]\s+)([a-z])", after_stop, text)
+
+    # finance terms written in lower case (an already-capitalised one is left alone)
+    text = re.sub(
+        r"\b(" + "|".join(sorted(ACRONYMS, key=len, reverse=True)) + r")\b",
+        lambda m: ACRONYMS[m.group(0).lower()] if m.group(0).islower() else m.group(0),
+        text)
+
+    # firm names as the source spells them
+    for f in firms:
+        if len(f) < 5 or " " in f:
+            continue
+        text = re.sub(r"\b" + re.escape(f) + r"\b",
+                      lambda m, f=f: f if m.group(0) != f else m.group(0), text, flags=re.I)
+
+    # "a EBITDA multiple" reads wrong once the acronym is capitalised: these are
+    # the ones said with a leading vowel sound.
+    text = re.sub(r"\b([Aa])\s+(EBITDA|EBIT|EBIAT|IPO|IRR|LBO|NOL|ROE|ROA|ROIC|ARR|FCFF|FCFE|FCF|NWC|IFRS|EV)\b",
+                  lambda m: ("An " if m.group(1) == "A" else "an ") + m.group(2), text)
+
+    # and the opening letter, only when the question actually starts with one
+    # ("$150 par value" and "1st round" must stay as they are)
+    if text[:1].isalpha() and text[:1].islower():
+        text = text[0].upper() + text[1:]
+    return text
+
+
 # ---------------------------------------------------- card integrity ----
 # These check the SHAPE of a card: is the prompt self-contained, and does the
 # card carry a specific answer? They do not check whether the finance in the
@@ -360,6 +420,7 @@ def main():
         is_guide = any(s.startswith(GUIDE_SOURCE) for s in sources) or \
             q.get("answer_status") == "guide_answer"
         firms = sorted({f for f in (parent_firm(s) for s in firm_srcs) if f})
+        q["question"] = tidy_case(q["question"])
         text = q["question"] + " " + (q.get("answer") or "")
         topic = classify(q["question"] + " " + q.get("topic", ""),
                          TECH_TOPIC_RULES, "Industry & Company Analysis")
@@ -399,7 +460,7 @@ def main():
     blocks = re.findall(r"^(B\d{4})\.\s+(.+?)\nSources:\s*(.+?)\s*$",
                         btxt, re.M | re.S)
     for bid, question, src in blocks:
-        question = " ".join(question.split())
+        question = tidy_case(" ".join(question.split()))
         sources = [s.strip() for s in src.split(";") if s.strip()]
         firm_srcs = [s for s in sources if not s.startswith(GUIDE_SOURCE)]
         is_guide = any(s.startswith(GUIDE_SOURCE) for s in sources)
