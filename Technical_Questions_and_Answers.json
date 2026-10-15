@@ -13654,7 +13654,7 @@
         "Evercore Restructuring Insights/EVR RX Insight 12.png"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "Identical current statements do not guarantee identical future cash flows or risk. One may have stronger customer retention, better products, patents, management, governance, backlog, lower future reinvestment needs or less concentration. Liquidity, control rights and market expectations can also differ. If all future cash flows, risk, rights and information are truly identical, intrinsic value should be identical; a price difference would then reflect market mispricing or omitted assumptions.",
+      "answer": "Price, coupon, maturity and yield are linked by one equation, so fixing the yield and the par value forces the difference into the other two. A bond's price is the present value of its coupons and principal discounted at its YTM, so two bonds with the same YTM and the same par value trade at different prices when their coupon rates differ, their maturities differ, or their payment frequency or day-count conventions differ. The higher-coupon bond trades at the higher price, because the same yield is being delivered through larger interim payments. A bond priced above par has a coupon above its YTM; one priced below par has a coupon below its YTM. Quoted price conventions matter too: clean versus dirty price differ by accrued interest, and a total market value also depends on the face amount outstanding. Only after those mechanical explanations are excluded should you reach for issuer-level differences such as liquidity, covenants, call features or credit, and those would normally show up in the yield rather than leaving it unchanged.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -13675,7 +13675,7 @@
         "Evercore Restructuring Insights/EVR RX Insight 12.png"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "Identical current statements do not guarantee identical future cash flows or risk. One may have stronger customer retention, better products, patents, management, governance, backlog, lower future reinvestment needs or less concentration. Liquidity, control rights and market expectations can also differ. If all future cash flows, risk, rights and information are truly identical, intrinsic value should be identical; a price difference would then reflect market mispricing or omitted assumptions.",
+      "answer": "Price, coupon, maturity and yield are linked by one equation, so fixing the yield and the par value forces the difference into the other two. A bond's price is the present value of its coupons and principal discounted at its YTM, so two bonds with the same YTM and the same par value trade at different prices when their coupon rates differ, their maturities differ, or their payment frequency or day-count conventions differ. The higher-coupon bond trades at the higher price, because the same yield is being delivered through larger interim payments. A bond priced above par has a coupon above its YTM; one priced below par has a coupon below its YTM. Quoted price conventions matter too: clean versus dirty price differ by accrued interest, and a total market value also depends on the face amount outstanding. Only after those mechanical explanations are excluded should you reach for issuer-level differences such as liquidity, covenants, call features or credit, and those would normally show up in the yield rather than leaving it unchanged.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -13696,7 +13696,7 @@
         "Evercore Restructuring Insights/EVR RX Insight 13.png"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "Identical current statements do not guarantee identical future cash flows or risk. One may have stronger customer retention, better products, patents, management, governance, backlog, lower future reinvestment needs or less concentration. Liquidity, control rights and market expectations can also differ. If all future cash flows, risk, rights and information are truly identical, intrinsic value should be identical; a price difference would then reflect market mispricing or omitted assumptions.",
+      "answer": "Neither - they have the same YTM. A bond trading exactly at par has a yield to maturity equal to its coupon rate, because the price equals the redemption amount and there is no amortized gain or loss to add to or subtract from the coupon income. Two bonds with the same coupon, both at par, therefore have the same YTM regardless of the issuers' differing business quality, and the market is telling you it requires the same yield from both. The question tests whether you know that identity rather than inviting a comparison of the two companies. Qualifications: the bonds must have the same payment frequency and day-count convention, \"par\" must mean a clean price of 100 rather than a dirty price including accrued interest, and if either bond is callable the relevant comparison becomes yield to worst, which can differ even when both trade at par. A credit difference between the issuers would show up as a price difference away from par, not as different yields at the same price.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -13875,8 +13875,8 @@
       "question_references": [
         "Evercore Restructuring Insights/EVR RX Insight 20.png"
       ],
-      "answer_type": "Question-focused explanation",
-      "answer": "Banks are usually valued with equity-based methods such as dividend discount, FCFE or residual income, plus P/E and price/tangible book cross-checks. Deposits and debt are operating funding, making a conventional corporate EV/EBITDA or FCFF bridge less useful. Forecast net interest income, fees, credit losses, expenses, regulatory capital and distributable earnings. Growth consumes regulatory equity, so distributions must be consistent with required capital and asset quality.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "A Chapter 7 liquidation is valued asset by asset, not as a going concern, so the earnings-based methods used for an operating company do not apply. Start from the balance sheet and estimate gross recoveries on each asset class under a forced or orderly sale, applying recovery rates that reflect how saleable each one is: cash at or near 100%, receivables at a discount for collectability and aging, inventory well below book depending on whether it is finished goods or work in process, PP&E at market or scrap value rather than book, and intangibles and goodwill at little or nothing, since brand and going-concern value largely evaporate when operations stop. Then subtract the costs of the process itself - trustee and professional fees, wind-down and severance costs, lease rejection and contract breakage - because these are administrative claims paid ahead of creditors. Distribute what remains down the statutory priority: secured creditors against their collateral first, then superpriority and administrative claims, then priority unsecured claims such as certain employee and tax obligations, then general unsecured creditors pro rata, with equity last and almost always receiving nothing. Compare the result with the going-concern or reorganization value, because liquidation value is normally the floor that makes a Chapter 11 plan worth pursuing instead.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -13884,7 +13884,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "model_answer",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {
