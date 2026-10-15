@@ -32,19 +32,24 @@ messages per hour — fine for you testing, not for a class signing up at once.
 
 ## 4. Copy the two values into the site
 
-**Project Settings** → **API**: copy the **Project URL** and the **anon public**
-key into `flashcards/config.js`:
+**Project Settings** → **API Keys**: copy the **Project URL** and the
+**publishable** key into `flashcards/config.js`:
 
 ```js
 window.SUPA_URL = "https://xxxxxxxxxxxx.supabase.co";
-window.SUPA_KEY = "eyJhbGciOi...";
+window.SUPA_KEY = "sb_publishable_xxxxxxxxxxxxxxxx";
 ```
+
+Supabase is retiring the old `anon` key (the long `eyJ...` string) by the end of
+2026. A new project gives you a publishable key instead — take that one. If your
+project only shows a legacy anon key, it still works.
 
 Commit, push, and the host redeploys. The page detects the config and switches
 from browser storage to Supabase on its own.
 
-The anon key belongs in the page — it is designed to be public. The row-level
-security policies in `schema.sql` are what protect the data, not the key.
+That key belongs in the page — it is designed to be public, and carries no more
+privilege than an anonymous visitor. The row-level security policies in
+`schema.sql` are what protect the data, not the key.
 
 ## 5. Check it
 

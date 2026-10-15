@@ -566,7 +566,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   function initCloud() {
     if (!window.SUPA_URL || !window.SUPA_KEY) return;
     var sc = document.createElement("script");
-    sc.src = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js";
+    sc.src = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.100.0/dist/umd/supabase.js";
     sc.onload = function () {
       try {
         cloud = window.supabase.createClient(window.SUPA_URL, window.SUPA_KEY);

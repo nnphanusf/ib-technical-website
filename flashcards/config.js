@@ -1,9 +1,11 @@
 /* Supabase connection.
-   Fill these in from your project's Settings → API, then redeploy.
+   Fill these in from your project's Settings -> API Keys, then redeploy.
    Leave them empty and the page stays in browser-only mode: profiles and
    progress live in localStorage, exactly as before.
 
-   The anon key is meant to be public — row level security in schema.sql is
-   what protects the data, not the key. */
+   SUPA_KEY is the PUBLISHABLE key (starts with sb_publishable_). Older
+   projects show a legacy "anon" key instead, a long string starting with
+   eyJ; either works. Both are meant to ship in public code — the row level
+   security policies in supabase/schema.sql are what protect the data. */
 window.SUPA_URL = "";
 window.SUPA_KEY = "";
