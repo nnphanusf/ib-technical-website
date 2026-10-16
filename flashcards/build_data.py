@@ -261,17 +261,27 @@ ABBREV = re.compile(
     re.I)
 
 
+PARA = "\x00PARA\x00"
+
+
 def tidy_punctuation(text):
-    """Repair transcription artefacts: stray spacing and welded-together questions."""
+    """Repair transcription artefacts: stray spacing and welded-together questions.
+
+    A deliberate blank line between paragraphs survives; runs of ordinary
+    whitespace do not.
+    """
     if not text:
         return text
+    # protect author-intended paragraph breaks from the whitespace collapse below
+    text = re.sub(r"\n[ \t]*\n\s*", PARA, text)
     # "pitchbook., Which is higher" - two questions joined by a stray comma
     text = re.sub(r"([a-z])([.?!]),\s+([A-Z])", r"\1\2 \3", text)
     # "private company ?" / "Fintech ?"
     text = re.sub(r"\s+([,.?!;:])", r"\1", text)
     # "5x....what" - keep the ellipsis, drop the extra stops
     text = re.sub(r"\.{4,}", "...", text)
-    return re.sub(r"\s{2,}", " ", text).strip()
+    text = re.sub(r"\s{2,}", " ", text).strip()
+    return text.replace(PARA, "\n\n").strip()
 
 
 def tidy_case(text, firms=FIRMS):
@@ -364,7 +374,7 @@ def card_issues(question, answer, status, is_behavioral):
     if looks_like_question_set(question):
         issues.append("Question set")
     if DANGLING_PAT.search(question):
-        issues.append("Needs the missing context")
+        issues.append("Input Required")
     if is_behavioral:
         return issues
     if status == "requires_missing_inputs" and "Incomplete prompt" not in issues:
@@ -376,7 +386,18 @@ def card_issues(question, answer, status, is_behavioral):
     return issues
 
 
-SERIOUS = {"Incomplete prompt", "Question set", "Needs the missing context", "Missing inputs"}
+SERIOUS = {"Incomplete prompt", "Question set", "Input Required", "Missing inputs"}
+
+# Cards reviewed by hand and cleared: the structural heuristics flagged them, a human
+# read them and judged them askable as written. An id here gets no issues and reads as
+# Verified. Keep it sorted and only add an id you have actually read.
+CLEARED_ISSUES = {
+    "F0021", "F1941", "F1946", "F1950", "F1962", "F1967",
+    "F1991", "F2010", "F2011", "F2020", "F2021", "F2027",
+    "F2031", "F2033", "F2034", "F2039", "F2043", "F2080",
+    "F2082", "F2084", "F2085", "F2117", "F2122", "F2136",
+    "F2137", "F2169", "F2179", "F2191", "F2253",
+}
 
 
 def classify(text, rules, default):
@@ -446,7 +467,8 @@ def main():
             collections.append("Firm Interview Insights")
         if not collections:
             collections.append("IB Fundamentals (M&I 400)")
-        issues = card_issues(q["question"], ans, q.get("answer_status", ""), False)
+        issues = ([] if q["question_id"] in CLEARED_ISSUES
+                  else card_issues(q["question"], ans, q.get("answer_status", ""), False))
         verified = not issues
         cards.append({
             "id": q["question_id"],

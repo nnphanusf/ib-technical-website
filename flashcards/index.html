@@ -124,6 +124,8 @@ a{color:var(--accent)}
 .act.on.flag{color:var(--warn);background:var(--warn-soft)}
 .act svg{width:16px;height:16px}
 .q{font-family:var(--serif);font-size:21px;line-height:1.4;padding:6px 18px 0;letter-spacing:-.005em}
+.q .qp{display:block}
+.q .qp+.qp{margin-top:11px}
 @media (max-width:560px){.q{font-size:19px}}
 .tagrow{display:flex;flex-wrap:wrap;gap:6px;padding:14px 18px 0}
 .tag{font-size:11px;padding:3px 9px;border-radius:999px;background:var(--panel-2);color:var(--ink-2);white-space:nowrap}
@@ -1090,7 +1092,9 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       '<button class="act' + (save.mastered[c.id] ? " on" : "") + '" data-act="master" title="Mastered (M)">' + icon("check") + "</button>" +
       '<button class="act' + (save.notes[c.id] ? " on" : "") + '" data-act="note" title="Your notes (E)">' + icon("pen") + "</button>" +
       "</div></div>" +
-      '<h2 class="q">' + esc(c.q) + "</h2>" +
+      '<h2 class="q">' + c.q.split(/\n\s*\n/).map(function (p) {
+          return '<span class="qp">' + esc(p.trim()) + "</span>";
+        }).join("") + "</h2>" +
       '<div class="tagrow">' + tagsHTML(c, true) + "</div>";
 
     var show = ui.revealed || ui.alwaysShow;

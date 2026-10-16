@@ -138,8 +138,8 @@ Splitting them would destroy the point:
   done it · **F1805** three facts about the same firm · **F0177** convertible debt for biotech, then
   its trade-offs against equity · **F0411** a $10 rise in AR, then a $10 cash sale.
 
-All the guide's `Context: ... Follow-up:` cards (F1984, F2001, F2002, F2005, F2031, F2034, F2080,
-F2084, F2085, F2087, F2089, F2103) are the same case and were not touched.
+All the guide's `Context: ... Follow-up:` cards are the same case and were not split. They were
+later reformatted - see section 5.
 
 Three behavioral cards (B0542, B0596, B1049) also carry multiple prompts. They are in the
 behavioral file and outside this pass.
@@ -187,3 +187,35 @@ Outside accounting, F0058 (Apple's factories over three years) and F1404 (a part
 principal repayment) are the most involved.
 Each should show four or five short labelled lines rather than a block of prose. If the bullets run
 together instead of breaking onto their own lines, the `index.html` change did not deploy.
+
+---
+
+## 5. Release of reviewed tags, and the Context cards
+
+Five changes requested together. The deck goes from 3,239 to 3,238 cards.
+
+**23 cards cleared by hand.** The structural heuristics had flagged them; you read them and judged
+them askable as written. Rather than weaken the heuristics - which would let genuinely broken cards
+through - `build_data.py` now carries a `CLEARED_ISSUES` set that overrides the flags for a named
+id. All 29 ids in it now read Verified with no tags.
+
+**F1941** now reads *"Tell me about an M&A deal. What were the main risk factors in this deal?"*
+It is in the cleared set too, which is one more than the 23 you named: the rewrite supplies the
+context its dangling-reference flag was complaining about, so the flag no longer describes the card.
+
+**18 `Context:` cards now break into paragraphs.** The word is gone and each `Follow-up:` starts its
+own paragraph. Two fixes were needed to make this hold:
+
+- `tidy_punctuation()` collapsed all whitespace runs, destroying the breaks on every rebuild. It now
+  protects a deliberate blank line through the collapse with a sentinel.
+- The question rendered as a single escaped `<h2>`, which never ran through the paragraph splitter,
+  so newlines did nothing on the page. `index.html` now splits the question on blank lines.
+
+F2085 had a doubled `Context: Context:` and now reads as three parts. You named five cards; the
+other 13 carry the identical format, so they got the same formatting for consistency. **Their tags
+were left alone** - clearing a tag is a judgment about content, and you only reviewed the five.
+
+**"Needs the missing context" is now "Input Required"**, on 76 cards. No card carries the old label.
+
+**F1945 is deleted.**
+

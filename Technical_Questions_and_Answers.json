@@ -39199,7 +39199,7 @@
     },
     {
       "question_id": "F1941",
-      "question": "What were the main risk factors in this deal?",
+      "question": "Tell me about an M&A deal. What were the main risk factors in this deal?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 42"
       ],
@@ -39254,27 +39254,6 @@
       "topic": "specific",
       "original_question_ids": [
         "F1943"
-      ],
-      "question_variants": [],
-      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "model_answer",
-      "supporting_reference_urls": []
-    },
-    {
-      "question_id": "F1945",
-      "question": "What is the status of this deal? Has it closed?",
-      "question_sources": [
-        "M&I 400 Questions Guide (2025), p. 45"
-      ],
-      "question_references": [
-        "guide:p45:item64"
-      ],
-      "answer_type": "Worked / question-specific answer",
-      "answer": "State the actual verified status and date: announced/pending, completed, withdrawn or terminated. Identify outstanding approvals, financing or closing conditions if still pending. If the transaction failed, explain the disclosed reason and what that teaches about execution risk. Do not describe a terminated transaction as ongoing, and do not imply personal deal experience if you only followed it publicly.",
-      "notes": [],
-      "topic": "specific",
-      "original_question_ids": [
-        "F1945"
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
@@ -39948,7 +39927,7 @@
     },
     {
       "question_id": "F1975",
-      "question": "Context: A company hires a marketing agency to run an online advertising campaign for its services. The marketing agency charges $10,000 for this initial campaign, delivers it, and invoices the company, which has 60 days to pay. Walk me through the statements. Follow-up: Now, walk me through what happens ONLY in Step 2, when the company finally makes payment after 60 days. Also, explain intuitively what happens from start to finish.",
+      "question": "A company hires a marketing agency to run an online advertising campaign for its services. The marketing agency charges $10,000 for this initial campaign, delivers it, and invoices the company, which has 60 days to pay. Walk me through the statements.\n\nFollow-up: Now, walk me through what happens ONLY in Step 2, when the company finally makes payment after 60 days. Also, explain intuitively what happens from start to finish.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 62"
       ],
@@ -40063,7 +40042,7 @@
     },
     {
       "question_id": "F1980",
-      "question": "Context: A company issues $200 of Debt at a 10% interest rate. Walk me through the entire first year on the statements, including the initial issuance and the full interest payment. COMBINE both steps. Follow-up: How does this change if, in addition to the 10% interest rate, the Debt now has a 20% principal repayment each year? Combine both steps and assume the principal repayment occurs on December 31.",
+      "question": "A company issues $200 of Debt at a 10% interest rate. Walk me through the entire first year on the statements, including the initial issuance and the full interest payment. COMBINE both steps.\n\nFollow-up: How does this change if, in addition to the 10% interest rate, the Debt now has a 20% principal repayment each year? Combine both steps and assume the principal repayment occurs on December 31.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 66"
       ],
@@ -40109,7 +40088,7 @@
     },
     {
       "question_id": "F1982",
-      "question": "Context: A company that follows U.S. GAAP signs a 10-year Operating Lease on January 1. It will pay $160 in Rent each year. Assuming a 5% Discount Rate, walk me through the financial statements over this entire year. For simplicity, you may \"round\" and assume the Present Value of the lease payments equals $1,200. Follow-up: Now walk through the same scenario, but under IFRS rather than U.S. GAAP (or pretend it is a Finance Lease under U.S. GAAP). Assume a 25% tax rate.",
+      "question": "A company that follows U.S. GAAP signs a 10-year Operating Lease on January 1. It will pay $160 in Rent each year. Assuming a 5% Discount Rate, walk me through the financial statements over this entire year. For simplicity, you may \"round\" and assume the Present Value of the lease payments equals $1,200.\n\nFollow-up: Now walk through the same scenario, but under IFRS rather than U.S. GAAP (or pretend it is a Finance Lease under U.S. GAAP). Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 67"
       ],
@@ -40155,7 +40134,7 @@
     },
     {
       "question_id": "F1984",
-      "question": "Context: A company buys a factory for $200 using $200 of Debt. What happens, INITIALLY, on the statements? Follow-up: One year passes. The company pays 10% interest on its Debt, and it depreciates 10% of the factory. It also repays 5% of the Debt principal. What happens on the statements in this first year? Assume a 25% tax rate.",
+      "question": "A company buys a factory for $200 using $200 of Debt. What happens, INITIALLY, on the statements?\n\nFollow-up: One year passes. The company pays 10% interest on its Debt, and it depreciates 10% of the factory. It also repays 5% of the Debt principal. What happens on the statements in this first year? Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 68"
       ],
@@ -40224,7 +40203,7 @@
     },
     {
       "question_id": "F1987",
-      "question": "Context: Walmart purchases $200 of Inventory \"on credit,\" sells it for $400, and records an additional $100 in Operating Expenses to support the sale. Walk me through ONLY Step 1 of this process with the Inventory purchase. Follow-up: Now walk through Step 2 - the sale and delivery of the products and the supplier payments - SEPARATELY from Step 1. Assume a 25% tax rate.",
+      "question": "Walmart purchases $200 of Inventory \"on credit,\" sells it for $400, and records an additional $100 in Operating Expenses to support the sale. Walk me through ONLY Step 1 of this process with the Inventory purchase.\n\nFollow-up: Now walk through Step 2 - the sale and delivery of the products and the supplier payments - SEPARATELY from Step 1. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 70"
       ],
@@ -40544,7 +40523,7 @@
     },
     {
       "question_id": "F2001",
-      "question": "Context: A company issues $200 in Common Shares. How do Equity Value and Enterprise Value change? Follow-up: This same company decides to use the $200 in Common Stock proceeds to acquire another business for $100 instead. How does everything change?",
+      "question": "A company issues $200 in Common Shares. How do Equity Value and Enterprise Value change?\n\nFollow-up: This same company decides to use the $200 in Common Stock proceeds to acquire another business for $100 instead. How does everything change?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 77"
       ],
@@ -40565,7 +40544,7 @@
     },
     {
       "question_id": "F2002",
-      "question": "Context: A company issues $200 in Common Shares. How do Equity Value and Enterprise Value change? Follow-up: What if the company uses that same $100 from the $200 of new Common Stock to acquire an Asset rather than an entire company?",
+      "question": "A company issues $200 in Common Shares. How do Equity Value and Enterprise Value change?\n\nFollow-up: What if the company uses that same $100 from the $200 of new Common Stock to acquire an Asset rather than an entire company?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 77"
       ],
@@ -40630,7 +40609,7 @@
     },
     {
       "question_id": "F2005",
-      "question": "Context: A company issues $100 of Common Stock and $100 of Preferred Stock and lets the proceeds sit in Cash. How do Equity Value and Enterprise Value change? Follow-up: This same company now issues $10 in Common Dividends and $10 in Preferred Dividends. What happens in JUST THIS STEP?",
+      "question": "A company issues $100 of Common Stock and $100 of Preferred Stock and lets the proceeds sit in Cash. How do Equity Value and Enterprise Value change?\n\nFollow-up: This same company now issues $10 in Common Dividends and $10 in Preferred Dividends. What happens in JUST THIS STEP?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 78"
       ],
@@ -40716,7 +40695,7 @@
     },
     {
       "question_id": "F2009",
-      "question": "Context: A company purchases $100 of Inventory using Cash. How do Equity Value and Enterprise Value change? Follow-up: Now assume the Inventory is sold for $200 and walk me through how the *entire* process from beginning to end affects Equity Value and Enterprise Value.",
+      "question": "A company purchases $100 of Inventory using Cash. How do Equity Value and Enterprise Value change?\n\nFollow-up: Now assume the Inventory is sold for $200 and walk me through how the *entire* process from beginning to end affects Equity Value and Enterprise Value.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 79"
       ],
@@ -41222,7 +41201,7 @@
     },
     {
       "question_id": "F2031",
-      "question": "Context: A company has $100 in Revenue, a 15% EBIT margin, and D&A that is 5% of its Revenue. The company's Equity Value is $100, and it has $20 of Cash, $40 of Debt, and $30 in Lease Liabilities. What is its TEV / EBITDA multiple? Follow-up: For clarity, the company I just described followed U.S. GAAP, and the Lease Liabilities were for Operating Leases. Now, imagine that this company followed IFRS rather than U.S. GAAP. How would the EBIT margin and D&A percentages change, and how would the TEV / EBITDA change?",
+      "question": "A company has $100 in Revenue, a 15% EBIT margin, and D&A that is 5% of its Revenue. The company's Equity Value is $100, and it has $20 of Cash, $40 of Debt, and $30 in Lease Liabilities. What is its TEV / EBITDA multiple?\n\nFollow-up: For clarity, the company I just described followed U.S. GAAP, and the Lease Liabilities were for Operating Leases. Now, imagine that this company followed IFRS rather than U.S. GAAP. How would the EBIT margin and D&A percentages change, and how would the TEV / EBITDA change?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 90"
       ],
@@ -41291,7 +41270,7 @@
     },
     {
       "question_id": "F2034",
-      "question": "Context: A company is currently trading at 10x TEV / EBITDA. It wants to sell an Operating Asset for 2x the Asset's EBITDA. Will that transaction increase or decrease the company's Enterprise Value and its TEV / EBITDA multiple? Follow-up: What happens to the company's Equity Value and P / E multiple in this scenario?",
+      "question": "A company is currently trading at 10x TEV / EBITDA. It wants to sell an Operating Asset for 2x the Asset's EBITDA. Will that transaction increase or decrease the company's Enterprise Value and its TEV / EBITDA multiple?\n\nFollow-up: What happens to the company's Equity Value and P / E multiple in this scenario?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 91"
       ],
@@ -42324,7 +42303,7 @@
     },
     {
       "question_id": "F2080",
-      "question": "Context: Company A has 10 shares outstanding at a share price of $25.00, and its Net Income is $10. It acquires Company B for a Purchase Equity Value of $150. Company B has a Net Income of $10 as well. Both companies have 25% tax rates. How accretive is a 100% Stock deal? Follow-up: Suppose that Company A now decides to use 100% Cash or 100% Debt to do this deal. If the Cash interest rate is 4%, and the Debt interest rate is 10%, will this deal be accretive or dilutive under these financing structures?",
+      "question": "Company A has 10 shares outstanding at a share price of $25.00, and its Net Income is $10. It acquires Company B for a Purchase Equity Value of $150. Company B has a Net Income of $10 as well. Both companies have 25% tax rates. How accretive is a 100% Stock deal?\n\nFollow-up: Suppose that Company A now decides to use 100% Cash or 100% Debt to do this deal. If the Cash interest rate is 4%, and the Debt interest rate is 10%, will this deal be accretive or dilutive under these financing structures?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 115"
       ],
@@ -42416,7 +42395,7 @@
     },
     {
       "question_id": "F2084",
-      "question": "Context: Company A has an Equity Value of $2,000 and a Net Income of $200. Company B has a Purchase Equity Value of $1,200 and a Net Income of $100. How much in Synergies must be realized for a 100% Stock deal to be accretive? Follow-up: Continuing with this same example, Company A is paying a 20% premium for Company B, so Company B's Current Equity Value is $1,000. Suppose the market doesn't \"like\" this 20% premium, and investors sell off Company A's stock. How would Company A's stock price change? Assume it has 200 shares outstanding at $10.00 per share and assume that Company B gets a fixed share count in the deal.",
+      "question": "Company A has an Equity Value of $2,000 and a Net Income of $200. Company B has a Purchase Equity Value of $1,200 and a Net Income of $100. How much in Synergies must be realized for a 100% Stock deal to be accretive?\n\nFollow-up: Continuing with this same example, Company A is paying a 20% premium for Company B, so Company B's Current Equity Value is $1,000. Suppose the market doesn't \"like\" this 20% premium, and investors sell off Company A's stock. How would Company A's stock price change? Assume it has 200 shares outstanding at $10.00 per share and assume that Company B gets a fixed share count in the deal.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 116"
       ],
@@ -42439,7 +42418,7 @@
     },
     {
       "question_id": "F2085",
-      "question": "Context: Context: Company A has an Equity Value of $2,000 and a Net Income of $200. Company B has a Purchase Equity Value of $1,200 and a Net Income of $100. How much in Synergies must be realized for a 100% Stock deal to be accretive? Follow-up: Continuing with this same example, Company A is paying a 20% premium for Company B, so Company B's Current Equity Value is $1,000. Suppose the market doesn't \"like\" this 20% premium, and investors sell off Company A's stock. How would Company A's stock price change? Assume it has 200 shares outstanding at $10.00 per share and assume that Company B gets a fixed share count in the deal. Follow-up: Continuing with the same scenario, your co-worker reviews the changes and claims that Company A's share price would not have fallen if this had been a 100% Cash or Debt deal. Are they correct?",
+      "question": "Company A has an Equity Value of $2,000 and a Net Income of $200. Company B has a Purchase Equity Value of $1,200 and a Net Income of $100. How much in Synergies must be realized for a 100% Stock deal to be accretive?\n\nFollow-up: Continuing with this same example, Company A is paying a 20% premium for Company B, so Company B's Current Equity Value is $1,000. Suppose the market doesn't \"like\" this 20% premium, and investors sell off Company A's stock. How would Company A's stock price change? Assume it has 200 shares outstanding at $10.00 per share and assume that Company B gets a fixed share count in the deal.\n\nFollow-up: Continuing with the same scenario, your co-worker reviews the changes and claims that Company A's share price would not have fallen if this had been a 100% Cash or Debt deal. Are they correct?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 117"
       ],
@@ -42485,7 +42464,7 @@
     },
     {
       "question_id": "F2087",
-      "question": "Context: An Acquirer with an Equity Value of $500 million and an Enterprise Value of $600 million buys another company for a Purchase Equity Value of $100 million and a Purchase Enterprise Value of $150 million. What are the Combined Equity Value and Enterprise Value in a 100% Stock deal? Follow-up: How do these figures change if it's a 50% Cash / 50% Stock deal instead?",
+      "question": "An Acquirer with an Equity Value of $500 million and an Enterprise Value of $600 million buys another company for a Purchase Equity Value of $100 million and a Purchase Enterprise Value of $150 million. What are the Combined Equity Value and Enterprise Value in a 100% Stock deal?\n\nFollow-up: How do these figures change if it's a 50% Cash / 50% Stock deal instead?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 118"
       ],
@@ -42529,7 +42508,7 @@
     },
     {
       "question_id": "F2089",
-      "question": "Context: An Acquirer with an Equity Value of $500 million and an Enterprise Value of $600 million has a Net Income of $50 million and an EBITDA of $100 million. The Target, with a Purchase Equity Value of $100 million and a Purchase Enterprise Value of $150 million, has a Net Income of $10 million and an EBITDA of $15 million. What are the Combined P / E and TEV / EBITDA multiples in a 100% Stock deal? Assume 25% tax rates for the Acquirer and Target. Follow-up: How do the multiples change if this is a 100% Debt deal funded with an 8% interest rate issuance?",
+      "question": "An Acquirer with an Equity Value of $500 million and an Enterprise Value of $600 million has a Net Income of $50 million and an EBITDA of $100 million. The Target, with a Purchase Equity Value of $100 million and a Purchase Enterprise Value of $150 million, has a Net Income of $10 million and an EBITDA of $15 million. What are the Combined P / E and TEV / EBITDA multiples in a 100% Stock deal? Assume 25% tax rates for the Acquirer and Target.\n\nFollow-up: How do the multiples change if this is a 100% Debt deal funded with an 8% interest rate issuance?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 118"
       ],
@@ -42847,7 +42826,7 @@
     },
     {
       "question_id": "F2103",
-      "question": "Context: A PE firm acquires a business for a 12x EBITDA multiple, using 5x Debt / EBITDA, and plans to sell it in 5 years. The company's initial EBITDA is $100, which grows to $200 by Year 5. If there's no Debt repayment and no additional Cash generation, what exit multiple do we need for a 25% IRR? Follow-up: Now assume the company repays 75% of the initial Debt balance over 5 years. What exit multiple do we need for a 25% 5-year IRR?",
+      "question": "A PE firm acquires a business for a 12x EBITDA multiple, using 5x Debt / EBITDA, and plans to sell it in 5 years. The company's initial EBITDA is $100, which grows to $200 by Year 5. If there's no Debt repayment and no additional Cash generation, what exit multiple do we need for a 25% IRR?\n\nFollow-up: Now assume the company repays 75% of the initial Debt balance over 5 years. What exit multiple do we need for a 25% 5-year IRR?",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 127"
       ],
@@ -46260,7 +46239,7 @@
     },
     {
       "question_id": "F2252",
-      "question": "Context: A Software-as-a-Service (SaaS) company sells a $240 2-year contract on January 1 that will be billed every 6 months. Walk me through the Bookings, Billings, and Revenue for January and February. Follow-up: Continuing with the same question, if it takes 2 months to collect the cash from customers following receipt of the invoice, explain how Accounts Receivable and Deferred Revenue change in January and February.",
+      "question": "A Software-as-a-Service (SaaS) company sells a $240 2-year contract on January 1 that will be billed every 6 months. Walk me through the Bookings, Billings, and Revenue for January and February.\n\nFollow-up: Continuing with the same question, if it takes 2 months to collect the cash from customers following receipt of the invoice, explain how Accounts Receivable and Deferred Revenue change in January and February.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 206"
       ],

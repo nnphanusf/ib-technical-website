@@ -69,7 +69,7 @@ Every technical card is checked for shape, not for financial accuracy:
   company that is not on the card, not several questions in one) and the card carries a specific
   answer. 1,406 of 2,049.
 - **Not verified** — carries at least one issue chip. 643 cards, of which 230 have a *serious*
-  defect (Incomplete prompt, Question set, Needs the missing context, Missing inputs) and 413 are
+  defect (Incomplete prompt, Question set, Input Required, Missing inputs) and 413 are
   soft (Needs fresh research, No single right answer).
 
 Filter on **Verification** or **Known issues** in the rail to study one group at a time, or to
