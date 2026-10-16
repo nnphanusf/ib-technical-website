@@ -1,7 +1,7 @@
 Banking Interview Prep Website
 
-3,440 consolidated questions
-1. Behavioral / non-finance: 1,185
+3,506 consolidated questions
+1. Behavioral / non-finance: 1,251
 2. Finance: 2,255
 
 SOURCE AND EDITING NOTES
@@ -39,7 +39,7 @@ B0007. Describe an experience where you made an impact.
 Sources: Advent International
 
 B0008. Tell me about a time you demonstrated leadership.
-Sources: Advent International; Alpine Investors; BlackRock SF; Financial Technology Partners SF; Goldman Sachs HK; J.P. Morgan (compiled interview notes); MUFG; Rothschild & Co.; Wells Fargo Public Finance
+Sources: Advent International; Alpine Investors; BlackRock SF; Financial Technology Partners SF; Goldman Sachs HK; J.P. Morgan (compiled interview notes); MUFG; PGIM — Asset Management (USF 24-25); Rothschild & Co.; Wells Fargo Public Finance
 
 B0009. Give an example of independent thinking.
 Sources: Advent International
@@ -75,7 +75,7 @@ B0019. What were your favorite, least favorite and hardest academic subjects?
 Sources: Advent International
 
 B0020. Tell me about yourself and walk me through your resume.
-Sources: Aeris Partners; Alpine Investors; Apollo Global Management Real Estate Credit; Ares Management Direct Lending; Bank of America CHI; Bank of America Credit; Barclays MP; Barclays NY; BlackRock; BlackRock SF; Blackstone Group; BMO Capital Markets; BMO Capital Markets SF; BNP Paribas Leveraged Finance; BNP Paribas NY; Cain Brothers; Canaccord Genuity Boston; Canaccord Genuity NY Technology; Centerview Partners NY; Citadel; Citadel Equities; Citi Healthcare; Citi LA; Citi Technology SF; Citizens Bank; D.E. Shaw Research; DC Advisory NY; Deloitte Corporate Finance; Dodge & Cox; Ducera Partners NY; Eastdil Secured SF; Ernst & Young M&A; Evercore (compiled interview notes); Evercore ECM; Evercore Generalist; Evercore Healthcare MP; Evercore M&A NY; Evercore Private Capital Markets & Debt Advisory; Evercore Restructuring; Goldman Sachs LA; Goldman Sachs NY; Goldman Sachs NY Financing; Goldman Sachs TMT SF; Goldman Sachs Wealth Management; Greenhill NY; Guggenheim Partners; Houlihan Lokey Restructuring LA; Intrepid LA; J.P. Morgan (compiled interview notes); J.P. Morgan Asset Management; J.P. Morgan CHI; J.P. Morgan Finance and Business Management; J.P. Morgan Fixed Income; J.P. Morgan Research; J.P. Morgan SF; Jefferies; Jefferies NY; KKR Menlo Park; Lazard Healthcare SF; Lazard LA; Lazard Technology SF; LionTree; Macquarie Group LA; Miller Buckfire; Morgan Stanley Investment Management; Morgan Stanley MP; Morgan Stanley NY; Morgan Stanley SF; MUFG; MUFG LA; Nomura Global Markets; Nomura NY; Oak Hill; Perella Weinberg Partners; Perella Weinberg Partners CHI; Perella Weinberg Partners Healthcare SF; Perella Weinberg Partners NY; Perella Weinberg Partners SF; PIMCO Product & Strategy; Piper Sandler NY; PJT Partners M&A; PJT Partners RSSG NY; PNC Capital Markets; Prudential Global Investment Management; Raymond James FIG; RBC Capital Markets NY; Shea & Co; Société Générale NY; Stephens; TD Securities NY; UBS NY; Union Square Advisors; Vista Equity Partners; Wells Fargo NY; Wells Fargo Public Finance; William Blair SF; M&I 400 Questions Guide (2025), p. 7
+Sources: Aeris Partners; Alpine Investors; Apollo Global Management Real Estate Credit; Ares Management Direct Lending; BMO Capital Markets; BMO Capital Markets SF; BNP Paribas Leveraged Finance; BNP Paribas NY; Bank of America CHI; Bank of America Credit; Barclays MP; Barclays NY; BlackRock; BlackRock SF; Blackstone Group; Cain Brothers; Canaccord Genuity Boston; Canaccord Genuity NY Technology; Centerview Partners NY; Citadel; Citadel Equities; Citi Healthcare; Citi LA; Citi Technology SF; Citizens Bank; D.E. Shaw Research; DC Advisory NY; Deloitte Corporate Finance; Dodge & Cox; Ducera Partners NY; Eastdil Secured SF; Ernst & Young M&A; Evercore (compiled interview notes); Evercore ECM; Evercore Generalist; Evercore Healthcare MP; Evercore M&A NY; Evercore Private Capital Markets & Debt Advisory; Evercore Restructuring; First Citizens Bank — Capital Markets (USF 24-25); Goldman Sachs LA; Goldman Sachs NY; Goldman Sachs NY Financing; Goldman Sachs TMT SF; Goldman Sachs Wealth Management; Goldman Sachs — Investment Banking (USF 24-25); Greenhill NY; Guggenheim Partners; Houlihan Lokey Restructuring LA; Intrepid LA; J.P. Morgan (compiled interview notes); J.P. Morgan Asset Management; J.P. Morgan CHI; J.P. Morgan Finance and Business Management; J.P. Morgan Fixed Income; J.P. Morgan Research; J.P. Morgan SF; Jefferies; Jefferies NY; KKR Menlo Park; Lazard Healthcare SF; Lazard LA; Lazard Technology SF; LionTree; M&I 400 Questions Guide (2025), p. 7; MUFG; MUFG LA; Macquarie Group LA; Miller Buckfire; Morgan Stanley Investment Management; Morgan Stanley MP; Morgan Stanley NY; Morgan Stanley SF; Nomura Global Markets; Nomura NY; Oak Hill; PIMCO Product & Strategy; PJT Partners M&A; PJT Partners RSSG NY; PNC Capital Markets; Perella Weinberg Partners; Perella Weinberg Partners CHI; Perella Weinberg Partners Healthcare SF; Perella Weinberg Partners NY; Perella Weinberg Partners SF; Piper Sandler NY; Prudential Global Investment Management; RBC Capital Markets NY; Raymond James FIG; Shea & Co; Société Générale NY; Stephens; TD Securities NY; UBS NY; Union Square Advisors; Vista Equity Partners; Wells Fargo NY; Wells Fargo Public Finance; William Blair SF
 
 B0021. What are your hobbies and interests outside work?
 Sources: Aeris Partners; Apollo Global Management Real Estate Credit; Citizens Bank; Dodge & Cox; Evercore M&A NY; Evercore Restructuring; J.P. Morgan Fixed Income; J.P. Morgan Research; J.P. Morgan SF; Union Square Advisors
@@ -141,7 +141,7 @@ B0041. Why are you leaving your current position?
 Sources: Apollo Global Management Private Equity; Houlihan Lokey NY
 
 B0042. What is your proudest achievement?
-Sources: Apollo Global Management Private Equity; Dodge & Cox; MUFG; PJT Partners Park Hill; Raymond James FIG
+Sources: Apollo Global Management Private Equity; Dodge & Cox; MUFG; Morgan Stanley — Asset Management (USF 24-25); PJT Partners Park Hill; Raymond James FIG
 
 B0043. How do you work in a team?
 Sources: Apollo Global Management Private Equity; D.E. Shaw Research; Dodge & Cox; GCM Grosvenor; Nomura Global Markets
@@ -270,7 +270,7 @@ B0084. Discuss an achievement on your resume.
 Sources: J.P. Morgan Asset Management
 
 B0085. Why do you want to work in investment banking?
-Sources: Bank of America CHI; Bank of America PA; Barclays MP; Barclays SF; BMO Capital Markets SF; BNP Paribas NY; Cain Brothers; Centerview Partners NY; Citi Healthcare; Citi Technology SF; Citizens Bank; Deutsche Bank SF; Evercore (compiled interview notes); Evercore Healthcare MP; Evercore M&A NY; Financial Technology Partners SF; Goldman Sachs HK; Goldman Sachs NY; Goldman Sachs NY Financing; Greenhill NY; Houlihan Lokey Industrials; Houlihan Lokey Restructuring LA; Intrepid LA; J.P. Morgan (compiled interview notes); J.P. Morgan Asset Management; J.P. Morgan Finance and Business Management; J.P. Morgan SF; Jefferies NY; KeyBanc NY; Lazard Healthcare SF; Lazard LA; Lazard Technology SF; Leerink Partners; Morgan Stanley MP; MUFG; MUFG LA; Nomura Global Markets; Nomura NY; Perella Weinberg Partners; Perella Weinberg Partners CHI; Perella Weinberg Partners Healthcare SF; Perella Weinberg Partners NY; Perella Weinberg Partners SF; Piper Sandler NY; PJT Partners M&A; Raymond James FIG; RBC Capital Markets NY; Rothschild & Co. LA; Shea & Co; Société Générale NY; Stephens; TD Securities SF; The Sage Group; Union Square Advisors; Wells Fargo NY; William Blair CHI; William Blair SF; M&I 400 Questions Guide (2025), p. 8
+Sources: BMO Capital Markets SF; BNP Paribas NY; Bank of America CHI; Bank of America PA; Barclays MP; Barclays SF; Cain Brothers; Centerview Partners NY; Citi Healthcare; Citi Technology SF; Citizens Bank; Deutsche Bank SF; Evercore (compiled interview notes); Evercore Healthcare MP; Evercore M&A NY; Financial Technology Partners SF; Goldman Sachs HK; Goldman Sachs NY; Goldman Sachs NY Financing; Greenhill NY; Houlihan Lokey Industrials; Houlihan Lokey Restructuring LA; Intrepid LA; J.P. Morgan (compiled interview notes); J.P. Morgan Asset Management; J.P. Morgan Finance and Business Management; J.P. Morgan SF; Jefferies NY; KeyBanc NY; Lazard Healthcare SF; Lazard LA; Lazard Technology SF; Leerink Partners; M&I 400 Questions Guide (2025), p. 8; MUFG; MUFG LA; Morgan Stanley MP; Nomura Global Markets; Nomura NY; PGIM — Asset Management (USF 24-25); PJT Partners M&A; Perella Weinberg Partners; Perella Weinberg Partners CHI; Perella Weinberg Partners Healthcare SF; Perella Weinberg Partners NY; Perella Weinberg Partners SF; Piper Sandler NY; RBC Capital Markets NY; Raymond James FIG; Rothschild & Co. LA; Shea & Co; Société Générale NY; Stephens; TD Securities SF; The Sage Group; Union Square Advisors; Wells Fargo NY; William Blair CHI; William Blair SF
 
 B0086. Why do you think you will succeed in this role?
 Sources: J.P. Morgan Asset Management
@@ -315,7 +315,7 @@ B0099. Why are you interested in this role?
 Sources: Blackstone Group; BMO Capital Markets SF; Deloitte Corporate Finance; GCM Grosvenor; Greenhill NY; Guggenheim Partners; J.P. Morgan (compiled interview notes); J.P. Morgan Finance and Business Management; Morgan Stanley Investment Management; MUFG; MUFG LA; Nomura Global Markets
 
 B0100. What do you know about this firm and what it does?
-Sources: BlackRock SF; BMO Capital Markets SF; Guggenheim Partners; J.P. Morgan Fixed Income; J.P. Morgan Research; PJT Partners Park Hill
+Sources: BMO Capital Markets SF; BlackRock SF; Guggenheim Partners; J.P. Morgan Fixed Income; J.P. Morgan Research; PGIM — Asset Management (USF 24-25); PJT Partners Park Hill
 
 B0101. Describe yourself in three words.
 Sources: BMO Capital Markets SF; Perella Weinberg Partners NY
@@ -438,7 +438,7 @@ B0140. Why Chicago rather than New York?
 Sources: Bank of America CHI
 
 B0141. Do you have any questions for me?
-Sources: Bank of America CHI; Evercore Private Capital Markets & Debt Advisory; Goldman Sachs Wealth Management; J.P. Morgan (compiled interview notes); J.P. Morgan Fixed Income; J.P. Morgan Research; J.P. Morgan SF; Miller Buckfire; Union Square Advisors; M&I 400 Questions Guide (2025), p. 24
+Sources: Bank of America CHI; Evercore Private Capital Markets & Debt Advisory; Goldman Sachs Wealth Management; J.P. Morgan (compiled interview notes); J.P. Morgan Fixed Income; J.P. Morgan Research; J.P. Morgan SF; M&I 400 Questions Guide (2025), p. 24; Miller Buckfire; UBS — Investment Banking (USF 24-25); Union Square Advisors
 
 B0142. If pennies were stacked as tall as the empire state building, could all those pennies fit in my office?
 Sources: Bank of America CHI
@@ -996,7 +996,7 @@ B0326. Explain the major and show its applications.
 Sources: D.E. Shaw Research
 
 B0327. Why did you choose your degree or major?
-Sources: D.E. Shaw Research; Nomura Global Markets; PNC Capital Markets
+Sources: Accenture — Consulting (USF 24-25); D.E. Shaw Research; Nomura Global Markets; PNC Capital Markets
 
 B0328. Explain why you don't have a 4.0 GPA.
 Sources: DC Advisory NY
@@ -1620,7 +1620,7 @@ B0534. What interests you about equity markets?
 Sources: J.P. Morgan Asset Management
 
 B0535. How do you keep up with current events?
-Sources: J.P. Morgan Asset Management
+Sources: J.P. Morgan Asset Management; Raymond James — Capital Markets (USF 24-25)
 
 B0536. Who is the firm's CFO?
 Sources: J.P. Morgan Finance and Business Management
@@ -3571,6 +3571,204 @@ Sources: M&I 400 Questions Guide (2025), p. 38
 
 B1185. What were your unique contributions to this deal? How did you move the process forward?
 Sources: M&I 400 Questions Guide (2025), p. 44
+
+B1186. Please tell us your story. What led you to your major in your field of study?
+Sources: Freddie Mac — Corporate Finance (USF 24-25)
+
+B1187. Describe a time you pushed yourself outside your comfort zone. What were the results and what did you learn?
+Sources: Freddie Mac — Corporate Finance (USF 24-25)
+
+B1188. How do you deal with failure? Describe a time you failed and what you learned from it.
+Sources: Freddie Mac — Corporate Finance (USF 24-25)
+
+B1189. Freddie Mac plays a critical role in financing affordable housing for America's families. Briefly summarize your understanding of Freddie Mac's role in the U.S. housing market.
+Sources: Freddie Mac — Corporate Finance (USF 24-25)
+
+B1190. What is an interesting financial news article you read recently? Talk about what you learned from it.
+Sources: Freddie Mac — Corporate Finance (USF 24-25)
+
+B1191. Please share anything else about you that may not be on your resume. For example, what is something unique about yourself?
+Sources: Freddie Mac — Corporate Finance (USF 24-25)
+
+B1192. Describe a leadership experience.
+Sources: Blackstone — Private Equity (USF 24-25)
+
+B1193. Describe contributions you have made to foster inclusion.
+Sources: Blackstone — Private Equity (USF 24-25)
+
+B1194. Tell us about recent news you have read about the company, or in financial news generally.
+Sources: Blackstone — Private Equity (USF 24-25)
+
+B1195. What is your greatest strength, and how would it contribute to this firm?
+Sources: Blackstone — Private Equity (USF 24-25)
+
+B1196. Describe a time you adapted to unexpected changes or challenges in work or studies. How did you stay focused and maintain a positive attitude in such circumstances?
+Sources: Blackstone — Private Equity (USF 24-25)
+
+B1197. Tell us about a company or industry that is a compelling investment opportunity, and why.
+Sources: Blackstone — Private Equity (USF 24-25)
+
+B1198. Why Walmart?
+Sources: Walmart — Corporate Finance (USF 24-25)
+
+B1199. You seem like a strong candidate. Have you considered a bigger company or a different path?
+Sources: Walmart — Corporate Finance (USF 24-25)
+
+B1200. Do you prefer deliberate, self-directed work or fast-paced work such as forecasting?
+Sources: Walmart — Corporate Finance (USF 24-25)
+
+B1201. You are working on a deal with a major client. What would be your thought process for determining what to do? What factors would you consider, and how do you think your actions would be received by the client?
+Sources: Goldman Sachs — Investment Banking (USF 24-25)
+
+B1202. Describe a time when you were successful in meeting a highly challenging goal that others thought you would not be able to accomplish. Who set the goal and why was it challenging? What obstacles did you face, and what was the result?
+Sources: Goldman Sachs — Investment Banking (USF 24-25)
+
+B1203. Tell me about a time when you had to turn down a project or opportunity because of a conflict or competing deadline. What were the competing priorities, how and when did you decline, and what was the result?
+Sources: Goldman Sachs — Investment Banking (USF 24-25)
+
+B1204. Controllers ensures the accuracy of the firm's financial and regulatory information. If you were a member of the Controllers business, describe how your skillset and experience would let you have a positive impact in that role.
+Sources: Goldman Sachs — Operations & Risk (USF 24-25)
+
+B1205. Identify a recent event in the news - economic, political or market - and describe how you would evaluate it as a risk professional at a financial institution.
+Sources: Goldman Sachs — Operations & Risk (USF 24-25)
+
+B1206. Describe a time when you had an idea to make an existing process more efficient, decrease risk, or improve your team's efficiency. What changes did you make, what was the outcome, and what tools or resources did you use?
+Sources: Goldman Sachs — Operations & Risk (USF 24-25)
+
+B1207. Would you rather pursue equity research instead?
+Sources: Goldman Sachs — Equity Research (USF 24-25)
+
+B1208. What attracts you to this firm, and specifically to an opportunity in this analyst programme?
+Sources: J.P. Morgan — Private Banking (USF 24-25)
+
+B1209. Imagine you recently joined a team that has differing opinions on how best to approach the task at hand. How would you connect with your teammates in order to accomplish the goal?
+Sources: J.P. Morgan — Private Banking (USF 24-25)
+
+B1210. When you face difficult times, how do you navigate through them?
+Sources: J.P. Morgan — Private Banking (USF 24-25)
+
+B1211. Tell me about a time you had to ideate through a problem step by step. Explain the situation and the process you used.
+Sources: J.P. Morgan — Private Banking (USF 24-25)
+
+B1212. Why the investment team at this firm, and what makes you suitable for the position?
+Sources: Insight Partners — Private Equity (USF 24-25)
+
+B1213. Tell us about something that interests you and why you find it compelling.
+Sources: Insight Partners — Private Equity (USF 24-25)
+
+B1214. Tell us about a time you were not the leader of your team, and how you contributed.
+Sources: Insight Partners — Private Equity (USF 24-25)
+
+B1215. Why this firm, and why this service line rather than its operations practice?
+Sources: Huron Consulting — Consulting (USF 24-25)
+
+B1216. Why Accenture?
+Sources: Accenture — Consulting (USF 24-25)
+
+B1217. What represents you? Pick one activity and show how impactful it was.
+Sources: Accenture — Consulting (USF 24-25)
+
+B1218. Tell us about a time you worked in a team. How did you collaborate with the people around you?
+Sources: Amgen — Corporate Finance (USF 24-25)
+
+B1219. Briefly provide an overview of your educational and professional background, and what elements of that experience make you a good fit for this analyst programme and for the company.
+Sources: Delta Air Lines — Corporate Finance (USF 24-25)
+
+B1220. Tell us about a time you held yourself accountable to meet or exceed goals at work or school. What challenges did you face and how did you overcome them?
+Sources: Delta Air Lines — Corporate Finance (USF 24-25)
+
+B1221. Describe an analysis you created. What were you trying to research, how did you source your data, and how did you present your findings?
+Sources: Delta Air Lines — Corporate Finance (USF 24-25)
+
+B1222. Why are you interested in a career in the financial industry, and why this firm?
+Sources: Morgan Stanley — Investment Banking (USF 24-25)
+
+B1223. What motivated you to apply to this programme, how does its focus align with your background, and why do you think it is a good fit for you?
+Sources: Morgan Stanley — Investment Banking (USF 24-25)
+
+B1224. One of this firm's core values is a commitment to diversity and inclusion. Give an example of when you actively contributed to fostering it, and how you plan to continue promoting it here.
+Sources: Morgan Stanley — Investment Banking (USF 24-25)
+
+B1225. Why this firm's asset management arm?
+Sources: Morgan Stanley — Asset Management (USF 24-25)
+
+B1226. Tell us about a time you worked under pressure and a strict deadline.
+Sources: Morgan Stanley — Asset Management (USF 24-25)
+
+B1227. Tell us about your passions and interests, and how they might help you succeed here.
+Sources: UBS — Investment Banking (USF 24-25)
+
+B1228. What was your most significant achievement in the last year? Tell us what you did and what made your performance outstanding.
+Sources: UBS — Investment Banking (USF 24-25)
+
+B1229. Give one example of a time you had to quickly analyse a situation and make a fast decision.
+Sources: UBS — Investment Banking (USF 24-25)
+
+B1230. If this firm were to sponsor a sport other than Formula 1 at a global level, what would it be and why?
+Sources: UBS — Investment Banking (USF 24-25)
+
+B1231. What was the hardest issue this firm was facing at the time, and what do you know of its history?
+Sources: UBS — Investment Banking (USF 24-25)
+
+B1232. What interests you about a career in finance, and what drew you to explore this firm?
+Sources: Piper Sandler — Investment Banking (USF 24-25)
+
+B1233. How have you worked to foster an inclusive environment at school or in your community?
+Sources: Piper Sandler — Investment Banking (USF 24-25)
+
+B1234. How do you balance your academics with other personal or professional responsibilities that you would like us to take into consideration?
+Sources: Piper Sandler — Investment Banking (USF 24-25)
+
+B1235. Would you invest in CarMax, and why?
+Sources: Diamond Hill Capital — Equity Research (USF 24-25)
+
+B1236. Would you invest in McDonald's or Starbucks?
+Sources: Fidelity — Equity Research (USF 24-25)
+
+B1237. What are your thoughts on AI?
+Sources: Ares Management — Operations & Risk (USF 24-25)
+
+B1238. Tell me why you want to be part of this firm, and why this internship?
+Sources: Alliance Bernstein — Asset Management (USF 24-25)
+
+B1239. If you are completely swamped and you are working on two deals, one at the beginning of its process and one at the end, which would you focus on?
+Sources: Crosstree — Investment Banking (USF 24-25)
+
+B1240. Why financial planning?
+Sources: Mariner Wealth Management — Financial Planning (USF 24-25)
+
+B1241. How can you see yourself contributing to this firm?
+Sources: Mariner Wealth Management — Financial Planning (USF 24-25)
+
+B1242. Why private credit?
+Sources: Sixth Street — Private Equity (USF 24-25)
+
+B1243. What do you think about private credit investments?
+Sources: Sixth Street — Private Equity (USF 24-25)
+
+B1244. What do you look for when investing?
+Sources: Sixth Street — Private Equity (USF 24-25)
+
+B1245. What do you know about capital markets, and what do you know about this bank?
+Sources: First Citizens Bank — Capital Markets (USF 24-25)
+
+B1246. What verticals at this firm interest you most?
+Sources: PGIM — Asset Management (USF 24-25)
+
+B1247. You have two doors and one is the exit. Two identical knights stand in front of them; one always lies and the other always tells the truth. You may ask one question to one knight. What do you ask to find the right door?
+Sources: PGIM — Asset Management (USF 24-25)
+
+B1248. What specific skillset do you think would apply to this role?
+Sources: Raymond James — Capital Markets (USF 24-25)
+
+B1249. What stock or industry would you short?
+Sources: Raymond James — Capital Markets (USF 24-25)
+
+B1250. Why you, and why someone from your university?
+Sources: Wells Fargo — Investment Banking (USF 24-25)
+
+B1251. If I had a pizza restaurant, how would you estimate the number of pizzas sold?
+Sources: FTI Consulting — Consulting (USF 24-25)
 
 ==============================================================================
 2. FINANCE QUESTIONS

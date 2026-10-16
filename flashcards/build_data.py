@@ -45,6 +45,11 @@ FIRMS = [
     "Société Générale", "Stephens", "Summit Partners", "TD Securities", "Tesla",
     "The Sage Group", "UBS", "Union Square Advisors", "Vista Equity Partners",
     "Warburg Pincus", "Weiss Asset Management", "Wells Fargo", "William Blair",
+    # firms that appear only in the USF interview workbooks
+    "Accenture", "Alliance Bernstein", "Amgen", "BNY Mellon", "Crosstree", "Delta Air Lines",
+    "Diamond Hill Capital", "Dubin Clark", "FTI Consulting", "Fidelity", "First Citizens Bank",
+    "Freddie Mac", "Huron Consulting", "Mariner Wealth Management", "PEI Global", "PGIM",
+    "Walmart",
 ]
 FIRMS_BY_LEN = sorted(FIRMS, key=len, reverse=True)
 
@@ -338,7 +343,8 @@ BEHAV_GUIDES = [
 
     # ---- the why family --------------------------------------------------------------
     ("Why this firm",
-     r"^why (this firm|us\b|our)|why do you want to work (at|for) (this|our|us)|"
+     r"^why (this firm|us\b|our)|want to be part of this firm|see yourself contributing|"
+     r"why do you want to work (at|for) (this|our|us)|"
      r"why (goldman|evercore|moelis|lionTree|ubs|blair|nomura|lazard|jpmorgan|jp morgan)|"
      r"why.{0,20}specifically (do you want to work|interested in working) for|"
      r"what interests you in our firm|why us ver|why .{0,15} and why not other|"
@@ -368,6 +374,7 @@ BEHAV_GUIDES = [
 
     ("Why this group or product",
      r"why (this|x|\[x\]|that)? ?(group|coverage|industry group|product group)|"
+     r"why (financial planning|private credit)|"
      r"why (m&a|leveraged finance|lev fin|restructuring|ecm|dcm|capital markets|credit|"
      r"fixed income|equity research|secondaries|growth equity|public finance|industrials|"
      r"healthcare|technology|software|saas|fintech|renewables|energy|retail|beauty)\b|"
@@ -385,6 +392,7 @@ BEHAV_GUIDES = [
      "childhood."),
 
     ("Why not the other path",
+     r"would you rather pursue|have you considered a (bigger|different)|"
      r"why not (consulting|pe\b|private equity|buy.?side|buyside|s&t|sales and trading|hf\b|"
      r"hedge fund|vc\b|venture capital|ib\b|investment banking|a bulge|a major american bank|"
      r"a different group|accounting|trading)|why.{0,25}rather than (consulting|private equity|"
@@ -412,6 +420,7 @@ BEHAV_GUIDES = [
      "• Traps: \"it was the best school I got into\" and treating the major as an accident."),
 
     ("Why banking, finance or this field",
+     r"career in the financial|financial (career )?industry\b|"
      r"^why (banking|investment banking|finance|ib\b|asset management|private equity|"
      r"equity research|wealth management|investing|consulting)|"
      r"why do you want to (work in|do|be)|why are you interested in (banking|finance|"
@@ -431,7 +440,8 @@ BEHAV_GUIDES = [
 
     # ---- fit and self-assessment ------------------------------------------------------
     ("Tell me about yourself",
-     r"tell me about yourself|tell me everything about yourself|walk me through your "
+     r"tell me about yourself|tell me everything about yourself|tell us your story|"
+     r"overview of your educational|walk me through your "
      r"(resume|cv|background)|personal elevator pitch|tell me about your background",
      "The opener, and the only answer you can fully script. Ninety seconds, chronological, "
      "ending where you are sitting. "
@@ -480,7 +490,7 @@ BEHAV_GUIDES = [
      "actually working on."),
 
     ("Your strengths and what sets you apart",
-     r"strength|what sets you apart|what can you offer us|unique viewpoints|"
+     r"strength|what sets you apart|what can you offer us|unique viewpoints|what represents you|specific skillset|why someone from your university|"
      r"why should we hire you|two reasons we should hire|what makes you the best candidate|"
      r"most qualified candidate|best fit for this position|why are you the|"
      r"which skills distinguish you|skill you have that your peers do not|"
@@ -525,7 +535,7 @@ BEHAV_GUIDES = [
      "and one is not believed."),
 
     ("Your proudest achievement",
-     r"proudest|most proud|accomplishment you are most proud|key accomplishments|"
+     r"proudest|most proud|most significant achievement|accomplishment you are most proud|key accomplishments|"
      r"greatest achievement|what is something that you are doing right now that you are proud",
      "Choose on the strength of the story, not the size of the trophy. "
      "• Structure: brief context, what made it hard, what you specifically did, and the outcome "
@@ -547,7 +557,8 @@ BEHAV_GUIDES = [
      "• Traps: money, prestige, and abstractions so broad they could belong to anyone."),
     # ---- story questions, by what the story has to prove -----------------------------
     ("A hypothetical judgement call",
-     r"what would you do if|how would you handle (the situation|it)|you find an error|"
+     r"what would you do if|what would be your thought process|completely swamped|"
+     r"how would you handle (the situation|it)|you find an error|"
      r"sends the wrong document|accidentally emails you confidential|"
      r"not completely accurate|close enough|printed something out for a presentation|"
      r"realize you made a large error|conflicting work priorities|two mds|five mds|"
@@ -632,7 +643,7 @@ BEHAV_GUIDES = [
      "and one in which your own contribution never becomes visible."),
 
     ("Pressure, deadlines and competing priorities",
-     r"pressure|stress|tight (deadline|timeline|project)|long hours|workload|burnout|"
+     r"pressure|stress|difficult times|tight (deadline|timeline|project)|long hours|workload|burnout|"
      r"priorit|multitask|juggl|competing (tasks|deadlines|priorities|work)|"
      r"demanding hours|80 hours|can you work|handle the (hours|demands)|"
      r"high quality output under tight|the hardest you've ever worked",
@@ -675,7 +686,7 @@ BEHAV_GUIDES = [
      "before admitting you were stuck."),
 
     ("How you work: process, time and method",
-     r"how do you (manage your time|structure|approach|solve problems|teach|work in|organi[sz]e)|"
+     r"do you prefer|how do you (manage your time|structure|approach|solve problems|teach|work in|organi[sz]e)|"
      r"how would you approach a project|describe a typical research process|"
      r"how do you (think about|define success)|what is your approach to analy|"
      r"how would you (research an idea|go about convincing)|how do you structure an unfamiliar|"
@@ -692,7 +703,7 @@ BEHAV_GUIDES = [
      "when the data is incomplete. "
      "\u2022 Traps: a method with no example, and 'I'm very organised' with nothing behind it."),
     ("Tell me about a time (any story question)",
-     r"tell me about a time|tell us about a time|tell me a time|describe a (time|situation|"
+     r"describe an analysis|tell me about a time|tell us about a time|tell me a time|describe a (time|situation|"
      r"experience|project|problem|setback)|give (me |us )?an example|name a time|"
      r"talk about a time|a time (when|where|you)|when (did|have) you|"
      r"provide an example|describe an experience|an experience where|"
@@ -713,7 +724,8 @@ BEHAV_GUIDES = [
 
     # ---- what they expect you to have researched --------------------------------------
     ("What you know about the firm",
-     r"what do you know about (this firm|us|our|the firm|blackrock|blackstone|jpmorgan|"
+     r"summarize your understanding of|hardest issue this firm|know of its history|"
+     r"what do you know about (this firm|this bank|us|our|the firm|blackrock|blackstone|jpmorgan|"
      r"jp ?morgan|goldman|evercore|stephens|this (role|industry))|"
      r"who (is|are) (the firm's|our)? ?(ceo|cfo|founder|competitors)|who founded|"
      r"what differentiates this firm|who do you think our competitors|"
@@ -822,6 +834,7 @@ BEHAV_GUIDES = [
      "and inventing a figure you are not sure of."),
 
     ("An industry or sector you follow",
+     r"thoughts on ai\b|private credit investments|"
      r"industry (you follow|you've been following|do you think has the largest potential)|"
      r"what do you think (of|about) the|sector|vertical|trend|headwind|tailwind|"
      r"competitive landscape|disruptive force|driving forces of innovation|"
@@ -855,7 +868,8 @@ BEHAV_GUIDES = [
      "question about."),
 
     ("Pitch me a stock or an investment",
-     r"stock you|pitch|best idea|long or short|why are you long|investment (idea|thesis)|"
+     r"stock you|pitch|best idea|long or short|would you short|compelling investment opportunity|"
+     r"what do you look for when investing|why are you long|investment (idea|thesis)|"
      r"which parts of the capital structures|would you invest|one portco|"
      r"company you (like|admire)|how would you allocate|if i gave you a million|"
      r"you have \$?1 million|how would you spend the money|how would you research an idea|"
@@ -901,7 +915,7 @@ BEHAV_GUIDES = [
      "assumption the interviewer pushes back on instead of adjusting it."),
 
     ("Logic puzzles and brainteasers",
-     r"balance scale|weighing|light bulb|switches|ropes|jug|gallon|marble|"
+     r"balance scale|weighing|light bulb|switches|ropes|jug|gallon|marble|knight|"
      r"pirates|lily pad|doubles? (in size )?every|coins that look identical|"
      r"faulty machine|broken machine|cut a cake|rubik|next number|sequence|"
      r"probability that|biased coin|deck of 52|how many degrees|hands of a clock|"
@@ -922,7 +936,7 @@ BEHAV_GUIDES = [
 
     # ---- personality, logistics and tools ---------------------------------------------
     ("A playful hypothetical about you",
-     r"if you (were|could be) (an?|one)|which (animal|fruit|key|superhero)|"
+     r"if you (were|could be) (an?|one)|were to sponsor|which (animal|fruit|key|superhero)|"
      r"if you could (have dinner|bring one|choose 2|only save|be named)|"
      r"stranded on an island|three items|your life was a book|book about your life|"
      r"autobiography|headline|dinner with one person|guest speaker|"
@@ -939,6 +953,25 @@ BEHAV_GUIDES = [
      "• Traps: refusing to answer, taking too long, anything political or divisive, and an answer "
      "engineered so transparently to flatter the firm that it stops being human."),
 
+    ("Contributing to diversity and inclusion",
+     r"foster(ing)? (an )?inclusi|contributions you have made to foster|diversity and inclusion|"
+     r"what does diversity mean|commit to diversity|fostering dei|promoting these values|"
+     r"worked with a diverse (group|team)|inclusive environment",
+     "Several firms ask this one almost word for word, and it is scored on evidence, not on "
+     "sentiment. "
+     "\u2022 Structure: one concrete thing you did, who it affected and what changed. A specific "
+     "small action beats a statement of belief every time. "
+     "\u2022 What counts: recruitment outreach to a group that was not showing up, rewriting how "
+     "a club picked its officers, mentoring a first-year student, making sure the quiet person in "
+     "a group project was heard and their idea used. You do not need to have run a campaign. "
+     "\u2022 If asked what diversity means to you, answer in terms of what it does for the work "
+     "\u2014 different backgrounds catching assumptions a uniform team would miss \u2014 and "
+     "then give the example anyway. "
+     "\u2022 If the firm names it as a core value and asks how you would continue it here, name "
+     "something an analyst could actually do: the campus pipeline you would keep, the network you "
+     "would join. "
+     "\u2022 Traps: abstractions with no action attached, claiming credit for a programme you "
+     "merely attended, and treating the question as a box to tick."),
     ("A class, subject or your major",
      r"(difficult|toughest|hardest|favou?rite|least favou?rite) class|which class|"
      r"classes are you taking|academic subjects|what are you studying|"
@@ -957,7 +990,8 @@ BEHAV_GUIDES = [
      "\u2022 Traps: calling a class useless or a professor bad, and naming a favourite class you "
      "cannot say anything specific about."),
     ("Hobbies and life outside work",
-     r"hobb|outside (of )?(work|the office|academics)|favou?rite (book|website|movie|app|class|"
+     r"hobb|passions and interests|something that interests you|balance your academics|"
+     r"outside (of )?(work|the office|academics)|favou?rite (book|website|movie|app|class|"
      r"food|state)|what do you do for fun|fun fact|something personal about yourself|"
      r"not (listed |)on your resume|tell me something that will make me remember|"
      r"what sort of clubs|where do you like to (hang out|go hiking)|"
@@ -1032,11 +1066,21 @@ BEHAV_GUIDES = [
 BEHAV_GUIDE_PATTERNS = [(name, re.compile(pat, re.I), text) for name, pat, text in BEHAV_GUIDES]
 
 
+BARE_WHY = re.compile(r"^\s*why\s+([A-Za-z][\w&.'\- ]{1,30})\s*\??\s*$", re.I)
+
+
 def behav_guidance(question, topic):
     """Guidance for this kind of question, falling back to the topic framework.
 
     First match wins, so BEHAV_GUIDES is ordered narrow to broad.
     """
+    # "Why Walmart?" names a firm, so it is a why-this-firm question even though nothing
+    # in the wording says so. Checked against the firm list rather than guessed at.
+    m = BARE_WHY.match(question)
+    if m and m.group(1).strip().lower() in {f.lower() for f in FIRMS}:
+        for name, pat, text in BEHAV_GUIDE_PATTERNS:
+            if name == "Why this firm":
+                return name, text
     for name, pat, text in BEHAV_GUIDE_PATTERNS:
         if pat.search(question):
             return name, text
@@ -1222,10 +1266,36 @@ def classify(text, rules, default):
     return default
 
 
+# The USF interview workbooks record a "General Area" per firm. A source label carrying
+# the USF tag maps straight from that area to a group, rather than being guessed from
+# keywords in the label - "BMO Capital Markets" is a firm name, not a capital-markets desk.
+USF_TAG = "(usf 24-25)"
+USF_AREA_GROUP = {
+    "investment banking": "M&A / Generalist",
+    "equity research": "Research",
+    "private equity": "Private Equity & Growth",
+    "asset management": "Asset & Wealth Management",
+    "wealth management": "Asset & Wealth Management",
+    "private banking": "Asset & Wealth Management",
+    "financial planning": "Asset & Wealth Management",
+    "sales & trading": "Markets & Trading",
+    "capital markets": "Equity Capital Markets",
+    "commercial banking": "Credit & Leveraged Finance",
+    "consulting": "Consulting",
+    "operations & risk": "Operations & Risk",
+    "corporate finance": "Corporate Finance",
+}
+
 def groups_for(sources, text):
     out = []
     for s in sources:
         low = s.lower()
+        if USF_TAG in low:
+            m = re.search(r"\u2014\s*(.+?)\s*\(usf", low)
+            g = USF_AREA_GROUP.get(m.group(1).strip()) if m else None
+            if g and g not in out:
+                out.append(g)
+            continue
         for name, keys in GROUP_BY_LABEL:
             if any(k in low for k in keys) and name not in out:
                 out.append(name)

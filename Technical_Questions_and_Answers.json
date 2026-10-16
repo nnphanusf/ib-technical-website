@@ -462,6 +462,7 @@
       "question": "What is private equity?",
       "question_sources": [
         "Advent International",
+        "Dubin Clark — Private Equity (USF 24-25)",
         "Moelis & Co. PFA NY",
         "Vista Equity Partners"
       ],
@@ -1098,6 +1099,10 @@
         "Apollo Global Management Private Equity",
         "Apollo Global Management Real Estate Credit",
         "Ardian Secondaries",
+        "BMO Capital Markets",
+        "BMO Capital Markets SF",
+        "BNP Paribas NY",
+        "BNP Paribas — Investment Banking (USF 24-25)",
         "Bain Capital Credit",
         "Bank of America CHI",
         "Bank of America NY",
@@ -1105,9 +1110,6 @@
         "BlackRock",
         "BlackRock SF",
         "Blackstone Group",
-        "BMO Capital Markets",
-        "BMO Capital Markets SF",
-        "BNP Paribas NY",
         "Cain Brothers",
         "Canaccord Genuity Boston",
         "Centerview Partners NY",
@@ -1135,8 +1137,8 @@
         "J.P. Morgan SF",
         "Jefferies",
         "Jefferies NY",
-        "KeyBanc NY",
         "KKR",
+        "KeyBanc NY",
         "Lazard Healthcare SF",
         "Lazard LA",
         "Leerink Partners",
@@ -1145,21 +1147,23 @@
         "M&I 400 Questions Guide (2025), p. 86",
         "M&I 400 Questions Guide (2025), p. 94",
         "M&I 400 Questions Guide (2025), p. 95",
+        "MUFG",
+        "MUFG LA",
         "Macquarie Group LA",
         "Miller Buckfire",
         "Moelis & Co. PFA NY",
         "Morgan Stanley NY",
         "Morgan Stanley SF",
-        "MUFG",
-        "MUFG LA",
+        "Morgan Stanley — Investment Banking (USF 24-25)",
         "Nomura NY",
+        "PEI Global — Investment Banking (USF 24-25)",
+        "PJT Partners M&A",
+        "PJT Partners RSSG NY",
         "Perella Weinberg Partners",
         "Perella Weinberg Partners Healthcare SF",
         "Perella Weinberg Partners NY",
         "Perella Weinberg Partners SF",
         "Piper Sandler NY",
-        "PJT Partners M&A",
-        "PJT Partners RSSG NY",
         "Raine Group",
         "Raymond James FIG",
         "Raymond James NY",
@@ -1344,8 +1348,9 @@
       "question": "How does a $10 increase in depreciation affect the three financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Apollo Global Management Real Estate Credit",
-        "Bank of America Credit",
         "BMO Capital Markets",
+        "BNP Paribas — Investment Banking (USF 24-25)",
+        "Bank of America Credit",
         "Canaccord Genuity Boston",
         "Citi LA",
         "Deloitte Corporate Finance",
@@ -1355,6 +1360,7 @@
         "Jefferies NY",
         "Leerink Partners",
         "LionTree",
+        "Morgan Stanley — Investment Banking (USF 24-25)",
         "Perella Weinberg Partners CHI",
         "Perella Weinberg Partners NY",
         "Raymond James FIG",
@@ -1487,12 +1493,13 @@
       "question_id": "F0043",
       "question": "Walk me through the three financial statements.",
       "question_sources": [
+        "Amgen — Corporate Finance (USF 24-25)",
         "Ares Management Direct Lending",
+        "BMO Capital Markets",
+        "BMO Capital Markets SF",
         "Bank of America Credit",
         "Bank of America PA",
         "Blackstone Group",
-        "BMO Capital Markets",
-        "BMO Capital Markets SF",
         "Canaccord Genuity Boston",
         "Canaccord Genuity NY Technology",
         "Centerview Partners NY",
@@ -1508,8 +1515,9 @@
         "Jefferies NY",
         "Lazard LA",
         "M&I 400 Questions Guide (2025), p. 50",
-        "Morgan Stanley SF",
         "MUFG",
+        "Morgan Stanley SF",
+        "Nomura — Sales & Trading (USF 24-25)",
         "PJT Partners Park Hill",
         "PNC Capital Markets",
         "Shea & Co",
@@ -6877,6 +6885,7 @@
       "question_id": "F0274",
       "question": "What is CAPM?",
       "question_sources": [
+        "BNP Paribas — Investment Banking (USF 24-25)",
         "BlackRock SF",
         "Goldman Sachs HK"
       ],
@@ -25889,6 +25898,7 @@
       "question_id": "F1231",
       "question": "Why cant you value a financial institution with EBITDA multiples?",
       "question_sources": [
+        "BNP Paribas — Investment Banking (USF 24-25)",
         "Morgan Stanley Singapore"
       ],
       "question_references": [
@@ -46442,6 +46452,300 @@
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "notes": [
         "Split out of F1321, which welded several unrelated prompts into one card."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2506",
+      "question": "Explain the relationship between bond prices and yields as you would to someone unfamiliar with the finance industry.",
+      "question_sources": [
+        "Freddie Mac — Corporate Finance (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2506"
+      ],
+      "topic": "Accounting & Valuation",
+      "answer": "A bond pays a fixed set of cash flows. The price is what you pay today for those payments; the yield is the return you earn by paying that price. Because the payments are fixed, the only way the return can change is through the price, so price and yield move in opposite directions. • The arithmetic: a bond paying $5 a year costs $100, so it yields 5%. If newly issued bonds start paying $7, nobody will pay $100 for $5 a year. The old bond's price falls until its return matches the new one - around $71, where $5 is a 7% yield. When rates fall, the same logic pushes the old bond's price up. • Two things amplify the move: a longer maturity and a lower coupon both push more of the value further into the future, so the price has to move further for the same change in yield. That sensitivity is duration. • In plain language: the bond's payments are locked, so when the going rate changes, the price is the only thing that can adjust.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2507",
+      "question": "Internal Audit serves as a risk and control advisor across the firm. How would you describe the difference between a risk and a control, and how do risks and controls relate to one another?",
+      "question_sources": [
+        "Goldman Sachs — Operations & Risk (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2507"
+      ],
+      "topic": "Risk & Controls",
+      "answer": "A risk is something that could go wrong and the harm it would do. A control is what you put in place to stop it happening, or to catch it quickly when it does. • How they relate: you identify and size the risk first, then design controls against it. What is left after the controls are working is residual risk, and management decides whether to accept it. • Controls come in three kinds. Preventive stops the event - a system that blocks a trade above a limit. Detective finds it afterwards - a daily reconciliation or an exception report. Corrective fixes it and stops the recurrence. • A control is only as good as its design and its operation. A reconciliation nobody performs is a control in name only, which is exactly what internal audit tests: does the control address the risk, and is it actually being done. • Example: the risk is a payment going to the wrong account; the control is dual authorisation above a threshold, backed by a daily exception report.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2508",
+      "question": "You have one million dollars in cash. What is the most you would be willing to lend against it?",
+      "question_sources": [
+        "Goldman Sachs — Commercial Banking (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2508"
+      ],
+      "topic": "Debt & Credit",
+      "answer": "Say which reading you are answering, because the question works two ways, and then give the framework. • If you are the lender deciding how much of your own $1m to put out: not all of it. You hold back liquidity for your own obligations, you size each loan so that one default cannot impair you, and you lend only where the spread compensates for expected loss - probability of default times loss given default times exposure - plus a return on the capital you are tying up. A bank doing this is additionally bound by reserve and capital requirements. • If the $1m of cash is the collateral: cash is the best collateral there is, so the advance rate is the highest you will ever offer, but it is still rarely 100%. The deductions are legal and operational rather than market-driven - whether the cash is pledged and perfected, whether it sits in a blocked account you control, whether another creditor has a prior claim, what currency it is in, and how fast you could enforce. • The general form is the same either way: advance rate equals value less a haircut for price volatility, time to liquidate and enforcement risk. Cash removes most of the first two and none of the third.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2509",
+      "question": "Pick one of the major financial statements - the Income Statement, the Balance Sheet or the Statement of Cash Flows. What does it tell the reader about a company?",
+      "question_sources": [
+        "Delta Air Lines — Corporate Finance (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2509"
+      ],
+      "topic": "Accounting & 3 Statements",
+      "answer": "Pick one and say what it is for, then show you know how it relates to the other two. • Income Statement: profitability over a period. Revenue less expenses down to Net Income. It is accrual-based, so it records revenue when earned and costs when incurred, which is why it does not tell you about cash. • Balance Sheet: what the company owns and owes at a single point in time. Assets equal Liabilities plus Equity. It tells you about liquidity, leverage and how the business is funded. • Cash Flow Statement: the one most worth picking. It starts from Net Income, reverses the non-cash items and the working-capital movements, then shows investing and financing. It tells you whether the profits are real, because a company can be profitable and still run out of cash. • Intuition: the Income Statement tells you whether the business earns, the Balance Sheet tells you what it is standing on, and the Cash Flow Statement tells you whether it can pay.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2510",
+      "question": "You are starting a regional airline. Revenue per passenger is $100, fixed costs are $10,000 and the cost per passenger is $20. Calculate the number of passengers required to break even, and give examples of the fixed and variable cost categories you would include in the analysis.",
+      "question_sources": [
+        "Delta Air Lines — Corporate Finance (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2510"
+      ],
+      "topic": "Accounting & Valuation",
+      "answer": "Break-even is where contribution covers fixed costs. • Contribution per passenger: $100 of revenue less $20 of variable cost is $80. • Break-even passengers: $10,000 of fixed cost divided by $80 is 125 passengers. Check it: 125 x $100 = $12,500 of revenue, less 125 x $20 = $2,500 of variable cost, less $10,000 of fixed cost, equals zero. • Fixed costs in an airline: aircraft ownership or lease and the depreciation on it, gate and hangar leases, hull and liability cover, salaried crew and administration, maintenance reserves, reservation and IT systems, and the cost of certification. These do not move with one more passenger on a scheduled flight. • Variable costs: fuel, landing and navigation fees, per-passenger airport charges, ground handling and baggage, catering, distribution and booking fees, and crew overtime or per diems. • Worth saying out loud: most airline costs are fixed per flight rather than per passenger, which is why load factor drives the economics and why the marginal passenger on an already scheduled flight is close to pure contribution.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2511",
+      "question": "How do you think about valuing a machinery company?",
+      "question_sources": [
+        "Morgan Stanley — Investment Banking (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2511"
+      ],
+      "topic": "Valuation & Comps",
+      "answer": "Machinery is a cyclical capital-goods business, so the whole answer turns on not valuing it at the wrong point in the cycle. • Methods: EV/EBITDA and EV/EBIT against peers, a DCF whose forecast covers a full cycle, and precedent transactions. P/E is least useful at a trough, because the E is depressed and operating leverage makes it swing hardest. • Normalise: value mid-cycle margins rather than last year's. A trough multiple on trough earnings double-counts the downturn, and a peak multiple on peak earnings double-counts the boom. • What drives the multiple: the share of revenue from aftermarket parts and service, which is recurring and higher-margin and earns a premium over pure original-equipment sales; the backlog and book-to-bill; operating leverage; and how much working capital, mostly inventory, the business needs to grow. • Watch the bridge: these companies often carry pension deficits and finance arms, both of which belong in the move from enterprise to equity value. Calendarise peers so you are comparing the same months.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2512",
+      "question": "What metrics most affect paper and packaging prices?",
+      "question_sources": [
+        "Morgan Stanley — Investment Banking (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2512"
+      ],
+      "topic": "Industry & Company Analysis",
+      "answer": "Paper and packaging is a commodity industry, so price follows capacity against demand, with input costs setting the floor. • Supply: the operating rate, which is capacity utilisation across the industry, is the single most watched number. Announced capacity additions, mill closures and conversions move it, as do inventory weeks held at mills and at converters. • Input costs: pulp prices for virgin fibre, recovered-fibre prices for recycled grades, energy and fuel, chemicals, and freight. Recovered fibre is the most volatile and feeds straight into containerboard economics. • Demand: parcel and e-commerce volumes for containerboard, food and beverage demand for cartonboard, and the secular decline of graphic and printing paper. • Mechanics: much of the volume is sold on contracts that reference published price indices, so announced price increases pass through with a lag rather than immediately. Currency matters for exporters. • The short version: operating rates and fibre costs explain most of the price move; everything else is second order.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2513",
+      "question": "Would you rather own a good business with bad management, or a bad business with good management? Which would you choose and why?",
+      "question_sources": [
+        "BNY Mellon — Equity Research (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2513"
+      ],
+      "topic": "Industry & Company Analysis",
+      "answer": "Most investors answer the good business, and that is the defensible answer, but the reasoning is what is being tested. • The case for the good business: industry economics dominate outcomes. A business with structural advantages - pricing power, recurring revenue, low capital intensity - earns returns above its cost of capital even when run indifferently, and poor management is a fixable, often temporary problem. A bad business consumes capital at low returns however able the manager is. The usual phrasing is that when good management meets a business with bad economics, it is the reputation of the business that stays intact. • The condition that flips it: management that is dishonest, or that allocates capital destructively through overpriced acquisitions or a levered buyback at the top, can permanently impair even an excellent business. Incompetence is survivable; value destruction and fraud are not. • What makes the answer strong: say that price decides it in practice, since a good business at a rich enough multiple is still a bad investment, and name what would have to be true for you to change your mind.",
+      "answer_status": "open_ended_framework",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2514",
+      "question": "How do you find the multiple of a business?",
+      "question_sources": [
+        "Crosstree — Investment Banking (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2514"
+      ],
+      "topic": "Valuation & Comps",
+      "answer": "A multiple is just value divided by a metric. The work is in making the numerator and the denominator belong to the same people and the same period. • Build the numerator: enterprise value is equity value plus debt, preferred stock and non-controlling interests, less cash and non-operating assets. Use it with metrics available to all capital providers - revenue, EBITDA, EBIT. Use equity value only with after-interest metrics such as net income, which is where P/E comes from. • Build the denominator: strip out non-recurring items, use the same lease treatment across the set, and calendarise so every company's figures cover the same months. • Then take the set: pick genuine peers on business model, size and growth rather than SIC code, compute each one's multiple, and use the median - a mean is distorted by one outlier. • Three sources give three different answers on purpose: trading comps give where the market values a minority stake today, precedent transactions include a control premium, and a DCF gives an implied multiple from your own assumptions. Quote which one you used.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2515",
+      "question": "Two companies have the same financial statements but one is valued higher than the other. Give three quantitative differences that could explain the gap.",
+      "question_sources": [
+        "PEI Global — Investment Banking (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2515"
+      ],
+      "topic": "Valuation & Comps",
+      "answer": "If the historical statements really are identical, the gap cannot come from the past - it has to come from what the market expects next and what it charges for the risk. • Growth: value is driven by future cash flows, not reported ones. The same EBITDA growing at 10% is worth far more than the same EBITDA growing at 2%, which is why two identical income statements support different multiples. • Risk, through the discount rate: a different beta, a different leverage profile, a different country or customer concentration all change WACC, and a point of WACC moves a valuation materially. • Quality and durability of the earnings: the same operating profit earned from recurring contracted revenue is worth more than one earned from one-off project work, and a business with one customer at 60% of revenue is discounted against one with a thousand. • If the question means only the income statement is identical, add the obvious fourth: the balance sheet. Different net debt gives a different equity value for the same enterprise value, and non-operating assets, NOLs and share count all move the per-share answer.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2516",
+      "question": "You hold two stocks. How would you hedge the position?",
+      "question_sources": [
+        "Nomura — Sales & Trading (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2516"
+      ],
+      "topic": "Markets & Economy",
+      "answer": "Say what risk you are hedging first, because the instrument follows from that. • Market risk: compute the portfolio beta as the weighted average of the two stocks' betas, then short index futures with a notional of portfolio value times that beta. A $1m book with a beta of 1.2 needs about $1.2m of index futures sold to be beta-neutral. • Sector or single-name risk: short a sector ETF or a correlated peer against the position, which leaves you with the idiosyncratic view you actually wanted to own. • Options: buy protective puts if you want to keep the upside and cap the downside, and sell a call against them to fund the premium if you will accept a ceiling. The put costs money every period; the collar is cheaper and gives up the tail. • Two things to say to show you have thought about it: if the two stocks are correlated, the portfolio's risk is less than the sum of the parts, so hedge the net exposure rather than each leg; and no hedge is perfect - basis risk, beta instability and carry mean the hedge is a reduction in risk, not an elimination of it.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2517",
+      "question": "What does a sales and trading desk actually do?",
+      "question_sources": [
+        "Nomura — Sales & Trading (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2517"
+      ],
+      "topic": "Markets & Economy",
+      "answer": "Two jobs that sit next to each other on the same floor. • Sales covers institutional clients - asset managers, hedge funds, pension funds, corporate treasuries. They bring the client market colour and trade ideas, take the order, and manage the relationship. • Trading makes markets: quotes a two-sided price, takes the other side of the client's trade, then holds and hedges that risk until it can be offset. The desk is providing liquidity, and it is compensated by the bid-offer spread. • Organised by asset class - equities, rates, credit, FX, commodities - and split between flow business, which is high volume and client-driven, and structuring, which builds bespoke products for a specific client problem. Research supports both but sits behind a wall. • Where the revenue comes from: bid-offer spread, commissions and structuring fees. Since the Volcker Rule, it is not supposed to be proprietary risk-taking. • Contrast with banking: a trade is measured in seconds to days and the P&L is marked daily, where an M&A deal runs for months and is paid on completion.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2518",
+      "question": "What do you know about futures?",
+      "question_sources": [
+        "Nomura — Sales & Trading (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2518"
+      ],
+      "topic": "Markets & Economy",
+      "answer": "A future is a standardised, exchange-traded contract to buy or sell an asset at an agreed price on an agreed date. • The mechanics that matter: it is cleared by an exchange, so your counterparty is the clearing house rather than another firm. You post initial margin, and the position is marked to market daily with variation margin moving cash between the two sides every day. • Against a forward: a forward is bilateral and over-the-counter, can be any size and date, carries the counterparty's credit risk, and settles once at maturity. The future is standardised and margined daily, which is what removes the credit risk. • Pricing: the forward price is the spot compounded at the cost of carry - financing, plus storage, less any yield the asset pays. When the futures curve is above spot it is in contango; below spot, backwardation. • Use: hedging a known future exposure, or taking leveraged exposure, since margin is a fraction of notional. Most contracts are closed out before delivery rather than physically settled.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2519",
+      "question": "Explain derivatives, and the offerings a bank provides in them.",
+      "question_sources": [
+        "Nomura — Sales & Trading (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2519"
+      ],
+      "topic": "Markets & Economy",
+      "answer": "A derivative is a contract whose value comes from something else - a rate, a price, an index or a credit. There are four building blocks and everything else is a combination of them. • The blocks: forwards and futures lock a price for a future date; swaps exchange one stream of cash flows for another; options give the right but not the obligation to transact, so they cost a premium and have asymmetric payoff. • What a bank offers a corporate client: FX forwards, swaps and options for a company with receipts in another currency; interest-rate swaps, caps, floors and swaptions for one with floating-rate debt it wants fixed; and commodity hedges for an input it buys. • What it offers an investor: equity options and total return swaps, structured notes that package an option with a bond, and credit default swaps to buy or sell credit protection. • The dealer's own position: it is the market maker, so it takes the other side and then hedges its book, earning the spread plus a structuring fee rather than a directional bet. • Worth mentioning: collateral under a CSA, central clearing for standardised contracts since 2008, and that counterparty risk is the reason both exist.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Collected from the USF Interview + Offers Database 24-25."
       ],
       "supporting_reference_urls": []
     }
