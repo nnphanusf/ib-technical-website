@@ -365,12 +365,14 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     shuffled: {Technical: true, Behavioral: true},
     idx: {Technical: 0, Behavioral: 0},
     revealed: false,
-    seed: {Technical: 1, Behavioral: 2},
     gridLimit: 60
   };
+  // Page-local ranks: fresh on reload, stable through renders and filtering.
+  var shuffleRanks = {Technical: null, Behavioral: null};
   function loadUI() {
     ui.filters = {Technical: blankFilters(), Behavioral: blankFilters()};
     ui.idx = {Technical: 0, Behavioral: 0};
+    ui.shuffled = {Technical: true, Behavioral: true};
     ui.revealed = false;
     if (!user) return;
     try {
@@ -380,9 +382,6 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         if (u.filters) ui.filters = u.filters;
         if (typeof u.cardView === "boolean") ui.cardView = u.cardView;
         if (typeof u.alwaysShow === "boolean") ui.alwaysShow = u.alwaysShow;
-        if (u.shuffled) ui.shuffled = u.shuffled;
-        if (u.idx) ui.idx = u.idx;
-        if (u.seed) ui.seed = u.seed;
       }
     } catch (e) {}
   }
@@ -390,8 +389,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (!user) return;
     try {
       localStorage.setItem(profileKey("ui"), JSON.stringify({
-        tab: ui.tab, filters: ui.filters, cardView: ui.cardView, alwaysShow: ui.alwaysShow,
-        shuffled: ui.shuffled, idx: ui.idx, seed: ui.seed
+        tab: ui.tab, filters: ui.filters, cardView: ui.cardView, alwaysShow: ui.alwaysShow
       }));
     } catch (e) {}
   }
@@ -861,6 +859,17 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     }
     return true;
   }
+  function reshuffle(tab) {
+    var cards = DATA.cards.filter(function (c) { return c.t === tab; });
+    // Fisher-Yates mixes the entire tab without duplicating or dropping cards.
+    for (var i = cards.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var card = cards[i]; cards[i] = cards[j]; cards[j] = card;
+    }
+    var ranks = Object.create(null);
+    cards.forEach(function (c, i) { ranks[c.id] = i; });
+    shuffleRanks[tab] = ranks;
+  }
   function deck() {
     var f = ui.filters[ui.tab];
     var q = ui.search.trim().toLowerCase();
@@ -873,13 +882,9 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       return true;
     });
     if (ui.shuffled[ui.tab]) {
-      var seed = ui.seed[ui.tab] || 1;
-      out.forEach(function (c) {
-        var h = seed, s = c.id;
-        for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 2147483647;
-        c.__r = (h * 1103515245 + 12345) % 2147483647;
-      });
-      out.sort(function (a, b) { return a.__r - b.__r; });
+      if (!shuffleRanks[ui.tab]) reshuffle(ui.tab);
+      var ranks = shuffleRanks[ui.tab];
+      out.sort(function (a, b) { return ranks[a.id] - ranks[b.id]; });
     } else {
       out.sort(function (a, b) { return a.id < b.id ? -1 : a.id > b.id ? 1 : 0; });
     }
@@ -1438,7 +1443,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     else if (e.key.toLowerCase() === "b") { toggle(save.bookmarked, c.id); render(); }
     else if (e.key.toLowerCase() === "f") { toggle(save.flagged, c.id); render(); }
     else if (e.key.toLowerCase() === "s") {
-      ui.seed[ui.tab] = Math.floor(Math.random() * 2e9) + 1;
+      reshuffle(ui.tab);
       ui.shuffled[ui.tab] = true; ui.idx[ui.tab] = 0; ui.revealed = false; persistUI(); render();
     } else if (e.key.toLowerCase() === "t") {
       toggleTheme();
