@@ -1066,6 +1066,18 @@ BEHAV_GUIDES = [
 BEHAV_GUIDE_PATTERNS = [(name, re.compile(pat, re.I), text) for name, pat, text in BEHAV_GUIDES]
 
 
+def _breaks(text):
+    """Put a real paragraph break before each bullet.
+
+    The page splits on authored blank lines when it finds them and falls back to a
+    sentence heuristic when it does not. The heuristic gives a bullet exactly one
+    sentence, which breaks the guidance bullets that run to two or three. Authoring
+    the breaks removes the guesswork for this text without touching the technical
+    answers, where the heuristic still does the right thing.
+    """
+    return text.replace(" \u2022 ", "\n\n\u2022 ")
+
+
 BARE_WHY = re.compile(r"^\s*why\s+([A-Za-z][\w&.'\- ]{1,30})\s*\??\s*$", re.I)
 
 
@@ -1083,8 +1095,8 @@ def behav_guidance(question, topic):
                 return name, text
     for name, pat, text in BEHAV_GUIDE_PATTERNS:
         if pat.search(question):
-            return name, text
-    return None, BEHAV_FRAMEWORKS[topic]
+            return name, _breaks(text)
+    return None, _breaks(BEHAV_FRAMEWORKS[topic])
 
 
 
