@@ -40,7 +40,7 @@ rebuild, and commit. **Do not push** — the user pushes from VS Code. Commit me
 Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 ```
 
-## Progress: 1,228 of 2,049 technical cards audited, 36 errors found and corrected
+## Progress: 1,459 of 2,049 technical cards audited, 44 errors found and corrected
 
 | Topic | Cards | Errors | Audit file | Commit |
 | --- | ---: | ---: | --- | --- |
@@ -49,7 +49,8 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 | Enterprise & Equity Value + Accretion / Dilution | 158 | 4 | `ev_accretion_audit.md` | `b512c56` |
 | Debt, Credit & Restructuring | 261 | 4 | `restructuring_audit.md` | `4d062bb` |
 | Valuation & Comps | 153 | 13 | `valuation_audit.md` | `d949203` |
-| Merger Model & M&A + LBO & Private Equity | 225 | 4 | `merger_lbo_audit.md` | see log |
+| Merger Model & M&A + LBO & Private Equity | 225 | 4 | `merger_lbo_audit.md` | `e2c9092` |
+| Options, FIG, Quant, Deal Process, Markets, Stock Pitch | 231 | 8 | `specialty_audit.md` | see log |
 
 Two of the Enterprise & Equity Value errors were reclassified from "incomplete" during the Merger
 Model pass, which also restored four lost guide answers in other topics; `merger_lbo_audit.md`
@@ -58,17 +59,15 @@ explains both. The Valuation & Comps tranche was done by a separate session.
 `answer_review.md` is the original 27-card sample that started this. Read the audit files before
 beginning — they record the method, the error bar used, and the leads below.
 
-## Remaining: 821 technical cards
+## Remaining: 590 technical cards, in one topic
 
 | Topic | Cards | Priority |
 | --- | ---: | --- |
-| Industry & Company Analysis | 590 | **largest remaining**; mostly qualitative |
-| Stock Pitch & Investing | 101 | mostly open-ended |
-| Markets & Economy | 69 | mostly date-dependent |
-| Deal & Process | 31 | one card already fixed |
-| Options & Derivatives | 14 | **best value left** — small and formula-heavy |
-| Quant & Brainteasers | 8 | |
-| FIG & Specialty Valuation | 6 | thin ice; one card already fixed |
+| Industry & Company Analysis | 590 | the only one left |
+
+Expect a low error yield: this topic is mostly qualitative and firm-specific, and the
+checkable surface is small. Audit it in three groups of roughly 200.
+
 
 To pull one topic's cards:
 
@@ -95,11 +94,17 @@ canonical drivers cleanly. F0445 and F0787 look like a straight swap. `merger_lb
 detail.
 
 **Already scanned deck-wide; do not repeat.** Guide answers truncated at the start (three found and
-fixed) and guide-sourced questions whose worked answer was replaced by a shared template (four
-found and fixed, in Deal & Process, FIG, and two in Enterprise & Equity Value). Both classes are
-clear.
+fixed); guide-sourced questions whose worked answer was replaced by a shared template (four found
+and fixed); and plain-language questions answered technically (seven found, six still open — see
+below). All three classes are now mapped.
 
-## What the first 1,228 cards taught — read this before starting
+**The plain-language cluster, open by choice.** Six cards ask for an explanation to a child, a
+grandmother or "as simply as possible" and return a technical paragraph: F0460, F0725, F1202, F1266,
+F1309, F1432. Nothing in them is false, so they are not errors, but the register *is* the question.
+F0450 (working capital as a lemonade stand) shows the house style to match. Fixing them is six short
+pieces of writing, not an accuracy correction, which is why an accuracy pass left them alone.
+
+## What the first 1,459 cards taught — read this before starting
 
 **The finance is strong; the routing is what breaks.** Of the 23 errors found in these
 tranches, only 3 were finance errors

@@ -1826,8 +1826,8 @@
       "question_references": [
         "Ardian Private Equity Insights/Ardian PE Insight 1.png"
       ],
-      "answer_type": "Open-ended answer framework",
-      "answer": "Begin with objective, horizon, liquidity needs, risk tolerance, constraints, taxes and currency. An illustrative long-horizon growth allocation could combine diversified global equities with high-quality bonds and a liquidity reserve; exact weights require the investor’s circumstances. Alternatives may diversify exposures but add illiquidity, fees and valuation uncertainty. Compare expected returns, correlations and drawdown scenarios, not just standalone volatility. Options can lose the entire premium and are not equivalent to stock ownership. Rebalance to a policy allocation and define what evidence would change it. For an interview, present one clearly labeled illustrative allocation and justify each component; there is no universally correct allocation for a dollar amount alone.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "Prepare this per firm rather than answering generically: read the firm's portfolio page, choose two or three companies you can speak about from their own materials, and structure each as a business model rather than a description. Say what the company sells and to whom, how it charges - subscription, usage, transaction fee, one-time licence, hardware plus service - and what the unit of sale is. Then cover how it acquires customers and what that costs against what a customer is worth over its life, the gross margin on each incremental unit, whether revenue recurs or must be re-won each period, and who the realistic alternatives are. Explain why the business is defensible: switching costs, proprietary data, network effects, regulatory position or scale in distribution, and say what would break it. Close by connecting the company to the firm's strategy - why it fits their sector focus, cheque size and value-creation approach, and what they most likely intend to improve. Naming the revenue model precisely and one verified figure from the company's own disclosure is worth more than a long general description.",
       "notes": [],
       "topic": "portfolio",
       "original_question_ids": [
@@ -1835,7 +1835,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "open_ended_framework",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {
@@ -2375,8 +2375,8 @@
       "question_references": [
         "Audax Group Insights/Audax Insight 7.png"
       ],
-      "answer_type": "Open-ended answer framework",
-      "answer": "Start with the decision and define the relevant unit economics: volume/customer demand, price, contribution margin, fixed costs, reinvestment and funding. Forecast a base and downside case, test assumptions against evidence and compare incremental cash value with the required return. Distinguish revenue growth from profitable growth and accounting earnings from cash. For an unspecified case, ask for the missing company, period and figures before giving a numerical conclusion; do not fabricate a company-specific result.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "Build two independent estimates and reconcile them. Top-down: start from the town's population and work to spending. For 50,000 people, if 60% buy restaurant or takeaway pizza roughly 12 times a year at about $12 a visit, that is 50,000 * 0.6 * 12 * $12, or about $4.3 million a year. Bottom-up: count the supply side instead. If the town has about 10 pizza outlets each taking roughly 60 orders a day at a $20 average ticket over 360 trading days, that is also about $4.3 million. Define the geography, the period and whether you are estimating revenue or volume; decide explicitly whether grocery and frozen pizza count or only prepared pizza, and do not let delivery and dine-in spend be counted twice. Then name the assumption that moves the answer most, usually frequency or average ticket, and sanity-check the result against something known, such as plausible household food spending in a town that size. Two methods landing within the same order of magnitude is the point of the exercise; without local data no exact figure is available, so state the assumptions and show the range.",
       "notes": [],
       "topic": "business_fallback",
       "original_question_ids": [
@@ -2384,7 +2384,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "open_ended_framework",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {
@@ -5304,7 +5304,7 @@
         "Bank of America NY Insights II/BofA Insight 4.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "For sell-side M&A: clarify objectives, value the company, prepare marketing materials, contact qualified buyers, manage indications and diligence, negotiate final bids and agreements, then obtain approvals and close. Buy-side work starts with strategy, target screening and approach, followed by valuation, diligence, financing and negotiation. A pitch book presents the client situation, strategic alternatives, market/valuation work, execution plan and bank credentials. An IPO adds readiness work, underwriting/diligence, registration, investor marketing, bookbuilding, pricing and listing. A greenshoe permits an overallotment option to help manage issuance and stabilization under its terms; it is not a guarantee against price declines. Fees, confidentiality and regulatory obligations vary by transaction.",
+      "answer": "Investment banking is cyclical, but not uniformly, and the split across products is the answer. M&A advisory and equity capital markets contract hardest: boards postpone deals when valuations are uncertain and acquisition financing is expensive, IPO windows close, and announced volumes and fee pools fall together. Debt capital markets depend on why conditions changed - investment-grade issuance can stay active as companies pre-fund or refinance, while high-yield issuance usually stalls as spreads widen. Restructuring, liability management and distressed M&A are counter-cyclical and get busier, which is why banks with restructuring practices have a natural hedge against the advisory cycle. Sales and trading often benefits from higher volatility in rates, credit and FX even while underwriting is shut. For the bank itself, expect lower fee revenue, compensation and headcount pressure, smaller analyst classes and slower promotion, plus higher credit provisions where the bank lends off its own balance sheet. The useful point is that activity migrates between groups rather than stopping, so name which products gain and which lose rather than saying banking slows down.",
       "notes": [],
       "topic": "ma_process",
       "original_question_ids": [
@@ -15624,7 +15624,7 @@
         "Goldman Sachs HK Insights/GS HK Insight 8.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "An option gives the holder a right, not an obligation. A call payoff is max(S-K,0); a put is max(K-S,0). Value depends on underlying price, strike, maturity, volatility, rates, dividends and exercise/settlement terms. In a one-period arbitrage-free binomial model, q = [(1+r)S0-Sdown]/(Sup-Sdown) and option value = [q*payoff_up+(1-q)*payoff_down]/(1+r). Use risk-neutral probabilities when replication assumptions apply; a stated real-world 50% probability is not automatically q. More volatility generally benefits plain long options. Hedges reduce a specified risk but introduce costs, basis risk and possibly collateral/liquidity requirements; a swap exchanges contracted cash-flow streams.",
+      "answer": "Black-Scholes prices a European option in continuous time, assuming the underlying follows a lognormal random walk with constant volatility, frictionless continuous trading and a constant risk-free rate. For a European call on a non-dividend-paying stock, C = S*N(d1) - K*exp(-r*T)*N(d2), where d1 = [ln(S/K) + (r + sigma^2/2)*T]/(sigma*sqrt(T)), d2 = d1 - sigma*sqrt(T), and N() is the cumulative standard normal distribution. The inputs are spot price S, strike K, time to expiry T, risk-free rate r, volatility sigma and any dividend yield. The mechanism is replication and no arbitrage rather than forecasting: a continuously rebalanced holding of N(d1) shares funded with borrowing reproduces the option's payoff, so the option must cost what that portfolio costs, which is why the stock's own expected return never appears in the formula. Read the two terms as a discounted expected payoff under the risk-neutral measure, where N(d2) is the risk-neutral probability of finishing in the money and N(d1) is the option's delta. A put follows from put-call parity: P = C - S + K*exp(-r*T). A higher spot price raises a call's value and lowers a put's, with delta measuring the rate of change and gamma its curvature; more volatility and more time raise both calls and puts. The model's weaknesses are its constant-volatility and lognormal assumptions, which is why observed implied volatility varies across strikes and maturities, and it does not handle early exercise on American options or discrete dividends without adjustment.",
       "notes": [],
       "topic": "options",
       "original_question_ids": [
@@ -16108,8 +16108,8 @@
       "question_references": [
         "Goldman Sachs NY Financing Insights/GS Financing Insight 12.png"
       ],
-      "answer_type": "Open-ended answer framework",
-      "answer": "Begin with objective, horizon, liquidity needs, risk tolerance, constraints, taxes and currency. An illustrative long-horizon growth allocation could combine diversified global equities with high-quality bonds and a liquidity reserve; exact weights require the investor’s circumstances. Alternatives may diversify exposures but add illiquidity, fees and valuation uncertainty. Compare expected returns, correlations and drawdown scenarios, not just standalone volatility. Options can lose the entire premium and are not equivalent to stock ownership. Rebalance to a policy allocation and define what evidence would change it. For an interview, present one clearly labeled illustrative allocation and justify each component; there is no universally correct allocation for a dollar amount alone.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "Price this as an asset-backed pool, not as an asset allocation. The spread must cover expected loss plus a return for the risks you cannot diversify away. Start with the collateral: used phones lose value quickly and unevenly by model, condition, storage and carrier lock, so estimate recovery per unit in both an orderly and a forced sale. Build expected loss as probability of non-payment times loss given default times exposure, where loss given default is driven by that resale value net of collection, refurbishment, storage and shipping costs. Then add premia for what remains: concentration in a few models or a single obsolescence cycle, correlation between defaults and a falling secondhand market, the short and uncertain duration of the cash flows, the practicality of servicing and repossession, fraud, and the illiquidity of the position itself. Benchmark the result against observable spreads on comparable consumer or equipment ABS of similar tenor, rating and collateral quality, and demand more where the loss history is thinner. Finally, state where in the structure you are bidding: a senior tranche with subordination beneath it, excess spread and a reserve account justifies a far tighter spread than a first-loss piece on the same pool. No single number follows without the pool's loss history, the structure and the current market level.",
       "notes": [],
       "topic": "portfolio",
       "original_question_ids": [
@@ -16117,7 +16117,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "open_ended_framework",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {
@@ -18580,7 +18580,7 @@
         "Houlihan Lokey Industrials Insights/HL Ind Insight 4.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "An option gives the holder a right, not an obligation. A call payoff is max(S-K,0); a put is max(K-S,0). Value depends on underlying price, strike, maturity, volatility, rates, dividends and exercise/settlement terms. In a one-period arbitrage-free binomial model, q = [(1+r)S0-Sdown]/(Sup-Sdown) and option value = [q*payoff_up+(1-q)*payoff_down]/(1+r). Use risk-neutral probabilities when replication assumptions apply; a stated real-world 50% probability is not automatically q. More volatility generally benefits plain long options. Hedges reduce a specified risk but introduce costs, basis risk and possibly collateral/liquidity requirements; a swap exchanges contracted cash-flow streams.",
+      "answer": "Black-Scholes prices a European option in continuous time, assuming the underlying follows a lognormal random walk with constant volatility, frictionless continuous trading and a constant risk-free rate. For a European call on a non-dividend-paying stock, C = S*N(d1) - K*exp(-r*T)*N(d2), where d1 = [ln(S/K) + (r + sigma^2/2)*T]/(sigma*sqrt(T)), d2 = d1 - sigma*sqrt(T), and N() is the cumulative standard normal distribution. The inputs are spot price S, strike K, time to expiry T, risk-free rate r, volatility sigma and any dividend yield. The mechanism is replication and no arbitrage rather than forecasting: a continuously rebalanced holding of N(d1) shares funded with borrowing reproduces the option's payoff, so the option must cost what that portfolio costs, which is why the stock's own expected return never appears in the formula. Read the two terms as a discounted expected payoff under the risk-neutral measure, where N(d2) is the risk-neutral probability of finishing in the money and N(d1) is the option's delta. A put follows from put-call parity: P = C - S + K*exp(-r*T). A higher spot price raises a call's value and lowers a put's, with delta measuring the rate of change and gamma its curvature; more volatility and more time raise both calls and puts. The model's weaknesses are its constant-volatility and lognormal assumptions, which is why observed implied volatility varies across strikes and maturities, and it does not handle early exercise on American options or discrete dividends without adjustment.",
       "notes": [],
       "topic": "options",
       "original_question_ids": [
@@ -21000,8 +21000,8 @@
       "question_references": [
         "J.P. Morgan Research Insights/JPM Research Insight 4.png"
       ],
-      "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Estimate stabilized net operating income from rents/occupancy and operating expenses, excluding financing and depreciation. A simple unlevered property value is NOI/capitalization rate; reconcile it to DCF and comparable sales. Account for tenant credit, location, lease duration, vacancy, tenant improvements, leasing commissions and maintenance CapEx. Equity value subtracts debt and other claims. For REITs, FFO adjusts net income for specified real-estate depreciation and disposition items; AFFO adds recurring capital and other cash adjustments but definitions vary. Hotels often have higher operational volatility than long-lease residential assets, but cap rates depend on quality, market and growth rather than a universal ranking.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "This is a sampling-probability question rather than a valuation question. Let N be the total number of Manhattan apartments and treat the ten most expensive as a fixed set. Drawing ten apartments without replacement, the chance that none is in the top ten is the number of ways to choose all ten from the other N-10, divided by the ways to choose any ten: C(N-10,10) / C(N,10). The question asks for the complement, so P(at least one) = 1 - C(N-10,10) / C(N,10). Equivalently, multiply the sequential misses: 1 - [(N-10)/N] * [(N-11)/(N-1)] * ... * [(N-19)/(N-9)]. When N is large relative to the sample, each draw has about a 10/N chance of hitting the top ten, so the answer is approximately 100/N: at roughly 850,000 apartments that is about 0.012%, or one in 8,500. Sampling with replacement would instead give 1 - (1 - 10/N)^10, which is almost identical for large N. The total apartment count is not recorded in the source, so state your assumption for N and show the formula rather than guessing a figure.",
       "notes": [],
       "topic": "real_estate",
       "original_question_ids": [
@@ -21009,7 +21009,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "requires_missing_inputs",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {
@@ -24691,7 +24691,7 @@
         "Miller Buckfire Insights/Miller Buckfire Insight 17.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Start with a 13-week cash-flow forecast, covenant/maturity review and entity-by-entity capital structure. Options include operational fixes, asset sales, new capital, maturity extensions, debt exchanges, out-of-court restructuring and court proceedings. U.S. Chapter 11 permits reorganization under court oversight, potentially with DIP financing and a plan; Chapter 7 generally liquidates assets through a trustee. A prepack requires sufficient creditor agreement in advance and may not suit contested claims or complex operational changes. A Section 363 sale is a court-supervised asset sale subject to required protections and approval. Compare going-concern versus liquidation value, creditor recoveries, speed, financing needs, execution risk and stakeholder incentives.",
+      "answer": "Rising policy rates generally increase restructuring activity, with a lag, through three channels. First, debt service: most leveraged loans are floating-rate, so a higher base rate feeds directly into cash interest and compresses interest coverage even when EBITDA is flat, and a borrower at 5x leverage can drift toward its covenant levels without anything changing operationally. Second, refinancing: higher rates and wider spreads make maturity walls harder to clear, so a company that could previously refinance its way out of a problem must instead extend, exchange or restructure. Third, valuation: higher discount rates compress enterprise values, which pushes more capital structures underwater and moves the fulcrum security up the stack, changing who negotiates and who receives equity in a reorganisation. Expect covenant amendments, liability management exercises and distressed exchanges before formal filings, and more court processes where liquidity runs out first. Sponsors also have less room to support portfolio companies with cheap incremental debt, and DIP financing itself costs more. Pace and cause matter: a gradual increase alongside growth is absorbed far better than a rapid increase into a slowdown, and sectors differ by how much floating-rate debt and how much pricing power they carry.",
       "notes": [],
       "topic": "restructuring",
       "original_question_ids": [
