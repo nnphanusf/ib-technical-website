@@ -11,9 +11,18 @@ Composition: 54 model answers, 45 concept/method, 40 M&I guide transcriptions, 1
 | | Cards |
 | --- | ---: |
 | Read in full | 158 |
-| **Errors** | **2** |
-| Defensible but incomplete or mismatched | 21 |
+| **Errors** | **4** (2 found here, 2 added later — see the amendment below) |
+| Defensible but incomplete or mismatched | 19 |
 | Verified correct | 135 |
+
+**Amendment, added during the Merger Model & LBO tranche.** That later pass established that a
+guide-sourced question can have its worked solution replaced by a shared template, and a deck-wide
+scan for the pattern caught **F2003** and **F2007**, both listed below in this document as
+"incomplete, not errors." That was under-called. I did not know when writing this audit that the
+M&I guide answers both questions in two lines on page 78, so I read a lost solution as mere
+vagueness. Both are now corrected from the guide and belong in the error column, which takes this
+tranche from 2 errors to 4. See `merger_lbo_audit.md` for the restored text and the scan that
+found them.
 
 `answer_review.md` singled this tranche out as the place where "sign conventions slip." They do
 not. **Every numeric card in both topics computes correctly** — and these are the most
@@ -109,14 +118,12 @@ accretion paragraph) are both accurate and genuinely fit most of the questions t
 
 **Direct questions the template never answers**
 
-- **F2007** — "your co-worker claims EV rose $100 rather than $50 because the company issued
-  debt — is he correct?" The answer is no (debt and cash offset; the gap must come from the
-  factory being worth more than its cost or from other operating changes), but the card gives the
-  generic debt template and never says yes or no.
-- **F2003** — "$100 of debt to purchase a new factory: how do Equity Value and Enterprise Value
-  change?" The template covers the case conditionally but never states the specific result
-  (equity value unchanged, EV +$100), and never addresses equity value at all. The guide's own
-  version of this question, on page 78, answers it in two lines.
+- **F2007** — *reclassified as an error; corrected. See the amendment at the top.* "Your
+  co-worker claims EV rose $100 rather than $50 because the company issued debt — is he correct?"
+  The answer is no, and the guide says why in two lines.
+- **F2003** — *reclassified as an error; corrected. See the amendment at the top.* "$100 of debt
+  to purchase a new factory: how do Equity Value and Enterprise Value change?" Equity value is
+  unchanged and EV rises $100; the generic template said neither.
 - **F0410** — "if a company takes out a loan to buy back stock, what is the impact on enterprise
   value?" Says the bridge "must reflect that use" without giving the answer, which is that
   operating EV is unchanged: equity value and cash both fall by the repurchase amount.

@@ -40,32 +40,35 @@ rebuild, and commit. **Do not push** — the user pushes from VS Code. Commit me
 Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 ```
 
-## Progress: 850 of 2,049 technical cards audited, 15 errors found and corrected
+## Progress: 1,228 of 2,049 technical cards audited, 36 errors found and corrected
 
 | Topic | Cards | Errors | Audit file | Commit |
 | --- | ---: | ---: | --- | --- |
 | Accounting & 3 Statements | 209 | 4 | `accounting_audit.md` | `615df46` |
 | DCF & Intrinsic Value | 222 | 5 | `dcf_audit.md` | `4b4f671` |
-| Enterprise & Equity Value + Accretion / Dilution | 158 | 2 | `ev_accretion_audit.md` | `b512c56` |
+| Enterprise & Equity Value + Accretion / Dilution | 158 | 4 | `ev_accretion_audit.md` | `b512c56` |
 | Debt, Credit & Restructuring | 261 | 4 | `restructuring_audit.md` | `4d062bb` |
+| Valuation & Comps | 153 | 13 | `valuation_audit.md` | `d949203` |
+| Merger Model & M&A + LBO & Private Equity | 225 | 4 | `merger_lbo_audit.md` | see log |
 
-`answer_review.md` is the original 27-card sample that started this. Read the four audit files
-before beginning — they record the method, the error bar used, and the specific leads below.
+Two of the Enterprise & Equity Value errors were reclassified from "incomplete" during the Merger
+Model pass, which also restored four lost guide answers in other topics; `merger_lbo_audit.md`
+explains both. The Valuation & Comps tranche was done by a separate session.
 
-## Remaining: 1,199 technical cards
+`answer_review.md` is the original 27-card sample that started this. Read the audit files before
+beginning — they record the method, the error bar used, and the leads below.
+
+## Remaining: 821 technical cards
 
 | Topic | Cards | Priority |
 | --- | ---: | --- |
-| Valuation & Comps | 153 | **do first** — two known defects waiting |
-| Merger Model & M&A | 116 | next |
-| LBO & Private Equity | 109 | next |
-| Industry & Company Analysis | 590 | large, mostly qualitative |
+| Industry & Company Analysis | 590 | **largest remaining**; mostly qualitative |
 | Stock Pitch & Investing | 101 | mostly open-ended |
 | Markets & Economy | 69 | mostly date-dependent |
-| Deal & Process | 32 | |
-| Options & Derivatives | 14 | small but formula-heavy |
+| Deal & Process | 31 | one card already fixed |
+| Options & Derivatives | 14 | **best value left** — small and formula-heavy |
 | Quant & Brainteasers | 8 | |
-| FIG & Specialty Valuation | 7 | thin ice — few universal conventions |
+| FIG & Specialty Valuation | 6 | thin ice; one card already fixed |
 
 To pull one topic's cards:
 
@@ -80,28 +83,29 @@ ids = [c['id'] for c in cards if c['tp'] == 'Valuation & Comps']
 Card fields: `id`, `tp` (topic), `q`, `a`. Source fields: `question_id`, `question`, `answer`,
 `answer_status`, `answer_type`, `notes`.
 
-## Known defects already located, not yet fixed
+## Known leads, not yet acted on
 
-Start the Valuation & Comps tranche with these. Both carry the "identical companies" template
-("Identical current statements do not guarantee identical future cash flows or risk...") on
-questions that have definite mechanical answers:
+No specific defect is sitting unfixed. What is left is one cluster worth a mechanical pass, and
+two scans already run that need no repeating.
 
-- **F0697** — "Why might two companies have identical EV/EBITDA multiples but different P/E
-  multiples?" → differing leverage, tax rates, D&A and non-operating items; the two multiples sit
-  on opposite sides of the capital structure.
-- **F0735** — "You have two companies with the same P/E ratio. What makes their EV/EBITDA
-  different?" → the same mechanics in reverse.
+**The IRR-levers cluster (LBO & Private Equity, worth fixing, needs no new finance).** Five cards
+ask how to raise LBO returns and none gets the enumeration: F0787, F1187, F1324, F1663, F0444.
+Meanwhile F0445 — which asks something else — carries exactly that list, and F2096 states the three
+canonical drivers cleanly. F0445 and F0787 look like a straight swap. `merger_lbo_audit.md` has the
+detail.
 
-Also verify, don't assume: **F1015** (Valuation & Comps) carries the bank-valuation template on
-"compare valuation methods for startups, banks and large public companies", where it may be a
-reasonable partial fit.
+**Already scanned deck-wide; do not repeat.** Guide answers truncated at the start (three found and
+fixed) and guide-sourced questions whose worked answer was replaced by a shared template (four
+found and fixed, in Deal & Process, FIG, and two in Enterprise & Equity Value). Both classes are
+clear.
 
-## What the first 850 cards taught — read this before starting
+## What the first 1,228 cards taught — read this before starting
 
-**The finance is strong; the routing is what breaks.** Of 15 errors, only 3 were finance errors
+**The finance is strong; the routing is what breaks.** Of the 23 errors found in these
+tranches, only 3 were finance errors
 (a blanket "lease principal is financing cash flow" that is false for operating leases under
 ASC 842; a claim that the ECB and Bank of England issue government bonds; and a $100 equipment
-purchase answered as a $100 depreciation charge). **Every arithmetic card in all four tranches
+purchase answered as a $100 depreciation charge). **Every arithmetic card in all five tranches
 recomputed correctly**, including PIK accretion, MACRS-vs-book deferred tax, debt extinguishment,
 recovery waterfalls, accretion/dilution, and two YTMs needing a quadratic and a five-period
 annuity. Budget attention accordingly: **check template-to-question fit first, recompute second.**
@@ -147,7 +151,8 @@ audited. Same rule for any mechanical defect: on the second instance, stop and s
 - **The user commits to this repo while you work.** Stage only your own files; never `git stash`,
   `reset` or switch branches.
 - Hand-over notes from the four completed tranches are in
-  `/Users/jimphan/Library/Application Support/Claude/side-session-notes/local_3780a44e-8b11-4c98-8b60-567305df354d/`
+  `/Users/jimphan/Library/Application
+Support/Claude/side-session-notes/local_3780a44e-8b11-4c98-8b60-567305df354d/`
 
 ## Done looks like
 

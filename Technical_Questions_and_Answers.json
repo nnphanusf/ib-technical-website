@@ -14268,7 +14268,7 @@
         "Evercore Restructuring Insights/EVR RX Insight 9.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Work from each borrower’s assets and debt, then add valid guarantee claims without double counting recoveries. The wording does not establish whether the stated recoveries already incorporate guarantees or which entity guarantees which obligation. A unique numerical waterfall therefore needs the guarantee directions, entity asset values, claim amounts and priority. A guarantee can move a lender’s claim into another estate, but total recovery cannot exceed the debt owed.",
+      "answer": "Work each borrower's own assets first, then add the guarantee claim. OpCo 1: EBITDA 60 at 8x gives an enterprise value of 480 against 300 of debt, so its debt is covered in full and 180 of residual equity is left. OpCo 2: EBITDA 40 at 10x gives 400 against 500 of debt, so it is short 100 and its equity is worthless. Because OpCo 1 guarantees OpCo 2's debt, that 100 deficiency becomes a claim at OpCo 1, where it ranks alongside OpCo 1's other unsecured creditors and is paid out of the 180 of residual value. OpCo 2's lenders therefore recover in full: 400 from their own borrower and 100 under the guarantee. OpCo 1's residual equity falls to 80, and HoldCo's 75% of that is 60, with nothing from OpCo 2, so HoldCo's equity is worth 60. On the two investments: the stock costs 100 shares times $0.50, and taking the share count in millions to match the EBITDA figures, that is 50 against 60 of value, roughly 1.2x. The OpCo 2 debt costs 90 and pays 100 of principal plus the 10% coupon at maturity in one year, so 110 against 90, about 1.22x. The debt is the better risk-adjusted purchase: a similar multiple earned over a known one-year horizon rather than an unspecified equity holding period, and a contractual claim that sits ahead of both HoldCo's equity and the guarantee. Confirm the guarantee's ranking at OpCo 1, whether it is secured or structurally subordinated, and the HoldCo share-count units before relying on these figures.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -29110,8 +29110,8 @@
         "Perella Weinberg Partners SF Insights/PWP SF Insight 8.png",
         "Zip Backups - Miscellaneous/drive-download-20250403T002406Z-001/Screenshot 2024-02-04 at 1.26.38 AM.png"
       ],
-      "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Choose companies with similar business model, geography, growth, margins, risk and capital intensity. Calculate consistent enterprise/equity values and calendarized historical or forecast metrics, normalize unusual items, and apply a justified peer range to the target metric. EV/Revenue divided by EV/EBITDA equals EBITDA margin when periods and EV are consistent. P/E uses equity value/net income; EV/EBITDA uses operating value/pre-interest earnings, so taxes and financing can produce different rankings. Higher multiples can reflect growth, stronger returns, recurring revenue or lower risk, not automatically overvaluation. Negative EBITDA makes its multiple unhelpful; revenue multiples require a credible path to margins. Share price alone is not comparable across firms because share counts differ.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "A sources and uses schedule lists what the deal must pay for and where the money comes from, and the two sides must equal. Uses typically include the purchase of the target's equity (the equity purchase price, or the enterprise value when the deal is cash-free and debt-free), repayment or refinancing of existing target debt that will not be assumed, cash needed to fund the target's minimum operating cash, and transaction and financing fees. Sources typically include each new debt tranche (revolver draw, term loans, secured and unsecured notes, mezzanine or PIK), sponsor equity, any target balance-sheet cash permitted to fund the deal, rollover equity from management or the existing owner, and seller notes or earnouts where used. Size the debt from the leverage assumption on entry EBITDA and the lenders' coverage tests, then let sponsor equity be the plug that balances the schedule: sponsor equity = total uses less all other sources. That equity figure is the denominator for MOIC and IRR, so a change in fees, minimum cash or refinanced debt changes returns even when the purchase multiple does not. The source records no amounts, so build the schedule as line items and keep it symbolic.",
       "notes": [],
       "topic": "comps",
       "original_question_ids": [
@@ -29119,7 +29119,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "requires_missing_inputs",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {
@@ -40531,8 +40531,8 @@
       "question_references": [
         "guide:p78:item126"
       ],
-      "answer_type": "Question-focused explanation",
-      "answer": "If debt is issued and proceeds stay as excess cash, debt and cash rise equally and operating EV is unchanged. If the cash funds a fair-value operating asset purchase, operating EV rises by the asset value; if it funds a dividend or repurchase, the equity/cash/debt bridge must reflect that use. Financing alone does not create operating cash flow, although tax shields and changes in distress risk may affect economic value.",
+      "answer_type": "Answer from supplied M&I guide",
+      "answer": "CSE does not change because Debt, not Equity, is the financing source here. Therefore, Eq Val stays the same. The new factory is a Net Operating Asset, so NOA increases by $100, and TEV, therefore, also increases by $100. Alternatively, in the TEV formula, Equity Value stays the same, and Debt increases, so TEV goes up.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -40540,7 +40540,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "model_answer",
+      "answer_status": "guide_answer",
       "supporting_reference_urls": []
     },
     {
@@ -40615,8 +40615,8 @@
       "question_references": [
         "guide:p79:item130"
       ],
-      "answer_type": "Question-focused explanation",
-      "answer": "If debt is issued and proceeds stay as excess cash, debt and cash rise equally and operating EV is unchanged. If the cash funds a fair-value operating asset purchase, operating EV rises by the asset value; if it funds a dividend or repurchase, the equity/cash/debt bridge must reflect that use. Financing alone does not create operating cash flow, although tax shields and changes in distress risk may affect economic value.",
+      "answer_type": "Answer from supplied M&I guide",
+      "answer": "No. The purchase method does not matter when determining how Enterprise Value changes. All that matters is how the Net Operating Assets change. The most likely explanation here is that the book value of this factory is $50, but its market value is $100 because market participants believe the Present Value of its future cash flows is closer to $100. Therefore, Enterprise Value increases by $100 rather than $50. The company effectively got a discount on a new asset.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -40624,7 +40624,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "model_answer",
+      "answer_status": "guide_answer",
       "supporting_reference_urls": []
     },
     {
@@ -42451,8 +42451,8 @@
       "question_references": [
         "guide:p118:item222"
       ],
-      "answer_type": "Question-focused explanation",
-      "answer": "EBITDA = net income + income taxes + net interest expense + depreciation and amortization, then remove non-operating or unusual income/expenses if the requested measure is adjusted operating EBITDA. Reverse the bridge to reach net income from EBITDA. Identify exactly what is included and avoid adding D&A twice when it is embedded in COGS. EBITDA omits taxes, CapEx, working-capital investment and debt service, so it is not free cash flow.",
+      "answer_type": "Answer from supplied M&I guide",
+      "answer": "The Combined Equity Value in a 100% Stock deal is $500 + $100 = $600 million, and the Combined Enterprise Value is $600 + $150 = $750 million. The Combined EBITDA is $115 million, and the Combined Net Income, assuming the same tax rates and no interest effects since it's a 100% Stock deal, is $50 + $10 = $60 million. Therefore, the Combined P / E multiple is $600 million / $60 million = 10x, and the Combined TEV / EBITDA multiple is $750 million / $115 million = ~6.5x.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -42460,7 +42460,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "model_answer",
+      "answer_status": "guide_answer",
       "supporting_reference_urls": []
     },
     {
@@ -42472,8 +42472,8 @@
       "question_references": [
         "guide:p118:item223"
       ],
-      "answer_type": "Question-focused explanation",
-      "answer": "EBITDA = net income + income taxes + net interest expense + depreciation and amortization, then remove non-operating or unusual income/expenses if the requested measure is adjusted operating EBITDA. Reverse the bridge to reach net income from EBITDA. Identify exactly what is included and avoid adding D&A twice when it is embedded in COGS. EBITDA omits taxes, CapEx, working-capital investment and debt service, so it is not free cash flow.",
+      "answer_type": "Answer from supplied M&I guide",
+      "answer": "The Combined EBITDA and Enterprise Value stay the same because they do not depend on the deal financing, so the Combined TEV / EBITDA is still ~6.5x. The Combined Equity Value is now just the Acquirer's Equity Value of $500 million. The Combined Net Income equals $50 + $10 - $100 * 8% * (1 - 25%) = $50 + $10 - $6 = $54. Therefore, the Combined P / E multiple is now $500 million / $54 million = ~9.3x, which you can estimate as “between 9x and 10x” (since $500 / $50 = 10x and $500 / ~$56 = 9x).",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -42481,7 +42481,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "model_answer",
+      "answer_status": "guide_answer",
       "supporting_reference_urls": []
     },
     {
@@ -43639,8 +43639,8 @@
       "question_references": [
         "guide:p146:item282"
       ],
-      "answer_type": "Question-focused explanation",
-      "answer": "A primary investor commits to a new fund before most assets are known and funds capital calls as investments are made. A secondary investor buys an existing fund interest or portfolio/continuation-vehicle stake, often with more visibility into assets and a shorter remaining life. Early secondaries retain more deployment risk; late secondaries are closer to realizations. Pricing versus NAV, unfunded commitments, asset quality, fees and conflicts are central. Secondaries can shorten the J-curve but are not automatically cheaper or higher-returning.",
+      "answer_type": "Answer from supplied M&I guide",
+      "answer": "“Primary Shares” are new ones issued by the company in an equity offering. Investors pay the company cash to buy these shares. They dilute the company's existing investors by reducing their ownership stakes, but they also give the company cash that it can use for different purposes. “Secondary Shares” are existing shares sold to new investors in the offering. They do not dilute existing investors, but the company also receives no cash from them. The percentages of Primary and Secondary Shares should be within reasonable ranges in an equity offering so the market perceives it positively. For example, if an IPO consists of 90% Secondary Shares, new investors will rightfully wonder why so many existing investors want to sell their shares rather than holding them for the long term.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -43648,7 +43648,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "model_answer",
+      "answer_status": "guide_answer",
       "supporting_reference_urls": []
     },
     {
@@ -43957,8 +43957,8 @@
       "question_references": [
         "guide:p153:item296"
       ],
-      "answer_type": "Question-focused explanation",
-      "answer": "If debt is issued and proceeds stay as excess cash, debt and cash rise equally and operating EV is unchanged. If the cash funds a fair-value operating asset purchase, operating EV rises by the asset value; if it funds a dividend or repurchase, the equity/cash/debt bridge must reflect that use. Financing alone does not create operating cash flow, although tax shields and changes in distress risk may affect economic value.",
+      "answer_type": "Answer from supplied M&I guide",
+      "answer": "This is recorded as a $100 increase in the Provision for Credit Losses on the Income Statement, which is a non-cash expense that represents an increase in the expected loan losses. On the income statement, Pre-Tax Income is down by $100, and Net Income is down by $75 at a 25% tax rate. On the cash flow statement, Net Income is down by $75, but you add back the $100 of Provisions, so Cash is up by $25 at the bottom. On the balance sheet, Cash is up by $25, but Net Loans is down by $100 (since the Allowance is a contra-asset netted against Net Loans), so the Assets side is down by $75; the L&E side is also down by $75 because Equity is down due to the reduced Net Income. The CET 1 Ratio decreases, but we don't know the exact percentage because we don't know the bank's Risk-Weighted Assets (RWAs) or current CET 1. The RWAs stay the same because they are based on Gross Loans, not Net Loans, but the CET 1 falls because it is linked to Common Shareholders' Equity, which is down by $75. The intuition is that this bank expects to charge off more of its Loans, so its “buffer capital” decreases to reflect this expected loss. Cash increases due to the tax savings from this non-cash Provision expense. The CET 1 served its purpose by “absorbing” this unexpected loss that has now turned into an expected loss.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -43966,7 +43966,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "model_answer",
+      "answer_status": "guide_answer",
       "supporting_reference_urls": []
     },
     {
