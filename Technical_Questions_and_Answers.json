@@ -4482,8 +4482,8 @@
       "question_references": [
         "Balyasny Asset Management Insights/BAM Insight 9 (Investing).png"
       ],
-      "answer_type": "Date-dependent answer framework",
-      "answer": "This is date-dependent and has no permanent numerical answer. Before the interview, retrieve the relevant dated data from a primary source: company investor relations/SEC filings for company figures, Federal Reserve releases for policy, Treasury for government yields, and the exchange/index provider for market levels. State the observation date, distinguish price return from total return, and separate fact from forecast. For an outlook, identify the driver, the transmission to cash flows/discount rates, the market’s apparent expectation and a contrary scenario. Historical wording should be answered as of its stated date. LIBOR questions require historical context; do not invent a current LIBOR quotation after cessation.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "A share price moves when the market revises what it expects the company to produce, what it requires in return, or both. First, expected cash flows: earnings and revisions to guidance, new products or contracts, margin and cost changes, competitive wins and losses, capital allocation, and anything that changes the long-run growth or reinvestment path. Second, the discount rate: the risk-free rate, credit spreads, the equity risk premium and company-specific risk such as leverage, cyclicality or litigation; this is why prices can fall on no company news when rates rise. Third, the gap between results and what was already priced in - a company can report record earnings and fall because expectations were higher, which is why the move tracks the surprise rather than the level. On top of those, flows and market structure move prices in the short run: index inclusion, large buyers or sellers, short positioning, options hedging, liquidity and sentiment. Separate a price move from a change in value: the mechanical effects of a dividend, a buyback or a split change the price without changing what the business is worth per dollar of claim.",
       "notes": [],
       "topic": "markets",
       "original_question_ids": [
@@ -4491,7 +4491,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "requires_dated_research",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {
@@ -6853,8 +6853,8 @@
       "question_references": [
         "BlackRock SF Insights/BlackRock SF Insight 9.png"
       ],
-      "answer_type": "Date-dependent answer framework",
-      "answer": "This is date-dependent and has no permanent numerical answer. Before the interview, retrieve the relevant dated data from a primary source: company investor relations/SEC filings for company figures, Federal Reserve releases for policy, Treasury for government yields, and the exchange/index provider for market levels. State the observation date, distinguish price return from total return, and separate fact from forecast. For an outlook, identify the driver, the transmission to cash flows/discount rates, the market’s apparent expectation and a contrary scenario. Historical wording should be answered as of its stated date. LIBOR questions require historical context; do not invent a current LIBOR quotation after cessation.",
+      "answer_type": "Incomplete prompt: method and assumptions",
+      "answer": "The price return is the ending price divided by the beginning price, minus one: for prices P0 in 2014 and P1 in 2015, return = P1/P0 - 1. If the stock paid dividends over the period, the total return is (P1 + dividends per share)/P0 - 1, which is the figure to use for performance comparison; quoted index returns are often total return while a price chart is not. Over more than one year, annualise with (ending/beginning)^(1/years) - 1 rather than dividing the cumulative return by the number of years, since returns compound. Adjust the prices for splits and other capital actions before comparing them, and note whether you are using closing prices on the same convention for both dates. The source records the two prices only as placeholders, so substitute the actual figures into these formulas; nothing here depends on current market data.",
       "notes": [],
       "topic": "markets",
       "original_question_ids": [
@@ -6862,7 +6862,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "requires_dated_research",
+      "answer_status": "requires_missing_inputs",
       "supporting_reference_urls": []
     },
     {
@@ -10448,7 +10448,7 @@
         "Deutsche Bank SF Insights/DB SF Insight 15.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Calendarization aligns companies’ results to the same fiscal/calendar period. For a company whose fiscal year ends in September, approximate calendar-year revenue using 9/12 of the fiscal year ending the next September and 3/12 of the prior fiscal year, or use actual quarters where available. Apply the appropriate month weights for the chosen date, and account for seasonality. Do not compare one company’s calendar-year forecast with another’s mismatched fiscal year without adjustment.",
+      "answer": "Calendarization aligns companies' results to the same fiscal or calendar period so that multiples are comparable. Take the calendar year you want and add up the fiscal periods that actually fall inside it. For a company whose fiscal year ends 30 September, calendar 2024 is January to September 2024 plus October to December 2024: the first nine months come from the fiscal year ending September 2024, and the last three come from the following fiscal year, the one ending September 2025. So calendar-year revenue is approximately 9/12 of the fiscal year ending in that calendar year plus 3/12 of the next fiscal year - never the prior one, which contains no part of the calendar year you are building. Where quarterly data is reported, sum the actual quarters rather than pro-rating, because month weights assume revenue is spread evenly and most businesses are seasonal. Apply the same month weights to every company and to forecasts as well as historicals, and state the convention you used. The same logic applies to any target period: a June year-end company contributes 6/12 and 6/12, and a stub or 53-week year needs its actual days.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -12895,7 +12895,7 @@
         "Evercore Healthcare MP Insights II/EVR Menlo Insight 13.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "For SaaS, focus on recurring revenue quality: ARR/MRR, net and gross retention, churn, customer concentration, contract duration, gross margin and sales efficiency. NRR includes expansion less churn/contraction; GRR excludes expansion. Estimate cohort lifetime value from contribution profit and retention, compare it with fully loaded CAC, and test CAC payback. The Rule of 40 adds revenue growth percentage and a consistently defined profit-margin percentage; it is a heuristic, not a valuation formula. Value with DCF and growth/margin-adjusted EV/revenue or EV/ARR; profitable firms can use EV/EBITDA. Annual prepayments support cash conversion, but deferred revenue is an obligation. Sustainable returns matter more than growth at any cost.",
+      "answer": "Size the market two ways and reconcile them; do not confuse market size with how good the business is. Bottom-up: count the target organisations, then the users or seats per organisation, then the annual price per seat. For a mid-market HR tool, perhaps 200,000 companies in the target geography and size band, an average of 300 employees each, and $8 per employee per month gives 200,000 * 300 * $96, or roughly $5.8 billion a year. Adjust for the share of those companies that are realistic buyers rather than assuming full penetration. Top-down: start from total software or IT spending in the geography, narrow to the relevant category using industry research, and cross-check against the disclosed revenue of the known vendors plus an estimate for the long tail - if the three largest players report a combined $2 billion and hold perhaps half the category, the served market is around $4 billion. Separate the total addressable market from the serviceable market your product can actually reach given segment, geography and integrations, and from the obtainable share you could realistically win against incumbents. State the geography, the period and whether you are counting licence revenue only or services too, avoid double counting seats bought through resellers, and name the assumption the answer is most sensitive to, usually price per seat or penetration.",
       "notes": [],
       "topic": "saas",
       "original_question_ids": [
@@ -14982,8 +14982,8 @@
       "question_references": [
         "Financial Technology Partners SF Insights/FTP SF Insight 2.png"
       ],
-      "answer_type": "Open-ended answer framework",
-      "answer": "Describe the customer problem, revenue model, unit economics, competitive advantage and addressable market. Evaluate growth and retention, margins, customer/supplier concentration, pricing power, regulatory exposure and required reinvestment. Reconcile reported earnings with cash generation and balance-sheet funding. In diligence, verify key claims against filings/contracts, cohort or customer data and independent industry evidence; stress downside assumptions. Recommend an action only after comparing its incremental cash return and risk with alternatives. If the business is unspecified, this is an analysis framework rather than a factual claim about a particular firm.",
+      "answer_type": "Concept explanation / solution framework",
+      "answer": "Cash can rise while revenue is flat because cash flow and revenue are different things; walk the three sections of the cash flow statement and find the source. In operating cash flow: non-cash charges such as depreciation, amortisation, impairments and stock-based compensation reduce net income without consuming cash and are added back, so a heavily depreciating business can generate cash on flat sales; working capital can release cash if receivables are collected faster, inventory is run down or payables and deferred revenue are stretched, and customer prepayments bring cash in ahead of the revenue; cash taxes can also fall through loss carryforwards or timing. In investing: selling assets, a division or investments brings in cash, and simply cutting capital expenditure below depreciation preserves it. In financing: new borrowing or an equity issue raises cash, and suspending dividends or buybacks retains it. The useful follow-up is which of these repeats. Non-cash add-backs and genuine margin or working-capital improvement are repeatable; asset sales, a one-off working-capital release, deferred capex and new borrowing are not, and the last two can mean the business is harvesting itself or levering up rather than performing. Ask for the cash flow statement and compare operating cash flow with net income and with capital expenditure over several periods.",
       "notes": [],
       "topic": "strategy",
       "original_question_ids": [
@@ -14991,7 +14991,7 @@
       ],
       "question_variants": [],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
-      "answer_status": "open_ended_framework",
+      "answer_status": "concept_and_method",
       "supporting_reference_urls": []
     },
     {

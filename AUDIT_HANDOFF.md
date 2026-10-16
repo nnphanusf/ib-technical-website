@@ -40,7 +40,7 @@ rebuild, and commit. **Do not push** — the user pushes from VS Code. Commit me
 Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 ```
 
-## Progress: 1,459 of 2,049 technical cards audited, 44 errors found and corrected
+## COMPLETE: all 2,049 technical cards audited, 49 errors found and corrected
 
 | Topic | Cards | Errors | Audit file | Commit |
 | --- | ---: | ---: | --- | --- |
@@ -50,7 +50,8 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 | Debt, Credit & Restructuring | 261 | 4 | `restructuring_audit.md` | `4d062bb` |
 | Valuation & Comps | 153 | 13 | `valuation_audit.md` | `d949203` |
 | Merger Model & M&A + LBO & Private Equity | 225 | 4 | `merger_lbo_audit.md` | `e2c9092` |
-| Options, FIG, Quant, Deal Process, Markets, Stock Pitch | 231 | 8 | `specialty_audit.md` | see log |
+| Options, FIG, Quant, Deal Process, Markets, Stock Pitch | 231 | 8 | `specialty_audit.md` | `d277452` |
+| Industry & Company Analysis | 590 | 5 | `industry_audit.md` | see log |
 
 Two of the Enterprise & Equity Value errors were reclassified from "incomplete" during the Merger
 Model pass, which also restored four lost guide answers in other topics; `merger_lbo_audit.md`
@@ -59,28 +60,13 @@ explains both. The Valuation & Comps tranche was done by a separate session.
 `answer_review.md` is the original 27-card sample that started this. Read the audit files before
 beginning — they record the method, the error bar used, and the leads below.
 
-## Remaining: 590 technical cards, in one topic
+## Nothing left to audit
 
-| Topic | Cards | Priority |
-| --- | ---: | --- |
-| Industry & Company Analysis | 590 | the only one left |
+Every technical card has now been read. The 1,185 behavioral cards are out of scope: they are
+preparation frameworks rather than answers with a right and wrong.
 
-Expect a low error yield: this topic is mostly qualitative and firm-specific, and the
-checkable surface is small. Audit it in three groups of roughly 200.
-
-
-To pull one topic's cards:
-
-```python
-import json
-cards = json.load(open('flashcards/data.json'))['cards']
-src = {q['question_id']: q for q in
-       json.load(open('Technical_Questions_and_Answers.json'))['questions']}
-ids = [c['id'] for c in cards if c['tp'] == 'Valuation & Comps']
-```
-
-Card fields: `id`, `tp` (topic), `q`, `a`. Source fields: `question_id`, `question`, `answer`,
-`answer_status`, `answer_type`, `notes`.
+If you are picking this up to do more, the remaining work is improvement rather than accuracy —
+see the leads below.
 
 ## Known leads, not yet acted on
 
@@ -104,13 +90,13 @@ F1309, F1432. Nothing in them is false, so they are not errors, but the register
 F0450 (working capital as a lemonade stand) shows the house style to match. Fixing them is six short
 pieces of writing, not an accuracy correction, which is why an accuracy pass left them alone.
 
-## What the first 1,459 cards taught — read this before starting
+## What the audit found — read this before changing anything
 
-**The finance is strong; the routing is what breaks.** Of the 23 errors found in these
-tranches, only 3 were finance errors
+**The finance is strong; the routing is what breaks.** Of the 36 errors found across my seven
+tranches, only 4 were finance errors
 (a blanket "lease principal is financing cash flow" that is false for operating leases under
 ASC 842; a claim that the ECB and Bank of England issue government bonds; and a $100 equipment
-purchase answered as a $100 depreciation charge). **Every arithmetic card in all five tranches
+purchase answered as a $100 depreciation charge). **Every arithmetic card in all seven tranches
 recomputed correctly**, including PIK accretion, MACRS-vs-book deferred tax, debt extinguishment,
 recovery waterfalls, accretion/dilution, and two YTMs needing a quadratic and a five-period
 annuity. Budget attention accordingly: **check template-to-question fit first, recompute second.**
@@ -159,8 +145,18 @@ audited. Same rule for any mechanical defect: on the second instance, stop and s
   `/Users/jimphan/Library/Application
 Support/Claude/side-session-notes/local_3780a44e-8b11-4c98-8b60-567305df354d/`
 
-## Done looks like
+## If you continue
 
-Every card in the topic read, `<topic>_audit.md` listing errors with corrections and incomplete
-cards noted separately, source corrections applied, rebuilt, committed (not pushed), and a
-summary of how many cards were wrong.
+The accuracy pass is finished. What is left is improvement work, in rough order of value:
+
+1. **The six plain-language cards** (F0460, F0725, F1202, F1266, F1309, F1432) — rewrite to match
+   F0450's lemonade-stand register. Small, self-contained, visible to students.
+2. **The IRR-levers cluster** (F0787, F1187, F1324, F1663, F0444) — point them at the enumeration
+   that already sits on F0445 and F2096.
+3. **The example-less cards** — questions asking "give an example of X" whose template contains no
+   example: F0018, F0596, F1211, F1775, F0541, F0431.
+4. **The wider template-reassignment pass** — roughly 180 cards were logged across the seven audits
+   as incomplete or mismatched rather than wrong. Each audit file lists its own.
+
+None of these is an accuracy problem. All of them are cards where a student would get less than the
+deck already contains elsewhere.
