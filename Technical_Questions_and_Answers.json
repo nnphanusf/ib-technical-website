@@ -820,7 +820,7 @@
     },
     {
       "question_id": "F0024",
-      "question": "What happens to the three statements if you change deferred revenue by 10 dollars?",
+      "question": "What happens to the three statements if you change deferred revenue by 10 dollars? Assume a 20% tax rate.",
       "question_sources": [
         "Aeris Partners"
       ],
@@ -828,7 +828,7 @@
         "Aeris Partners Insights/Aeris Insight 6.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Clarify whether deferred revenue rises from a cash prepayment or falls as service is delivered. For a $10 prepayment: cash +10, deferred revenue +10, no immediate book income. For recognizing $10 of previously deferred service revenue with no costs and tax rate t: net income +10(1-t), deferred revenue -10, and indirect CFO subtracts 10; cash changes by -10t if taxes are paid then. Tax timing may differ.",
+      "answer": "Clarify which direction is meant, because the two cases differ. Take $10 and a 20% tax rate.\n\n• A $10 prepayment: Cash +$10 and Deferred Revenue +$10, no income-statement effect and no change in equity.\n\n• Recognising $10 of previously deferred revenue, with no delivery cost: Pre-Tax Income +$10 and Net Income +$8.\n\n• Cash Flow Statement: Net Income +$8 less the $10 reduction in Deferred Revenue, so cash falls $2.\n\n• Balance Sheet: Deferred Revenue −$10 and Cash −$2, against Retained Earnings +$8, so both sides fall $2 and balance.\n\n• Intuition: the cash came in earlier; recognition only triggers the $2 of tax.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -883,7 +883,7 @@
     },
     {
       "question_id": "F0027",
-      "question": "Walk through a multi-year inventory purchase financed with debt, including depreciation and interest payments. [Amounts and timing not recorded.]",
+      "question": "Walk through a multi-year inventory purchase financed with debt, including depreciation and interest payments. Assume a 20% tax rate. [Amounts and timing not recorded.]",
       "question_sources": [
         "Aeris Partners"
       ],
@@ -891,7 +891,7 @@
         "Aeris Partners Insights/Aeris Insight 9.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. For an incremental depreciation expense d and tax rate t, assuming an immediately usable tax deduction: EBIT and pre-tax income decrease d; net income decreases d(1-t). On the indirect cash-flow statement, add back the non-cash depreciation d, so CFO and cash rise d*t. Net PP&E falls d and retained earnings fall d(1-t); the balance sheet balances. Reverse these signs for a decrease in depreciation. If depreciation is not tax deductible or no current tax benefit is usable, cash does not rise by the tax shield; address deferred taxes separately. Depreciation allocates a capital asset’s cost over its useful life, rather than measuring its market value.",
+      "answer": "The source omits the amounts and timing, so work the depreciation step from a clean example: $10 of incremental depreciation at a 20% tax rate.\n\n• Income Statement: EBIT and Pre-Tax Income fall $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8 plus the $10 non-cash add-back, so cash rises $2.\n\n• Balance Sheet: Cash +$2 and Net PP&E −$10, so assets and Retained Earnings both fall $8 and the balance sheet balances.\n\n• Intuition: the only cash effect is the $2 tax saving.\n\nDepreciation allocates an asset's cost over its useful life rather than measuring its market value. Buying the asset is a separate, capitalised step with no income-statement effect.",
       "notes": [],
       "topic": "depreciation",
       "original_question_ids": [
@@ -14179,7 +14179,7 @@
         "Evercore Restructuring Insights/EVR RX Insight 34.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Assume the full $100 is outstanding from the start of the year. Issuance adds cash 100 and debt 100. Annual cash interest = 5 and PIK = 5. At tax rate t, NI falls 10(1-t); add back 5 PIK in CFO, so annual CFO is -5+10t. Ending debt is 105. Including issuance, cash rises 95+10t and retained earnings fall 10(1-t). Issuance spread throughout the year requires time-weighted interest instead.",
+      "answer": "Assume the full $100 is outstanding from the start of the year. Interest is $10 in total, $5 cash and $5 PIK, at a 20% tax rate.\n\n• At issuance: Cash +$100 and Debt +$100, a financing inflow, no income effect.\n\n• Income Statement: interest expense $10, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so operating cash flow is {M}$3 for the year. Including the issuance, cash is up $97.\n\n• Balance Sheet: Cash +$97 and Debt $105 after the PIK accretes, with Retained Earnings −$8, so both sides are up $97 and balance.\n\n• Intuition: you raised $100 and paid out $5 of cash coupon less $2 of tax relief.\n\nIf the debt is drawn through the year rather than on day one, time-weight the interest.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -14675,7 +14675,7 @@
     },
     {
       "question_id": "F0646",
-      "question": "What is the effect on the balance sheet of a ten dollar decrease of deffered revenue?",
+      "question": "What is the effect on the balance sheet of a ten dollar decrease of deffered revenue? Assume a 20% tax rate.",
       "question_sources": [
         "Financial Technology Partners SF"
       ],
@@ -14683,7 +14683,7 @@
         "Financial Technology Partners SF Insights/FTP SF Insight 13.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Assume the $10 decrease represents revenue earned from a prior customer prepayment, no associated costs and a tax rate t. Deferred revenue falls $10; net income and retained earnings rise $10*(1-t). No new customer cash arrives; if tax is paid now, cash falls $10*t. Indirect CFO is net income minus the $10 deferred-revenue decrease, equal to -$10*t. If the decrease instead represents a refund, cash and the liability fall $10 with no revenue. The reason for the decrease determines the answer.",
+      "answer": "Assume the $10 decrease is revenue earned on a prior customer prepayment, no associated costs, 20% tax rate.\n\n• Income Statement: Revenue +$10, so Net Income is up $8.\n\n• Cash Flow Statement: Net Income +$8 less the $10 fall in Deferred Revenue, so cash falls $2 if the tax is paid now. No new customer cash arrives.\n\n• Balance Sheet: Deferred Revenue −$10 and Cash −$2, with Retained Earnings +$8, so both sides fall $2 and balance.\n\n• Intuition: the only movement is the $2 of tax on revenue whose cash was collected earlier.\n\nIf instead the decrease is a refund, cash and the liability both fall $10 and no revenue is recognised. The reason for the decrease decides the answer.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -14970,7 +14970,7 @@
     },
     {
       "question_id": "F0660",
-      "question": "Explain the effects of changes in accounts receivable and accounts payable on the three statements. [Additional scenario input not recorded.]",
+      "question": "Explain the effects of changes in accounts receivable and accounts payable on the three statements. Assume a 20% tax rate. [Additional scenario input not recorded.]",
       "question_sources": [
         "Financial Technology Partners SF"
       ],
@@ -14978,7 +14978,7 @@
         "Financial Technology Partners SF Insights/FTP SF Insight 2.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Accounts receivable is a claim for cash for revenue already earned. A credit sale R with cost C increases revenue R, expense C and net income (R-C)(1-t), while AR rises R; the indirect CFO adjustment subtracts the AR increase. Collection later increases cash and decreases AR, with no new revenue or income. A stand-alone increase in AR, holding recorded earnings constant, reduces operating cash flow by that amount. A decrease from collection does the reverse. Ask whether the question describes a new sale, delayed collection, an impairment or collection of an existing receivable.",
+      "answer": "Take the two sides separately, each at a 20% tax rate.\n\n• Receivables, on a $100 credit sale with no cost: Revenue +$100 and Net Income +$80; AR rises $100, which is a negative in operating cash flow, so cash falls $20; assets rise $80 against Retained Earnings +$80. Collection later moves $100 from AR into cash with no new income.\n\n• Payables, on a $10 expense received but unpaid: Operating Expenses +$10 and Net Income −$8; AP rises $10, a positive, so cash rises $2; AP +$10 against Retained Earnings −$8 leaves both sides up $2. Paying it later reduces cash and AP by $10 with no new expense.\n\n• Intuition: receivables mean you owe tax on cash you have not collected; payables mean you have taken a deduction on cash you have not paid. They work in opposite directions, which is why the cash conversion cycle nets them.\n\nAsk whether the question describes a new sale or purchase, a delayed collection or payment, or a write-off, because each gives a different answer.",
       "notes": [],
       "topic": "receivable",
       "original_question_ids": [
@@ -15123,7 +15123,7 @@
     },
     {
       "question_id": "F0668",
-      "question": "A customer prepays $120 for a one-year magazine subscription delivered monthly. Explain deferred revenue and the financial statement effects over the year.",
+      "question": "A customer prepays $120 for a one-year magazine subscription delivered monthly. Explain deferred revenue and the financial statement effects over the year. Assume a 20% tax rate.",
       "question_sources": [
         "Financial Technology Partners SF"
       ],
@@ -15131,7 +15131,7 @@
         "Financial Technology Partners SF Insights/FTP SF Insight 22.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "At receipt, cash +120 and deferred revenue +120. Recognize $10 revenue each month as delivered and reduce deferred revenue $10. With no costs and tax rate t, monthly net income is 10(1-t). The liability reduction offsets that revenue in CFO, leaving cash taxes as the subsequent cash outflow. After 12 months, deferred revenue is zero and total recognized revenue is 120. Actual cash-tax timing and delivery costs may differ.",
+      "answer": "A $120 annual subscription delivered monthly, no delivery costs, 20% tax rate.\n\n• At receipt: Cash +$120 and Deferred Revenue +$120, with no income-statement effect.\n\n• Income Statement, each month: recognise $120 / 12 = $10 of revenue, so monthly Net Income is $8.\n\n• Cash Flow Statement, each month: Net Income +$8 less the $10 reduction in the liability, so cash falls $2 — the tax on that month's revenue.\n\n• Balance Sheet: Deferred Revenue falls $10 a month to zero after twelve months, by which point $120 of revenue has been recognised and $24 of tax paid.\n\n• Intuition: the company holds the full $120 from day one and gives $24 of it back in tax across the year.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -17275,7 +17275,7 @@
         "Greenhill NY Insights/Greenhill NY Insight 12.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Depreciation = 10 and interest = 10. At tax rate t, NI falls 20(1-t), CFO is -20(1-t)+10 = -10+20t, PP&E falls 10, debt stays 100, and retained earnings falls 20(1-t). At an illustrative 20% tax rate, NI falls 16 and cash falls 6; the source does not supply that tax rate.",
+      "answer": "Depreciation is 10% of $100, so $10, and interest is 10% of $100, so $10. Tax rate 20%, no principal repaid.\n\n• Income Statement: $10 of depreciation and $10 of interest, so Pre-Tax Income falls $20 and Net Income falls $16.\n\n• Cash Flow Statement: Net Income −$16, add back the $10 of depreciation, so cash falls $6.\n\n• Balance Sheet: Cash −$6 and Net PP&E −$10 (from $100 to $90), so assets fall $16; Debt stays at $100 and Retained Earnings falls $16, so both sides fall $16 and balance.\n\n• Intuition: the $6 of cash out is the $10 cash coupon less $4 of tax relief on the $20 of deductions.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -17296,7 +17296,7 @@
         "Greenhill NY Insights/Greenhill NY Insight 12.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "After two full years of $10 annual depreciation, book PP&E is $80. Write it off: NI falls 80(1-t); add back the 80 non-cash loss, giving CFO +80t if immediately deductible. Repay debt 100: financing cash flow -100. Net cash change in this step is -100+80t; PP&E -80, debt -100 and retained earnings -80(1-t). If only one year has elapsed, the book value is 90 instead; clarify timing.",
+      "answer": "After two full years of $10 depreciation the factory's book value is $80. Write it off and repay the $100 loan, at a 20% tax rate, assuming the loss is deductible now.\n\n• Income Statement: an $80 non-cash write-off, so Pre-Tax Income falls $80 and Net Income falls $64.\n\n• Cash Flow Statement: Net Income −$64, add back the $80 non-cash loss, so operating cash flow is +$16; the $100 repayment is a financing outflow, so cash falls $84 in this step.\n\n• Balance Sheet: Cash −$84 and PP&E −$80, so assets fall $164; Debt −$100 and Retained Earnings −$64, so both sides fall $164 and balance.\n\n• Intuition: the write-off itself moves only $16 of tax relief; the $100 repayment is what drains the cash.\n\nIf only one year had elapsed the book value would be $90 and the write-off $90, so clarify the timing. With no taxable income the loss creates no immediate cash saving.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -18199,7 +18199,7 @@
         "Guggenheim Partners NY Insights/Gugg NY Insight 23.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "At purchase, PP&E +1,000 and debt +1,000, with no net cash change. Year 1: book depreciation 100; cash interest 50; PIK 25; book EBT falls 175. At tax rate t, NI falls 175(1-t). If tax depreciation is 200 and both interest components are currently deductible, taxable income falls 275 and cash taxes fall 275t. CFO = -50+275t. PP&E falls 100, debt rises 25, DTL rises 100t and retained earnings falls 175(1-t); these reconcile to cash. Deductibility limitations or no taxable profit change the tax result.",
+      "answer": "Book depreciation is $1,000 / 10 = $100; tax depreciation is $200. Cash interest is 10% of $500 = $50 and PIK is 5% of $500 = $25. Tax rate 20%.\n\n• At purchase: PP&E +$1,000 and Debt +$1,000, no net cash movement.\n\n• Income Statement: $100 of depreciation plus $75 of interest, so book Pre-Tax Income falls $175 and Net Income falls $140.\n\n• Taxes: taxable income falls $275, being $200 of tax depreciation and $75 of interest, so cash taxes fall $55 while book tax falls $35. The $20 difference creates a deferred tax liability.\n\n• Cash Flow Statement: the only cash items are the $50 cash coupon out and $55 of tax saved, so cash rises $5.\n\n• Balance Sheet: Cash +$5 and PP&E −$100, so assets fall $95; Debt +$25 from the PIK, a DTL of +$20 and Retained Earnings −$140 also sum to −$95, so both sides balance.\n\n• Intuition: accelerated tax depreciation defers $20 of tax into a liability and is what turns the year cash-positive.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -18407,7 +18407,7 @@
     },
     {
       "question_id": "F0845",
-      "question": "Calculate a company's tax rate from revenue, expenses, interest and D&A. [Inputs not recorded.]",
+      "question": "Calculate a company's tax rate from revenue, expenses, interest and D&A. Assume a 20% tax rate. [Inputs not recorded.]",
       "question_sources": [
         "Houlihan Lokey Healthcare"
       ],
@@ -18415,7 +18415,7 @@
         "Houlihan Lokey Healthcare Insights/HL HC Insight 2.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. For an incremental depreciation expense d and tax rate t, assuming an immediately usable tax deduction: EBIT and pre-tax income decrease d; net income decreases d(1-t). On the indirect cash-flow statement, add back the non-cash depreciation d, so CFO and cash rise d*t. Net PP&E falls d and retained earnings fall d(1-t); the balance sheet balances. Reverse these signs for a decrease in depreciation. If depreciation is not tax deductible or no current tax benefit is usable, cash does not rise by the tax shield; address deferred taxes separately. Depreciation allocates a capital asset’s cost over its useful life, rather than measuring its market value.",
+      "answer": "The question asks for the tax rate, so do not assume one — derive it. Build down the income statement to pre-tax income, then divide the tax charge into it. Revenue less operating expenses and D&A gives EBIT; EBIT less interest gives Pre-Tax Income; the effective tax rate is Income Tax Expense / Pre-Tax Income. For example, with $500 of revenue, $300 of operating expenses, $50 of D&A and $25 of interest, Pre-Tax Income is $125, and a $25 tax charge is a 20% effective rate. Distinguish three rates that are easily confused: the statutory rate set by law, the effective rate from the income statement, which permanent differences move away from statutory, and the cash tax rate, which is cash taxes paid over pre-tax income and differs again because of timing differences and deferred taxes. For valuation use a forward-looking marginal or cash rate rather than a historical effective rate that may carry one-off items. The source does not record the figures, so substitute them into Income Tax Expense / Pre-Tax Income.",
       "notes": [],
       "topic": "depreciation",
       "original_question_ids": [
@@ -19443,7 +19443,7 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 23.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "Assume the purchase at the start of year one, a full year of interest before the sale, amortisation of 20% of the original $100 at year-end, and a 20% tax rate.\n\n• Year one, at purchase: Inventory +$100 and Debt +$100, so no net cash movement and no income effect.\n\n• Year two, Income Statement: Revenue $200 and COGS $100, less $5 of cash interest and $5 of PIK, so Pre-Tax Income is $90 and Net Income is $72.\n\n• Cash Flow Statement: Net Income $72, plus $5 of PIK added back, plus the $100 release of inventory, gives operating cash flow of $177; the $20 amortisation is a financing outflow, so cash rises $157.\n\n• Balance Sheet: Inventory falls to zero, Debt ends at $85 after $5 of PIK and $20 of repayment, and Retained Earnings rises $72; the $157 of cash against the $100 of inventory released leaves both sides up $57 from the post-purchase position and balanced.\n\n• Intuition: the $100 of inventory came back as cash, the $100 of profit was taxed $18, and $5 of coupon and $20 of principal went out.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -19464,7 +19464,7 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 24.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "At purchase: inventory +200 and debt +200; borrowing and inventory cash use offset. Assume sale and debt amortization occur at year-end, interest uses opening principal, amortization is 20% of original debt and sale is for cash. Revenue 400, COGS 200, cash interest 10 and PIK 10 give EBT 180 and NI 180(1-t). CFO for the full year is 190-180t (sale 400 less inventory 200, cash interest 10 and tax 180t). Financing flow is +200 borrowing-40 repayment = +160. Ending cash increases 350-180t; inventory is zero, debt is 170 and retained earnings rises 180(1-t). A different amortization base or interest timing changes the result.",
+      "answer": "Assume the sale and the amortisation occur at year-end, interest runs on the opening $200, amortisation is 20% of the original principal, the sale is for cash, and the tax rate is 20%.\n\n• At purchase: Inventory +$200 and Debt +$200, so the borrowing and the inventory outlay offset and cash does not move.\n\n• Income Statement: Revenue $400 and COGS $200, less $10 of cash interest and $10 of PIK, so Pre-Tax Income is $180 and Net Income is $144.\n\n• Cash Flow Statement: operating cash flow is $190 less the $36 of tax, so $154 — the $400 sale, less the $200 paid for inventory, less $10 of cash interest, less $36 of tax. Financing is the $200 drawn less the $40 repaid, so +$160.\n\n• Balance Sheet: cash is up $314, inventory is zero, Debt ends at $170 after $10 of PIK and $40 of amortisation, and Retained Earnings rises $144.\n\n• Intuition: the business turned $200 of inventory into $400 of cash, paid $36 of tax and $10 of coupon, and still owes $170.\n\nA different amortisation base or interest timing changes the figures.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -22612,7 +22612,7 @@
     },
     {
       "question_id": "F1064",
-      "question": "Show the journal entries for depreciation and taxes.",
+      "question": "Show the journal entries for depreciation and taxes. Assume a 20% tax rate.",
       "question_sources": [
         "Lazard Healthcare SF"
       ],
@@ -22620,7 +22620,7 @@
         "Lazard Healthcare SF Insights/Laz HC SF Insight 7.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "For depreciation D, debit depreciation expense D and credit accumulated depreciation D. If tax depreciation also increases D and the deduction is immediately usable, tax expense/payable fall D*t relative to baseline, reducing the net-income decline to D*(1-t). If book and tax deductions differ, record appropriate current and deferred tax effects instead. Cash tax payments are separate settlement entries; depreciation itself is not a cash payment.",
+      "answer": "Take $100 of depreciation at a 20% tax rate.\n\n• The depreciation entry: debit Depreciation Expense $100, credit Accumulated Depreciation $100. Accumulated depreciation is a contra-asset, so net PP&E falls $100.\n\n• The tax entry: the $100 deduction reduces taxable income, so debit Income Tax Expense $20 less than it would otherwise be, with the offset to Income Taxes Payable or Cash. Net Income therefore falls $80 rather than $100.\n\n• If book and tax depreciation differ, split the tax entry: current tax follows the tax deduction and the difference goes to a deferred tax asset or liability.\n\n• Intuition: depreciation is not a cash payment. The cash entry happens separately, when the tax is actually remitted.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -25533,7 +25533,7 @@
     },
     {
       "question_id": "F1215",
-      "question": "If you purchase a $100 shirt with $50 on a gift card and $50 in cash, and the shirt costed $30 to produce, please show the result on the 3 statements?",
+      "question": "If you purchase a $100 shirt with $50 on a gift card and $50 in cash, and the shirt costed $30 to produce, please show the result on the 3 statements? Assume a 20% tax rate.",
       "question_sources": [
         "Morgan Stanley NY"
       ],
@@ -25541,7 +25541,7 @@
         "Morgan Stanley NY Insights/MS NYC Insight 13.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Assume the gift card cash was received earlier and is in deferred revenue. At redemption: revenue +100, COGS +30, pre-tax income +70 and NI +70(1-t). Cash collected now is +50; inventory -30 and deferred revenue -50. CFO = NI +30-50 = 50-70t if taxes are paid now. Assets increase 20-70t and liabilities/equity increase -50+70(1-t), so they balance. Do not count the earlier gift-card cash a second time.",
+      "answer": "Assume the gift-card cash was received earlier and sits in Deferred Revenue. Tax rate 20%.\n\n• Income Statement: Revenue +$100 and COGS +$30, so Pre-Tax Income is up $70 and Net Income is up $56.\n\n• Cash Flow Statement: Net Income +$56, plus the $30 reduction in inventory, less the $50 reduction in Deferred Revenue, so cash rises $36 — the $50 collected now less $14 of tax.\n\n• Balance Sheet: Cash +$36 and Inventory −$30, so assets rise $6; Deferred Revenue −$50 and Retained Earnings +$56 also give $6, so both sides balance.\n\n• Intuition: only half the sale brings in new cash, because the gift-card half was collected when the card was sold. Do not count that cash twice.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -25929,7 +25929,7 @@
     },
     {
       "question_id": "F1234",
-      "question": "If i operated a dental clinic and i bought a coffee machine, run me through the impact of this transaction on the 3 financial statements as the year goes by (requires you to think about tax and depreciation?",
+      "question": "If i operated a dental clinic and i bought a coffee machine, run me through the impact of this transaction on the 3 financial statements as the year goes by (requires you to think about tax and depreciation? Assume a 20% tax rate.",
       "question_sources": [
         "Morgan Stanley Singapore"
       ],
@@ -25937,7 +25937,7 @@
         "Morgan Stanley Singapore Insights/MS Singapore Insight 2.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "For an incremental depreciation expense d and tax rate t, assuming an immediately usable tax deduction: EBIT and pre-tax income decrease d; net income decreases d(1-t). On the indirect cash-flow statement, add back the non-cash depreciation d, so CFO and cash rise d*t. Net PP&E falls d and retained earnings fall d(1-t); the balance sheet balances. Reverse these signs for a decrease in depreciation. If depreciation is not tax deductible or no current tax benefit is usable, cash does not rise by the tax shield; address deferred taxes separately. Depreciation allocates a capital asset’s cost over its useful life, rather than measuring its market value.",
+      "answer": "Capitalise the machine, then run the year. Take a $1,000 machine, a five-year life and a 20% tax rate.\n\n• At purchase: PP&E +$1,000 and Cash −$1,000, an investing outflow with no effect on profit — buying equipment is not an expense.\n\n• Income Statement, during the year: depreciation of $1,000 / 5 = $200, so Pre-Tax Income falls $200 and Net Income falls $160.\n\n• Cash Flow Statement: Net Income −$160 plus the $200 depreciation add-back, so cash rises $40.\n\n• Balance Sheet: Cash +$40 and Net PP&E $800, so assets fall $160 against Retained Earnings −$160, and both sides balance.\n\n• Intuition: the clinic paid the full $1,000 upfront and recovers $40 a year in tax relief as the machine depreciates.",
       "notes": [],
       "topic": "depreciation",
       "original_question_ids": [
@@ -31453,7 +31453,7 @@
         "Shea & Co Insights/Shea & Co Insight 20.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "At inception, debt +100, cash +50 and PP&E +50; financing inflow 100 and CapEx outflow 50. Annual depreciation = 50/5 = 10; interest = 5. At tax rate t, NI falls 15(1-t), CFO = -5+15t, PP&E falls 10 and debt remains 100. Cumulatively after year 1, cash is up 45+15t versus pre-transaction, PP&E up 40, debt up 100 and retained earnings down 15(1-t). No tax rate is supplied.",
+      "answer": "Annual depreciation is $50 / 5 = $10 and interest is 5% of $100 = $5. Tax rate 20%, no principal repaid in year one.\n\n• At inception: Debt +$100, Cash +$50 and PP&E +$50 — a $100 financing inflow against a $50 investing outflow.\n\n• Income Statement: $10 of depreciation and $5 of interest, so Pre-Tax Income falls $15 and Net Income falls $12.\n\n• Cash Flow Statement: Net Income −$12 plus the $10 depreciation add-back, so operating cash flow is {M}$2 for the year.\n\n• Balance Sheet, cumulatively: Cash +$48, Net PP&E +$40, Debt +$100 and Retained Earnings −$12, so both sides are up $88 and balance.\n\n• Intuition: the unspent $50 of borrowings is why cash is up despite the loss; the year's own cash cost is the $5 coupon less $3 of tax relief.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -31529,7 +31529,7 @@
     },
     {
       "question_id": "F1519",
-      "question": "A company receives $30,000 in year 1 for three years of service. Explain the deferred revenue and three-statement effects over the contract.",
+      "question": "A company receives $30,000 in year 1 for three years of service. Explain the deferred revenue and three-statement effects over the contract. Assume a 20% tax rate.",
       "question_sources": [
         "Shea & Co"
       ],
@@ -31537,7 +31537,7 @@
         "Shea & Co Insights/Shea & Co Insight 24.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Assume $30,000 is collected upfront and service is delivered evenly over three years with no costs. At collection, cash and deferred revenue each rise 30,000. Recognize revenue 10,000 annually; the liability falls by 10,000 each year. Annual NI is 10,000(1-t). Once the initial cash is collected, subsequent cash changes are taxes and delivery costs, not a second receipt of revenue. If collection occurs during year 1, present the collection and service recognition together or separately as requested.",
+      "answer": "Assume $30,000 is collected upfront, service is delivered evenly over three years with no costs, and the tax rate is 20%.\n\n• At collection: Cash +$30,000 and Deferred Revenue +$30,000, no income effect.\n\n• Income Statement, each year: recognise $30,000 / 3 = $10,000 of revenue, so annual Net Income is $8,000.\n\n• Cash Flow Statement, each year: Net Income +$8,000 less the $10,000 reduction in the liability, so cash falls $2,000 — that year's tax.\n\n• Balance Sheet: Deferred Revenue steps down $10,000 a year to zero at the end of year three, with Retained Earnings up $8,000 a year.\n\n• Intuition: the cash arrived once, in year one; the following years only pay tax.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -31823,7 +31823,7 @@
     },
     {
       "question_id": "F1536",
-      "question": "Walk through the three-statement effects of purchasing $100 of equipment, immediately and one year later. [Financing, depreciation and tax assumptions not recorded.]",
+      "question": "Walk through the three-statement effects of purchasing $100 of equipment, immediately and one year later. Assume a 20% tax rate. [Financing, depreciation and tax assumptions not recorded.]",
       "question_sources": [
         "Société Générale NY"
       ],
@@ -31831,7 +31831,7 @@
         "Société Générale NY Insights/SocGen NY Inisght 20.png"
       ],
       "answer_type": "Calculated / symbolic solution",
-      "answer": "Capitalize the purchase. At acquisition, PP&E rises 100 and cash falls 100 (if financed, show the financing inflow and the debt or equity increase instead of the cash decline); the 100 is an investing outflow and there is no income-statement effect, so net income is unchanged. One year later, straight-line depreciation is (100 - residual value) / useful life; call it d. EBIT and pre-tax income fall d, net income falls d*(1-t), d is added back in indirect CFO so cash rises d*t, net PP&E falls d and retained earnings fall d*(1-t); the balance sheet balances. Neither the useful life, the financing nor the tax rate is supplied, so keep both steps symbolic. Do not expense a capitalized purchase in the year of acquisition.",
+      "answer": "Capitalise the purchase, then depreciate it. Take a five-year life, no residual value, and a 20% tax rate.\n\n• At acquisition: PP&E +$100 and Cash −$100, reported as a $100 investing outflow. There is no income-statement effect and Net Income does not change. If it is financed, show the financing inflow and the debt or equity increase instead of the cash fall.\n\n• Income Statement, one year later: depreciation of $100 / 5 = $20, so Pre-Tax Income falls $20 and Net Income falls $16.\n\n• Cash Flow Statement: Net Income −$16 plus the $20 depreciation add-back, so cash rises $4.\n\n• Balance Sheet: Cash +$4 and Net PP&E $80 after a year, so assets fall $16 against Retained Earnings −$16, and both sides balance.\n\n• Intuition: the $100 left as cash at purchase and only the $4 tax shield comes back each year. Do not expense a capitalised purchase in the year you buy it.",
       "notes": [],
       "topic": "calculation",
       "original_question_ids": [
@@ -33043,7 +33043,7 @@
     },
     {
       "question_id": "F1600",
-      "question": "Walk through the three-statement effects of depreciation, deferred revenue, and selling products for which revenue was deferred. [Amounts and timing not recorded.]",
+      "question": "Walk through the three-statement effects of depreciation, deferred revenue, and selling products for which revenue was deferred. Assume a 20% tax rate. [Amounts and timing not recorded.]",
       "question_sources": [
         "Union Square Advisors"
       ],
@@ -33051,7 +33051,7 @@
         "Union Square Advisors Insights/Union Square Insight 19.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. For an incremental depreciation expense d and tax rate t, assuming an immediately usable tax deduction: EBIT and pre-tax income decrease d; net income decreases d(1-t). On the indirect cash-flow statement, add back the non-cash depreciation d, so CFO and cash rise d*t. Net PP&E falls d and retained earnings fall d(1-t); the balance sheet balances. Reverse these signs for a decrease in depreciation. If depreciation is not tax deductible or no current tax benefit is usable, cash does not rise by the tax shield; address deferred taxes separately. Depreciation allocates a capital asset’s cost over its useful life, rather than measuring its market value.",
+      "answer": "The source omits the amounts and timing, so work the depreciation step from a clean example: $10 of incremental depreciation at a 20% tax rate.\n\n• Income Statement: EBIT and Pre-Tax Income fall $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8 plus the $10 non-cash add-back, so cash rises $2.\n\n• Balance Sheet: Cash +$2 and Net PP&E −$10, so assets and Retained Earnings both fall $8 and the balance sheet balances.\n\n• Intuition: the only cash effect is the $2 tax saving.\n\nDepreciation allocates an asset's cost over its useful life rather than measuring its market value. Buying the asset is a separate, capitalised step with no income-statement effect.",
       "notes": [],
       "topic": "depreciation",
       "original_question_ids": [

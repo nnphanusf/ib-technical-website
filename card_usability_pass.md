@@ -11,8 +11,9 @@ Of the 209 Accounting & 3 Statements cards, **60 answers carried a symbolic tax 
 of those questions stated a rate. A student reading "net income falls d(1-t)" has to do algebra
 before they can rehearse an answer out loud, which is the opposite of what a flashcard is for.
 
-**35 answers now use concrete numbers at 20%**, and **33 questions gained the sentence "Assume a
-20% tax rate."** The questions that already state their own rate keep it — F0102 at 40%, F1714 at
+**54 answers now use concrete numbers at 20%**, and **45 questions gained the sentence "Assume a
+20% tax rate."** Only 8 accounting cards still carry a symbolic rate, and all 8 are the formula
+questions listed below. The questions that already state their own rate keep it — F0102 at 40%, F1714 at
 20%, F0919 at 60%, F0781's illustrative 20% — because overriding a rate the question gives would
 break the question.
 
@@ -23,7 +24,12 @@ break the question.
 | F0112 | asks "with x tax rate" explicitly |
 | F0193, F0797, F1168, F1326, F1452 | ask for the FCFF / FCFE formulas themselves |
 | F1278 | asks *why* you multiply EBIT by (1-t) |
-| F1480, F1550 | ask about tax policy and which items affect taxes, not a worked case |
+| F1480 | asks about depreciation policy, not a worked case |
+
+F0845 is the exception that proves the rule: it asks you to *calculate* a company's tax rate, so
+assuming one would defeat the question. It now derives the effective rate as Income Tax Expense /
+Pre-Tax Income and distinguishes the statutory, effective and cash tax rates, which also closes a
+gap flagged in `accounting_audit.md`.
 
 ## 2. Answer structure follows the 400 guide
 
@@ -41,7 +47,7 @@ the guide does and the prepared answers did not is *structure*: 29 guide answers
 harder to follow than a 700-character answer in four labelled steps, which is exactly what you were
 seeing.
 
-So the 35 rewritten answers follow the guide's pattern: one line of setup, a labelled bullet per
+So the 54 rewritten answers follow the guide's pattern: one line of setup, a labelled bullet per
 statement, and a closing `• Intuition:` line that says what actually happened in cash. For example
 F0038 now reads:
 
@@ -61,12 +67,15 @@ happening to the 29 guide answers. The renderer now treats a bullet as the start
 paragraph, so each step gets its own line. This improves the guide cards as much as the new ones.
 
 Every rewritten answer's arithmetic was checked to balance: assets equal liabilities plus equity in
-all 35, and the cash-flow line reconciles to the balance-sheet cash movement.
+all 54, and the cash-flow line reconciles to the balance-sheet cash movement. That includes the
+multi-step worked cases, which are the ones worth re-checking if you change a rate later: F0901
+(inventory bought with PIK debt, sold at double), F0833 (book depreciation against MACRS, which
+throws off a $20 deferred tax liability), F0900, F0782, F1515 and F0621.
 
 The answers were written once per template family and applied across the cards sharing that family,
-which is how the deck already worked — deferred revenue (14 cards), depreciation (5), accounts
-payable (3), accounts receivable (2), PIK interest (6), inventory (3), write-downs and asset sales
-(2).
+which is how the deck already worked — deferred revenue (14 cards), depreciation (10), accounts
+payable (3), accounts receivable (3), PIK interest (7), inventory (3), write-downs and asset sales
+(2), plus 12 individually worked multi-step cases.
 
 ---
 
