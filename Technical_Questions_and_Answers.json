@@ -9153,7 +9153,7 @@
         "Citi Technology SF Insights/Citi SF Tech Insight 23.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Choose companies with similar business model, geography, growth, margins, risk and capital intensity. Calculate consistent enterprise/equity values and calendarized historical or forecast metrics, normalize unusual items, and apply a justified peer range to the target metric. EV/Revenue divided by EV/EBITDA equals EBITDA margin when periods and EV are consistent. P/E uses equity value/net income; EV/EBITDA uses operating value/pre-interest earnings, so taxes and financing can produce different rankings. Higher multiples can reflect growth, stronger returns, recurring revenue or lower risk, not automatically overvaluation. Negative EBITDA makes its multiple unhelpful; revenue multiples require a credible path to margins. Share price alone is not comparable across firms because share counts differ.",
+      "answer": "At purchase, capitalize $200 of PP&E. A $100 debt draw creates a $100 financing inflow; the equipment purchase creates a $200 investing outflow, so cash falls $100, PP&E rises $200 and debt rises $100. There is no immediate income-statement effect, ignoring fees. For each later year, let d be depreciation, I cash interest on the outstanding debt, P principal repaid and t the tax rate. With no other operating changes and an immediately usable tax deduction, net income and retained earnings fall (d+I)*(1-t). Add back d in indirect CFO: CFO changes by -I+(d+I)*t. Principal repayment is a financing outflow P, so cash changes by -I+(d+I)*t-P; net PP&E falls d and debt falls P. These incremental balance-sheet changes balance. Roll debt and asset balances forward each year; straight-line d=(200-residual value)/useful life. Useful life, rates, timing and repayments are missing, so later years must remain symbolic. If tax deductions are not currently usable, model cash taxes and deferred taxes separately.",
       "notes": [],
       "topic": "comps",
       "original_question_ids": [
@@ -10852,7 +10852,7 @@
         "Dodge & Cox Insights/Dodge & Cox Insight 10.png"
       ],
       "answer_type": "Open-ended answer framework",
-      "answer": "Begin with objective, horizon, liquidity needs, risk tolerance, constraints, taxes and currency. An illustrative long-horizon growth allocation could combine diversified global equities with high-quality bonds and a liquidity reserve; exact weights require the investor’s circumstances. Alternatives may diversify exposures but add illiquidity, fees and valuation uncertainty. Compare expected returns, correlations and drawdown scenarios, not just standalone volatility. Options can lose the entire premium and are not equivalent to stock ownership. Rebalance to a policy allocation and define what evidence would change it. For an interview, present one clearly labeled illustrative allocation and justify each component; there is no universally correct allocation for a dollar amount alone.",
+      "answer": "Value each asset using the cash flows or economic rights its owner receives. For equities, use equity cash flow/dividend or operating-company DCF with the appropriate EV-to-equity bridge, and cross-check suitable trading multiples. For bonds and loans, discount expected coupons, principal and recoveries consistently for rates, credit, timing and embedded options. For income-producing property, discount net property cash flow or capitalize stabilized NOI, then account for financing to reach equity value. For private equity, value the underlying businesses and deduct fund-level claims, fees and expenses rather than treating commitments as assets. Commodities usually require spot/forward market evidence and analysis of supply, demand, storage and convenience yield; they do not generally have an issuer-like earnings stream. Derivatives require contract-specific payoff models. Match risk, currency, liquidity and the legal claim; an asset-allocation decision is separate from estimating value.",
       "notes": [],
       "topic": "portfolio",
       "original_question_ids": [
@@ -11850,7 +11850,7 @@
         "Lazard LA Insights/Laz LA Insight 7.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Estimate stabilized net operating income from rents/occupancy and operating expenses, excluding financing and depreciation. A simple unlevered property value is NOI/capitalization rate; reconcile it to DCF and comparable sales. Account for tenant credit, location, lease duration, vacancy, tenant improvements, leasing commissions and maintenance CapEx. Equity value subtracts debt and other claims. For REITs, FFO adjusts net income for specified real-estate depreciation and disposition items; AFFO adds recurring capital and other cash adjustments but definitions vary. Hotels often have higher operational volatility than long-lease residential assets, but cap rates depend on quality, market and growth rather than a universal ranking.",
+      "answer": "Estimate stabilized net operating income from rents/occupancy and operating expenses, excluding financing and depreciation. A simple unlevered property value is NOI/capitalization rate; reconcile it to DCF and comparable sales. Account for tenant credit, location, lease duration, vacancy, tenant improvements, leasing commissions and maintenance CapEx. Equity value subtracts debt and other claims. For REITs, FFO adjusts net income for specified real-estate depreciation and disposition items; AFFO generally deducts recurring maintenance capital expenditures from FFO and adjusts non-cash rent and other items; definitions vary by issuer. Hotels often have higher operational volatility than long-lease residential assets, but cap rates depend on quality, market and growth rather than a universal ranking.",
       "notes": [],
       "topic": "real_estate",
       "original_question_ids": [
@@ -12343,7 +12343,7 @@
         "Evercore Generalist Insights/EVR Gen Insight 6.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "If the $100 debt proceeds remain as cash, EV and EBITDA are initially unchanged, so EV/EBITDA is unchanged. Equity value is also initially unchanged. Later net income changes by after-tax interest expense less income on cash; P/E may rise if earnings fall and equity value stays constant. Interest rates and how cash is used are needed for a numerical P/E effect.",
+      "answer": "If the $100 debt proceeds remain as cash, EV and EBITDA are initially unchanged, so EV/EBITDA is unchanged. Equity value is also initially unchanged. Later, assuming the same usable tax rate t, the incremental net-income effect is (interest income on the new cash - interest expense on the new debt)*(1-t); P/E may rise if earnings fall and equity value stays constant. Interest rates and how cash is used are needed for a numerical P/E effect.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -15025,7 +15025,7 @@
         "Financial Technology Partners SF Insights/FTP SF Insight 21.png"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "EBITDA = net income + income taxes + net interest expense + depreciation and amortization, then remove non-operating or unusual income/expenses if the requested measure is adjusted operating EBITDA. Reverse the bridge to reach net income from EBITDA. Identify exactly what is included and avoid adding D&A twice when it is embedded in COGS. EBITDA omits taxes, CapEx, working-capital investment and debt service, so it is not free cash flow.",
+      "answer": "Negative net income and EBITDA make historical P/E and EV/EBITDA unsuitable as straightforward valuation anchors; they do not automatically make the business worthless. Identify whether losses are temporary, growth-related or structural. Forecast revenue, sustainable margins, taxes, reinvestment and funding in base, upside and downside scenarios, then discount the resulting cash flows. Include cash burn before profitability and the risk the business fails to reach that stage. Use EV/revenue or forward positive-earnings multiples only with genuinely comparable economics and a credible profitability path. Add excess cash and subtract debt/other claims to reach equity consistently, accounting for financing needs without double counting them. If no viable going concern remains, examine realizable asset value and the claim waterfall instead.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -15283,7 +15283,7 @@
         "GTCR Insights/GTCR Insight 3.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Choose companies with similar business model, geography, growth, margins, risk and capital intensity. Calculate consistent enterprise/equity values and calendarized historical or forecast metrics, normalize unusual items, and apply a justified peer range to the target metric. EV/Revenue divided by EV/EBITDA equals EBITDA margin when periods and EV are consistent. P/E uses equity value/net income; EV/EBITDA uses operating value/pre-interest earnings, so taxes and financing can produce different rankings. Higher multiples can reflect growth, stronger returns, recurring revenue or lower risk, not automatically overvaluation. Negative EBITDA makes its multiple unhelpful; revenue multiples require a credible path to margins. Share price alone is not comparable across firms because share counts differ.",
+      "answer": "Derive an implied multiple from fundamentals instead of asking for comparable-company multiples. Ask about market size and penetration, growth runway, customer retention, pricing, contribution margins, fixed costs, required CapEx/working capital and business risk. Convert these into forecast cash flows and discount them. Then divide the resulting enterprise value by the matching revenue or EBITDA measure to obtain an implied multiple. As a simplified sustainable-growth illustration, EV/EBITDA_1 = (FCFF_1/EBITDA_1)/(WACC-g), where both flow measures refer to next year and WACC exceeds g. Cash conversion must include taxes and the reinvestment required to support g. A changing-growth business needs an explicit forecast before its terminal period. No unique multiple can be calculated without the omitted business inputs, but the method does not require peer multiples.",
       "notes": [],
       "topic": "comps",
       "original_question_ids": [
@@ -15666,7 +15666,7 @@
         "Goldman Sachs LA Insights/GS LA Insight 11.png"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "Identical current statements do not guarantee identical future cash flows or risk. One may have stronger customer retention, better products, patents, management, governance, backlog, lower future reinvestment needs or less concentration. Liquidity, control rights and market expectations can also differ. If all future cash flows, risk, rights and information are truly identical, intrinsic value should be identical; a price difference would then reflect market mispricing or omitted assumptions.",
+      "answer": "EV/EBITDA compares operating value with earnings before financing, tax and D&A; P/E compares common equity value with net income available to common shareholders. Therefore equal EV/EBITDA can coexist with different leverage, cash, interest costs, D&A, tax rates and non-operating items, producing different P/E ratios. Define B as debt + preferred stock + NCI - excess cash - other non-operating assets. Then equity value = EV-B, so P/E = [(EV/EBITDA) - B/EBITDA]/(common net income/EBITDA). For example, two unlevered, cash-free companies can each have EV=1,000 and EBITDA=100, hence EV/EBITDA=10x. With no D&A or other items, tax rates of 20% and 40% give net income of 80 and 60, and P/E of 12.5x and 16.67x. This is a mechanical example holding EV fixed, not a claim that taxes have no effect on intrinsic EV.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -16455,7 +16455,7 @@
         "Goldman Sachs NY Insights/GS NY Insight 4.png"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "Identical current statements do not guarantee identical future cash flows or risk. One may have stronger customer retention, better products, patents, management, governance, backlog, lower future reinvestment needs or less concentration. Liquidity, control rights and market expectations can also differ. If all future cash flows, risk, rights and information are truly identical, intrinsic value should be identical; a price difference would then reflect market mispricing or omitted assumptions.",
+      "answer": "The same P/E does not imply the same operating valuation multiple. Let B = debt + preferred stock + NCI - excess cash - other non-operating assets. Since EV = common equity value + B and common equity value = (P/E)*common net income, EV/EBITDA = (P/E)*(common net income/EBITDA) + B/EBITDA. D&A, interest, taxes and non-operating items change net income relative to EBITDA; leverage, cash and other claims change the bridge. For example, at 15x P/E, common net income of 100 implies equity value of 1,500. If EBITDA is 200, net debt of zero gives EV/EBITDA=7.5x, while net debt of 500 gives 10x, with no other bridge items. The example takes those net-income figures as given; it does not assume identical interest expense or other earnings inputs.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -18202,7 +18202,7 @@
         "UBS NY Insights/UBS NY Insight 21.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "EBITDA = revenue - cash operating expenses before interest, taxes, depreciation and amortization; EBIT = EBITDA - D&A. Net income also includes interest, taxes and non-operating items. EBITDA helps compare operating performance across financing and depreciation conventions, but is not cash flow: it ignores CapEx, working capital and cash taxes. A business can have positive EBITDA yet run out of cash because of reinvestment, interest, maturities, working-capital needs or one-time payments. EBIT can be more meaningful for asset-heavy businesses because depreciation captures part of asset consumption. Evaluate adjusted EBITDA add-backs critically and avoid adding recurring costs back simply because management labels them exceptional.",
+      "answer": "A negative EBITDA denominator makes a conventional EV/EBITDA comparison economically unhelpful. Determine why EBITDA is negative and whether the business can generate sustainable positive cash flow. Use a scenario DCF that includes losses, CapEx, working capital, funding requirements and failure risk before reaching normalized profitability. A revenue multiple or a forward positive-EBITDA multiple may provide a cross-check if peers have comparable growth, margins, capital needs and risk; do not assume all revenue deserves the same multiple. If the business cannot remain a going concern, use asset/recovery analysis instead. When reconciling earnings, unadjusted EBITDA adds back interest, taxes and D&A, not every non-cash expense; SBC and other adjustments require separate identification.",
       "notes": [],
       "topic": "ebitda",
       "original_question_ids": [
@@ -18949,7 +18949,7 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 14.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Choose companies with similar business model, geography, growth, margins, risk and capital intensity. Calculate consistent enterprise/equity values and calendarized historical or forecast metrics, normalize unusual items, and apply a justified peer range to the target metric. EV/Revenue divided by EV/EBITDA equals EBITDA margin when periods and EV are consistent. P/E uses equity value/net income; EV/EBITDA uses operating value/pre-interest earnings, so taxes and financing can produce different rankings. Higher multiples can reflect growth, stronger returns, recurring revenue or lower risk, not automatically overvaluation. Negative EBITDA makes its multiple unhelpful; revenue multiples require a credible path to margins. Share price alone is not comparable across firms because share counts differ.",
+      "answer": "Build an inventory, debt and cash-flow roll-forward for each year. Buying inventory increases inventory and reduces cash, or increases accounts payable if unpaid; borrowing to fund it is a separate financing inflow and debt increase. Recognize revenue when earned and inventory cost as COGS when sold, distinguishing cash sales from receivables. For opening debt D, cash interest c and PIK interest p for the period, both c and p reduce pre-tax income, but only c is paid currently. Add p back in indirect CFO; it increases debt without a cash financing inflow. Ending debt = opening debt + new cash borrowing + capitalized PIK - principal repaid, using the actual interest-accrual convention. Under the usual US GAAP interview convention, cash interest is operating and principal repayment is financing. Reconcile net income to CFO using non-cash charges and changes in receivables, inventory and payables; then update cash and retained earnings and check assets=liabilities+equity. Amounts, sales/collection timing, tax use and amortization terms are absent, so no unique multi-year numbers can be supplied.",
       "notes": [],
       "topic": "comps",
       "original_question_ids": [
@@ -24003,7 +24003,7 @@
         "LionTree Insights/LionTree Insights 5.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "EBITDA = revenue - cash operating expenses before interest, taxes, depreciation and amortization; EBIT = EBITDA - D&A. Net income also includes interest, taxes and non-operating items. EBITDA helps compare operating performance across financing and depreciation conventions, but is not cash flow: it ignores CapEx, working capital and cash taxes. A business can have positive EBITDA yet run out of cash because of reinvestment, interest, maturities, working-capital needs or one-time payments. EBIT can be more meaningful for asset-heavy businesses because depreciation captures part of asset consumption. Evaluate adjusted EBITDA add-backs critically and avoid adding recurring costs back simply because management labels them exceptional.",
+      "answer": "For a technology company with negative EBITDA, first test whether losses reflect scalable growth investment or poor underlying economics. Build a scenario DCF from customers/users, monetization, retention and gross margins through sales/R&D costs, reinvestment and cash burn to sustainable cash flow. Include funding and survival risks. EV/revenue or, for recurring software, EV/ARR can be cross-checks when adjusted for growth, retention, achievable margins and capital requirements. A forward EBITDA multiple is useful only once a credible positive denominator exists. Historical negative EV/EBITDA is not a meaningful cheapness ranking. Keep SBC and other economic costs explicit rather than assuming every non-cash expense disappears.",
       "notes": [],
       "topic": "ebitda",
       "original_question_ids": [
@@ -26731,7 +26731,7 @@
         "Nomura NY Insights/Nomura NY Insight 20.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Choose companies with similar business model, geography, growth, margins, risk and capital intensity. Calculate consistent enterprise/equity values and calendarized historical or forecast metrics, normalize unusual items, and apply a justified peer range to the target metric. EV/Revenue divided by EV/EBITDA equals EBITDA margin when periods and EV are consistent. P/E uses equity value/net income; EV/EBITDA uses operating value/pre-interest earnings, so taxes and financing can produce different rankings. Higher multiples can reflect growth, stronger returns, recurring revenue or lower risk, not automatically overvaluation. Negative EBITDA makes its multiple unhelpful; revenue multiples require a credible path to margins. Share price alone is not comparable across firms because share counts differ.",
+      "answer": "If everything relevant truly is equal, including positive, consistently measured earnings, future growth, cash conversion, leverage and risk, choose company B: its lower P/E means paying less per dollar of the same earnings stream and receiving a higher earnings yield. That is the answer under the stated premise. In real investing, check that equality actually holds: a low P/E can reflect peak or non-recurring earnings, weaker prospects or greater risk. A zero/negative earnings denominator makes the simple comparison unsuitable. Do not explain away the question by assuming different growth or risk after it explicitly holds those factors equal.",
       "notes": [],
       "topic": "comps",
       "original_question_ids": [
@@ -28252,7 +28252,7 @@
         "PJT Partners RSSG NY Insights/PJT RSSG Insight 11.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Choose companies with similar business model, geography, growth, margins, risk and capital intensity. Calculate consistent enterprise/equity values and calendarized historical or forecast metrics, normalize unusual items, and apply a justified peer range to the target metric. EV/Revenue divided by EV/EBITDA equals EBITDA margin when periods and EV are consistent. P/E uses equity value/net income; EV/EBITDA uses operating value/pre-interest earnings, so taxes and financing can produce different rankings. Higher multiples can reflect growth, stronger returns, recurring revenue or lower risk, not automatically overvaluation. Negative EBITDA makes its multiple unhelpful; revenue multiples require a credible path to margins. Share price alone is not comparable across firms because share counts differ.",
+      "answer": "Choose an actual deal you worked on or studied and make that distinction explicit. Explain the buyer and target, their businesses, the transaction objective, price and valuation basis, consideration/funding, strategic rationale and verified status. Then explain the reasons for the important decisions: why this target or buyer, why that price and financing mix, what alternatives were considered, and which risks or synergies mattered. If discussing your own experience, state your actual contribution and respect confidentiality. Prepare follow-up support from the deal announcement, filings and your analysis. Here, \"multiple follow-up questions\" means several interview questions; it is not a request only for valuation multiples.",
       "notes": [],
       "topic": "comps",
       "original_question_ids": [
@@ -40890,7 +40890,7 @@
         "guide:p84:item142"
       ],
       "answer_type": "Answer from supplied M&I guide",
-      "answer": "Historical metrics are useful because they’re based on what happened in real life, but they can also be deceptive if there were non-recurring items or if the company made acquisitions or divestitures. Projected metrics are useful because they assume the company will operate in a “steady state” without acquisitions, divestitures, or non-recurring items, but they’re also less reliable because they’re based on predictions rather than historical events.",
+      "answer": "Historical metrics are based on reported results and provide an observable baseline, but acquisitions, divestitures, cyclicality and non-recurring items may distort comparability. Projected metrics reflect expected future performance and can better capture growth, operating changes and a path toward normalized profitability, but they depend on uncertain assumptions. A forecast does not automatically assume a steady state or exclude acquisitions, divestitures or one-time items; read what each estimate actually includes. Compare historical and forward multiples to understand the change in expected earnings, and align financial periods, transaction scope and normalization policies across companies. For precedent transactions, use forecasts available at the relevant deal date rather than later hindsight.",
       "notes": [
         "Transcribed from the supplied guide; retain its stated assumptions. Some guide examples use specific illustrative deal facts rather than a universal answer."
       ],
@@ -41327,7 +41327,7 @@
         "guide:p92:item162"
       ],
       "answer_type": "Question-focused explanation",
-      "answer": "EBITDA = net income + income taxes + net interest expense + depreciation and amortization, then remove non-operating or unusual income/expenses if the requested measure is adjusted operating EBITDA. Reverse the bridge to reach net income from EBITDA. Identify exactly what is included and avoid adding D&A twice when it is embedded in COGS. EBITDA omits taxes, CapEx, working-capital investment and debt service, so it is not free cash flow.",
+      "answer": "Assuming net debt is the only EV-to-equity bridge item, company A has equity value = 15*120 = 1,800 and EV = 15*150 = 2,250, so net debt = 2,250-1,800 = 450. Company B has equity value = 15*100 = 1,500 and EV = 10*200 = 2,000, so net debt = 2,000-1,500 = 500. Company B therefore has the higher net debt balance, by 50. If preferred stock, NCI or other non-operating assets are present, EV minus equity is the combined bridge amount rather than net debt alone.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
