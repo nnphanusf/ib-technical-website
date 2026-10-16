@@ -344,7 +344,7 @@ Sources: BNP Paribas Leveraged Finance
 B0109. Why leveraged finance rather than M&A?
 Sources: BNP Paribas Leveraged Finance
 
-B0110. How does the Tell me about a time sector differ between the United States and Europe?
+B0110. How does the TMT sector differ between the United States and Europe?
 Sources: BNP Paribas Leveraged Finance
 
 B0111. Explain your GPA.
@@ -1949,10 +1949,10 @@ Sources: LionTree; Nomura Global Markets
 B0644. Express 1/90 as a percentage.
 Sources: LionTree
 
-B0645. Which two Tell me about a time companies should merge?
+B0645. Which two TMT companies should merge?
 Sources: LionTree
 
-B0646. Where is the Tell me about a time industry heading, and what catalysts affect major companies?
+B0646. Where is the TMT industry heading, and what catalysts affect major companies?
 Sources: LionTree
 
 B0647. Which technical topics are you comfortable discussing?
@@ -1970,7 +1970,7 @@ Sources: LionTree
 B0651. Tell me about a time you were in the zone.
 Sources: LionTree
 
-B0652. Are you concerned with being funneled into Tell me about a time and specializing so early in your career?
+B0652. Are you concerned with being funneled into TMT and specializing so early in your career?
 Sources: LionTree
 
 B0653. How would your friends describe you?
@@ -2528,7 +2528,7 @@ Sources: RBC Capital Markets NY
 B0837. What is one portco that you think is doing well?
 Sources: Raine Group
 
-B0838. What is one trend in the Tell me about a time space that you are following?
+B0838. What is one trend in the TMT space that you are following?
 Sources: Raine Group
 
 B0839. What was the toughest class you took?
@@ -2960,7 +2960,7 @@ Sources: Weiss Asset Management
 B0981. Tell me about a time where you went through change and how did you handle it.
 Sources: Wells Fargo NY
 
-B0982. How does one amortize Tell me about a time subscriptions?
+B0982. How does one amortize TMT subscriptions?
 Sources: Wells Fargo NY
 
 B0983. If you could choose 2 statements what would they be?
