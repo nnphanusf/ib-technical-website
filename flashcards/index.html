@@ -1010,7 +1010,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       if (ch !== "." && ch !== "?" && ch !== "!") continue;
       if (t.charAt(i + 1) !== " ") continue;
       var after = t.charAt(i + 2);
-      if (!/[A-Z("'\u2018\u201c]/.test(after)) continue;
+      if (!/[A-Z("'\u2018\u201c\u2022]/.test(after)) continue;
       var head = t.slice(start, i + 1);
       if (ABBR_END.test(head)) continue;
       out.push(head.trim());
@@ -1025,13 +1025,20 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     var ss = splitSentences(String(text || "").replace(/\s+/g, " ").trim());
     var paras = [], cur = [], len = 0;
     ss.forEach(function (sent) {
+      /* a bulleted step reads as its own paragraph, as the guide answers are written */
+      if (sent.charAt(0) === "\u2022" && cur.length) {
+        paras.push(cur.join(" ")); cur = []; len = 0;
+      }
       cur.push(sent);
       len += sent.length;
-      if (len >= 280 || cur.length >= 3) { paras.push(cur.join(" ")); cur = []; len = 0; }
+      if (sent.charAt(0) === "\u2022" || len >= 280 || cur.length >= 3) {
+        paras.push(cur.join(" ")); cur = []; len = 0;
+      }
     });
     if (cur.length) paras.push(cur.join(" "));
     /* never leave a one-sentence orphan hanging off the end */
-    if (paras.length > 1 && paras[paras.length - 1].length < 90) {
+    if (paras.length > 1 && paras[paras.length - 1].length < 90 &&
+        paras[paras.length - 1].charAt(0) !== "\u2022") {
       paras[paras.length - 2] += " " + paras.pop();
     }
     return paras.length ? paras : [""];

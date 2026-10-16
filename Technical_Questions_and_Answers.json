@@ -799,7 +799,7 @@
     },
     {
       "question_id": "F0023",
-      "question": "How does a decrease in deferred revenue flow through the financial statements?",
+      "question": "How does a decrease in deferred revenue flow through the financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Aeris Partners"
       ],
@@ -807,7 +807,7 @@
         "Aeris Partners Insights/Aeris Insight 5.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -1341,7 +1341,7 @@
     },
     {
       "question_id": "F0038",
-      "question": "How does a $10 increase in depreciation affect the three financial statements?",
+      "question": "How does a $10 increase in depreciation affect the three financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Apollo Global Management Real Estate Credit",
         "Bank of America Credit",
@@ -1387,7 +1387,7 @@
         "William Blair SF Insights/WB SF Insight 4.png"
       ],
       "answer_type": "Calculated / symbolic solution",
-      "answer": "Let t be the tax rate and assume an immediate tax deduction. For this 10 increase in depreciation: EBIT changes by -10; net income changes by -10*(1-t); the non-cash add-back changes by 10; cash changes by 10*t. PP&E changes by -10 and retained earnings follows net income. No tax rate is supplied, so keep the result symbolic.",
+      "answer": "A $10 increase in depreciation, with the deduction usable now and a 20% tax rate.\n\n• Income Statement: depreciation is an operating expense, so EBIT and Pre-Tax Income fall $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income is down $8, but you add back the $10 of non-cash depreciation, so cash rises $2.\n\n• Balance Sheet: Cash +$2 and Net PP&E −$10, so assets fall $8; Retained Earnings falls $8, so both sides fall $8 and balance.\n\n• Intuition: the only cash effect is the $2 tax saving, because the asset was paid for earlier.\n\nReverse every sign for a decrease. If the depreciation is not currently deductible there is no cash benefit and the difference goes to deferred taxes.",
       "notes": [],
       "topic": "calculation",
       "original_question_ids": [
@@ -5425,7 +5425,7 @@
     },
     {
       "question_id": "F0205",
-      "question": "What if revenue was recognized 6 months into a 1 year subscription, what happens to the three financial statements?",
+      "question": "What if revenue was recognized 6 months into a 1 year subscription, what happens to the three financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Bank of America PA"
       ],
@@ -5433,7 +5433,7 @@
         "Bank of America PA Insights/BofA PA Insight 11.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -5683,7 +5683,7 @@
     },
     {
       "question_id": "F0218",
-      "question": "Company has a depreciation write-off of $100. Walk me through how that affects the 3 financial statements?",
+      "question": "Company has a depreciation write-off of $100. Walk me through how that affects the 3 financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Bank of America PA"
       ],
@@ -5691,7 +5691,7 @@
         "Bank of America PA Insights/BofA PA Insight 19.png"
       ],
       "answer_type": "Calculated / symbolic solution",
-      "answer": "Let t be the tax rate and assume an immediate tax deduction. For this 100 increase in depreciation: EBIT changes by -100; net income changes by -100*(1-t); the non-cash add-back changes by 100; cash changes by 100*t. PP&E changes by -100 and retained earnings follows net income. No tax rate is supplied, so keep the result symbolic.",
+      "answer": "A $100 increase in depreciation, with the deduction usable now and a 20% tax rate.\n\n• Income Statement: depreciation is an operating expense, so EBIT and Pre-Tax Income fall $100 and Net Income falls $80.\n\n• Cash Flow Statement: Net Income is down $80, but you add back the $100 of non-cash depreciation, so cash rises $20.\n\n• Balance Sheet: Cash +$20 and Net PP&E −$100, so assets fall $80; Retained Earnings falls $80, so both sides fall $80 and balance.\n\n• Intuition: the only cash effect is the $20 tax saving, because the asset was paid for earlier.\n\nReverse every sign for a decrease. If the depreciation is not currently deductible there is no cash benefit and the difference goes to deferred taxes.",
       "notes": [],
       "topic": "calculation",
       "original_question_ids": [
@@ -6422,7 +6422,7 @@
     },
     {
       "question_id": "F0252",
-      "question": "Analyze a fast-growing SaaS company's income and cash flow statements, assess its debt capacity using cash EBITDA including deferred revenue, forecast revenue and estimate when it will become profitable. [Financial data not recorded.]",
+      "question": "Analyze a fast-growing SaaS company's income and cash flow statements, assess its debt capacity using cash EBITDA including deferred revenue, forecast revenue and estimate when it will become profitable. Assume a 20% tax rate. [Financial data not recorded.]",
       "question_sources": [
         "Barclays SF"
       ],
@@ -6430,7 +6430,7 @@
         "Barclays SF Insights/BARC SF Insight 7.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "The source omits the amount and schedule, so work from a clean example. Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -9647,7 +9647,7 @@
     },
     {
       "question_id": "F0405",
-      "question": "How an increase in depreciation flows through the three major financial statements?",
+      "question": "How an increase in depreciation flows through the three major financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Citizens Bank",
         "Nomura NY",
@@ -9664,7 +9664,7 @@
         "Zip Backups - Miscellaneous/drive-download-20250403T002406Z-001/Screenshot 2024-02-04 at 1.25.47 AM.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "For an incremental depreciation expense d and tax rate t, assuming an immediately usable tax deduction: EBIT and pre-tax income decrease d; net income decreases d(1-t). On the indirect cash-flow statement, add back the non-cash depreciation d, so CFO and cash rise d*t. Net PP&E falls d and retained earnings fall d(1-t); the balance sheet balances. Reverse these signs for a decrease in depreciation. If depreciation is not tax deductible or no current tax benefit is usable, cash does not rise by the tax shield; address deferred taxes separately. Depreciation allocates a capital asset’s cost over its useful life, rather than measuring its market value.",
+      "answer": "A $10 increase in depreciation, with the deduction usable now and a 20% tax rate.\n\n• Income Statement: depreciation is an operating expense, so EBIT and Pre-Tax Income fall $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income is down $8, but you add back the $10 of non-cash depreciation, so cash rises $2.\n\n• Balance Sheet: Cash +$2 and Net PP&E −$10, so assets fall $8; Retained Earnings falls $8, so both sides fall $8 and balance.\n\n• Intuition: the only cash effect is the $2 tax saving, because the asset was paid for earlier.\n\nReverse every sign for a decrease. If the depreciation is not currently deductible there is no cash benefit and the difference goes to deferred taxes.",
       "notes": [],
       "topic": "depreciation",
       "original_question_ids": [
@@ -11491,7 +11491,7 @@
         "Ducera Partners NY Insights/Ducera NY Insight 18.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "The source omits the amounts and rates, so work from a clean example. PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -11554,7 +11554,7 @@
         "Ducera Partners NY Insights/Ducera NY Insight 19.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "The source omits the amounts and rates, so work from a clean example. PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -13973,7 +13973,7 @@
     },
     {
       "question_id": "F0613",
-      "question": "How that looks each year accounting for depreciation and PIK interest.",
+      "question": "How that looks each year accounting for depreciation and PIK interest. Assume a 20% tax rate.",
       "question_sources": [
         "Evercore Restructuring"
       ],
@@ -13981,7 +13981,7 @@
         "Evercore Restructuring Insights/EVR RX Insight 26.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -14835,7 +14835,7 @@
     },
     {
       "question_id": "F0654",
-      "question": "What is deferred revenue and what type of companies do we typically see it in?",
+      "question": "What is deferred revenue and what type of companies do we typically see it in? Assume a 20% tax rate.",
       "question_sources": [
         "Financial Technology Partners SF",
         "Shea & Co"
@@ -14845,7 +14845,7 @@
         "Shea & Co Insights/Shea & Co Insight 17.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -15847,7 +15847,7 @@
     },
     {
       "question_id": "F0706",
-      "question": "Walk through the three-statement effects of an asset purchase financed by PIK debt, immediately and after one year. [Amounts and rates not recorded.]",
+      "question": "Walk through the three-statement effects of an asset purchase financed by PIK debt, immediately and after one year. Assume a 20% tax rate. [Amounts and rates not recorded.]",
       "question_sources": [
         "Goldman Sachs LA"
       ],
@@ -15855,7 +15855,7 @@
         "Goldman Sachs LA Insights/GS LA Insight 6.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "The source omits the amounts and rates, so work from a clean example. PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -17478,7 +17478,7 @@
     },
     {
       "question_id": "F0796",
-      "question": "How does selling PP&E affect the three statements?",
+      "question": "How does selling PP&E affect the three statements? Assume a 20% tax rate.",
       "question_sources": [
         "Greenhill NY"
       ],
@@ -17486,7 +17486,7 @@
         "Greenhill NY Insights/Greenhill NY Insight 21.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "For a sale of an asset with book value B for proceeds P, the gain/loss is P-B and after-tax income is (P-B)(1-t), if tax basis equals book basis. Remove the gain or add back the loss in CFO; report gross proceeds P in investing cash flow. Cash rises P-t(P-B), the asset falls B and retained earnings change by after-tax gain/loss. A non-cash impairment W reduces assets and income; add W back in CFO. Cash rises W*t only if a current tax deduction is usable; otherwise recognize any appropriate deferred-tax effect. Losing cash directly is different: cash falls and shareholders bear the loss; operating enterprise value need not change if the loss has no operational implications.",
+      "answer": "Take an asset with a $100 book value sold for $120 in cash, at a 20% tax rate, with tax basis equal to book basis.\n\n• Income Statement: a $20 gain, so Pre-Tax Income is up $20 and Net Income is up $16.\n\n• Cash Flow Statement: Net Income +$16, less the $20 non-cash gain reversed out of operating cash flow, plus the full $120 of proceeds in investing, so cash rises $116.\n\n• Balance Sheet: Cash +$116 and the asset −$100, so assets rise $16; Retained Earnings +$16, and both sides balance.\n\n• Intuition: you collect $120 and pay $4 of tax on the $20 gain, so cash is up $116.\n\nSold below book value the gain becomes a loss: it is added back in operating cash flow and the tax saving reduces the cash outflow. A write-down is different — no proceeds arrive, so only the tax effect moves cash.",
       "notes": [],
       "topic": "asset_sale",
       "original_question_ids": [
@@ -19004,7 +19004,7 @@
     },
     {
       "question_id": "F0879",
-      "question": "Walk through the statements when inventory is purchased with debt in year 1 and sold in year 2, including cash and PIK interest. [Amounts and rates not recorded.]",
+      "question": "Walk through the statements when inventory is purchased with debt in year 1 and sold in year 2, including cash and PIK interest. Assume a 20% tax rate. [Amounts and rates not recorded.]",
       "question_sources": [
         "Houlihan Lokey Restructuring LA"
       ],
@@ -19012,7 +19012,7 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 16.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "The source omits the amounts and rates, so work from a clean example. PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -19491,7 +19491,7 @@
     },
     {
       "question_id": "F0904",
-      "question": "Walk me through the financial statements at the beginning and end of a year with the purchase of an asset through debt with X% cash and X% PIK interest with X repayment.",
+      "question": "Walk me through the financial statements at the beginning and end of a year with the purchase of an asset through debt with X% cash and X% PIK interest with X repayment. Assume a 20% tax rate.",
       "question_sources": [
         "Houlihan Lokey Restructuring LA"
       ],
@@ -19499,7 +19499,7 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 3.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -19596,7 +19596,7 @@
     },
     {
       "question_id": "F0909",
-      "question": "Walk through buying property with debt, depreciation, principal amortization, cash and PIK interest, and a later sale at a different price. [Numerical inputs not recorded.]",
+      "question": "Walk through buying property with debt, depreciation, principal amortization, cash and PIK interest, and a later sale at a different price. Assume a 20% tax rate. [Numerical inputs not recorded.]",
       "question_sources": [
         "Houlihan Lokey Restructuring LA"
       ],
@@ -19604,7 +19604,7 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 8.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "The source omits the amounts and rates, so work from a clean example. PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -25722,7 +25722,7 @@
     },
     {
       "question_id": "F1226",
-      "question": "What are the effects of the 3 financial statements if inventory increased by $10.",
+      "question": "What are the effects of the 3 financial statements if inventory increased by $10. Assume a 20% tax rate.",
       "question_sources": [
         "Morgan Stanley SF"
       ],
@@ -25731,7 +25731,7 @@
         "Morgan Stanley SF Insights II/MS SF Insight 2.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "If inventory is purchased for $10 cash, inventory +10 and cash -10; CFO falls 10 through the inventory increase and there is no immediate expense. If bought on credit, inventory +10 and AP +10, with no initial net cash change. COGS is recognized when inventory sells. The prompt must specify how the increase is funded.",
+      "answer": "Buying inventory is not an expense; the cost sits on the balance sheet until the sale. Take $100 of inventory bought for cash and later sold for $150, at a 20% tax rate.\n\n• At purchase: no income-statement effect. Inventory +$100 and Cash −$100. Bought on credit instead, Accounts Payable rises $100 and cash does not move.\n\n• Income Statement, at sale: Revenue +$150 and COGS +$100, so Pre-Tax Income is up $50 and Net Income is up $40.\n\n• Cash Flow Statement: Net Income +$40 and the $100 decrease in inventory is a positive, so cash rises $140 if the sale is collected immediately.\n\n• Balance Sheet: Cash +$140 and Inventory −$100, so assets rise $40; Retained Earnings +$40, and both sides balance.\n\n• Intuition: over the two steps the company recovers its $100 of inventory cost, earns $50 of profit and pays $10 of tax, so cash is up $40.\n\nDo not count the inventory purchase and COGS as two separate expenses, and use AR instead of cash if the customer has not paid.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -27671,7 +27671,7 @@
     },
     {
       "question_id": "F1329",
-      "question": "Recently, banks have been writing down their assets and taking huge quarterly losses. Walk me through what happens on the 3 statements when there's a writedown of $100?",
+      "question": "Recently, banks have been writing down their assets and taking huge quarterly losses. Walk me through what happens on the 3 statements when there's a writedown of $100? Assume a 20% tax rate.",
       "question_sources": [
         "PJT Partners M&A"
       ],
@@ -27681,7 +27681,7 @@
         "PJT Partners M&A Insights III/PJT M&A Interview Insight 12.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "A 100 asset write-down lowers pre-tax income 100 and NI 100(1-t), assuming a usable tax deduction. Add back the non-cash loss in CFO, creating cash-tax relief 100t; asset -100 and retained earnings -100(1-t). If no immediate tax deduction exists, cash is unchanged and assess deferred taxes. For banks, distinguish a provision through an existing allowance from writing down an asset directly.",
+      "answer": "A $100 write-down of an asset, assuming the loss is deductible now, at a 20% tax rate.\n\n• Income Statement: a $100 non-cash loss, so Pre-Tax Income falls $100 and Net Income falls $80.\n\n• Cash Flow Statement: Net Income −$80, add back the $100 non-cash loss, so cash rises $20.\n\n• Balance Sheet: Cash +$20 and the written-down asset −$100, so assets fall $80; Retained Earnings −$80, and both sides fall $80 and balance.\n\n• Intuition: the only cash movement is the $20 of tax relief; the asset itself was paid for long ago.\n\nIf the write-down is a book impairment with no current deduction, cash does not move and you record a deferred tax effect instead. For a bank, distinguish a provision taken through an existing allowance from writing an asset down directly.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -29004,7 +29004,7 @@
     },
     {
       "question_id": "F1399",
-      "question": "Walk through the three-statement effects of an inventory sale. [Amounts not recorded.]",
+      "question": "Walk through the three-statement effects of an inventory sale. Assume a 20% tax rate. [Amounts not recorded.]",
       "question_sources": [
         "Perella Weinberg Partners CHI"
       ],
@@ -29012,7 +29012,7 @@
         "Perella Weinberg Partners CHI Insights/PWP Chicago Insight 4.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Buying inventory I for cash increases inventory I and reduces cash I; there is no immediate expense. If financed by a supplier, AP rises instead of cash falling; if funded by borrowing, show a financing inflow and debt increase. At sale for revenue R with inventory cost I, revenue rises R, COGS rises I and pre-tax profit rises R-I. Net income rises (R-I)(1-t). Cash versus AR depends on collection; inventory falls I and retained earnings rise by net income. Under indirect CFO, reconcile inventory, AR and AP changes to the actual cash flows. Do not treat inventory purchase and COGS as two separate expenses.",
+      "answer": "The source omits the amounts, so work from a clean example. Buying inventory is not an expense; the cost sits on the balance sheet until the sale. Take $100 of inventory bought for cash and later sold for $150, at a 20% tax rate.\n\n• At purchase: no income-statement effect. Inventory +$100 and Cash −$100. Bought on credit instead, Accounts Payable rises $100 and cash does not move.\n\n• Income Statement, at sale: Revenue +$150 and COGS +$100, so Pre-Tax Income is up $50 and Net Income is up $40.\n\n• Cash Flow Statement: Net Income +$40 and the $100 decrease in inventory is a positive, so cash rises $140 if the sale is collected immediately.\n\n• Balance Sheet: Cash +$140 and Inventory −$100, so assets rise $40; Retained Earnings +$40, and both sides balance.\n\n• Intuition: over the two steps the company recovers its $100 of inventory cost, earns $50 of profit and pays $10 of tax, so cash is up $40.\n\nDo not count the inventory purchase and COGS as two separate expenses, and use AR instead of cash if the customer has not paid.",
       "notes": [],
       "topic": "inventory",
       "original_question_ids": [
@@ -29176,7 +29176,7 @@
     },
     {
       "question_id": "F1406",
-      "question": "Walk me through how does accounts payable increase affect cash flow?",
+      "question": "Walk me through how does accounts payable increase affect cash flow? Assume a 20% tax rate.",
       "question_sources": [
         "Perella Weinberg Partners Healthcare SF",
         "Perella Weinberg Partners SF"
@@ -29186,7 +29186,7 @@
         "Perella Weinberg Partners SF Insights/PWP SF Insight 2.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Accruing an expense E that has not been paid reduces pre-tax income E and net income E(1-t), and increases a payable E. The payable increase is added in indirect CFO, offsetting the unpaid expense; cash changes only for any current tax benefit. Paying an existing payable later reduces cash and the liability E without another expense. If an invoice instead represents inventory or a capital asset, initially debit that asset rather than expense it; expense recognition occurs through COGS or depreciation later. Cash tax timing and whether the payable is operating or financing must be specified.",
+      "answer": "Accruing a $10 expense you have received but not yet paid, at a 20% tax rate.\n\n• Income Statement: Operating Expenses +$10, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income is down $8, but Accounts Payable rises $10, which is a positive, so cash rises $2.\n\n• Balance Sheet: Cash +$2; Accounts Payable +$10 and Retained Earnings −$8, so both sides rise $2 and balance.\n\n• Intuition: you have taken the $2 tax benefit on a bill you have not paid yet.\n\nPaying the invoice later reduces cash and Accounts Payable by $10 with no new expense. If the invoice is for inventory or a capital asset, debit that asset instead and expense it later through COGS or depreciation.",
       "notes": [],
       "topic": "payable",
       "original_question_ids": [
@@ -30262,7 +30262,7 @@
     },
     {
       "question_id": "F1461",
-      "question": "Walk through the statements when deferred revenue is collected and then recognized one year later. [Amount not recorded.]",
+      "question": "Walk through the statements when deferred revenue is collected and then recognized one year later. Assume a 20% tax rate. [Amount not recorded.]",
       "question_sources": [
         "Raine Group"
       ],
@@ -30270,7 +30270,7 @@
         "Raine Group Insights/Raine Insight 8.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "The source omits the amount and schedule, so work from a clean example. Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -31259,7 +31259,7 @@
     },
     {
       "question_id": "F1509",
-      "question": "What is deferred revenue, and where is located in the financial statements?",
+      "question": "What is deferred revenue, and where is located in the financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Shea & Co"
       ],
@@ -31267,7 +31267,7 @@
         "Shea & Co Insights/Shea & Co Insight 16.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -31280,7 +31280,7 @@
     },
     {
       "question_id": "F1510",
-      "question": "How does deferred revenue affect the financial statements?",
+      "question": "How does deferred revenue affect the financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Shea & Co"
       ],
@@ -31288,7 +31288,7 @@
         "Shea & Co Insights/Shea & Co Insight 17.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -31448,7 +31448,7 @@
     },
     {
       "question_id": "F1518",
-      "question": "Explain deferred revenue accounting over three years. [Amount and recognition schedule not recorded.]",
+      "question": "Explain deferred revenue accounting over three years. Assume a 20% tax rate. [Amount and recognition schedule not recorded.]",
       "question_sources": [
         "Shea & Co"
       ],
@@ -31456,7 +31456,7 @@
         "Shea & Co Insights/Shea & Co Insight 23.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "The source omits the amount and schedule, so work from a clean example. Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -31490,7 +31490,7 @@
     },
     {
       "question_id": "F1520",
-      "question": "How does an increase in deferred revenue affect the balance sheet?",
+      "question": "How does an increase in deferred revenue affect the balance sheet? Assume a 20% tax rate.",
       "question_sources": [
         "Shea & Co"
       ],
@@ -31498,7 +31498,7 @@
         "Shea & Co Insights/Shea & Co Insight 4.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -31511,7 +31511,7 @@
     },
     {
       "question_id": "F1521",
-      "question": "Where is deferred revenue on the 3 financial statements?",
+      "question": "Where is deferred revenue on the 3 financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Shea & Co"
       ],
@@ -31519,7 +31519,7 @@
         "Shea & Co Insights/Shea & Co Insight 6.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -34257,7 +34257,7 @@
     },
     {
       "question_id": "F1668",
-      "question": "Explain the three-statement effects of selling $100 of inventory. [Sale proceeds versus cost and tax rate are not specified.]",
+      "question": "Explain the three-statement effects of selling $100 of inventory. Assume a 20% tax rate. [Sale proceeds versus cost and tax rate are not specified.]",
       "question_sources": [
         "William Blair SF"
       ],
@@ -34265,7 +34265,7 @@
         "William Blair SF Insights/WB SF Insight 10.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Buying inventory I for cash increases inventory I and reduces cash I; there is no immediate expense. If financed by a supplier, AP rises instead of cash falling; if funded by borrowing, show a financing inflow and debt increase. At sale for revenue R with inventory cost I, revenue rises R, COGS rises I and pre-tax profit rises R-I. Net income rises (R-I)(1-t). Cash versus AR depends on collection; inventory falls I and retained earnings rise by net income. Under indirect CFO, reconcile inventory, AR and AP changes to the actual cash flows. Do not treat inventory purchase and COGS as two separate expenses.",
+      "answer": "The source omits the amounts, so work from a clean example. Buying inventory is not an expense; the cost sits on the balance sheet until the sale. Take $100 of inventory bought for cash and later sold for $150, at a 20% tax rate.\n\n• At purchase: no income-statement effect. Inventory +$100 and Cash −$100. Bought on credit instead, Accounts Payable rises $100 and cash does not move.\n\n• Income Statement, at sale: Revenue +$150 and COGS +$100, so Pre-Tax Income is up $50 and Net Income is up $40.\n\n• Cash Flow Statement: Net Income +$40 and the $100 decrease in inventory is a positive, so cash rises $140 if the sale is collected immediately.\n\n• Balance Sheet: Cash +$140 and Inventory −$100, so assets rise $40; Retained Earnings +$40, and both sides balance.\n\n• Intuition: over the two steps the company recovers its $100 of inventory cost, earns $50 of profit and pays $10 of tax, so cash is up $40.\n\nDo not count the inventory purchase and COGS as two separate expenses, and use AR instead of cash if the customer has not paid.",
       "notes": [],
       "topic": "inventory",
       "original_question_ids": [
@@ -34510,7 +34510,7 @@
     },
     {
       "question_id": "F1682",
-      "question": "How does subscription revenue flow through the IS and BS?",
+      "question": "How does subscription revenue flow through the IS and BS? Assume a 20% tax rate.",
       "question_sources": [
         "William Blair SF"
       ],
@@ -34518,7 +34518,7 @@
         "William Blair SF Insights/WB SF Insight 22.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -34552,7 +34552,7 @@
     },
     {
       "question_id": "F1684",
-      "question": "What is deferred revenue, and why is it important for technology, media and telecom companies?",
+      "question": "What is deferred revenue, and why is it important for technology, media and telecom companies? Assume a 20% tax rate.",
       "question_sources": [
         "William Blair SF"
       ],
@@ -34560,7 +34560,7 @@
         "William Blair SF Insights/WB SF Insight 4.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -34909,7 +34909,7 @@
     },
     {
       "question_id": "F1709",
-      "question": "How does invoicing a customer affect the three statements?",
+      "question": "How does invoicing a customer affect the three statements? Assume a 20% tax rate.",
       "question_sources": [
         "Canaccord Genuity NY Technology"
       ],
@@ -34917,7 +34917,7 @@
         "Canaccord Genuity BO Insights/CG Boston Insight 10.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Accounts receivable is a claim for cash for revenue already earned. A credit sale R with cost C increases revenue R, expense C and net income (R-C)(1-t), while AR rises R; the indirect CFO adjustment subtracts the AR increase. Collection later increases cash and decreases AR, with no new revenue or income. A stand-alone increase in AR, holding recorded earnings constant, reduces operating cash flow by that amount. A decrease from collection does the reverse. Ask whether the question describes a new sale, delayed collection, an impairment or collection of an existing receivable.",
+      "answer": "Accounts receivable is a claim for cash on revenue already earned. Take a $100 credit sale with no associated cost, at a 20% tax rate.\n\n• Income Statement: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, but the $100 increase in AR is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and AR +$100, so assets rise $80; Retained Earnings +$80, and both sides rise $80 and balance.\n\n• Intuition: you owe $20 of tax on revenue you have not yet collected.\n\nWhen the customer pays, cash rises $100 and AR falls $100 with no new income. A standalone rise in AR with earnings unchanged simply reduces operating cash flow by that amount; ask whether the question means a new sale, a delayed collection, a write-off or a collection.",
       "notes": [],
       "topic": "receivable",
       "original_question_ids": [
@@ -34930,7 +34930,7 @@
     },
     {
       "question_id": "F1710",
-      "question": "How does receiving an invoice for an expense affect the three statements?",
+      "question": "How does receiving an invoice for an expense affect the three statements? Assume a 20% tax rate.",
       "question_sources": [
         "Canaccord Genuity NY Technology"
       ],
@@ -34938,7 +34938,7 @@
         "Canaccord Genuity BO Insights/CG Boston Insight 10.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Accruing an expense E that has not been paid reduces pre-tax income E and net income E(1-t), and increases a payable E. The payable increase is added in indirect CFO, offsetting the unpaid expense; cash changes only for any current tax benefit. Paying an existing payable later reduces cash and the liability E without another expense. If an invoice instead represents inventory or a capital asset, initially debit that asset rather than expense it; expense recognition occurs through COGS or depreciation later. Cash tax timing and whether the payable is operating or financing must be specified.",
+      "answer": "Accruing a $10 expense you have received but not yet paid, at a 20% tax rate.\n\n• Income Statement: Operating Expenses +$10, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income is down $8, but Accounts Payable rises $10, which is a positive, so cash rises $2.\n\n• Balance Sheet: Cash +$2; Accounts Payable +$10 and Retained Earnings −$8, so both sides rise $2 and balance.\n\n• Intuition: you have taken the $2 tax benefit on a bill you have not paid yet.\n\nPaying the invoice later reduces cash and Accounts Payable by $10 with no new expense. If the invoice is for inventory or a capital asset, debit that asset instead and expense it later through COGS or depreciation.",
       "notes": [],
       "topic": "payable",
       "original_question_ids": [
@@ -34951,7 +34951,7 @@
     },
     {
       "question_id": "F1711",
-      "question": "How does paying an invoice for an expense affect the three statements?",
+      "question": "How does paying an invoice for an expense affect the three statements? Assume a 20% tax rate.",
       "question_sources": [
         "Canaccord Genuity NY Technology"
       ],
@@ -34959,7 +34959,7 @@
         "Canaccord Genuity BO Insights/CG Boston Insight 10.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Accruing an expense E that has not been paid reduces pre-tax income E and net income E(1-t), and increases a payable E. The payable increase is added in indirect CFO, offsetting the unpaid expense; cash changes only for any current tax benefit. Paying an existing payable later reduces cash and the liability E without another expense. If an invoice instead represents inventory or a capital asset, initially debit that asset rather than expense it; expense recognition occurs through COGS or depreciation later. Cash tax timing and whether the payable is operating or financing must be specified.",
+      "answer": "Accruing a $10 expense you have received but not yet paid, at a 20% tax rate.\n\n• Income Statement: Operating Expenses +$10, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income is down $8, but Accounts Payable rises $10, which is a positive, so cash rises $2.\n\n• Balance Sheet: Cash +$2; Accounts Payable +$10 and Retained Earnings −$8, so both sides rise $2 and balance.\n\n• Intuition: you have taken the $2 tax benefit on a bill you have not paid yet.\n\nPaying the invoice later reduces cash and Accounts Payable by $10 with no new expense. If the invoice is for inventory or a capital asset, debit that asset instead and expense it later through COGS or depreciation.",
       "notes": [],
       "topic": "payable",
       "original_question_ids": [
@@ -36050,7 +36050,7 @@
     },
     {
       "question_id": "F1771",
-      "question": "If your depreciation expense goes up by $1,000, explain how this flows through the three financial statements.",
+      "question": "If your depreciation expense goes up by $1,000, explain how this flows through the three financial statements. Assume a 20% tax rate.",
       "question_sources": [
         "J.P. Morgan (compiled interview notes)"
       ],
@@ -36058,7 +36058,7 @@
         "JP Morgan Past Interview Questions (RK).docx: paragraph 99"
       ],
       "answer_type": "Calculated / symbolic solution",
-      "answer": "Let t be the tax rate and assume an immediate tax deduction. For this 1000 increase in depreciation: EBIT changes by -1000; net income changes by -1000*(1-t); the non-cash add-back changes by 1000; cash changes by 1000*t. PP&E changes by -1000 and retained earnings follows net income. No tax rate is supplied, so keep the result symbolic.",
+      "answer": "A $1,000 increase in depreciation, with the deduction usable now and a 20% tax rate.\n\n• Income Statement: depreciation is an operating expense, so EBIT and Pre-Tax Income fall $1,000 and Net Income falls $800.\n\n• Cash Flow Statement: Net Income is down $800, but you add back the $1,000 of non-cash depreciation, so cash rises $200.\n\n• Balance Sheet: Cash +$200 and Net PP&E −$1,000, so assets fall $800; Retained Earnings falls $800, so both sides fall $800 and balance.\n\n• Intuition: the only cash effect is the $200 tax saving, because the asset was paid for earlier.\n\nReverse every sign for a decrease. If the depreciation is not currently deductible there is no cash benefit and the difference goes to deferred taxes.",
       "notes": [],
       "topic": "calculation",
       "original_question_ids": [
@@ -37643,7 +37643,7 @@
     },
     {
       "question_id": "F1859",
-      "question": "How does an increase in deferred revenue affect the three statements over two years? [Amount and recognition schedule not recorded.]",
+      "question": "How does an increase in deferred revenue affect the three statements over two years? Assume a 20% tax rate. [Amount and recognition schedule not recorded.]",
       "question_sources": [
         "Evercore (compiled interview notes)"
       ],
@@ -37651,7 +37651,7 @@
         "Evercore PCA Interview Prep (AL).docx: paragraph 22"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "The source omits the amount and schedule, so work from a clean example. Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
@@ -38281,7 +38281,7 @@
     },
     {
       "question_id": "F1894",
-      "question": "What is accounts receivable?",
+      "question": "What is accounts receivable? Assume a 20% tax rate.",
       "question_sources": [
         "J.P. Morgan (compiled interview notes)"
       ],
@@ -38289,7 +38289,7 @@
         "JP Morgan Past Interview Questions (RK).docx: paragraph 175"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Accounts receivable is a claim for cash for revenue already earned. A credit sale R with cost C increases revenue R, expense C and net income (R-C)(1-t), while AR rises R; the indirect CFO adjustment subtracts the AR increase. Collection later increases cash and decreases AR, with no new revenue or income. A stand-alone increase in AR, holding recorded earnings constant, reduces operating cash flow by that amount. A decrease from collection does the reverse. Ask whether the question describes a new sale, delayed collection, an impairment or collection of an existing receivable.",
+      "answer": "Accounts receivable is a claim for cash on revenue already earned. Take a $100 credit sale with no associated cost, at a 20% tax rate.\n\n• Income Statement: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, but the $100 increase in AR is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and AR +$100, so assets rise $80; Retained Earnings +$80, and both sides rise $80 and balance.\n\n• Intuition: you owe $20 of tax on revenue you have not yet collected.\n\nWhen the customer pays, cash rises $100 and AR falls $100 with no new income. A standalone rise in AR with earnings unchanged simply reduces operating cash flow by that amount; ask whether the question means a new sale, a delayed collection, a write-off or a collection.",
       "notes": [],
       "topic": "receivable",
       "original_question_ids": [
@@ -38690,7 +38690,7 @@
     },
     {
       "question_id": "F1919",
-      "question": "Explain deferred revenue accounting for a gift card.",
+      "question": "Explain deferred revenue accounting for a gift card. Assume a 20% tax rate.",
       "question_sources": [
         "Deutsche Bank SF"
       ],
@@ -38698,7 +38698,7 @@
         "Deutsche Bank SF Insights/DB SF Insight 16.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Cash received before performance creates deferred revenue: cash and the contract liability rise by the amount received, with no book revenue yet. As service is delivered, recognize revenue and reduce the liability. If recognized revenue is R, associated expense C and tax rate t, net income rises (R-C)(1-t). Under the indirect method, the reduction in deferred revenue offsets the non-cash revenue recognition; cash effects then depend on costs paid and tax timing. Straight-line service over N months generally recognizes total contract value/N monthly if performance is even. Contract bookings, billings, revenue and cash collection are distinct; tax recognition may differ from book recognition.",
+      "answer": "Cash arrives before the service is delivered, so it sits as a liability until earned. Take $100 collected upfront for a service delivered evenly over a year, no delivery costs, 20% tax rate.\n\n• At collection: no income-statement effect. Cash +$100 and Deferred Revenue +$100, so the balance sheet balances with no change in equity.\n\n• Income Statement, as delivered: Revenue +$100, so Pre-Tax Income is up $100 and Net Income is up $80.\n\n• Cash Flow Statement: Net Income +$80, and the $100 decrease in Deferred Revenue is a negative, so cash falls $20.\n\n• Balance Sheet: Cash −$20 and Deferred Revenue −$100, so assets fall $20 while liabilities fall $100 and Retained Earnings rises $80; both sides fall $20 and balance.\n\n• Intuition: the company already holds the cash, so recognition only moves the obligation into earnings and triggers the $20 of tax.\n\nStraight-line delivery over N months recognises contract value / N each month. Bookings, billings, revenue and cash collection are four different things, and tax recognition can differ from book.",
       "notes": [],
       "topic": "deferred_revenue",
       "original_question_ids": [
