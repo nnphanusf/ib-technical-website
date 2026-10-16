@@ -1,8 +1,8 @@
 Banking Interview Prep Website
 
 3,506 consolidated questions
-1. Behavioral / non-finance: 1,151
-2. Finance: 2,255
+1. Behavioral / non-finance: 1,121
+2. Finance: 2,385
 
 SOURCE AND EDITING NOTES
 - Compiled from the supplied HeadStart 2025F interview-insights folder and the M&I 2025 400 Investment Banking Questions guide.
@@ -318,9 +318,6 @@ B0106. How do you use Bloomberg?
 Sources: BNP Paribas Leveraged Finance
 
 B0107. Discuss your transaction experience and the parts of each deal you worked on.
-Sources: BNP Paribas Leveraged Finance
-
-B0108. Walk through the underwriting process of a fake transaction.
 Sources: BNP Paribas Leveraged Finance
 
 B0109. Why leveraged finance rather than M&A?
@@ -1043,17 +1040,11 @@ Sources: Ducera Partners NY; Evercore (compiled interview notes); Evercore Restr
 B0367. How does your M&A experience relate to your interest in restructuring?
 Sources: Ducera Partners NY
 
-B0369. How could two identical buildings in the same location be worth different amounts?
-Sources: Eastdil Secured SF
-
 B0370. Tell us about a challenging time you had working in a group.
 Sources: Eastdil Secured SF
 
 B0371. Describe a project that nearly failed because no one took charge or assumed a leadership role.
 Sources: Eastdil Secured SF
-
-B0372. What types of adjustments do you expect to encounter?
-Sources: Ernst & Young M&A
 
 B0373. Why is there a gap in your resume?
 Sources: Ernst & Young M&A
@@ -1082,9 +1073,6 @@ Sources: Ernst & Young M&A
 B0381. Why would I want to join a big 4 firm instead of IB?
 Sources: Ernst & Young M&A
 
-B0382. What are companies trying to achieve when they merge?
-Sources: Ernst & Young M&A
-
 B0383. Find the next number in a mathematical sequence. [Sequence not recorded.]
 Sources: Ernst & Young M&A
 
@@ -1096,9 +1084,6 @@ Sources: Evercore ECM
 
 B0386. Why do you want to work in equity capital markets?
 Sources: Evercore ECM
-
-B0387. What are the ways companies can go public and what are your thoughts on them?
-Sources: Evercore (compiled interview notes); Evercore ECM
 
 B0388. What are some ECM trends you're seeing right now?
 Sources: Evercore (compiled interview notes); Evercore ECM
@@ -1178,9 +1163,6 @@ Sources: Evercore Strategic Defense & Shareholder Advisory
 B0414. Discuss three current events outside the United States.
 Sources: Evercore Strategic Defense & Shareholder Advisory
 
-B0415. What is the difference between a general partner and a limited partner?
-Sources: Evercore (compiled interview notes); Evercore Strategic Defense & Shareholder Advisory
-
 B0416. Analyze a sample press release addressed to shareholders. [Release and exact requested analysis not recorded.]
 Sources: Evercore Strategic Defense & Shareholder Advisory
 
@@ -1203,9 +1185,6 @@ B0422. How would you handle stress on the job?
 Sources: Financial Technology Partners SF
 
 B0423. Why do you want to work in banking?
-Sources: Financial Technology Partners SF
-
-B0424. How does a payment transfer work, and which companies participate in a transaction such as a Square payment?
 Sources: Financial Technology Partners SF
 
 B0425. How do you manage your time?
@@ -1255,9 +1234,6 @@ Sources: General Atlantic
 
 B0440. Why specifically do you want to work for General Atlantic?
 Sources: General Atlantic
-
-B0441. If you have a 10-K and can only look at 3 items, what would you do?
-Sources: Goldman Sachs HK
 
 B0442. What is your purpose in life?
 Sources: Goldman Sachs HK
@@ -1424,9 +1400,6 @@ Sources: Guggenheim Partners
 B0501. Why did you stay in the difficult situation rather than leave? [Original situation not identified.]
 Sources: Guggenheim Partners
 
-B0502. What sort of situations would a dividend recap not be helpful?
-Sources: Guggenheim Partners NY
-
 B0503. Tell me about your last performance review.
 Sources: Guggenheim Partners NY
 
@@ -1462,9 +1435,6 @@ Sources: Houlihan Lokey NY
 
 B0515. Why do you want to work in Los Angeles?
 Sources: Houlihan Lokey Restructuring LA; MUFG; MUFG LA; Rothschild & Co. LA
-
-B0516. Walk me through how you would create an expense model.
-Sources: Houlihan Lokey Restructuring LA
 
 B0517. Explain how AI models work at a detailed level and what benefits they offer.
 Sources: ICONIQ Capital
@@ -1646,15 +1616,6 @@ Sources: J.P. Morgan LA
 B0580. What skills are important for a research analyst?
 Sources: J.P. Morgan Research
 
-B0582. What is a martingale, what assumptions does it require, and how can it be applied?
-Sources: J.P. Morgan Research
-
-B0583. What metrics would you use to analyze a tech SaaS firm?
-Sources: J.P. Morgan SF
-
-B0584. What is a capped call?
-Sources: J.P. Morgan SF
-
 B0586. Walk me through one of your transactions on your resume.
 Sources: J.P. Morgan SF
 
@@ -1748,7 +1709,7 @@ Sources: KKR Menlo Park
 B0624. Walk me through the deal process and how you understand this works.
 Sources: KeyBanc NY
 
-B0625. Why are you interested in renewables? How would you value a solar project?
+B0625. Why are you interested in renewables?
 Sources: KeyBanc SF
 
 B0626. Why not consulting since there are many similarities between the two industries?
@@ -1782,9 +1743,6 @@ B0635. Why are you interested in M&A?
 Sources: Lazard LA
 
 B0636. Discuss your university experiences.
-Sources: Lazard LA
-
-B0637. What is a sources and uses table?
 Sources: Lazard LA
 
 B0638. Why would you want to come work for us on the West Coast when you're located on the East Coast?
@@ -1955,7 +1913,7 @@ Sources: Morgan Stanley MP
 B0697. What are the 3 most interesting startups?
 Sources: Morgan Stanley MP
 
-B0698. Tell me about a time you stepped outside your comfort zone. Separately, explain purchase accounting and the accounting adjustments in an M&A transaction.
+B0698. Tell me about a time you stepped outside your comfort zone.
 Sources: Morgan Stanley MP
 
 B0699. How do you know you can handle banking's hours and lifestyle?
@@ -1982,9 +1940,6 @@ Sources: Morgan Stanley MP
 B0706. Who is your hero?
 Sources: Morgan Stanley MP
 
-B0707. Why did Google pay approximately $3 billion for Nest despite its limited customer base?
-Sources: Morgan Stanley MP
-
 B0708. What's the next new disruptive force within technology?
 Sources: Morgan Stanley MP
 
@@ -1996,9 +1951,6 @@ Sources: Morgan Stanley NY
 
 B0711. What do you think of the hours in FIG and do you think you can handle it?
 Sources: Morgan Stanley NY
-
-B0712. How does USD appreciation affect sale of european subsidiary?
-Sources: Morgan Stanley SF
 
 B0713. Why do you think the firm will perform well in the future?
 Sources: Morgan Stanley SF
@@ -2049,9 +2001,6 @@ B0729. Why S&T over IB?
 Sources: Nomura Global Markets
 
 B0730. Do you really want to be joining a dying industry?
-Sources: Nomura Global Markets
-
-B0731. Walk me through the BS Equation.
 Sources: Nomura Global Markets
 
 B0732. What are the problems and limitations of this formula? [Formula not identified.]
@@ -2129,9 +2078,6 @@ Sources: Oak Hill
 B0761. What interests you in our firm over others?
 Sources: Oak Hill
 
-B0764. What is the Federal Reserve's mandate?
-Sources: PIMCO Product & Strategy; TD Securities NY
-
 B0765. Tell me about a time you went above and beyond what was required.
 Sources: PIMCO Product & Strategy
 
@@ -2175,9 +2121,6 @@ B0781. Discuss an experience you left off your resume and explain why you omitte
 Sources: PJT Partners RSSG NY
 
 B0782. What does an RX banker do?
-Sources: PJT Partners RSSG NY
-
-B0783. What is a mid-period adjustment?
 Sources: PJT Partners RSSG NY
 
 B0784. Walk through a deal, explain each side's motivations and discuss alternative solutions.
@@ -2229,9 +2172,6 @@ B0799. When was a time you ran into an ethical issue?
 Sources: PNC Capital Markets
 
 B0800. What industries do you cover in your current role and which is your favorite?
-Sources: PNC Capital Markets
-
-B0801. What would you examine before lending to a company?
 Sources: PNC Capital Markets
 
 B0802. What is your experience with pitch books?
@@ -2395,9 +2335,6 @@ Sources: Rothschild & Co.
 
 B0861. Why industrials banking?
 Sources: Rothschild & Co.
-
-B0862. Can you tell us about a situation where WACCs in general have decreased across the board?
-Sources: Rothschild & Co. LA
 
 B0864. Explain your responsibilities in previous roles.
 Sources: Rothschild & Co. LA
@@ -2702,12 +2639,6 @@ Sources: Weiss Asset Management
 B0981. Tell me about a time where you went through change and how did you handle it.
 Sources: Wells Fargo NY
 
-B0982. How does one amortize TMT subscriptions?
-Sources: Wells Fargo NY
-
-B0983. If you could choose 2 statements what would they be?
-Sources: Wells Fargo NY
-
 B0984. Why are you interested in public finance?
 Sources: Wells Fargo Public Finance
 
@@ -2715,9 +2646,6 @@ B0985. Describe a success and a failure.
 Sources: Wells Fargo Public Finance
 
 B0986. Tell us about a time you failed in a group project.
-Sources: Wells Fargo Public Finance
-
-B0987. How do public companies raise money and how do governments raise money?
 Sources: Wells Fargo Public Finance
 
 B0988. What specifically about Blair attracts you?
@@ -2799,9 +2727,6 @@ B1016. Why Transaction Services (TS)?
 Sources: Ernst & Young M&A
 
 B1017. Why TS industries?
-Sources: Ernst & Young M&A
-
-B1018. What adjustments are you familiar with?
 Sources: Ernst & Young M&A
 
 B1019. What documents would you request from the CFO?
@@ -2889,12 +2814,6 @@ B1046. Tell me about a time you had a difficult situation.
 Sources: Evercore (compiled interview notes)
 
 B1047. On a scale of 1-10, 1 being smart and 10 being hardworking, where would you put yourself?
-Sources: Evercore (compiled interview notes)
-
-B1048. What is YTM, YTC, and YTW? How do you calculate them?
-Sources: Evercore (compiled interview notes)
-
-B1049. What is PIPE? Why do firms do it? What are the advantages and disadvantages?
 Sources: Evercore (compiled interview notes)
 
 B1050. Talk about a time you had a problem and had to solve the root cause of it. What was the solution and the outcome?
@@ -3011,9 +2930,6 @@ Sources: J.P. Morgan (compiled interview notes)
 B1087. Integrity is one of JP Morgan's core values. Tell me about a time you displayed integrity?
 Sources: J.P. Morgan (compiled interview notes)
 
-B1089. Who typically pays more for an acquisition: a strategic buyer or a financial sponsor?
-Sources: J.P. Morgan (compiled interview notes)
-
 B1090. What is a trend or macro event that will impact JP Morgan?
 Sources: J.P. Morgan (compiled interview notes)
 
@@ -3113,9 +3029,6 @@ Sources: Evercore (compiled interview notes)
 B1129. Why did you choose an intellectual-property dropdown in your case? Explain the mechanics and considerations.
 Sources: Evercore (compiled interview notes)
 
-B1130. What is the difference between an unrestricted subsidiary and a non-guarantor subsidiary?
-Sources: Evercore (compiled interview notes)
-
 B1131. What is important in teamwork?
 Sources: Evercore (compiled interview notes)
 
@@ -3123,9 +3036,6 @@ B1132. How have you prepared for a full-time investment banking role?
 Sources: Evercore (compiled interview notes)
 
 B1133. Why did you choose UCLA?
-Sources: Evercore (compiled interview notes)
-
-B1134. Compare financing methods for a deal and their advantages and disadvantages.
 Sources: Evercore (compiled interview notes)
 
 B1135. Discuss a deal advised by Evercore.

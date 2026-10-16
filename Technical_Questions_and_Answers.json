@@ -2,17 +2,17 @@
   "metadata": {
     "title": "Investment Banking Technical Questions and Answers",
     "prepared_on": "2026-10-15",
-    "entry_count": 2049,
+    "entry_count": 2196,
     "original_finance_question_ids_covered": 2184,
     "duplicate_variants_consolidated": 135,
     "out_of_technical_scope_count": 71,
     "answer_status_counts": {
-      "requires_dated_research": 197,
-      "open_ended_framework": 216,
-      "model_answer": 566,
-      "concept_and_method": 604,
-      "requires_missing_inputs": 163,
-      "guide_answer": 303
+      "requires_dated_research": 194,
+      "open_ended_framework": 214,
+      "model_answer": 645,
+      "concept_and_method": 672,
+      "requires_missing_inputs": 162,
+      "guide_answer": 309
     },
     "source_material": [
       "Interview Insights HeadStart 2025F",
@@ -16415,19 +16415,28 @@
       "question_id": "F0732",
       "question": "If you could examine only two of the three financial statements, which would you choose and why?",
       "question_sources": [
-        "Goldman Sachs NY"
+        "Goldman Sachs NY",
+        "Wells Fargo NY"
       ],
       "question_references": [
         "Goldman Sachs NY Insights/GS NY Insight 22.png"
       ],
       "answer_type": "Concept explanation / solution framework",
       "answer": "The appropriate statement depends on the purpose. The balance sheet shows financial position and obligations at a date; the income statement shows profitability over time; the cash-flow statement shows liquidity generation and funding. If forced to pick one for debt repayment, the cash-flow statement is useful, but debt maturities and collateral still require the balance sheet and notes. With two consecutive balance sheets plus an income statement and supporting schedules, you can approximate cash flows, although acquisitions, FX and other non-cash changes complicate the reconstruction. No single statement fully captures financial health.",
-      "notes": [],
+      "notes": [
+        "Folded in behavioral entry B0983, which asks the same question in shorter form; its source firm is carried across."
+      ],
       "topic": "statement_choice",
       "original_question_ids": [
-        "F0732"
+        "F0732",
+        "B0983"
       ],
-      "question_variants": [],
+      "question_variants": [
+        {
+          "question_id": "B0983",
+          "question": "If you could choose 2 statements what would they be?"
+        }
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "concept_and_method",
       "supporting_reference_urls": []
@@ -36435,6 +36444,7 @@
       "question_id": "F1789",
       "question": "What are the pros and cons of cash, debt, and stock in an acquisition from the perspective of the buyer? What about the seller?",
       "question_sources": [
+        "Evercore (compiled interview notes)",
         "J.P. Morgan (compiled interview notes)"
       ],
       "question_references": [
@@ -36443,12 +36453,20 @@
       ],
       "answer_type": "Worked / question-specific answer",
       "answer": "Existing cash avoids new shares but reduces liquidity and interest income. New debt preserves immediate ownership but adds interest, covenants and refinancing/default risk. Stock conserves cash and shares risk but dilutes ownership and can change control. Sellers typically value cash certainty but may prefer stock participation and possible tax deferral, depending on structure and jurisdiction. Assess value, risk and tax for both parties rather than assuming cash or stock is always superior.",
-      "notes": [],
+      "notes": [
+        "Folded in behavioral entry B1134, which asks the same question; its source firm is carried across."
+      ],
       "topic": "specific",
       "original_question_ids": [
-        "F1789"
+        "F1789",
+        "B1134"
       ],
-      "question_variants": [],
+      "question_variants": [
+        {
+          "question_id": "B1134",
+          "question": "Compare financing methods for a deal and their advantages and disadvantages."
+        }
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -48851,6 +48869,624 @@
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "notes": [
         "Moved from the behavioral deck as B0718-split; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2620",
+      "question": "What is YTM, YTC, and YTW? How do you calculate them?",
+      "question_sources": [
+        "Evercore (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2620"
+      ],
+      "topic": "Debt, Credit & Restructuring",
+      "answer": "All three are internal rates of return on a bond bought at today's price. They differ only in which repayment date and repayment amount you assume.\n\n• YTM, yield to maturity: the discount rate that sets the present value of the remaining coupons plus par at maturity equal to the current price. You solve for it rather than compute it directly — price = Σ coupon/(1+y)^t + par/(1+y)^n — and for a US bond you work in semi-annual periods and double the result.\n\n• YTC, yield to call: the same calculation run to a call date, using the call price instead of par and the shorter number of periods. A bond with several call dates has a yield to call for each of them.\n\n• YTW, yield to worst: the lowest of the YTM and every YTC — the worst outcome for the investor assuming the issuer repays in full and exercises whichever option suits it. On a discount bond early repayment helps the investor, so YTW = YTM; on a premium bond early repayment usually hurts, so the YTW is the yield to the earliest call.\n\n• Worked: a 10% coupon bond with five years left, trading at 80, yields about 16% to maturity (15.96% on a semi-annual convention, 16.13% annual). Called at 105 in two years it would yield 26%, so the YTW is the 16% YTM. The same bond at 108 yields 8.0% to maturity but only 7.0% to a 103 call in two years, so the YTW is 7.0%.\n\n• Mental estimate: current yield plus the annualised pull to par, over the average of price and par — (10 + 20/5)/90 = 15.6% for the bond at 80, close enough to quote.\n\nSay which convention you are using. For callable high-yield paper it is the call schedule, not the maturity, that usually drives the return, which is why yield to worst is the number quoted.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1048; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2621",
+      "question": "Walk me through the BS Equation.",
+      "question_sources": [
+        "Nomura Global Markets"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2621"
+      ],
+      "topic": "Accounting & 3 Statements",
+      "answer": "The balance sheet equation is Assets = Liabilities + Shareholders' Equity: everything the company controls equals the claims against it, split between creditors and owners.\n\n• The three terms: assets are resources expected to produce future benefit; liabilities are obligations to third parties; shareholders' equity is the residual — common stock and additional paid-in capital, plus retained earnings, less treasury stock, plus accumulated other comprehensive income.\n\n• Why it always holds: double-entry bookkeeping. Every transaction records equal and offsetting entries, so the identity cannot break unless something has been posted only once. Borrowing $100 raises cash and debt; buying $100 of PP&E for cash moves value within assets; $100 of revenue earned in cash raises cash and retained earnings.\n\n• How it links the statements: net income flows into retained earnings, and the ending cash on the cash flow statement is the cash line on the balance sheet. That is why \"the balance sheet balances\" is the standard check on a three-statement model — when it does not, a cash-flow item has been missed or a change has been posted to one side only.\n\n• Rearranged: Shareholders' Equity = Assets − Liabilities, which is book value, not market value. Market capitalisation is the market's view of that residual, and the two differ because assets sit at historical cost and most intangible value is never recorded.\n\nIf the interviewer means the Black-Scholes equation rather than the balance sheet, ask: \"BS\" gets used for both and the two answers have nothing in common.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0731; it is a technical question that was filed with the behavioral set.",
+        "The source firm is a markets desk, where \"BS\" can also mean Black-Scholes; the answer covers the balance sheet reading and says to clarify."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2622",
+      "question": "Walk me through how you would create an expense model.",
+      "question_sources": [
+        "Houlihan Lokey Restructuring LA"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2622"
+      ],
+      "topic": "Accounting & 3 Statements",
+      "answer": "Forecast expenses from the things that actually drive them rather than as a flat percentage of revenue, and keep each driver on its own schedule so it can be flexed.\n\n• Split the cost base first: cost of sales (materials, direct labour, hosting, delivery) from operating expenses (sales and marketing, R&D, G&A), and within each, variable, semi-fixed and fixed.\n\n• Build each line on its driver: variable cost per unit or per transaction times volume; people cost as headcount times fully loaded cost per head, by function, off a hiring plan; facilities and systems on contracts and per-head ratios; marketing on a programme budget or a cost per acquisition; D&A from a separate asset and CapEx schedule, never as a percentage of sales.\n\n• Stop at EBITDA: interest comes from the debt schedule and tax from pre-tax income, so the expense model feeds them rather than containing them.\n\n• Normalise the history before forecasting: strip one-off items, reclassify anything that moved between lines, and check the base year is a sensible starting point. Put wage and inflation escalators in explicitly.\n\n• Check the output, not just the inputs: gross and EBITDA margin by year, cost per unit and per employee, opex as a share of revenue against peers, and whether the implied operating leverage is believable. A model whose margins expand forever usually has a fixed cost modelled as variable.\n\nFor a cost-savings or restructuring case, run the same build twice — as-is and post-action — and keep the savings, the one-time cost to achieve them and their phasing as separate visible lines.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0516; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2623",
+      "question": "What sort of situations would a dividend recap not be helpful?",
+      "question_sources": [
+        "Guggenheim Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2623"
+      ],
+      "topic": "LBO & Private Equity",
+      "answer": "A dividend recap raises new debt to pay the sponsor a dividend. It pulls cash forward and flatters IRR but creates no operating value, so it stops being useful whenever the cost of the new debt outweighs what the timing is worth.\n\n• No capacity: leverage is already at the ceiling lenders will fund, or the restricted-payment and investment baskets in the existing documents have no room, so the dividend needs a consent or a full refinancing.\n\n• The wrong business: cyclical, capital-intensive or volatile cash flows make extra fixed charges dangerous. The added interest eats the cushion precisely when a downturn would need it, and a covenant breach costs the sponsor control.\n\n• The cash has a better use: funding CapEx, an acquisition or deleveraging ahead of an exit usually creates more value, and a buyer will not pay more for a business carrying more debt.\n\n• Credit markets are shut or expensive: a recap done at a punitive coupon, with heavy fees and call protection, can hand more to lenders and arrangers than it returns to the fund.\n\n• The exit is close: if a sale is a year away the proceeds arrive anyway, so the fees are dead weight — and it signals to buyers that the sponsor wanted money out.\n\n• The fund is measured on multiple: a recap improves IRR through timing, not MOIC, so it does nothing for a money-multiple target and in a weak deal looks like dressing up returns.\n\n• Solvency risk: a dividend that leaves the company unable to meet its obligations invites a fraudulent-conveyance claim later, which is why aggressive recaps come with solvency opinions.\n\nModel it inside the sponsor's own cash flows — interim dividend, remaining debt, exit equity — and do not count the dividend and the equity it was paid out of twice.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0502; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2624",
+      "question": "Can you tell us about a situation where WACCs in general have decreased across the board?",
+      "question_sources": [
+        "Rothschild & Co. LA"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2624"
+      ],
+      "topic": "DCF & Intrinsic Value",
+      "answer": "WACC = E/V × cost of equity + D/V × after-tax cost of debt, so a fall that hits every company at once has to come from the inputs they share rather than from any one company's beta.\n\n• What moves together: the risk-free rate, the equity risk premium and credit spreads. A lower risk-free rate pulls down both the CAPM cost of equity and the cost of debt; improving risk appetite compresses the premiums stacked on top of it.\n\n• Worked: at a 4% risk-free rate, a 5.5% equity risk premium, a beta of 1.0, 5% pre-tax debt, 30% leverage and a 25% tax rate, the cost of equity is 9.5% and the WACC about 7.8%. Take 150bp off the risk-free rate, leave the premiums alone, and the WACC falls to about 6.4%.\n\n• Episodes: the years of near-zero policy rates and quantitative easing after 2008, and again in 2020–21, when policy rates and credit spreads fell together. The reverse ran through 2022, when rates and spreads rose together and discount rates in every sector moved up.\n\n• Second-order effect: cheaper debt raises the leverage companies will carry, which pulls WACC down further through the weights — until the extra leverage starts to raise the cost of equity.\n\n• Not everything pushes the same way: a corporate tax cut raises the after-tax cost of debt and nudges WACC up, even though it raises after-tax cash flow by more.\n\n• What follows: lower discount rates raise DCF values and support higher multiples, so valuations and deal volumes rise with them. Distinguish a genuine shift in the cost of capital from the market repricing risk for a quarter, and do not rebuild a WACC off a single day's rates.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0862; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2625",
+      "question": "How could two identical buildings in the same location be worth different amounts?",
+      "question_sources": [
+        "Eastdil Secured SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2625"
+      ],
+      "topic": "Valuation & Comps",
+      "answer": "Because you are not buying the building, you are buying its income and the legal claims attached to it. Value is roughly stabilised net operating income divided by a cap rate, and almost every term in that sentence can differ between two identical buildings.\n\n• The rent roll: in-place rents against market rents, the weighted average lease term, escalation clauses, and whether leases are gross or net. A building let above market on long leases is worth more than the same building let cheaply; one let below market carries upside a buyer will pay for.\n\n• Tenant credit and mix: an investment-grade covenant on a fifteen-year lease supports a lower cap rate than a short lease to a weak local tenant. Single-tenant concentration cuts both ways.\n\n• Occupancy and the cost of filling it: vacant space costs free rent, tenant improvements and leasing commissions before it pays anything.\n\n• Condition and capital needs: deferred maintenance, roof and HVAC remaining life, and the capital required to keep the asset competitive come straight off value even when the two look the same from the street.\n\n• Legal and structural differences: a ground lease rather than freehold title, assumable debt at a below-market rate, a tax abatement, zoning or entitlement differences, easements, or an existing management or franchise agreement.\n\n• The buyer: an exchange buyer facing a deadline, a cross-border buyer with a lower cost of capital, or an owner-occupier can each pay more than a yield-driven investor, and basis and depreciation recapture change the after-tax answer.\n\nThe point of the question is to separate the asset from the income and the claims. \"Identical\" describes the building, and the building is not what sets the price.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0369; it is a technical question that was filed with the behavioral set.",
+        "The source firm is a real-estate investment bank, which fixes this as a property-valuation question rather than a brainteaser."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2626",
+      "question": "Why did Google pay approximately $3 billion for Nest despite its limited customer base?",
+      "question_sources": [
+        "Morgan Stanley MP"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2626"
+      ],
+      "topic": "Merger Model & M&A",
+      "answer": "Google paid about $3.2 billion in cash in January 2014, when Nest sold two products — a thermostat and a smoke alarm. No multiple of its sales at the time supports that price, and no interviewer expects one: this is strategic and option value, so answer it on those terms.\n\n• What was being bought: a position in the connected home, a hardware and design team led by people who had built the iPod at Apple, a foothold inside the house, and the data and standards that would come with it.\n\n• Why a strategic pays above standalone value: the asset is worth more inside Google — distribution, cloud, machine learning and an existing user relationship — than it is alone. That increment is a synergy, and in a competitive process the seller charges for it.\n\n• Pre-emption: Apple and Amazon were moving towards the same category. Part of the price is the cost of not letting a competitor own the entry point to the home — real, but not verifiable from outside.\n\n• Option framing: treat it as buying the right to compete in a large future market. Test it by asking what household penetration, attachment rate and pricing would make $3.2 billion a fair price, then judge whether that is plausible. A reverse DCF, not a comps run.\n\n• Time and people: building the same capability internally takes years and may fail, so time-to-market and the team are part of what is being paid for.\n\n• The honest caveat: strategic premiums are where acquirers destroy the most value, and whether this one paid off is a different question from whether it was defensible at signing. Nest was later folded back into Google's hardware business.\n\nInterview version: say the standalone numbers cannot support the price, name the capability and the market being bought, and show how you would test the assumptions the price implies.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0707; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2627",
+      "question": "How do public companies raise money and how do governments raise money?",
+      "question_sources": [
+        "Wells Fargo Public Finance"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2627"
+      ],
+      "topic": "Debt, Credit & Restructuring",
+      "answer": "Companies sell claims on themselves; governments sell claims on future taxes or on a project's revenues. Neither has a third option, but the instruments are different.\n\n• Corporate equity: a follow-on or secondary offering, an at-the-market programme, a rights issue, a PIPE, or a convertible, which is equity with a delay. No obligation to repay, but it dilutes existing holders and is the most expensive capital.\n\n• Corporate debt: bank revolvers and term loans, leveraged loans sold to institutions, investment-grade or high-yield bonds, private placements, commercial paper for short-dated needs, and securitisation of receivables or other assets. Cheaper than equity and tax-deductible, at the cost of fixed charges, covenants and refinancing risk.\n\n• Without issuing anything: retained cash flow, working capital management, sale-leasebacks and disposals of assets or divisions.\n\n• The federal government: the Treasury auctions bills, notes, bonds, TIPS and floating-rate notes on a published calendar, taking competitive bids from primary dealers and filling non-competitive bids at the clearing yield. There is no equity, and the credit question is political rather than analytical.\n\n• States, cities and authorities: municipal bonds, split between general obligation bonds backed by the issuer's taxing power and revenue bonds backed only by a defined revenue stream — a toll road, a water system, an airport. Interest is usually exempt from federal tax and often from tax in the issuing state, which lets the issuer pay a lower coupon than a taxable borrower of similar credit. Short-dated notes bridge timing mismatches between spending and tax receipts, and deals are sold by negotiated or competitive sale with an official statement rather than a prospectus.\n\n• The analytical difference: a corporate borrower is judged on cash flow and collateral, a general obligation issuer on the tax base and the willingness to tax it, and a revenue issuer on how well the pledged revenues cover debt service.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0987; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2628",
+      "question": "Who typically pays more for an acquisition: a strategic buyer or a financial sponsor?",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2628"
+      ],
+      "topic": "Merger Model & M&A",
+      "answer": "Usually the strategic buyer, and the reason is structural rather than a matter of appetite.\n\n• Synergies: a strategic can remove duplicate costs and sometimes add revenue, so the asset is worth more to it than on a standalone basis. A sponsor normally underwrites the business as it is, plus whatever operational improvement it can deliver itself.\n\n• Cost of capital and horizon: a strategic can fund with cash, cheap debt or its own stock and hold indefinitely. A sponsor needs an exit in three to five years at a multiple it has to assume today, and a return above its hurdle — that requirement works backwards into a lower price.\n\n• Where it reverses: a sponsor that already owns a platform in the sector is buying an add-on, which inherits the platform's multiple and brings synergies of its own, so it can bid like a strategic. Cheap and deep debt markets, a large uninvested fund, an auction where the strategic has antitrust or integration problems, or a seller who prizes speed can all put the sponsor on top.\n\n• And a strategic is not always free to pay: regulatory review, shareholders who dislike a stock-funded deal, or accretion-dilution arithmetic can cap its bid.\n\n• What sellers weigh besides price: certainty of close, financing conditionality, treatment of management, and whether they can roll equity — a sponsor often wins on those at a lower headline number.\n\nAnswer \"usually the strategic, because of synergies and the absence of an exit requirement,\" then name the platform add-on as the exception. Saying either one always pays more is the wrong answer.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1089; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2629",
+      "question": "What metrics would you use to analyze a tech SaaS firm?",
+      "question_sources": [
+        "J.P. Morgan SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2629"
+      ],
+      "topic": "Industry & Company Analysis",
+      "answer": "Start with the recurring revenue and how durable it is, then how efficiently the company buys growth, then whether any of it converts to cash.\n\n• Scale and growth: ARR or MRR, year-on-year growth, and net new ARR by quarter. Net new ARR shows deceleration before the percentage does.\n\n• Retention: gross revenue retention, which excludes expansion, and net revenue retention, which includes it — NRR above 100% means the installed base grows without new logos. Keep logo churn separate, because a few large expanding accounts can hold NRR up while small customers leave.\n\n• Unit economics: fully loaded CAC, CAC payback in months, and sales efficiency or the magic number (net new ARR over prior-period sales and marketing spend). LTV/CAC is worth quoting but is the softest figure here, since it compounds a gross-margin assumption with a churn assumption.\n\n• Margins and mix: gross margin and the hosting cost inside it, subscription versus services revenue, and R&D and S&M as a share of revenue.\n\n• Cash and revenue quality: FCF margin, the Rule of 40 as a sanity check rather than a valuation input, bookings and billings against revenue, deferred revenue and remaining performance obligations, and whether annual prepayment is flattering cash conversion.\n\n• Customer detail: concentration, contract length, cohort behaviour, and expansion by segment — enterprise and SMB cohorts behave differently enough that a blended number hides both.\n\nTraps to avoid: ARR that includes non-recurring services, churn measured over a convenient period, and treating the Rule of 40 as though it set the multiple.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0583; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2630",
+      "question": "What is a capped call?",
+      "question_sources": [
+        "J.P. Morgan SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2630"
+      ],
+      "topic": "Options & Derivatives",
+      "answer": "A capped call is a purchased call with its upside cut off at a second, higher strike — long a call at the lower strike and short a call at the upper one, so the payoff is capped at the difference. In banking you usually meet it as the hedge an issuer buys alongside a convertible bond.\n\n• Mechanics: the payoff is max(0, S − K1) less max(0, S − K2), with K2 above K1. It costs less than an outright call because the sold upper call pays for part of the premium, and it is the same position as a bull call spread.\n\n• Why a convertible issuer buys one: the conversion feature means the issuer delivers shares if the stock rises. A purchased call struck at the conversion price offsets that dilution, and capping it at a higher strike makes the hedge affordable. Dealers quote this as a call spread overlay, or a bond hedge plus warrant.\n\n• The effect: it raises the effective conversion price, so the issuer keeps the low coupon of a convertible while behaving, up to the cap, as if it had sold equity at a higher price. Above the cap the dilution comes back.\n\n• The cost: cash paid up front out of the proceeds, and counterparty exposure to the dealer. The purchased hedge is generally anti-dilutive and therefore excluded from GAAP diluted EPS, while the warrants sold are included once they are in the money — so the economics and the reported share count do not move together.\n\n• Elsewhere: structured notes and some investor products embed capped calls to fund a higher coupon, with the same trade-off — you sell the tail of the upside to pay for something else.\n\nIf the question means the standalone option strategy rather than the convertible overlay, the payoff is identical; only the motive changes.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0584; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2631",
+      "question": "What is a martingale, what assumptions does it require, and how can it be applied?",
+      "question_sources": [
+        "J.P. Morgan Research"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2631"
+      ],
+      "topic": "Options & Derivatives",
+      "answer": "A martingale is a process whose expected next value, conditional on everything known today, is its current value: E[X(t+1) | F(t)] = X(t). It is the formal version of a fair game — no drift, and no edge from the information you hold.\n\n• What it requires: a filtration, meaning an explicit sequence of information sets; the process must be adapted to it, so X(t) is known at time t; integrability, E|X(t)| < ∞, so the expectation exists; and a stated probability measure, because a process can be a martingale under one measure and not another.\n\n• Neighbours: a sub-martingale drifts up and a super-martingale drifts down. A random walk with no drift is the standard example, as is the running P&L of a fair coin-flip game.\n\n• The pricing application: under the risk-neutral measure, a traded asset's price discounted at the risk-free rate is a martingale. That is the content of the first fundamental theorem of asset pricing — absence of arbitrage is equivalent to the existence of an equivalent martingale measure — and it is why a derivative can be priced as a discounted expected payoff rather than by forecasting the real-world drift.\n\n• Other uses: the random-walk form of the efficient-market hypothesis; the optional stopping theorem, which says you cannot beat a fair game by choosing when to quit; and the martingale convergence results that underpin much of stochastic calculus.\n\n• The betting system of the same name — double after every loss — shows the limit. It only has positive expectation with unbounded capital and no table limit; with finite wealth the probability of ruin exactly offsets the gain, which is the practical reason it fails.\n\nInterview version: define it in one line, say it needs a filtration, integrability and a stated measure, and use risk-neutral pricing as the application.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0582; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2632",
+      "question": "What is a mid-period adjustment?",
+      "question_sources": [
+        "PJT Partners RSSG NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2632"
+      ],
+      "topic": "DCF & Intrinsic Value",
+      "answer": "It is the recognition that cash arrives through a period rather than on its last day, and the adjustment of discount periods to match. The usual form is the mid-year convention in a DCF.\n\n• The convention: discount full-year forecast cash flows at 0.5, 1.5, 2.5 and so on instead of 1, 2, 3. Each flow is discounted for half a year less, so present value rises at any positive discount rate.\n\n• Terminal value needs care: do not apply a half-year exponent mechanically. If the terminal value is measured at the end of the final explicit year, discount it to that date; whether the terminal share of total value changes depends on whether the terminal value moved with the explicit period.\n\n• The stub-period version: when you value part-way through a fiscal year, exclude the cash flow already reported and discount only the remaining stub. Valuing on 30 September with a December year end leaves three months, so the first discount period is 0.25, then 1.25 and 2.25 for the following years.\n\n• Leave discrete payments where they are: a coupon or a contracted payment with a known date should be discounted to that date, not smeared across the year.\n\n• In deal models: the same idea appears as a partial-year adjustment, where the pro forma income statement includes only the target's post-close results, interest accrues for the stub, and a mid-year close splits the year's earnings between buyer and seller.\n\nSay which convention you are using and apply it consistently across the explicit period, the stub and the terminal value. Mixing them is the common error and it is worth several percent of value.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0783; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2633",
+      "question": "What is the difference between an unrestricted subsidiary and a non-guarantor subsidiary?",
+      "question_sources": [
+        "Evercore (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2633"
+      ],
+      "topic": "Debt, Credit & Restructuring",
+      "answer": "Both sit outside part of a lender's protection, but on different axes. An unrestricted subsidiary is outside the covenants; a non-guarantor subsidiary is inside the covenants but outside the recourse.\n\n• The restricted group: a credit agreement or indenture defines which subsidiaries its covenants bind. Their EBITDA, assets and debt count in covenant tests, and they are limited in what they can pay out, borrow or transfer.\n\n• Unrestricted subsidiary: one the borrower designates out of that group, using capacity in the investment or restricted-payment baskets. It is not bound by the covenants, its results drop out of the covenant calculations, and — the point that matters — assets contributed to it can move beyond the existing lenders' reach and be pledged to new debt. This is the mechanism behind the J.Crew IP transfer and the liability-management transactions that followed it.\n\n• Non-guarantor subsidiary: inside the restricted group, so bound by the covenants, but it has not guaranteed the debt. Creditors have no direct claim on its assets and rank behind that subsidiary's own creditors, holding only its residual equity through the parent. That is structural subordination rather than a hole in the covenants. Non-guarantors exist for ordinary reasons — foreign subsidiaries where a guarantee has tax consequences, regulated insurers or banking entities, joint ventures whose partner will not consent.\n\n• What to check in the documents: how much EBITDA and how many assets sit with guarantors; whether the agreement caps non-guarantor EBITDA; how much unrestricted-subsidiary and investment capacity is unused; and whether the collateral package includes the equity of non-guarantors.\n\nWhy it is asked: in a restructuring these definitions decide who gets paid. A credit can look well covered on consolidated leverage and be badly covered at the entity where the claim actually sits.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1130; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2634",
+      "question": "What is a sources and uses table?",
+      "question_sources": [
+        "Lazard LA"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2634"
+      ],
+      "topic": "LBO & Private Equity",
+      "answer": "A sources and uses table sets out what a transaction has to pay for and where the money comes from. The two sides must be equal, and that equality is what makes it useful.\n\n• Uses: the equity purchase price for the target (or enterprise value where the deal is cash-free and debt-free), repayment or refinancing of existing target debt that is not being assumed, cash left on the balance sheet to meet minimum operating cash, and fees — advisory, financing and legal, plus original issue discount.\n\n• Sources: each new debt tranche (revolver draw, term loan A and B, secured and unsecured notes, mezzanine or PIK), sponsor equity, rollover equity from management or the existing owner, target balance-sheet cash the deal is permitted to use, and any seller note or earnout.\n\n• How you build it: size the debt first, from the leverage lenders will support on entry EBITDA and their coverage tests, then let sponsor equity be the plug — sponsor equity = total uses less every other source.\n\n• Why it drives returns: that equity figure is the denominator of MOIC and IRR. Higher fees, more minimum cash or more debt to refinance all raise the equity cheque and lower returns even though the purchase multiple has not moved.\n\n• Where it goes next: it feeds the opening pro forma balance sheet, the goodwill calculation and the debt schedule, so an error here propagates through the whole model.\n\nThe quick checks are that the columns balance and that nothing is double counted — assumed debt does not belong in uses, and cash used to fund the deal cannot also sit on the closing balance sheet.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0637; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2635",
+      "question": "What is the difference between a general partner and a limited partner?",
+      "question_sources": [
+        "Evercore (compiled interview notes)",
+        "Evercore Strategic Defense & Shareholder Advisory"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2635"
+      ],
+      "topic": "LBO & Private Equity",
+      "answer": "The general partner runs the fund; the limited partners supply almost all of the money and stay passive. The split is legal as much as economic.\n\n• The GP: sources, diligences, executes and exits investments, sits on portfolio boards and makes the investment decisions. It commits a slice of the fund itself, typically 1–5%, so its own money is at risk alongside the LPs'. In a limited partnership the general partner has unlimited liability, which is why the GP is itself a shell entity owned by the firm.\n\n• The LPs: pensions, endowments, foundations, sovereign wealth funds, insurers, funds of funds, family offices and, increasingly, private-wealth vehicles. Liability is limited to the capital committed, and the trade is control — they act through the limited partnership agreement and an advisory committee, not by voting on deals.\n\n• The money: LPs sign commitments that the GP draws down over the investment period as deals happen, and capital comes back as investments are realised. The GP earns a management fee, historically around 2% of committed capital and often stepping down later in the fund's life, plus carried interest, usually 20% of profits above a preferred return of about 8%.\n\n• The waterfall: a European or whole-fund waterfall pays carry only once all LP capital and the preferred return are back; an American or deal-by-deal waterfall pays sooner, with a clawback if later deals disappoint. Which applies changes the GP's incentives materially.\n\n• Other LP protections: key-person provisions, no-fault removal and divorce rights, advisory committee consent on conflicts, fee offsets, and co-investment rights alongside the fund.\n\nThe same labels appear in real estate and infrastructure funds, and, at deal level rather than fund level, in the sponsor-versus-co-investor relationship.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0415; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2636",
+      "question": "What is the Federal Reserve's mandate?",
+      "question_sources": [
+        "PIMCO Product & Strategy",
+        "TD Securities NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2636"
+      ],
+      "topic": "Markets & Economy",
+      "answer": "Congress sets it in the Federal Reserve Act: the Fed is to promote maximum employment, stable prices and moderate long-term interest rates. It is called the dual mandate because the third follows from the first two — long rates stay moderate when inflation is under control.\n\n• Maximum employment: the highest level of employment the economy can sustain without inflation accelerating. The Fed deliberately sets no numerical target, because that sustainable level moves with demographics and productivity; it publishes estimates of the longer-run unemployment rate instead.\n\n• Stable prices: the FOMC defines this as 2% inflation over the longer run, measured on the headline PCE price index, in its Statement on Longer-Run Goals and Monetary Policy Strategy. The Committee reviews that framework periodically, so quote the 2% goal and say the framework language is under periodic review rather than reciting one vintage of it.\n\n• The tools: the target range for the federal funds rate, the administered rates that keep the funds rate inside it (interest on reserve balances and the overnight reverse repo rate), open market operations and the balance sheet, the discount window, and forward guidance.\n\n• What is not in the monetary mandate: bank supervision, the payment system and the lender-of-last-resort function are Fed responsibilities, and financial stability is a stated concern, but none of them is a statutory objective of monetary policy.\n\n• The tension worth naming: the two goals conflict when inflation is high and the labour market is weakening, and which one a given committee weighs more heavily at that moment is the substance of most policy debate.\n\nIf the follow-up asks what it means for markets, work through the channel: the policy rate to discount rates and valuations, and the policy rate to demand and earnings.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0764; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2637",
+      "question": "What is PIPE? Why do firms do it? What are the advantages and disadvantages?",
+      "question_sources": [
+        "Evercore (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2637"
+      ],
+      "topic": "Deal & Process",
+      "answer": "A PIPE — private investment in public equity — is a private placement by a company that is already listed. It sells shares, convertible preferred or a structured instrument to a small group of selected investors, usually at a discount to the market price, with registration rights so the stock becomes freely tradable afterwards.\n\n• Why issuers do it: speed and certainty. A PIPE can be negotiated confidentially with a handful of investors in days rather than marketed to the whole market, which matters when the window is shut, the company is small or distressed, or the need is urgent. A credible anchor investor also validates the story.\n\n• Who buys: crossover and long-only funds, hedge funds, private equity and sovereign funds, often taking a position larger than they could build in the open market.\n\n• Where you see them: rescue and recapitalisation financings, growth capital for small and mid caps, and de-SPAC transactions, where the PIPE both funds the merger and supplies the price validation the structure otherwise lacks.\n\n• Advantages: fast, confidential until announcement, no roadshow, large relative to the float, and executable when a marketed follow-on would fail.\n\n• Disadvantages: the discount transfers value to the new investors and dilutes existing holders; structured terms — warrants, anti-dilution ratchets, reset features on convertibles — can cost far more than the headline discount, and the worst of them ratchet as the stock falls. There is a signalling cost, since a discounted private placement reads as a company without better options, and governance strings often come attached: board seats, consent rights, standstills.\n\n• Mechanics to know: a resale registration statement is the investors' exit, and exchange rules generally require shareholder approval where the issue exceeds about 20% of shares outstanding at a discount.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1049; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2638",
+      "question": "How does USD appreciation affect sale of european subsidiary?",
+      "question_sources": [
+        "Morgan Stanley SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2638"
+      ],
+      "topic": "Markets & Economy",
+      "answer": "The subsidiary earns euros while the parent reports and is paid in dollars, so a stronger dollar lowers the dollar value of the same business without anything changing in Europe.\n\n• The proceeds: a price agreed in euros converts into fewer dollars. Between signing and closing that is a live exposure, which sellers hedge with a forward or a deal-contingent forward — the latter only paying if the deal closes.\n\n• Valuation discipline: value euro cash flows with a euro discount rate and convert the result at spot, or convert the cash flows at forward rates and discount in dollars. Discounting euro cash flows at a dollar WACC double-counts the currency and is the standard mistake.\n\n• The buyer pool: a dollar-funded bidder's purchasing power rises as the dollar strengthens, so dollar buyers can pay more in euro terms than euro-funded bidders. The likely winner, not just the price, can shift with the rate.\n\n• Reported gain or loss: the cumulative translation adjustment sitting in accumulated other comprehensive income is recycled into income when the subsidiary is sold, so the book gain moves with the rate even when the economics do not. Tax basis is usually measured in local currency, so the taxable and book results diverge.\n\n• Operating effects: if the subsidiary sells in euros but buys in dollars, a stronger dollar squeezes its margins and genuinely reduces what it is worth. If it manufactures in Europe and sells in dollars, the opposite.\n\n• Reported growth: several years of euro earnings translated at a weaker euro drag reported growth down, which is why buyers look at constant-currency figures.\n\nSeparate the translation effect, which is arithmetic, from the economic effect on the subsidiary's own competitiveness. Only the second changes what the business is worth to a euro buyer.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0712; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2639",
+      "question": "What types of adjustments do you expect to encounter in financial due diligence, and which adjustments are you familiar with?",
+      "question_sources": [
+        "Ernst & Young M&A"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2639"
+      ],
+      "topic": "Accounting & 3 Statements",
+      "answer": "In transaction services the word means normalising reported earnings into a run-rate figure a buyer can underwrite — bridging reported EBITDA to adjusted, or quality-of-earnings, EBITDA. Clarify which adjustments are meant before you answer: in a merger model the same word means purchase accounting adjustments, and in comps it means adjustments for comparability.\n\n• Non-recurring items: legal settlements, restructuring and severance, transaction costs, start-up or site-opening costs, insurance recoveries, a bad-debt write-off from one lost customer.\n\n• Owner and related-party items: above- or below-market owner compensation, rent paid to an entity the owner controls, personal expenses run through the business, family members on the payroll. Standard fare in private-company diligence.\n\n• Accounting accuracy: cut-off and revenue-recognition errors, held cheques, under-accrued liabilities, inventory reserves and obsolescence, capitalisation versus expense, warranty and returns reserves. These correct the number rather than normalise it, and the distinction matters.\n\n• Pro forma and run-rate items: the annualised effect of a price increase, a new or lost contract, a closed facility, a mid-year acquisition, or cost savings already actioned. The most aggressive category and the most negotiated, and the one a buyer discounts hardest.\n\n• Carve-out and standalone costs: removing shared services allocated by the parent and adding the cost of operating alone — standalone IT, insurance, audit, public-company costs.\n\n• Policy and framework differences: GAAP or IFRS conversions, revenue timing under ASC 606, and lease accounting under ASC 842 or IFRS 16, which moves rent out of EBITDA and creates a lease liability.\n\n• The working-capital and debt-like side: a normalised net working capital peg, and items treated as debt-like in the price — deferred revenue, accrued bonuses, unfunded pensions, capital leases, deferred CapEx.\n\nEvery adjustment has to be quantified, evidenced and labelled as a correction, a normalisation or a pro forma estimate. It matters because an adjustment is paid for at the multiple: $1 million of adjusted EBITDA at 8x is $8 million of purchase price, which is why these are argued line by line.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0372 and B1018, merged: the two entries ask the same thing, come from the same transaction-services source, and their neighbouring entries fix the financial due diligence context."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2640",
+      "question": "What are companies trying to achieve when they merge?",
+      "question_sources": [
+        "Ernst & Young M&A"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2640"
+      ],
+      "topic": "Merger Model & M&A",
+      "answer": "They are trying to create value that neither company can create alone. Name the sources, then say how you would test whether a particular deal delivers them.\n\n• Cost synergies: removing duplicate overhead, consolidating facilities, procurement scale, overlapping distribution. The most credible category and the easiest to quantify.\n\n• Revenue synergies: cross-selling, channel access, pricing power from consolidation. Real but routinely overestimated, so buyers get little credit for them.\n\n• Capability, technology and talent: buying a product, a licence, a patent estate or a team faster than it could be built. Time to market is the asset.\n\n• Scale and consolidation: in a fragmented or declining industry, scale defends margins and absorbs fixed costs, and whoever consolidates first sets the terms.\n\n• Vertical integration: securing supply, capturing a supplier's or distributor's margin, or controlling access to the customer.\n\n• Market and geographic access: an established position, licences and relationships in a market where building from scratch is slow.\n\n• Diversification of end markets: usually the weakest rationale, since shareholders can diversify more cheaply than a company can.\n\n• Defensive and financial motives: pre-empting a rival, acquiring before being acquired, deploying excess cash or unused debt capacity, using tax attributes, or buying a lower-multiple business for the EPS effect.\n\nThe test: value is created only if the present value of the synergies exceeds the premium paid plus the cost of integration — the premium hands the target's shareholders the synergy value up front. EPS accretion proves nothing on its own, because buying a lower-multiple target with cash is accretive arithmetically whether or not the deal makes sense.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0382; it is a technical question that was filed with the behavioral set.",
+        "Overlaps F0106, which asks the same thing and answers it with the shared deal-assessment framework; this card answers the motives directly."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2641",
+      "question": "What are the ways companies can go public and what are your thoughts on them?",
+      "question_sources": [
+        "Evercore (compiled interview notes)",
+        "Evercore ECM"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2641"
+      ],
+      "topic": "Deal & Process",
+      "answer": "Four routes, with very different trade-offs between price certainty, capital raised and cost.\n\n• Traditional underwritten IPO: banks build a book, price the deal and allocate it, usually with a greenshoe and a lock-up. The company raises primary capital and gets research coverage and aftermarket support, and accepts underpricing — the first-day pop — as the cost of a covered book. Still the default for most issuers.\n\n• Direct listing: existing shares are listed with no underwritten offering and no allocation, so no underpricing and no dilution, with price discovery left to the opening auction. It suits a company with a recognised brand and no need for capital, and rule changes now allow raising primary capital alongside it. There is no anchor book and no price support.\n\n• SPAC merger: the company negotiates a price with a listed shell and completes a de-SPAC, usually with a PIPE alongside. Speed, a negotiated valuation and the ability to use projections in the deal documents, but the sponsor promote, the warrants and redemption rights mean the cash actually delivered is often well below the headline trust, making the effective cost high. Volumes collapsed after 2021 and post-deal performance has generally been poor.\n\n• Reverse merger into a listed shell, and smaller routes such as Regulation A+: cheap, fast access to a listing, but shallow liquidity, no institutional book and a reputational discount.\n\n• The view to express: a listing is a financing decision and a governance decision at once — public reporting, a public share count, a public price. If the company needs capital and demand exists, the underwritten IPO is what it is for; if it needs no capital and is already known, a direct listing avoids a real cost; and if the main attraction is speed, ask what the speed is costing.\n\nMany issuers run a dual track, keeping an IPO and a sale to a strategic or a sponsor alive until the terms of both are known.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0387; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2642",
+      "question": "How does one amortize TMT subscriptions?",
+      "question_sources": [
+        "Wells Fargo NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2642"
+      ],
+      "topic": "Accounting & 3 Statements",
+      "answer": "A subscription is billed before it is delivered, so cash arrives first and revenue is recognised over the service period. \"Amortising\" it means releasing the deferred revenue as the service is provided.\n\n• At billing: cash, or a receivable, and deferred revenue both rise. No revenue and no income-statement effect.\n\n• Over the term: revenue is recognised ratably as the obligation is satisfied — a $1,200 annual plan gives $100 a month — and deferred revenue falls by the same amount. Multi-year contracts split deferred revenue between current and long-term.\n\n• On the cash flow statement: net income plus the change in deferred revenue, so a growing subscription base shows cash running ahead of revenue and a shrinking one shows the reverse. That gap is the first thing to check in a decelerating subscription business.\n\n• Bundled contracts: where a subscription is sold with hardware — a handset, a set-top box, a device — allocate the transaction price across the performance obligations at their standalone selling prices under ASC 606. The hardware is recognised on delivery and the service over the term.\n\n• Costs, not only revenue: incremental contract-acquisition costs such as sales commissions are capitalised and amortised over the expected customer life rather than the initial contract term, and content assets in media are amortised over the expected viewing pattern, which is accelerated rather than straight line.\n\n• The related disclosure: remaining performance obligations, or backlog, which gives the contracted revenue not yet recognised.\n\nKeep bookings, billings, revenue and cash distinct. They are four different numbers on the same contract, and conflating them is the usual error.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0982; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2643",
+      "question": "What would you examine before lending to a company?",
+      "question_sources": [
+        "PNC Capital Markets"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2643"
+      ],
+      "topic": "Debt, Credit & Restructuring",
+      "answer": "A lender asks two questions: can this company service and repay the debt in a downside case, and what do I recover if it cannot. Everything else sits under one of those headings.\n\n• The business: industry cyclicality and structure, competitive position, customer and supplier concentration, how much revenue is contracted rather than transactional, and whether the cost base flexes when volumes fall.\n\n• Cash flow rather than earnings: the quality of EBITDA and how much of it converts to cash after working capital and maintenance CapEx, how stable that conversion is, and what free cash flow remains after interest and mandatory amortisation — then the same figures in a stress case.\n\n• Leverage and coverage: total and net debt to EBITDA, interest and fixed-charge coverage, measured through a cycle rather than at the peak. The same leverage on a regulated network company and on a mining business are not the same risk.\n\n• Liquidity and maturities: cash, revolver availability, the maturity profile and any near wall, and how much the credit depends on refinancing markets staying open.\n\n• Structure and collateral: where the loan sits in the capital structure, the scope of security, which entities guarantee it, structural subordination to non-guarantors, intercreditor terms, and the covenant package with its headroom and its baskets. The documents are the protection — restricted-payment and investment capacity decide whether assets can leave.\n\n• The people: management and sponsor track record, incentives, and how they behaved in the last downturn.\n\n• Pricing and recovery: ratings, expected loss as roughly probability of default times loss given default, collateral coverage, and whether the spread pays for that risk.\n\nThen the exit: how the loan actually gets repaid — amortisation, free cash flow, refinancing or sale — and what your recovery looks like if that route closes.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0801; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2644",
+      "question": "If you have a 10-K and can only look at 3 items, what would you do?",
+      "question_sources": [
+        "Goldman Sachs HK"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2644"
+      ],
+      "topic": "Accounting & 3 Statements",
+      "answer": "Say what you are using it for first, because the three items change with the question. What is being tested is prioritisation, not recall.\n\n• For a general read on whether the business is sound: the cash flow statement, because cash from operations against net income shows earnings quality and CapEx shows what it costs to stay in business; the debt and liquidity picture from the balance sheet and the debt footnote, for maturities, cash and revolver capacity; and the MD&A with the segment footnote, where management explains revenue and margin by business.\n\n• For an equity view: revenue and margin by segment, the share count and capital returned (buybacks and dividends against free cash flow), and the risk factors that are specific rather than boilerplate.\n\n• For a credit view: EBITDA and its reconciliation, the debt footnote with covenants and maturities, and the commitments and contingencies note for leases, guarantees and off-balance sheet obligations.\n\n• For accounting risk: critical accounting estimates, the revenue recognition policy, and the legal and contingencies note — plus the auditor's report where going concern is in question.\n\n• What the three almost never are: the income statement on its own, which is the most managed statement, and the headline figures, which are in the press release rather than the 10-K.\n\nAnswer in that shape — name the purpose, name the three, say what each would change in your conclusion — and make the point that the footnotes usually carry more information per page than the statements they support.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0441; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2645",
+      "question": "Walk through the underwriting process for a hypothetical transaction.",
+      "question_sources": [
+        "BNP Paribas Leveraged Finance"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2645"
+      ],
+      "topic": "Debt, Credit & Restructuring",
+      "answer": "Underwriting means the bank commits its own balance sheet to provide the financing and then sells it down. Take a leveraged buyout financing, which is where the commitment matters most.\n\n• Origination: the team proposes a structure to a sponsor running an auction — how much leverage, which tranches, indicative pricing. The sponsor needs financing certainty in order to bid.\n\n• Internal approval: credit and the underwriting committee sign off on the firm's own risk, not just the borrower's credit. This is where the structure and the final hold size are set.\n\n• Commitment: the bank signs a commitment letter with a term sheet and a fee letter. Those documents contain the flex — the pricing, and sometimes structural, changes the arranger may make to clear the market — and the limited conditionality the sponsor needs, so the financing is certain unless defined conditions fail.\n\n• Signing: the sponsor bids with committed financing. From here the bank is exposed to a market that can turn before the paper is sold.\n\n• Syndication: a lender presentation and bank meeting, a rating agency process for the bonds, price talk, building the book, exercising flex if demand is thin, then allocation. Bonds are marketed on a roadshow and priced; loans are allocated and pricing is fixed.\n\n• Funding and close: the debt funds at closing alongside the sponsor's equity, and the bank holds whatever it did not sell.\n\n• The risk being taken: if the deal cannot be syndicated at the committed terms, the bank holds the paper or sells it at a loss — a hung deal. That happened widely in 2007–08 and again in 2022, when rates and spreads moved between commitment and syndication.\n\nContrast it with best efforts, where the bank agrees only to try and the issuer carries the market risk. In equity the parallel is a firm-commitment underwriting with a greenshoe against a best-efforts offering.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0108; it is a technical question that was filed with the behavioral set.",
+        "The source wording was \"the underwriting process of a fake transaction\"; the source firm is a leveraged finance team, so the answer works a hypothetical LBO financing."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2646",
+      "question": "How does a payment transfer work, and which companies participate in a transaction such as a Square payment?",
+      "question_sources": [
+        "Financial Technology Partners SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2646"
+      ],
+      "topic": "Industry & Company Analysis",
+      "answer": "A card payment runs through a four-party chain, and the merchant's fee is divided along it. Square sits in the middle as the merchant's acquirer and software vendor.\n\n• The parties: the cardholder; the merchant; the acquirer, which holds the merchant relationship and takes settlement risk, with its processor; the card network, Visa or Mastercard, which runs the rails and sets interchange; and the issuing bank, which advanced the money and bears the credit risk. American Express and Discover are three-party systems that both issue and acquire.\n\n• The flow: authorisation runs merchant to acquirer to network to issuer and back in seconds, checking funds and fraud and placing a hold. Clearing and settlement follow in batches — the issuer pays the network, the network pays the acquirer, and the acquirer funds the merchant, typically the next business day.\n\n• Square's role specifically: it is a payment facilitator, aggregating many small merchants under its own master merchant relationship rather than giving each one its own account. That is why a seller can be onboarded in minutes, and why Square carries the underwriting, fraud and chargeback risk on them. Hardware, point-of-sale software, instant deposits, lending and payroll are what it sells on top.\n\n• The economics: the merchant pays a discount rate — for a payment facilitator a blended headline rate, around the mid-2% range plus a fixed amount for card-present retail. Most of it is interchange, which goes to the issuer and varies widely by card type, channel and region (EU interchange is capped by regulation at 0.2% on debit and 0.3% on credit). The network takes assessments and the acquirer or facilitator keeps the remainder.\n\n• Where the risk sits: a chargeback is the merchant's liability and the acquirer's exposure if the merchant cannot pay, which is the core underwriting problem in the facilitator model. Card-not-present transactions price higher because fraud is higher.\n\n• Other rails: ACH and real-time systems such as RTP and FedNow, account-to-account schemes outside the US, and wallets such as Apple Pay, which mostly tokenise a card and still run over the card rails.\n\nPricing and regulation change, so quote ranges and name the mechanism rather than a current rate card.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0424; it is a technical question that was filed with the behavioral set."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2647",
+      "question": "How would you value a solar project?",
+      "question_sources": [
+        "KeyBanc SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2647"
+      ],
+      "topic": "DCF & Intrinsic Value",
+      "answer": "Value a project rather than a company: it is a finite, largely contracted cash-flow stream with an asset at the end of it, so it is a project-finance DCF with no going-concern terminal value.\n\n• Production: installed capacity in MW times the capacity factor for that site's resource, adjusted for annual panel degradation, curtailment and availability. Use a P50 base case and a P90 downside — resource uncertainty is a real sensitivity, not a rounding.\n\n• Revenue: the power purchase agreement tariff and its escalator for the contracted term, then a merchant price curve for the tail after it expires, plus any renewable energy certificates and capacity payments. The offtaker's credit matters as much as the tariff.\n\n• Costs: operations and maintenance, land lease or royalty, insurance, asset management, local taxes, and periodic inverter replacement modelled as explicit CapEx rather than buried in opex.\n\n• The unlevered view: project free cash flow over a 25–35 year life, discounted at a project cost of capital. Contracted cash flow from a strong offtaker earns a lower rate than merchant exposure, and the residual is a repowering or decommissioning assumption rather than a growth perpetuity.\n\n• The levered view the sponsor actually underwrites: non-recourse debt sized by debt service coverage, commonly around 1.3x on contracted cash flow, with tenor matched to the PPA, plus tax-equity or tax-credit monetisation in the US — giving a levered equity IRR and a cash-on-cash yield.\n\n• Cross-checks: dollars per MW or per kW of capacity against recent asset transactions, EV/EBITDA for an operating platform, and cash available for distribution yield for a portfolio vehicle.\n\n• Sensitivities worth running: resource, the merchant tail price, the discount rate, interconnection and construction delay, offtaker default, and basis risk between the pricing node and the delivery point.\n\nTax-credit and incentive regimes change; confirm the current rules rather than carrying an assumption over from a model built a few years ago.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Concept explanation / solution framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Split out of behavioral entry B0625, which welded a technical question to a behavioral one; this is the technical half.",
+        "The fit half, \"Why are you interested in renewables?\", stays in the behavioral deck as B0625."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2648",
+      "question": "Explain purchase accounting and the accounting adjustments in an M&A transaction.",
+      "question_sources": [
+        "Morgan Stanley MP"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2648"
+      ],
+      "topic": "Merger Model & M&A",
+      "answer": "In an acquisition the target's own equity disappears and is replaced by what the buyer paid, allocated across the target's assets and liabilities at fair value, with whatever is left over recorded as goodwill.\n\n• The core calculation: goodwill is the consideration paid less the fair value of the identifiable net assets acquired. In interview form, goodwill = equity purchase price − target book equity + the target's existing goodwill written off − asset write-ups + the deferred tax liability created by those write-ups, plus or minus the other adjustments below.\n\n• Why existing goodwill comes off: it is not an identifiable asset, so it cannot carry over. It is written off and replaced by the goodwill this deal creates.\n\n• Write-ups: PP&E to fair value, and newly identified intangibles — customer relationships, technology, trade names, order backlog. These are the main reason pro forma earnings fall, because the write-ups are depreciated and the finite-lived intangibles amortised, and in a stock deal that charge is usually not tax-deductible.\n\n• The deferred tax liability: a book write-up with no matching step-up in tax basis creates a DTL of roughly the write-up times the tax rate. Being a liability it reduces net identifiable assets and so increases goodwill, and it unwinds as the write-up is amortised.\n\n• Other adjustments: deferred revenue is remeasured to the cost of fulfilment plus a margin, which reduces post-deal revenue; the target's existing deferred tax assets, capitalised financing fees and debt discounts come off; assumed debt is marked to fair value; and contingent consideration is recorded at fair value and remeasured through earnings.\n\n• Costs: transaction fees are expensed as incurred, while financing fees are capitalised and amortised over the life of the debt.\n\n• Afterwards: under US GAAP goodwill is not amortised but tested for impairment, while finite-lived intangibles amortise. An asset deal, or a 338 election, that steps up tax basis makes that amortisation deductible, which is worth real money and changes what a buyer will pay.\n\nCheck your own work on the pro forma balance sheet: sources equal uses, the target's old equity is gone, and the DTL moves with the write-up.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Split out of behavioral entry B0698, which welded a technical question to a behavioral one; this is the technical half.",
+        "The story half, \"Tell me about a time you stepped outside your comfort zone\", stays in the behavioral deck as B0698."
       ],
       "supporting_reference_urls": []
     }
