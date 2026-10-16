@@ -1,14 +1,23 @@
 # Valuation & Comps — 153-card answer audit
 
-Audited October 15, 2026. Starting repository revision: `4d062bb`. Scope: the 153 technical cards whose generated topic was exactly **Valuation & Comps** at that revision.
+Audited October 15, 2026. Starting repository revision: `4d062bb`. Scope: the 153 technical cards
+whose generated topic was exactly **Valuation & Comps** at that revision.
 
-Long paragraphs in this document are broken using the deck's own rule, the one `paragraphs()` in `flashcards/index.html` applies to every answer at render time: sentences are grouped until a paragraph reaches 280 characters or three sentences, abbreviations such as "vs." and "i.e." are not treated as sentence ends, and a final paragraph shorter than 90 characters is merged back rather than left as an orphan.
+Long paragraphs in this document are broken using the deck's own rule, the one `paragraphs()` in
+`flashcards/index.html` applies to every answer at render time: sentences are grouped until a
+paragraph reaches 280 characters or three sentences, abbreviations such as "vs." and "i.e." are not
+treated as sentence ends, and a final paragraph shorter than 90 characters is merged back rather
+than left as an orphan.
 
-Each quoted replacement answer therefore appears here exactly as a student sees it on the card. The breaks are presentation only: no wording changed, and each answer is still stored as a single string in `Technical_Questions_and_Answers.json`.
+Each quoted replacement answer therefore appears here exactly as a student sees it on the card. The
+breaks are presentation only: no wording changed, and each answer is still stored as a single string
+in `Technical_Questions_and_Answers.json`.
 
 ## Results
 
-All 153 question–answer pairs were read in eight sequential batches (seven of 20, one of 13). The review checked question/answer fit, assumptions, multiple conventions, accounting effects, and stated numerical results. Guide answers were compared with the supplied PDF.
+All 153 question–answer pairs were read in eight sequential batches (seven of 20, one of 13). The
+review checked question/answer fit, assumptions, multiple conventions, accounting effects, and
+stated numerical results. Guide answers were compared with the supplied PDF.
 
 | Initial finding | Cards | Action |
 | --- | ---: | --- |
@@ -17,33 +26,56 @@ All 153 question–answer pairs were read in eight sequential batches (seven of 
 | No issue found within this review | 84 | Unchanged |
 | Total reviewed | 153 | 15 source answer fields edited |
 
-Of the 13 corrected entries, **12 address the wrong task, omit its central mechanical answer, or violate its premise; one contains a substantive conceptual claim from the guide (F2019)**. This is not a claim that 13 numerical calculations were wrong. No arithmetic error was found in the existing worked numerical answers reviewed.
+Of the 13 corrected entries, **12 address the wrong task, omit its central mechanical answer, or
+violate its premise; one contains a substantive conceptual claim from the guide (F2019)**. This is
+not a claim that 13 numerical calculations were wrong. No arithmetic error was found in the existing
+worked numerical answers reviewed.
 
-F2038 had no solution because an unrelated template had replaced it; the replacement restores the correct result.
+F2038 had no solution because an unrelated template had replaced it; the replacement restores the
+correct result.
 
-Two ambiguities are counted separately rather than added to the error total. The remaining 54 incomplete or qualified answers have not been made interview-ready by this audit. A “no issue found” result is a scoped review conclusion, not a guarantee that an answer covers every possible follow-up.
+Two ambiguities are counted separately rather than added to the error total. The remaining 54
+incomplete or qualified answers have not been made interview-ready by this audit. A “no issue found”
+result is a scoped review conclusion, not a guarantee that an answer covers every possible
+follow-up.
 
-Only `answer` fields changed in the source JSON. Question wording, IDs, firm/guide source labels, references, answer-status metadata and topic rules were retained. The two generated data files were rebuilt with the existing builder.
+Only `answer` fields changed in the source JSON. Question wording, IDs, firm/guide source labels,
+references, answer-status metadata and topic rules were retained. The two generated data files were
+rebuilt with the existing builder.
 
-Existing structural “Verified” flags are not finance-audit certifications. This audit does not re-audit prior topics or verify current market prices, named-company peer sets, or a candidate’s personal deal experience.
+Existing structural “Verified” flags are not finance-audit certifications. This audit does not
+re-audit prior topics or verify current market prices, named-company peer sets, or a candidate’s
+personal deal experience.
 
 ## Corrected answers
 
 ### F0382
 
-**Question:** Walk through multiple years of the three statements after buying $200 of PP&E, financed half with debt and half with cash. [Other assumptions not recorded.]
+**Question:** Walk through multiple years of the three statements after buying $200 of PP&E,
+financed half with debt and half with cash. [Other assumptions not recorded.]
 
 **Source labels:** Citi Technology SF
 
-**Original problem:** A corporate comparable-companies template was supplied for a multi-year equipment-purchase accounting case.
+**Original problem:** A corporate comparable-companies template was supplied for a multi-year
+equipment-purchase accounting case.
 
-**Why:** Valuation-comps template is unrelated to a $200 equipment three-statement case; initial PP&E/cash/debt effects are determinable.
+**Why:** Valuation-comps template is unrelated to a $200 equipment three-statement case; initial
+PP&E/cash/debt effects are determinable.
 
-**Replacement answer:** At purchase, capitalize $200 of PP&E. A $100 debt draw creates a $100 financing inflow; the equipment purchase creates a $200 investing outflow, so cash falls $100, PP&E rises $200 and debt rises $100. There is no immediate income-statement effect, ignoring fees. For each later year, let d be depreciation, I cash interest on the outstanding debt, P principal repaid and t the tax rate.
+**Replacement answer:** At purchase, capitalize $200 of PP&E. A $100 debt draw creates a $100
+financing inflow; the equipment purchase creates a $200 investing outflow, so cash falls $100, PP&E
+rises $200 and debt rises $100. There is no immediate income-statement effect, ignoring fees. For
+each later year, let d be depreciation, I cash interest on the outstanding debt, P principal repaid
+and t the tax rate.
 
-With no other operating changes and an immediately usable tax deduction, net income and retained earnings fall (d+I)*(1-t). Add back d in indirect CFO: CFO changes by -I+(d+I)*t. Principal repayment is a financing outflow P, so cash changes by -I+(d+I)*t-P; net PP&E falls d and debt falls P. These incremental balance-sheet changes balance.
+With no other operating changes and an immediately usable tax deduction, net income and retained
+earnings fall (d+I)*(1-t). Add back d in indirect CFO: CFO changes by -I+(d+I)*t. Principal
+repayment is a financing outflow P, so cash changes by -I+(d+I)*t-P; net PP&E falls d and debt falls
+P. These incremental balance-sheet changes balance.
 
-Roll debt and asset balances forward each year; straight-line d=(200-residual value)/useful life. Useful life, rates, timing and repayments are missing, so later years must remain symbolic. If tax deductions are not currently usable, model cash taxes and deferred taxes separately.
+Roll debt and asset balances forward each year; straight-line d=(200-residual value)/useful life.
+Useful life, rates, timing and repayments are missing, so later years must remain symbolic. If tax
+deductions are not currently usable, model cash taxes and deferred taxes separately.
 
 ### F0466
 
@@ -51,15 +83,26 @@ Roll debt and asset balances forward each year; straight-line d=(200-residual va
 
 **Source labels:** Dodge & Cox
 
-**Original problem:** An asset-allocation framework was supplied instead of methods for valuing asset classes.
+**Original problem:** An asset-allocation framework was supplied instead of methods for valuing
+asset classes.
 
-**Why:** Portfolio-allocation template answers what to own, not how to value different asset classes; none of the requested valuation methods given.
+**Why:** Portfolio-allocation template answers what to own, not how to value different asset
+classes; none of the requested valuation methods given.
 
-**Replacement answer:** Value each asset using the cash flows or economic rights its owner receives. For equities, use equity cash flow/dividend or operating-company DCF with the appropriate EV-to-equity bridge, and cross-check suitable trading multiples. For bonds and loans, discount expected coupons, principal and recoveries consistently for rates, credit, timing and embedded options.
+**Replacement answer:** Value each asset using the cash flows or economic rights its owner receives.
+For equities, use equity cash flow/dividend or operating-company DCF with the appropriate
+EV-to-equity bridge, and cross-check suitable trading multiples. For bonds and loans, discount
+expected coupons, principal and recoveries consistently for rates, credit, timing and embedded
+options.
 
-For income-producing property, discount net property cash flow or capitalize stabilized NOI, then account for financing to reach equity value. For private equity, value the underlying businesses and deduct fund-level claims, fees and expenses rather than treating commitments as assets.
+For income-producing property, discount net property cash flow or capitalize stabilized NOI, then
+account for financing to reach equity value. For private equity, value the underlying businesses and
+deduct fund-level claims, fees and expenses rather than treating commitments as assets.
 
-Commodities usually require spot/forward market evidence and analysis of supply, demand, storage and convenience yield; they do not generally have an issuer-like earnings stream. Derivatives require contract-specific payoff models. Match risk, currency, liquidity and the legal claim; an asset-allocation decision is separate from estimating value.
+Commodities usually require spot/forward market evidence and analysis of supply, demand, storage and
+convenience yield; they do not generally have an issuer-like earnings stream. Derivatives require
+contract-specific payoff models. Match risk, currency, liquidity and the legal claim; an
+asset-allocation decision is separate from estimating value.
 
 ### F0664
 
@@ -67,49 +110,83 @@ Commodities usually require spot/forward market evidence and analysis of supply,
 
 **Source labels:** Financial Technology Partners SF
 
-**Original problem:** A net-income-to-EBITDA definition was supplied instead of a method for valuing a loss-making company.
+**Original problem:** A net-income-to-EBITDA definition was supplied instead of a method for valuing
+a loss-making company.
 
-**Why:** NI-to-EBITDA definition template never values a negative-NI/negative-EBITDA business or handles unusable negative earnings multiples.
+**Why:** NI-to-EBITDA definition template never values a negative-NI/negative-EBITDA business or
+handles unusable negative earnings multiples.
 
-**Replacement answer:** Negative net income and EBITDA make historical P/E and EV/EBITDA unsuitable as straightforward valuation anchors; they do not automatically make the business worthless. Identify whether losses are temporary, growth-related or structural. Forecast revenue, sustainable margins, taxes, reinvestment and funding in base, upside and downside scenarios, then discount the resulting cash flows.
+**Replacement answer:** Negative net income and EBITDA make historical P/E and EV/EBITDA unsuitable
+as straightforward valuation anchors; they do not automatically make the business worthless.
+Identify whether losses are temporary, growth-related or structural. Forecast revenue, sustainable
+margins, taxes, reinvestment and funding in base, upside and downside scenarios, then discount the
+resulting cash flows.
 
-Include cash burn before profitability and the risk the business fails to reach that stage. Use EV/revenue or forward positive-earnings multiples only with genuinely comparable economics and a credible profitability path. Add excess cash and subtract debt/other claims to reach equity consistently, accounting for financing needs without double counting them.
+Include cash burn before profitability and the risk the business fails to reach that stage. Use
+EV/revenue or forward positive-earnings multiples only with genuinely comparable economics and a
+credible profitability path. Add excess cash and subtract debt/other claims to reach equity
+consistently, accounting for financing needs without double counting them.
 
 If no viable going concern remains, examine realizable asset value and the claim waterfall instead.
 
 ### F0678
 
-**Question:** Estimate a valuation multiple for an unfamiliar business using qualitative questions about unit economics, total addressable market and penetration, without asking for comparable-company multiples. [Business description not recorded.]
+**Question:** Estimate a valuation multiple for an unfamiliar business using qualitative questions
+about unit economics, total addressable market and penetration, without asking for
+comparable-company multiples. [Business description not recorded.]
 
 **Source labels:** GTCR
 
-**Original problem:** The answer instructed the candidate to use peer multiples even though the question specifically disallows asking for them.
+**Original problem:** The answer instructed the candidate to use peer multiples even though the
+question specifically disallows asking for them.
 
-**Why:** Answer explicitly proposes comparable-company multiples despite the question forbidding that input; use fundamentals/implied multiples instead.
+**Why:** Answer explicitly proposes comparable-company multiples despite the question forbidding
+that input; use fundamentals/implied multiples instead.
 
-**Replacement answer:** Derive an implied multiple from fundamentals instead of asking for comparable-company multiples. Ask about market size and penetration, growth runway, customer retention, pricing, contribution margins, fixed costs, required CapEx/working capital and business risk. Convert these into forecast cash flows and discount them.
+**Replacement answer:** Derive an implied multiple from fundamentals instead of asking for
+comparable-company multiples. Ask about market size and penetration, growth runway, customer
+retention, pricing, contribution margins, fixed costs, required CapEx/working capital and business
+risk. Convert these into forecast cash flows and discount them.
 
-Then divide the resulting enterprise value by the matching revenue or EBITDA measure to obtain an implied multiple. As a simplified sustainable-growth illustration, EV/EBITDA_1 = (FCFF_1/EBITDA_1)/(WACC-g), where both flow measures refer to next year and WACC exceeds g. Cash conversion must include taxes and the reinvestment required to support g. A changing-growth business needs an explicit forecast before its terminal period.
+Then divide the resulting enterprise value by the matching revenue or EBITDA measure to obtain an
+implied multiple. As a simplified sustainable-growth illustration, EV/EBITDA_1 =
+(FCFF_1/EBITDA_1)/(WACC-g), where both flow measures refer to next year and WACC exceeds g. Cash
+conversion must include taxes and the reinvestment required to support g. A changing-growth business
+needs an explicit forecast before its terminal period.
 
-No unique multiple can be calculated without the omitted business inputs, but the method does not require peer multiples.
+No unique multiple can be calculated without the omitted business inputs, but the method does not
+require peer multiples.
 
-**Formula check:** Start from EV = FCFF₁/(WACC − g) and divide by EBITDA₁. This is a sustainable-growth special case, not a universal multiple. Taxes and reinvestment drive conversion of EBITDA into FCFF; see [Damodaran’s Value/EBITDA notes](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/lectures/vebitnote.html).
+**Formula check:** Start from EV = FCFF₁/(WACC − g) and divide by EBITDA₁. This is a
+sustainable-growth special case, not a universal multiple. Taxes and reinvestment drive conversion
+of EBITDA into FCFF; see [Damodaran’s Value/EBITDA
+notes](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/lectures/vebitnote.html).
 
 ### F0697
 
-**Question:** Why might two companies have identical EV/EBITDA multiples but different P/E multiples?
+**Question:** Why might two companies have identical EV/EBITDA multiples but different P/E
+multiples?
 
 **Source labels:** Goldman Sachs LA
 
-**Original problem:** An identical-company template replaced the required relationship between operating multiples and equity multiples.
+**Original problem:** An identical-company template replaced the required relationship between
+operating multiples and equity multiples.
 
-**Why:** Identical-company template omits the mechanical EV/EBITDA-to-P/E bridge; equal operating multiples do not mean identical financial statements.
+**Why:** Identical-company template omits the mechanical EV/EBITDA-to-P/E bridge; equal operating
+multiples do not mean identical financial statements.
 
-**Replacement answer:** EV/EBITDA compares operating value with earnings before financing, tax and D&A; P/E compares common equity value with net income available to common shareholders. Therefore equal EV/EBITDA can coexist with different leverage, cash, interest costs, D&A, tax rates and non-operating items, producing different P/E ratios.
+**Replacement answer:** EV/EBITDA compares operating value with earnings before financing, tax and
+D&A; P/E compares common equity value with net income available to common shareholders. Therefore
+equal EV/EBITDA can coexist with different leverage, cash, interest costs, D&A, tax rates and
+non-operating items, producing different P/E ratios.
 
-Define B as debt + preferred stock + NCI - excess cash - other non-operating assets. Then equity value = EV-B, so P/E = [(EV/EBITDA) - B/EBITDA]/(common net income/EBITDA). For example, two unlevered, cash-free companies can each have EV=1,000 and EBITDA=100, hence EV/EBITDA=10x.
+Define B as debt + preferred stock + NCI - excess cash - other non-operating assets. Then equity
+value = EV-B, so P/E = [(EV/EBITDA) - B/EBITDA]/(common net income/EBITDA). For example, two
+unlevered, cash-free companies can each have EV=1,000 and EBITDA=100, hence EV/EBITDA=10x.
 
-With no D&A or other items, tax rates of 20% and 40% give net income of 80 and 60, and P/E of 12.5x and 16.67x. This is a mechanical example holding EV fixed, not a claim that taxes have no effect on intrinsic EV.
+With no D&A or other items, tax rates of 20% and 40% give net income of 80 and 60, and P/E of 12.5x
+and 16.67x. This is a mechanical example holding EV fixed, not a claim that taxes have no effect on
+intrinsic EV.
 
 ### F0735
 
@@ -117,15 +194,24 @@ With no D&A or other items, tax rates of 20% and 40% give net income of 80 and 6
 
 **Source labels:** Goldman Sachs NY
 
-**Original problem:** An identical-company template replaced the mechanical bridge from P/E to EV/EBITDA.
+**Original problem:** An identical-company template replaced the mechanical bridge from P/E to
+EV/EBITDA.
 
-**Why:** Equal P/E is not identical financial statements; answer omits mechanical bridge through NI/EBITDA and net debt/other claims.
+**Why:** Equal P/E is not identical financial statements; answer omits mechanical bridge through
+NI/EBITDA and net debt/other claims.
 
-**Replacement answer:** The same P/E does not imply the same operating valuation multiple. Let B = debt + preferred stock + NCI - excess cash - other non-operating assets. Since EV = common equity value + B and common equity value = (P/E)*common net income, EV/EBITDA = (P/E)*(common net income/EBITDA) + B/EBITDA.
+**Replacement answer:** The same P/E does not imply the same operating valuation multiple. Let B =
+debt + preferred stock + NCI - excess cash - other non-operating assets. Since EV = common equity
+value + B and common equity value = (P/E)*common net income, EV/EBITDA = (P/E)*(common net
+income/EBITDA) + B/EBITDA.
 
-D&A, interest, taxes and non-operating items change net income relative to EBITDA; leverage, cash and other claims change the bridge. For example, at 15x P/E, common net income of 100 implies equity value of 1,500. If EBITDA is 200, net debt of zero gives EV/EBITDA=7.5x, while net debt of 500 gives 10x, with no other bridge items.
+D&A, interest, taxes and non-operating items change net income relative to EBITDA; leverage, cash
+and other claims change the bridge. For example, at 15x P/E, common net income of 100 implies equity
+value of 1,500. If EBITDA is 200, net debt of zero gives EV/EBITDA=7.5x, while net debt of 500 gives
+10x, with no other bridge items.
 
-The example takes those net-income figures as given; it does not assume identical interest expense or other earnings inputs.
+The example takes those net-income figures as given; it does not assume identical interest expense
+or other earnings inputs.
 
 ### F0835
 
@@ -133,35 +219,57 @@ The example takes those net-income figures as given; it does not assume identica
 
 **Source labels:** Guggenheim Partners NY; UBS NY
 
-**Original problem:** An EBITDA definition replaced the negative-EBITDA valuation answer. Its cash-expense shorthand also obscured non-D&A noncash costs.
+**Original problem:** An EBITDA definition replaced the negative-EBITDA valuation answer. Its
+cash-expense shorthand also obscured non-D&A noncash costs.
 
-**Why:** EBITDA-definition template does not answer negative-EBITDA valuation. Its cash-operating-expenses shorthand also misses non-D&A noncash costs in unadjusted EBITDA.
+**Why:** EBITDA-definition template does not answer negative-EBITDA valuation. Its
+cash-operating-expenses shorthand also misses non-D&A noncash costs in unadjusted EBITDA.
 
-**Replacement answer:** A negative EBITDA denominator makes a conventional EV/EBITDA comparison economically unhelpful. Determine why EBITDA is negative and whether the business can generate sustainable positive cash flow. Use a scenario DCF that includes losses, CapEx, working capital, funding requirements and failure risk before reaching normalized profitability.
+**Replacement answer:** A negative EBITDA denominator makes a conventional EV/EBITDA comparison
+economically unhelpful. Determine why EBITDA is negative and whether the business can generate
+sustainable positive cash flow. Use a scenario DCF that includes losses, CapEx, working capital,
+funding requirements and failure risk before reaching normalized profitability.
 
-A revenue multiple or a forward positive-EBITDA multiple may provide a cross-check if peers have comparable growth, margins, capital needs and risk; do not assume all revenue deserves the same multiple. If the business cannot remain a going concern, use asset/recovery analysis instead.
+A revenue multiple or a forward positive-EBITDA multiple may provide a cross-check if peers have
+comparable growth, margins, capital needs and risk; do not assume all revenue deserves the same
+multiple. If the business cannot remain a going concern, use asset/recovery analysis instead.
 
-When reconciling earnings, unadjusted EBITDA adds back interest, taxes and D&A, not every non-cash expense; SBC and other adjustments require separate identification.
+When reconciling earnings, unadjusted EBITDA adds back interest, taxes and D&A, not every non-cash
+expense; SBC and other adjustments require separate identification.
 
-**Definition check:** Standard EBITDA is not earnings before every noncash charge. Additional adjustments must be distinguished from EBITDA; see the [SEC’s non-GAAP guidance, questions 103.01–103.02](https://www.sec.gov/rules-regulations/staff-guidance/corporation-finance-interpretations/non-gaap-financial-measures).
+**Definition check:** Standard EBITDA is not earnings before every noncash charge. Additional
+adjustments must be distinguished from EBITDA; see the [SEC’s non-GAAP guidance, questions
+103.01–103.02](https://www.sec.gov/rules-regulations/staff-guidance/corporation-finance-interpretations/non-gaap-financial-measures).
 
 ### F0876
 
-**Question:** Walk through multiple years of inventory, debt, PIK interest and debt amortization. [Inputs not recorded.]
+**Question:** Walk through multiple years of inventory, debt, PIK interest and debt amortization.
+[Inputs not recorded.]
 
 **Source labels:** Houlihan Lokey Restructuring LA
 
-**Original problem:** A comparable-companies template was supplied instead of the inventory, debt, PIK and principal-repayment roll-forwards.
+**Original problem:** A comparable-companies template was supplied instead of the inventory, debt,
+PIK and principal-repayment roll-forwards.
 
-**Why:** Comps template unrelated to inventory, PIK, interest and amortization accounting, even though missing inputs justify only a symbolic solution.
+**Why:** Comps template unrelated to inventory, PIK, interest and amortization accounting, even
+though missing inputs justify only a symbolic solution.
 
-**Replacement answer:** Build an inventory, debt and cash-flow roll-forward for each year. Buying inventory increases inventory and reduces cash, or increases accounts payable if unpaid; borrowing to fund it is a separate financing inflow and debt increase. Recognize revenue when earned and inventory cost as COGS when sold, distinguishing cash sales from receivables.
+**Replacement answer:** Build an inventory, debt and cash-flow roll-forward for each year. Buying
+inventory increases inventory and reduces cash, or increases accounts payable if unpaid; borrowing
+to fund it is a separate financing inflow and debt increase. Recognize revenue when earned and
+inventory cost as COGS when sold, distinguishing cash sales from receivables.
 
-For opening debt D, cash interest c and PIK interest p for the period, both c and p reduce pre-tax income, but only c is paid currently. Add p back in indirect CFO; it increases debt without a cash financing inflow. Ending debt = opening debt + new cash borrowing + capitalized PIK - principal repaid, using the actual interest-accrual convention.
+For opening debt D, cash interest c and PIK interest p for the period, both c and p reduce pre-tax
+income, but only c is paid currently. Add p back in indirect CFO; it increases debt without a cash
+financing inflow. Ending debt = opening debt + new cash borrowing + capitalized PIK - principal
+repaid, using the actual interest-accrual convention.
 
-Under the usual US GAAP interview convention, cash interest is operating and principal repayment is financing. Reconcile net income to CFO using non-cash charges and changes in receivables, inventory and payables; then update cash and retained earnings and check assets=liabilities+equity.
+Under the usual US GAAP interview convention, cash interest is operating and principal repayment is
+financing. Reconcile net income to CFO using non-cash charges and changes in receivables, inventory
+and payables; then update cash and retained earnings and check assets=liabilities+equity.
 
-Amounts, sales/collection timing, tax use and amortization terms are absent, so no unique multi-year numbers can be supplied.
+Amounts, sales/collection timing, tax use and amortization terms are absent, so no unique multi-year
+numbers can be supplied.
 
 ### F1137
 
@@ -169,79 +277,131 @@ Amounts, sales/collection timing, tax use and amortization terms are absent, so 
 
 **Source labels:** LionTree
 
-**Original problem:** An EBITDA definition replaced the requested loss-making technology-company valuation answer.
+**Original problem:** An EBITDA definition replaced the requested loss-making technology-company
+valuation answer.
 
-**Why:** Same EBITDA-definition template as F0835; no valuation of a loss-making technology business or path to sustainable margins.
+**Why:** Same EBITDA-definition template as F0835; no valuation of a loss-making technology business
+or path to sustainable margins.
 
-**Replacement answer:** For a technology company with negative EBITDA, first test whether losses reflect scalable growth investment or poor underlying economics. Build a scenario DCF from customers/users, monetization, retention and gross margins through sales/R&D costs, reinvestment and cash burn to sustainable cash flow.
+**Replacement answer:** For a technology company with negative EBITDA, first test whether losses
+reflect scalable growth investment or poor underlying economics. Build a scenario DCF from
+customers/users, monetization, retention and gross margins through sales/R&D costs, reinvestment and
+cash burn to sustainable cash flow.
 
-Include funding and survival risks. EV/revenue or, for recurring software, EV/ARR can be cross-checks when adjusted for growth, retention, achievable margins and capital requirements. A forward EBITDA multiple is useful only once a credible positive denominator exists.
+Include funding and survival risks. EV/revenue or, for recurring software, EV/ARR can be
+cross-checks when adjusted for growth, retention, achievable margins and capital requirements. A
+forward EBITDA multiple is useful only once a credible positive denominator exists.
 
-Historical negative EV/EBITDA is not a meaningful cheapness ranking. Keep SBC and other economic costs explicit rather than assuming every non-cash expense disappears.
+Historical negative EV/EBITDA is not a meaningful cheapness ranking. Keep SBC and other economic
+costs explicit rather than assuming every non-cash expense disappears.
 
 ### F1277
 
-**Question:** If all else equal, company A has a larger PE than company B, which one would you invest in?
+**Question:** If all else equal, company A has a larger PE than company B, which one would you
+invest in?
 
 **Source labels:** Nomura NY
 
-**Original problem:** The answer explained multiple differences using unequal growth or risk, although the question holds everything else equal.
+**Original problem:** The answer explained multiple differences using unequal growth or risk,
+although the question holds everything else equal.
 
-**Why:** Question holds everything else equal, but generic template justifies different prices with different growth/risk; should choose lower positive P/E B under the premise, then explain real-world qualifications.
+**Why:** Question holds everything else equal, but generic template justifies different prices with
+different growth/risk; should choose lower positive P/E B under the premise, then explain real-world
+qualifications.
 
-**Replacement answer:** If everything relevant truly is equal, including positive, consistently measured earnings, future growth, cash conversion, leverage and risk, choose company B: its lower P/E means paying less per dollar of the same earnings stream and receiving a higher earnings yield. That is the answer under the stated premise.
+**Replacement answer:** If everything relevant truly is equal, including positive, consistently
+measured earnings, future growth, cash conversion, leverage and risk, choose company B: its lower
+P/E means paying less per dollar of the same earnings stream and receiving a higher earnings yield.
+That is the answer under the stated premise.
 
-In real investing, check that equality actually holds: a low P/E can reflect peak or non-recurring earnings, weaker prospects or greater risk. A zero/negative earnings denominator makes the simple comparison unsuitable. Do not explain away the question by assuming different growth or risk after it explicitly holds those factors equal.
+In real investing, check that equality actually holds: a low P/E can reflect peak or non-recurring
+earnings, weaker prospects or greater risk. A zero/negative earnings denominator makes the simple
+comparison unsuitable. Do not explain away the question by assuming different growth or risk after
+it explicitly holds those factors equal.
 
 ### F1357
 
-**Question:** Walk me through a deal, multiple follow-up questions asking for the motivations for certain actions.
+**Question:** Walk me through a deal, multiple follow-up questions asking for the motivations for
+certain actions.
 
 **Source labels:** PJT Partners RSSG NY
 
-**Original problem:** The answer interpreted “multiple follow-up questions” as valuation multiples and never walked through a deal.
+**Original problem:** The answer interpreted “multiple follow-up questions” as valuation multiples
+and never walked through a deal.
 
-**Why:** Multiple follow-up questions refers to interview follow-ups, not valuation multiples. Comps template does not walk through a deal or its motivations.
+**Why:** Multiple follow-up questions refers to interview follow-ups, not valuation multiples. Comps
+template does not walk through a deal or its motivations.
 
-**Replacement answer:** Choose an actual deal you worked on or studied and make that distinction explicit. Explain the buyer and target, their businesses, the transaction objective, price and valuation basis, consideration/funding, strategic rationale and verified status. Then explain the reasons for the important decisions: why this target or buyer, why that price and financing mix, what alternatives were considered, and which risks or synergies mattered.
+**Replacement answer:** Choose an actual deal you worked on or studied and make that distinction
+explicit. Explain the buyer and target, their businesses, the transaction objective, price and
+valuation basis, consideration/funding, strategic rationale and verified status. Then explain the
+reasons for the important decisions: why this target or buyer, why that price and financing mix,
+what alternatives were considered, and which risks or synergies mattered.
 
-If discussing your own experience, state your actual contribution and respect confidentiality. Prepare follow-up support from the deal announcement, filings and your analysis. Here, "multiple follow-up questions" means several interview questions; it is not a request only for valuation multiples.
+If discussing your own experience, state your actual contribution and respect confidentiality.
+Prepare follow-up support from the deal announcement, filings and your analysis. Here, "multiple
+follow-up questions" means several interview questions; it is not a request only for valuation
+multiples.
 
 ### F2019
 
-**Question:** Why do you look at BOTH historical and projected metrics in comparable public company and precedent transaction analyses?
+**Question:** Why do you look at BOTH historical and projected metrics in comparable public company
+and precedent transaction analyses?
 
 **Source labels:** M&I 400 Questions Guide (2025), p. 84
 
-**Original problem:** The guide-derived answer asserted that projected metrics necessarily assume steady-state operations without acquisitions, divestitures or non-recurring items.
+**Original problem:** The guide-derived answer asserted that projected metrics necessarily assume
+steady-state operations without acquisitions, divestitures or non-recurring items.
 
-**Why:** Faithful guide pp84-85 says forecasts assume steady state and no acquisitions/divestitures/nonrecurring items. That is not a property of projected metrics; forecast basis and normalization must be checked.
+**Why:** Faithful guide pp84-85 says forecasts assume steady state and no
+acquisitions/divestitures/nonrecurring items. That is not a property of projected metrics; forecast
+basis and normalization must be checked.
 
-**Replacement answer:** Historical metrics are based on reported results and provide an observable baseline, but acquisitions, divestitures, cyclicality and non-recurring items may distort comparability. Projected metrics reflect expected future performance and can better capture growth, operating changes and a path toward normalized profitability, but they depend on uncertain assumptions.
+**Replacement answer:** Historical metrics are based on reported results and provide an observable
+baseline, but acquisitions, divestitures, cyclicality and non-recurring items may distort
+comparability. Projected metrics reflect expected future performance and can better capture growth,
+operating changes and a path toward normalized profitability, but they depend on uncertain
+assumptions.
 
-A forecast does not automatically assume a steady state or exclude acquisitions, divestitures or one-time items; read what each estimate actually includes. Compare historical and forward multiples to understand the change in expected earnings, and align financial periods, transaction scope and normalization policies across companies.
+A forecast does not automatically assume a steady state or exclude acquisitions, divestitures or
+one-time items; read what each estimate actually includes. Compare historical and forward multiples
+to understand the change in expected earnings, and align financial periods, transaction scope and
+normalization policies across companies.
 
-For precedent transactions, use forecasts available at the relevant deal date rather than later hindsight.
+For precedent transactions, use forecasts available at the relevant deal date rather than later
+hindsight.
 
-**Evidence:** The original wording is present in the supplied guide on printed pp. 84–85; this is a guide generalization, not a transcription error. Forecasts can explicitly contain a high-growth period before stable growth, as explained in [Damodaran’s valuation notes](https://pages.stern.nyu.edu/adamodar/New_Home_Page/valquestions/highgrowthperiod.htm).
+**Evidence:** The original wording is present in the supplied guide on printed pp. 84–85; this is a
+guide generalization, not a transcription error. Forecasts can explicitly contain a high-growth
+period before stable growth, as explained in [Damodaran’s valuation
+notes](https://pages.stern.nyu.edu/adamodar/New_Home_Page/valquestions/highgrowthperiod.htm).
 
 The correction requires checking what each forecast includes rather than assuming normalization.
 
 ### F2038
 
-**Question:** Company A has a P / E multiple of 15x, with a Net Income of $120 and a TEV / EBITDA multiple of 15x. Its EBITDA is $150. Company B has the same 15x P / E multiple but a Net Income of $100, a TEV / EBITDA of 10x, and an EBITDA of $200. Which one has a higher Net Debt balance?
+**Question:** Company A has a P / E multiple of 15x, with a Net Income of $120 and a TEV / EBITDA
+multiple of 15x. Its EBITDA is $150. Company B has the same 15x P / E multiple but a Net Income of
+$100, a TEV / EBITDA of 10x, and an EBITDA of $200. Which one has a higher Net Debt balance?
 
 **Source labels:** M&I 400 Questions Guide (2025), p. 92
 
-**Original problem:** A net-income-to-EBITDA definition replaced a fully specified net-debt calculation.
+**Original problem:** A net-income-to-EBITDA definition replaced a fully specified net-debt
+calculation.
 
-**Why:** NI-to-EBITDA template replaces a fully specified net-debt exercise. Guide p92 gives the correct result: A450 versus B500, so B by50.
+**Why:** NI-to-EBITDA template replaces a fully specified net-debt exercise. Guide p92 gives the
+correct result: A450 versus B500, so B by50.
 
-**Replacement answer:** Assuming net debt is the only EV-to-equity bridge item, company A has equity value = 15*120 = 1,800 and EV = 15*150 = 2,250, so net debt = 2,250-1,800 = 450. Company B has equity value = 15*100 = 1,500 and EV = 10*200 = 2,000, so net debt = 2,000-1,500 = 500. Company B therefore has the higher net debt balance, by 50.
+**Replacement answer:** Assuming net debt is the only EV-to-equity bridge item, company A has equity
+value = 15*120 = 1,800 and EV = 15*150 = 2,250, so net debt = 2,250-1,800 = 450. Company B has
+equity value = 15*100 = 1,500 and EV = 10*200 = 2,000, so net debt = 2,000-1,500 = 500. Company B
+therefore has the higher net debt balance, by 50.
 
-If preferred stock, NCI or other non-operating assets are present, EV minus equity is the combined bridge amount rather than net debt alone.
+If preferred stock, NCI or other non-operating assets are present, EV minus equity is the combined
+bridge amount rather than net debt alone.
 
-**Evidence:** The supplied guide’s printed p. 92 gives A net debt of 450 and B of 500. The source JSON’s template had displaced that correct solution.
+**Evidence:** The supplied guide’s printed p. 92 gives A net debt of 450 and B of 500. The source
+JSON’s template had displaced that correct solution.
 
 ## Wording clarifications — not additional error findings
 
@@ -249,29 +409,50 @@ If preferred stock, NCI or other non-operating assets are present, EV minus equi
 
 **Question:** How would you value that (pointing out the window) office building?
 
-**Finding:** Core NOI/cap-rate approach is correct. Wording AFFO adds recurring capital ... adjustments is ambiguous: recurring CapEx is normally deducted from FFO, not added. Clarify sign; not an explicit false formula.
+**Finding:** Core NOI/cap-rate approach is correct. Wording AFFO adds recurring capital ...
+adjustments is ambiguous: recurring CapEx is normally deducted from FFO, not added. Clarify sign;
+not an explicit false formula.
 
-**Replacement answer:** Estimate stabilized net operating income from rents/occupancy and operating expenses, excluding financing and depreciation. A simple unlevered property value is NOI/capitalization rate; reconcile it to DCF and comparable sales. Account for tenant credit, location, lease duration, vacancy, tenant improvements, leasing commissions and maintenance CapEx.
+**Replacement answer:** Estimate stabilized net operating income from rents/occupancy and operating
+expenses, excluding financing and depreciation. A simple unlevered property value is
+NOI/capitalization rate; reconcile it to DCF and comparable sales. Account for tenant credit,
+location, lease duration, vacancy, tenant improvements, leasing commissions and maintenance CapEx.
 
-Equity value subtracts debt and other claims. For REITs, FFO adjusts net income for specified real-estate depreciation and disposition items; AFFO generally deducts recurring maintenance capital expenditures from FFO and adjusts non-cash rent and other items; definitions vary by issuer.
+Equity value subtracts debt and other claims. For REITs, FFO adjusts net income for specified
+real-estate depreciation and disposition items; AFFO generally deducts recurring maintenance capital
+expenditures from FFO and adjusts non-cash rent and other items; definitions vary by issuer.
 
-Hotels often have higher operational volatility than long-lease residential assets, but cap rates depend on quality, market and growth rather than a universal ranking.
+Hotels often have higher operational volatility than long-lease residential assets, but cap rates
+depend on quality, market and growth rather than a universal ranking.
 
-The original phrase about adding capital “adjustments” did not unambiguously state a false formula, but it could teach the wrong sign. [Nareit’s AFFO definition](https://www.reit.com/glossary/adjusted-funds-operations-affo) deducts normalized recurring capital spending and explains that issuer definitions vary.
+The original phrase about adding capital “adjustments” did not unambiguously state a false formula,
+but it could teach the wrong sign. [Nareit’s AFFO
+definition](https://www.reit.com/glossary/adjusted-funds-operations-affo) deducts normalized
+recurring capital spending and explains that issuer definitions vary.
 
 ### F0537
 
 **Question:** $100 in debt is issued, how does it impact your P/E and EV/EBITDA?
 
-**Finding:** First sentence correctly keeps initial EV, EBITDA and equity unchanged. Later NI changes by expense less income reverses the signed expression; next clause correctly says earnings fall. Clarify as cash interest income minus debt interest expense, after tax; count as wording clarification, not an independent directional error.
+**Finding:** First sentence correctly keeps initial EV, EBITDA and equity unchanged. Later NI
+changes by expense less income reverses the signed expression; next clause correctly says earnings
+fall. Clarify as cash interest income minus debt interest expense, after tax; count as wording
+clarification, not an independent directional error.
 
-**Replacement answer:** If the $100 debt proceeds remain as cash, EV and EBITDA are initially unchanged, so EV/EBITDA is unchanged. Equity value is also initially unchanged. Later, assuming the same usable tax rate t, the incremental net-income effect is (interest income on the new cash - interest expense on the new debt)*(1-t); P/E may rise if earnings fall and equity value stays constant. Interest rates and how cash is used are needed for a numerical P/E effect.
+**Replacement answer:** If the $100 debt proceeds remain as cash, EV and EBITDA are initially
+unchanged, so EV/EBITDA is unchanged. Equity value is also initially unchanged. Later, assuming the
+same usable tax rate t, the incremental net-income effect is (interest income on the new cash -
+interest expense on the new debt)*(1-t); P/E may rise if earnings fall and equity value stays
+constant. Interest rates and how cash is used are needed for a numerical P/E effect.
 
 ## Incomplete or qualified answers left unchanged (54)
 
-These findings concern missing explanations, examples, assumptions or overgeneralized heuristics. They are not included in the 13-error count. Missing numerical inputs are not treated as an error when the conditional method is otherwise appropriate.
+These findings concern missing explanations, examples, assumptions or overgeneralized heuristics.
+They are not included in the 13-error count. Missing numerical inputs are not treated as an error
+when the conditional method is otherwise appropriate.
 
-F1015 is specifically a defensible bank answer that omits the other two company types; it is not counted as a false bank-valuation claim.
+F1015 is specifically a defensible bank answer that omits the other two company types; it is not
+counted as a false bank-valuation claim.
 
 | Card | Question | Missing content or qualification |
 | --- | --- | --- |
@@ -332,7 +513,10 @@ F1015 is specifically a defensible bank answer that omits the other two company 
 
 ## Numerical and accounting verification
 
-Existing numerical results were independently recomputed. A separate check run passed **67 numerical assertions**, plus the explicit square-door simulation and the recovery-offer comparison. These checks support the arithmetic and formulas; they do not substitute for the qualitative card-by-card review.
+Existing numerical results were independently recomputed. A separate check run passed **67 numerical
+assertions**, plus the explicit square-door simulation and the recovery-offer comparison. These
+checks support the arithmetic and formulas; they do not substitute for the qualitative card-by-card
+review.
 
 | Cards | Recomputed result / check |
 | --- | --- |
@@ -356,23 +540,38 @@ Existing numerical results were independently recomputed. A separate check run p
 | F0537 clarification | Cash interest income 2 less debt interest 5 at 25% tax gives ΔNI −2.25; matched yields give zero |
 | F0678 replacement | EV/forward EBITDA identity reconciles to FCFF₁/(WACC−g), with sustainable reinvestment and WACC > g |
 
-The F0382 and F0876 check scenarios are independent illustrations, not invented facts added to incomplete interview prompts. Cash-interest classification follows the usual US GAAP interview convention. The replacements retain symbolic answers where useful life, interest rates, repayment schedules or timing are missing.
+The F0382 and F0876 check scenarios are independent illustrations, not invented facts added to
+incomplete interview prompts. Cash-interest classification follows the usual US GAAP interview
+convention. The replacements retain symbolic answers where useful life, interest rates, repayment
+schedules or timing are missing.
 
-Current tax benefits require usable deductions; otherwise cash and deferred taxes must be modeled separately.
+Current tax benefits require usable deductions; otherwise cash and deferred taxes must be modeled
+separately.
 
 ## Guide comparison
 
-All 15 cards marked `guide_answer` in this topic were checked against the supplied PDF: F2013 (printed p. 82), F2016 (83–84), F2017–F2018 (84), F2019 (84–85), F2020–F2021 (85), F2027 (88–89), F2040 (93), F2170 (163), F2177 (166–167), F2184 (170), F2195 (175–176), F2197 (176), and F2250 (205).
+All 15 cards marked `guide_answer` in this topic were checked against the supplied PDF: F2013
+(printed p. 82), F2016 (83–84), F2017–F2018 (84), F2019 (84–85), F2020–F2021 (85), F2027 (88–89),
+F2040 (93), F2170 (163), F2177 (166–167), F2184 (170), F2195 (175–176), F2197 (176), and F2250
+(205).
 
-The guide-origin numerical question F2038 was additionally checked on p. 92 despite its current model-answer status. Page references here are printed guide pages.
+The guide-origin numerical question F2038 was additionally checked on p. 92 despite its current
+model-answer status. Page references here are printed guide pages.
 
-F2019 warranted overriding the guide’s blanket claim. F2027’s growth explanation and F2184’s gold/copper P/NAV ranking remain qualified heuristics, flagged separately. In particular, a metal’s nominal dollar price alone does not establish a higher company valuation multiple.
+F2019 warranted overriding the guide’s blanket claim. F2027’s growth explanation and F2184’s
+gold/copper P/NAV ranking remain qualified heuristics, flagged separately. In particular, a metal’s
+nominal dollar price alone does not establish a higher company valuation multiple.
 
-F2250 lists possible technology valuation methods but omits survival and financing considerations. These three guide entries remain unchanged. No assertion is made about present gold/copper market multiples.
+F2250 lists possible technology valuation methods but omits survival and financing considerations.
+These three guide entries remain unchanged. No assertion is made about present gold/copper market
+multiples.
 
 ## Shared-template scan and leads outside this topic
 
-When repeated templates caused answer mismatches, all occurrences of those templates in the 2,049-entry source were searched and their question fit inspected. This is a limited routing scan, not a full audit of other topics; no out-of-topic answers were edited. Counts describe the pre-edit source.
+When repeated templates caused answer mismatches, all occurrences of those templates in the
+2,049-entry source were searched and their question fit inspected. This is a limited routing scan,
+not a full audit of other topics; no out-of-topic answers were edited. Counts describe the pre-edit
+source.
 
 | Template signature | Occurrences | Follow-up |
 | --- | ---: | --- |
@@ -384,21 +583,35 @@ When repeated templates caused answer mismatches, all occurrences of those templ
 | Historical metrics are useful because | 1 | F2019 only; corrected |
 | Estimate stabilized net operating income | 6 | F0513 clarified here; review AFFO wording on other occurrences and F0988 apartment-probability mismatch |
 
-Other IDs for reproducibility: identical-statements F0115/F0669/F0786/F1368/F1529/F1688/F1797/F1798; NI-to-EBITDA F1686/F2088/F2089; revenue-minus-cash-expenses F0016/F0622/F0665/F0821/F1018/F1174/F1421/F1438/F1484; NOI F0310/F0493/F0988/F1354/F1355. Treat these as leads, not additional error counts or previously completed audits.
+Other IDs for reproducibility: identical-statements F0115/F0669/F0786/F1368/F1529/F1688/F1797/F1798;
+NI-to-EBITDA F1686/F2088/F2089; revenue-minus-cash-expenses
+F0016/F0622/F0665/F0821/F1018/F1174/F1421/F1438/F1484; NOI F0310/F0493/F0988/F1354/F1355. Treat
+these as leads, not additional error counts or previously completed audits.
 
 ## Build and scope checks
 
-The unmodified builder produced 3,234 cards: 2,049 technical and 1,185 behavioral. Exactly 15 source answers changed. All other source fields were preserved; all 3,219 other generated cards remained identical.
+The unmodified builder produced 3,234 cards: 2,049 technical and 1,185 behavioral. Exactly 15 source
+answers changed. All other source fields were preserved; all 3,219 other generated cards remained
+identical.
 
-The topic still contains 153 cards, with the same question IDs, wording, sources and topic assignments. Both generated formats contain the same payload.
+The topic still contains 153 cards, with the same question IDs, wording, sources and topic
+assignments. Both generated formats contain the same payload.
 
-The builder automatically derives some group/difficulty tags from answer text; consequently F0466 and F0664 have regenerated group tags and F0697 a regenerated difficulty tag. These follow directly from the existing rules, which were not changed. Verification flags and answer-status fields were not manually promoted.
+The builder automatically derives some group/difficulty tags from answer text; consequently F0466
+and F0664 have regenerated group tags and F0697 a regenerated difficulty tag. These follow directly
+from the existing rules, which were not changed. Verification flags and answer-status fields were
+not manually promoted.
 
-Files delivered in the repository: `Technical_Questions_and_Answers.json`, `flashcards/data.json`, `flashcards/data.js`, and this report (`valuation_audit.md`). The existing untracked `AUDIT_HANDOFF.md` was left untouched. No website UI or backend change was made. The changes are intended for a local commit without a push.
+Files delivered in the repository: `Technical_Questions_and_Answers.json`, `flashcards/data.json`,
+`flashcards/data.js`, and this report (`valuation_audit.md`). The existing untracked
+`AUDIT_HANDOFF.md` was left untouched. No website UI or backend change was made. The changes are
+intended for a local commit without a push.
 
 ## Complete review ledger (153 cards)
 
-Each entry below records its initial classification and final action. “No issue found” is scoped to the stated assumptions and supplied answer; “incomplete” includes qualified guide heuristics. This ledger accounts for every card rather than sampling representative answers.
+Each entry below records its initial classification and final action. “No issue found” is scoped to
+the stated assumptions and supplied answer; “incomplete” includes qualified guide heuristics. This
+ledger accounts for every card rather than sampling representative answers.
 
 | Batch | Card | Initial finding | Action | Review note |
 | ---: | --- | --- | --- | --- |
