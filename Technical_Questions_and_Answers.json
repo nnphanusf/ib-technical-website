@@ -5339,7 +5339,7 @@
     },
     {
       "question_id": "F0201",
-      "question": "What is 21% of 18? If a company has an EBITDA of $100 and an EV/EBITDA of 5x....what has a larger effect a 1x increase or a $5 increase? Can you walk me through the bridge from Enterprise Value to Equity Value?",
+      "question": "A company has $100 of EBITDA and trades at 5x EV/EBITDA. Which has the larger effect on enterprise value: a one-turn increase in the multiple or a $5 increase in EBITDA?",
       "question_sources": [
         "Bank of America NY"
       ],
@@ -5348,13 +5348,17 @@
         "Bank of America NY Insights II/BofA Insight 7.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "21% of 18 is 3.78. Starting EV = 100*5 = $500. A one-turn increase to 6x adds $100; a $5 EBITDA increase at 5x adds $25. Therefore, the one-turn increase has the larger EV effect under those assumptions. Equity value = EV - debt - preferred stock - NCI + excess cash and other non-operating assets. The interview-note answer favoring $5 is incorrect for these stated inputs.",
-      "notes": [],
+      "answer": "Starting enterprise value is $100 * 5 = $500. A one-turn increase to 6x on the same $100 of EBITDA adds $100. A $5 increase in EBITDA at the unchanged 5x multiple adds $25. So the one-turn re-rating is four times the effect of the $5 of EBITDA here. The general rule: a one-turn move is worth EBITDA dollars, and a one-dollar move is worth the multiple, so the multiple wins whenever EBITDA exceeds the multiple. At $100 of EBITDA and 5x it is not close; at $4 of EBITDA and 5x the EBITDA increase would win. Note that the original interview note answered this the other way round, which is wrong for the inputs as stated. In practice the comparison is not symmetric: management can usually influence EBITDA but not the multiple, and a re-rating normally has to be earned through better growth, returns or risk.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: the 21%-of-18 mental arithmetic, and the enterprise-to-equity bridge (F1128/F0426)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F0201"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "What is 21% of 18? If a company has an EBITDA of $100 and an EV/EBITDA of 5x....what has a larger effect a 1x increase or a $5 increase? Can you walk me through the bridge from Enterprise Value to Equity Value?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -5557,7 +5561,7 @@
     },
     {
       "question_id": "F0212",
-      "question": "How do you calculate enterprise value? What happens to Enterprise Value when a company raises debt? Asset sold for $120 valued at $100, walk me through the effects on the three financial statements What happens when an asset is written down for $80 and originally valued at $100?",
+      "question": "An asset is \"written down for $80\" when it was originally valued at $100. Walk me through the effects on the three statements. Assume a 20% tax rate.",
       "question_sources": [
         "Bank of America PA"
       ],
@@ -5565,13 +5569,17 @@
         "Bank of America PA Insights/BofA PA Insight 13.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "EV = equity + debt + preferred + NCI - excess cash. Debt issuance held in cash leaves EV unchanged. Selling an asset with book value 100 for 120 creates a gain of 20: net income +20(1-t), cash +120-20t, asset -100 and retained earnings +20(1-t). If an asset with book value 100 is written down TO 80, the loss is 20; if written down BY 80, the loss is 80. For an immediately deductible loss W, NI -W(1-t), CFO +Wt after adding back W, and asset -W. Clarify that wording before calculating.",
-      "notes": [],
+      "answer": "First settle the wording, because the two readings give different answers: written down TO $80 is a $20 loss, while written down BY $80 is an $80 loss. Ask before you calculate — spotting the ambiguity is most of the point of the question. Take the $80 write-down, deductible now, at a 20% tax rate.\n\n• Income Statement: an $80 non-cash loss, so Pre-Tax Income falls $80 and Net Income falls $64.\n\n• Cash Flow Statement: Net Income −$64, add back the $80 non-cash loss, so cash rises $16.\n\n• Balance Sheet: Cash +$16 and the asset −$80, so assets fall $64; Retained Earnings −$64, and both sides fall $64 and balance.\n\n• Intuition: the write-down itself moves no cash; the only cash effect is $16 of tax relief.\n\nOn the other reading, a $20 loss gives Net Income −$16, cash +$4 and assets −$16. And if the impairment is a book-only write-down with no current deduction, cash does not move at all and you record a deferred tax effect instead.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: how to calculate enterprise value (F0342), what happens to EV when a company raises debt (F1535), and an asset sold above book value (F0796/F1428)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F0212"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "How do you calculate enterprise value? What happens to Enterprise Value when a company raises debt? Asset sold for $120 valued at $100, walk me through the effects on the three financial statements What happens when an asset is written down for $80 and originally valued at $100?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -7988,7 +7996,7 @@
     },
     {
       "question_id": "F0327",
-      "question": "What is the difference between a revolver and a term loan What are some common multiples What is beta? Walk me through rev → free cash flow (clarify that it's unlevered FCF) How would $100 increase in cash affect Enterprise Value (it doesn't)?",
+      "question": "How would a $100 increase in cash affect enterprise value?",
       "question_sources": [
         "Cain Brothers"
       ],
@@ -7996,13 +8004,17 @@
         "Cain Brothers Insights/Cain Brothers Insight 4.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "A revolver can be drawn/repaid/redrawn; a term loan normally cannot. Common multiples include EV/revenue, EV/EBITDA and P/E, with claimant-consistent denominators. Beta measures market covariance risk. FCFF = EBIT(1-t)+D&A-CapEx-change in operating NWC. The cash question needs a funding source: $100 cash generated by operations typically raises equity $100 and leaves operating EV unchanged; $100 borrowed raises debt and cash equally. Holding equity fixed while independently adding cash would mechanically reduce EV $100, so “cash never affects EV” is not a complete statement.",
-      "notes": [],
+      "answer": "The glib answer is that it does not, and that is usually right but not always, so say why. Enterprise value is equity value plus debt and other claims less cash, so what matters is where the $100 came from. If the company generated it from operations, equity value rises $100 and cash rises $100, and the two offset: operating enterprise value is unchanged. If it borrowed the $100 and is holding it, debt rises $100 and cash rises $100, and again the effects cancel. That is the sense in which cash does not affect enterprise value — the cash arrives alongside an equal increase in a claim on the company. What would change enterprise value is adding cash while holding equity value fixed, which is not a real transaction: mechanically it reduces enterprise value by $100. So the complete answer is that building cash does not change the value of the operating business, because enterprise value is deliberately constructed to strip financing and non-operating assets out. The flip side is the useful one: spending that $100 on an operating asset does raise operating enterprise value, because value has moved from non-operating cash into operations — though paying a fair price for it creates no value for shareholders.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: revolver versus term loan (F0051), common multiples (F1577), what beta is (F0238), and revenue to unlevered free cash flow (F0113)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F0327"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "What is the difference between a revolver and a term loan What are some common multiples What is beta? Walk me through rev → free cash flow (clarify that it's unlevered FCF) How would $100 increase in cash affect Enterprise Value (it doesn't)?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -9366,7 +9378,7 @@
     },
     {
       "question_id": "F0390",
-      "question": "What are four ways to value a company? How do you calculate WACC? What is WACC? What is CAPM? What is beta? Gives examples of stocks and asks what beta you think they should have How does $10 of depreciation flow through the financial statements? What are the financial statements? How do the financial statements connect? Walk me through a DCF. Which valuation method results in the highest valuation?",
+      "question": "Give me a stock and tell me what beta you would expect it to have, and why.",
       "question_sources": [
         "Citi Technology SF"
       ],
@@ -9374,13 +9386,17 @@
         "Citi Technology SF Insights/Citi SF Tech Insight 29.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Four approaches are trading comparables, precedent deals, DCF and LBO analysis. WACC weights required equity and after-tax debt returns by market capital; CAPM estimates equity return as Rf+beta*ERP, where beta measures systematic market exposure. For depreciation +10: NI -10(1-t), cash +10t, PP&E -10 and retained earnings -10(1-t), assuming usable tax deduction. Income statement net income links to retained earnings and the indirect CFS; ending cash links to the balance sheet. DCF discounts FCFF and terminal value at WACC. There is no universal ranking: precedents may reflect control/synergies, while DCF and LBO depend on assumptions. Beta examples must distinguish business risk from leverage and total volatility.",
-      "notes": [],
+      "answer": "Reason from the business, not the ticker. Start with how sensitive the company's revenue and earnings are to the economic cycle: discretionary demand, long-lived capital goods and advertising are cyclical, while groceries, utilities and regulated services are not. Then add operating leverage, since a high fixed-cost base amplifies whatever cyclicality exists. Then add financial leverage, because beta is levered: the same business carries a higher equity beta with more debt. So a regulated water utility sits well below 1, a diversified consumer-staples business near or below 1, a broad industrial or bank around or above 1, and a highly levered cyclical or an unprofitable high-growth technology company well above 1. Say the number as a range, not a point, and name what would move it. Two cautions: beta measures covariance with the market, not total risk, so a volatile business with idiosyncratic risk can have a modest beta; and a published beta depends on the window, the return frequency and the index, so quote it as an estimate and cross-check it against unlevered peer betas relevered to the company's capital structure.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: four ways to value a company (F0091), WACC (F0702/F0383), CAPM (F0274), what beta is (F0238), $10 of depreciation (F0038), the three statements (F0043), how they connect (F0775), walk me through a DCF (F0037), which method gives the highest value (F0854)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F0390"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "What are four ways to value a company? How do you calculate WACC? What is WACC? What is CAPM? What is beta? Gives examples of stocks and asks what beta you think they should have How does $10 of depreciation flow through the financial statements? What are the financial statements? How do the financial statements connect? Walk me through a DCF. Which valuation method results in the highest valuation?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -15679,7 +15695,7 @@
     },
     {
       "question_id": "F0698",
-      "question": "Is cost of debt always cheaper than cost of equity? Are there ANY situation where cost of debt is more expensive? You have 50 blue balls and 50 red balls with 2 buckets. How do you maximize your chance of randomly selecting blue balls.",
+      "question": "Is the cost of debt always cheaper than the cost of equity? Are there any situations where the cost of debt is higher?",
       "question_sources": [
         "Goldman Sachs LA"
       ],
@@ -15687,13 +15703,17 @@
         "Goldman Sachs LA Insights/GS LA Insight 13.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Debt normally costs less because of seniority and tax deductibility, but quoted yields on distressed debt can exceed a simplistic CAPM equity estimate; compare consistent expected returns and risks rather than treating promised YTM as expected return. For the ball puzzle, assuming each bucket is chosen with probability 1/2 and then a ball uniformly: put one blue ball alone in one bucket and 49 blue plus 50 red in the other. Success probability = 1/2 + (1/2)*(49/99) = 74/99, approximately 74.75%. Different bucket-selection rules change the result.",
-      "notes": [],
+      "answer": "Normally debt is cheaper, for two reasons: lenders sit ahead of shareholders and have contractual payments, so they require less return for the same business, and interest is usually tax-deductible, which lowers the after-tax cost further. But it is not a law. The comparison can invert in distress: a bond yielding 20% to maturity is promising a high return to compensate for a real chance of default, and once leverage is that high the equity may be a small residual stub that a naive CAPM estimate prices at a lower expected return than the debt. Be careful what you are comparing. A promised yield to maturity is not an expected return, because it assumes full repayment; the expected return on distressed debt is lower than its quoted yield once you probability-weight recoveries. The clean statement is that for the same company at a sustainable capital structure, debt is cheaper, and that raising leverage pushes both costs up, which is why the all-debt structure does not minimise WACC.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: the 50 blue and 50 red balls probability puzzle, now its own card."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F0698"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "Is cost of debt always cheaper than cost of equity? Are there ANY situation where cost of debt is more expensive? You have 50 blue balls and 50 red balls with 2 buckets. How do you maximize your chance of randomly selecting blue balls."
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -18362,7 +18382,7 @@
     },
     {
       "question_id": "F0844",
-      "question": "Company A has a P/E ratio of 10x and Company B has a P/E ratio of 15x. If company A acquires Company B using all debt, is the acquisition accretive or dilutive? Company has 50 shares outstanding, share price of $20/share, Debt $300, cash of $100. What's the total enterprise value?",
+      "question": "Company A has a P/E of 10x and Company B has a P/E of 15x. If A acquires B using all debt, is the acquisition accretive or dilutive?",
       "question_sources": [
         "Guggenheim Partners NY"
       ],
@@ -18370,13 +18390,17 @@
         "Guggenheim Partners NY Insights/Gugg NY Insight 9.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "An all-debt acquisition cannot be classified solely from the buyer's 10x and target's 15x P/E. Compare target earnings yield 6.67% with the after-tax debt cost; it is accretive if debt cost is lower, before other adjustments. Separately, equity value = 50*$20 = $1,000; EV = 1,000+300-100 = $1,200.",
-      "notes": [],
+      "answer": "You cannot answer from the two P/E multiples alone, because in an all-debt deal the buyer's own multiple is not the financing cost — no shares are issued. The comparison is between what the target's earnings yield and what the debt costs after tax. Company B at a 15x purchase multiple yields 1 / 15 = 6.67%. The deal is accretive if the after-tax interest rate on the new debt is below 6.67%, and dilutive above it. At a 20% tax rate that breaks even at a pre-tax coupon of 6.67% / 0.80 = 8.3%, so borrowing below roughly 8% accretes and borrowing above it dilutes. Two things the shortcut leaves out: purchase-accounting amortisation of written-up intangibles reduces pro forma earnings and pushes the breakeven rate lower, while synergies raise the target's effective yield and push it higher. And accretion is not value creation — a deal funded with cheap debt can add to EPS while still overpaying and adding leverage risk.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: the separate enterprise value calculation from share price, shares, debt and cash (F0342/F1828)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F0844"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "Company A has a P/E ratio of 10x and Company B has a P/E ratio of 15x. If company A acquires Company B using all debt, is the acquisition accretive or dilutive? Company has 50 shares outstanding, share price of $20/share, Debt $300, cash of $100. What's the total enterprise value?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -19176,7 +19200,7 @@
     },
     {
       "question_id": "F0887",
-      "question": "Walk through $10 depreciation, walk through the accounting statements, walk through cash flow statement, and also some restructuring questions. If a company has EBITDA of 100 and a multiple of 7x, and the company has senior debt of 300 and subordinated debt of 600, what are the different tranches of debt trading at. If I offered you 500 for the subordinated notes would you take the deal?",
+      "question": "A company has EBITDA of 100 and trades at a 7x multiple, with $300 of senior debt and $600 of subordinated debt. What does each tranche trade at? If I offered you 500 for the subordinated notes, would you take the deal?",
       "question_sources": [
         "Houlihan Lokey Restructuring LA"
       ],
@@ -19184,13 +19208,17 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 19.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "EV = 100*7 = 700. Senior debt 300 is fully covered; subordinated debt receives 400 of its 600 face, or 66.67 cents, before costs/time/risk. If offered 500 cash for the entire 600-face subordinated position, that exceeds the simplified recovery 400 and is attractive under those assumptions; clarify whether 500 means a purchase price, face amount or different unit. For depreciation +10, NI falls 10(1-t), cash rises 10t if deductible, PP&E falls 10 and retained earnings falls 10(1-t).",
-      "notes": [],
+      "answer": "Enterprise value is 100 * 7 = 700. The senior debt of 300 is covered in full, so it is worth par, 100 cents. That leaves 400 for the 600 of subordinated debt, a 66.67% recovery, or about 67 cents. On the offer: 500 for the whole 600 face position is about 83 cents, well above the ~67 cents the waterfall supports, so yes, sell. You are being paid above the value of the claim. Before agreeing, pin down what 500 means — a cash price for the entire position, a price per 100 of face, or a face amount being exchanged — because the three give very different answers. Then check the things the simplified waterfall ignores: cash on the balance sheet, structural seniority and which entity each claim sits at, administrative and professional costs that come ahead of creditors, intercreditor terms, and how long realisation would take, since a 67-cent recovery two years out is worth less than 67 cents today.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: the $10 depreciation walkthrough (F0038) and the generic statement walkthroughs (F0043)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F0887"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "Walk through $10 depreciation, walk through the accounting statements, walk through cash flow statement, and also some restructuring questions. If a company has EBITDA of 100 and a multiple of 7x, and the company has senior debt of 300 and subordinated debt of 600, what are the different tranches of debt trading at. If I offered you 500 for the subordinated notes would you take the deal?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -19974,7 +20002,7 @@
     },
     {
       "question_id": "F0933",
-      "question": "What's specifically on JPM's balance sheet. What would you do if you faced a moral dilemma and were confused. If a bat and a ball cost 1.50 together, and the bat costs $1 more than the ball, what do each cost?",
+      "question": "What is specifically on JPMorgan's balance sheet?",
       "question_sources": [
         "J.P. Morgan Finance and Business Management"
       ],
@@ -19982,13 +20010,17 @@
         "J.P. Morgan Finance and Business Management Insights/JPM Insight 1.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "A bank balance sheet includes cash/reserves, loans and securities as assets, deposits and borrowings as liabilities, and equity. For an ethical dilemma, establish facts and escalate through the relevant supervisor/compliance process rather than conceal it. For the puzzle, let ball = x and bat = x+1: 2x+1=1.50, so ball costs $0.25 and bat $1.25.",
-      "notes": [],
+      "answer": "A bank's balance sheet is the business, not a support schedule for it, so read it from the funding side first. Assets are overwhelmingly financial: cash and reserves at the central bank, loans to consumers and corporates net of an allowance for credit losses, investment securities held to maturity or available for sale, trading assets and derivatives, securities borrowed and reverse repos, plus goodwill and intangibles from past acquisitions. Liabilities are mostly customer deposits, which are the cheapest and stickiest funding, plus long-term debt, short-term borrowings, repos and trading liabilities. Equity is common shareholders' equity plus preferred stock. Two things to say that show you understand a bank rather than a company: the balance sheet drives the income statement, because net interest income is the spread between what the earning assets yield and what the funding costs, so loan and deposit growth and the rate on each are the forecast drivers; and the size and mix are constrained by regulation, since risk-weighted assets and the CET 1 ratio limit how much the bank can lend and how much it can distribute. That is also why enterprise value is not used for banks: you cannot separate operating from financing activity when the financing is the operation.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: the moral-dilemma question and the bat-and-ball puzzle, now their own cards."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F0933"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "What's specifically on JPM's balance sheet. What would you do if you faced a moral dilemma and were confused. If a bat and a ball cost 1.50 together, and the bat costs $1 more than the ball, what do each cost?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -21375,7 +21407,7 @@
     },
     {
       "question_id": "F1007",
-      "question": "Walk me through how depreciation reducing by $20 impacts the 3 financial statements? Pitch a stock from your investment clubs portfolio (interrupted me at the end of my pitch to say \"why would you pitch me something with the value already priced in\"?) How would you value a company? What is the capital assets pricing model and how does it impact a DCF valuation?",
+      "question": "Walk me through how depreciation reducing by $20 impacts the three financial statements. Assume a 20% tax rate.",
       "question_sources": [
         "J.P. Morgan SF"
       ],
@@ -21383,13 +21415,17 @@
         "J.P. Morgan SF Insights/JPM SF WSO Insights/JPM SF Insight 7.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "A 20 decrease in deductible depreciation raises NI by 20(1-t), lowers the non-cash add-back by 20 and reduces cash by 20t; PP&E and retained earnings rise accordingly. A stock pitch needs a differentiated view versus the price's implied assumptions, not just a good-company story. Value via cash flows and appropriate comps. CAPM estimates Ke=Rf+beta*ERP; Ke feeds WACC for an unlevered DCF. Change the thesis if your purported upside is already fully priced in.",
-      "notes": [],
+      "answer": "A $20 decrease in depreciation, with the deduction that is lost having been usable, at a 20% tax rate.\n\n• Income Statement: $20 less expense, so EBIT and Pre-Tax Income rise $20 and Net Income rises $16.\n\n• Cash Flow Statement: Net Income is up $16, but you now add back $20 less of non-cash depreciation, so cash falls $4.\n\n• Balance Sheet: Cash −$4 and Net PP&E +$20, so assets rise $16; Retained Earnings +$16, and both sides rise $16 and balance.\n\n• Intuition: reported profit is higher but the company is $4 worse off in cash, because it gave up $4 of tax shield.\n\nThis is the standard trap: lower depreciation flatters earnings and costs cash. If only book depreciation changed and cash taxes did not, there is no cash effect and the difference sits in deferred taxes.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: pitch a stock and why pitch something already priced in (F0089/F0570), how would you value a company (F0091), and what CAPM is (F0274)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F1007"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "Walk me through how depreciation reducing by $20 impacts the 3 financial statements? Pitch a stock from your investment clubs portfolio (interrupted me at the end of my pitch to say \"why would you pitch me something with the value already priced in\"?) How would you value a company? What is the capital assets pricing model and how does it impact a DCF valuation?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -23035,7 +23071,7 @@
     },
     {
       "question_id": "F1089",
-      "question": "Tell me your story. Mostly why Lazard? Why IB? Why LA? There really wasn't anything too out-of-the-ordinary here. $100 mn company in US and $10 bn company in China - who has a higher cost of equity? You had to counter-ask about the country risk- premium.",
+      "question": "A $100 million company in the US and a $10 billion company in China — which has the higher cost of equity?",
       "question_sources": [
         "Lazard LA"
       ],
@@ -23043,13 +23079,17 @@
         "Lazard LA Insights/Laz LA Insight 9.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Size and domicile alone do not settle cost of equity. Use cash-flow currency-consistent risk-free rates, operating beta, leverage and country risk based on economic exposure rather than headquarters alone. The Chinese firm's country risk may raise required return, while the smaller U.S. firm's operating/financing risk may be greater. Ask for these inputs before ranking. The personal motivation questions should use the candidate's actual history.",
-      "notes": [],
+      "answer": "Neither size nor domicile settles it, and the right move is to ask what drives each input rather than pick. Cost of equity is the risk-free rate in the currency of the cash flows, plus beta times the equity risk premium, plus any justified country-risk adjustment. The two companies differ on several of those at once, and they pull in opposite directions. Pointing toward the US company: it is far smaller, which usually means less diversified revenue, thinner capitalisation, worse access to funding and often more operating and financial leverage, all of which raise beta. Pointing toward the Chinese company: country risk, measured through sovereign spreads or relative equity volatility, raises the premium, and currency and governance considerations may add more. The questions that resolve it are what each company actually does and how cyclical it is, how levered each is, where revenue is earned rather than where the company is headquartered — a Chinese firm selling into developed markets carries less country exposure than its domicile suggests — and which currency the cash flows are in, since the risk-free rate must match. A $10 billion company is not automatically safer, and country risk should be applied to economic exposure, not to the address on the filing.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: tell me your story, why Lazard, why IB and why LA — all motivation questions that belong in the behavioral deck."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F1089"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "Tell me your story. Mostly why Lazard? Why IB? Why LA? There really wasn't anything too out-of-the-ordinary here. $100 mn company in US and $10 bn company in China - who has a higher cost of equity? You had to counter-ask about the country risk- premium."
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -23119,7 +23159,7 @@
     },
     {
       "question_id": "F1093",
-      "question": "If two companies are identical except one has a lower tax rate, which one has a higher EBITDA multiple\", \"Company has $7 EPS, trades at 15x P/E. Tax rate falls from 30% to 15%. What happens to share price if you hold PE constant?\", \"Why could a company with a low WACC yield a low valuation?\", Which company would you buy? High growth with low margin or low growth with high margin?",
+      "question": "A company has $7 of EPS and trades at 15x P/E. Its tax rate falls from 30% to 15%. What happens to the share price if the P/E is held constant?",
       "question_sources": [
         "Lazard Technology SF"
       ],
@@ -23127,13 +23167,17 @@
         "Lazard Technology SF Insights/Laz Tech Insight 14.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Lower tax generally increases after-tax cash flows and may support a higher EV/EBITDA multiple, other things equal. EPS 7 at 30% tax means pre-tax EPS 10; at 15% tax EPS is 8.50 and price at 15x P/E is 127.50, versus 105 initially. A low WACC can still produce a low value if expected cash flows are small/negative or reinvestment is high. High growth/low margin versus low growth/high margin requires price, incremental returns and downside data; neither is automatically better.",
-      "notes": [],
+      "answer": "Work back to pre-tax earnings, re-tax them, then re-apply the multiple. EPS of $7 after a 30% tax rate implies pre-tax EPS of $7 / 0.70 = $10. At a 15% tax rate the same pre-tax $10 produces EPS of $8.50. Holding the P/E at 15x, the share price goes from 15 * $7 = $105 to 15 * $8.50 = $127.50, a rise of $22.50 or about 21.4%. Note the shortcut: with the multiple fixed, the price moves with the ratio of the after-tax factors, 0.85 / 0.70, which is the same 21.4%. Two qualifications worth saying out loud. The P/E would not actually stay constant: a permanently lower tax rate raises after-tax cash flow for every comparable company, and the market may already have priced the change in, so part of the move may have happened before the rate took effect. And a lower statutory rate also reduces the value of the interest tax shield and of existing deferred tax assets, so a levered company or one carrying large NOLs gains less than this calculation suggests.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: whether a lower tax rate supports a higher EBITDA multiple (F0828), why a low WACC can still give a low valuation (F1704), and high growth versus high margin (F0029)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F1093"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "If two companies are identical except one has a lower tax rate, which one has a higher EBITDA multiple\", \"Company has $7 EPS, trades at 15x P/E. Tax rate falls from 30% to 15%. What happens to share price if you hold PE constant?\", \"Why could a company with a low WACC yield a low valuation?\", Which company would you buy? High growth with low margin or low growth with high margin?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -24360,7 +24404,7 @@
     },
     {
       "question_id": "F1154",
-      "question": "Walk me though a DCF What happens to the financial statements if depreciation increases by $5? Tell me about a significant macroeconomic event in the last year How do you unlever beta? What are the three financial statements?",
+      "question": "What happens to the financial statements if depreciation increases by $5? Assume a 20% tax rate.",
       "question_sources": [
         "Macquarie Group LA"
       ],
@@ -24368,13 +24412,17 @@
         "Macquarie Group LA Insights/Mac LA Insight 6.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "DCF: forecast FCFF, discount it and terminal value at WACC, then bridge EV to equity. Depreciation +5 gives NI -5(1-t), cash +5t, PP&E -5 and retained earnings -5(1-t), assuming usable deduction. Unlever beta using betaU=betaL/[1+(1-t)D/E] under a zero-debt-beta shortcut. The income statement, balance sheet and cash-flow statement connect through earnings, working capital, investment, financing and ending cash. The recent-event part needs a dated example and causal market analysis.",
-      "notes": [],
+      "answer": "A $5 increase in depreciation, with the deduction usable now and a 20% tax rate.\n\n• Income Statement: EBIT and Pre-Tax Income fall $5 and Net Income falls $4.\n\n• Cash Flow Statement: Net Income is down $4, but you add back the $5 of non-cash depreciation, so cash rises $1.\n\n• Balance Sheet: Cash +$1 and Net PP&E −$5, so assets fall $4; Retained Earnings falls $4, and both sides fall $4 and balance.\n\n• Intuition: the only cash movement is the $1 tax saving.\n\nIf the depreciation is not currently deductible there is no cash benefit and the difference goes to deferred taxes.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: walk me through a DCF (F0037), a significant macro event (F0186), how to unlever beta (F1408), and what the three statements are (F0043)."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F1154"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "Walk me though a DCF What happens to the financial statements if depreciation increases by $5? Tell me about a significant macroeconomic event in the last year How do you unlever beta? What are the three financial statements?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -26939,7 +26987,7 @@
     },
     {
       "question_id": "F1290",
-      "question": "What is 1/15% What is 103*17 I have 2 bonds - both with an 8% coupon but one is a 6 year bond and one is a 9 year bond. Cost of capital goes down to 6% - which bond price changes more and why? I give you an indenture - disregard the financials for now. What 3 covenants would you be most focused on?",
+      "question": "I have two bonds, both with an 8% coupon, one with 6 years to maturity and one with 9. The cost of capital falls to 6%. Which bond's price changes more, and why? Separately, given an indenture, which three covenants would you focus on?",
       "question_sources": [
         "Oak Hill"
       ],
@@ -26947,13 +26995,17 @@
         "Oak Hill Insights/Oak Hill Insight 13.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "103*17 = 1,751. “1/15%” is ambiguous: 1 divided by 15% equals 6.6667, whereas (1/15)% equals 0.06667%. For otherwise comparable 8% coupon bonds, the nine-year bond generally gains more when yields fall to 6% because of greater duration. For the indenture, prioritize debt-incurrence limits, restricted-payment/asset-transfer protections and liens/guarantee provisions; change-of-control and collateral terms may also be essential. The correct priority depends on the structure.",
-      "notes": [],
+      "answer": "On the bonds: the nine-year bond gains more. Both are priced at a yield below their coupon so both move to a premium, but the longer bond has more coupon payments and a more distant principal repayment, so a larger share of its value sits further out and is discounted more heavily. That is duration: with the same coupon and the same yield, longer maturity means higher duration and a bigger percentage price move for a given yield change. Convexity means the gain from a fall in yields is slightly larger than the loss from an equal rise, and that asymmetry is also greater for the longer bond. On the indenture: the three that usually matter most are the limitation on debt incurrence, which governs how much more debt can be layered on and at what level of the structure; the restricted payments covenant, which limits dividends, buybacks and investments that move value away from creditors, including transfers to unrestricted subsidiaries; and the limitation on liens, which stops new secured debt from being placed ahead of you. Change-of-control and asset-sale provisions come next. In every case the definitions and the permitted baskets decide what the covenant is actually worth, so read those rather than the headline, and the right ranking depends on where in the structure you sit.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: the 1/15% and 103 x 17 mental arithmetic."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F1290"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "What is 1/15% What is 103*17 I have 2 bonds - both with an 8% coupon but one is a 6 year bond and one is a 9 year bond. Cost of capital goes down to 6% - which bond price changes more and why? I give you an indenture - disregard the financials for now. What 3 covenants would you be most focused on?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -26981,7 +27033,7 @@
     },
     {
       "question_id": "F1292",
-      "question": "How many airplanes fly from Chicago to New York and vice versa per day? How would an increase of $5 in depreciation affect each of the 3 statements? What specifically interests you about credit investment?",
+      "question": "How many airplanes fly from Chicago to New York and back per day?",
       "question_sources": [
         "Oak Hill"
       ],
@@ -26989,13 +27041,17 @@
         "Oak Hill Insights/Oak Hill Insight 2.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Estimate flights from airport-level schedules or departures times the route share, account for both directions and avoid double-counting connections; no date/airport universe is given for a factual count. Depreciation +5 gives NI -5(1-t), cash +5t, PP&E -5 and retained earnings -5(1-t) with usable tax deduction. For interest in credit, connect your real experience to cash-flow underwriting, downside protection and legal priority rather than inventing a personal story.",
-      "notes": [],
+      "answer": "Build it from airports and aircraft, state the assumptions, and give a range. The city pairs are Chicago's two airports and New York's three, so start with the routes that actually exist rather than one line between two dots. Estimate daily departures per route from the carriers that serve it: a trunk route like O'Hare to LaGuardia or Newark might see 10 to 15 departures a day from each of two or three carriers, so perhaps 25 to 40 one-way departures; thinner pairings such as Midway to JFK add fewer. Sum the routes to perhaps 50 to 80 departures in one direction, then double for the return to get roughly 100 to 160 flights a day between the two cities. Sanity check it two ways: against total daily departures at O'Hare, of which a single major domestic market is a low single-digit percentage, and against seats needed, by multiplying flights by an average 150 seats and a load factor and asking whether that passenger count is plausible for the route. Say clearly what you are counting: scheduled passenger flights only, both directions, all airports in each metro area, and excluding connecting itineraries that merely pass through, which would otherwise be double counted. A defensible range with the method shown beats a single confident number.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: the $5 depreciation walkthrough (F1154) and what interests you about credit investing, which is a motivation question rather than a technical one."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F1292"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "How many airplanes fly from Chicago to New York and vice versa per day? How would an increase of $5 in depreciation affect each of the 3 statements? What specifically interests you about credit investment?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -27516,7 +27572,7 @@
     },
     {
       "question_id": "F1321",
-      "question": "How well do you know the Black-Scholes formula? Can you describe the inputs to it? Say that a company's stock price suddenly jumps by 10%, but out-of-the-money call options fall to almost zero? Is there any situation you can think of where that might happen? How much money would you be willing to pay to have exclusive rights to the Panama Canal?",
+      "question": "How well do you know the Black-Scholes formula? Can you describe its inputs? And if a company's stock price suddenly jumps 10% but its out-of-the-money call options fall to almost zero, how can that happen?",
       "question_sources": [
         "PIMCO Product & Strategy"
       ],
@@ -27524,13 +27580,17 @@
         "PIMCO Product & Strategy Insights/PIMCO P&S Insight 7.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "For a European non-dividend call, Black-Scholes gives C=S*N(d1)-K*exp(-rT)*N(d2), with d1=[ln(S/K)+(r+sigma^2/2)T]/(sigma*sqrt(T)) and d2=d1-sigma*sqrt(T). Inputs are S,K,T,r,volatility and any dividends. A stock can rise 10% while an OTM call collapses if time/volatility value disappears, for example near expiry with price still below strike or after an event removes uncertainty; with all other inputs fixed, a call should not fall as S rises. Value canal rights from after-tax toll cash flows less operations, maintenance and investment over the actual concession, considering legal, political, traffic and water constraints; no price follows without those terms.",
-      "notes": [],
+      "answer": "For a European call on a non-dividend-paying stock, C = S*N(d1) - K*exp(-r*T)*N(d2), where d1 = [ln(S/K) + (r + sigma^2/2)*T]/(sigma*sqrt(T)) and d2 = d1 - sigma*sqrt(T). The inputs are the spot price, the strike, time to expiry, the risk-free rate, volatility and any dividend yield. Note what is absent: the stock's expected return never appears, because the price comes from replication and no arbitrage rather than from forecasting the stock. On the puzzle: with every other input held fixed, a call cannot fall as the spot rises, so something else must have moved, and the usual answer is implied volatility. An out-of-the-money call is almost entirely time and volatility value, so if the event that caused the 10% jump also removed the uncertainty — an earnings release, a trial result, a deal being confirmed or abandoned — implied volatility collapses and can easily outweigh a 10% move in the underlying. The same thing happens mechanically near expiry: with little time left and the strike still above the spot, the remaining value decays toward zero whatever the stock does. So the answer is a volatility crush or time decay, not a violation of the formula.",
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: how much you would pay for exclusive rights to the Panama Canal, now its own card."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F1321"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "How well do you know the Black-Scholes formula? Can you describe the inputs to it? Say that a company's stock price suddenly jumps by 10%, but out-of-the-money call options fall to almost zero? Is there any situation you can think of where that might happen? How much money would you be willing to pay to have exclusive rights to the Panama Canal?"
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "model_answer",
       "supporting_reference_urls": []
@@ -34741,7 +34801,7 @@
     },
     {
       "question_id": "F1696",
-      "question": "Walk me through a DCF? What are the other methods of valuation? Tell me about a recent transaction you have been following (Restructuring)? How do companies relieve financial distress? Second round: Another phone call focused on technical questions but largely behavioural.",
+      "question": "How do companies relieve financial distress?",
       "question_sources": [
         "Ducera Partners NY"
       ],
@@ -34750,12 +34810,16 @@
       ],
       "answer_type": "Worked / question-specific answer",
       "answer": "For DCF, forecast FCFF, discount at WACC, add terminal PV and bridge EV to equity. Other valuation methods include trading comps, precedents, LBO and asset/SOTP approaches. For a recent restructuring, select a real case and describe the business problem, capital structure, liquidity, negotiations and verified outcome. Distressed companies can improve operations/working capital, raise capital, sell assets, refinance, exchange debt or use an in-court process. No specific transaction is provided for the factual case portion.",
-      "notes": [],
+      "notes": [
+        "Split from a multi-part interview note. Parts moved elsewhere: walk me through a DCF (F0037), other valuation methods (F0091), a recent restructuring transaction (F1170), and a second-round note that was not a question."
+      ],
       "topic": "specific",
       "original_question_ids": [
         "F1696"
       ],
-      "question_variants": [],
+      "question_variants": [
+        "Walk me through a DCF? What are the other methods of valuation? Tell me about a recent transaction you have been following (Restructuring)? How do companies relieve financial distress? Second round: Another phone call focused on technical questions but largely behavioural."
+      ],
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "answer_status": "requires_missing_inputs",
       "supporting_reference_urls": []
@@ -46284,6 +46348,122 @@
       "question_variants": [],
       "answer_origin": "Supplied M&I 2025 400 IB Questions guide",
       "answer_status": "guide_answer",
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2501",
+      "question": "You have 50 blue balls and 50 red balls and two buckets. How do you distribute them to maximise the probability of drawing a blue ball?",
+      "question_sources": [
+        "Goldman Sachs LA"
+      ],
+      "question_references": [
+        "Goldman Sachs LA Insights/GS LA Insight 13.png"
+      ],
+      "question_variants": [],
+      "original_question_ids": [
+        "F0698"
+      ],
+      "topic": "specific",
+      "answer": "Put one blue ball alone in the first bucket and everything else — 49 blue and 50 red — in the second. Assuming the bucket is chosen at random with equal probability and then a ball is drawn at random from it, the first bucket returns blue with certainty and the second returns blue 49 times in 99. So the probability is 1/2 * 1 + 1/2 * 49/99 = 74/99, about 74.7%, against 50% if you simply split them evenly. The insight is that the two buckets are weighted equally even though they hold very different numbers of balls, so you load one bucket with a certainty and dump the dilution into the other, where it is halved. You cannot do better than this: the second bucket's ratio is maximised by giving it as few red-heavy alternatives as possible once the first bucket is a guaranteed win. Check the stated rules before answering, because if the draw is from all 100 balls, or buckets are chosen in proportion to how full they are, the arrangement no longer helps and the answer returns to 50%.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Split out of F0698, which welded several unrelated prompts into one card."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2502",
+      "question": "Some mental math: if a bat and a ball cost $1.50 together and the bat costs $1 more than the ball, what does each one cost?",
+      "question_sources": [
+        "J.P. Morgan Finance and Business Management"
+      ],
+      "question_references": [
+        "J.P. Morgan Finance and Business Management Insights/JPM Insight 1.png"
+      ],
+      "question_variants": [],
+      "original_question_ids": [
+        "F0933"
+      ],
+      "topic": "specific",
+      "answer": "The ball costs $0.25 and the bat $1.25. Let the ball be x, so the bat is x + 1, and x + (x + 1) = 1.50, giving 2x = 0.50 and x = 0.25. The intuitive answer of $0.25 for the ball and $1.25 for the bat is easy to get wrong in the other direction: many people answer $0.25 and $1.25 correctly only after checking, because the tempting reflex is a ball at $0.50 and a bat at $1.00, which satisfies the total but makes the bat only $0.50 more, not $1. Say the equation out loud and verify both conditions — the sum and the difference — before committing. The question is testing whether you check an intuition rather than whether you can do arithmetic.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Split out of F0933, which welded several unrelated prompts into one card."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2503",
+      "question": "What would you do if you faced a moral dilemma at work and were unsure what to do?",
+      "question_sources": [
+        "J.P. Morgan Finance and Business Management"
+      ],
+      "question_references": [
+        "J.P. Morgan Finance and Business Management Insights/JPM Insight 1.png"
+      ],
+      "question_variants": [],
+      "original_question_ids": [
+        "F0933"
+      ],
+      "topic": "specific",
+      "answer": "Say what you would actually do, in order, and keep it concrete. First establish the facts rather than acting on an impression: what exactly happened, what was said or documented, and what you may be misreading. Second, check it against the firm's own standards — the code of conduct, the compliance manual, confidentiality and information-barrier rules — because many situations that feel like judgment calls are already answered there. Third, escalate rather than resolve it alone: raise it with your staffer or supervisor, and go to compliance or the designated reporting channel if the concern involves that supervisor or is serious. Fourth, do not act on the information in the meantime, do not discuss it outside the people who need to know, and keep a contemporaneous note of what you saw and whom you told. The two things to avoid saying are that you would stay quiet to protect the team and that you would handle it yourself: both are what firms screen for. Closing well means acknowledging that being unsure is exactly why you escalate, and that asking early is cheap while asking late is not.",
+      "answer_status": "open_ended_framework",
+      "answer_type": "Open-ended answer framework",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Split out of F0933, which welded several unrelated prompts into one card.",
+        "A motivation and ethics question that was welded into a technical card; it sits in the technical file for provenance but is answered as a behavioral question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2504",
+      "question": "I give you an indenture and you can disregard the financials. Which three covenants would you focus on first?",
+      "question_sources": [
+        "Oak Hill"
+      ],
+      "question_references": [
+        "Oak Hill Insights/Oak Hill Insight 13.png"
+      ],
+      "question_variants": [],
+      "original_question_ids": [
+        "F1290"
+      ],
+      "topic": "specific",
+      "answer": "Take the three that decide whether value can leave or be layered ahead of you. The limitation on debt incurrence governs how much more debt the company can raise and, just as importantly, where it can be raised, since debt at a subsidiary or a secured basket sits ahead of an unsecured bond at the parent. The restricted payments covenant limits dividends, buybacks and investments — including transfers of assets or intellectual property to unrestricted subsidiaries, which is the mechanism behind most modern liability management exercises. The limitation on liens stops new secured debt being granted priority over your claim on the same collateral. After those, change-of-control put rights and the asset-sale covenant with its requirement to repay or reinvest proceeds matter most. In each case read the definitions and the baskets rather than the covenant's name: the defined terms for EBITDA, permitted debt, restricted subsidiary and permitted investments decide the actual capacity, grower baskets expand it as the company grows, and carve-outs can leave a covenant with little practical bite. The right priority also depends on where you sit, since a first-lien lender cares most about liens and an unsecured holder about structural subordination.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Split out of F1290, which welded several unrelated prompts into one card."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2505",
+      "question": "How much would you pay for exclusive rights to the Panama Canal?",
+      "question_sources": [
+        "PIMCO Product & Strategy"
+      ],
+      "question_references": [
+        "PIMCO Product & Strategy Insights/PIMCO P&S Insight 7.png"
+      ],
+      "question_variants": [],
+      "original_question_ids": [
+        "F1321"
+      ],
+      "topic": "specific",
+      "answer": "Treat it as a finite-life concession, not a perpetuity, and build it from tolls. Revenue is transits per year times the average toll per transit, with the toll schedule varying by vessel type and capacity, so start from current traffic and the published tariff rather than a growth rate. Subtract operating and maintenance costs, which are substantial for locks and dredging, then the capital spending needed to keep the waterway serviceable and any committed expansion, then taxes and any payments owed to the state under the concession. Discount the resulting cash flows over the actual term of the rights, with no terminal value beyond it, at a rate that reflects the real risks: these are sovereign-adjacent, politically exposed, single-asset cash flows. Then stress the things that would actually break the value — water availability, which has already forced transit restrictions in drought years, competing routes and the possibility of shippers rerouting, global trade volumes, and the legal durability of the rights themselves, since an exclusive concession over strategic national infrastructure is the kind of arrangement governments renegotiate. The honest close is that no price follows without the concession term, the toll schedule and the capital commitments, and that the political and water risks, not the discount rate, dominate the answer.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Split out of F1321, which welded several unrelated prompts into one card."
+      ],
       "supporting_reference_urls": []
     }
   ],
