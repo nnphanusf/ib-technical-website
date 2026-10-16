@@ -13,7 +13,8 @@ before they can rehearse an answer out loud, which is the opposite of what a fla
 
 **54 answers now use concrete numbers at 20%**, and **45 questions gained the sentence "Assume a
 20% tax rate."** Only 8 accounting cards still carry a symbolic rate, and all 8 are the formula
-questions listed below. The questions that already state their own rate keep it — F0102 at 40%, F1714 at
+questions listed below. The questions that already state their own rate keep it — F0102 at 40%,
+F1714 at
 20%, F0919 at 60%, F0781's illustrative 20% — because overriding a rate the question gives would
 break the question.
 
@@ -145,9 +146,44 @@ behavioral file and outside this pass.
 
 ---
 
+## 4. The same structure outside the accounting topic
+
+The topic router files a card by its question wording, so plenty of three-statement walkthroughs sit
+in other topics — Apple's factories in Debt & Restructuring, the chemical plant in Quant &
+Brainteasers, the laptop purchase in Industry & Company Analysis. Thirty-eight such answers existed
+outside Accounting & 3 Statements, and **23 of them were genuine worked transactions** and now use
+the same labelled structure and the same 20% assumption.
+
+The other 15 were deliberately left in prose, because they are not transactions: "walk me through
+the three statements" (F0043), "how are they linked" (F0775), "walk me through building a
+three-statement model" (F0307, F1223), the IFRS differences (F1956), and the missing-input cards
+that describe the bridge as a method rather than working a case (F0111, F0322, F0370, F0463, F1591,
+F0120, F1116, F0861, F1585, F1586). Bulleting a description of how the statements connect would add
+structure without adding clarity.
+
+**108 cards now carry the labelled structure**, across Accounting (58), Debt & Restructuring (20),
+Industry & Company Analysis (12), Merger Model (5), Valuation & Comps (3), DCF (2), LBO (2) and FIG
+(2).
+
+Where a card already stated its own tax rate, that rate was kept and the structure written around
+it: F0628 at 33%, F1757 at 40%, F1745 and F2154 at the guide's 25%. **Every structured card was then
+cross-checked so that the rate in the question matches the rate used in the answer** — that
+check caught four cards whose only percentage was an interest rate, so the tax assumption had been
+skipped, one card where a 20% tag had been added to an answer that uses the guide's 25%, one
+question that ended up claiming both "assume 20%" and "tax assumptions are not recorded", and six
+answers carrying a leaked `{M}` placeholder from the rewrite script. All are fixed; the check now
+reports zero mismatches and zero placeholders.
+
+Twelve M&I guide cards that state 25% only in the answer now say so in the question too, so a
+student reading the prompt alone knows what to assume.
+
+---
+
 ## What to check
 
 The accounting answers are the ones students will hit most, so spot-check a few on the page:
 F0038 and F1771 for depreciation, F0023 for deferred revenue, F1709 for receivables, F0613 for PIK.
+Outside accounting, F0058 (Apple's factories over three years) and F1404 (a part-debt factory with a
+principal repayment) are the most involved.
 Each should show four or five short labelled lines rather than a block of prose. If the bullets run
 together instead of breaking onto their own lines, the `index.html` change did not deploy.

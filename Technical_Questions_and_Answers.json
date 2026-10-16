@@ -1927,7 +1927,7 @@
         "Ardian Private Equity Insights/Ardian PE Insight 6.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "At purchase, PP&E +100 and debt +100; borrowing and CapEx offset in cash flow. Year 1: depreciation 10, interest 10, pre-tax income -20, net income -16 at 20% tax. Add back depreciation 10, so cash -6; PP&E -10 and retained earnings -16. Assume the same in year 2: PP&E is then 80. At the start of year 3, write down 80: net income -64 and CFO +16 if the loss is immediately deductible. Repay debt 100 through financing cash flow, so cash falls 84 in that step, PP&E falls 80, debt falls 100, and retained earnings falls 64. Without available taxable income, the loss creates no immediate cash-tax saving.",
+      "answer": "Depreciation is 10% of $100, so $10 a year, and interest is 10% of $100, so $10 a year, at the stated 20% tax rate with no principal repaid.\n\n• At purchase: PP&E +$100 and Debt +$100 — a $100 financing inflow against a $100 investing outflow, so cash does not move and nothing hits the income statement.\n\n• Year 1 Income Statement: $10 of depreciation and $10 of interest, so Pre-Tax Income falls $20 and Net Income falls $16.\n\n• Year 1 Cash Flow Statement: Net Income −$16 plus the $10 depreciation add-back, so cash falls $6.\n\n• Year 1 Balance Sheet: Cash −$6 and Net PP&E $90, so assets fall $16; Debt stays at $100 and Retained Earnings falls $16, so both sides balance. Year 2 repeats, leaving PP&E at $80.\n\n• Start of year 3, writing the factories down to zero and repaying the loan: an $80 non-cash loss, so Net Income falls $64; adding the $80 back gives operating cash flow of +$16, and the $100 repayment is a financing outflow, so cash falls $84 in that step. PP&E −$80 and Debt −$100 against Retained Earnings −$64 leaves both sides down $164.\n\n• Intuition: the debt funded the asset, so the only annual cash cost is the $10 coupon less $4 of tax relief. The write-off itself moves just $16 of tax; repaying the loan is what drains the cash.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -7051,7 +7051,7 @@
     },
     {
       "question_id": "F0283",
-      "question": "Walk me through the impact of a decrease of 10 in D&A in the 3 statements.",
+      "question": "Walk me through the impact of a decrease of 10 in D&A in the 3 statements. Assume a 20% tax rate.",
       "question_sources": [
         "Blackstone Group"
       ],
@@ -7059,7 +7059,7 @@
         "Blackstone Group Insights I/Blackstone Insight 12.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "For a 10 decrease in D&A, pre-tax income increases 10 and net income rises 10*(1-t). The cash-flow add-back decreases 10, so CFO/cash fall 10*t if tax depreciation changes equally and the deduction was usable. Net PP&E is 10 higher and retained earnings rise 10*(1-t), balancing the cash decline. If only book D&A changes, cash taxes need not change; deferred taxes reconcile the difference.",
+      "answer": "A $10 decrease in D&A, assuming the tax deduction moves with it, at a 20% tax rate.\n\n• Income Statement: $10 less expense, so Pre-Tax Income rises $10 and Net Income rises $8.\n\n• Cash Flow Statement: Net Income +$8, but you add back $10 less of non-cash D&A, so cash falls $2.\n\n• Balance Sheet: Cash −$2 and Net PP&E +$10, so assets rise $8 against Retained Earnings +$8, and both sides balance.\n\n• Intuition: earnings look $8 better and the company is $2 worse off in cash, because it gave up $2 of tax shield.\n\nIf only book D&A changed and cash taxes did not, there is no cash effect and the difference sits in deferred taxes.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -9157,7 +9157,7 @@
     },
     {
       "question_id": "F0382",
-      "question": "Walk through multiple years of the three statements after buying $200 of PP&E, financed half with debt and half with cash. [Other assumptions not recorded.]",
+      "question": "Walk through multiple years of the three statements after buying $200 of PP&E, financed half with debt and half with cash. Assume a 20% tax rate. [Other assumptions not recorded.]",
       "question_sources": [
         "Citi Technology SF"
       ],
@@ -9165,7 +9165,7 @@
         "Citi Technology SF Insights/Citi SF Tech Insight 23.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "At purchase, capitalize $200 of PP&E. A $100 debt draw creates a $100 financing inflow; the equipment purchase creates a $200 investing outflow, so cash falls $100, PP&E rises $200 and debt rises $100. There is no immediate income-statement effect, ignoring fees. For each later year, let d be depreciation, I cash interest on the outstanding debt, P principal repaid and t the tax rate. With no other operating changes and an immediately usable tax deduction, net income and retained earnings fall (d+I)*(1-t). Add back d in indirect CFO: CFO changes by -I+(d+I)*t. Principal repayment is a financing outflow P, so cash changes by -I+(d+I)*t-P; net PP&E falls d and debt falls P. These incremental balance-sheet changes balance. Roll debt and asset balances forward each year; straight-line d=(200-residual value)/useful life. Useful life, rates, timing and repayments are missing, so later years must remain symbolic. If tax deductions are not currently usable, model cash taxes and deferred taxes separately.",
+      "answer": "Take $200 of PP&E funded half with debt and half with cash, a ten-year life, 5% interest on the $100 of debt and a 20% tax rate.\n\n• At purchase: PP&E +$200, Debt +$100 and Cash −$100, reported as a $200 investing outflow against a $100 financing inflow. No income-statement effect.\n\n• Income Statement, each year: depreciation of $20 and interest of $5, so Pre-Tax Income falls $25 and Net Income falls $20.\n\n• Cash Flow Statement: Net Income −$20 plus the $20 depreciation add-back, so operating cash flow is zero and cash falls only by any principal repaid.\n\n• Balance Sheet, after one year: Net PP&E $180 and Retained Earnings −$20, with cash and debt unchanged if no principal is repaid, so both sides fall $20 and balance.\n\n• Intuition: the depreciation shield offsets the after-tax interest, so a part-debt asset purchase can be close to cash-neutral in the early years even while reported earnings fall.\n\nRoll the balances forward each year: debt falls by repayments, PP&E by depreciation, and interest follows the declining balance. The useful life, rate and repayment schedule drive the later years.",
       "notes": [],
       "topic": "comps",
       "original_question_ids": [
@@ -9809,7 +9809,7 @@
     },
     {
       "question_id": "F0411",
-      "question": "How does a $10 increase in AR affect the other financial statements. Walk me through a transaction where you receive $10 in cash revenue. How does hat effect the financial statements?",
+      "question": "How does a $10 increase in AR affect the other financial statements. Walk me through a transaction where you receive $10 in cash revenue. How does hat effect the financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Citizens Bank"
       ],
@@ -9817,7 +9817,7 @@
         "Citizens Bank Insights/Citizens Insight 9.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "An AR increase of 10 lowers CFO by 10 relative to earnings, holding other items fixed. A separate $10 cash sale with no associated costs produces revenue +10 and NI +10(1-t); cash rises 10-10t if taxes are paid now, and retained earnings rises by the same amount. If there are COGS or the cash collects an old receivable, the income effect changes; do not recognize revenue twice.",
+      "answer": "These are two different transactions, so take them separately, both at a 20% tax rate.\n\n• A $10 rise in AR with earnings unchanged: no income-statement effect. AR +$10 is a negative in operating cash flow, so cash falls $10; assets are flat overall as cash converts into a receivable, and equity does not move.\n\n• A $10 cash sale with no associated cost: Revenue +$10, so Pre-Tax Income is up $10 and Net Income is up $8.\n\n• Cash Flow Statement for the sale: Net Income +$8 with no working-capital change, because the customer paid immediately, so cash rises $8.\n\n• Balance Sheet: Cash +$8 against Retained Earnings +$8, and both sides balance.\n\n• Intuition: the difference between the two is collection timing. A credit sale would give you the same $8 of profit but $10 of AR and −$2 of cash, because the tax is due before the customer pays.\n\nIf the sale carries COGS, the income effect is the margin rather than the full $10, and do not recognise revenue twice when an old receivable is collected.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -11478,7 +11478,7 @@
     },
     {
       "question_id": "F0494",
-      "question": "Walk through the three-statement effects one year after buying property with debt bearing 10% cash interest. [Purchase price and other assumptions not recorded.]",
+      "question": "Walk through the three-statement effects one year after buying property with debt bearing 10% cash interest. Assume a 20% tax rate. [Purchase price and other assumptions not recorded.]",
       "question_sources": [
         "Ducera Partners NY"
       ],
@@ -11486,7 +11486,7 @@
         "Ducera Partners NY Insights/Ducera NY Insight 18.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Use a transaction-by-transaction three-statement bridge. First identify whether the item affects revenue/expense, an asset/liability, or financing. Record the pre-tax and tax effect on net income. Reconcile net income to CFO using non-cash items and operating working-capital changes, then add investing and financing flows. Update cash, the relevant balance-sheet accounts and retained earnings, and verify assets = liabilities + equity. The numerical result requires amounts, timing, tax treatment and financing terms; an incomplete prompt does not support a unique set of balances. Separate initial recognition, subsequent operations and eventual repayment/disposal.",
+      "answer": "The source omits the price and terms, so work a clean case: a $100 property bought with $100 of debt at 10% cash interest, depreciated over ten years, at a 20% tax rate.\n\n• At purchase: PP&E +$100 and Debt +$100, so cash does not move and nothing hits the income statement.\n\n• Income Statement, one year later: $10 of depreciation and $10 of interest, so Pre-Tax Income falls $20 and Net Income falls $16.\n\n• Cash Flow Statement: Net Income −$16 plus the $10 depreciation add-back, so cash falls $6.\n\n• Balance Sheet: Cash −$6 and Net PP&E $90, so assets fall $16; Debt is unchanged and Retained Earnings falls $16, and both sides balance.\n\n• Intuition: the only cash cost is the $10 coupon less $4 of tax relief; the asset itself was funded by the lender.\n\nAdd a principal repayment as a financing outflow, and if any interest is PIK, add it back as non-cash and accrete it onto the debt balance.",
       "notes": [],
       "topic": "financial_model",
       "original_question_ids": [
@@ -11499,7 +11499,7 @@
     },
     {
       "question_id": "F0495",
-      "question": "Walk through the three-statement effects of buying property with debt bearing 5% cash interest and 5% PIK interest. [Purchase price and other assumptions not recorded.]",
+      "question": "Walk through the three-statement effects of buying property with debt bearing 5% cash interest and 5% PIK interest. Assume a 20% tax rate. [Purchase price and other assumptions not recorded.]",
       "question_sources": [
         "Ducera Partners NY"
       ],
@@ -11562,7 +11562,7 @@
     },
     {
       "question_id": "F0498",
-      "question": "Walk through the financial statement effects of debt paying 5% cash interest and 5% PIK interest. [Principal and tax rate not recorded.]",
+      "question": "Walk through the financial statement effects of debt paying 5% cash interest and 5% PIK interest. Assume a 20% tax rate. [Principal and tax rate not recorded.]",
       "question_sources": [
         "Ducera Partners NY"
       ],
@@ -12872,7 +12872,7 @@
     },
     {
       "question_id": "F0563",
-      "question": "How does PIK interest expense flow through the statements?",
+      "question": "How does PIK interest expense flow through the statements? Assume a 20% tax rate.",
       "question_sources": [
         "Evercore Healthcare MP",
         "Evercore M&A NY"
@@ -12883,7 +12883,7 @@
         "Evercore M&A NY Insights/EVR M&A NY Insight 6.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -14171,7 +14171,7 @@
     },
     {
       "question_id": "F0621",
-      "question": "Throughout the year you raise $100 of debt with a 10% interest rate; 5% is PIK and 5% is cash interest. Walk me through the effects on all three statements after one year.",
+      "question": "Throughout the year you raise $100 of debt with a 10% interest rate; 5% is PIK and 5% is cash interest. Walk me through the effects on all three statements after one year. Assume a 20% tax rate.",
       "question_sources": [
         "Evercore Restructuring"
       ],
@@ -14179,7 +14179,7 @@
         "Evercore Restructuring Insights/EVR RX Insight 34.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Assume the full $100 is outstanding from the start of the year. Interest is $10 in total, $5 cash and $5 PIK, at a 20% tax rate.\n\n• At issuance: Cash +$100 and Debt +$100, a financing inflow, no income effect.\n\n• Income Statement: interest expense $10, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so operating cash flow is {M}$3 for the year. Including the issuance, cash is up $97.\n\n• Balance Sheet: Cash +$97 and Debt $105 after the PIK accretes, with Retained Earnings −$8, so both sides are up $97 and balance.\n\n• Intuition: you raised $100 and paid out $5 of cash coupon less $2 of tax relief.\n\nIf the debt is drawn through the year rather than on day one, time-weight the interest.",
+      "answer": "Assume the full $100 is outstanding from the start of the year. Interest is $10 in total, $5 cash and $5 PIK, at a 20% tax rate.\n\n• At issuance: Cash +$100 and Debt +$100, a financing inflow, no income effect.\n\n• Income Statement: interest expense $10, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so operating cash flow is −$3 for the year. Including the issuance, cash is up $97.\n\n• Balance Sheet: Cash +$97 and Debt $105 after the PIK accretes, with Retained Earnings −$8, so both sides are up $97 and balance.\n\n• Intuition: you raised $100 and paid out $5 of cash coupon less $2 of tax relief.\n\nIf the debt is drawn through the year rather than on day one, time-weight the interest.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -14326,7 +14326,7 @@
         "Evercore Restructuring Insights/EVR RX Insight 9.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Redeeming $100 million face debt at 106 costs $106 million and creates a $6 million extinguishment loss, ignoring unamortized fees and other terms. At 33% tax with immediate deductibility, NI falls $4.02 million and cash-tax benefit is $1.98 million. Net cash falls $104.02 million, debt falls $100 million and retained earnings fall $4.02 million. Cash-flow presentation of the premium follows applicable accounting policy; reconcile total cash rather than assuming the entire payment is operating.",
+      "answer": "Repurchasing $100 million of face at 106 costs $106 million and creates a $6 million extinguishment loss, at the stated 33% tax rate.\n\n• Income Statement: a $6m loss on extinguishment, so Pre-Tax Income falls $6m and Net Income falls $4.02m.\n\n• Cash Flow Statement: Net Income −$4.02m, and the $106m paid retires debt, so the $100m of principal is a financing outflow while the $6m premium follows the applicable policy. Total cash falls $104.02m — the $106m paid less $1.98m of tax relief.\n\n• Balance Sheet: Cash −$104.02m and Debt −$100m, against Retained Earnings −$4.02m, so both sides fall $104.02m and balance.\n\n• Intuition: you paid a $6m premium to retire the debt and got a third of it back in tax, so the economic cost is about $4m.\n\nBuying debt back below par reverses this into a taxable gain. Unamortised issuance costs and original issue discount also run through the loss, and the gain may be sheltered by NOLs.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -17288,7 +17288,7 @@
     },
     {
       "question_id": "F0782",
-      "question": "A company bought $100 of factories entirely with debt and depreciated them at 10% annually. At the start of year 3, the factories are written down to zero and the loan must be repaid. Walk through the three statements. [Tax rate not recorded.]",
+      "question": "A company bought $100 of factories entirely with debt and depreciated them at 10% annually. At the start of year 3, the factories are written down to zero and the loan must be repaid. Walk through the three statements. Assume a 20% tax rate. [Tax rate not recorded.]",
       "question_sources": [
         "Greenhill NY"
       ],
@@ -18877,7 +18877,7 @@
     },
     {
       "question_id": "F0871",
-      "question": "How does $10 of interest expense flow through the three financial statements?",
+      "question": "How does $10 of interest expense flow through the three financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Houlihan Lokey Restructuring LA"
       ],
@@ -18885,7 +18885,7 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 1.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "If $10 interest is expensed and paid, with immediate deductibility at tax rate t, net income falls 10(1-t) and cash falls 10(1-t), while retained earnings falls by the same amount. Debt principal is unchanged. Under U.S. GAAP cash interest is generally operating; IFRS requires the applicable classification rules/policy. If interest is accrued or PIK, the liability/non-cash treatment differs.",
+      "answer": "Ten dollars of interest expense, paid in cash, at a 20% tax rate.\n\n• Income Statement: interest sits below EBIT, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8 and there is nothing to add back, because the interest was paid, so cash falls $8.\n\n• Balance Sheet: Cash −$8 against Retained Earnings −$8, so both sides fall $8 and balance. Debt principal does not change — this is the coupon, not a repayment.\n\n• Intuition: $10 leaves the business and $2 comes back as tax relief, so the net cost is $8.\n\nUnder U.S. GAAP cash interest is an operating outflow; IFRS allows a policy choice. If the interest is accrued rather than paid, an interest payable rises and cash does not move yet; if it is PIK, it accretes onto principal and is added back as non-cash.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -18965,7 +18965,7 @@
     },
     {
       "question_id": "F0876",
-      "question": "Walk through multiple years of inventory, debt, PIK interest and debt amortization. [Inputs not recorded.]",
+      "question": "Walk through multiple years of inventory, debt, PIK interest and debt amortization. Assume a 20% tax rate. [Inputs not recorded.]",
       "question_sources": [
         "Houlihan Lokey Restructuring LA"
       ],
@@ -18973,7 +18973,7 @@
         "Houlihan Lokey Restructuring LA Insights/HL RX LA Insight 14.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "Build an inventory, debt and cash-flow roll-forward for each year. Buying inventory increases inventory and reduces cash, or increases accounts payable if unpaid; borrowing to fund it is a separate financing inflow and debt increase. Recognize revenue when earned and inventory cost as COGS when sold, distinguishing cash sales from receivables. For opening debt D, cash interest c and PIK interest p for the period, both c and p reduce pre-tax income, but only c is paid currently. Add p back in indirect CFO; it increases debt without a cash financing inflow. Ending debt = opening debt + new cash borrowing + capitalized PIK - principal repaid, using the actual interest-accrual convention. Under the usual US GAAP interview convention, cash interest is operating and principal repayment is financing. Reconcile net income to CFO using non-cash charges and changes in receivables, inventory and payables; then update cash and retained earnings and check assets=liabilities+equity. Amounts, sales/collection timing, tax use and amortization terms are absent, so no unique multi-year numbers can be supplied.",
+      "answer": "The source omits the amounts, so work a clean case: $100 of inventory bought with $100 of debt at 5% cash and 5% PIK, 20% annual amortisation of the original principal, sold the following year for $200, at a 20% tax rate.\n\n• Year 1, at purchase: Inventory +$100 and Debt +$100, so cash does not move and nothing hits the income statement.\n\n• Year 2 Income Statement: Revenue $200 and COGS $100, less $5 of cash interest and $5 of PIK, so Pre-Tax Income is $90 and Net Income is $72.\n\n• Year 2 Cash Flow Statement: Net Income $72, plus $5 of PIK added back, plus the $100 release of inventory, gives $177 of operating cash flow; the $20 amortisation is a financing outflow, so cash rises $157.\n\n• Year 2 Balance Sheet: inventory falls to zero, Debt ends at $85 after $5 of accretion and $20 of repayment, and Retained Earnings rises $72 — both sides up $57 from the post-purchase position.\n\n• Intuition: the inventory came back as $100 of cash, the $100 of margin cost $18 of tax, and $25 went out as coupon and principal.",
       "notes": [],
       "topic": "comps",
       "original_question_ids": [
@@ -19435,7 +19435,7 @@
     },
     {
       "question_id": "F0900",
-      "question": "A company buys $100 of inventory with debt in year 1. The debt has 10% interest, split 5% cash and 5% PIK, and 20% amortization. In year 2 the company sells the inventory for $200, amortizes debt and pays interest. Walk through both years' three statements. [Tax rate not recorded.]",
+      "question": "A company buys $100 of inventory with debt in year 1. The debt has 10% interest, split 5% cash and 5% PIK, and 20% amortization. In year 2 the company sells the inventory for $200, amortizes debt and pays interest. Walk through both years' three statements. Assume a 20% tax rate. [Tax rate not recorded.]",
       "question_sources": [
         "Houlihan Lokey Restructuring LA"
       ],
@@ -22677,7 +22677,7 @@
     },
     {
       "question_id": "F1068",
-      "question": "Walk through the three-statement effects of acquiring a company with $100 enterprise value and $20 EBITDA. [Financing and purchase-accounting inputs not recorded.]",
+      "question": "Walk through the three-statement effects of acquiring a company with $100 enterprise value and $20 EBITDA. Assume a 20% tax rate. [Financing and purchase-accounting inputs not recorded.]",
       "question_sources": [
         "Lazard Healthcare SF",
         "Lazard Technology SF"
@@ -22687,7 +22687,7 @@
         "Lazard Technology SF Insights/Laz Tech Insight 5.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Use a transaction-by-transaction three-statement bridge. First identify whether the item affects revenue/expense, an asset/liability, or financing. Record the pre-tax and tax effect on net income. Reconcile net income to CFO using non-cash items and operating working-capital changes, then add investing and financing flows. Update cash, the relevant balance-sheet accounts and retained earnings, and verify assets = liabilities + equity. The numerical result requires amounts, timing, tax treatment and financing terms; an incomplete prompt does not support a unique set of balances. Separate initial recognition, subsequent operations and eventual repayment/disposal.",
+      "answer": "The source records the $100 enterprise value and $20 of EBITDA but not the financing or the purchase accounting, so take a clean case: $100 paid in cash for a target whose identifiable net assets are worth $60, at a 20% tax rate.\n\n• Purchase price allocation: $100 of consideration less $60 of identifiable net assets at fair value creates $40 of goodwill.\n\n• Income Statement, at close: nothing. An acquisition is a balance-sheet event; earnings change only from the target's own results, new interest and any write-up amortisation thereafter.\n\n• Cash Flow Statement: $100 of cash out in investing. Debt-funded instead, add a $100 financing inflow and cash does not move.\n\n• Balance Sheet: Cash −$100, the target's assets and goodwill on, the target's liabilities assumed, and the target's old equity eliminated — goodwill is the plug that keeps it balanced.\n\n• Intuition: at a 5x EV/EBITDA multiple on $20 of EBITDA you are paying $100 for $60 of identifiable net assets, and the $40 difference is what you believe the business is worth beyond them.\n\nWrite-ups of PP&E or intangibles without a tax-basis step-up create a deferred tax liability and increase goodwill further, and the extra D&A reduces future earnings without reducing cash taxes.",
       "notes": [],
       "topic": "financial_model",
       "original_question_ids": [
@@ -22723,7 +22723,7 @@
     },
     {
       "question_id": "F1070",
-      "question": "Walk through acquiring an asset for $100 with five-year straight-line depreciation. How do the three-statement effects differ from an equity acquisition? [Financing and tax assumptions not recorded.]",
+      "question": "Walk through acquiring an asset for $100 with five-year straight-line depreciation. How do the three-statement effects differ from an equity acquisition? Assume a 20% tax rate. [Financing and tax assumptions not recorded.]",
       "question_sources": [
         "Lazard Healthcare SF",
         "Lazard Technology SF"
@@ -22733,7 +22733,7 @@
         "Lazard Technology SF Insights/Laz Tech Insight 5.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. For an incremental depreciation expense d and tax rate t, assuming an immediately usable tax deduction: EBIT and pre-tax income decrease d; net income decreases d(1-t). On the indirect cash-flow statement, add back the non-cash depreciation d, so CFO and cash rise d*t. Net PP&E falls d and retained earnings fall d(1-t); the balance sheet balances. Reverse these signs for a decrease in depreciation. If depreciation is not tax deductible or no current tax benefit is usable, cash does not rise by the tax shield; address deferred taxes separately. Depreciation allocates a capital asset’s cost over its useful life, rather than measuring its market value.",
+      "answer": "A $100 asset depreciated straight-line over five years, so $20 a year, bought for cash, at a 20% tax rate.\n\n• At purchase: PP&E +$100 and Cash −$100, a $100 investing outflow with no income effect.\n\n• Income Statement, each year: $20 of depreciation, so Pre-Tax Income falls $20 and Net Income falls $16.\n\n• Cash Flow Statement: Net Income −$16 plus the $20 add-back, so cash rises $4 a year.\n\n• Balance Sheet: Net PP&E falls $20 while cash rises $4, so assets and Retained Earnings both fall $16 and the balance sheet balances.\n\n• Intuition: the $4 a year is the depreciation tax shield.\n\nVersus buying the equity of a company instead of the asset: in a stock purchase you consolidate the target's whole balance sheet, recognise goodwill for the premium over identifiable net assets, and usually get no step-up in tax basis, so the written-up D&A is not deductible and a deferred tax liability arises. An asset purchase typically does step up the tax basis, which is why buyers prefer it and sellers often do not.",
       "notes": [],
       "topic": "depreciation",
       "original_question_ids": [
@@ -22847,7 +22847,7 @@
     },
     {
       "question_id": "F1075",
-      "question": "What happens to the 3 financial statements when you sell a an asset currently valued at $50mil for $30mil?",
+      "question": "What happens to the 3 financial statements when you sell a an asset currently valued at $50mil for $30mil? Assume a 20% tax rate.",
       "question_sources": [
         "Lazard LA"
       ],
@@ -22855,7 +22855,7 @@
         "Lazard LA Insights/Laz LA Insight 4.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Book loss = 50-30 = 20 million. At tax rate t with immediate deductibility, NI falls 20(1-t), CFO rises 20t after adding back the loss, and investing cash flow is +30. Total cash +30+20t; PP&E -50 and retained earnings -20(1-t). Actual tax basis or an existing impairment can change the tax effect.",
+      "answer": "An asset carried at $50 million sold for $30 million, at a 20% tax rate, with tax basis equal to book basis.\n\n• Income Statement: a $20m loss on sale, so Pre-Tax Income falls $20m and Net Income falls $16m.\n\n• Cash Flow Statement: Net Income −$16m, add back the $20m non-cash loss, so operating cash flow is +$4m; the $30m of proceeds is an investing inflow, so cash rises $34m.\n\n• Balance Sheet: Cash +$34m and the asset −$50m, so assets fall $16m against Retained Earnings −$16m, and both sides balance.\n\n• Intuition: you collect $30m and the $20m loss shelters $4m of tax, so cash is up $34m even though the sale was at a loss.\n\nIf the tax basis differs from book, or an impairment has already been taken, the taxable gain or loss and therefore the cash effect change.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -24299,7 +24299,7 @@
     },
     {
       "question_id": "F1149",
-      "question": "Walk me through what happens on the three financial statements when PIK interest goes up by $100m? Assume 10% interest rate year 1, how to get from Revenue to FCF?",
+      "question": "Walk me through what happens on the three financial statements when PIK interest goes up by $100m? Assume 10% interest rate year 1, how to get from Revenue to FCF? Assume a 20% tax rate.",
       "question_sources": [
         "Macquarie Group LA"
       ],
@@ -24307,7 +24307,7 @@
         "Macquarie Group LA Insights/Mac LA Insight 2.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "If the question means PIK interest EXPENSE increases by 100 million, NI falls 100(1-t), add back 100 in CFO, cash rises 100t if tax relief is usable, debt rises 100 and retained earnings falls 100(1-t). If it means 100 million PRINCIPAL bearing 10% PIK for one year, apply those formulas to 10 million interest instead. Revenue to FCFF: subtract operating costs and D&A to EBIT, apply operating taxes, add D&A, subtract CapEx and increased operating NWC.",
+      "answer": "Read the question first: $100 million of PIK interest expense is different from $100 million of principal bearing PIK. Take the expense reading, at a 20% tax rate.\n\n• Income Statement: interest expense $100m, so Pre-Tax Income falls $100m and Net Income falls $80m.\n\n• Cash Flow Statement: Net Income −$80m, add back the $100m of non-cash PIK, so cash rises $20m.\n\n• Balance Sheet: Cash +$20m and Debt +$100m, against Retained Earnings −$80m, so both sides rise $20m and balance.\n\n• Intuition: the charge costs no cash and saves $20m of tax, while adding $100m to what must eventually be repaid.\n\nOn the other reading — $100m of principal at a 10% PIK rate for one year — apply the same mechanics to $10m of interest: Net Income −$8m, cash +$2m, debt +$10m.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -24450,7 +24450,7 @@
     },
     {
       "question_id": "F1156",
-      "question": "How does 10$ of PIK influence the three financial statements?",
+      "question": "How does 10$ of PIK influence the three financial statements? Assume a 20% tax rate.",
       "question_sources": [
         "Miller Buckfire"
       ],
@@ -24458,7 +24458,7 @@
         "Miller Buckfire Insights/Miller Buckfire Insight 1.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "For $10 of PIK interest and usable tax rate t, pre-tax income falls $10 and net income falls $10*(1-t). Add back the $10 non-cash PIK charge in CFO, so cash rises $10*t only if the deduction reduces current cash taxes. Debt rises $10 and retained earnings falls $10*(1-t); the balance sheet balances. With no current tax benefit, cash is unchanged and any tax asset depends on recognition/realizability.",
+      "answer": "Ten dollars of PIK interest, at a 20% tax rate. PIK accrues onto principal instead of being paid.\n\n• Income Statement: interest expense $10, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $10 of non-cash PIK, so cash rises $2.\n\n• Balance Sheet: Cash +$2 and Debt +$10 as the PIK accretes, against Retained Earnings −$8, so both sides rise $2 and balance.\n\n• Intuition: no coupon is paid, so the only cash movement is the $2 tax saving — and the company now owes $10 more.\n\nWith no usable deduction, cash does not move at all and the benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -26601,7 +26601,7 @@
     },
     {
       "question_id": "F1267",
-      "question": "A furniture manufacturer buys ten laptops for $100 each. Walk through the accounting effects. [Financing, useful life and tax assumptions not recorded.]",
+      "question": "A furniture manufacturer buys ten laptops for $100 each. Walk through the accounting effects. Assume a 20% tax rate. [Financing, useful life and tax assumptions not recorded.]",
       "question_sources": [
         "Nomura NY"
       ],
@@ -26609,7 +26609,7 @@
         "Nomura NY Insights/Nomura NY Insight 10.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. At purchase, capitalize an asset at cost C. A cash-funded purchase reduces cash C and increases PP&E C, with no immediate income-statement expense; report C as investing outflow. Debt funding adds a financing inflow and debt liability; new equity funding adds paid-in capital. Subsequently depreciate (cost-residual value)/useful life for straight-line depreciation and recognize interest on debt. Net income falls by after-tax depreciation and interest; add back depreciation in CFO, and classify principal repayments as financing. The exact annual cash and retained-earnings changes require the useful life, tax rate, financing terms and purchase date. An impairment is a separate write-down, not routine CapEx.",
+      "answer": "Ten laptops at $100 each is $1,000. Decide first whether it is capitalised or expensed, because many companies expense items below a capitalisation threshold. Take it capitalised over a four-year life, bought for cash, at a 20% tax rate.\n\n• At purchase: PP&E +$1,000 and Cash −$1,000, a $1,000 investing outflow with no income-statement effect.\n\n• Income Statement, each year: depreciation of $1,000 / 4 = $250, so Pre-Tax Income falls $250 and Net Income falls $200.\n\n• Cash Flow Statement: Net Income −$200 plus the $250 add-back, so cash rises $50 a year.\n\n• Balance Sheet: Net PP&E falls $250 a year while cash rises $50, so assets and Retained Earnings both fall $200, and the balance sheet balances.\n\n• Intuition: the $1,000 leaves on day one and $50 of tax relief comes back each year.\n\nIf instead the laptops are expensed immediately, Pre-Tax Income falls $1,000, Net Income falls $800 and cash falls $800 in year one, with nothing capitalised.",
       "notes": [],
       "topic": "capex",
       "original_question_ids": [
@@ -28409,7 +28409,7 @@
     },
     {
       "question_id": "F1362",
-      "question": "Walk me through $100M Loan with 5% interest - half PIK half paid. Year O and pay principal back in year 1.",
+      "question": "Walk me through $100M Loan with 5% interest - half PIK half paid. Year O and pay principal back in year 1. Assume a 20% tax rate.",
       "question_sources": [
         "PJT Partners RSSG NY"
       ],
@@ -28417,7 +28417,7 @@
         "PJT Partners RSSG NY Insights/PJT RSSG Insight 17.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Interpret the 5% total rate as 2.5% cash and 2.5% PIK, outstanding for a full year. Year 0: cash +100 and debt +100. Year 1 interest expense 5, NI -5(1-t), PIK add-back 2.5, so CFO -2.5+5t. Principal grows to 102.5; paying it off produces financing outflow 102.5. Year-1 net cash change is -105+5t; retained earnings falls 5(1-t), and debt ends at zero. If the intended rate is 5% cash plus 5% PIK, double the interest amounts.",
+      "answer": "Read the 5% as the total rate, so 2.5% cash and 2.5% PIK on $100 million, outstanding for the full year, at a 20% tax rate.\n\n• Year 0: Cash +$100m and Debt +$100m, a financing inflow with no income effect.\n\n• Income Statement, year 1: interest expense $5m, being $2.5m cash and $2.5m PIK, so Pre-Tax Income falls $5m and Net Income falls $4m.\n\n• Cash Flow Statement: Net Income −$4m plus $2.5m of PIK added back gives operating cash flow of −$1.5m. Principal has accreted to $102.5m, and repaying it is a $102.5m financing outflow, so cash falls $104m in the year.\n\n• Balance Sheet: starting from the $100m raised, cash ends $4m below where it began, Debt is zero and Retained Earnings is −$4m, so both sides are down $4m and balance.\n\n• Intuition: you borrowed $100m, paid $2.5m of coupon, accrued $2.5m more onto the balance and repaid $102.5m, with $1m of tax relief along the way — a net $4m cost.\n\nIf the intended terms are 5% cash plus 5% PIK, double every interest figure.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -29184,7 +29184,7 @@
     },
     {
       "question_id": "F1404",
-      "question": "Walk through the three-statement effects of buying a $500 factory with $250 of debt, followed by 10% interest income, 5% interest expense and 10% principal repayment. [The interest-income base, timing and tax assumptions are not recorded.]",
+      "question": "Walk through the three-statement effects of buying a $500 factory with $250 of debt, followed by 10% interest income, 5% interest expense and 10% principal repayment. Assume a 20% tax rate. [The interest-income base and timing are not recorded.]",
       "question_sources": [
         "Perella Weinberg Partners",
         "Perella Weinberg Partners Healthcare SF",
@@ -29197,7 +29197,7 @@
         "Zip Backups - Miscellaneous/drive-download-20250403T002406Z-001/Screenshot 2024-02-04 at 1.26.38 AM.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. At purchase, capitalize an asset at cost C. A cash-funded purchase reduces cash C and increases PP&E C, with no immediate income-statement expense; report C as investing outflow. Debt funding adds a financing inflow and debt liability; new equity funding adds paid-in capital. Subsequently depreciate (cost-residual value)/useful life for straight-line depreciation and recognize interest on debt. Net income falls by after-tax depreciation and interest; add back depreciation in CFO, and classify principal repayments as financing. The exact annual cash and retained-earnings changes require the useful life, tax rate, financing terms and purchase date. An impairment is a separate write-down, not routine CapEx.",
+      "answer": "The source does not record the interest-income base or the timing, so work the debt-funded purchase: a $500 factory with $250 of debt at 5% interest, ten-year straight-line depreciation and a 10% annual principal repayment, at a 20% tax rate.\n\n• At purchase: PP&E +$500, Debt +$250 and Cash −$250 — a $500 investing outflow against a $250 financing inflow.\n\n• Income Statement, year 1: depreciation of $50 and interest of $12.50, so Pre-Tax Income falls $62.50 and Net Income falls $50.\n\n• Cash Flow Statement: Net Income −$50 plus the $50 depreciation add-back gives operating cash flow of zero; the $25 principal repayment is a financing outflow, so cash falls $25.\n\n• Balance Sheet: Cash −$25 and Net PP&E $450, so assets fall $75; Debt falls to $225 and Retained Earnings falls $50, so both sides fall $75 and balance.\n\n• Intuition: the depreciation tax shield exactly covers the after-tax interest here, so the only cash that leaves is the $25 of principal — and principal repayment never touches the income statement.",
       "notes": [],
       "topic": "capex",
       "original_question_ids": [
@@ -29692,7 +29692,7 @@
     },
     {
       "question_id": "F1428",
-      "question": "How does a gain on an asset sale affect the statements?",
+      "question": "How does a gain on an asset sale affect the statements? Assume a 20% tax rate.",
       "question_sources": [
         "Piper Sandler NY"
       ],
@@ -29700,7 +29700,7 @@
         "Piper Sandler NY Insights/Piper NY Insight 3.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "For proceeds P and book value B, gain G=P-B increases pre-tax income G and net income G(1-t). Subtract G in indirect CFO and report P in investing cash flow. If taxes are paid currently, total cash rises P-Gt; remove B from the asset account and add G(1-t) to retained earnings. Tax basis may differ from book basis.",
+      "answer": "Take an asset with a $100 book value sold for $120 in cash, at a 20% tax rate, with tax basis equal to book basis.\n\n• Income Statement: a $20 gain, so Pre-Tax Income is up $20 and Net Income is up $16.\n\n• Cash Flow Statement: Net Income +$16, less the $20 non-cash gain reversed out of operating cash flow, plus the full $120 of proceeds in investing, so cash rises $116.\n\n• Balance Sheet: Cash +$116 and the asset −$100, so assets rise $16; Retained Earnings +$16, and both sides balance.\n\n• Intuition: you collect $120 and pay $4 of tax on the $20 gain, so cash is up $116.\n\nSold below book value the gain becomes a loss: it is added back in operating cash flow and the tax saving reduces the cash outflow. A write-down is different — no proceeds arrive, so only the tax effect moves cash.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -31453,7 +31453,7 @@
         "Shea & Co Insights/Shea & Co Insight 20.png"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Annual depreciation is $50 / 5 = $10 and interest is 5% of $100 = $5. Tax rate 20%, no principal repaid in year one.\n\n• At inception: Debt +$100, Cash +$50 and PP&E +$50 — a $100 financing inflow against a $50 investing outflow.\n\n• Income Statement: $10 of depreciation and $5 of interest, so Pre-Tax Income falls $15 and Net Income falls $12.\n\n• Cash Flow Statement: Net Income −$12 plus the $10 depreciation add-back, so operating cash flow is {M}$2 for the year.\n\n• Balance Sheet, cumulatively: Cash +$48, Net PP&E +$40, Debt +$100 and Retained Earnings −$12, so both sides are up $88 and balance.\n\n• Intuition: the unspent $50 of borrowings is why cash is up despite the loss; the year's own cash cost is the $5 coupon less $3 of tax relief.",
+      "answer": "Annual depreciation is $50 / 5 = $10 and interest is 5% of $100 = $5. Tax rate 20%, no principal repaid in year one.\n\n• At inception: Debt +$100, Cash +$50 and PP&E +$50 — a $100 financing inflow against a $50 investing outflow.\n\n• Income Statement: $10 of depreciation and $5 of interest, so Pre-Tax Income falls $15 and Net Income falls $12.\n\n• Cash Flow Statement: Net Income −$12 plus the $10 depreciation add-back, so operating cash flow is −$2 for the year.\n\n• Balance Sheet, cumulatively: Cash +$48, Net PP&E +$40, Debt +$100 and Retained Earnings −$12, so both sides are up $88 and balance.\n\n• Intuition: the unspent $50 of borrowings is why cash is up despite the loss; the year's own cash cost is the $5 coupon less $3 of tax relief.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -32875,7 +32875,7 @@
     },
     {
       "question_id": "F1592",
-      "question": "Walk through the three-statement effects of purchasing a factory. [Purchase price and financing assumptions not recorded.]",
+      "question": "Walk through the three-statement effects of purchasing a factory. Assume a 20% tax rate. [Purchase price and financing assumptions not recorded.]",
       "question_sources": [
         "Union Square Advisors"
       ],
@@ -32883,7 +32883,7 @@
         "Union Square Advisors Insights/Union Square Insight 10.png"
       ],
       "answer_type": "Incomplete prompt: method and assumptions",
-      "answer": "The source omits inputs needed for a unique conclusion. Use a transaction-by-transaction three-statement bridge. First identify whether the item affects revenue/expense, an asset/liability, or financing. Record the pre-tax and tax effect on net income. Reconcile net income to CFO using non-cash items and operating working-capital changes, then add investing and financing flows. Update cash, the relevant balance-sheet accounts and retained earnings, and verify assets = liabilities + equity. The numerical result requires amounts, timing, tax treatment and financing terms; an incomplete prompt does not support a unique set of balances. Separate initial recognition, subsequent operations and eventual repayment/disposal.",
+      "answer": "The source omits the price and terms, so work a clean case: a $100 property bought with $100 of debt at 10% cash interest, depreciated over ten years, at a 20% tax rate.\n\n• At purchase: PP&E +$100 and Debt +$100, so cash does not move and nothing hits the income statement.\n\n• Income Statement, one year later: $10 of depreciation and $10 of interest, so Pre-Tax Income falls $20 and Net Income falls $16.\n\n• Cash Flow Statement: Net Income −$16 plus the $10 depreciation add-back, so cash falls $6.\n\n• Balance Sheet: Cash −$6 and Net PP&E $90, so assets fall $16; Debt is unchanged and Retained Earnings falls $16, and both sides balance.\n\n• Intuition: the only cash cost is the $10 coupon less $4 of tax relief; the asset itself was funded by the lender.\n\nAdd a principal repayment as a financing outflow, and if any interest is PIK, add it back as non-cash and accrete it onto the debt balance.",
       "notes": [],
       "topic": "financial_model",
       "original_question_ids": [
@@ -35660,7 +35660,7 @@
         "Evercore PCA Interview Prep (AL).docx: paragraph 142"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Annual straight-line depreciation is 500/40 = 12.5 million. After ten completed years, book value is 375; impairment to salvage value 100 is 275. At 25% immediately usable tax deductibility, NI falls 206.25 and CFO rises 68.75 after adding back the 275 loss. PP&E falls 275 and retained earnings falls 206.25. If “day 1 of year 10” means only nine years elapsed, book value is 387.5 and impairment is 287.5. The source's timing is ambiguous, and insurance proceeds/tax basis are additional considerations.",
+      "answer": "Annual depreciation is $500m / 40 = $12.5m, so after ten completed years book value is $375m. Writing it down to the $100m salvage value is a $275m impairment, at the stated 25% tax rate.\n\n• Income Statement: a $275m non-cash impairment, so Pre-Tax Income falls $275m and Net Income falls $206.25m.\n\n• Cash Flow Statement: Net Income −$206.25m, add back the $275m non-cash loss, so cash rises $68.75m.\n\n• Balance Sheet: Cash +$68.75m and PP&E −$275m, so assets fall $206.25m against Retained Earnings −$206.25m, and both sides balance.\n\n• Intuition: the plant was already paid for, so the explosion costs no cash — the only movement is $68.75m of tax relief.\n\nIf \"day one of year 10\" means nine years have elapsed, book value is $387.5m and the impairment is $287.5m. Insurance proceeds, a tax basis different from book, and whether the loss is currently deductible would each change the cash effect.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -35870,7 +35870,7 @@
         "Evercore PCA Interview Prep (AL).docx: paragraph 206"
       ],
       "answer_type": "Worked / question-specific answer",
-      "answer": "Interest expense 20 reduces NI by 12 at 40% tax. Add back non-cash PIK of 10, so CFO and cash fall 2. Debt rises 10 and retained earnings falls 12. The net liability/equity change is -2, matching cash. Assume full current tax deductibility and ignore fees.",
+      "answer": "Twenty dollars of interest, half cash and half PIK, at the stated 40% tax rate.\n\n• Income Statement: the full $20 is interest expense regardless of how it is settled, so Pre-Tax Income falls $20 and Net Income falls $12.\n\n• Cash Flow Statement: Net Income −$12, add back the $10 of non-cash PIK, so cash falls $2.\n\n• Balance Sheet: Cash −$2 and Debt +$10 from the accrued PIK, against Retained Earnings −$12, so both sides fall $2 and balance.\n\n• Intuition: $10 of coupon goes out and $8 of tax relief comes back, so cash is only $2 worse off — but the debt balance is $10 higher.",
       "notes": [],
       "topic": "specific",
       "original_question_ids": [
@@ -38211,7 +38211,7 @@
     },
     {
       "question_id": "F1888",
-      "question": "Explain PIK interest.",
+      "question": "Explain PIK interest. Assume a 20% tax rate.",
       "question_sources": [
         "Evercore (compiled interview notes)",
         "Evercore Private Capital Markets & Debt Advisory"
@@ -38221,7 +38221,7 @@
         "Evercore Private Capital Markets & Debt Advisory Insights/Evercore PCA Insight 1.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "PIK interest is added to principal rather than paid in cash. For opening debt D, cash rate c, PIK rate p and tax rate t: total interest expense is D(c+p); net income falls by D(c+p)(1-t), assuming an immediate tax deduction. In indirect CFO, add back Dp, so cash changes by -Dc + D(c+p)t; debt increases by Dp and retained earnings fall by the net-income reduction. Without usable current tax deductions, cash falls only by Dc and any tax benefit may create a DTA instead. At repayment, repay the accumulated principal including PIK; contractual call premiums or accrued interest may also apply. PIK preserves current liquidity but increases future debt service and refinancing risk.",
+      "answer": "PIK interest accrues onto principal instead of being paid in cash. Take $100 of debt at 5% cash and 5% PIK for one year, at a 20% tax rate.\n\n• Income Statement: interest expense is $10, being $5 cash and $5 PIK, so Pre-Tax Income falls $10 and Net Income falls $8.\n\n• Cash Flow Statement: Net Income −$8, add back the $5 of non-cash PIK, so cash falls $3 — the $5 cash coupon less the $2 tax saving.\n\n• Balance Sheet: Cash −$3 and Debt +$5 from the accrued PIK; Retained Earnings −$8, so both sides fall $3 and balance.\n\n• Intuition: PIK protects near-term liquidity and increases what you must repay later.\n\nAt repayment you repay principal including accrued PIK, plus any call premium. Without usable deductions, cash falls by the full $5 coupon and the tax benefit becomes a deferred tax asset.",
       "notes": [],
       "topic": "interest_pik",
       "original_question_ids": [
@@ -39879,7 +39879,7 @@
     },
     {
       "question_id": "F1972",
-      "question": "A company's CEO has decided to sell all its assets, starting with a factory recorded at a book value of $100 on its Balance Sheet. If this factory sells for $140, how do the statements change?",
+      "question": "A company's CEO has decided to sell all its assets, starting with a factory recorded at a book value of $100 on its Balance Sheet. If this factory sells for $140, how do the statements change? Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 60"
       ],
@@ -39902,7 +39902,7 @@
     },
     {
       "question_id": "F1973",
-      "question": "Walk me through the financial statements when a customer orders a product for $100 and receives it but hasn't yet paid for it. Then, walk me through the cash collection, combining it with the first step. Ignore COGS and other delivery costs for simplicity.",
+      "question": "Walk me through the financial statements when a customer orders a product for $100 and receives it but hasn't yet paid for it. Then, walk me through the cash collection, combining it with the first step. Ignore COGS and other delivery costs for simplicity. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 61"
       ],
@@ -39925,7 +39925,7 @@
     },
     {
       "question_id": "F1974",
-      "question": "A company hires a marketing agency to run an online advertising campaign for its services. The marketing agency charges $10,000 for this initial campaign, delivers it, and invoices the company, which has 60 days to pay. Walk me through the statements.",
+      "question": "A company hires a marketing agency to run an online advertising campaign for its services. The marketing agency charges $10,000 for this initial campaign, delivers it, and invoices the company, which has 60 days to pay. Walk me through the statements. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 62"
       ],
@@ -39971,7 +39971,7 @@
     },
     {
       "question_id": "F1976",
-      "question": "Your friend's e-commerce company orders $200 of products from its main supplier. A month later, it sells these products for $500. Walk me through each step of this process SEPARATELY.",
+      "question": "Your friend's e-commerce company orders $200 of products from its main supplier. A month later, it sells these products for $500. Walk me through each step of this process SEPARATELY. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 63"
       ],
@@ -39994,7 +39994,7 @@
     },
     {
       "question_id": "F1977",
-      "question": "A Software-as-a-Service (SaaS) company bills customers upfront for an entire year of service and collects the cash before the contract begins. Walk me through the process for a $250 contract with a $50 delivery cost between January 1 and December 31 of the year. COMBINE the cash collection and revenue recognition.",
+      "question": "A Software-as-a-Service (SaaS) company bills customers upfront for an entire year of service and collects the cash before the contract begins. Walk me through the process for a $250 contract with a $50 delivery cost between January 1 and December 31 of the year. COMBINE the cash collection and revenue recognition. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 64"
       ],
@@ -40040,7 +40040,7 @@
     },
     {
       "question_id": "F1979",
-      "question": "A company issues $200 of Debt at a 10% interest rate. Walk me through the entire first year on the statements, including the initial issuance and the full interest payment. COMBINE both steps.",
+      "question": "A company issues $200 of Debt at a 10% interest rate. Walk me through the entire first year on the statements, including the initial issuance and the full interest payment. COMBINE both steps. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 65"
       ],
@@ -40086,7 +40086,7 @@
     },
     {
       "question_id": "F1981",
-      "question": "A company that follows U.S. GAAP signs a 10-year Operating Lease on January 1. It will pay $160 in Rent each year. Assuming a 5% Discount Rate, walk me through the financial statements over this entire year. For simplicity, you may \"round\" and assume the Present Value of the lease payments equals $1,200.",
+      "question": "A company that follows U.S. GAAP signs a 10-year Operating Lease on January 1. It will pay $160 in Rent each year. Assuming a 5% Discount Rate, walk me through the financial statements over this entire year. For simplicity, you may \"round\" and assume the Present Value of the lease payments equals $1,200. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 66"
       ],
@@ -40109,7 +40109,7 @@
     },
     {
       "question_id": "F1982",
-      "question": "Context: A company that follows U.S. GAAP signs a 10-year Operating Lease on January 1. It will pay $160 in Rent each year. Assuming a 5% Discount Rate, walk me through the financial statements over this entire year. For simplicity, you may \"round\" and assume the Present Value of the lease payments equals $1,200. Follow-up: Now walk through the same scenario, but under IFRS rather than U.S. GAAP (or pretend it is a Finance Lease under U.S. GAAP).",
+      "question": "Context: A company that follows U.S. GAAP signs a 10-year Operating Lease on January 1. It will pay $160 in Rent each year. Assuming a 5% Discount Rate, walk me through the financial statements over this entire year. For simplicity, you may \"round\" and assume the Present Value of the lease payments equals $1,200. Follow-up: Now walk through the same scenario, but under IFRS rather than U.S. GAAP (or pretend it is a Finance Lease under U.S. GAAP). Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 67"
       ],
@@ -40155,7 +40155,7 @@
     },
     {
       "question_id": "F1984",
-      "question": "Context: A company buys a factory for $200 using $200 of Debt. What happens, INITIALLY, on the statements? Follow-up: One year passes. The company pays 10% interest on its Debt, and it depreciates 10% of the factory. It also repays 5% of the Debt principal. What happens on the statements in this first year?",
+      "question": "Context: A company buys a factory for $200 using $200 of Debt. What happens, INITIALLY, on the statements? Follow-up: One year passes. The company pays 10% interest on its Debt, and it depreciates 10% of the factory. It also repays 5% of the Debt principal. What happens on the statements in this first year? Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 68"
       ],
@@ -40178,7 +40178,7 @@
     },
     {
       "question_id": "F1985",
-      "question": "At the end of this first year, the company sells its factories for $220 and uses the proceeds to repay its remaining Debt principal after realizing there is little demand for its products. Walk through this step SEPARATELY from the previous two. Assume that the Net PP&E balance is $180, and the Debt is $190 because of changes in the previous step.",
+      "question": "At the end of this first year, the company sells its factories for $220 and uses the proceeds to repay its remaining Debt principal after realizing there is little demand for its products. Walk through this step SEPARATELY from the previous two. Assume that the Net PP&E balance is $180, and the Debt is $190 because of changes in the previous step. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 69"
       ],
@@ -40224,7 +40224,7 @@
     },
     {
       "question_id": "F1987",
-      "question": "Context: Walmart purchases $200 of Inventory \"on credit,\" sells it for $400, and records an additional $100 in Operating Expenses to support the sale. Walk me through ONLY Step 1 of this process with the Inventory purchase. Follow-up: Now walk through Step 2 - the sale and delivery of the products and the supplier payments - SEPARATELY from Step 1.",
+      "question": "Context: Walmart purchases $200 of Inventory \"on credit,\" sells it for $400, and records an additional $100 in Operating Expenses to support the sale. Walk me through ONLY Step 1 of this process with the Inventory purchase. Follow-up: Now walk through Step 2 - the sale and delivery of the products and the supplier payments - SEPARATELY from Step 1. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 70"
       ],
@@ -44014,7 +44014,7 @@
     },
     {
       "question_id": "F2154",
-      "question": "A commercial bank has set aside sufficient Regulatory Capital for unexpected loan losses and a sufficient Allowance for Loan Losses for expected losses. After reviewing data from its borrowers, the bank realizes it could lose more than expected. Walk me through the financial statements if it increases its loss estimates by $100 and explain how the CET 1 Ratio changes.",
+      "question": "A commercial bank has set aside sufficient Regulatory Capital for unexpected loan losses and a sufficient Allowance for Loan Losses for expected losses. After reviewing data from its borrowers, the bank realizes it could lose more than expected. Walk me through the financial statements if it increases its loss estimates by $100 and explain how the CET 1 Ratio changes. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 153"
       ],
@@ -44022,7 +44022,7 @@
         "guide:p153:item296"
       ],
       "answer_type": "Answer from supplied M&I guide",
-      "answer": "This is recorded as a $100 increase in the Provision for Credit Losses on the Income Statement, which is a non-cash expense that represents an increase in the expected loan losses. On the income statement, Pre-Tax Income is down by $100, and Net Income is down by $75 at a 25% tax rate. On the cash flow statement, Net Income is down by $75, but you add back the $100 of Provisions, so Cash is up by $25 at the bottom. On the balance sheet, Cash is up by $25, but Net Loans is down by $100 (since the Allowance is a contra-asset netted against Net Loans), so the Assets side is down by $75; the L&E side is also down by $75 because Equity is down due to the reduced Net Income. The CET 1 Ratio decreases, but we don't know the exact percentage because we don't know the bank's Risk-Weighted Assets (RWAs) or current CET 1. The RWAs stay the same because they are based on Gross Loans, not Net Loans, but the CET 1 falls because it is linked to Common Shareholders' Equity, which is down by $75. The intuition is that this bank expects to charge off more of its Loans, so its “buffer capital” decreases to reflect this expected loss. Cash increases due to the tax savings from this non-cash Provision expense. The CET 1 served its purpose by “absorbing” this unexpected loss that has now turned into an expected loss.",
+      "answer": "A $100 increase in loss estimates is recorded as a $100 Provision for Credit Losses, a non-cash expense, at the guide's 25% tax rate.\n\n• Income Statement: Pre-Tax Income falls $100 and Net Income falls $75.\n\n• Cash Flow Statement: Net Income −$75, add back the $100 of provisions, so cash rises $25.\n\n• Balance Sheet: Cash +$25 but Net Loans −$100, because the allowance is a contra-asset netted against loans, so assets fall $75; Equity falls $75 on the lower Net Income, so both sides fall $75 and balance.\n\n• CET 1 Ratio: it falls, though not by a calculable amount without the bank's risk-weighted assets and current CET 1. Risk-weighted assets are unchanged, because they are based on gross rather than net loans, while CET 1 itself falls with the $75 reduction in common equity.\n\n• Intuition: the bank now expects to charge off more of its book, so its buffer capital shrinks to reflect a loss that has moved from unexpected to expected. Cash rises only because the non-cash provision is deductible.",
       "notes": [],
       "topic": "reviewed",
       "original_question_ids": [
@@ -44035,7 +44035,7 @@
     },
     {
       "question_id": "F2155",
-      "question": "An insurance company records $100 in Net Written Premiums and $40 in Net Earned Premiums and pays Commissions of 10%. What happens on the financial statements? Ignore the Claims and Losses corresponding to these premiums for now.",
+      "question": "An insurance company records $100 in Net Written Premiums and $40 in Net Earned Premiums and pays Commissions of 10%. What happens on the financial statements? Ignore the Claims and Losses corresponding to these premiums for now. Assume a 25% tax rate.",
       "question_sources": [
         "M&I 400 Questions Guide (2025), p. 154"
       ],
