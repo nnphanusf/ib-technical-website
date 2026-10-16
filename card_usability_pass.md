@@ -197,7 +197,11 @@ Five changes requested together. The deck goes from 3,239 to 3,238 cards.
 **23 cards cleared by hand.** The structural heuristics had flagged them; you read them and judged
 them askable as written. Rather than weaken the heuristics - which would let genuinely broken cards
 through - `build_data.py` now carries a `CLEARED_ISSUES` set that overrides the flags for a named
-id. All 29 ids in it now read Verified with no tags.
+id. All 30 ids in it now read Verified with no tags.
+
+F1939 was added later on the same grounds as F1941 below: it asks "would you have done this deal",
+and the flag was objecting that "this deal" has no antecedent. An interviewer asks it after you have
+pitched one, so it is askable as written.
 
 **F1941** now reads *"Tell me about an M&A deal. What were the main risk factors in this deal?"*
 It is in the cleared set too, which is one more than the 23 you named: the rewrite supplies the

@@ -392,11 +392,11 @@ SERIOUS = {"Incomplete prompt", "Question set", "Input Required", "Missing input
 # read them and judged them askable as written. An id here gets no issues and reads as
 # Verified. Keep it sorted and only add an id you have actually read.
 CLEARED_ISSUES = {
-    "F0021", "F1941", "F1946", "F1950", "F1962", "F1967",
-    "F1991", "F2010", "F2011", "F2020", "F2021", "F2027",
-    "F2031", "F2033", "F2034", "F2039", "F2043", "F2080",
-    "F2082", "F2084", "F2085", "F2117", "F2122", "F2136",
-    "F2137", "F2169", "F2179", "F2191", "F2253",
+    "F0021", "F1939", "F1941", "F1946", "F1950", "F1962",
+    "F1967", "F1991", "F2010", "F2011", "F2020", "F2021",
+    "F2027", "F2031", "F2033", "F2034", "F2039", "F2043",
+    "F2080", "F2082", "F2084", "F2085", "F2117", "F2122",
+    "F2136", "F2137", "F2169", "F2179", "F2191", "F2253",
 }
 
 
