@@ -1,5 +1,9 @@
 <meta charset="utf-8">
 <title>Banking Interview Prep Website</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#006747">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Quicksand:wght@400;500;600;700&display=swap">
@@ -7,37 +11,37 @@
 /* Layout: fixed filter rail on the left, one study card centred in the reading column.
    Tearsheet identity — plex serif for the prompt, plex mono for IDs, firms and counts. */
 :root{
-  --paper:#FFF4F8; --panel:#FFFFFF; --panel-2:#FDEAF2;
-  --ink:#3A2230; --ink-2:#6E4357; --muted:#A3758A;
-  --line:#F8DAE7; --line-2:#F0BFD4;
-  --accent:#E04A86; --accent-soft:#FDE2EE;
-  --good:#2E9E7E; --good-soft:#DEF4EC;
-  --warn:#C2711C; --warn-soft:#FCEBD8;
-  --dot:#FBDCE8;
-  --shadow:0 1px 2px rgba(224,74,134,.08), 0 10px 26px -16px rgba(224,74,134,.45);
+  --paper:#F3F6F3; --panel:#FFFFFF; --panel-2:#EDEBD1;
+  --ink:#303434; --ink-2:#466069; --muted:#5A737D;
+  --line:#E2E8E4; --line-2:#CAD2D8;
+  --accent:#006747; --accent-soft:#E2EFE9;
+  --good:#007A60; --good-soft:#DEF1EC;
+  --warn:#7C6A1E; --warn-soft:#F2EFDB;
+  --dot:#DCE5E0;
+  --shadow:0 1px 2px rgba(0,103,71,.08), 0 10px 26px -16px rgba(0,84,50,.40);
   --sans:"Quicksand",ui-rounded,-apple-system,"Segoe UI",sans-serif;
   --serif:"Fredoka","Quicksand",ui-rounded,-apple-system,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#1B0F16; --panel:#261522; --panel-2:#321C2A;
-  --ink:#FCE9F1; --ink-2:#E2BDCF; --muted:#B58DA1;
-  --line:#3C2333; --line-2:#523046;
-  --accent:#FF8FBF; --accent-soft:#3C2030;
-  --good:#79D9B8; --good-soft:#17302A;
-  --warn:#E6AE6B; --warn-soft:#302217;
-  --dot:#2B1823;
+  --paper:#121E1A; --panel:#192A24; --panel-2:#20372E;
+  --ink:#EDF2EE; --ink-2:#C2D3CB; --muted:#92A9A0;
+  --line:#253B33; --line-2:#325245;
+  --accent:#CFC493; --accent-soft:#2B3426;
+  --good:#5FC9A8; --good-soft:#143029;
+  --warn:#D9C87A; --warn-soft:#332D18;
+  --dot:#1C2F28;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -18px rgba(0,0,0,.85);
   color-scheme:dark;
 }}
 :root[data-theme="dark"]{
-  --paper:#1B0F16; --panel:#261522; --panel-2:#321C2A;
-  --ink:#FCE9F1; --ink-2:#E2BDCF; --muted:#B58DA1;
-  --line:#3C2333; --line-2:#523046;
-  --accent:#FF8FBF; --accent-soft:#3C2030;
-  --good:#79D9B8; --good-soft:#17302A;
-  --warn:#E6AE6B; --warn-soft:#302217;
-  --dot:#2B1823;
+  --paper:#121E1A; --panel:#192A24; --panel-2:#20372E;
+  --ink:#EDF2EE; --ink-2:#C2D3CB; --muted:#92A9A0;
+  --line:#253B33; --line-2:#325245;
+  --accent:#CFC493; --accent-soft:#2B3426;
+  --good:#5FC9A8; --good-soft:#143029;
+  --warn:#D9C87A; --warn-soft:#332D18;
+  --dot:#1C2F28;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 30px -18px rgba(0,0,0,.85);
   color-scheme:dark;
 }
@@ -54,8 +58,7 @@ a{color:var(--accent)}
 .top-in{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:9px;min-width:0}
 .brand b{font-family:var(--serif);font-weight:500;font-size:18px;letter-spacing:.005em}
-.kitty{flex:none;display:block;width:36px;height:28px}
-.kitty svg{display:block;width:100%;height:100%;overflow:visible}
+.brandmark{flex:none;display:block;width:46px;height:22px;object-fit:contain}
 .brand span{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .grow{flex:1 1 auto;min-width:0}
 .search{position:relative;flex:0 1 300px;min-width:170px}
@@ -209,7 +212,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 .mini .ma{font-size:12.5px;color:var(--ink-2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}
 .gate{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background-color:var(--paper);background-image:radial-gradient(var(--dot) 1.4px,transparent 1.5px);background-size:22px 22px}
 .gatecard{background:var(--panel);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:26px 24px;width:min(360px,100%);display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center}
-.gatecard .kitty{width:66px;height:50px}
+.gatecard .brandmark{width:92px;height:44px}
 .gatecard h2{font-family:var(--serif);font-weight:500;font-size:20px}
 .gatecard p{margin:0;color:var(--muted);font-size:13.5px}
 .gatecard input{width:100%;padding:10px 14px;border:1px solid var(--line-2);border-radius:999px;background:var(--panel-2);text-align:center;letter-spacing:.2em;outline:none}
@@ -234,7 +237,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 
 <header class="top">
   <div class="top-in">
-    <div class="brand"><span class="kitty" aria-hidden="true"><svg viewBox="0 0 54 40"><path d="M9 15 11 4.5 21.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><path d="M45 15 43 4.5 32.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><ellipse cx="27" cy="23" rx="18" ry="14" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2"/><path d="M3 17 12.5 20M2.5 23.5H12M3 30 12.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><path d="M51 17 41.5 20M51.5 23.5H42M51 30 41.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="20" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="34" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="27" cy="26.5" rx="2.6" ry="1.9" fill="var(--accent)"/><path d="M41 10 35.5 6 35.5 14.5Z" fill="var(--accent)"/><path d="M41 10 46.5 6 46.5 14.5Z" fill="var(--accent)"/><circle cx="41" cy="10.2" r="2.6" fill="var(--accent)" stroke="var(--panel)" stroke-width="1.2"/></svg></span><b>Banking Interview Prep Website</b><span id="brandCount">loading</span></div>
+    <div class="brand"><img class="brandmark" src="logo.png" alt="" aria-hidden="true"><b>Banking Interview Prep Website</b><span id="brandCount">loading</span></div>
     <div class="tabs" role="tablist">
       <button role="tab" id="tab-Technical" aria-selected="true">Technicals</button>
       <button role="tab" id="tab-Behavioral" aria-selected="false">Behaviorals</button>
@@ -265,7 +268,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 <div class="gate" id="gate">
   <button class="iconbtn gatetheme" id="gateThemeBtn" title="Switch theme" aria-label="Switch between light and dark theme"></button>
   <form class="gatecard" id="gateForm">
-    <span class="kitty" aria-hidden="true"><svg viewBox="0 0 54 40"><path d="M9 15 11 4.5 21.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><path d="M45 15 43 4.5 32.5 11Z" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2" stroke-linejoin="round"/><ellipse cx="27" cy="23" rx="18" ry="14" fill="var(--panel)" stroke="var(--ink)" stroke-width="2.2"/><path d="M3 17 12.5 20M2.5 23.5H12M3 30 12.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><path d="M51 17 41.5 20M51.5 23.5H42M51 30 41.5 26.5" stroke="var(--ink)" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="20" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="34" cy="22" rx="2.1" ry="2.7" fill="var(--ink)"/><ellipse cx="27" cy="26.5" rx="2.6" ry="1.9" fill="var(--accent)"/><path d="M41 10 35.5 6 35.5 14.5Z" fill="var(--accent)"/><path d="M41 10 46.5 6 46.5 14.5Z" fill="var(--accent)"/><circle cx="41" cy="10.2" r="2.6" fill="var(--accent)" stroke="var(--panel)" stroke-width="1.2"/></svg></span>
+    <img class="brandmark" src="logo.png" alt="" aria-hidden="true">
     <h2>Banking Interview Prep Website</h2>
     <p id="gateMsg">Sign in to pick up where you left off.</p>
     <input id="gateName" type="text" placeholder="Your name" aria-label="Your name" autocomplete="name" autocapitalize="words" hidden>
