@@ -127,7 +127,7 @@ TECH_TOPIC_RULES = [
     ("Stock Pitch & Investing", r"stock pitch|pitch me|pitch a|would you pitch|invest in|where would you invest|allocate .{0,20}(\$|million|capital)|would you (buy|short)|long or short|portfolio|thesis|catalyst|undervalued|overvalued|hedge fund|etf\b|asset allocation|investment horizon|stock (pick|you)"),
     ("Industry & Company Analysis", r"industry|sector|competitive|moat|business model|unit economics|market size|trend|how does .* make money|what drives"),
     ("FIG & Specialty Valuation", r"regulatory capital|commercial bank|insurance (company|firm)|specialty finance|net interest margin|tangible book|loan loss|basel|bank's balance sheet|value a bank"),
-    ("Deal & Process", r"pitch book|cim\b|teaser|nda\b|data room|lbo model|build a model|model(ing)? (a|the)|process|timeline|roadshow|ipo\b|follow-?on|bookbuild"),
+    ("Deal & Process", r"pitch book|cim\b|\bteasers?\b|nda\b|data room|lbo model|build a model|model(ing)? (a|the)|process|timeline|roadshow|ipo\b|follow-?on|bookbuild"),
     ("Quant & Brainteasers", r"how many|estimate the|probability|dice|coin|expected value|mental math|percent of|what is \d|\d+ ?% of"),
 ]
 
@@ -243,6 +243,13 @@ BEHAV_FRAMEWORKS = {
 # Lines the source captured as questions that are not questions: a candidate's commentary
 # on their own interview, or half of a prompt whose other half landed on another card.
 # Hand-checked one by one; add an id only after reading it.
+# Quantitative questions the source recorded without the numbers, the rules or the
+# question itself, so no solution exists for them as written. Hand-checked while the
+# solvable brainteasers were moved to the technical deck.
+UNSOLVABLE = {
+    "B0096", "B0230", "B0564", "B0768", "B0943",
+}
+
 NOT_A_QUESTION = {
     "B0137", "B0187", "B0226", "B0286", "B0289", "B0302", "B0315", "B0347",
     "B0444", "B0498", "B0540", "B0546", "B0678", "B0682", "B0771", "B0909",
@@ -643,7 +650,8 @@ BEHAV_GUIDES = [
      "and one in which your own contribution never becomes visible."),
 
     ("Pressure, deadlines and competing priorities",
-     r"pressure|stress|difficult times|tight (deadline|timeline|project)|long hours|workload|burnout|"
+     r"pressure|stress|difficult times|how many hours will you work|"
+     r"tight (deadline|timeline|project)|long hours|workload|burnout|"
      r"priorit|multitask|juggl|competing (tasks|deadlines|priorities|work)|"
      r"demanding hours|80 hours|can you work|handle the (hours|demands)|"
      r"high quality output under tight|the hardest you've ever worked",
@@ -1270,6 +1278,9 @@ CLEARED_ISSUES = {
 }
 
 
+TECH_TOPIC_NAMES = {name for name, _ in TECH_TOPIC_RULES}
+
+
 def classify(text, rules, default):
     low = text.lower()
     for name, pat in rules:
@@ -1353,8 +1364,12 @@ def main():
         firms = sorted({f for f in (parent_firm(s) for s in firm_srcs) if f})
         q["question"] = tidy_case(tidy_punctuation(q["question"]))
         text = q["question"] + " " + (q.get("answer") or "")
-        topic = classify(q["question"] + " " + q.get("topic", ""),
-                         TECH_TOPIC_RULES, "Industry & Company Analysis")
+        # A stored topic that names a real topic is a deliberate choice by whoever
+        # wrote the card, so it wins. The keyword rules are for the cards that say
+        # nothing, and they cannot tell a brainteaser from a deal teaser.
+        stored = q.get("topic", "")
+        topic = stored if stored in TECH_TOPIC_NAMES else classify(
+            q["question"] + " " + stored, TECH_TOPIC_RULES, "Industry & Company Analysis")
         ans = q.get("answer") or ""
         collections = []
         if is_guide:
@@ -1406,6 +1421,8 @@ def main():
         bissues = card_issues(question, "", "", True)
         if bid in NOT_A_QUESTION:
             bissues = ["Not a question"]
+        elif bid in UNSOLVABLE and "Incomplete prompt" not in bissues:
+            bissues = bissues + ["Incomplete prompt"]
         guide_name, guidance = behav_guidance(question, topic)
         cards.append({
             "id": bid,

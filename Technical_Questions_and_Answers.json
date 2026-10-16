@@ -46739,13 +46739,2118 @@
       "original_question_ids": [
         "F2519"
       ],
-      "topic": "Markets & Economy",
+      "topic": "Options & Derivatives",
       "answer": "A derivative is a contract whose value comes from something else - a rate, a price, an index or a credit. There are four building blocks and everything else is a combination of them. • The blocks: forwards and futures lock a price for a future date; swaps exchange one stream of cash flows for another; options give the right but not the obligation to transact, so they cost a premium and have asymmetric payoff. • What a bank offers a corporate client: FX forwards, swaps and options for a company with receipts in another currency; interest-rate swaps, caps, floors and swaptions for one with floating-rate debt it wants fixed; and commodity hedges for an input it buys. • What it offers an investor: equity options and total return swaps, structured notes that package an option with a bond, and credit default swaps to buy or sell credit protection. • The dealer's own position: it is the market maker, so it takes the other side and then hedges its book, earning the spread plus a structuring fee rather than a directional bet. • Worth mentioning: collateral under a CSA, central clearing for standardised contracts since 2008, and that counterparty risk is the reason both exist.",
       "answer_status": "concept_and_method",
       "answer_type": "Worked / question-specific answer",
       "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
       "notes": [
         "Collected from the USF Interview + Offers Database 24-25."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2520",
+      "question": "How many books were sold this year in the US?",
+      "question_sources": [
+        "Advent International"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2520"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly 700 million to 1 billion print books a year in the US. • Chain: about 330m people, say 60% read at least one book a year, so 200m readers. Call the average four books a year, which allows for a large group reading one or two and a small group reading dozens. 200m x 4 = 800m. • Cross-check from the other side: at an average $15 a book that implies a $12bn trade market, which is the right order of magnitude for US consumer book sales. • Most sensitive assumption: books per reader, because the distribution is heavily skewed. Say so, and give a range of 500m to 1.2bn rather than a single number.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0014; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2521",
+      "question": "How many turtles can you fit inside of a movie theatre?",
+      "question_sources": [
+        "Alpine Investors"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2521"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 150,000 to 200,000, if you mean filling the volume. • Chain: a 200-seat cinema is roughly 20m x 15m with a 6m ceiling at the back, so call the volume 20 x 15 x 5 = 1,500 cubic metres. • A turtle of maybe 20cm x 15cm x 10cm is 0.003 cubic metres. Packing irregular shapes wastes roughly a third of the space, so use 0.0045 effective. • 1,500 / 0.0045 is about 330,000. Knock it down for seats and rake, which take perhaps a third of the volume, giving roughly 200,000. • Ask first whether they mean filling the room or covering the floor - the two answers differ by a factor of about fifty, and asking is the point of the question.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0035; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2522",
+      "question": "What is 7 cubed?",
+      "question_sources": [
+        "Bank of America Credit"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2522"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "343. • Method: 7 x 7 = 49, then 49 x 7. Split it: 50 x 7 = 350, less 7 = 343. • Say the split out loud - rounding to 50 and correcting is the move the interviewer wants to hear.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0061; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2523",
+      "question": "Estimate the number of ATMs in Boston.",
+      "question_sources": [
+        "Audax Group"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2523"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Around 2,500 to 3,500 in the city of Boston. • Chain: Boston proper is about 650k people. ATMs come from two places: bank branches and retail sites. • Branches: roughly one per 3,000 people in a dense city, so about 200 branches, with 2 ATMs each is 400. • Retail: convenience stores, bars, pharmacies and hotels. Say one ATM per 250 people in an urban centre with heavy commuter and student traffic, giving about 2,600. • Total about 3,000. • Most sensitive assumption: the retail ratio. Flag that Boston's daytime population is far above its residential count because of commuters and universities, which pushes the number up.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0072; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2524",
+      "question": "Estimate the U.S. market for defibrillators.",
+      "question_sources": [
+        "Audax Group"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2524"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "A US market of roughly $1bn to $1.5bn a year for defibrillators. • Chain: split the market into hospital defibrillators and public access units (AEDs). • Hospitals: about 6,000 US hospitals, say 30 units each on crash carts and in theatres, so 180,000 units on a 7-year replacement cycle, giving about 26,000 units a year at roughly $15,000 each - around $400m. • AEDs: schools, gyms, offices, airports. Call it 3m installed units on a 10-year cycle, so 300,000 a year at $1,500 - about $450m. • Add implantable and service revenue and you reach $1bn plus. • Most sensitive: the installed AED base, which is the number to challenge first.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0073; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2525",
+      "question": "Estimate the number of dental offices in Massachusetts.",
+      "question_sources": [
+        "Audax Group"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2525"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 3,000 to 4,000 dental offices in Massachusetts. • Chain: 7m people, and roughly one dentist per 1,500 people in a well-served state, so about 4,500 dentists. • Practices are not one dentist each: average perhaps 1.5 dentists per office once you allow for group practices, giving about 3,000 offices. • Cross-check: that is one office per 2,300 residents, which feels right for a dense, high-income state with good insurance coverage. • Most sensitive: dentists per office, which has been rising as corporate dental groups consolidate single-chair practices.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0077; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2526",
+      "question": "How many plastic, empty, unlabeled laundry detergent bottles are manufactured per year in the United States?",
+      "question_sources": [
+        "Bain Capital Credit"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2526"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly 400 to 600 million bottles a year. • Chain: about 130m US households. Liquid detergent users are maybe 80% of them, so 105m households. • A household does perhaps 300 loads a year and a bottle covers 40 to 50 loads, so 6 to 7 bottles per household per year. 105m x 6 = about 630m. • Trim for concentrate and pod formats displacing liquid, say 20%, giving roughly 500m. • Note the wording: 'unlabeled' suggests they want bottles manufactured, so add manufacturing scrap and private-label production, and treat the number as units produced rather than sold.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0128; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2527",
+      "question": "You have a biased coin that lands heads 60% of the time. How can you use it to simulate a fair coin flip?",
+      "question_sources": [
+        "Balyasny Asset Management"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2527"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Flip it twice and read the pair. • Method: HT and TH each occur with probability 0.6 x 0.4 = 0.24, so they are equally likely however biased the coin is. Call HT heads and TH tails; if you get HH or TT, discard and flip again. • Why it works: the bias cancels because both mixed orders share the same p(1-p). You never need to know the bias, only that it is constant between flips. • Cost: you keep a pair 48% of the time, so about two pairs per usable bit. This is the von Neumann extractor.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0138; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2528",
+      "question": "How many coins would need to be stacked to reach the height of a door handle?",
+      "question_sources": [
+        "Bank of America CHI"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2528"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Around 1,400 to 1,500 pennies. • Chain: a door handle sits about 1 metre off the floor, which is 1,000mm. • A US penny is about 1.5mm thick. 1,000 / 1.5 is about 667. • If the handle is at 36 inches, closer to 915mm, the answer is about 610. • State the two numbers you are using - handle height and coin thickness - because the whole answer is their ratio, and a coin thickness of 1mm versus 2mm moves the answer by a factor of two.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0143; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2529",
+      "question": "Estimate the number of gas stations in the United States.",
+      "question_sources": [
+        "Bank of America CHI",
+        "J.P. Morgan (compiled interview notes)",
+        "J.P. Morgan Finance and Business Management"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2529"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 110,000 to 150,000 gas stations in the US. • Chain: 330m people with roughly 280m registered vehicles. A vehicle fills up perhaps 30 times a year, so about 8.4bn fill-ups annually. • A station with 8 pumps serving a car every 6 minutes at maybe 25% utilisation handles roughly 70,000 fill-ups a year. • 8.4bn / 70,000 is about 120,000 stations. • Cross-check from geography: about 20,000 towns and cities, with small towns holding a handful and cities dozens, lands in the same range.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0144; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2530",
+      "question": "How many turkeys are sold in the month of Thanksgiving?",
+      "question_sources": [
+        "Bank of America Healthcare SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2530"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 45 to 50 million turkeys in the Thanksgiving month. • Chain: 130m US households, say 85% mark the holiday with a meal, so 110m households - but households gather, so perhaps 50m separate dinners. • Most dinners use one bird, so roughly 45m turkeys, plus restaurant and institutional demand. • Cross-check by weight: 45m birds at 15 lbs is about 675m lbs, against annual US turkey production of roughly 5bn lbs. That makes Thanksgiving about 13% of the year's turkey, which is plausible for a holiday that concentrates demand.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0153; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2531",
+      "question": "What's 9^3?",
+      "question_sources": [
+        "Bank of America Healthcare SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2531"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "729. • Method: 9 x 9 = 81, then 81 x 9. Split it: 81 x 10 = 810, less 81 = 729. • The same trick works for any multiplication by 9: multiply by 10 and subtract the number once.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0154; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2532",
+      "question": "What's the sum of 1 to 100?",
+      "question_sources": [
+        "Bank of America Healthcare SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2532"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "5,050. • Method: pair the ends. 1 + 100, 2 + 99, 3 + 98 and so on each make 101, and there are 50 such pairs, so 50 x 101 = 5,050. • General form: n(n + 1) / 2, here 100 x 101 / 2. • This is the Gauss sum, and the pairing is the answer they want rather than the formula recited.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0155; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2533",
+      "question": "You have two unbiased coins which are 50% correlated. If you flip both what is the probability that they both come up the same side?",
+      "question_sources": [
+        "BlackRock SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2533"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "75%. • Method: code each coin as +1 for heads and -1 for tails. Each is fair, so the mean is zero and the variance one, which makes the correlation simply the expected product: rho = E[XY] = P(same) - P(different). • Since P(same) + P(different) = 1, substituting gives rho = 2P(same) - 1, so P(same) = (1 + rho) / 2 = 1.5 / 2 = 0.75. • Sanity check the ends: rho = 0 gives 50%, which is two independent coins, and rho = 1 gives 100%, which is one coin counted twice.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0204; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2534",
+      "question": "How many places on the earth could you walk a mile south, a mile east, and a mile north and end up where you started?",
+      "question_sources": [
+        "BlackRock SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2534"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Infinitely many. • The obvious one: the North Pole. Walk a mile south, a mile east along a line of latitude, then a mile north, and you are back at the pole. • The family people miss: near the South Pole, find the circle of latitude whose circumference is exactly one mile. Any point one mile north of that circle works - you walk south onto it, loop it exactly once going east, and walk back north to where you started. • And it does not stop there: circles of circumference 1/2 mile, 1/3 mile and so on work too, since the eastward mile simply loops them twice, three times and so on. Each gives another infinite ring of starting points. • So the answer is infinitely many, and the North Pole is only the first.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0206; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2535",
+      "question": "You have a standard deck of 52 playing cards. You randomly draw three cards from the deck. What is the probability that all three cards are Aces?",
+      "question_sources": [
+        "Blackstone Group"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2535"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 0.018%, or 1 in 5,525. • Method: draw without replacement and multiply the conditional probabilities. 4/52 x 3/51 x 2/50. • Simplify as you go: 4/52 = 1/13, 3/51 = 1/17, 2/50 = 1/25, so the product is 1 / (13 x 17 x 25) = 1/5,525. • Equivalently by combinations: the 4 aces choose 3 is 4 ways, over 52 choose 3 = 22,100, and 4/22,100 is the same 1/5,525. • The trap is using 4/52 three times, which assumes replacement and gives the wrong answer.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0231; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2536",
+      "question": "Approximately how large is the number of boutique hotels in Phoenix, Arizona?",
+      "question_sources": [
+        "Canaccord Genuity Boston"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2536"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Perhaps 40 to 70 boutique hotels in the Phoenix area. • Chain: metro Phoenix is about 5m people and a significant tourist and conference destination. • Total hotels: roughly one hotel per 15,000 residents in a tourist market, so about 330 hotels. • Boutique share: independent, design-led properties under about 100 rooms are maybe 15% of a sunbelt market dominated by chains and resorts, giving about 50. • Most sensitive: the definition of boutique. Ask whether they mean independent, under a room count, or a particular price point - the three give very different answers.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0261; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2537",
+      "question": "How many degrees is the clock on the wall at 3:15?",
+      "question_sources": [
+        "Centerview Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2537"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "7.5 degrees. • Method: 15:15 is quarter past three. The minute hand is at 90 degrees. The hour hand is a quarter of the way from 3 to 4: 3 x 30 = 90, plus 15 x 0.5 = 7.5, so 97.5 degrees. • Difference: 97.5 - 90 = 7.5 degrees. • The tempting answer is zero, because both hands look like they are on the 3. They are not - the hour hand has drifted 7.5 degrees past it.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0262; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2538",
+      "question": "How many messages are middle school kids sending an hour in the US?",
+      "question_sources": [
+        "Centerview Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2538"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Very roughly 2 to 3 billion messages an hour during waking hours. • Chain: US middle schoolers, grades 6 to 8, are three cohorts of about 4m each, so about 12m children. • Say 85% have a phone, giving 10m active messagers. • A heavy teenage messager sends perhaps 100 to 200 messages a day over about 14 waking hours, so 10 or so an hour on average, with far more after school and almost none in class. • 10m x 10 is about 100m an hour on average, rising to perhaps 300m in the after-school peak. • Say which hour you mean - the average hour and the peak hour differ by several times, and that distinction is the interesting part of the answer.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0264; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2539",
+      "question": "What is the angle of the hands on the clock if it is 1:15?",
+      "question_sources": [
+        "Centerview Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2539"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "52.5 degrees. • Method: the minute hand is at 15 minutes, which is 90 degrees from twelve. The hour hand is not on the 1 - it has moved a quarter of the way toward the 2. • Hour hand: 30 degrees per hour plus 0.5 degrees per minute, so 30 + 7.5 = 37.5. • Difference: 90 - 37.5 = 52.5 degrees. • The whole point of the question is the 0.5 degrees a minute. Answering 60 means you left the hour hand parked on the 1.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0267; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2540",
+      "question": "How many degrees is represented on a clock at 3:15 pm?",
+      "question_sources": [
+        "Centerview Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2540"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "7.5 degrees. • Method: 15:15 is quarter past three. The minute hand is at 90 degrees. The hour hand is a quarter of the way from 3 to 4: 3 x 30 = 90, plus 15 x 0.5 = 7.5, so 97.5 degrees. • Difference: 97.5 - 90 = 7.5 degrees. • The tempting answer is zero, because both hands look like they are on the 3. They are not - the hour hand has drifted 7.5 degrees past it.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0270; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2541",
+      "question": "How many planes are flying over the United States right now?",
+      "question_sources": [
+        "Citi LA"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2541"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Around 5,000 aircraft over the US at a typical daytime moment. • Chain: US commercial carriers fly roughly 25,000 to 30,000 flights a day. • Average flight time is about 2 hours, so total airborne hours are about 55,000 a day. Spread over 24 hours that is roughly 2,300 aircraft in the air on average. • Traffic is not flat: the daytime peak runs perhaps twice the daily average, so about 4,500 to 5,000 commercial aircraft at midday, falling to a few hundred overnight. • Add general aviation, cargo and military and the peak figure rises further. • Say the time of day you are assuming - without it the answer has no meaning.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0283; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2542",
+      "question": "How many boxes of Oreos are consumed in the United States each year?",
+      "question_sources": [
+        "D.E. Shaw Research"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2542"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly 200 to 300 million boxes a year. • Chain: 130m US households, say half buy Oreos at all, giving 65m buying households. • A buying household might get a pack every month or two, so 8 packs a year: 65m x 8 = about 520m. That feels high, so temper the purchase rate to one every two months and you land near 300m. • Cross-check on revenue: 300m boxes at $4 is $1.2bn of US retail sales, which is the right order for the leading US cookie brand. • The revenue cross-check is what makes this answer credible - do it out loud.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0323; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2543",
+      "question": "How many times do the hour and minute hands of a clock overlap within 24 hours?",
+      "question_sources": [
+        "Deutsche Bank SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2543"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "22 times. • Method: the minute hand gains a full lap on the hour hand every 12/11 hours, which is about 65.45 minutes - not every 60. • In 24 hours there are 24 / (12/11) = 22 gains, so 22 overlaps. • Sanity check by naming them: they overlap just after 1:05, 2:11, 3:16 and so on, but there is no overlap just after 11 - the next one is at 12:00 exactly, which is why you lose one per 12 hours and get 11 rather than 12.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0339; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2544",
+      "question": "How many golf balls can fit into a Boeing 737?",
+      "question_sources": [
+        "Deutsche Bank SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2544"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly 10 to 15 million golf balls in a 737. • Chain: a 737 cabin is about 30m long, 3.5m wide and 2.2m high, so call the usable volume 30 x 3.5 x 2.2 = about 230 cubic metres. Add the hold and round to 250. • A golf ball is 4.3cm across, so its bounding cube is about 80 cubic centimetres, which is 0.00008 cubic metres. • Spheres pack at roughly 65% efficiency, so each ball effectively occupies about 0.0001 cubic metres. 250 / 0.0001 is about 2.5m. • That is the honest number from these inputs; quoting tens of millions requires a bigger aircraft or no seats. Say whether you are stripping the interior out, because it changes the answer by about a third.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0341; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2545",
+      "question": "You are designing a train station with three escalators. How many should go up and how many down, and why?",
+      "question_sources": [
+        "Ducera Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2545"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Two up and one down. • Reasoning: people will walk down a stationary staircase far more readily than they will walk up one, so the demand for mechanical help is not symmetric even when the passenger flow is. • Capacity follows the peak: a station's crush is usually directional, and the upward direction out of a platform is where queues form and where a stalled crowd becomes a safety problem. • What makes this a good answer: say that you would check the actual peak flows and reverse one escalator by time of day if the morning and evening peaks run opposite ways, which is what real stations do. • There is no single right number here. The interviewer is testing whether you reason from asymmetric demand rather than splitting three in half.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0368; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2546",
+      "question": "A lily pad doubles in size every minute and covers an entire pond after 60 minutes. What fraction of the pond does it cover after 59 minutes?",
+      "question_sources": [
+        "Evercore Strategic Defense & Shareholder Advisory"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2546"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Half the pond. • Method: run the doubling backwards. If the pond is fully covered at 60 minutes and the area doubles each minute, then one minute earlier it was half covered. • The instinct to answer 1/2 of 59/60, or anything near full, is what the question is testing: exponential growth does almost all its work at the end.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0411; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2547",
+      "question": "How many people get married in USA every year?",
+      "question_sources": [
+        "Goldman Sachs HK"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2547"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 2 million marriages a year in the US. • Chain: 330m people with a roughly even age spread over 80 years, so about 4m people reach any given age each year. • Most people who marry do so once, and perhaps 70% of adults marry at some point, so about 2.8m people marry for the first time each year, which is 1.4m first marriages. • Add remarriages, maybe a third of the total, and you reach roughly 2m marriages. • Cross-check: that is a rate of about 6 per 1,000 population, which is the right order for a developed country and has been drifting down for decades.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0447; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2548",
+      "question": "How many ATMs are there in Austin, TX?",
+      "question_sources": [
+        "Goldman Sachs NY Financing"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2548"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Around 2,000 to 2,500. • Chain: Austin is roughly 1m people but much less dense than a northeastern city, so retail ATM coverage is thinner. • Branches: about one per 4,000 people, so 250 branches at 2 ATMs each is 500. • Retail: one per 600 people given lower foot traffic and higher card use, giving about 1,700. • Total about 2,200. • Worth saying: ATM density is falling year on year as card and phone payments displace cash, so any answer should be framed as a current estimate on a declining trend.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0454; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2549",
+      "question": "What is 7x 7x 7x 7x 7?",
+      "question_sources": [
+        "Goldman Sachs NY Financing"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2549"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "16,807. • Method: build it in steps you can hold. 7^2 = 49, 7^3 = 343, 7^4 = 343 x 7 = 2,401, 7^5 = 2,401 x 7 = 16,807. • Each step is a x7, and 2,401 x 7 is 2,400 x 7 = 16,800 plus 7.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0459; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2550",
+      "question": "If there is a lily pad in a pond, and it doubles in size every minute and will completely cover the pond in one hour, how long will it take to cover a quarter the pond?",
+      "question_sources": [
+        "Goldman Sachs NY",
+        "UBS NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2550"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "58 minutes. • Method: work back from full. At 60 minutes it is complete, at 59 it is half, at 58 it is a quarter. • Each step back halves the area, so a quarter is two steps from the end.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0463; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2551",
+      "question": "How many pregnant women are there in New York right now?",
+      "question_sources": [
+        "Guggenheim Partners"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2551"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Around 150,000 to 200,000 pregnant women in New York City at any moment. • Chain: NYC is about 8.5m people, roughly half women, so 4.2m. • Women of childbearing age, say 15 to 44, are about 40% of women, giving 1.7m. • NYC births run about 110,000 a year. A pregnancy lasts three quarters of a year, so at any instant the number pregnant is roughly 110,000 x 0.75 = 83,000, plus pregnancies that do not reach term, giving perhaps 100,000. • The birth-rate route is far more reliable than the population route, because it anchors on a number you can actually reason about. Use it and say why.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0496; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2552",
+      "question": "How many degrees are between the hands of a clock at 3:25?",
+      "question_sources": [
+        "Guggenheim Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2552"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "47.5 degrees. • Method: minute hand at 25 minutes is 25 x 6 = 150 degrees. Hour hand is 3 x 30 + 25 x 0.5 = 90 + 12.5 = 102.5 degrees. • Difference: 150 - 102.5 = 47.5 degrees. • General formula worth carrying: the angle is the absolute value of 30H - 5.5M, and if that exceeds 180 you subtract it from 360.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0506; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2553",
+      "question": "Calculate the weighted average of 25% of X, 50% of Y, and 25% of Z.",
+      "question_sources": [
+        "J.P. Morgan Fixed Income"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2553"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "0.25X + 0.50Y + 0.25Z. • Method: a weighted average is each value times its weight, summed, with the weights adding to one. Here 25% + 50% + 25% = 100%, so no normalising is needed. • Equivalently (X + 2Y + Z) / 4, which is often the faster form to say. • If the weights had not summed to 100%, you would divide by their total.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0563; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2554",
+      "question": "Calculate 67 multiplied by 158 mentally.",
+      "question_sources": [
+        "J.P. Morgan Fixed Income"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2554"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "10,586. • Method: round and correct. 67 x 158 = 67 x 160 less 67 x 2. 67 x 16 = 1,072, so 67 x 160 = 10,720; less 134 = 10,586. • Check the last digit: 7 x 8 = 56, so the answer must end in 6.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0567; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2555",
+      "question": "A lily pad doubles in area daily and covers a pond on day 30. On which day is the pond half covered?",
+      "question_sources": [
+        "J.P. Morgan Fixed Income",
+        "J.P. Morgan SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2555"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Day 29. • Method: the area doubles daily and is complete on day 30, so the day before it was half. One step back from full is always half.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0568; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2556",
+      "question": "A water droplet doubles in size every second and fills a pond in 60 seconds. When is the pond one-quarter full?",
+      "question_sources": [
+        "J.P. Morgan LA"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2556"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "At 58 seconds. • Method: full at 60 seconds, so half at 59 and a quarter at 58. • Two halvings back from full is a quarter, so two seconds before the end.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0579; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2557",
+      "question": "Calculate 3/16 mentally.",
+      "question_sources": [
+        "J.P. Morgan Research"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2557"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "0.1875, or 18.75%. • Method: halve three times from 3/2. 3/2 = 1.5, 3/4 = 0.75, 3/8 = 0.375, 3/16 = 0.1875. • Worth memorising the sixteenths, since they appear constantly in bond prices: 1/16 = 0.0625, so 3/16 is three of those.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0581; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2558",
+      "question": "What is 21*21?",
+      "question_sources": [
+        "J.P. Morgan SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2558"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "441. • Method: (20 + 1)^2 = 400 + 2(20) + 1 = 441. • The square of any number just above a round one works this way, which is faster than long multiplication and much harder to get wrong.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0585; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2559",
+      "question": "Estimate the number of hairstylists or barbers in this city and explain your assumptions.",
+      "question_sources": [
+        "J.P. Morgan SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2559"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "For a city of 1m, roughly 3,000 to 4,000 barbers and hairstylists. • Chain: a person gets perhaps 8 haircuts a year, so 1m people generate 8m haircuts. • A stylist does 6 to 8 cuts a day, say 7, over about 250 working days, which is roughly 1,750 cuts a year. • 8m / 1,750 is about 4,600. Trim for home cutting and longer intervals among some groups and call it 3,500. • Most sensitive: haircuts per person per year, which varies by a factor of three across the population. Say that, and give the range.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0587; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2560",
+      "question": "Three identical light bulbs in a windowless room are controlled by three switches outside. All bulbs start off. You may manipulate the switches, then enter the room once, with no further access to the switches. How can you identify which switch controls each bulb?",
+      "question_sources": [
+        "J.P. Morgan SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2560"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Use heat as a third state. • Method: turn switch 1 on and leave it for several minutes. Turn switch 1 off and switch 2 on. Walk in. • Reading the room: the bulb that is lit belongs to switch 2, the bulb that is off but warm belongs to switch 1, and the bulb that is off and cold belongs to switch 3. • Why it works: one visit gives only two visible states, on and off, which cannot separate three switches. Temperature supplies the missing third state. • If the interviewer rules out heat, say so and note that the puzzle then has no solution with a single entry - that is a better answer than inventing one.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0588; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2561",
+      "question": "Five pirates looted a chest full of 100 gold coins. Being a bunch of democratic pirates, they agree on the following method to divide the loot: The most senior pirate will propose a distribution of the coins. All pirates, including the most senior pirate, will then vote. If at least 50% of the pirates (3 pirates in this case) accept the proposal, the gold is divided as proposed. If not, the most senior pirate will be fed to shark and the process starts over with the next most senior pirate... The process is repeated until a plan is approved. You can assume that all pirates are perfectly rational: they want to stay alive first and to get as much gold as possible second. Finally, being blood-thirsty pirates, they want to have fewer pirates on the boat if given a choice between otherwise equal outcomes. How will the gold coins be divided in the end?",
+      "question_sources": [
+        "Jane Street Business Development"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2561"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "The senior pirate takes 98 and buys two cheap votes: 98, 0, 1, 0, 1. • Method: solve it backwards from the smallest case, because each pirate votes on what they would get if the proposer died. • Two left (D, E): D proposes everything for himself. His own vote is 50%, which passes. D gets 100, E gets 0. • Three left (C, D, E): C needs one more vote. E would get nothing if C died, so a single coin buys E. C proposes 99, 0, 1. • Four left (B, C, D, E): B needs one more. D gets nothing in the three-pirate case, so one coin buys D. B proposes 99, 0, 1, 0. • Five (A, B, C, D, E): A needs two more votes. In the four-pirate case C and E get nothing, so one coin each buys both. A proposes 98, 0, 1, 0, 1. • The insight to say out loud: you are not buying goodwill, you are beating each pirate's outcome in the next round by exactly one coin.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0596; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2562",
+      "question": "Estimate the number of pennies in a city of your choice.",
+      "question_sources": [
+        "Jane Street Business Development"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2562"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "For a city of 1m, somewhere around 50 to 100 million pennies. • Chain: pennies sit in three places - wallets, jars at home, and tills. • Wallets and pockets: say 1m people carrying an average of 10 pennies, so 10m. • Jars and drawers: this is the big one. A household that saves coins might hold several hundred; across 400,000 households averaging 150 pennies, that is 60m. • Tills and banks: a few million more. • Total roughly 75m, or about 75 pennies a head. • Most sensitive: the jar assumption, which dominates everything else. Say so, because the honest answer is that most pennies are out of circulation sitting in homes.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0598; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2563",
+      "question": "Estimate the number of coins in Hong Kong during mid-day if I were standing at Central station.",
+      "question_sources": [
+        "Jane Street Business Development"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2563"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "At a single station at midday, perhaps 50,000 to 150,000 coins. • Chain: Central station at midday might hold 10,000 to 20,000 people between platforms, concourse and trains. • Hong Kong is heavily cashless with the Octopus card, so coin carriage is lower than in a cash economy: call it 5 coins a person on average, with many carrying none. • 15,000 x 5 is about 75,000 coins. • Add coins in shop tills and machines within the station, maybe another 20,000. • The Octopus point is what makes this a good answer rather than a generic one - name the local fact that moves the estimate.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0600; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2564",
+      "question": "What is 432 times 63?",
+      "question_sources": [
+        "Jefferies NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2564"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "27,216. • Method: 432 x 63 = 432 x 60 plus 432 x 3. 432 x 6 = 2,592, so 432 x 60 = 25,920; 432 x 3 = 1,296; together 27,216. • Check the magnitude first: 400 x 60 = 24,000, so the answer should be a little over that.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0606; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2565",
+      "question": "How many baseballs fit into a school bus?",
+      "question_sources": [
+        "KeyBanc NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2565"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 400,000 to 500,000 baseballs in a school bus. • Chain: a school bus interior is roughly 11m long, 2.2m wide and 1.9m high, so about 46 cubic metres. • A baseball is 7.4cm across, so its bounding cube is about 400 cubic centimetres. At 65% packing each ball effectively occupies about 0.00062 cubic metres. • 46 / 0.00062 is about 74,000. • If the seats stay in, cut perhaps a third, giving roughly 50,000. • Say which assumption you made about the seats, and note that packing efficiency is the number most people forget - ignoring it overstates the answer by half.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0622; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2566",
+      "question": "What is 29 times 19?",
+      "question_sources": [
+        "KeyBanc NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2566"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "551. • Method: 29 x 19 = 29 x 20 less 29 = 580 - 29 = 551. • Anything ending in 9 is easier as the next round number minus one copy.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0623; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2567",
+      "question": "Express 1/90 as a percentage.",
+      "question_sources": [
+        "LionTree"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2567"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 1.11%. • Method: 1/9 = 0.1111, so 1/90 is a tenth of that, 0.01111, which is 1.111% as a percentage. • Useful anchor: 1/9 = 11.1%, 1/90 = 1.11%, 1/900 = 0.111%.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0644; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2568",
+      "question": "Calculate the square root of 2,500.",
+      "question_sources": [
+        "MUFG"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2568"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "50. • Method: 2,500 = 25 x 100, and the square root of a product is the product of the roots, so 5 x 10 = 50. • Splitting off the perfect square and the power of 100 is the general move for roots in your head.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0662; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2569",
+      "question": "How would you cut a cake into eight equal pieces using only three cuts? Give two possible solutions.",
+      "question_sources": [
+        "Macquarie Group LA"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2569"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Two solutions. • First: two vertical cuts through the centre at right angles give four quarters, then one horizontal cut through the middle of the cake halves every piece, giving eight. This is the intended answer, and the horizontal cut is the part people miss. • Second, if the cake must stay flat: cut it in half, stack the two halves, cut through the stack to make four, stack those, and cut again to make eight. Rearranging between cuts doubles the pieces every time. • Both rest on the same idea: three cuts can only reach eight pieces if each cut doubles what you already have.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0676; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2570",
+      "question": "A pond's covered area doubles every day and is fully covered on day 20. On which day is it half covered?",
+      "question_sources": [
+        "Macquarie Group LA"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2570"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Day 19. • Method: full on day 20, and the area doubles each day, so day 19 is half covered. • The general rule for any doubling: half is always one period before full, whatever the total length.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0679; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2571",
+      "question": "How much water does the coffee shop downstairs use on a systemwide basis?",
+      "question_sources": [
+        "Morgan Stanley SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2571"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "For a coffee shop chain, roughly 2 to 4 billion litres of water a year systemwide. • Chain: start with one store. A busy shop sells perhaps 500 drinks a day, each using about 0.3 litres in the drink itself. • But the drink is the small part: brewing waste, espresso machine flushing, cleaning, ice and washing up multiply it several times over. Call total water per drink 2 litres. • 500 drinks x 2 litres x 360 days is about 360,000 litres a store a year. • Across a chain of say 10,000 stores: about 3.6bn litres. • The move that earns credit is separating water in the cup from water used by the operation - most candidates estimate only the first and come out ten times too low.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0714; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2572",
+      "question": "Calculate the square root of 0.5.",
+      "question_sources": [
+        "Nomura Global Markets"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2572"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 0.707. • Method: the square root of 1/2 is 1 over the square root of 2, and the square root of 2 is about 1.414, so 1 / 1.414 is about 0.707. • Equivalently, half of 1.414. Worth knowing cold: root 2 is 1.414, root 3 is 1.732, root 5 is 2.236.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0740; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2573",
+      "question": "How many barbers would New York City need if all its barbers disappeared at once?",
+      "question_sources": [
+        "Oak Hill"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2573"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "The city would need about 25,000 to 40,000 barbers to clear the backlog and then hold steady. • Steady state: 8.5m people at 8 cuts a year is 68m cuts, and a barber does about 1,750 a year, so roughly 39,000 barbers just to meet ongoing demand. • The backlog: if every barber vanished at once, demand accumulates at about 5.7m cuts a month, so clearing a few months of backlog on top of current demand would need capacity well above the steady-state figure for a while. • The answer worth giving separates the two: the standing requirement is about 39,000, and the transition needs more. Most candidates answer only the first half.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0755; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2574",
+      "question": "How many barbershops are there in NYC?",
+      "question_sources": [
+        "Oak Hill"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2574"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly 4,000 to 5,000 barbershops and salons in New York City. • Chain: 8.5m people at about 8 haircuts a year is 68m cuts. • A shop with 4 chairs doing 7 cuts per chair per day over 300 days handles about 8,400 cuts a year. • 68m / 8,400 is about 8,000 shops, which feels high, so allow for larger salons and higher throughput in a dense city and call it 5,000. • Note the difference between this and the number of barbers: shops are the barber count divided by chairs per shop, so be clear which the interviewer asked for.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0756; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2575",
+      "question": "Calculate 21 multiplied by 19 mentally.",
+      "question_sources": [
+        "Oak Hill"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2575"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "399. • Method: this is the difference of two squares. 21 x 19 = (20 + 1)(20 - 1) = 400 - 1 = 399. • Any pair straddling a round number works the same way, which is the fastest route and the one worth showing.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0757; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2576",
+      "question": "Estimate how many barbers a city needs.",
+      "question_sources": [
+        "Oak Hill"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2576"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Same structure: demand divided by capacity. • Chain: residents x haircuts per person per year gives total cuts. Divide by one barber's annual capacity - about 7 cuts a day over 250 days, so roughly 1,750. • For a city of 1m at 8 cuts a head, that is 8m / 1,750, or about 4,600 barbers before trimming for home haircuts. • State the two drivers explicitly: frequency of haircuts and chair throughput. Everything else is detail, and the interviewer is checking that you found those two.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0758; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2577",
+      "question": "Calculate 39 multiplied by 29 mentally.",
+      "question_sources": [
+        "Oak Hill"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2577"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "1,131. • Method: same straddle around 34 does not help here, so round instead. 39 x 29 = 39 x 30 less 39 = 1,170 - 39 = 1,131. • Check the last digit: 9 x 9 = 81, so it ends in 1.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0762; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2578",
+      "question": "Estimate the number of potholes in New York City.",
+      "question_sources": [
+        "PIMCO Product & Strategy"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2578"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Perhaps 150,000 to 300,000 potholes in New York City at a given time. • Chain: NYC has roughly 10,000 km of streets, or about 6,000 miles. • Potholes cluster after freeze-thaw winters. On an average street you might see a handful per block; at roughly 20 blocks per mile and 2 potholes a block, that is 40 per mile. • 6,000 x 40 is about 240,000. • Cross-check on repairs: the city fills a few hundred thousand potholes a year, which is consistent with a standing population in this range being worked through annually. • Say that the number is strongly seasonal - it roughly doubles after a hard winter, which is the most interesting thing about the estimate.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0763; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2579",
+      "question": "Nine balls look identical, but one is lighter. Use a balance scale exactly twice to identify the lighter ball.",
+      "question_sources": [
+        "PIMCO Product & Strategy"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2579"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Two weighings, by thirds. • Method: split the nine into three groups of three. Weigh group A against group B. • If they balance, the light ball is in group C; if one side rises, it is in that group. Either way you now have three candidates after one weighing. • Weigh one candidate against another. If they balance, the light one is the third; otherwise it is the side that rises. • Why three groups and not two: each weighing has three outcomes - left, right, balanced - so it can split the field into three, not two. That is why n weighings cover 3^n items, and nine is exactly 3^2.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0769; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2580",
+      "question": "If you had a 10x10x10 cube made up of smaller 1x1x1 cubes, how many of the smaller cubes are on the outside layer of the larger cube?",
+      "question_sources": [
+        "PIMCO Product & Strategy"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2580"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "488. • Method: do not count faces, which double-counts edges and corners. Take the whole cube and remove the inside. The cube holds 10^3 = 1,000 small cubes; the hidden core is an 8 x 8 x 8 block, which is 512. So the outer shell is 1,000 - 512 = 488. • General form: n^3 - (n - 2)^3. • Sanity check: six faces of 100 would be 600, and the answer should sit below that because edges and corners belong to more than one face.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0770; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2581",
+      "question": "There are six marbles. One is slightly heavier than the other five, but is indistinguishable otherwise. Through your hands alone, you cannot determine which one is heavier. Instead, you are given a balance scale. Only two recordings are allowed to be taken, though. How do you identify the slightly heavier marble?",
+      "question_sources": [
+        "PJT Partners RSSG NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2581"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Two weighings. • Method: split six into two groups of three and weigh them. The heavier side holds the heavy marble, leaving three candidates. • Weigh one of those against another. If one sinks it is the heavy one; if they balance it is the third. • Six is within the 3^2 = 9 that two weighings can resolve, so two is enough with room to spare.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0780; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2582",
+      "question": "Calculate 25 cubed mentally.",
+      "question_sources": [
+        "Perella Weinberg Partners Healthcare SF",
+        "Perella Weinberg Partners SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2582"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "15,625. • Method: 25^2 = 625, then 625 x 25. Split it: 625 x 25 = 625 x 100 / 4 = 62,500 / 4 = 15,625. • Multiplying by 25 is always 'times 100, divided by 4', which is far easier than long multiplication.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0806; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2583",
+      "question": "What is the square root of 4800?",
+      "question_sources": [
+        "Perella Weinberg Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2583"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 69.3. • Method: bracket it between squares you know. 69^2 = 4,761 and 68^2 = 4,624, so the root is just under 69.3. • Alternative split: 4,800 = 16 x 300, so the root is 4 x root 300, and root 300 is about 17.32, giving 69.3. • Say the bracket out loud. An interviewer wants the bounding, not a memorised decimal.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0808; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2584",
+      "question": "Calculate 49 multiplied by 63 mentally.",
+      "question_sources": [
+        "Perella Weinberg Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2584"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "3,087. • Method: 49 x 63 = 50 x 63 less 63 = 3,150 - 63 = 3,087. • Check: 49 x 63 should be a little under 50 x 63, and it is.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0809; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2585",
+      "question": "What is the nearest square root of 4657?",
+      "question_sources": [
+        "Perella Weinberg Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2585"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "68, since the root is about 68.24. • Method: 68^2 = 4,624 and 69^2 = 4,761. 4,657 sits just above 4,624, so the root is a shade over 68, and 68 is the nearest whole number. • To go finer: the gap from 4,624 to 4,657 is 33, and the step between the two squares is 137, so about a quarter of the way, giving 68.24.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0810; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2586",
+      "question": "What is 92 multiplied by 384?",
+      "question_sources": [
+        "Perella Weinberg Partners NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2586"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "35,328. • Method: 92 x 384 = 92 x 400 less 92 x 16. 92 x 4 = 368, so 92 x 400 = 36,800; 92 x 16 = 1,472; 36,800 - 1,472 = 35,328. • Check the magnitude: 90 x 380 is about 34,200, so the answer should be a little above that.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0812; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2587",
+      "question": "It is 15:15, what is the angle of the hands on your watch? Do not look at your watch.",
+      "question_sources": [
+        "RBC Capital Markets NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2587"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "7.5 degrees. • Method: 15:15 is quarter past three. The minute hand is at 90 degrees. The hour hand is a quarter of the way from 3 to 4: 3 x 30 = 90, plus 15 x 0.5 = 7.5, so 97.5 degrees. • Difference: 97.5 - 90 = 7.5 degrees. • The tempting answer is zero, because both hands look like they are on the 3. They are not - the hour hand has drifted 7.5 degrees past it.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0828; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2588",
+      "question": "There are 10 machines in a row and you can take one pass through all the machines and take as many coins as you want from each machine to place in a bucket. Nine of the machines produce 1 ounce coins but one broken one produces .9 ounce coins. If you can only walk past the machines once before you weigh them, how can you identify the broken machine?",
+      "question_sources": [
+        "Rothschild & Co. LA"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2588"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Take a different number of coins from each machine. • Method: take 1 coin from machine 1, 2 from machine 2, and so on up to 10 from machine 10. That is 55 coins, which would weigh 55 ounces if every machine were sound. • Each coin from the broken machine is 0.1 ounces light, so the shortfall is 0.1 times the machine's number. A reading of 54.3 is 0.7 light, so machine 7 is broken. • Why it works: the count taken from each machine labels it, so one weighing carries ten distinguishable answers.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0863; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2589",
+      "question": "Estimate the number of cars in New York City.",
+      "question_sources": [
+        "Société Générale NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2589"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 2 million cars in New York City. • Chain: 8.5m people in roughly 3.1m households. • Car ownership is unusually low because of the subway: call it 45% of households owning at least one vehicle, averaging 1.2 vehicles among owners. • 3.1m x 0.45 x 1.2 is about 1.7m private vehicles. • Add commercial vehicles, taxis and for-hire cars - perhaps another 200,000 - giving roughly 1.9m. • The local fact that matters: Manhattan ownership is under 25% while Staten Island is over 80%, so a single citywide rate hides a lot. Mention it.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0874; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2590",
+      "question": "How many ping pong balls can fit in a Boeing aircraft?",
+      "question_sources": [
+        "Société Générale NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2590"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly 20 to 30 million ping pong balls in a narrowbody. • Chain: usable volume of about 250 cubic metres, as for any single-aisle jet with the cabin cleared. • A ping pong ball is 4cm across, so its bounding cube is 64 cubic centimetres. At 65% sphere packing, each ball effectively takes about 0.0001 cubic metres - almost identical to a golf ball, since the diameters are so close. • 250 / 0.0001 gives about 2.5m balls. • The interesting observation to make: ping pong balls and golf balls give nearly the same count because volume scales with the cube of the diameter and 4.3cm against 4.0cm is a small difference. Weight is where they differ enormously.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0879; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2591",
+      "question": "How many delivery drivers are in NYC?",
+      "question_sources": [
+        "Société Générale NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2591"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly 80,000 to 150,000 delivery drivers in New York City. • Chain: 3.1m households ordering food or goods perhaps 4 times a week gives about 12m deliveries a week. • A driver or rider completes maybe 20 deliveries a shift, 5 shifts a week, so 100 a week. • 12m / 100 is about 120,000 drivers, though many work part time, so the headcount is higher than the full-time equivalent. • Distinguish the two: full-time-equivalent demand is around 120,000, while the number of people who do any delivery work is considerably larger. That distinction is the answer worth giving.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0880; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2592",
+      "question": "Calculate the square root of 16,000.",
+      "question_sources": [
+        "Société Générale NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2592"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 126.5. • Method: 16,000 = 1,600 x 10, so the root is 40 x root 10, and root 10 is about 3.162, giving 126.5. • Check by bracketing: 126^2 = 15,876 and 127^2 = 16,129, so the answer sits between them.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0881; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2593",
+      "question": "Estimate the number of skis in Switzerland.",
+      "question_sources": [
+        "Stephens"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2593"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Perhaps 8 to 12 million pairs of skis in Switzerland. • Chain: 8.8m residents, and skiing participation is exceptionally high - say 35% ski, giving 3m skiers. • Most own their skis, and keen skiers own more than one pair: average 1.3 pairs among owners, with perhaps 80% owning rather than renting, so 3m x 0.8 x 1.3 is about 3.1m pairs in households. • Rental fleets: Switzerland handles millions of tourist skier-days, and rental shops hold large inventories. Call it another 1m pairs. • Add old pairs in cellars that nobody has thrown out, which in a ski culture is a real and large number - easily another 2m. • Total around 6m. The cellar assumption is the one to flag.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0886; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2594",
+      "question": "What's 3% of 113?",
+      "question_sources": [
+        "TD Securities NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2594"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "3.39. • Method: 1% of 113 is 1.13, so 3% is three of those: 3.39. • Always go via 1% for a percentage in your head. It turns every percentage question into a decimal shift and one small multiplication.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0901; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2595",
+      "question": "How many Starbucks are in NYC?",
+      "question_sources": [
+        "TD Securities NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2595"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Around 200 to 300 Starbucks in New York City. • Chain: NYC is 8.5m people. In a dense, high-income, high-footfall city, a coffee chain might support one store per 35,000 residents - and far more in Manhattan, where the daytime population is several times the residential one. • 8.5m / 35,000 is about 240 stores. • Cross-check: Manhattan alone is famous for having stores within sight of each other, which fits a few hundred citywide rather than a few dozen. • The daytime-population point is what makes the estimate defensible - commuters, not residents, buy most of the coffee.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0903; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2596",
+      "question": "If 1.5 chickens lay 1.5 eggs in 1.5 days, how many eggs would 3 chickens lay in 3 days?",
+      "question_sources": [
+        "TD Securities SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2596"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "6 eggs. • Method: scale the rate down to one chicken first. If 1.5 chickens lay 1.5 eggs in 1.5 days, then 1 chicken lays 1 egg in 1.5 days - the chickens cancel. • That is a rate of 2/3 of an egg per chicken per day. • So 3 chickens over 3 days lay 3 x 3 x 2/3 = 6 eggs. • The trap is answering 3, by assuming that doubling both the chickens and the days doubles the output. It quadruples the chicken-days, from 2.25 to 9, so the output rises from 1.5 to 6.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0910; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2597",
+      "question": "How many times do the three hands on a clock meet in a day?",
+      "question_sources": [
+        "TD Securities SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2597"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Twice, at 12:00:00 exactly. • Method: the hour and minute hands coincide 22 times a day, but the second hand has to be at the same place at the same instant. • Of those 22 meetings, only the two at 12 o'clock fall on an exact whole minute, which is the only way the second hand can be there too. The rest land at awkward fractions such as 1:05 and 27/11 seconds, where the second hand is elsewhere. • So all three hands coincide at midnight and midday: twice.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0912; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2598",
+      "question": "Eighteen balls look identical but one is heavier. Identify it using a balance scale at most three times.",
+      "question_sources": [
+        "TD Securities SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2598"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Three weighings. • Method: 18 balls, each weighing splitting the field into three. Weigh six against six. If one side sinks, the heavy ball is in that six; if they balance, it is in the remaining six. • Now three against three from the suspect six: the side that sinks holds it, leaving three candidates. • Finally one against one: the heavier is it, or if they balance it is the third. • Three weighings cover up to 27, so 18 fits comfortably.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0913; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2599",
+      "question": "If 1.5 chickens lay 1.5 eggs in 1.5 days, how many eggs do those chickens lay in three days?",
+      "question_sources": [
+        "Union Square Advisors"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2599"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "6 eggs. • Method: scale the rate down to one chicken first. If 1.5 chickens lay 1.5 eggs in 1.5 days, then 1 chicken lays 1 egg in 1.5 days - the chickens cancel. • That is a rate of 2/3 of an egg per chicken per day. • So 3 chickens over 3 days lay 3 x 3 x 2/3 = 6 eggs. • The trap is answering 3, by assuming that doubling both the chickens and the days doubles the output. It quadruples the chicken-days, from 2.25 to 9, so the output rises from 1.5 to 6.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0932; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2600",
+      "question": "How would you estimate the Statue of Liberty's height without tools?",
+      "question_sources": [
+        "Union Square Advisors"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2600"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Pace the shadow, or count the people. • Shadow method: measure your own height and your shadow, then pace the statue's shadow. The ratio of statue to shadow equals the ratio of you to your shadow, because the sun's rays are effectively parallel. Multiply and you have the height. • Human-scale method: if people on the pedestal look about one twentieth of the statue's height, and a person is 1.7m, the statue is roughly 34m - not far from the real 46m to the torch. • Angle method: step back until the statue subtends 45 degrees, at which point its height equals your distance, which you can pace out. • Give one method properly rather than three badly, and say what you would do about the pedestal - whether it counts is the ambiguity in the question.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0946; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2601",
+      "question": "Calculate 32 multiplied by 22 mentally.",
+      "question_sources": [
+        "Union Square Advisors"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2601"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "704. • Method: 32 x 22 = 32 x 20 plus 32 x 2 = 640 + 64 = 704. • Or double twice: 32 x 22 = 64 x 11 = 704, since multiplying by 11 is the number plus itself shifted one place.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0947; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2602",
+      "question": "Calculate 19 multiplied by 23 mentally.",
+      "question_sources": [
+        "Vista Equity Partners"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2602"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "437. • Method: 19 x 23 = 20 x 23 less 23 = 460 - 23 = 437. • Check the last digit: 9 x 3 = 27, so it ends in 7.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0953; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2603",
+      "question": "If 100 students are asked to guess 90% or 130% of the mean guess of their 100 guesses, what would you guess?",
+      "question_sources": [
+        "Weiss Asset Management"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2603"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Guess low for the 90% version and high for the 130% version, and say why. • Method: this is a beauty-contest game, solved by iterating. If everyone guesses at random, the mean sits near the middle of the range, so 90% of it is below the middle. Knowing that, you shade down; knowing everyone knows that, you shade down again. • Repeating drives the 90% version to the bottom of the range - zero is the Nash equilibrium - and drives the 130% version to the top, since every round of reasoning pushes the target up against the ceiling. • What to actually say: real players stop after one or two rounds of reasoning, so the winning guess is usually above the equilibrium - name a number a couple of steps down from the midpoint rather than zero, and explain that you are pricing how many steps of reasoning the room will do. • The reasoning is the answer here, not the number.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0977; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2604",
+      "question": "You have two jars 10 red marbles and 10 blue marbles. A jar will be picked at random, and then a marble will be picked from the jar. Placing all the marbles in the jars, how can you maximize the chances of a red marble being picked? What are the exact odds of getting a red marble using your scheme?",
+      "question_sources": [
+        "William Blair SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2604"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Put one red marble alone in a jar and the other 19 in the second jar; the odds become about 73.7%. • Method: the jar is chosen at random, so each is picked half the time. The jar with one red gives a red with certainty. The other jar holds 9 red and 10 blue, so it gives a red 9/19 of the time. • Total: 0.5 x 1 + 0.5 x (9/19) = 0.5 + 0.2368 = 0.7368, so about 73.7%. • Why it beats the obvious splits: ten and ten in each jar leaves you at 50%. Loading one jar with a single red guarantees half the draws while barely weakening the other jar. • This is the best you can do, and 73.7% is the number to quote.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0989; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2605",
+      "question": "Estimate the smartphone market size.",
+      "question_sources": [
+        "William Blair SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2605"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly $450bn to $550bn a year globally. • Chain: about 8bn people, with maybe 4.5bn smartphone users. • A phone is replaced about every 3 years, so roughly 1.4bn units sold a year. • Average selling price across the whole market, including low-cost Android handsets, is around $350. • 1.4bn x $350 is about $500bn. • Cross-check: the market leader's handset revenue alone is around $200bn, which should be a large minority of the total - and it is, at roughly 40%. That cross-check is what makes the estimate defensible. • Say whether you mean hardware only or the ecosystem, which is far larger.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0993; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2606",
+      "question": "Two ropes each take one hour to burn non-uniformly. How would you measure exactly 45 minutes?",
+      "question_sources": [
+        "William Blair SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2606"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "45 minutes from two ropes. • Method: light rope A at both ends and rope B at one end at the same moment. • Rope A burns from both directions, so it is gone in 30 minutes however uneven it is. At that instant rope B has 30 minutes of burn left. • Light rope B's other end now. The remaining 30 minutes of rope burns from both ends, so it takes 15. Total: 30 + 15 = 45. • The key idea is that burning from both ends always halves the remaining time, even though the rope burns unevenly and you cannot measure its middle.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0994; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2607",
+      "question": "Estimate the annual U.S. chewing gum market by revenue.",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2607"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly $3bn to $4bn a year in the US. • Chain: 330m people, say 55% chew gum at all, giving 180m chewers. • A chewer might buy a pack every two weeks, so 26 packs a year at about $2 a pack: 180m x 26 x $2 is about $9bn, which feels too high. • Temper the purchase rate - most buyers are occasional - to one pack a month: 180m x 12 x $2 is about $4.3bn. • Cross-check: that is about $13 a head a year on gum, which is plausible for a confectionery category. • Note the trend: gum sales have fallen materially since impulse buying at checkouts declined, so a current number sits at the lower end.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1088; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2608",
+      "question": "You have eight coins that look identical, but one is fake and slightly lighter. Explain how to identify the fake using a balance scale in (a) exactly two weighings and (b) exactly three weighings.",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2608"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Two weighings is enough, and three is easy. • Two weighings: weigh three against three. If they balance, the fake is one of the two set aside, so weigh those against each other and the lighter is fake. If one side rises, the fake is among those three, so weigh one against another - the lighter is fake, or if they balance it is the third. • Three weighings: four against four, then two against two within the light side, then one against one. Simpler to explain but wasteful. • The reason two suffices: each weighing has three outcomes, so two weighings distinguish up to nine items, and eight is under that ceiling.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1092; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2609",
+      "question": "You have a 5 gallon jug, a 3 gallon jug, and a hose. How do you measure 4 gallons of water?",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2609"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Fill the five, use the three to leave four behind. • Method: fill the 5-gallon jug. Pour from it into the 3-gallon jug until the small one is full; 2 gallons remain in the big one. • Empty the 3-gallon jug and pour the 2 gallons into it. Fill the 5-gallon jug again. • Top up the 3-gallon jug from the 5: it only has room for 1 more gallon, so exactly 1 gallon leaves the big jug, which leaves 4 gallons in the 5-gallon jug. • The general idea: you can measure any whole number that is a combination of the two jug sizes, because pouring to a full or empty mark is the only precise measurement you have.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1095; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2610",
+      "question": "Two ropes each burn non-uniformly in one hour. How would you measure 30 minutes?",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2610"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "30 minutes. • Method: light one rope at both ends. It burns toward the middle from each direction and finishes in half its total time, which is 30 minutes. • It does not matter that the rope burns unevenly - the two flames between them consume the whole rope, and the whole rope is one hour of burn. You only need the second rope for the 45-minute version.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1115; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2611",
+      "question": "What is the square root of 4,000?",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2611"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "About 63.2. • Method: 4,000 = 400 x 10, so the root is 20 x root 10, and root 10 is about 3.162, giving 63.25. • Bracket to confirm: 63^2 = 3,969 and 64^2 = 4,096, so just over 63.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1117; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2612",
+      "question": "What is the sum of all the numbers between 1 and 1000?",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2612"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "500,500 if you include 1 and 1,000. • Method: n(n + 1) / 2 = 1,000 x 1,001 / 2 = 500,500. • Say the ambiguity out loud: read strictly, 'between 1 and 1,000' excludes both ends, which gives 500,500 less 1 less 1,000 = 499,499. State which reading you are using rather than guessing - that is the part being tested. • The pairing argument is the same as the sum to 100: 1 + 1,000, 2 + 999 and so on each make 1,001, and there are 500 pairs.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1118; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2613",
+      "question": "How many cups of coffee are sold in NYC every day?",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2613"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Roughly 5 to 8 million cups of coffee a day in New York City. • Chain: 8.5m residents plus perhaps 1.5m daily commuters gives about 10m people in the city on a weekday. • Say 65% drink coffee, averaging 1.8 cups a day: 10m x 0.65 x 1.8 is about 11.7m cups. • Not all are bought - much is made at home or in offices. If about half are purchased, that is roughly 6m bought cups a day. • Say which number you are giving: cups consumed and cups sold differ by about a factor of two, and the interviewer usually wants the second.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1119; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2614",
+      "question": "You have four machines A, B, C, and D that produce silver coins that each weigh two ounces. However, one of the machines is malfunctioning and produces coins that weigh 1 ounce-but all of the coins look physically identical. The only way to weigh them is to place all the coins in a paper bag (so you don't know which machine produced which coin) and weigh them on a scale and you can only weigh them once. How do you find which machine is malfunctioning?",
+      "question_sources": [
+        "J.P. Morgan (compiled interview notes)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2614"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "One weighing, by taking different counts. • Method: take 1 coin from A, 2 from B, 3 from C and 4 from D - ten coins, which would weigh 20 ounces if all four machines were sound. • The faulty machine's coins weigh 1 ounce instead of 2, so each one costs you an ounce. A reading of 19 means one bad coin, so A; 18 means two, so B; 17 means C; 16 means D. • The bag defeats you only if you take the same number from each machine. Taking different counts turns a single weight into a label.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1121; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2615",
+      "question": "How much would you charge to wash the windows of this building?",
+      "question_sources": [
+        "KeyBanc NY"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2615"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Price it from hours, not from a feeling. • Chain: ask the building's size first. Say 20 floors with roughly 40 windows a floor, so 800 windows. • A two-person team on a suspended platform cleans maybe 50 to 60 windows a day, so 800 windows is about 14 crew-days. • Cost: two cleaners at $300 a day each is $600, so 14 days is $8,400 of labour. Add equipment, insurance - which is the expensive part at height - and overhead, say 60%, giving about $13,500. • Add a margin of 25% and quote around $17,000, or roughly $20 a window. • The structure they want: count the units, find the rate, build up cost, then add margin. Quoting a number without the build-up scores nothing.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1155; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2616",
+      "question": "You have two doors and one is the exit. Two identical knights stand in front of them; one always lies and the other always tells the truth. You may ask one question to one knight. What do you ask to find the right door?",
+      "question_sources": [
+        "PGIM — Asset Management (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2616"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Ask either knight what the other one would say, then take the other door. • The question: \"If I asked the other knight which door is the exit, what would they point to?\" Whatever answer you get, choose the opposite door. • Why it works: the route passes through one truth-teller and one liar in some order, so the answer is inverted exactly once either way. Ask the honest knight and he truthfully reports the liar's lie; ask the liar and he lies about the honest knight's truth. Both come back wrong, reliably. • A single reliable inversion is the whole trick - you do not need to know which knight you are speaking to.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1247; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2617",
+      "question": "If I had a pizza restaurant, how would you estimate the number of pizzas sold?",
+      "question_sources": [
+        "FTI Consulting — Consulting (USF 24-25)"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2617"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "Build it from covers, not from the market. • Chain: a single restaurant with 60 seats turning over twice an evening serves about 120 covers a night. • Say 80% of covers include a pizza and some parties share, so about 100 pizzas a night in-house. • Add delivery and takeaway, which for a pizza restaurant is often as large as the dining room: call it another 100. • 200 pizzas a day over 360 days is about 72,000 a year. • Cross-check on revenue: 72,000 at $18 is $1.3m of sales, which is a credible single-site restaurant turnover. • Do the revenue cross-check out loud - it is what separates a structured estimate from a guess.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B1251; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2618",
+      "question": "You start with a dollar, and have a jar of 100 marbles. 50 red marbles, 50 blue marbles. If the last marble you pull out is red, then you earn $10. If it's blue, you lose $1. You can also bet for any marble before the last marble and if that next marble is red, you earn $9, and lose $1 if it's blue. What is the optimal strategy to maximize your earnings in this game?",
+      "question_sources": [
+        "Weiss Asset Management"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2618"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "By symmetry the last marble is red half the time, so the real question is when to bet early. • The last-marble bet: before anything is drawn, the last marble is equally likely to be any of the 100, and half are red, so it pays $10 with probability 1/2 and costs $1 otherwise - an expected 0.5(10) - 0.5(1) = $4.50. • An early bet on the next marble pays $9 against a $1 loss, so with p the chance the next marble is red, its expected value is 9p - (1 - p) = 10p - 1. At p = 0.5 that is $4.00, which is less than holding for the last marble. • So you only bet early once the jar has turned in your favour: as blue marbles come out, p rises above 0.5 and 10p - 1 climbs past $4.50, which happens around p = 0.55. • The honest closing line is that the exact optimum needs backward induction over the remaining counts, because betting early forfeits the last-marble option. Say that rather than pretending to a closed form - the structure is what is being marked.",
+      "answer_status": "model_answer",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0979; it is a quantitative question."
+      ],
+      "supporting_reference_urls": []
+    },
+    {
+      "question_id": "F2619",
+      "question": "How many cups of water does the coffee stand across the street use in a week?",
+      "question_sources": [
+        "Morgan Stanley SF"
+      ],
+      "question_references": [],
+      "question_variants": [],
+      "original_question_ids": [
+        "F2619"
+      ],
+      "topic": "Quant & Brainteasers",
+      "answer": "For a single coffee stand, roughly 2,000 to 4,000 litres a week. • Chain: a street stand might serve 300 drinks a day over a 6-day week, so about 1,800 drinks. • Water in the cup is around 0.3 litres a drink, so 540 litres. • Operational water - machine flushing, cleaning, washing, ice - typically runs several times the water that reaches the customer. At 4x, that is another 2,200 litres. • Total roughly 2,700 litres a week. • Say which you are counting. The difference between water sold and water used is the whole question.",
+      "answer_status": "concept_and_method",
+      "answer_type": "Worked / question-specific answer",
+      "answer_origin": "Prepared model answer; not an official answer supplied by the named firms",
+      "notes": [
+        "Moved from the behavioral deck as B0718-split; it is a quantitative question."
       ],
       "supporting_reference_urls": []
     }

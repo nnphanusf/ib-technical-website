@@ -1,7 +1,7 @@
 Banking Interview Prep Website
 
 3,506 consolidated questions
-1. Behavioral / non-finance: 1,251
+1. Behavioral / non-finance: 1,151
 2. Finance: 2,255
 
 SOURCE AND EDITING NOTES
@@ -55,9 +55,6 @@ Sources: Advent International
 
 B0013. How do you feel about deal sourcing?
 Sources: Advent International; Summit Partners
-
-B0014. How many books were sold this year in the US?
-Sources: Advent International
 
 B0015. Why didn't you join Ring force in Consulting?
 Sources: Advent International
@@ -118,9 +115,6 @@ Sources: Alpine Investors; BlackRock SF; Blackstone Group; BMO Capital Markets; 
 
 B0034. Why do you want to work in private equity?
 Sources: Advent International; Alpine Investors; Ardian Private Equity; Audax Group; Goldman Sachs TMT SF; GTCR; Vista Equity Partners
-
-B0035. How many turtles can you fit inside of a movie theatre?
-Sources: Alpine Investors
 
 B0036. If there was a book about your life, what would be its title?
 Sources: Alpine Investors
@@ -197,9 +191,6 @@ Sources: Bank of America Credit
 B0060. What technical skills have you learned, such as Excel, coding or Argus?
 Sources: Bank of America Credit
 
-B0061. What is 7 cubed?
-Sources: Bank of America Credit
-
 B0062. Why do you want to work in investment banking wholesale credit rather than traditional investment banking?
 Sources: Bank of America Credit
 
@@ -230,12 +221,6 @@ Sources: Audax Group
 B0071. How would you start a restaurant in your local area, and what would you need to consider?
 Sources: Audax Group
 
-B0072. Estimate the number of ATMs in Boston.
-Sources: Audax Group
-
-B0073. Estimate the U.S. market for defibrillators.
-Sources: Audax Group
-
 B0074. Why do you want to work in Boston?
 Sources: Audax Group
 
@@ -243,9 +228,6 @@ B0075. Why did you choose to take an on-campus job with your already heavy cours
 Sources: Audax Group
 
 B0076. What do you think your job would look like every day?
-Sources: Audax Group
-
-B0077. Estimate the number of dental offices in Massachusetts.
 Sources: Audax Group
 
 B0078. Why did you choose your university?
@@ -398,9 +380,6 @@ Sources: BNP Paribas NY
 B0127. What did you find the most difficult process to recruit for banking?
 Sources: BNP Paribas NY
 
-B0128. How many plastic, empty, unlabeled laundry detergent bottles are manufactured per year in the United States?
-Sources: Bain Capital Credit
-
 B0129. What would your roommate say about you?
 Sources: Bain Capital Credit
 
@@ -428,9 +407,6 @@ Sources: Bain Capital
 B0137. Give me optimisation about LLM inference.
 Sources: Balyasny Asset Management
 
-B0138. You have a biased coin that lands heads 60% of the time. How can you use it to simulate a fair coin flip?
-Sources: Balyasny Asset Management
-
 B0139. Discuss your projects.
 Sources: Balyasny Asset Management
 
@@ -442,12 +418,6 @@ Sources: Bank of America CHI; Evercore Private Capital Markets & Debt Advisory; 
 
 B0142. If pennies were stacked as tall as the empire state building, could all those pennies fit in my office?
 Sources: Bank of America CHI
-
-B0143. How many coins would need to be stacked to reach the height of a door handle?
-Sources: Bank of America CHI
-
-B0144. Estimate the number of gas stations in the United States.
-Sources: Bank of America CHI; J.P. Morgan (compiled interview notes); J.P. Morgan Finance and Business Management
 
 B0145. Which industry do you think has the largest potential in the next couple years?
 Sources: Bank of America CHI
@@ -472,15 +442,6 @@ Sources: Bank of America CHI
 
 B0152. How many hours will you work?
 Sources: Bank of America CHI
-
-B0153. How many turkeys are sold in the month of Thanksgiving?
-Sources: Bank of America Healthcare SF
-
-B0154. What's 9^3?
-Sources: Bank of America Healthcare SF
-
-B0155. What's the sum of 1 to 100?
-Sources: Bank of America Healthcare SF
 
 B0156. Name three strengths and three weaknesses.
 Sources: Bank of America Healthcare SF
@@ -626,13 +587,7 @@ Sources: BlackRock SF
 B0203. What steps were taken to manage the situation and what were the results?
 Sources: BlackRock SF
 
-B0204. You have two unbiased coins which are 50% correlated. If you flip both what is the probability that they both come up the same side?
-Sources: BlackRock SF
-
 B0205. Tell us about an article you read recently.
-Sources: BlackRock SF
-
-B0206. How many places on the earth could you walk a mile south, a mile east, and a mile north and end up where you started?
 Sources: BlackRock SF
 
 B0207. Tell me something that will make me remember you.
@@ -705,9 +660,6 @@ B0229. What is your favorite state? Can you name all the states?
 Sources: Blackstone Group
 
 B0230. You begin with a special dollar. A correct coin-toss prediction doubles your money and lets you play again; an incorrect prediction ends the game and leaves you with $1. How much would you pay to play? [Stopping and payout rules are incompletely recorded.]
-Sources: Blackstone Group
-
-B0231. You have a standard deck of 52 playing cards. You randomly draw three cards from the deck. What is the probability that all three cards are Aces?
 Sources: Blackstone Group
 
 B0232. What does diversity mean to you?
@@ -797,16 +749,7 @@ Sources: Cain Brothers
 B0260. Discuss your previous internships.
 Sources: Canaccord Genuity Boston
 
-B0261. Approximately how large is the number of boutique hotels in Phoenix, Arizona?
-Sources: Canaccord Genuity Boston
-
-B0262. How many degrees is the clock on the wall at 3:15?
-Sources: Centerview Partners NY
-
 B0263. If you have unlimited resources, how would you end the pandemic?
-Sources: Centerview Partners NY
-
-B0264. How many messages are middle school kids sending an hour in the US?
 Sources: Centerview Partners NY
 
 B0265. 8 ways to use a pencil that aren't writing?
@@ -815,16 +758,10 @@ Sources: Centerview Partners NY
 B0266. Who would you pick as a guest speaker and why?
 Sources: Centerview Partners NY
 
-B0267. What is the angle of the hands on the clock if it is 1:15?
-Sources: Centerview Partners NY
-
 B0268. How can you use a pencil in seven different ways?
 Sources: Centerview Partners NY
 
 B0269. If you are sorting through 1 million documents and need to isolate whichever have a certain criteria, but only have an hour, how would you do it?
-Sources: Centerview Partners NY
-
-B0270. How many degrees is represented on a clock at 3:15 pm?
 Sources: Centerview Partners NY
 
 B0271. What is the dumbest thing you have ever done?
@@ -862,9 +799,6 @@ Sources: Citi Healthcare
 
 B0282. Discuss current and potential biotechnology deals.
 Sources: Citi Healthcare
-
-B0283. How many planes are flying over the United States right now?
-Sources: Citi LA
 
 B0284. What degree do the hands on the clock make at 6:15?
 Sources: Citi LA
@@ -983,9 +917,6 @@ Sources: D.E. Shaw Research
 B0322. What do you want to gain from this internship?
 Sources: D.E. Shaw Research
 
-B0323. How many boxes of Oreos are consumed in the United States each year?
-Sources: D.E. Shaw Research
-
 B0324. Why is the company you pitched more attractive than its competitors?
 Sources: D.E. Shaw Research
 
@@ -1031,13 +962,7 @@ Sources: Deloitte Corporate Finance
 B0338. Why this role given your prior interest in real estate?
 Sources: Deloitte Corporate Finance
 
-B0339. How many times do the hour and minute hands of a clock overlap within 24 hours?
-Sources: Deutsche Bank SF
-
 B0340. A Rubik's Cube is dipped in paint. Analyze the painted smaller cubes. [Exact dimensions and requested count not recorded.]
-Sources: Deutsche Bank SF
-
-B0341. How many golf balls can fit into a Boeing 737?
 Sources: Deutsche Bank SF
 
 B0342. What was something about you thats not listed on your resume?
@@ -1116,9 +1041,6 @@ B0366. Why do you want to work in restructuring?
 Sources: Ducera Partners NY; Evercore (compiled interview notes); Evercore Restructuring; Houlihan Lokey Restructuring LA; Miller Buckfire; PJT Partners RSSG NY; M&I 400 Questions Guide (2025), p. 139
 
 B0367. How does your M&A experience relate to your interest in restructuring?
-Sources: Ducera Partners NY
-
-B0368. You are designing a train station with three escalators. How many should go up and how many down, and why?
 Sources: Ducera Partners NY
 
 B0369. How could two identical buildings in the same location be worth different amounts?
@@ -1247,9 +1169,6 @@ Sources: Evercore Strategic Defense & Shareholder Advisory
 B0410. What was the motivation for this deal and what is your opinion of it?
 Sources: Evercore Strategic Defense & Shareholder Advisory
 
-B0411. A lily pad doubles in size every minute and covers an entire pond after 60 minutes. What fraction of the pond does it cover after 59 minutes?
-Sources: Evercore Strategic Defense & Shareholder Advisory
-
 B0412. What is a weakness you have that may affect teamwork?
 Sources: Evercore (compiled interview notes); Evercore Strategic Defense & Shareholder Advisory
 
@@ -1355,9 +1274,6 @@ Sources: Goldman Sachs HK
 B0446. Why are you changing careers?
 Sources: Goldman Sachs HK
 
-B0447. How many people get married in USA every year?
-Sources: Goldman Sachs HK
-
 B0448. Describe a time you assessed the pros and cons of two options. What was the outcome?
 Sources: Goldman Sachs LA
 
@@ -1376,9 +1292,6 @@ Sources: Goldman Sachs LA
 B0453. Who will you choose if you can sit down with anyone in the IB industry and have a coffee?
 Sources: Goldman Sachs LA
 
-B0454. How many ATMs are there in Austin, TX?
-Sources: Goldman Sachs NY Financing
-
 B0455. Why not buy-side?
 Sources: Goldman Sachs NY Financing
 
@@ -1391,9 +1304,6 @@ Sources: Goldman Sachs NY Financing
 B0458. What is your biggest weakness and how are you working to address it so it won't affect you in the future?
 Sources: Goldman Sachs NY Financing
 
-B0459. What is 7x 7x 7x 7x 7?
-Sources: Goldman Sachs NY Financing
-
 B0460. What other groups at GS would you refer the client to?
 Sources: Goldman Sachs NY Financing
 
@@ -1402,9 +1312,6 @@ Sources: Goldman Sachs NY Financing
 
 B0462. Tell me about a time where you had to do something you really didn't want to do.
 Sources: Goldman Sachs NY
-
-B0463. If there is a lily pad in a pond, and it doubles in size every minute and will completely cover the pond in one hour, how long will it take to cover a quarter the pond?
-Sources: Goldman Sachs NY; UBS NY
 
 B0464. If you were a worker here, how would you design an email software so that we can improve the efficiency around here?
 Sources: Goldman Sachs NY
@@ -1502,9 +1409,6 @@ Sources: Greenhill NY
 B0495. Why banking? Who have you spoken to? What are your future plans?
 Sources: Greenhill NY
 
-B0496. How many pregnant women are there in New York right now?
-Sources: Guggenheim Partners
-
 B0497. Why are you not in an investing club?
 Sources: Guggenheim Partners
 
@@ -1530,9 +1434,6 @@ B0504. Tell me two companies that you think should merge.
 Sources: Guggenheim Partners NY
 
 B0505. What are the most important leadership traits?
-Sources: Guggenheim Partners NY
-
-B0506. How many degrees are between the hands of a clock at 3:25?
 Sources: Guggenheim Partners NY
 
 B0507. What are the main drivers of U.S. healthcare?
@@ -1703,9 +1604,6 @@ Sources: J.P. Morgan Finance and Business Management
 B0562. Why do you want to participate in the program?
 Sources: J.P. Morgan Finance and Business Management
 
-B0563. Calculate the weighted average of 25% of X, 50% of Y, and 25% of Z.
-Sources: J.P. Morgan Fixed Income
-
 B0564. How many closets remain open after all 100 people have completed the process? [The process is not included in this question.]
 Sources: J.P. Morgan Fixed Income
 
@@ -1714,12 +1612,6 @@ Sources: J.P. Morgan Fixed Income
 
 B0566. How did your parents react to it and what was the final outcome?
 Sources: J.P. Morgan Fixed Income
-
-B0567. Calculate 67 multiplied by 158 mentally.
-Sources: J.P. Morgan Fixed Income
-
-B0568. A lily pad doubles in area daily and covers a pond on day 30. On which day is the pond half covered?
-Sources: J.P. Morgan Fixed Income; J.P. Morgan SF
 
 B0569. Discuss your previous work experience.
 Sources: J.P. Morgan Fixed Income; J.P. Morgan Research; Société Générale NY
@@ -1751,13 +1643,7 @@ Sources: J.P. Morgan Fixed Income
 B0578. When have you worked in a group, and what was the outcome?
 Sources: J.P. Morgan LA
 
-B0579. A water droplet doubles in size every second and fills a pond in 60 seconds. When is the pond one-quarter full?
-Sources: J.P. Morgan LA
-
 B0580. What skills are important for a research analyst?
-Sources: J.P. Morgan Research
-
-B0581. Calculate 3/16 mentally.
 Sources: J.P. Morgan Research
 
 B0582. What is a martingale, what assumptions does it require, and how can it be applied?
@@ -1769,16 +1655,7 @@ Sources: J.P. Morgan SF
 B0584. What is a capped call?
 Sources: J.P. Morgan SF
 
-B0585. What is 21*21?
-Sources: J.P. Morgan SF
-
 B0586. Walk me through one of your transactions on your resume.
-Sources: J.P. Morgan SF
-
-B0587. Estimate the number of hairstylists or barbers in this city and explain your assumptions.
-Sources: J.P. Morgan SF
-
-B0588. Three identical light bulbs in a windowless room are controlled by three switches outside. All bulbs start off. You may manipulate the switches, then enter the room once, with no further access to the switches. How can you identify which switch controls each bulb?
 Sources: J.P. Morgan SF
 
 B0589. What type of role are you most likely to play in a team setting?
@@ -1802,19 +1679,10 @@ Sources: J.P. Morgan SF
 B0595. Are you prepared to work very demanding hours and perform repetitive tasks?
 Sources: J.P. Morgan SF
 
-B0596. Five pirates looted a chest full of 100 gold coins. Being a bunch of democratic pirates, they agree on the following method to divide the loot: The most senior pirate will propose a distribution of the coins. All pirates, including the most senior pirate, will then vote. If at least 50% of the pirates (3 pirates in this case) accept the proposal, the gold is divided as proposed. If not, the most senior pirate will be fed to shark and the process starts over with the next most senior pirate... The process is repeated until a plan is approved. You can assume that all pirates are perfectly rational: they want to stay alive first and to get as much gold as possible second. Finally, being blood-thirsty pirates, they want to have fewer pirates on the boat if given a choice between otherwise equal outcomes. How will the gold coins be divided in the end?
-Sources: Jane Street Business Development
-
 B0597. A bus makes three stops. At each stop seven people get off and eleven get on. What is the minimum number of passengers required before the first stop?
 Sources: Jane Street Business Development
 
-B0598. Estimate the number of pennies in a city of your choice.
-Sources: Jane Street Business Development
-
 B0599. What is the next unique date? [The source does not define "unique" or give a starting date.]
-Sources: Jane Street Business Development
-
-B0600. Estimate the number of coins in Hong Kong during mid-day if I were standing at Central station.
 Sources: Jane Street Business Development
 
 B0601. At each stop, a bus drops off three-quarters of its passengers and then picks up seven. What is the minimum starting number of passengers that allows it to continue after three stops? [The source does not clarify the driver/passenger convention.]
@@ -1831,9 +1699,6 @@ Sources: Jefferies
 
 B0605. How would your friends or teammates describe you?
 Sources: Jefferies
-
-B0606. What is 432 times 63?
-Sources: Jefferies NY
 
 B0607. Tell me a time when you rose above your peers.
 Sources: Jefferies NY
@@ -1879,12 +1744,6 @@ Sources: KKR
 
 B0621. How would you compare two investments and decide which is better?
 Sources: KKR Menlo Park
-
-B0622. How many baseballs fit into a school bus?
-Sources: KeyBanc NY
-
-B0623. What is 29 times 19?
-Sources: KeyBanc NY
 
 B0624. Walk me through the deal process and how you understand this works.
 Sources: KeyBanc NY
@@ -1946,9 +1805,6 @@ Sources: Lazard Technology SF
 B0643. What are three weaknesses you have?
 Sources: LionTree; Nomura Global Markets
 
-B0644. Express 1/90 as a percentage.
-Sources: LionTree
-
 B0645. Which two TMT companies should merge?
 Sources: LionTree
 
@@ -2000,9 +1856,6 @@ Sources: MUFG; MUFG LA
 B0661. Calculate the number of bronze members from total membership and other membership-tier percentages. [Inputs not recorded.]
 Sources: MUFG
 
-B0662. Calculate the square root of 2,500.
-Sources: MUFG
-
 B0663. Why your university and degree?
 Sources: MUFG
 
@@ -2042,16 +1895,10 @@ Sources: MUFG
 B0675. What clients did you work on for your former internship?
 Sources: MUFG
 
-B0676. How would you cut a cake into eight equal pieces using only three cuts? Give two possible solutions.
-Sources: Macquarie Group LA
-
 B0677. Why do you want to work in Los Angeles vs. the East coast?
 Sources: Macquarie Group LA
 
 B0678. What they are asking because they start off really vague and expect you to know what they are asking.
-Sources: Macquarie Group LA
-
-B0679. A pond's covered area doubles every day and is fully covered on day 20. On which day is it half covered?
 Sources: Macquarie Group LA
 
 B0680. Who is the firm's CEO, and what is your opinion of them?
@@ -2156,9 +2003,6 @@ Sources: Morgan Stanley SF
 B0713. Why do you think the firm will perform well in the future?
 Sources: Morgan Stanley SF
 
-B0714. How much water does the coffee shop downstairs use on a systemwide basis?
-Sources: Morgan Stanley SF
-
 B0715. What are some of the qualities that make an analyst successful from your previous experience?
 Sources: Morgan Stanley SF
 
@@ -2168,7 +2012,7 @@ Sources: Morgan Stanley SF
 B0717. Why are you interested in the fintech industry?
 Sources: Morgan Stanley SF
 
-B0718. Tell me about a passion that is not on your resume. How many cups of water does the coffee stand across the street use in a week?
+B0718. Tell me about a passion that is not on your resume.
 Sources: Morgan Stanley SF
 
 B0719. Tell us about a time something slipped through the cracks.
@@ -2234,9 +2078,6 @@ Sources: Nomura Global Markets
 B0739. How can I measure exactly 4 ml of water using only these two containers?
 Sources: Nomura Global Markets
 
-B0740. Calculate the square root of 0.5.
-Sources: Nomura Global Markets
-
 B0741. What role does technology play at Nomura?
 Sources: Nomura Global Markets
 
@@ -2279,18 +2120,6 @@ Sources: Nomura NY
 B0754. Where did you get your technical answers from/what did you use to practice (vault/WSO)?
 Sources: Nomura NY
 
-B0755. How many barbers would New York City need if all its barbers disappeared at once?
-Sources: Oak Hill
-
-B0756. How many barbershops are there in NYC?
-Sources: Oak Hill
-
-B0757. Calculate 21 multiplied by 19 mentally.
-Sources: Oak Hill
-
-B0758. Estimate how many barbers a city needs.
-Sources: Oak Hill
-
 B0759. Tell me about 2 companies that may exist for the next 100 years.
 Sources: Oak Hill
 
@@ -2299,12 +2128,6 @@ Sources: Oak Hill
 
 B0761. What interests you in our firm over others?
 Sources: Oak Hill
-
-B0762. Calculate 39 multiplied by 29 mentally.
-Sources: Oak Hill
-
-B0763. Estimate the number of potholes in New York City.
-Sources: PIMCO Product & Strategy
 
 B0764. What is the Federal Reserve's mandate?
 Sources: PIMCO Product & Strategy; TD Securities NY
@@ -2319,12 +2142,6 @@ B0767. Are you a team player?
 Sources: PIMCO Product & Strategy
 
 B0768. How many degrees between the hour and minute hands?
-Sources: PIMCO Product & Strategy
-
-B0769. Nine balls look identical, but one is lighter. Use a balance scale exactly twice to identify the lighter ball.
-Sources: PIMCO Product & Strategy
-
-B0770. If you had a 10x10x10 cube made up of smaller 1x1x1 cubes, how many of the smaller cubes are on the outside layer of the larger cube?
 Sources: PIMCO Product & Strategy
 
 B0771. If you take the outside shell of, it becomes an 8x8x8 cube.
@@ -2353,9 +2170,6 @@ Sources: PJT Partners M&A
 
 B0779. Tell me about a time you were unhappy with an outcome in a deal.
 Sources: PJT Partners M&A
-
-B0780. There are six marbles. One is slightly heavier than the other five, but is indistinguishable otherwise. Through your hands alone, you cannot determine which one is heavier. Instead, you are given a balance scale. Only two recordings are allowed to be taken, though. How do you identify the slightly heavier marble?
-Sources: PJT Partners RSSG NY
 
 B0781. Discuss an experience you left off your resume and explain why you omitted it.
 Sources: PJT Partners RSSG NY
@@ -2432,25 +2246,10 @@ Sources: PNC Capital Markets
 B0805. Why Chicago, what did you do in your previous internship (specific duties and responsibilities)?
 Sources: Perella Weinberg Partners CHI
 
-B0806. Calculate 25 cubed mentally.
-Sources: Perella Weinberg Partners Healthcare SF; Perella Weinberg Partners SF
-
 B0807. What does an investment banker do each day?
 Sources: Perella Weinberg Partners; Perella Weinberg Partners Healthcare SF; Perella Weinberg Partners SF
 
-B0808. What is the square root of 4800?
-Sources: Perella Weinberg Partners NY
-
-B0809. Calculate 49 multiplied by 63 mentally.
-Sources: Perella Weinberg Partners NY
-
-B0810. What is the nearest square root of 4657?
-Sources: Perella Weinberg Partners NY
-
 B0811. Give an original reason why you want to work at Perella Weinberg Partners.
-Sources: Perella Weinberg Partners NY
-
-B0812. What is 92 multiplied by 384?
 Sources: Perella Weinberg Partners NY
 
 B0813. What leadership qualities would you bring to the role?
@@ -2497,9 +2296,6 @@ Sources: Point72 Investing
 
 B0827. Give me an example of something you think we don't understand and explain it in simple terms.
 Sources: Prudential Global Investment Management
-
-B0828. It is 15:15, what is the angle of the hands on your watch? Do not look at your watch.
-Sources: RBC Capital Markets NY
 
 B0829. Who is CEO?
 Sources: RBC Capital Markets NY
@@ -2603,9 +2399,6 @@ Sources: Rothschild & Co.
 B0862. Can you tell us about a situation where WACCs in general have decreased across the board?
 Sources: Rothschild & Co. LA
 
-B0863. There are 10 machines in a row and you can take one pass through all the machines and take as many coins as you want from each machine to place in a bucket. Nine of the machines produce 1 ounce coins but one broken one produces .9 ounce coins. If you can only walk past the machines once before you weigh them, how can you identify the broken machine?
-Sources: Rothschild & Co. LA
-
 B0864. Explain your responsibilities in previous roles.
 Sources: Rothschild & Co. LA
 
@@ -2636,9 +2429,6 @@ Sources: Société Générale NY
 B0873. What is the current S&P 500 level?
 Sources: Société Générale NY
 
-B0874. Estimate the number of cars in New York City.
-Sources: Société Générale NY
-
 B0875. Discuss a recent deal and whether you agree with the company's approach.
 Sources: Société Générale NY
 
@@ -2651,15 +2441,6 @@ Sources: Société Générale NY
 B0878. Why did you leave your previous job?
 Sources: Société Générale NY
 
-B0879. How many ping pong balls can fit in a Boeing aircraft?
-Sources: Société Générale NY
-
-B0880. How many delivery drivers are in NYC?
-Sources: Société Générale NY
-
-B0881. Calculate the square root of 16,000.
-Sources: Société Générale NY
-
 B0882. Walk me through a directly applicable deal that you worked on and exactly how you built it out and ran the process.
 Sources: Stephens
 
@@ -2670,9 +2451,6 @@ B0884. What do you think about the ___ industry?
 Sources: Stephens
 
 B0885. What are its headwinds and what are some interesting companies operating in the area?
-Sources: Stephens
-
-B0886. Estimate the number of skis in Switzerland.
 Sources: Stephens
 
 B0887. How can you handle an extreme workload under pressure?
@@ -2717,13 +2495,7 @@ Sources: Summit Partners
 B0900. Tell me a time where you didn't know where to start on a project.
 Sources: TD Securities NY
 
-B0901. What's 3% of 113?
-Sources: TD Securities NY
-
 B0902. What was your first ever job?
-Sources: TD Securities NY
-
-B0903. How many Starbucks are in NYC?
 Sources: TD Securities NY
 
 B0904. Which group at TD interests you most?
@@ -2744,16 +2516,7 @@ Sources: TD Securities SF
 B0909. If you read the M&l guide, you will not be stumped by the technicals.
 Sources: TD Securities SF
 
-B0910. If 1.5 chickens lay 1.5 eggs in 1.5 days, how many eggs would 3 chickens lay in 3 days?
-Sources: TD Securities SF
-
 B0911. Could you go into more detail on what makes it different than the other statements?
-Sources: TD Securities SF
-
-B0912. How many times do the three hands on a clock meet in a day?
-Sources: TD Securities SF
-
-B0913. Eighteen balls look identical but one is heavier. Identify it using a balance scale at most three times.
 Sources: TD Securities SF
 
 B0914. Tell me about a time you dealt with a difficult customer. What did you do in high school?
@@ -2810,9 +2573,6 @@ Sources: UBS NY
 B0931. Why would we take you over an applicant from Wharton?
 Sources: UBS NY
 
-B0932. If 1.5 chickens lay 1.5 eggs in 1.5 days, how many eggs do those chickens lay in three days?
-Sources: Union Square Advisors
-
 B0933. Why boutique tech IB firm?
 Sources: Union Square Advisors
 
@@ -2852,12 +2612,6 @@ Sources: Union Square Advisors
 B0945. How would you sort data, look up references and check for duplicates in Excel?
 Sources: Union Square Advisors
 
-B0946. How would you estimate the Statue of Liberty's height without tools?
-Sources: Union Square Advisors
-
-B0947. Calculate 32 multiplied by 22 mentally.
-Sources: Union Square Advisors
-
 B0948. Multiply two two-digit numbers mentally. [Numbers not recorded.]
 Sources: Union Square Advisors
 
@@ -2871,9 +2625,6 @@ B0951. How many coffee shops are there in the United States? Tell me about yours
 Sources: Vista Equity Partners
 
 B0952. Which office location interests you?
-Sources: Vista Equity Partners
-
-B0953. Calculate 19 multiplied by 23 mentally.
 Sources: Vista Equity Partners
 
 B0954. Who can read English will be able to understand it.
@@ -2945,16 +2696,7 @@ Sources: Warburg Pincus
 B0976. What is the biggest mistake you have made?
 Sources: Warburg Pincus
 
-B0977. If 100 students are asked to guess 90% or 130% of the mean guess of their 100 guesses, what would you guess?
-Sources: Weiss Asset Management
-
 B0978. Tell us about Sirius XM.
-Sources: Weiss Asset Management
-
-B0979. You start with a dollar, and have a jar of 100 marbles. 50 red marbles, 50 blue marbles. If the last marble you pull out is red, then you earn $10. If it's blue, you lose $1. You can also bet for any marble before the last marble and if that next marble is red, you earn $9, and lose $1 if it's blue.
-Sources: Weiss Asset Management
-
-B0980. What is the optimal strategy to maximize your earnings in this game?
 Sources: Weiss Asset Management
 
 B0981. Tell me about a time where you went through change and how did you handle it.
@@ -2981,9 +2723,6 @@ Sources: Wells Fargo Public Finance
 B0988. What specifically about Blair attracts you?
 Sources: William Blair CHI
 
-B0989. You have two jars 10 red marbles and 10 blue marbles. A jar will be picked at random, and then a marble will be picked from the jar. Placing all the marbles in the jars, how can you maximize the chances of a red marble being picked? What are the exact odds of getting a red marble using your scheme?
-Sources: William Blair SF
-
 B0990. How would you respond to a client that calls you up and is anxious about an existing deal that you do not know the specifics about?
 Sources: William Blair SF
 
@@ -2991,12 +2730,6 @@ B0991. What have you learned from prior experiences, and how would you apply it?
 Sources: William Blair SF
 
 B0992. How would you handle a teammate who is not completing their work?
-Sources: William Blair SF
-
-B0993. Estimate the smartphone market size.
-Sources: William Blair SF
-
-B0994. Two ropes each take one hour to burn non-uniformly. How would you measure exactly 45 minutes?
 Sources: William Blair SF
 
 B0995. Discuss recent transactions.
@@ -3278,9 +3011,6 @@ Sources: J.P. Morgan (compiled interview notes)
 B1087. Integrity is one of JP Morgan's core values. Tell me about a time you displayed integrity?
 Sources: J.P. Morgan (compiled interview notes)
 
-B1088. Estimate the annual U.S. chewing gum market by revenue.
-Sources: J.P. Morgan (compiled interview notes)
-
 B1089. Who typically pays more for an acquisition: a strategic buyer or a financial sponsor?
 Sources: J.P. Morgan (compiled interview notes)
 
@@ -3290,16 +3020,10 @@ Sources: J.P. Morgan (compiled interview notes)
 B1091. What is an industry you've been following?
 Sources: J.P. Morgan (compiled interview notes)
 
-B1092. You have eight coins that look identical, but one is fake and slightly lighter. Explain how to identify the fake using a balance scale in (a) exactly two weighings and (b) exactly three weighings.
-Sources: J.P. Morgan (compiled interview notes)
-
 B1093. What is a reservation you have about working at JP Morgan?
 Sources: J.P. Morgan (compiled interview notes)
 
 B1094. Use 2, 4, 6 and 8 exactly once each, with mathematical operations, to make 25.
-Sources: J.P. Morgan (compiled interview notes)
-
-B1095. You have a 5 gallon jug, a 3 gallon jug, and a hose. How do you measure 4 gallons of water?
 Sources: J.P. Morgan (compiled interview notes)
 
 B1096. Tell me about a time you worked on a project and someone disagreed with your ideas.
@@ -3359,25 +3083,10 @@ Sources: J.P. Morgan (compiled interview notes)
 B1114. Where is the S&P at? NASDAQ? The Dow? 10 year? SOFR?
 Sources: J.P. Morgan (compiled interview notes)
 
-B1115. Two ropes each burn non-uniformly in one hour. How would you measure 30 minutes?
-Sources: J.P. Morgan (compiled interview notes)
-
 B1116. How would you organize an event for all of JPMorgan NYC?
 Sources: J.P. Morgan (compiled interview notes)
 
-B1117. What is the square root of 4,000?
-Sources: J.P. Morgan (compiled interview notes)
-
-B1118. What is the sum of all the numbers between 1 and 1000?
-Sources: J.P. Morgan (compiled interview notes)
-
-B1119. How many cups of coffee are sold in NYC every day?
-Sources: J.P. Morgan (compiled interview notes)
-
 B1120. Why do you not want to return to your previous firm, if you have an offer to do so?
-Sources: J.P. Morgan (compiled interview notes)
-
-B1121. You have four machines A, B, C, and D that produce silver coins that each weigh two ounces. However, one of the machines is malfunctioning and produces coins that weigh 1 ounce-but all of the coins look physically identical. The only way to weigh them is to place all the coins in a paper bag (so you don't know which machine produced which coin) and weigh them on a scale and you can only weigh them once. How do you find which machine is malfunctioning?
 Sources: J.P. Morgan (compiled interview notes)
 
 B1122. What's your level of knowledge of the role you're applying for?
@@ -3478,9 +3187,6 @@ Sources: Goldman Sachs NY Financing
 
 B1154. Discuss a technology vertical you follow, such as semiconductors or SaaS.
 Sources: J.P. Morgan SF
-
-B1155. How much would you charge to wash the windows of this building?
-Sources: KeyBanc NY
 
 B1156. Tell me about a time you worked with a diverse group.
 Sources: RBC Capital Markets NY
@@ -3755,9 +3461,6 @@ Sources: First Citizens Bank — Capital Markets (USF 24-25)
 B1246. What verticals at this firm interest you most?
 Sources: PGIM — Asset Management (USF 24-25)
 
-B1247. You have two doors and one is the exit. Two identical knights stand in front of them; one always lies and the other always tells the truth. You may ask one question to one knight. What do you ask to find the right door?
-Sources: PGIM — Asset Management (USF 24-25)
-
 B1248. What specific skillset do you think would apply to this role?
 Sources: Raymond James — Capital Markets (USF 24-25)
 
@@ -3766,9 +3469,6 @@ Sources: Raymond James — Capital Markets (USF 24-25)
 
 B1250. Why you, and why someone from your university?
 Sources: Wells Fargo — Investment Banking (USF 24-25)
-
-B1251. If I had a pizza restaurant, how would you estimate the number of pizzas sold?
-Sources: FTI Consulting — Consulting (USF 24-25)
 
 ==============================================================================
 2. FINANCE QUESTIONS
