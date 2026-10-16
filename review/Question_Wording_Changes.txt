@@ -1,0 +1,2829 @@
+688 EDITORIAL CORRECTIONS — ANSWERS UNCHANGED
+
+F0008 | Technical
+BEFORE: What are the most important drivers for value growth in a industrial roofing company?
+AFTER: What are the most important drivers of value growth in an industrial roofing company?
+
+F0022 | Technical
+BEFORE: Pitch a company that you think is mismanaged and how you can better it off?
+AFTER: Pitch a company that you think is mismanaged and explain how you would improve it.
+
+F0034 | Technical
+BEFORE: Estimate IRR of your deals?
+AFTER: Estimate IRR of your deals.
+
+F0036 | Technical
+BEFORE: If I have a 1 million dollars today, what should i buy? can be an art piece, stock, gold, a small business that you know, anything.
+AFTER: If you had $1 million today, what would you buy? It could be art, stock, gold, a small business you know, or another asset.
+
+F0041 | Technical
+BEFORE: Walk through how i would evaluate different investment processes in detail.
+AFTER: Walk through how you would evaluate different investment processes in detail.
+
+F0053 | Technical
+BEFORE: What do you look when thinking about the financial health of a company?
+AFTER: What do you look for when assessing a company's financial health?
+
+F0056 | Technical
+BEFORE: Describe how a PE firm operates?
+AFTER: Describe how a PE firm operates.
+
+F0057 | Technical
+BEFORE: Walk me through how PE firms make money?
+AFTER: Walk me through how PE firms make money.
+
+F0058 | Technical
+BEFORE: Let's say Apple is buying $100 worth of new iPod factories with debt. What is on the 3 financial statement. Now let's go out 1 year, to the start of Year 2. Assume the debt is high-yield so no principal is paid off, and assume an interest rate of 10%. Also assume the factories depreciate at a rate of 10% per year assuming the tax rate is 20% What happens? At the start of Year 3, the factories all break down and the value of the equipment is written down to $0. The loan must also be paid back now. Walk me through the 3 statements.
+AFTER: Apple buys $100 of factories using debt. Walk through the three financial statements at purchase. At the start of year 2, assume 10% annual interest, 10% annual depreciation, no principal repayment and a 20% tax rate. What happens to the statements? At the start of year 3, the factories are written down to zero and the loan must be repaid. Walk through the three statements again.
+
+F0070 | Technical
+BEFORE: A company is acquired for $600 and sold for $1,200. What proportion of the purchase price must be equity to produce a 3x equity return? [Debt-repayment assumptions not recorded.]
+AFTER: A company is acquired for $600 and sold for $1,200. What proportion of the purchase price must be equity to produce a 3x equity return? [debt-repayment assumptions not recorded.]
+
+F0074 | Technical
+BEFORE: Give a purchase price of the company given that the acquisition will save an additional million in EBITDA.
+AFTER: Estimate a company's purchase price given that the acquisition would generate an additional million in EBITDA.
+
+F0086 | Technical
+BEFORE: What will u invest in the bond market?
+AFTER: What would you invest in within the bond market?
+
+F0097 | Technical
+BEFORE: Tell me why this hypothetical company would be a good target for a sponsor to buyout?
+AFTER: Explain why this hypothetical company would be a good target for a sponsor buyout.
+
+F0112 | Technical
+BEFORE: How does an amount of depreciation flow through the three accounting statements with x tax rate.
+AFTER: How does an amount of depreciation flow through the three financial statements at a tax rate of X%?
+
+F0115 | Technical
+BEFORE: If two companies with the same revenue, ebitda, cogs, etc were trading at different multiples, why might that be?
+AFTER: If two companies with the same revenue, EBITDA, COGS, etc were trading at different multiples, why might that be?
+
+F0135 | Technical
+BEFORE: Value a constrction company's value and whether they are worth it for Bain to loan credit to them which really caught me off guard given how technical it was?
+AFTER: Value a construction company and assess whether Bain should lend to it.
+
+F0146 | Technical
+BEFORE: Why airlines historically provided poor returns but have seen an upturn in the past decade.
+AFTER: Why have airlines historically provided poor returns but seen an upturn in the past decade?
+
+F0151 | Technical
+BEFORE: What are the drivers for a 5 year cagr in a random dental healthcare company?
+AFTER: What are the drivers for a 5 year CAGR in a random dental healthcare company?
+
+F0152 | Technical
+BEFORE: In analyzing the market for a commercial vehicle manufacturer?
+AFTER: How would you analyze the market for a commercial vehicle manufacturer?
+
+F0157 | Technical
+BEFORE: How you think about risk management are always potentially tricky and reveal a lot about a candidates understanding of these roles.
+AFTER: How do you think about risk management?
+
+F0167 | Technical
+BEFORE: Pitch me a stock in an industry you think has less potential?
+AFTER: Pitch me a stock in an industry you think has less potential.
+
+F0168 | Technical
+BEFORE: What would you say are the two most important macro indicators and how would they affect a company's dcf?
+AFTER: What would you say are the two most important macro indicators and how would they affect a company's DCF?
+
+F0175 | Technical
+BEFORE: How would you value a biotech company - specifically in pre-revenue stage and with patents lifetime lasting 10 years?
+AFTER: How would you value a pre-revenue biotech company whose patents have 10 years of remaining life?
+
+F0184 | Technical
+BEFORE: What happens to EBITDA margin from 2020 to 2021.
+AFTER: What happens to the EBITDA margin from 2020 to 2021?
+
+F0188 | Technical
+BEFORE: Which valuation methods would be best to use in the deal.
+AFTER: Which valuation methods would be best to use in the deal?
+
+F0191 | Technical
+BEFORE: When EV increases by 10% and Equity Val stays constant, what is the IRR?
+AFTER: When EV increases by 10% and equity value stays constant, what is the IRR?
+
+F0200 | Technical
+BEFORE: How they affected the investment banking sector.
+AFTER: How did those events affect the investment banking sector?
+
+F0203 | Technical
+BEFORE: A company has an EV/Revenue of 5x and an EV/EBITDA multiple of 10x. What is its EBITDA margin?
+AFTER: A company has an EV/revenue of 5x and an EV/EBITDA multiple of 10x. What is its EBITDA margin?
+
+F0204 | Technical
+BEFORE: Which of two companies have higher betas between a consulting firm and construction company.
+AFTER: Which would have a higher beta: a consulting firm or a construction company?
+
+F0215 | Technical
+BEFORE: How would you go about spreading comps for ‹given company› Stock pitch?
+AFTER: How would you spread comparable-company financials for the company in your stock pitch? [Company not identified.]
+
+F0222 | Technical
+BEFORE: If I issued 200 in debt and bought 100 in PPE, how would this change Enterprise Value and Equity Value?
+AFTER: If I issued 200 in debt and bought 100 in PP&E, how would this change enterprise value and equity value?
+
+F0224 | Technical
+BEFORE: How would you find the net income of the target using the PE ratio, share price, and number of shares?
+AFTER: How would you find the net income of the target using the P/E ratio, share price, and number of shares?
+
+F0226 | Technical
+BEFORE: Calculate the pro forma leverage ratio of Company A (presented as a word problem with info about Company A & B & financial stats).
+AFTER: Calculate Company A's pro forma leverage ratio using the financial information for Companies A and B. [Financial inputs not recorded.]
+
+F0228 | Technical
+BEFORE: Tell me about three apps on your phone, how would you value these companies?
+AFTER: Tell me about three apps on your phone. How would you value the companies behind them?
+
+F0229 | Technical
+BEFORE: What form of capital raising they should take advantage of.
+AFTER: What form of capital raising should the company use? [Company and circumstances not identified.]
+
+F0230 | Technical
+BEFORE: What P/E ratios I would expect as long as market caps.
+AFTER: What P/E ratios and market capitalizations would you expect? [Companies not identified.]
+
+F0231 | Technical
+BEFORE: What kind of multiples you would see in deals across the various verticals of technology.
+AFTER: What valuation multiples would you expect in deals across different technology verticals?
+
+F0232 | Technical
+BEFORE: What multiples you would use for companies of different stages.
+AFTER: What multiples would you use for companies at different stages of development?
+
+F0242 | Technical
+BEFORE: If a stock goes up and down by 50% 5 times, where is it going to end.
+AFTER: If a stock goes up and down by 50% five times, where does its price end up?
+
+F0244 | Technical
+BEFORE: How would you evaluate a tech company w a monopoly?
+AFTER: How would you evaluate a technology company with a monopoly?
+
+F0245 | Technical
+BEFORE: Tell me about something going on in debt markets. equities?
+AFTER: Discuss a recent development in debt markets and one in equity markets.
+
+F0246 | Technical
+BEFORE: How would you value an energy Company and what financial metrics would you use apart from the average ones.
+AFTER: How would you value an energy company, and which industry-specific financial metrics would you use?
+
+F0250 | Technical
+BEFORE: How you would structure a debt issuance for a municipal client.
+AFTER: How would you structure a debt issuance for a municipal client?
+
+F0256 | Technical
+BEFORE: Tell us about something going on in the market that we might not now and how it is relevant to BlackRock?
+AFTER: Discuss a market development we might not know about and explain its relevance to BlackRock.
+
+F0258 | Technical
+BEFORE: What type of investing I've done and what is a good investment currently.
+AFTER: What investing have you done, and what do you consider a good investment currently?
+
+F0264 | Technical
+BEFORE: Who is our CEO What is our Stock trading at Tell me about our recent Acquisitions Where are we Headquartered?
+AFTER: Who is our CEO? What is our stock trading at? Describe our recent acquisitions. Where are we headquartered?
+
+F0271 | Technical
+BEFORE: What would be a few ways to increase Blackrock's presence in the Asian markets?
+AFTER: What would be a few ways to increase BlackRock's presence in the Asian markets?
+
+F0272 | Technical
+BEFORE: What are the different asset classes Blackrock trades on?
+AFTER: What are the different asset classes BlackRock trades on?
+
+F0275 | Technical
+BEFORE: Explain CLO tranching and what tranche you would be invested in?
+AFTER: Explain CLO tranching and what tranche you would be invested in.
+
+F0289 | Technical
+BEFORE: How do you see Corona Virus impacting U.S. markets and why?
+AFTER: How do you expect coronavirus to affect U.S. markets, and why?
+
+F0326 | Technical
+BEFORE: How you would value a private company, with limited access to financials and only a few key stats.
+AFTER: How would you value a private company with limited financial information and only a few key statistics?
+
+F0329 | Technical
+BEFORE: Ranking valuation of DCF vs. trading comps?
+AFTER: How would you rank DCF and trading-comparables valuations?
+
+F0333 | Technical
+BEFORE: 1st round/2nd round call: walk me through resume, why our company, why our city, greatest strengths, greatest weaknesses, walk me through dcf, walk me through merger model, walk me through LBO model, 3 most common valuation methods, valuation method that produces highest value?
+AFTER: 1st round/2nd round call: walk me through resume, why our company, why our city, greatest strengths, greatest weaknesses, walk me through DCF, walk me through merger model, walk me through LBO model, 3 most common valuation methods, valuation method that produces highest value?
+
+F0335 | Technical
+BEFORE: What the margins would be for that company, discuss various costs for it, different ways to cut costs.
+AFTER: What margins would you expect for that company? Discuss its costs and potential ways to reduce them.
+
+F0340 | Technical
+BEFORE: An increase in assets reflects a cash inflow or outflow?
+AFTER: Does an increase in assets represent a cash inflow or outflow?
+
+F0362 | Technical
+BEFORE: Explain how you would approach a long-only investment strategy versus a long-short investment strategy, and give an example of a situation where you might use each one?
+AFTER: Explain how you would approach a long-only investment strategy versus a long-short investment strategy, and give an example of a situation where you might use each one.
+
+F0364 | Technical
+BEFORE: A company with $100M of EBITDA and a leverage ratio of 2.0 decides to purse a $200M dividend recapitalization using $200M of debt. The debt carries a 5% interest rate and the tax rate is 40%. What is the new leverage ratio?
+AFTER: A company with $100M of EBITDA and a leverage ratio of 2.0 decides to pursue a $200M dividend recapitalization using $200M of debt. The debt carries a 5% interest rate and the tax rate is 40%. What is the new leverage ratio?
+
+F0371 | Technical
+BEFORE: How each structure would affect the pro forma financial statements on a high-level. XXXXXXXX XXXXXXXX XXXXXXXXXXXXXXX xXXXXXXX xXXXXXXX Given a mixed M&A transaction of cash, debt, and equity (and net income figures assuming O synergies) and finding out if it is accretive or dilutive.
+AFTER: How each structure would affect the pro forma financial statements on a high-level. XXXXXXXX XXXXXXXX XXXXXXXXXXXXXXX xXXXXXXX xXXXXXXX Given a mixed M&A transaction of cash, debt, and equity (and net income figures assuming O synergies) and finding out if it is accretive or dilutive?
+
+F0378 | Technical
+BEFORE: Compare two companies financials, calculate EV/EBITDA and PE.
+AFTER: Compare the two companies' financials and calculate EV/EBITDA and P/E.
+
+F0389 | Technical
+BEFORE: Give examples of valuation multiples, where to find their inputs and when each is useful.
+AFTER: What are some common valuation multiples, where do you find their inputs, and when is each useful?
+
+F0391 | Technical
+BEFORE: Which stock I would buy and which stock I would short.
+AFTER: Which stock would you buy, and which would you short?
+
+F0400 | Technical
+BEFORE: Walk me through a $10 increase in Net Working Capital on all 3 statements?
+AFTER: Walk me through a $10 increase in net working capital on all 3 statements.
+
+F0404 | Technical
+BEFORE: Why would a company issue a HY Bond vs a Term Loan A or vice versa?
+AFTER: Why would a company issue a HY Bond vs a term loan A or vice versa?
+
+F0405 | Technical
+BEFORE: How an increase in depreciation flows through the three major financial statements? Assume a 20% tax rate.
+AFTER: How does an increase in depreciation flow through the three financial statements? Assume a 20% tax rate.
+
+F0407 | Technical
+BEFORE: Walk me through a company that you have researched and valuated. How did you go about the process?
+AFTER: Walk me through a company you have researched and valued. How did you approach the process?
+
+F0409 | Technical
+BEFORE: How do you think about debt in the context of the last company you worked for.
+AFTER: How do you think about debt in the context of the last company you worked for?
+
+F0410 | Technical
+BEFORE: If a company takes out a loan to buy back stock, what is the impact on enterprise value.
+AFTER: If a company takes out a loan to buy back stock, what is the impact on enterprise value?
+
+F0411 | Technical
+BEFORE: How does a $10 increase in AR affect the other financial statements. Walk me through a transaction where you receive $10 in cash revenue. How does hat effect the financial statements? Assume a 20% tax rate.
+AFTER: How does a $10 increase in accounts receivable affect the three financial statements? Separately, walk through receiving $10 in cash revenue. Assume a 20% tax rate.
+
+F0419 | Technical
+BEFORE: What questions would you ask when researching about the x market.
+AFTER: What questions would you ask when researching market X?
+
+F0428 | Technical
+BEFORE: How do you conduct a thorough credit risk analysis, what's the main aspect of credit risk analysis?
+AFTER: How would you conduct a credit risk analysis, and which aspect is most important?
+
+F0432 | Technical
+BEFORE: When do you to use levered vs unlevered beta?
+AFTER: When do you use levered versus unlevered beta?
+
+F0440 | Technical
+BEFORE: What's the difference between EV/EBIT, EV/EBITDA, and EV/Revenue and what kind of companies would use each one?
+AFTER: What's the difference between EV/EBIT, EV/EBITDA, and EV/revenue and what kind of companies would use each one?
+
+F0444 | Technical
+BEFORE: How to increase returns in an LBO?
+AFTER: How can you increase returns in an LBO?
+
+F0446 | Technical
+BEFORE: What are some of our private equity clients.
+AFTER: What are some of our private equity clients?
+
+F0453 | Technical
+BEFORE: Why would you use these versus the traditional multiples such as ev/ebita.
+AFTER: Why would you use these metrics instead of traditional multiples such as EV/EBITA? [Alternative metrics not identified.]
+
+F0454 | Technical
+BEFORE: Name a few trends in the tech industry that you believe will impact out business?
+AFTER: Name a few technology trends that you believe will affect our business.
+
+F0455 | Technical
+BEFORE: Would you rather LBO Apple or google?
+AFTER: Would you rather LBO Apple or Google?
+
+F0462 | Technical
+BEFORE: Why do you subtract capex?
+AFTER: Why do you subtract CapEx?
+
+F0467 | Technical
+BEFORE: How taking on debt would impact a valuation?
+AFTER: How would taking on debt affect valuation?
+
+F0470 | Technical
+BEFORE: If value investing is so good why other people aren't doing it?
+AFTER: If value investing is attractive, why doesn't everyone pursue it?
+
+F0473 | Technical
+BEFORE: If a company has more ebit than ebitda, what does this mean?
+AFTER: If a company has more EBIT than EBITDA, what does this mean?
+
+F0481 | Technical
+BEFORE: What valuation metric would you use to value a company in enterprise software industry but has a large amount of cash on balance sheet and is relatively slow growth?
+AFTER: Which valuation metric would you use for a slow-growing enterprise software company with substantial cash on its balance sheet?
+
+F0505 | Technical
+BEFORE: What would you invest in right now in the debt market, and give the current states of the market as of right now.
+AFTER: What would you invest in within the debt market right now, and how do current market conditions support your choice?
+
+F0506 | Technical
+BEFORE: Would an investor rather put money into secured debt of a subsidiary or unsecured debt of the operating company.
+AFTER: Would an investor rather put money into secured debt of a subsidiary or unsecured debt of the operating company?
+
+F0507 | Technical
+BEFORE: What are some current trends that you see in the market and not the easy ones like retail companies becoming distressed.
+AFTER: What current market trends do you see beyond familiar examples such as retail distress?
+
+F0508 | Technical
+BEFORE: What happens if you add X to the dcf, some about how would revenue and cost savings flow, some about ebitda changes).
+AFTER: What happens if you add X to the DCF, some about how would revenue and cost savings flow, some about EBITDA changes).
+
+F0509 | Technical
+BEFORE: How you would deal with PIK interest if you paid it off before the debt was due Without doing any math, approximate the YTM of this bond in 5 seconds (given maturity, coupon, trading price)?
+AFTER: How would you account for PIK interest if the debt were repaid before maturity? Separately, estimate a bond's YTM mentally in five seconds from its maturity, coupon and trading price. [Bond inputs not recorded.]
+
+F0523 | Technical
+BEFORE: What sorts of services do we offer in Equity Capital Markets?
+AFTER: What sorts of services do we offer in equity capital markets?
+
+F0542 | Technical
+BEFORE: Where do you think Inflation will go over the next yr?
+AFTER: Where do you think inflation will go over the next year?
+
+F0543 | Technical
+BEFORE: Company has an EV of 1000, with 200 Debt, 100 Cash, and a Drug that has a 50% probability of approval. What would the equity value be if the drug was approved?
+AFTER: Company has an EV of 1000, with 200 debt, 100 cash, and a Drug that has a 50% probability of approval. What would the equity value be if the drug was approved?
+
+F0544 | Technical
+BEFORE: How would the financial statements of Clinical Stage Healthcare company differ from a Consumer Retail Company?
+AFTER: How would a clinical-stage healthcare company's financial statements differ from those of a consumer retail company?
+
+F0562 | Technical
+BEFORE: What's the beta of... (they would mention an object or a ticket of some kind?
+AFTER: What beta would you assign to the specified asset? [asset not recorded.]
+
+F0564 | Technical
+BEFORE: Walk me through how you would calculate the market size of [software product]?
+AFTER: Walk me through how you would calculate the market size of [software product].
+
+F0566 | Technical
+BEFORE: Describe a biotech company that you are particularly interested.
+AFTER: Describe a biotech company you are particularly interested in.
+
+F0578 | Technical
+BEFORE: Value of a money tree that generates 100 dollars into perpetuity?
+AFTER: What is the value of a money tree that generates $100 annually in perpetuity?
+
+F0587 | Technical
+BEFORE: How would DTAs and DTLs affect Goodwill?
+AFTER: How would DTAs and DTLs affect goodwill?
+
+F0593 | Technical
+BEFORE: Tell me about a business in your college town -- how would you value that business?
+AFTER: Describe a business in your college town. How would you value it?
+
+F0603 | Technical
+BEFORE: What are the main distress of the companies that need RX?
+AFTER: What are the main causes of distress for companies that need restructuring?
+
+F0607 | Technical
+BEFORE: What bonds that will go bankrupt in 3 years with a 10 percent coupon would trade at?
+AFTER: What would a bond with a 10% coupon trade at if the issuer were expected to go bankrupt in three years?
+
+F0608 | Technical
+BEFORE: Value post chapter 7 bankruptcy liquidation?
+AFTER: How would you value a company in a Chapter 7 liquidation?
+
+F0613 | Technical
+BEFORE: How that looks each year accounting for depreciation and PIK interest. Assume a 20% tax rate.
+AFTER: How would the financial statements change each year after accounting for depreciation and PIK interest? Assume a 20% tax rate. [Original scenario not recorded.]
+
+F0624 | Technical
+BEFORE: What would you look for as a restructuring anaylst assigned to finding the best credit term sheet for a PE firm looking to raise capital?
+AFTER: What would you look for as a restructuring analyst assigned to finding the best credit term sheet for a PE firm looking to raise capital?
+
+F0640 | Technical
+BEFORE: Please explain how you calculate the Internal Rate of Return (IRR) of a private company, given certain cash flows.
+AFTER: Please explain how you calculate the internal rate of return (IRR) of a private company, given certain cash flows.
+
+F0641 | Technical
+BEFORE: How would you improve this PPM and which necessary takes does the GP need to take going forward to hone and sharpen their message?
+AFTER: How would you improve this PPM, and what steps should the GP take to sharpen its message?
+
+F0644 | Technical
+BEFORE: How do you value the Fintech companies?
+AFTER: How do you value the fintech companies?
+
+F0646 | Technical
+BEFORE: What is the effect on the balance sheet of a ten dollar decrease of deffered revenue? Assume a 20% tax rate.
+AFTER: What is the effect on the balance sheet of a ten dollar decrease of deferred revenue? Assume a 20% tax rate.
+
+F0649 | Technical
+BEFORE: What did your excel sheet start off with in the DCF?
+AFTER: What did your Excel sheet start off with in the DCF?
+
+F0653 | Technical
+BEFORE: Why doe we care about net working capital?
+AFTER: Why do we care about net working capital?
+
+F0657 | Technical
+BEFORE: Walk me through the three statements, buying CapEx with debt?
+AFTER: Walk me through the three statements, buying CapEx with debt.
+
+F0659 | Technical
+BEFORE: How do you value a SaaS company.
+AFTER: How do you value a SaaS company?
+
+F0663 | Technical
+BEFORE: What are the recent industry trends in Fintech ?
+AFTER: What are the recent industry trends in fintech?
+
+F0664 | Technical
+BEFORE: How to value a company with negative net income and negative Ebitda?
+AFTER: How would you value a company with negative net income and negative EBITDA?
+
+F0665 | Technical
+BEFORE: What could be the reason that sometimes a company could have positive EBITDA but negative cashflow?
+AFTER: What could be the reason that sometimes a company could have positive EBITDA but negative cash flow?
+
+F0667 | Technical
+BEFORE: How are non controlling interests taken in consideration while calculating the equity value of a company?
+AFTER: How are non-controlling interests treated when calculating a company's equity value?
+
+F0674 | Technical
+BEFORE: Walk me through your investment process?
+AFTER: Walk me through your investment process.
+
+F0681 | Technical
+BEFORE: Walk me through porter's five forces for x company.
+AFTER: Walk me through Porter's five forces for company X.
+
+F0682 | Technical
+BEFORE: Which would you consider the most important in an investment decision Explain to me why you would or wouldn't invest in a fast-growing company in India.
+AFTER: Which factor is most important in an investment decision? Explain why you would or would not invest in a fast-growing company in India. [Factors to compare not recorded.]
+
+F0687 | Technical
+BEFORE: How would you valuate a company given an industry?
+AFTER: How would you value a company in a given industry?
+
+F0693 | Technical
+BEFORE: What would happen to accretion/dilution in a all cash transaction?
+AFTER: What would happen to accretion/dilution in an all-cash transaction?
+
+F0699 | Technical
+BEFORE: How I would cost everything in a newly built stadium in LA, complete with financing and all.
+AFTER: How would you estimate all the costs of a newly built stadium in Los Angeles, including financing?
+
+F0700 | Technical
+BEFORE: What stocks do you invest in.
+AFTER: What stocks do you invest in?
+
+F0705 | Technical
+BEFORE: If the company raise $100 debt to repurchase 10 shares. The annual interest rate on debt is 10%. The marginal tax rate is 40%, and the effective interest rate is 30%. what happens to EPS after year 1?
+AFTER: If the company raise $100 debt to repurchase 10 shares. The annual interest rate on debt is 10%. The marginal tax rate is 40%, and the effective interest rate is 30%. What happens to EPS after year 1?
+
+F0712 | Technical
+BEFORE: Describe in detail what the Fed is doing in the market today?
+AFTER: Describe in detail what the Fed is doing in the market today.
+
+F0721 | Technical
+BEFORE: What sector of the economy is going to outperform this year.
+AFTER: What sector of the economy is going to outperform this year?
+
+F0723 | Technical
+BEFORE: What is a leveraged buyout and what are the steps to complete a model.
+AFTER: What is a leveraged buyout, and what are the steps in building an LBO model?
+
+F0724 | Technical
+BEFORE: If a company with a higher PE multiple purchases a company with a lower PE multiple is the transaction accretive or dilutive?
+AFTER: If a company with a higher P/E multiple purchases a company with a lower P/E multiple is the transaction accretive or dilutive?
+
+F0726 | Technical
+BEFORE: How to choose tax rate in merger model?
+AFTER: How would you choose the tax rate in a merger model?
+
+F0729 | Technical
+BEFORE: Why multiples are different in different industries?
+AFTER: Why do valuation multiples differ across industries?
+
+F0740 | Technical
+BEFORE: Value an apple tree producing $100 in revenue a year. Now value it if it was 100, 200, 300, 400... with a 10% discount rate.
+AFTER: Value an apple tree producing $100 in revenue a year. Now value it if it was 100, 200, 300, 400... With a 10% discount rate.
+
+F0741 | Technical
+BEFORE: Tell me about a potential acquisition that you find interesting?
+AFTER: Tell me about a potential acquisition that you find interesting.
+
+F0742 | Technical
+BEFORE: Given merger details - what number in revenue synergies would you need in order to be accreative - VERY HARD?
+AFTER: Given the merger details, how much revenue synergy is needed for the deal to be accretive? [Deal inputs not recorded.]
+
+F0747 | Technical
+BEFORE: When would a DCF give you a higher valuation then the other three methods?
+AFTER: When would a DCF give you a higher valuation than the other three methods?
+
+F0777 | Technical
+BEFORE: If you're on an airplane and sitting next to you is the CEO of a company, how to you quickly evaluate his company?
+AFTER: If you're on an airplane and sitting next to you is the CEO of a company, how do you quickly evaluate his company?
+
+F0786 | Technical
+BEFORE: Two companies, same industry, but one has a higher ebitda multiple, why?
+AFTER: Two companies, same industry, but one has a higher EBITDA multiple, why?
+
+F0787 | Technical
+BEFORE: Give me 5 or more ways to boost IRR on an LBO. 5.
+AFTER: Give at least five ways to increase an LBO's IRR.
+
+F0792 | Technical
+BEFORE: If a company is issuing a convertible bond, and it has a cost of debt of 5 percent, and a cost of equity of 10 percent, what will the coupon on the bond be?
+AFTER: A company issuing a convertible bond has a cost of debt of 5% and a cost of equity of 10%. What will the bond's coupon rate be?
+
+F0807 | Technical
+BEFORE: You had to come up with an appropriate valuation technique and what an appropriate discount rate was and then calculate the value in your head you would pay for this product.
+AFTER: Choose a valuation method and discount rate for the product, then estimate the price you would pay using mental math. [Product and inputs not recorded.]
+
+F0809 | Technical
+BEFORE: What is the P/E of the S&P500?
+AFTER: What is the P/E of the S&P 500?
+
+F0822 | Technical
+BEFORE: A company with 15x PE multiple purchases a company in an all-stock transaction. The same company, but with a 10x PE multiple purchases a copy of the company purchased by the 15x in an all-stock transaction. Which transaction is less dilutive? Why?
+AFTER: A company with 15x P/E multiple purchases a company in an all-stock transaction. The same company, but with a 10x P/E multiple purchases a copy of the company purchased by the 15x in an all-stock transaction. Which transaction is less dilutive? Why?
+
+F0832 | Technical
+BEFORE: Walkthrough an LBO model. Was given purchase multiple, type of debt and exit multiple. Had to provide the MoM and IRR.
+AFTER: Walk through an LBO model using the purchase multiple, debt structure and exit multiple, then calculate MoM and IRR. [Numerical inputs and holding period not recorded.]
+
+F0833 | Technical
+BEFORE: $1000 PPE, $500 debt w/10% interest, $500 debt w/5% PIK interest, GAAP depr SL over 10y, MACRS depr $200 in y1 => walk through the 3 statements in y0 and y1 (all mental math)?
+AFTER: $1000 PP&E, $500 debt w/10% interest, $500 debt w/5% PIK interest, GAAP depr SL over 10y, MACRS depr $200 in y1 => walk through the 3 statements in y0 and y1 (all mental math)?
+
+F0851 | Technical
+BEFORE: What multiples would you use if a target has high expenses - EV/Revenue?
+AFTER: What multiples would you use if a target has high expenses - EV/revenue?
+
+F0855 | Technical
+BEFORE: Why as well as how I looked at working capital and why it's important.
+AFTER: Why did you analyze working capital, how did you assess it, and why is it important?
+
+F0859 | Technical
+BEFORE: Walk me through the different ways to evaluate a company?
+AFTER: Walk me through the different ways to evaluate a company.
+
+F0862 | Technical
+BEFORE: How does an increase in current liabilities affect FCFF.
+AFTER: How does an increase in current liabilities affect FCFF?
+
+F0863 | Technical
+BEFORE: What is Levered beta?
+AFTER: What is levered beta?
+
+F0864 | Technical
+BEFORE: Tell me by how much the deal was accretive or dilutive?
+AFTER: Tell me by how much the deal was accretive or dilutive.
+
+F0878 | Technical
+BEFORE: How a company goes into distress, what the possible routes for a company in distress are and why each of them matter/their advantages and disadvantages and what they do for creditors and the debtor, and the bankruptcy process.
+AFTER: How does a company become distressed? Compare the available restructuring routes, their advantages and disadvantages, their effects on creditors and the debtor, and the bankruptcy process.
+
+F0884 | Technical
+BEFORE: You have a company whose enterprise value is $500. You have $200 Senior Secured Debt and $100 of Unsecured Debt. What is the recovery of each tranche of debt and what is the Equity Value?
+AFTER: You have a company whose enterprise value is $500. You have $200 senior secured debt and $100 of unsecured debt. What is the recovery of each tranche of debt and what is the equity value?
+
+F0894 | Technical
+BEFORE: A company has 50M EBITDA, trading at 6x. Has 200M in Bank Debt, 150M in High Yield Debt, What will the debt be trading at?
+AFTER: A company has 50 million of EBITDA and trades at 6x EBITDA. It has 200 million of bank debt and 150 million of high-yield debt. What would each debt tranche trade at?
+
+F0896 | Technical
+BEFORE: A company has 500M EV, 75M in secured debt, 225M in unsecured debt. What is Equity value? What is Debt-to-Capitalization?
+AFTER: A company has EV of 500 million, secured debt of 75 million and unsecured debt of 225 million. What is its equity value? What is its debt-to-capitalization ratio?
+
+F0903 | Technical
+BEFORE: A company has an Enterprise Value of 300M, with 75M in secured debt and 125M in unsecured debt. What's the breakdown of the company's Enterprise Value if it falls by 150M.
+AFTER: A company has enterprise value of 300 million, secured debt of 75 million and unsecured debt of 125 million. How is value allocated if enterprise value falls by 150 million?
+
+F0926 | Technical
+BEFORE: Who is the CEO of JPMorgan Asset Management What news events have you been following and how have they effected the markets?
+AFTER: Who is the CEO of JPMorgan Asset Management? What news events have you been following, and how have they affected markets?
+
+F0937 | Technical
+BEFORE: How does JP Morgan make money? You have to know company basics and the ins and outs of how the firm operates. Talk about the banking industry not just about JP morgan and its ceo, to show that you have insightfully picked JP Morgan above other banks. Show genuine interest.
+AFTER: How does JPMorgan make money? Discuss its businesses and how it fits within the banking industry.
+
+F0944 | Technical
+BEFORE: 100 people in line. The first person opens every single closet. The second person closes the ones that are multiples of 2 (2nd, 4th ...). The third person closes very open closet and opens every closed closet that is a multiple of 3...and so on so forth.
+AFTER: 100 people in line. The first person opens every single closet. The second person closes the ones that are multiples of 2 (2nd, 4th...). The third person closes very open closet and opens every closed closet that is a multiple of 3...and so on so forth.
+
+F0948 | Technical
+BEFORE: What is the implied volatility on an at-the-money call option on JP Morgan expiring in one month.
+AFTER: What is the implied volatility on an at-the-money call option on JP Morgan expiring in one month?
+
+F0968 | Technical
+BEFORE: How can you take a view / trade on both the slope an curvature of the yield curve?
+AFTER: How can you trade a view on both the slope and curvature of the yield curve?
+
+F0975 | Technical
+BEFORE: How to value a lemon tree?
+AFTER: How would you value a lemon tree?
+
+F0979 | Technical
+BEFORE: How would you assign a beta (and some question to probe my understanding of how beta works?
+AFTER: How would you assign a beta to an asset? [Additional probing questions not recorded.]
+
+F0982 | Technical
+BEFORE: Pitch about a product, ask for my perspective of how the market was doing and what where two important factors that influence the market.
+AFTER: Pitch a product, discuss your view of the market, and identify two important factors influencing it.
+
+F0993 | Technical
+BEFORE: Why a company would choose not to delay debt repayments, given that the time value of money means that money is worth more now than later.
+AFTER: Why might a company choose not to delay debt repayments, despite the time value of money?
+
+F0998 | Technical
+BEFORE: Why didn't you use EV/Net Income as a metric to compare competitors for Alibaba?
+AFTER: Why didn't you use EV/net income as a metric to compare competitors for Alibaba?
+
+F1000 | Technical
+BEFORE: Are there any recent IPO's that have caught your interests?
+AFTER: Have any recent IPOs caught your interest?
+
+F1001 | Technical
+BEFORE: Tell me about 3 market (technology) trends you're are following, think are a growing, and why?
+AFTER: Discuss three technology market trends you are following and explain why you expect them to grow.
+
+F1006 | Technical
+BEFORE: Walk me through the direct method of the cash flow statement" and drilled in on the specifics of the differences between indirect and direct methods of computing the cash flow statement.
+AFTER: Walk through the direct method of preparing a cash flow statement and explain how it differs from the indirect method.
+
+F1008 | Technical
+BEFORE: If you had a lot of money, what would you invest in.
+AFTER: If you had a lot of money, what would you invest in?
+
+F1011 | Technical
+BEFORE: If there's a one hundred million bond with a 5% coupon rate what's is the yield on the bond after two years?
+AFTER: If there's a one hundred million bond with a 5% coupon rate what is the yield on the bond after two years?
+
+F1013 | Technical
+BEFORE: What are the key criteria's when shortlisting from multiple LOI's?
+AFTER: What are the key criteria for shortlisting multiple letters of intent (LOIs)?
+
+F1030 | Technical
+BEFORE: Describe a vertical and a company you are interested in, unit economics?
+AFTER: Describe an industry vertical and a company that interest you, including the company's unit economics.
+
+F1031 | Technical
+BEFORE: How fixed and variable costs behave in different environments, simple case study type questions?
+AFTER: How do fixed and variable costs behave in different business environments?
+
+F1034 | Technical
+BEFORE: What is the first line item you look for when analyzing a company.
+AFTER: What is the first line item you look for when analyzing a company?
+
+F1035 | Technical
+BEFORE: What criteria you would use to determine profitability of a corporation, and explaining the rationale behind why certain companies choose to participate in mergers and/or acquisitions.
+AFTER: What criteria would you use to assess a company's profitability? Separately, explain why companies pursue mergers and acquisitions.
+
+F1043 | Technical
+BEFORE: Given an exit multiple, EBITDA, WACC, and last years FCF. Need to find the implied growth rate using the GGM.
+AFTER: Given an exit multiple, EBITDA, WACC and the final forecast year's free cash flow, calculate the implied growth rate using the Gordon growth model. [Numerical inputs not recorded.]
+
+F1048 | Technical
+BEFORE: How do you value a biotech company with 1 candidate, pre-revenue.
+AFTER: How would you value a pre-revenue biotech company with one drug candidate?
+
+F1051 | Technical
+BEFORE: How would you value a Healthcare Company?
+AFTER: How would you value a healthcare company?
+
+F1058 | Technical
+BEFORE: How to valuate a convertible security?
+AFTER: How would you value a convertible security?
+
+F1062 | Technical
+BEFORE: What beta is and what industries have high/low beta, uses dice throw as a question about beta.
+AFTER: What is beta, and which industries have high or low betas? [The source also mentions a dice-based beta question but does not record it.]
+
+F1075 | Technical
+BEFORE: What happens to the 3 financial statements when you sell a an asset currently valued at $50mil for $30mil? Assume a 20% tax rate.
+AFTER: What happens to the 3 financial statements when you sell an asset currently valued at $50mil for $30mil? Assume a 20% tax rate.
+
+F1078 | Technical
+BEFORE: Walk me through how you calculate fully diluted shares?
+AFTER: Walk me through how you calculate fully diluted shares.
+
+F1084 | Technical
+BEFORE: What is appropriate amount of Debt/Equity a company should use?
+AFTER: What is appropriate amount of debt/equity a company should use?
+
+F1086 | Technical
+BEFORE: What kinds of multiples would you expect to use in the Aerospace and Defense Industry?
+AFTER: What kinds of multiples would you expect to use in the aerospace and defense industry?
+
+F1088 | Technical
+BEFORE: Why would a company chose to factor their accounts receivable?
+AFTER: Why would a company choose to factor its accounts receivable?
+
+F1092 | Technical
+BEFORE: Company A: Equity $35m, NI $2.5m, Share price $35. Company B: equity $15m, NI $1m, Share price $50. If company A is buying company B, is this deal accretive or dilutive? What's the number of shares that are created? What's the new EPS?
+AFTER: Company A: equity $35m, NI $2.5m, Share price $35. Company B: equity $15m, NI $1m, Share price $50. If company A is buying company B, is this deal accretive or dilutive? What's the number of shares that are created? What's the new EPS?
+
+F1096 | Technical
+BEFORE: Walk me through the sale of a technological contract across the three statements?
+AFTER: Walk me through the sale of a technological contract across the three statements.
+
+F1098 | Technical
+BEFORE: Ranking healthcare sub-verticals by attractiveness as LBO candidates, What are some trends you've been following in the healthcare industry? ]
+AFTER: Rank healthcare subsectors by attractiveness as LBO candidates. What healthcare industry trends have you been following?
+
+F1101 | Technical
+BEFORE: Walk through a sell side pitch deck?
+AFTER: Walk through a sell side pitch deck.
+
+F1102 | Technical
+BEFORE: How to value a healthcare company and more specifically how to build the cash flow for a biotech firm before they make any revenue.
+AFTER: How would you value a healthcare company? More specifically, how would you forecast cash flow for a pre-revenue biotech firm?
+
+F1109 | Technical
+BEFORE: How do you which company between two pays dividends if they have the same everything except one has a higher PE multiple.
+AFTER: Can you identify which of two otherwise identical companies pays dividends if one has a higher P/E multiple?
+
+F1118 | Technical
+BEFORE: How to calculate the beta of AT&T?
+AFTER: How would you calculate AT&T's beta?
+
+F1122 | Technical
+BEFORE: When you get to the terminal value calculation, describe which of the two methods you would use for either and why.
+AFTER: When you get to the terminal value calculation, describe which of the two methods you would use for either and why?
+
+F1126 | Technical
+BEFORE: Which changes in price, volume, COGS, working capital, capex or depreciation have the largest effect on a DCF? [Magnitudes not recorded.]
+AFTER: Which changes in price, volume, COGS, working capital, CapEx or depreciation have the largest effect on a DCF? [Magnitudes not recorded.]
+
+F1128 | Technical
+BEFORE: Which value should be added / subtracted to correctly match the ebitda. you had to understand that only the value of the consolidated business should be taken into accoutn in ev?
+AFTER: Which adjustments should you make to enterprise value so that it matches the scope of consolidated EBITDA?
+
+F1131 | Technical
+BEFORE: If l acquire a company for 100% stock and the acquiring company's P/E is 10x and the target is 8x, is the deal accretive or dilutive?
+AFTER: If I acquire a company for 100% stock and the acquiring company's P/E is 10x and the target is 8x, is the deal accretive or dilutive?
+
+F1137 | Technical
+BEFORE: How would you value a EBITDA negative tech company?
+AFTER: How would you value a technology company with negative EBITDA?
+
+F1141 | Technical
+BEFORE: How to get to FCF" as the way they formulated it was poor.
+AFTER: How do you calculate free cash flow?
+
+F1145 | Technical
+BEFORE: How the balance sheet is used for issuing loans and what to look for when issuing loans.
+AFTER: How would you use a company's balance sheet when deciding whether to issue it a loan?
+
+F1147 | Technical
+BEFORE: What sorts of credit risk would MUFG face when funding a wind farm.
+AFTER: What sorts of credit risk would MUFG face when funding a wind farm?
+
+F1149 | Technical
+BEFORE: Walk me through what happens on the three financial statements when PIK interest goes up by $100m? Assume 10% interest rate year 1, how to get from Revenue to FCF? Assume a 20% tax rate.
+AFTER: Walk me through what happens on the three financial statements when PIK interest goes up by $100m? Assume 10% interest rate year 1, how to get from revenue to FCF? Assume a 20% tax rate.
+
+F1153 | Technical
+BEFORE: Walk me through a recent LBO you followed and talk about multiples. he made me go into debt financing a lot?
+AFTER: Walk through a recent LBO you followed, including its valuation multiples and debt financing.
+
+F1156 | Technical
+BEFORE: How does 10$ of PIK influence the three financial statements? Assume a 20% tax rate.
+AFTER: How does $10 of PIK interest affect the three financial statements? Assume a 20% tax rate.
+
+F1157 | Technical
+BEFORE: Walk me through the major lines of income statement?
+AFTER: Walk me through the major lines of income statement.
+
+F1158 | Technical
+BEFORE: Why do you subtract net working capital to get free cashflow?
+AFTER: Why do you subtract net working capital to get free cash flow?
+
+F1179 | Technical
+BEFORE: Walk me through 10 of debt across the fin statments?
+AFTER: Walk through the effects of 10 of debt on the financial statements. [Currency and transaction details not recorded.]
+
+F1188 | Technical
+BEFORE: Tell me about a project from your past internship experience in M&A that you think could be considered as infrastructure?
+AFTER: Tell me about a project from your past internship experience in M&A that you think could be considered as infrastructure.
+
+F1191 | Technical
+BEFORE: How would I calculate the revenue that the Starbucks earns in a week?
+AFTER: How would you estimate a Starbucks store's weekly revenue?
+
+F1192 | Technical
+BEFORE: Does saas software or on premises have higher margins typically: How would you model out a Saas company: Why are semiconductor companies extremely cyclical?
+AFTER: Do SaaS or on-premises software businesses typically have higher margins? How would you model a SaaS company? Why are semiconductor companies highly cyclical?
+
+F1194 | Technical
+BEFORE: If you had to choose between semis, software, and internet, rank which industry has the best business model What is the most interesting technology trend you follow?
+AFTER: Rank semiconductors, software and internet businesses by the attractiveness of their business models. What technology trend interests you most?
+
+F1197 | Technical
+BEFORE: Why would some companies be valued very highly even though very negative net income.
+AFTER: Why might a company have a high valuation despite very negative net income?
+
+F1204 | Technical
+BEFORE: If you had to meet with Larry Page on Monday, what Consumer Tech companies would you tell him to buy immediately and why?
+AFTER: If you had to meet with Larry Page on Monday, what consumer tech companies would you tell him to buy immediately and why?
+
+F1205 | Technical
+BEFORE: Why do you think this What's our biggest issue with valuing young start ups?
+AFTER: What is the biggest challenge in valuing young startups?
+
+F1209 | Technical
+BEFORE: Explain gross vs net retention Difference between bookings, billings, and revenue?
+AFTER: Explain gross versus net retention. What is the difference between bookings, billings and revenue?
+
+F1214 | Technical
+BEFORE: Walk me through a pitchbook., Which is higher, the cost of debt or cost of equity, and why?
+AFTER: Walk me through a pitch book. Which is higher, the cost of debt or the cost of equity, and why?
+
+F1215 | Technical
+BEFORE: If you purchase a $100 shirt with $50 on a gift card and $50 in cash, and the shirt costed $30 to produce, please show the result on the 3 statements? Assume a 20% tax rate.
+AFTER: If you purchase a $100 shirt with $50 on a gift card and $50 in cash, and the shirt cost $30 to produce, please show the result on the 3 statements? Assume a 20% tax rate.
+
+F1217 | Technical
+BEFORE: Describe Beta and rank the following companies from highest to lowest beta. (META, LVMH, Toyota?
+AFTER: Define beta and rank Meta, LVMH and Toyota from highest to lowest beta.
+
+F1220 | Technical
+BEFORE: How would you evaluate the cash flow of an apple tree and how would you determine the appropriate discount rate to use ?
+AFTER: How would you evaluate the cash flow of an apple tree and how would you determine the appropriate discount rate to use?
+
+F1222 | Technical
+BEFORE: What is one tech M&A deal you think would be interesting to see happen in the next year.
+AFTER: What is one tech M&A deal you think would be interesting to see happen in the next year?
+
+F1223 | Technical
+BEFORE: What are the 4 financial statements and how are they linked.
+AFTER: What are the 4 financial statements and how are they linked?
+
+F1224 | Technical
+BEFORE: Would you rather be a firm that has a P/E ratio of 20 or a interest rate of 6%.
+AFTER: Would you rather be a firm that has a P/E ratio of 20 or an interest rate of 6%?
+
+F1225 | Technical
+BEFORE: How to value the price of a taxi cab registration?
+AFTER: How would you value a taxi registration license?
+
+F1226 | Technical
+BEFORE: What are the effects of the 3 financial statements if inventory increased by $10. Assume a 20% tax rate.
+AFTER: How does a $10 increase in inventory affect the three financial statements? Assume a 20% tax rate.
+
+F1228 | Technical
+BEFORE: How do you value a private company ?
+AFTER: How do you value a private company?
+
+F1234 | Technical
+BEFORE: If i operated a dental clinic and i bought a coffee machine, run me through the impact of this transaction on the 3 financial statements as the year goes by (requires you to think about tax and depreciation? Assume a 20% tax rate.
+AFTER: If you operated a dental clinic and bought a coffee machine, how would the purchase affect the three financial statements over the year, including depreciation and taxes? Assume a 20% tax rate. [Purchase price, financing and useful life not recorded.]
+
+F1240 | Technical
+BEFORE: Company has 100million in revenue, 30% operating margin, D&A of 15 million, no interest and 15% tax rate. It has a EBIT/EV multiple of 10x. What is the P/E Ratio?
+AFTER: Company has 100million in revenue, 30% operating margin, D&A of 15 million, no interest and 15% tax rate. It has an EBIT/EV multiple of 10x. What is the P/E Ratio?
+
+F1241 | Technical
+BEFORE: Company A with a P/E Ratio of 10x acquires Company B with a P/E Ratio of 20x. Assuming consideration was all script would this likely be EPS accretive or dilutive?
+AFTER: Company A, with a P/E ratio of 10x, acquires Company B, with a P/E ratio of 20x. If the consideration is entirely scrip, would the deal likely be EPS-accretive or dilutive?
+
+F1243 | Technical
+BEFORE: How to account for minority interests on a balance sheet?
+AFTER: How do you account for minority interests on a balance sheet?
+
+F1246 | Technical
+BEFORE: Tell me more about what is a better way to profit from North Korean geographical risk?
+AFTER: Tell me more about what is a better way to profit from North Korean geographical risk.
+
+F1250 | Technical
+BEFORE: How I would hedge my position using convertible debt.
+AFTER: How would you hedge your position using convertible debt?
+
+F1255 | Technical
+BEFORE: What is a paired swaption ?
+AFTER: What is a paired swaption?
+
+F1256 | Technical
+BEFORE: What is a contingent swap ?
+AFTER: What is a contingent swap?
+
+F1257 | Technical
+BEFORE: Can you explain the meaning of CAR, CVaR ?
+AFTER: Can you explain the meaning of CAR, CVaR?
+
+F1258 | Technical
+BEFORE: Can you explain the meaning of raroc?
+AFTER: Can you explain the meaning of RAROC?
+
+F1259 | Technical
+BEFORE: Explain 3 main financial risks in the world at present ?
+AFTER: Explain 3 main financial risks in the world at present.
+
+F1260 | Technical
+BEFORE: What do you think about the trade war between United States and China ?
+AFTER: What do you think about the trade war between United States and China?
+
+F1261 | Technical
+BEFORE: What do you think about Japenese economy ?
+AFTER: What do you think about Japanese economy?
+
+F1275 | Technical
+BEFORE: What are ways to increase returns.
+AFTER: What are ways to increase returns?
+
+F1276 | Technical
+BEFORE: What is the rate called that determines an LBO profitability.
+AFTER: What is the name of the rate used to measure an LBO's return?
+
+F1278 | Technical
+BEFORE: Why multiple by (1-t) on ebit and not ebitda?
+AFTER: Why do you multiply EBIT, rather than EBITDA, by (1 - t)?
+
+F1280 | Technical
+BEFORE: When WACC is used, and a situation in which it may be less useful.
+AFTER: When is WACC used, and in what circumstances might it be less useful?
+
+F1323 | Technical
+BEFORE: Tell me about a company then walk through margin profile, fcf, prospects, ect.
+AFTER: Discuss a company, including its margin profile, free cash flow and prospects.
+
+F1326 | Technical
+BEFORE: What's an alternate way to calculate Free Cash Flow aside from taking Net Income, adding back Depreciation, and subtracting Changes in Operating Assets / Liabilities and CapEx?
+AFTER: What's an alternate way to calculate free cash flow aside from taking net income, adding back depreciation, and subtracting Changes in operating assets / liabilities and CapEx?
+
+F1327 | Technical
+BEFORE: Why would you use Gordon Growth rather than the Multiples Method to calculate the Terminal Value?
+AFTER: Why would you use Gordon Growth rather than the multiples method to calculate the terminal value?
+
+F1331 | Technical
+BEFORE: How all of these would effect the share price of a company.
+AFTER: How would these changes affect a company's share price? [Changes not identified.]
+
+F1341 | Technical
+BEFORE: Describe your favorite company in detail with financials and what would be a good target for an acquisition?
+AFTER: Describe your favorite company in detail with financials and what would be a good target for an acquisition.
+
+F1342 | Technical
+BEFORE: What is one company your favorite company can buy and how would you think about structuring the price ?
+AFTER: What is one company your favorite company can buy and how would you think about structuring the price?
+
+F1348 | Technical
+BEFORE: Walk me through accretion dilution math math brainteasers (forgot) 15 ways to preserve cash in a distressed co why should we pick you out of 10000s of kids?
+AFTER: Walk me through accretion/dilution math. [Brainteaser details not recorded.] List 15 ways to preserve cash at a distressed company. Why should we choose you over thousands of other candidates?
+
+F1359 | Technical
+BEFORE: How why a creditor is willing to extend the maturity of a loan and what the debtor would have to do in exchange?
+AFTER: Why might a creditor agree to extend a loan's maturity, and what might the debtor offer in exchange?
+
+F1363 | Technical
+BEFORE: How I might predict a company is in financial distress and to give a few signs, as well as to list the waterfall of the capital structure.
+AFTER: What signs suggest that a company is in financial distress? Explain the repayment waterfall across its capital structure.
+
+F1365 | Technical
+BEFORE: Run me through waterfall valuation?
+AFTER: Run me through waterfall valuation.
+
+F1368 | Technical
+BEFORE: If two companies are in the exact same business in the exact same location and sell the same products to the same target market and are the same size, but there WACCs are different?
+AFTER: Why might two companies have different WACCs despite operating in the same business and location, selling the same products to the same customers, and being the same size?
+
+F1385 | Technical
+BEFORE: Which asked about the use of CAPM and how I would apply it to valuations.
+AFTER: How would you use CAPM in a valuation?
+
+F1386 | Technical
+BEFORE: Why financials (in the stock market) were suffering even with interest rates rising.
+AFTER: Why might financial stocks perform poorly even when interest rates are rising?
+
+F1391 | Technical
+BEFORE: Tell us about an article you've read recently on the PE industry?
+AFTER: Tell us about an article you've read recently on the PE industry.
+
+F1394 | Technical
+BEFORE: How that would impact the Debt Capital markets space.
+AFTER: How would that development affect debt capital markets? [Development not identified.]
+
+F1397 | Technical
+BEFORE: How would you advise a company that sold luxury goods compared to inelastic goods. if you were a CEO and wanted to increase revenue, would you prefer increasing quantity or prices?
+AFTER: How would you advise a company that sold luxury goods compared to inelastic goods. If you were a CEO and wanted to increase revenue, would you prefer increasing quantity or prices?
+
+F1400 | Technical
+BEFORE: Walk me through a dcf and walk me through buying a factory with debt and $20 of repayment?
+AFTER: Walk me through a DCF and walk me through buying a factory with debt and $20 of repayment?
+
+F1406 | Technical
+BEFORE: Walk me through how does accounts payable increase affect cash flow? Assume a 20% tax rate.
+AFTER: How does an increase in accounts payable affect cash flow? Assume a 20% tax rate.
+
+F1419 | Technical
+BEFORE: How would that run through the financial statements (know your F/A statement questions really well?
+AFTER: How would that transaction flow through the financial statements? [Transaction not identified.]
+
+F1429 | Technical
+BEFORE: Pitch me a long and a short?
+AFTER: Pitch me a long and a short.
+
+F1431 | Technical
+BEFORE: Pitch me a short in 30 seconds?
+AFTER: Pitch me a short in 30 seconds.
+
+F1441 | Technical
+BEFORE: Calculate, such as FCF Yield.
+AFTER: Calculate free cash flow yield. [Numerical inputs not recorded.]
+
+F1450 | Technical
+BEFORE: If l pay out a dividend, what happens to the EV/EBITDA multiple for a private company?
+AFTER: If I pay out a dividend, what happens to the EV/EBITDA multiple for a private company?
+
+F1471 | Technical
+BEFORE: 5x P/E acquires 10x P/E, all Cash with 5% cost of cash 50% TR, accretive or dilutive.
+AFTER: 5x P/E acquires 10x P/E, all cash with 5% cost of cash 50% TR, accretive or dilutive.
+
+F1472 | Technical
+BEFORE: What is the formula for levered free cash flow, calculate with x numbers.
+AFTER: What is the formula for levered free cash flow? Use it to calculate a value. [Numerical inputs not recorded.]
+
+F1475 | Technical
+BEFORE: What are some trends in the consumer industry that you have noticed recently.
+AFTER: What are some trends in the consumer industry that you have noticed recently?
+
+F1489 | Technical
+BEFORE: If a company takes an activist stakkehold in another company, what happens to their balance sheet?
+AFTER: If a company takes an activist stake in another company, what happens to their balance sheet?
+
+F1491 | Technical
+BEFORE: Give examples of valuation ratios that do not make sense, such as Equity Value/EBITDA, and explain why.
+AFTER: Give examples of valuation ratios that do not make sense, such as equity value/EBITDA, and explain why.
+
+F1492 | Technical
+BEFORE: Value creation, valuation, and strategic rationales behind deals.
+AFTER: Discuss value creation, valuation and the strategic rationale behind deals.
+
+F1499 | Technical
+BEFORE: How certain changes to a company's financials would impact these items in the three statements.
+AFTER: How would the specified financial changes affect the three statements? [Changes not identified.]
+
+F1500 | Technical
+BEFORE: What effect would a recession or an economic slowdown have on WACC's in general?
+AFTER: What effect would a recession or an economic slowdown have on WACCs in general?
+
+F1509 | Technical
+BEFORE: What is deferred revenue, and where is located in the financial statements? Assume a 20% tax rate.
+AFTER: What is deferred revenue, and where is it recorded in the financial statements? Assume a 20% tax rate.
+
+F1517 | Technical
+BEFORE: What multiples are typically used to value the companies.
+AFTER: What multiples are typically used to value the companies?
+
+F1526 | Technical
+BEFORE: Tell me about the market and what you think of it going forward?
+AFTER: Tell me about the market and what you think of it going forward.
+
+F1540 | Technical
+BEFORE: How does a 100 $ CAPEX impact the financial statements ( two scenarios: one with cash expenses and another debt raising) -Questions also about which metrics I would choose to depict the situation of a company regarding it's solvability.
+AFTER: How does $100 of CapEx affect the financial statements when funded with cash versus debt? Separately, which metrics would you use to assess a company's solvency? [Other assumptions not recorded.]
+
+F1541 | Technical
+BEFORE: Walk through a sell-side IPO from perspective of an Investment Bank.
+AFTER: Walk through a sell-side IPO from an investment bank's perspective.
+
+F1553 | Technical
+BEFORE: How do you plan to source deals / bring in deal flow ..What areas for potential investment are interesting to you?
+AFTER: How would you source deals and bring in deal flow? Which areas interest you for potential investment?
+
+F1560 | Technical
+BEFORE: How each component of cost of equity is derived.
+AFTER: How is each component of the cost of equity derived?
+
+F1565 | Technical
+BEFORE: Explain your economic and market outlook for the rest of the year?
+AFTER: Explain your economic and market outlook for the rest of the year.
+
+F1575 | Technical
+BEFORE: Why one company would be trading at a higher P/E ratio than another.
+AFTER: Why might one company trade at a higher P/E ratio than another?
+
+F1585 | Technical
+BEFORE: Walk me through the three financial statements...how would [financial statement x] change this item on [statement y], and where would you see this in a revenue and cost Excel model?
+AFTER: Walk me through the three financial statements...how would [financial statement x] change this item on [statement y], and where would you see this in a revenue and cost Excel model.
+
+F1589 | Technical
+BEFORE: Compare the 2008 financial crisis to the upcoming one?
+AFTER: Compare the 2008 financial crisis to the upcoming one.
+
+F1594 | Technical
+BEFORE: Walk me through a comparable company analysis valuation given these values?
+AFTER: Walk me through a comparable company analysis valuation given these values.
+
+F1611 | Technical
+BEFORE: Explain the Sales structure of a SaaS company - also mental math was involved estimating revenue based on how their sales team is structured.
+AFTER: Explain a SaaS company's sales structure and estimate revenue based on its sales team. [Numerical inputs not recorded.]
+
+F1612 | Technical
+BEFORE: Tell me about your favorite Vista portfolio company and a little bit about the company?
+AFTER: Tell me about your favorite Vista portfolio company and a little bit about the company.
+
+F1620 | Technical
+BEFORE: Why the company is a good investment (or not, at the credit / public equity / private equity levels?
+AFTER: Why is the company a good or bad investment from a credit, public equity or private equity perspective?
+
+F1623 | Technical
+BEFORE: How I would grow a platform as a service business.
+AFTER: How would you grow a platform-as-a-service business?
+
+F1655 | Technical
+BEFORE: What conditions would affect certain Public Finance projects?
+AFTER: What conditions would affect certain public finance projects?
+
+F1661 | Technical
+BEFORE: Walk me through a specific industry you have been following with a deal and what the multiples look like?
+AFTER: Walk me through a specific industry you have been following with a deal and what the multiples look like.
+
+F1664 | Technical
+BEFORE: How would buying capex year over year effect depreciation and the end line of fcf?
+AFTER: How would annual CapEx affect depreciation and free cash flow?
+
+F1669 | Technical
+BEFORE: Explain the 4 different types of valuing a company and give the pros and cons of each?
+AFTER: Explain the 4 different types of valuing a company and give the pros and cons of each.
+
+F1671 | Technical
+BEFORE: 2 companies are exactly the same (same revenue, growth, margins, etc...), but one of them has higher capex than the other, and the other one pays out a higher dividend...how are these two companies valued differently from a DCF perspective?
+AFTER: 2 companies are exactly the same (same revenue, growth, margins, etc...), but one of them has higher CapEx than the other, and the other one pays out a higher dividend...how are these two companies valued differently from a DCF perspective?
+
+F1672 | Technical
+BEFORE: Why they would be looking to expand into certain markets, how their past organic and inorganic growth patterns supported such a selection, and so on.
+AFTER: Why might the company expand into those markets, and how do its past organic and inorganic growth patterns support that choice? [Company and markets not identified.]
+
+F1680 | Technical
+BEFORE: Walk me through a trend currently prevalent in enterprise software?
+AFTER: Walk me through a trend currently prevalent in enterprise software.
+
+F1689 | Technical
+BEFORE: If one has higher capes, how would the DCF change?
+AFTER: If one company has higher CapEx, how would its DCF valuation change?
+
+F1742 | Technical
+BEFORE: Walk me through an increase in $100 in CapEx?
+AFTER: Walk me through an increase in $100 in CapEx.
+
+F1744 | Technical
+BEFORE: Walk me through the impact of a 10% option pool in an LBO if the initial Investor Equity is $500 and the Exit Equity Value is $1,000.
+AFTER: Walk me through the impact of a 10% option pool in an LBO if the initial investor equity is $500 and the exit equity value is $1,000.
+
+F1745 | Technical
+BEFORE: Company with 500m chemical plant built 10y ago, straightline dep over 40y, in Y10 on day 1 plant explodes and is worth 100m salvage value, what is 3 statements change - 25% TR?
+AFTER: Company with 500m chemical plant built 10y ago, straight-line dep over 40y, in Y10 on day 1 plant explodes and is worth 100m salvage value, what is 3 statements change - 25% TR?
+
+F1750 | Technical
+BEFORE: Coffee Co (owns %100, 200 EBITDA) & Donut Co (owns % 80, 250 EBITDA, 3X EV/ EBITDA, EPS $15, 100M Shares, 400 Debt + NCI, 150M Cash) Find Coffee Co EV/ EBITDA?
+AFTER: Coffee Co (owns %100, 200 EBITDA) & Donut Co (owns % 80, 250 EBITDA, 3X EV/ EBITDA, EPS $15, 100M shares, 400 debt + NCI, 150M cash) Find Coffee Co EV/ EBITDA?
+
+F1757 | Technical
+BEFORE: Walk me through what happens when a company pays $20 in Interest on Debt, with $10 in Cash Interest and $10 in Paid-in-Kind (PIK) Interest. Assume a 40% tax rate.
+AFTER: Walk me through what happens when a company pays $20 in interest on debt, with $10 in cash interest and $10 in paid-in-kind (PIK) interest. Assume a 40% tax rate.
+
+F1763 | Technical
+BEFORE: Recent Market Events and their impact on investment decisions?
+AFTER: Discuss recent market events and their effects on investment decisions.
+
+F1767 | Technical
+BEFORE: How does purchase of PPE affect the three statements?
+AFTER: How does purchase of PP&E affect the three statements?
+
+F1782 | Technical
+BEFORE: Tell me about a piece of financial news or an industry?
+AFTER: Tell me about a piece of financial news or an industry.
+
+F1793 | Technical
+BEFORE: What is the difference between maintenance and growth capex?
+AFTER: What is the difference between maintenance and growth CapEx?
+
+F1809 | Technical
+BEFORE: Value the coffee stand on campus?
+AFTER: Value the coffee stand on campus.
+
+F1816 | Technical
+BEFORE: Tell me about the state of M&A markets right now?
+AFTER: Tell me about the state of M&A markets right now.
+
+F1831 | Technical
+BEFORE: Why Debt/EBITDA vs Debt/FCF or Debt/FCO?
+AFTER: Why debt/EBITDA vs debt/FCF or debt/FCO?
+
+F1838 | Technical
+BEFORE: When is a ebitda multiple not suitable?
+AFTER: When is an EBITDA multiple not suitable?
+
+F1843 | Technical
+BEFORE: You have been given $1 million to invest in a portfolio of stocks. You have identified three potential stocks to invest in: Stock X, Stock Y, and Stock Z. Stock X has an expected return of 10% and a standard deviation of 15%. Stock Y has an expected return of 8% and a standard deviation of 10%. Stock Z has an expected return of 12% and a standard deviation of 20%. However, you are only allowed to invest a maximum of 40% of your portfolio in any single stock. How would you allocate your investment to maximize your expected return while adhering to the investment restrictions?
+AFTER: You have been given $1 million to invest in a portfolio of stocks. You have identified three potential stocks to invest in: stock X, stock Y, and stock Z. Stock X has an expected return of 10% and a standard deviation of 15%. Stock Y has an expected return of 8% and a standard deviation of 10%. Stock Z has an expected return of 12% and a standard deviation of 20%. However, you are only allowed to invest a maximum of 40% of your portfolio in any single stock. How would you allocate your investment to maximize your expected return while adhering to the investment restrictions?
+
+F1855 | Technical
+BEFORE: A company has $50 million adjusted EBITDA, $500 million first-lien debt at 8% cash interest, $30 million operating expenses, $25 million capex, $10 million cash taxes and $80 million cash. Calculate annual cash burn and liquidity runway. What other factors must be considered?
+AFTER: A company has $50 million adjusted EBITDA, $500 million first-lien debt at 8% cash interest, $30 million operating expenses, $25 million CapEx, $10 million cash taxes and $80 million cash. Calculate annual cash burn and liquidity runway. What other factors must be considered?
+
+F1932 | Technical
+BEFORE: Let's say I'm working on an Initial Public Offering (IPO) for a client. Can you briefly describe what I would do?
+AFTER: Let's say I'm working on an initial public offering (IPO) for a client. Can you briefly describe what I would do?
+
+F1947 | Technical
+BEFORE: What does the "Discount Rate" mean?
+AFTER: What does the "discount rate" mean?
+
+F1948 | Technical
+BEFORE: Why is the Discount Rate higher if the potential returns are higher? Shouldn't a company with higher potential returns have a lower Discount Rate, making it more valuable?
+AFTER: Why is the discount rate higher if the potential returns are higher? Shouldn't a company with higher potential returns have a lower discount rate, making it more valuable?
+
+F1951 | Technical
+BEFORE: What does "Present Value" mean, and what makes it change? How does it differ from Net Present Value?
+AFTER: What does "present value" mean, and what makes it change? How does it differ from net present value?
+
+F1953 | Technical
+BEFORE: What affects the IRR? How do these factors differ from the ones that affect the Present Value?
+AFTER: What affects the IRR? How do these factors differ from the ones that affect the present value?
+
+F1954 | Technical
+BEFORE: How do you use the IRR, Discount Rate, and Present Value to make investment decisions?
+AFTER: How do you use the IRR, discount rate, and present value to make investment decisions?
+
+F1957 | Technical
+BEFORE: How do you know when a revenue or expense line item should appear on the Income Statement?
+AFTER: How do you know when a revenue or expense line item should appear on the income statement?
+
+F1959 | Technical
+BEFORE: Why is Accounts Receivable (AR) an Asset but Deferred Revenue (DR) a Liability?
+AFTER: Why is accounts receivable (AR) an asset but deferred revenue (DR) a liability?
+
+F1960 | Technical
+BEFORE: What are "Deferred Taxes," and how do they affect the statements?
+AFTER: What are "deferred taxes," and how do they affect the statements?
+
+F1962 | Technical
+BEFORE: Your firm recently acquired another company for $1,000 and created Goodwill of $400 and Other Intangible Assets of $200 on the Balance Sheet. A junior accountant in your department asks you why your firm did this - how would you respond?
+AFTER: Your firm recently acquired another company for $1,000 and created goodwill of $400 and other intangible assets of $200 on the balance sheet. A junior accountant in your department asks you why your firm did this - how would you respond?
+
+F1963 | Technical
+BEFORE: Explain lease accounting on the financial statements under IFRS 16 / ASC 842, including the differences between Operating Leases and Finance Leases.
+AFTER: Explain lease accounting on the financial statements under IFRS 16 / ASC 842, including the differences between operating leases and finance leases.
+
+F1964 | Technical
+BEFORE: What's the difference between Deferred Tax Assets and Deferred Tax Liabilities? How do Net Operating Losses (NOLs) factor in?
+AFTER: What's the difference between deferred tax assets and deferred tax liabilities? How do net operating losses (NOLs) factor in?
+
+F1965 | Technical
+BEFORE: What is Working Capital? What does it mean if it's positive or negative?
+AFTER: What is working capital? What does it mean if it's positive or negative?
+
+F1966 | Technical
+BEFORE: What does the Change in Working Capital mean?
+AFTER: What does the Change in working capital mean?
+
+F1967 | Technical
+BEFORE: In its filings, a company states that EBITDA is a "proxy" for its Cash Flow from Operations. The company's EBITDA has been positive, growing at 20% for the past three years. However, the company recently ran low on Cash and filed for bankruptcy. How could this have happened?
+AFTER: In its filings, a company states that EBITDA is a "proxy" for its cash flow from operations. The company's EBITDA has been positive, growing at 20% for the past three years. However, the company recently ran low on cash and filed for bankruptcy. How could this have happened?
+
+F1971 | Technical
+BEFORE: You go into a job interview, and the interviewer points out that every single Interview Guide has a question about how Depreciation going up by $10 affects the statements. So, he asks you to walk through a $10 *decrease* in Depreciation, assuming a 25% tax rate.
+AFTER: You go into a job interview, and the interviewer points out that every single Interview Guide has a question about how depreciation going up by $10 affects the statements. So, he asks you to walk through a $10 *decrease* in depreciation, assuming a 25% tax rate.
+
+F1972 | Technical
+BEFORE: A company's CEO has decided to sell all its assets, starting with a factory recorded at a book value of $100 on its Balance Sheet. If this factory sells for $140, how do the statements change? Assume a 25% tax rate.
+AFTER: A company's CEO has decided to sell all its assets, starting with a factory recorded at a book value of $100 on its balance sheet. If this factory sells for $140, how do the statements change? Assume a 25% tax rate.
+
+F1975 | Technical
+BEFORE: A company hires a marketing agency to run an online advertising campaign for its services. The marketing agency charges $10,000 for this initial campaign, delivers it, and invoices the company, which has 60 days to pay. Walk me through the statements.
+
+Follow-up: Now, walk me through what happens ONLY in Step 2, when the company finally makes payment after 60 days. Also, explain intuitively what happens from start to finish.
+AFTER: A company hires a marketing agency to run an online advertising campaign for its services. The marketing agency charges $10,000 for this initial campaign, delivers it, and invoices the company, which has 60 days to pay. Walk me through the statements.
+
+Follow-up: Now, walk me through what happens only in Step 2, when the company finally makes payment after 60 days. Also, explain intuitively what happens from start to finish.
+
+F1976 | Technical
+BEFORE: Your friend's e-commerce company orders $200 of products from its main supplier. A month later, it sells these products for $500. Walk me through each step of this process SEPARATELY. Assume a 25% tax rate.
+AFTER: Your friend's e-commerce company orders $200 of products from its main supplier. A month later, it sells these products for $500. Walk me through each step of this process separately. Assume a 25% tax rate.
+
+F1977 | Technical
+BEFORE: A Software-as-a-Service (SaaS) company bills customers upfront for an entire year of service and collects the cash before the contract begins. Walk me through the process for a $250 contract with a $50 delivery cost between January 1 and December 31 of the year. COMBINE the cash collection and revenue recognition. Assume a 25% tax rate.
+AFTER: A software-as-a-service (SaaS) company bills customers upfront for an entire year of service and collects the cash before the contract begins. Walk me through the process for a $250 contract with a $50 delivery cost between January 1 and December 31 of the year. Combine the cash collection and revenue recognition. Assume a 25% tax rate.
+
+F1978 | Technical
+BEFORE: A company with 1000 shares issues 500 new shares worth $1.00 on January 1 to fund its business. Then, it decides to issue Dividends per Share of $0.10 to all its shareholders at the end of the year. Walk me through both steps SEPARATELY on the statements.
+AFTER: A company with 1000 shares issues 500 new shares worth $1.00 on January 1 to fund its business. Then, it decides to issue dividends per Share of $0.10 to all its shareholders at the end of the year. Walk me through both steps separately on the statements.
+
+F1979 | Technical
+BEFORE: A company issues $200 of Debt at a 10% interest rate. Walk me through the entire first year on the statements, including the initial issuance and the full interest payment. COMBINE both steps. Assume a 25% tax rate.
+AFTER: A company issues $200 of debt at a 10% interest rate. Walk me through the entire first year on the statements, including the initial issuance and the full interest payment. Combine both steps. Assume a 25% tax rate.
+
+F1980 | Technical
+BEFORE: A company issues $200 of Debt at a 10% interest rate. Walk me through the entire first year on the statements, including the initial issuance and the full interest payment. COMBINE both steps.
+
+Follow-up: How does this change if, in addition to the 10% interest rate, the Debt now has a 20% principal repayment each year? Combine both steps and assume the principal repayment occurs on December 31.
+AFTER: A company issues $200 of debt at a 10% interest rate. Walk me through the entire first year on the statements, including the initial issuance and the full interest payment. Combine both steps.
+
+Follow-up: How does this change if, in addition to the 10% interest rate, the debt now has a 20% principal repayment each year? Combine both steps and assume the principal repayment occurs on December 31.
+
+F1981 | Technical
+BEFORE: A company that follows U.S. GAAP signs a 10-year Operating Lease on January 1. It will pay $160 in Rent each year. Assuming a 5% Discount Rate, walk me through the financial statements over this entire year. For simplicity, you may "round" and assume the Present Value of the lease payments equals $1,200. Assume a 25% tax rate.
+AFTER: A company that follows U.S. GAAP signs a 10-year operating lease on January 1. It will pay $160 in rent each year. Assuming a 5% discount rate, walk me through the financial statements over this entire year. For simplicity, you may "round" and assume the present value of the lease payments equals $1,200. Assume a 25% tax rate.
+
+F1982 | Technical
+BEFORE: A company that follows U.S. GAAP signs a 10-year Operating Lease on January 1. It will pay $160 in Rent each year. Assuming a 5% Discount Rate, walk me through the financial statements over this entire year. For simplicity, you may "round" and assume the Present Value of the lease payments equals $1,200.
+
+Follow-up: Now walk through the same scenario, but under IFRS rather than U.S. GAAP (or pretend it is a Finance Lease under U.S. GAAP). Assume a 25% tax rate.
+AFTER: A company that follows U.S. GAAP signs a 10-year operating lease on January 1. It will pay $160 in rent each year. Assuming a 5% discount rate, walk me through the financial statements over this entire year. For simplicity, you may "round" and assume the present value of the lease payments equals $1,200.
+
+Follow-up: Now walk through the same scenario, but under IFRS rather than U.S. GAAP (or pretend it is a finance lease under U.S. GAAP). Assume a 25% tax rate.
+
+F1983 | Technical
+BEFORE: A company buys a factory for $200 using $200 of Debt. What happens, INITIALLY, on the statements?
+AFTER: A company buys a factory for $200 using $200 of debt. What happens, initially, on the statements?
+
+F1984 | Technical
+BEFORE: A company buys a factory for $200 using $200 of Debt. What happens, INITIALLY, on the statements?
+
+Follow-up: One year passes. The company pays 10% interest on its Debt, and it depreciates 10% of the factory. It also repays 5% of the Debt principal. What happens on the statements in this first year? Assume a 25% tax rate.
+AFTER: A company buys a factory for $200 using $200 of debt. What happens, initially, on the statements?
+
+Follow-up: One year passes. The company pays 10% interest on its debt, and it depreciates 10% of the factory. It also repays 5% of the debt principal. What happens on the statements in this first year? Assume a 25% tax rate.
+
+F1985 | Technical
+BEFORE: At the end of this first year, the company sells its factories for $220 and uses the proceeds to repay its remaining Debt principal after realizing there is little demand for its products. Walk through this step SEPARATELY from the previous two. Assume that the Net PP&E balance is $180, and the Debt is $190 because of changes in the previous step. Assume a 25% tax rate.
+AFTER: At the end of this first year, the company sells its factories for $220 and uses the proceeds to repay its remaining debt principal after realizing there is little demand for its products. Walk through this step separately from the previous two. Assume that the Net PP&E balance is $180, and the debt is $190 because of changes in the previous step. Assume a 25% tax rate.
+
+F1986 | Technical
+BEFORE: Walmart purchases $200 of Inventory "on credit," sells it for $400, and records an additional $100 in Operating Expenses to support the sale. Walk me through ONLY Step 1 of this process with the Inventory purchase.
+AFTER: Walmart purchases $200 of inventory "on credit," sells it for $400, and records an additional $100 in operating expenses to support the sale. Walk me through only Step 1 of this process with the inventory purchase.
+
+F1987 | Technical
+BEFORE: Walmart purchases $200 of Inventory "on credit," sells it for $400, and records an additional $100 in Operating Expenses to support the sale. Walk me through ONLY Step 1 of this process with the Inventory purchase.
+
+Follow-up: Now walk through Step 2 - the sale and delivery of the products and the supplier payments - SEPARATELY from Step 1. Assume a 25% tax rate.
+AFTER: Walmart purchases $200 of inventory "on credit," sells it for $400, and records an additional $100 in operating expenses to support the sale. Walk me through only Step 1 of this process with the inventory purchase.
+
+Follow-up: Now walk through Step 2 - the sale and delivery of the products and the supplier payments - separately from Step 1. Assume a 25% tax rate.
+
+F1988 | Technical
+BEFORE: What do Equity Value and Enterprise Value MEAN? Don't explain how you calculate them - tell me what they mean!
+AFTER: What do equity value and enterprise value mean? Don't explain how you calculate them - tell me what they mean!
+
+F1990 | Technical
+BEFORE: Why do you need both Equity Value and Enterprise Value? Can't you just value companies using one of them?
+AFTER: Why do you need both equity value and enterprise value? Can't you just value companies using one of them?
+
+F1991 | Technical
+BEFORE: What is the difference between "Current" and "Implied" Enterprise Value? Can you give a real-life example to explain it?
+AFTER: What is the difference between "current" and "implied" enterprise value? Can you give a real-life example to explain it?
+
+F1992 | Technical
+BEFORE: What is the difference between Basic Equity Value and Diluted Equity Value?
+AFTER: What is the difference between basic equity value and diluted equity value?
+
+F1993 | Technical
+BEFORE: Let's say you have a company's Diluted Equity Value. How do you move from Equity Value to Enterprise Value?
+AFTER: Let's say you have a company's diluted equity value. How do you move from equity value to enterprise value?
+
+F1994 | Technical
+BEFORE: Why do you subtract Equity Investments and add Noncontrolling Interests in the Enterprise Value calculation?
+AFTER: Why do you subtract equity investments and add noncontrolling interests in the enterprise value calculation?
+
+F1995 | Technical
+BEFORE: Can you explain the proper treatment of pensions in Enterprise Value?
+AFTER: Can you explain the proper treatment of pensions in enterprise value?
+
+F1996 | Technical
+BEFORE: Should you add Operating Leases in the Enterprise Value calculation? What about Finance Leases?
+AFTER: Should you add operating leases in the enterprise value calculation? What about finance leases?
+
+F1997 | Technical
+BEFORE: Can you give examples of company actions that affect Equity Value but NOT Enterprise Value, Enterprise Value but NOT Equity Value, and BOTH Enterprise Value and Equity Value?
+AFTER: Can you give examples of company actions that affect equity value but not enterprise value, enterprise value but not equity value, and both enterprise value and equity value?
+
+F1998 | Technical
+BEFORE: Could Equity Value ever be negative? What about Enterprise Value?
+AFTER: Could equity value ever be negative? What about enterprise value?
+
+F1999 | Technical
+BEFORE: You are comparing Companies A and B. Each operates in the same industry with the same revenue, EBITDA, and other financial metrics. Company A is financed with 100% Equity, and Company B is financed with 50% Equity and 50% Debt. In theory, their Enterprise Values should be the same. Will they be the same in real life?
+AFTER: You are comparing Companies A and B. Each operates in the same industry with the same revenue, EBITDA, and other financial metrics. Company A is financed with 100% equity, and Company B is financed with 50% equity and 50% debt. In theory, their enterprise values should be the same. Will they be the same in real life?
+
+F2000 | Technical
+BEFORE: A company issues $200 in Common Shares. How do Equity Value and Enterprise Value change?
+AFTER: A company issues $200 in common shares. How do equity value and enterprise value change?
+
+F2001 | Technical
+BEFORE: A company issues $200 in Common Shares. How do Equity Value and Enterprise Value change?
+
+Follow-up: This same company decides to use the $200 in Common Stock proceeds to acquire another business for $100 instead. How does everything change?
+AFTER: A company issues $200 in common shares. How do equity value and enterprise value change?
+
+Follow-up: This same company decides to use the $200 in common stock proceeds to acquire another business for $100 instead. How does everything change?
+
+F2002 | Technical
+BEFORE: A company issues $200 in Common Shares. How do Equity Value and Enterprise Value change?
+
+Follow-up: What if the company uses that same $100 from the $200 of new Common Stock to acquire an Asset rather than an entire company?
+AFTER: A company issues $200 in common shares. How do equity value and enterprise value change?
+
+Follow-up: What if the company uses that same $100 from the $200 of new common stock to acquire an asset rather than an entire company?
+
+F2003 | Technical
+BEFORE: A company issues $100 in Debt to purchase a new factory. How do Equity Value and Enterprise Value change?
+AFTER: A company issues $100 in debt to purchase a new factory. How do equity value and enterprise value change?
+
+F2004 | Technical
+BEFORE: A company issues $100 of Common Stock and $100 of Preferred Stock and lets the proceeds sit in Cash. How do Equity Value and Enterprise Value change?
+AFTER: A company issues $100 of common stock and $100 of preferred stock and lets the proceeds sit in cash. How do equity value and enterprise value change?
+
+F2005 | Technical
+BEFORE: A company issues $100 of Common Stock and $100 of Preferred Stock and lets the proceeds sit in Cash. How do Equity Value and Enterprise Value change?
+
+Follow-up: This same company now issues $10 in Common Dividends and $10 in Preferred Dividends. What happens in JUST THIS STEP?
+AFTER: A company issues $100 of common stock and $100 of preferred stock and lets the proceeds sit in cash. How do equity value and enterprise value change?
+
+Follow-up: This same company now issues $10 in common dividends and $10 in preferred dividends. What happens in just this step?
+
+F2006 | Technical
+BEFORE: A company issues $150 of Debt and $50 of Common Stock to acquire $175 of PP&E and $25 of Short-Term Investments. How do Equity Value and Enterprise Value change?
+AFTER: A company issues $150 of debt and $50 of common stock to acquire $175 of PP&E and $25 of short-term investments. How do equity value and enterprise value change?
+
+F2007 | Technical
+BEFORE: A company issues $50 of Debt to buy a new factory. However, AFTER this purchase, its Enterprise Value increases by $100 rather than $50. Your co-worker claims it is because the company issued Debt to make this purchase, and Debt increases Enterprise Value. Is he correct?
+AFTER: A company issues $50 of debt to buy a new factory. However, after this purchase, its enterprise value increases by $100 rather than $50. Your co-worker claims it is because the company issued debt to make this purchase, and debt increases enterprise value. Is he correct?
+
+F2008 | Technical
+BEFORE: A company purchases $100 of Inventory using Cash. How do Equity Value and Enterprise Value change?
+AFTER: A company purchases $100 of inventory using cash. How do equity value and enterprise value change?
+
+F2009 | Technical
+BEFORE: A company purchases $100 of Inventory using Cash. How do Equity Value and Enterprise Value change?
+
+Follow-up: Now assume the Inventory is sold for $200 and walk me through how the *entire* process from beginning to end affects Equity Value and Enterprise Value.
+AFTER: A company purchases $100 of inventory using cash. How do equity value and enterprise value change?
+
+Follow-up: Now assume the inventory is sold for $200 and walk me through how the *entire* process from beginning to end affects equity value and enterprise value.
+
+F2010 | Technical
+BEFORE: A company has 200 outstanding shares at a current price of $10.00. It also has 50 options at an exercise price of $8.00 each. What is its Diluted Equity Value?
+AFTER: A company has 200 outstanding shares at a current price of $10.00. It also has 50 options at an exercise price of $8.00 each. What is its diluted equity value?
+
+F2011 | Technical
+BEFORE: A company has 10,000 shares outstanding and a current share price of $20.00. It also has 100 options at an exercise price of $10.00, 50 Restricted Stock Units (RSUs), and 100 convertible bonds at a conversion price of $10.00 and a par value of $100. What is its Diluted Equity Value?
+AFTER: A company has 10,000 shares outstanding and a current share price of $20.00. It also has 100 options at an exercise price of $10.00, 50 restricted stock units (RSUs), and 100 convertible bonds at a conversion price of $10.00 and a par value of $100. What is its diluted equity value?
+
+F2012 | Technical
+BEFORE: Public companies already have Market Caps and Share Prices. Why do you need to "value them" at all? You already know how much they're worth.
+AFTER: Public companies already have market caps and share prices. Why do you need to "value them" at all? You already know how much they're worth.
+
+F2014 | Technical
+BEFORE: Which of the 3 main methodologies will produce the highest Implied Values?
+AFTER: Which of the 3 main methodologies will produce the highest implied values?
+
+F2016 | Technical
+BEFORE: Can you walk me through how you use Public Comps and Precedent Transactions in a valuation?
+AFTER: Can you walk me through how you use public comps and precedent transactions in a valuation?
+
+F2017 | Technical
+BEFORE: Can you give a few examples of how you might screen for "similar" Comparable Public Companies and Precedent Transactions?
+AFTER: Can you give a few examples of how you might screen for "similar" comparable public companies and precedent transactions?
+
+F2019 | Technical
+BEFORE: Why do you look at BOTH historical and projected metrics in comparable public company and precedent transaction analyses?
+AFTER: Why do you look at both historical and projected metrics in comparable public company and precedent transaction analyses?
+
+F2020 | Technical
+BEFORE: When calculating the forward multiples for the comparable companies, should you use each company's Current Equity Value or Current Enterprise Value, or should you project them to get the Year 1 or Year 2 values?
+AFTER: When calculating the forward multiples for the comparable companies, should you use each company's current equity value or current enterprise value, or should you project them to get the Year 1 or Year 2 values?
+
+F2021 | Technical
+BEFORE: How do you interpret the Public Comps? What does it mean if the median multiples are above or below the ones of the company you're valuing?
+AFTER: How do you interpret the public comps? What does it mean if the median multiples are above or below the ones of the company you're valuing?
+
+F2022 | Technical
+BEFORE: What is a Liquidation Valuation, and when is it useful and not so useful?
+AFTER: What is a liquidation valuation, and when is it useful and not so useful?
+
+F2024 | Technical
+BEFORE: What are the advantages and disadvantages of a Sum-of-the-Parts Valuation?
+AFTER: What are the advantages and disadvantages of a sum-of-the-parts valuation?
+
+F2029 | Technical
+BEFORE: How do you decide whether to use Equity Value or Enterprise Value in valuation multiples?
+AFTER: How do you decide whether to use equity value or enterprise value in valuation multiples?
+
+F2030 | Technical
+BEFORE: A company has $100 in Revenue, a 15% EBIT margin, and D&A that is 5% of its Revenue. The company's Equity Value is $100, and it has $20 of Cash, $40 of Debt, and $30 in Lease Liabilities. What is its TEV / EBITDA multiple?
+AFTER: A company has $100 in revenue, a 15% EBIT margin, and D&A that is 5% of its revenue. The company's equity value is $100, and it has $20 of cash, $40 of debt, and $30 in lease liabilities. What is its TEV / EBITDA multiple?
+
+F2031 | Technical
+BEFORE: A company has $100 in Revenue, a 15% EBIT margin, and D&A that is 5% of its Revenue. The company's Equity Value is $100, and it has $20 of Cash, $40 of Debt, and $30 in Lease Liabilities. What is its TEV / EBITDA multiple?
+
+Follow-up: For clarity, the company I just described followed U.S. GAAP, and the Lease Liabilities were for Operating Leases. Now, imagine that this company followed IFRS rather than U.S. GAAP. How would the EBIT margin and D&A percentages change, and how would the TEV / EBITDA change?
+AFTER: A company has $100 in revenue, a 15% EBIT margin, and D&A that is 5% of its revenue. The company's equity value is $100, and it has $20 of cash, $40 of debt, and $30 in lease liabilities. What is its TEV / EBITDA multiple?
+
+Follow-up: For clarity, the company I just described followed U.S. GAAP, and the lease liabilities were for operating leases. Now, imagine that this company followed IFRS rather than U.S. GAAP. How would the EBIT margin and D&A percentages change, and how would the TEV / EBITDA change?
+
+F2033 | Technical
+BEFORE: A company is currently trading at 10x TEV / EBITDA. It wants to sell an Operating Asset for 2x the Asset's EBITDA. Will that transaction increase or decrease the company's Enterprise Value and its TEV / EBITDA multiple?
+AFTER: A company is currently trading at 10x TEV / EBITDA. It wants to sell an operating asset for 2x the asset's EBITDA. Will that transaction increase or decrease the company's enterprise value and its TEV / EBITDA multiple?
+
+F2034 | Technical
+BEFORE: A company is currently trading at 10x TEV / EBITDA. It wants to sell an Operating Asset for 2x the Asset's EBITDA. Will that transaction increase or decrease the company's Enterprise Value and its TEV / EBITDA multiple?
+
+Follow-up: What happens to the company's Equity Value and P / E multiple in this scenario?
+AFTER: A company is currently trading at 10x TEV / EBITDA. It wants to sell an operating asset for 2x the asset's EBITDA. Will that transaction increase or decrease the company's enterprise value and its TEV / EBITDA multiple?
+
+Follow-up: What happens to the company's equity value and P / E multiple in this scenario?
+
+F2035 | Technical
+BEFORE: How do you calculate and use Unlevered FCF and Levered FCF?
+AFTER: How do you calculate and use unlevered FCF and levered FCF?
+
+F2038 | Technical
+BEFORE: Company A has a P / E multiple of 15x, with a Net Income of $120 and a TEV / EBITDA multiple of 15x. Its EBITDA is $150. Company B has the same 15x P / E multiple but a Net Income of $100, a TEV / EBITDA of 10x, and an EBITDA of $200. Which one has a higher Net Debt balance?
+AFTER: Company A has a P / E multiple of 15x, with a net income of $120 and a TEV / EBITDA multiple of 15x. Its EBITDA is $150. Company B has the same 15x P / E multiple but a net income of $100, a TEV / EBITDA of 10x, and an EBITDA of $200. Which one has a higher net debt balance?
+
+F2039 | Technical
+BEFORE: A company's Operating Income is $100, and it has a $500 Debt balance at a 4% interest rate. It also has Cash of $100, currently earning 0% interest. If the company's Equity Value is $600, its P / E multiple is 12x, and its tax rate is 25%, what can you conclude about its Enterprise Value?
+AFTER: A company's operating income is $100, and it has a $500 debt balance at a 4% interest rate. It also has cash of $100, currently earning 0% interest. If the company's equity value is $600, its P / E multiple is 12x, and its tax rate is 25%, what can you conclude about its enterprise value?
+
+F2040 | Technical
+BEFORE: Suppose you are building a set of "global" comparable companies operating in the logistics/delivery sector in the U.S., Europe, and Asia. What is the SAFEST valuation multiple in this scenario?
+AFTER: Suppose you are building a set of "global" comparable companies operating in the logistics/delivery sector in the U.S., Europe, and Asia. What is the safest valuation multiple in this scenario?
+
+F2041 | Technical
+BEFORE: Suppose you build a Levered DCF instead of an Unlevered DCF. What changes?
+AFTER: Suppose you build a levered DCF instead of an unlevered DCF. What changes?
+
+F2042 | Technical
+BEFORE: Will you get the same results from an Unlevered DCF and a Levered DCF?
+AFTER: Will you get the same results from an unlevered DCF and a levered DCF?
+
+F2043 | Technical
+BEFORE: A client company plans to change its capital structure. Currently, it has 10% Debt / Total Capital, but it wants to increase this to 30%. Your co-worker claims that if you use an Unlevered DCF to value this company, it won't be affected by this change in capital structure. Are they correct?
+AFTER: A client company plans to change its capital structure. Currently, it has 10% debt / Total Capital, but it wants to increase this to 30%. Your co-worker claims that if you use an unlevered DCF to value this company, it won't be affected by this change in capital structure. Are they correct?
+
+F2044 | Technical
+BEFORE: What is the logic behind the main components of Unlevered Free Cash Flow? For example, why does it include the Change in Working Capital but not the Net Interest Expense?
+AFTER: What is the logic behind the main components of unlevered free cash flow? For example, why does it include the Change in working capital but not the net interest expense?
+
+F2045 | Technical
+BEFORE: What's the relationship between subtracting an expense in the FCF projections and the Enterprise-Value-to-Equity-Value "bridge" at the end of the DCF?
+AFTER: What's the relationship between subtracting an expense in the FCF projections and the enterprise-value-to-equity-value "bridge" at the end of the DCF?
+
+F2046 | Technical
+BEFORE: Should you add back Stock-Based Compensation to calculate Free Cash Flow? It's a non- cash add-back on the Cash Flow Statement.
+AFTER: Should you add back stock-based compensation to calculate free cash flow? It's a non-cash add-back on the cash flow statement.
+
+F2047 | Technical
+BEFORE: What's the intuition behind the Gordon Growth formula for Terminal Value?
+AFTER: What's the intuition behind the Gordon Growth formula for terminal value?
+
+F2048 | Technical
+BEFORE: If you use the Multiples Method to calculate Terminal Value, do you use the multiples from the Public Comps or Precedent Transactions?
+AFTER: If you use the multiples method to calculate terminal value, do you use the multiples from the public comps or precedent transactions?
+
+F2049 | Technical
+BEFORE: How can you check whether your Terminal Value estimate is reasonable?
+AFTER: How can you check whether your terminal value estimate is reasonable?
+
+F2050 | Technical
+BEFORE: Does it ever make sense to use a negative Terminal FCF Growth Rate?
+AFTER: Does it ever make sense to use a negative terminal FCF growth rate?
+
+F2054 | Technical
+BEFORE: Suppose that a company goes from using 0% Debt in its capital structure to 20%. How will its WACC and Implied Value from a DCF change?
+AFTER: Suppose that a company goes from using 0% debt in its capital structure to 20%. How will its WACC and implied value from a DCF change?
+
+F2056 | Technical
+BEFORE: You have just finished building a DCF model. Will it make more of a difference to change the average revenue growth rate from 10% to 5% or to change the Discount Rate from 10% to 5%?
+AFTER: You have just finished building a DCF model. Will it make more of a difference to change the average revenue growth rate from 10% to 5% or to change the discount rate from 10% to 5%?
+
+F2060 | Technical
+BEFORE: What does the Cost of Equity mean intuitively?
+AFTER: What does the cost of equity mean intuitively?
+
+F2061 | Technical
+BEFORE: If a company operates in the EU, U.S., and U.K., what should you use for its Risk-Free Rate?
+AFTER: If a company operates in the EU, U.S., and U.K., what should you use for its risk-free rate?
+
+F2062 | Technical
+BEFORE: How do you calculate the Equity Risk Premium for a multinational company operating in many geographies?
+AFTER: How do you calculate the equity risk premium for a multinational company operating in many geographies?
+
+F2064 | Technical
+BEFORE: How do you calculate WACC, and why does it pair with Unlevered Free Cash Flow?
+AFTER: How do you calculate WACC, and why does it pair with unlevered free cash flow?
+
+F2065 | Technical
+BEFORE: Why is Equity more expensive than Debt?
+AFTER: Why is equity more expensive than debt?
+
+F2066 | Technical
+BEFORE: How do you determine the Cost of Debt and Cost of Preferred Stock in the WACC calculation, and what do they mean?
+AFTER: How do you determine the cost of debt and cost of preferred stock in the WACC calculation, and what do they mean?
+
+F2070 | Technical
+BEFORE: How do you determine the Purchase Price in an M&A deal?
+AFTER: How do you determine the purchase price in an M&A deal?
+
+F2071 | Technical
+BEFORE: What is the "true price" in an M&A deal: The Purchase Equity Value or Purchase Enterprise Value? Why?
+AFTER: What is the "true price" in an M&A deal: The purchase equity value or purchase enterprise value? Why?
+
+F2072 | Technical
+BEFORE: How does an Acquirer determine the mix of Cash, Debt, and Stock to use in a deal?
+AFTER: How does an acquirer determine the mix of cash, debt, and stock to use in a deal?
+
+F2073 | Technical
+BEFORE: Are there cases where EPS accretion/dilution is NOT important? What other analyses could you look at to assess M&A deals?
+AFTER: Are there cases where EPS accretion/dilution is not important? What other analyses could you look at to assess M&A deals?
+
+F2074 | Technical
+BEFORE: How do the assumptions for a cash-free, debt-free deal for a private Seller differ from those of a standard M&A deal for a public Seller?
+AFTER: How do the assumptions for a cash-free, debt-free deal for a private seller differ from those of a standard M&A deal for a public seller?
+
+F2075 | Technical
+BEFORE: What's the purpose of a Purchase Price Allocation schedule in a merger model?
+AFTER: What's the purpose of a purchase price allocation schedule in a merger model?
+
+F2076 | Technical
+BEFORE: Why do Deferred Tax Liabilities get created in many M&A deals?
+AFTER: Why do deferred tax liabilities get created in many M&A deals?
+
+F2077 | Technical
+BEFORE: Give me an example of how you might estimate the Revenue and Expense Synergies in an M&A deal.
+AFTER: Give me an example of how you might estimate the revenue and expense synergies in an M&A deal.
+
+F2078 | Technical
+BEFORE: Why do many merger models tend to overstate the impact of Synergies?
+AFTER: Why do many merger models tend to overstate the impact of synergies?
+
+F2079 | Technical
+BEFORE: Company A has 10 shares outstanding at a share price of $25.00, and its Net Income is $10. It acquires Company B for a Purchase Equity Value of $150. Company B has a Net Income of $10 as well. Both companies have 25% tax rates. How accretive is a 100% Stock deal?
+AFTER: Company A has 10 shares outstanding at a share price of $25.00, and its net income is $10. It acquires Company B for a purchase equity value of $150. Company B has a net income of $10 as well. Both companies have 25% tax rates. How accretive is a 100% stock deal?
+
+F2080 | Technical
+BEFORE: Company A has 10 shares outstanding at a share price of $25.00, and its Net Income is $10. It acquires Company B for a Purchase Equity Value of $150. Company B has a Net Income of $10 as well. Both companies have 25% tax rates. How accretive is a 100% Stock deal?
+
+Follow-up: Suppose that Company A now decides to use 100% Cash or 100% Debt to do this deal. If the Cash interest rate is 4%, and the Debt interest rate is 10%, will this deal be accretive or dilutive under these financing structures?
+AFTER: Company A has 10 shares outstanding at a share price of $25.00, and its net income is $10. It acquires Company B for a purchase equity value of $150. Company B has a net income of $10 as well. Both companies have 25% tax rates. How accretive is a 100% stock deal?
+
+Follow-up: Suppose that Company A now decides to use 100% cash or 100% debt to do this deal. If the cash interest rate is 4%, and the debt interest rate is 10%, will this deal be accretive or dilutive under these financing structures?
+
+F2081 | Technical
+BEFORE: Company A has a P / E of 11x, a Debt Interest Rate of 8%, a Cash Interest Rate of 4%, and a Tax Rate of 25%. It wants to acquire Company B at a purchase P / E multiple of 20x using 1/3 Stock, 1/3 Debt, and 1/3 Cash. Will the deal be accretive?
+AFTER: Company A has a P / E of 11x, a debt interest rate of 8%, a cash interest rate of 4%, and a tax rate of 25%. It wants to acquire Company B at a purchase P / E multiple of 20x using 1/3 stock, 1/3 debt, and 1/3 cash. Will the deal be accretive?
+
+F2082 | Technical
+BEFORE: Company A, with a current P / E multiple of 20x, acquires Company B for a P / E purchase multiple of 10x using 100% Debt. What interest rate on Debt would make the deal dilutive? Assume a 25% tax rate.
+AFTER: Company A, with a current P / E multiple of 20x, acquires Company B for a P / E purchase multiple of 10x using 100% debt. What interest rate on debt would make the deal dilutive? Assume a 25% tax rate.
+
+F2083 | Technical
+BEFORE: Company A has an Equity Value of $2,000 and a Net Income of $200. Company B has a Purchase Equity Value of $1,200 and a Net Income of $100. How much in Synergies must be realized for a 100% Stock deal to be accretive?
+AFTER: Company A has an equity value of $2,000 and a net income of $200. Company B has a purchase equity value of $1,200 and a net income of $100. How much in synergies must be realized for a 100% stock deal to be accretive?
+
+F2084 | Technical
+BEFORE: Company A has an Equity Value of $2,000 and a Net Income of $200. Company B has a Purchase Equity Value of $1,200 and a Net Income of $100. How much in Synergies must be realized for a 100% Stock deal to be accretive?
+
+Follow-up: Continuing with this same example, Company A is paying a 20% premium for Company B, so Company B's Current Equity Value is $1,000. Suppose the market doesn't "like" this 20% premium, and investors sell off Company A's stock. How would Company A's stock price change? Assume it has 200 shares outstanding at $10.00 per share and assume that Company B gets a fixed share count in the deal.
+AFTER: Company A has an equity value of $2,000 and a net income of $200. Company B has a purchase equity value of $1,200 and a net income of $100. How much in synergies must be realized for a 100% stock deal to be accretive?
+
+Follow-up: Continuing with this same example, Company A is paying a 20% premium for Company B, so Company B's current equity value is $1,000. Suppose the market doesn't "like" this 20% premium, and investors sell off Company A's stock. How would Company A's stock price change? Assume it has 200 shares outstanding at $10.00 per share and assume that Company B gets a fixed share count in the deal.
+
+F2085 | Technical
+BEFORE: Company A has an Equity Value of $2,000 and a Net Income of $200. Company B has a Purchase Equity Value of $1,200 and a Net Income of $100. How much in Synergies must be realized for a 100% Stock deal to be accretive?
+
+Follow-up: Continuing with this same example, Company A is paying a 20% premium for Company B, so Company B's Current Equity Value is $1,000. Suppose the market doesn't "like" this 20% premium, and investors sell off Company A's stock. How would Company A's stock price change? Assume it has 200 shares outstanding at $10.00 per share and assume that Company B gets a fixed share count in the deal.
+
+Follow-up: Continuing with the same scenario, your co-worker reviews the changes and claims that Company A's share price would not have fallen if this had been a 100% Cash or Debt deal. Are they correct?
+AFTER: Company A has an equity value of $2,000 and a net income of $200. Company B has a purchase equity value of $1,200 and a net income of $100. How much in synergies must be realized for a 100% stock deal to be accretive?
+
+Follow-up: Continuing with this same example, Company A is paying a 20% premium for Company B, so Company B's current equity value is $1,000. Suppose the market doesn't "like" this 20% premium, and investors sell off Company A's stock. How would Company A's stock price change? Assume it has 200 shares outstanding at $10.00 per share and assume that Company B gets a fixed share count in the deal.
+
+Follow-up: Continuing with the same scenario, your co-worker reviews the changes and claims that Company A's share price would not have fallen if this had been a 100% cash or debt deal. Are they correct?
+
+F2086 | Technical
+BEFORE: An Acquirer with an Equity Value of $500 million and an Enterprise Value of $600 million buys another company for a Purchase Equity Value of $100 million and a Purchase Enterprise Value of $150 million. What are the Combined Equity Value and Enterprise Value in a 100% Stock deal?
+AFTER: An acquirer with an equity value of $500 million and an enterprise value of $600 million buys another company for a purchase equity value of $100 million and a purchase enterprise value of $150 million. What are the combined equity value and enterprise value in a 100% stock deal?
+
+F2087 | Technical
+BEFORE: An Acquirer with an Equity Value of $500 million and an Enterprise Value of $600 million buys another company for a Purchase Equity Value of $100 million and a Purchase Enterprise Value of $150 million. What are the Combined Equity Value and Enterprise Value in a 100% Stock deal?
+
+Follow-up: How do these figures change if it's a 50% Cash / 50% Stock deal instead?
+AFTER: An acquirer with an equity value of $500 million and an enterprise value of $600 million buys another company for a purchase equity value of $100 million and a purchase enterprise value of $150 million. What are the combined equity value and enterprise value in a 100% stock deal?
+
+Follow-up: How do these figures change if it's a 50% cash / 50% stock deal instead?
+
+F2088 | Technical
+BEFORE: An Acquirer with an Equity Value of $500 million and an Enterprise Value of $600 million has a Net Income of $50 million and an EBITDA of $100 million. The Target, with a Purchase Equity Value of $100 million and a Purchase Enterprise Value of $150 million, has a Net Income of $10 million and an EBITDA of $15 million. What are the Combined P / E and TEV / EBITDA multiples in a 100% Stock deal? Assume 25% tax rates for the Acquirer and Target.
+AFTER: An acquirer with an equity value of $500 million and an enterprise value of $600 million has a net income of $50 million and an EBITDA of $100 million. The target, with a purchase equity value of $100 million and a purchase enterprise value of $150 million, has a net income of $10 million and an EBITDA of $15 million. What are the combined P / E and TEV / EBITDA multiples in a 100% stock deal? Assume 25% tax rates for the acquirer and target.
+
+F2089 | Technical
+BEFORE: An Acquirer with an Equity Value of $500 million and an Enterprise Value of $600 million has a Net Income of $50 million and an EBITDA of $100 million. The Target, with a Purchase Equity Value of $100 million and a Purchase Enterprise Value of $150 million, has a Net Income of $10 million and an EBITDA of $15 million. What are the Combined P / E and TEV / EBITDA multiples in a 100% Stock deal? Assume 25% tax rates for the Acquirer and Target.
+
+Follow-up: How do the multiples change if this is a 100% Debt deal funded with an 8% interest rate issuance?
+AFTER: An acquirer with an equity value of $500 million and an enterprise value of $600 million has a net income of $50 million and an EBITDA of $100 million. The target, with a purchase equity value of $100 million and a purchase enterprise value of $150 million, has a net income of $10 million and an EBITDA of $15 million. What are the combined P / E and TEV / EBITDA multiples in a 100% stock deal? Assume 25% tax rates for the acquirer and target.
+
+Follow-up: How do the multiples change if this is a 100% debt deal funded with an 8% interest rate issuance?
+
+F2090 | Technical
+BEFORE: Will the Combined TEV / EBITDA and P / E multiples always be between the Acquirer's multiples and the Target's purchase multiples in a deal?
+AFTER: Will the combined TEV / EBITDA and P / E multiples always be between the acquirer's multiples and the target's purchase multiples in a deal?
+
+F2094 | Technical
+BEFORE: Explain how a company's Free Cash Flow and the Debt principal it can repay in an LBO are related.
+AFTER: Explain how a company's free cash flow and the debt principal it can repay in an LBO are related.
+
+F2097 | Technical
+BEFORE: How do you determine how much Debt a PE firm might use in an LBO and how many tranches there would be?
+AFTER: How do you determine how much debt a PE firm might use in an LBO and how many tranches there would be?
+
+F2098 | Technical
+BEFORE: Can you describe the different types of Debt a PE firm might use in a leveraged buyout?
+AFTER: Can you describe the different types of debt a PE firm might use in a leveraged buyout?
+
+F2099 | Technical
+BEFORE: How do you set up the Mandatory and Optional Debt Repayments in an LBO model?
+AFTER: How do you set up the mandatory and optional debt repayments in an LBO model?
+
+F2101 | Technical
+BEFORE: A PE firm acquires a $100 million EBITDA company for a 10x purchase multiple and funds the deal with 60% Debt. The company's EBITDA grows to $150 million by Year 5, but the exit multiple drops to 9x. The company repays $250 million of Debt in this time and generates no extra Cash. What's the IRR?
+AFTER: A PE firm acquires a $100 million EBITDA company for a 10x purchase multiple and funds the deal with 60% debt. The company's EBITDA grows to $150 million by Year 5, but the exit multiple drops to 9x. The company repays $250 million of debt in this time and generates no extra cash. What's the IRR?
+
+F2102 | Technical
+BEFORE: A PE firm acquires a business for a 12x EBITDA multiple, using 5x Debt / EBITDA, and plans to sell it in 5 years. The company's initial EBITDA is $100, which grows to $200 by Year 5. If there's no Debt repayment and no additional Cash generation, what exit multiple do we need for a 25% IRR?
+AFTER: A PE firm acquires a business for a 12x EBITDA multiple, using 5x debt / EBITDA, and plans to sell it in 5 years. The company's initial EBITDA is $100, which grows to $200 by Year 5. If there's no debt repayment and no additional cash generation, what exit multiple do we need for a 25% IRR?
+
+F2103 | Technical
+BEFORE: A PE firm acquires a business for a 12x EBITDA multiple, using 5x Debt / EBITDA, and plans to sell it in 5 years. The company's initial EBITDA is $100, which grows to $200 by Year 5. If there's no Debt repayment and no additional Cash generation, what exit multiple do we need for a 25% IRR?
+
+Follow-up: Now assume the company repays 75% of the initial Debt balance over 5 years. What exit multiple do we need for a 25% 5-year IRR?
+AFTER: A PE firm acquires a business for a 12x EBITDA multiple, using 5x debt / EBITDA, and plans to sell it in 5 years. The company's initial EBITDA is $100, which grows to $200 by Year 5. If there's no debt repayment and no additional cash generation, what exit multiple do we need for a 25% IRR?
+
+Follow-up: Now assume the company repays 75% of the initial debt balance over 5 years. What exit multiple do we need for a 25% 5-year IRR?
+
+F2104 | Technical
+BEFORE: You're reviewing the output of an LBO model that a co-worker built. In the model, the 5- year IRR is 20%, and the company's EBITDA grows from $100 to $150 over the holding period. The EBITDA purchase multiple is 10x, and the exit multiple is 11x. If the PE firm uses 5x Debt / EBITDA in the initial deal, how much Debt does the company repay over time?
+AFTER: You're reviewing the output of an LBO model that a co-worker built. In the model, the 5-year IRR is 20%, and the company's EBITDA grows from $100 to $150 over the holding period. The EBITDA purchase multiple is 10x, and the exit multiple is 11x. If the PE firm uses 5x debt / EBITDA in the initial deal, how much debt does the company repay over time?
+
+F2105 | Technical
+BEFORE: A PE firm acquires a business for a 10x EBITDA multiple, using 6x Debt / EBITDA, and plans to sell it in 5 years. The company's initial EBITDA is $100, which grows to $150 by Year 5. Approximately $300 of Debt is also repaid during the holding period, while Cash stays the same. What exit multiple does the firm need for a 25% IRR?
+AFTER: A PE firm acquires a business for a 10x EBITDA multiple, using 6x debt / EBITDA, and plans to sell it in 5 years. The company's initial EBITDA is $100, which grows to $150 by Year 5. Approximately $300 of debt is also repaid during the holding period, while cash stays the same. What exit multiple does the firm need for a 25% IRR?
+
+F2111 | Technical
+BEFORE: Walk me through a Debt vs. Equity analysis to recommend the best financing for a company.
+AFTER: Walk me through a debt vs. equity analysis to recommend the best financing for a company.
+
+F2112 | Technical
+BEFORE: You're considering 3 companies that want to raise capital: A utility company, a railroad company, and a branded pharmaceutical company. Which company is most appropriate for 100% Equity, which is most appropriate for 50% Debt / 50% Equity, and which is most appropriate for 100% Debt?
+AFTER: You're considering 3 companies that want to raise capital: A utility company, a railroad company, and a branded pharmaceutical company. Which company is most appropriate for 100% equity, which is most appropriate for 50% debt / 50% equity, and which is most appropriate for 100% debt?
+
+F2113 | Technical
+BEFORE: How might you decide whether a company should raise Debt via Term Loans or Subordinated Notes?
+AFTER: How might you decide whether a company should raise debt via term loans or subordinated notes?
+
+F2114 | Technical
+BEFORE: You are analyzing a company whose Debt / EBITDA stays below the maximum of 4.0x and whose EBITDA / Interest stays above the minimum of 2.0x, but whose Debt Service Coverage Ratio (DSCR) falls below the minimum of 1.5x in the more pessimistic cases. Why might this happen, and how could the company improve its numbers?
+AFTER: You are analyzing a company whose debt / EBITDA stays below the maximum of 4.0x and whose EBITDA / interest stays above the minimum of 2.0x, but whose debt service coverage ratio (DSCR) falls below the minimum of 1.5x in the more pessimistic cases. Why might this happen, and how could the company improve its numbers?
+
+F2115 | Technical
+BEFORE: A company wants to reduce its cash interest expense on Debt by negotiating with lenders to get a lower coupon rate. However, the lenders want to maintain or increase their yield. What are the company's options?
+AFTER: A company wants to reduce its cash interest expense on debt by negotiating with lenders to get a lower coupon rate. However, the lenders want to maintain or increase their yield. What are the company's options?
+
+F2117 | Technical
+BEFORE: Explain the difference between a bond's Coupon Rate, Current Yield, and Yield to Maturity (YTM).
+AFTER: Explain the difference between a bond's coupon rate, current yield, and yield to maturity (YTM).
+
+F2120 | Technical
+BEFORE: Will a 10% or 5% coupon rate bond be more sensitive to changes in the Discount Rate?
+AFTER: Will a 10% or 5% coupon rate bond be more sensitive to changes in the discount rate?
+
+F2123 | Technical
+BEFORE: What is the Yield to Worst (YTW), and how is it related to the Yield to Maturity (YTM)?
+AFTER: What is the yield to worst (YTW), and how is it related to the yield to maturity (YTM)?
+
+F2124 | Technical
+BEFORE: What are the most important statistics in an analysis of Comparable Debt Issuances?
+AFTER: What are the most important statistics in an analysis of comparable debt issuances?
+
+F2127 | Technical
+BEFORE: OK, so what factors might cause a company to become "stressed" and then "distressed?
+AFTER: What factors might cause a company to become stressed and then distressed?
+
+F2134 | Technical
+BEFORE: A distressed company with $100 of EBITDA sells for 3x EBITDA. It has Cash of $50, a $100 Revolver, a $300 Term Loan, and $200 in Subordinated Notes, with no other Liabilities. What are the recovery percentages for each Debt tranche?
+AFTER: A distressed company with $100 of EBITDA sells for 3x EBITDA. It has cash of $50, a $100 revolver, a $300 term loan, and $200 in subordinated notes, with no other liabilities. What are the recovery percentages for each debt tranche?
+
+F2135 | Technical
+BEFORE: A holding company ("Hold Co.") has $100 of Debt at the holding company level and owns 100% of 3 companies: Company A: Enterprise Value of $100 and Debt of $20. Company B: Enterprise Value of $50 and Debt of $100. Company C: Enterprise Value of $100 and Debt of $50. What are the Recovery percentages for Companies A, B, and C and Hold Co. in a liquidation?
+AFTER: A holding company ("Hold Co.") has $100 of debt at the holding company level and owns 100% of 3 companies: Company A: enterprise value of $100 and debt of $20. Company B: enterprise value of $50 and debt of $100. Company C: enterprise value of $100 and debt of $50. What are the recovery percentages for Companies A, B, and C and Hold Co. in a liquidation?
+
+F2136 | Technical
+BEFORE: A distressed company with $50 of EBITDA has $150 in Secured Senior Notes and $100 in Unsecured Senior Notes. Peer companies that are not currently distressed trade at 5x EBITDA. What would you expect each Debt tranche to trade at?
+AFTER: A distressed company with $50 of EBITDA has $150 in secured senior notes and $100 in unsecured senior notes. Peer companies that are not currently distressed trade at 5x EBITDA. What would you expect each debt tranche to trade at?
+
+F2137 | Technical
+BEFORE: A distressed company's Debt is currently trading at a 50% discount to par value with a cash coupon rate of 10% and a 5-year maturity. Because of this discount, several investors just bought the issuance at a very high YTM, which assumes full interest payments and full repayment upon maturity. The company is at risk of being unable to pay for the interest on this issuance, so it wants to restructure via a Debt-for-Equity swap based on a solid turnaround plan. How might you structure such a swap?
+AFTER: A distressed company's debt is currently trading at a 50% discount to par value with a cash coupon rate of 10% and a 5-year maturity. Because of this discount, several investors just bought the issuance at a very high YTM, which assumes full interest payments and full repayment upon maturity. The company is at risk of being unable to pay for the interest on this issuance, so it wants to restructure via a debt-for-equity swap based on a solid turnaround plan. How might you structure such a swap?
+
+F2140 | Technical
+BEFORE: Can you explain Primary vs. Secondary Shares in an IPO or Follow-On Offering?
+AFTER: Can you explain primary vs. secondary shares in an IPO or follow-on offering?
+
+F2142 | Technical
+BEFORE: How do you set up a Follow-On Offering model differently from an IPO model?
+AFTER: How do you set up a follow-on offering model differently from an IPO model?
+
+F2143 | Technical
+BEFORE: Walk me through how a company might go public via a Special Purpose Acquisition Company ("SPAC").
+AFTER: Walk me through how a company might go public via a special purpose acquisition company ("SPAC").
+
+F2145 | Technical
+BEFORE: Your co-worker is creating a Payoff Diagram for a Convertible Bond. He claims that the market price will exceed the bond's payoff value when the company's share price reaches the Conversion Price and that above the Conversion Price, the market price will remain above the payoff value. Is he correct, incorrect, or partially correct?
+AFTER: Your co-worker is creating a payoff diagram for a convertible bond. He claims that the market price will exceed the bond's payoff value when the company's share price reaches the conversion price and that above the conversion price, the market price will remain above the payoff value. Is he correct, incorrect, or partially correct?
+
+F2146 | Technical
+BEFORE: Explain intuitively why a Convertible Bond is not necessarily "cheaper" than traditional Debt, even though some people claim it is.
+AFTER: Explain intuitively why a convertible bond is not necessarily "cheaper" than traditional debt, even though some people claim it is.
+
+F2147 | Technical
+BEFORE: Convertible Bonds seem "too good to be true" since they offer the upside potential of common shares and downside protection if the company's stock price falls. Why would anyone purchase common shares if the company also has Convertible Bonds?
+AFTER: Convertible bonds seem "too good to be true" since they offer the upside potential of common shares and downside protection if the company's stock price falls. Why would anyone purchase common shares if the company also has convertible bonds?
+
+F2151 | Technical
+BEFORE: For normal companies, there is often a relationship between the growth rates of metrics such as Revenue and EBITDA and the corresponding valuation multiples, such as TEV / Revenue and TEV / EBITDA. What types of relationships exist for banks and insurance firms?
+AFTER: For normal companies, there is often a relationship between the growth rates of metrics such as revenue and EBITDA and the corresponding valuation multiples, such as TEV / revenue and TEV / EBITDA. What types of relationships exist for banks and insurance firms?
+
+F2152 | Technical
+BEFORE: What is "Regulatory Capital"? Why do banks and insurance firms need it?
+AFTER: What is "regulatory capital"? Why do banks and insurance firms need it?
+
+F2153 | Technical
+BEFORE: What is Common Equity Tier 1 (CET 1), and why must banks maintain a certain level?
+AFTER: What is common equity tier 1 (CET 1), and why must banks maintain a certain level?
+
+F2154 | Technical
+BEFORE: A commercial bank has set aside sufficient Regulatory Capital for unexpected loan losses and a sufficient Allowance for Loan Losses for expected losses. After reviewing data from its borrowers, the bank realizes it could lose more than expected. Walk me through the financial statements if it increases its loss estimates by $100 and explain how the CET 1 Ratio changes. Assume a 25% tax rate.
+AFTER: A commercial bank has set aside sufficient regulatory capital for unexpected loan losses and a sufficient allowance for loan losses for expected losses. After reviewing data from its borrowers, the bank realizes it could lose more than expected. Walk me through the financial statements if it increases its loss estimates by $100 and explain how the CET 1 Ratio changes. Assume a 25% tax rate.
+
+F2155 | Technical
+BEFORE: An insurance company records $100 in Net Written Premiums and $40 in Net Earned Premiums and pays Commissions of 10%. What happens on the financial statements? Ignore the Claims and Losses corresponding to these premiums for now. Assume a 25% tax rate.
+AFTER: An insurance company records $100 in net written premiums and $40 in net earned premiums and pays commissions of 10%. What happens on the financial statements? Ignore the claims and losses corresponding to these premiums for now. Assume a 25% tax rate.
+
+F2156 | Technical
+BEFORE: What is the Combined Ratio for insurance firms, and how does it make sense mathematically?
+AFTER: What is the combined ratio for insurance firms, and how does it make sense mathematically?
+
+F2158 | Technical
+BEFORE: How do you calculate the Liquidity Coverage Ratio (LCR) and the Net Stable Funding Ratio (NSFR) for banks, and what do they tell you?
+AFTER: How do you calculate the liquidity coverage ratio (LCR) and the net stable funding ratio (NSFR) for banks, and what do they tell you?
+
+F2159 | Technical
+BEFORE: Walk me through a basic Dividend Discount Model (DDM) for a commercial bank.
+AFTER: Walk me through a basic dividend discount model (DDM) for a commercial bank.
+
+F2160 | Technical
+BEFORE: Walk me through an Embedded Value model for a Life Insurance firm.
+AFTER: Walk me through an embedded value model for a life insurance firm.
+
+F2161 | Technical
+BEFORE: How do Property & Casualty (P&C) and Life Insurance companies compare?
+AFTER: How do property & casualty (P&C) and life insurance companies compare?
+
+F2164 | Technical
+BEFORE: Suppose that you are valuing a single private equity firm that uses the same strategy and targets the same size company in each of its separate funds. Why would you use a Sum-of-the-Parts (SOTP) valuation, given that there are no different business segments?
+AFTER: Suppose that you are valuing a single private equity firm that uses the same strategy and targets the same size company in each of its separate funds. Why would you use a sum-of-the-parts (SOTP) valuation, given that there are no different business segments?
+
+F2170 | Technical
+BEFORE: Are valuation multiples from public comps and precedent transactions relevant for pre- revenue / clinical-stage biotech companies? If so, which ones are useful? If not, why not?
+AFTER: Are valuation multiples from public comps and precedent transactions relevant for pre-revenue / clinical-stage biotech companies? If so, which ones are useful? If not, why not?
+
+F2171 | Technical
+BEFORE: Suppose you are valuing a "platform biotech company" with a mix of existing, patent- protected drugs that already generate sales and new drugs in its pipeline. How does the valuation approach differ from a pre-revenue firm?
+AFTER: Suppose you are valuing a "platform biotech company" with a mix of existing, patent-protected drugs that already generate sales and new drugs in its pipeline. How does the valuation approach differ from a pre-revenue firm?
+
+F2177 | Technical
+BEFORE: In which verticals within industrials is the Sum-of-the-Parts (SOTP) valuation most and least useful?
+AFTER: In which verticals within industrials is the sum-of-the-parts (SOTP) valuation most and least useful?
+
+F2182 | Technical
+BEFORE: Can you explain the differences between Reserves and Resources and Measured, Indicated, and Inferred Resources?
+AFTER: Can you explain the differences between reserves and resources and measured, indicated, and inferred resources?
+
+F2190 | Technical
+BEFORE: You are analyzing a new oil well with a 12-month IP rate of 1,000 Barrels of Oil per day. The EUR is 1 million Barrels, the Decline Rate is 20%, and the D&C Costs are $10 million. The production company has an 80% Working Interest in the well and must pay a 10% Royalty on sales. Walk me through the IRR calculation for this specific well.
+AFTER: You are analyzing a new oil well with a 12-month IP rate of 1,000 barrels of oil per day. The EUR is 1 million barrels, the decline rate is 20%, and the D&C costs are $10 million. The production company has an 80% working interest in the well and must pay a 10% royalty on sales. Walk me through the IRR calculation for this specific well.
+
+F2191 | Technical
+BEFORE: You are working with an E&P client company that claims it is undervalued. According to its internal model, its Net Asset Value is $5 billion, but its Current Equity Value is only $3 billion. The company's Reserve Life Ratio is 7.0, and its Production Replacement Ratio is 80%. Is the company correct about being undervalued?
+AFTER: You are working with an E&P client company that claims it is undervalued. According to its internal model, its net asset value is $5 billion, but its current equity value is only $3 billion. The company's reserve life ratio is 7.0, and its production replacement ratio is 80%. Is the company correct about being undervalued?
+
+F2193 | Technical
+BEFORE: A company is natural gas-dominant and has 10 billion cubic feet equivalent (10 Bcfe) in Proved Reserves. It produces 600 million cubic feet (600 MMcf) of natural gas and 50,000 barrels of oil (50 MBbl) annually. What is its approximate Reserve Life Ratio?
+AFTER: A company is natural gas-dominant and has 10 billion cubic feet equivalent (10 Bcfe) in proved reserves. It produces 600 million cubic feet (600 MMcf) of natural gas and 50,000 barrels of oil (50 MBbl) annually. What is its approximate reserve life ratio?
+
+F2201 | Technical
+BEFORE: Suppose you are valuing a regulated multi-utility company that distributes electricity, gas, and water. If you built a Sum-of-the-Parts valuation for it, which segment would you expect to be valued at the highest multiples?
+AFTER: Suppose you are valuing a regulated multi-utility company that distributes electricity, gas, and water. If you built a sum-of-the-parts valuation for it, which segment would you expect to be valued at the highest multiples?
+
+F2205 | Technical
+BEFORE: Why might a PE fund's Limited Partners liquidate their stakes early, even if the fund has performed well?
+AFTER: Why might a PE fund's limited partners liquidate their stakes early, even if the fund has performed well?
+
+F2212 | Technical
+BEFORE: How does Project Finance differ from Corporate Finance?
+AFTER: How does project finance differ from corporate finance?
+
+F2216 | Technical
+BEFORE: Consider three infrastructure assets: An airport, a utility-scale solar plant governed by a 10- year PPA, and a utility-scale solar plant governed by merchant pricing. How would you compare the risk and potential returns of each one?
+AFTER: Consider three infrastructure assets: An airport, a utility-scale solar plant governed by a 10-year PPA, and a utility-scale solar plant governed by merchant pricing. How would you compare the risk and potential returns of each one?
+
+F2217 | Technical
+BEFORE: Why is Debt often "sized and sculpted" based on the future cash flows of assets in the infrastructure sector?
+AFTER: Why is debt often "sized and sculpted" based on the future cash flows of assets in the infrastructure sector?
+
+F2218 | Technical
+BEFORE: What are the DSCR and LLCR, and how do you use them in this Debt sculpting/sizing process?
+AFTER: What are the DSCR and LLCR, and how do you use them in this debt sculpting/sizing process?
+
+F2219 | Technical
+BEFORE: If you can use simple formulas to sculpt and size the Debt based on the DSCR and LLCR requirements, why are they complex to implement in Excel?
+AFTER: If you can use simple formulas to sculpt and size the debt based on the DSCR and LLCR requirements, why are they complex to implement in Excel?
+
+F2221 | Technical
+BEFORE: Why do Construction Loans create circular references in models, and how can you avoid or eliminate them?
+AFTER: Why do construction loans create circular references in models, and how can you avoid or eliminate them?
+
+F2223 | Technical
+BEFORE: What is a property's Net Operating Income, and why is it important?
+AFTER: What is a property's net operating income, and why is it important?
+
+F2224 | Technical
+BEFORE: What is the "Cap Rate," and how do you use it in real estate?
+AFTER: What is the "cap rate," and how do you use it in real estate?
+
+F2226 | Technical
+BEFORE: Walk me through a property Pro-Forma and explain what it tells you.
+AFTER: Walk me through a property pro-forma and explain what it tells you.
+
+F2227 | Technical
+BEFORE: How do NOI, Adjusted NOI, and Cash Flow to Equity differ?
+AFTER: How do NOI, adjusted NOI, and cash flow to equity differ?
+
+F2232 | Technical
+BEFORE: How do you value an Equity REIT?
+AFTER: How do you value an equity REIT?
+
+F2233 | Technical
+BEFORE: Walk me through a NAV Model for a REIT and explain when it is useful.
+AFTER: Walk me through a NAV model for a REIT and explain when it is useful.
+
+F2236 | Technical
+BEFORE: How would you compare a Dividend Discount Model (DDM), Unlevered DCF, and Levered DCF for valuing a REIT?
+AFTER: How would you compare a dividend discount model (DDM), unlevered DCF, and levered DCF for valuing a REIT?
+
+F2237 | Technical
+BEFORE: At a high level, how does a REIT decide to issue Debt or Equity to fund its operations?
+AFTER: At a high level, how does a REIT decide to issue debt or equity to fund its operations?
+
+F2239 | Technical
+BEFORE: Why are the Contribution Analysis and Value Creation Analysis especially useful in REIT M&A Deals?
+AFTER: Why are the contribution analysis and value creation analysis especially useful in REIT M&A Deals?
+
+F2248 | Technical
+BEFORE: You are building a credit analysis for Netflix and have calculated its FCF Conversion based on this definition: FCF = EBITDA - Net Interest Expense - Taxes +/- Change in Working Capital - CapEx. You have also adjusted for Deferred Taxes and Stock-Based Compensation. Based on this definition, Netflix's FCF Conversion is over 70%. Your co-worker reviews your analysis and says it's wrong, as the company's true FCF Conversion is only around half this percentage due to line items missing from your analysis. Who's correct? Why?
+AFTER: You are building a credit analysis for Netflix and have calculated its FCF conversion based on this definition: FCF = EBITDA - net interest expense - taxes +/- Change in working capital - CapEx. You have also adjusted for deferred taxes and stock-based compensation. Based on this definition, Netflix's FCF conversion is over 70%. Your co-worker reviews your analysis and says it's wrong, as the company's true FCF conversion is only around half this percentage due to line items missing from your analysis. Who's correct? Why?
+
+F2250 | Technical
+BEFORE: How would you value an unprofitable tech startup that is years away from positive Net Income and cash flow?
+AFTER: How would you value an unprofitable tech startup that is years away from positive net income and cash flow?
+
+F2251 | Technical
+BEFORE: A Software-as-a-Service (SaaS) company sells a $240 2-year contract on January 1 that will be billed every 6 months. Walk me through the Bookings, Billings, and Revenue for January and February.
+AFTER: A software-as-a-service (SaaS) company sells a $240 2-year contract on January 1 that will be billed every 6 months. Walk me through the bookings, billings, and revenue for January and February.
+
+F2252 | Technical
+BEFORE: A Software-as-a-Service (SaaS) company sells a $240 2-year contract on January 1 that will be billed every 6 months. Walk me through the Bookings, Billings, and Revenue for January and February.
+
+Follow-up: Continuing with the same question, if it takes 2 months to collect the cash from customers following receipt of the invoice, explain how Accounts Receivable and Deferred Revenue change in January and February.
+AFTER: A software-as-a-service (SaaS) company sells a $240 2-year contract on January 1 that will be billed every 6 months. Walk me through the bookings, billings, and revenue for January and February.
+
+Follow-up: Continuing with the same question, if it takes 2 months to collect the cash from customers following receipt of the invoice, explain how accounts receivable and deferred revenue change in January and February.
+
+F2253 | Technical
+BEFORE: A software company has annual contracts with an average value of $10K per year, and its annual cancellation rate is currently 10%. Customers who do not cancel pay 5% more once every 2 years. What is this company's approximate average Lifetime Value (LTV)? You may assume this $10K per year figure already deducts the associated Cost of Sales.
+AFTER: A software company has annual contracts with an average value of $10K per year, and its annual cancellation rate is currently 10%. Customers who do not cancel pay 5% more once every 2 years. What is this company's approximate average lifetime value (LTV)? You may assume this $10K per year figure already deducts the associated cost of sales.
+
+F2254 | Technical
+BEFORE: You are analyzing a SaaS company's performance. The company claims its LTV / CAC is 4.0x, but its CAC Payback Period is 24 months. What conclusions can you draw?
+AFTER: You are analyzing a SaaS company's performance. The company claims its LTV / CAC is 4.0x, but its CAC payback period is 24 months. What conclusions can you draw?
+
+B0004 | Behavioral
+BEFORE: Describe your responsibilities on a typical work day.
+AFTER: Describe your responsibilities on a typical workday.
+
+B0038 | Behavioral
+BEFORE: Tell me everything about yourself since your childhood?
+AFTER: Tell me everything about yourself since your childhood.
+
+B0039 | Behavioral
+BEFORE: Tell me about a difficult class you've taken recently--how did you approach the material?
+AFTER: Tell me about a difficult class you have taken recently. How did you approach the material?
+
+B0050 | Behavioral
+BEFORE: Tell me about a time you had to convince someone significantly out-ranking you to do something they did not want to do. -What was your thought process -What was the outcome -How could you be sure it was the best option at the time?
+AFTER: Tell me about a time you had to convince someone more senior to do something they initially opposed. What was your thought process? What was the outcome? How did you assess whether it was the best option at the time?
+
+B0071 | Behavioral
+BEFORE: How I would go about starting a restaurant in my local area and what I would need to think up and do regarding this.
+AFTER: How would you start a restaurant in your local area, and what would you need to consider?
+
+B0098 | Behavioral
+BEFORE: Why would I want to move to San Francisco.
+AFTER: Why would you want to move to San Francisco?
+
+B0113 | Behavioral
+BEFORE: How do you explain your lower GPA (above average, not outstanding though), Name a time in your like when you witnessed or experienced unethical behavior.
+AFTER: How would you explain your GPA? Describe a time you witnessed or experienced unethical behavior.
+
+B0120 | Behavioral
+BEFORE: Tell me about a time you worked in a group?
+AFTER: Tell me about a time you worked in a group.
+
+B0136 | Behavioral
+BEFORE: Tell me the differences that would exist for suppliers of wheels and suppliers of transmissions?
+AFTER: Tell me the differences that would exist for suppliers of wheels and suppliers of transmissions.
+
+B0137 | Behavioral
+BEFORE: Give me optimisation about LLM inference?
+AFTER: Give me optimisation about LLM inference.
+
+B0143 | Behavioral
+BEFORE: How many coins stack up to the height of the door handle.
+AFTER: How many coins would need to be stacked to reach the height of a door handle?
+
+B0164 | Behavioral
+BEFORE: How the deal would be different if it was an IB deal.
+AFTER: How would the deal differ if it were an investment banking transaction?
+
+B0165 | Behavioral
+BEFORE: Tell me about a time you were the subject matter expertise?
+AFTER: Tell me about a time you were the subject-matter expert.
+
+B0168 | Behavioral
+BEFORE: Name that 1 time you didn't have enough data/access and how did you do it?
+AFTER: Describe a time you lacked sufficient data or access to information. How did you handle it?
+
+B0179 | Behavioral
+BEFORE: Tell me about an ethical dilemma you faced?
+AFTER: Tell me about an ethical dilemma you faced.
+
+B0182 | Behavioral
+BEFORE: Name 3 weaknesses?
+AFTER: Name 3 weaknesses.
+
+B0186 | Behavioral
+BEFORE: Name a time when you add to change your typical work flow to adjust for an unexpected risk in the work place?
+AFTER: Describe a time you had to change your usual workflow to address an unexpected workplace risk.
+
+B0205 | Behavioral
+BEFORE: Tell us about an article you read recently?
+AFTER: Tell us about an article you read recently.
+
+B0209 | Behavioral
+BEFORE: How can you use your skills expertise and knowledge to optimize internal efficiency for Balckrock?
+AFTER: How can you use your skills expertise and knowledge to optimize internal efficiency for BlackRock?
+
+B0210 | Behavioral
+BEFORE: What is the number one quality clients look for and like about Blackrock?
+AFTER: What is the number one quality clients look for and like about BlackRock?
+
+B0212 | Behavioral
+BEFORE: What is the best wa to get the most out of your experience at Blackrock?
+AFTER: What is the best way to make the most of your experience at BlackRock?
+
+B0214 | Behavioral
+BEFORE: Who is the ceo of blackrock?
+AFTER: Who is the CEO of BlackRock?
+
+B0216 | Behavioral
+BEFORE: What do you know about blackrock?
+AFTER: What do you know about BlackRock?
+
+B0218 | Behavioral
+BEFORE: How you react under pressure.
+AFTER: How do you react under pressure?
+
+B0219 | Behavioral
+BEFORE: Why I wanted a position on the debt instead of equity side.
+AFTER: Why do you want a role on the debt side rather than the equity side?
+
+B0220 | Behavioral
+BEFORE: Why did I go to the undergrad school I attended?
+AFTER: Why did you choose your undergraduate university?
+
+B0221 | Behavioral
+BEFORE: Why did I choose my graduate school?
+AFTER: Why did you choose your graduate school?
+
+B0229 | Behavioral
+BEFORE: What my favorite state was, and jokingly to name all of them.
+AFTER: What is your favorite state? Can you name all the states?
+
+B0261 | Behavioral
+BEFORE: Which revolved around me gauging the number of boutique hotels in Phoenix Arizona.
+AFTER: Approximately how large is the number of boutique hotels in Phoenix, Arizona?
+
+B0273 | Behavioral
+BEFORE: Tell me two most important headwinds and tailwinds?
+AFTER: Tell me two most important headwinds and tailwinds.
+
+B0277 | Behavioral
+BEFORE: Describe a typical research process?
+AFTER: Describe a typical research process.
+
+B0283 | Behavioral
+BEFORE: How many plans are flying over the U.S. right now?
+AFTER: How many planes are flying over the United States right now?
+
+B0287 | Behavioral
+BEFORE: Why did I choose to go to my university (Northeastern) and what did I learn throughout my academic journey?
+AFTER: Why did you choose Northeastern, and what have you learned during your academic journey?
+
+B0288 | Behavioral
+BEFORE: Tell me about a mistake you have made during one of your internships?
+AFTER: Tell me about a mistake you have made during one of your internships.
+
+B0309 | Behavioral
+BEFORE: Why I believed the things I believed about activism vs relative value vs L/S.
+AFTER: Why do you hold your stated views on activist, relative-value and long/short investing?
+
+B0313 | Behavioral
+BEFORE: Tell me more about X job / X club?
+AFTER: Tell me more about X job / X club.
+
+B0323 | Behavioral
+BEFORE: How many boxes of oreos are consumed in the United States each year?
+AFTER: How many boxes of Oreos are consumed in the United States each year?
+
+B0326 | Behavioral
+BEFORE: Explain the major and show its applications?
+AFTER: Explain the major and show its applications.
+
+B0328 | Behavioral
+BEFORE: Explain why you don't have a 4.0 GPA?
+AFTER: Explain why you don't have a 4.0 GPA.
+
+B0334 | Behavioral
+BEFORE: Why are you pursuing a finance career when you did not major in this field in university.
+AFTER: Why are you pursuing a finance career when you did not major in this field in university?
+
+B0359 | Behavioral
+BEFORE: Name one thing your colleagues would describe you as?
+AFTER: Name one thing your colleagues would describe you as.
+
+B0360 | Behavioral
+BEFORE: Is the distance between circumferences in example 1 greater than, less than or equal to the distance between the circumferences in example 2.
+AFTER: Is the distance between circumferences in example 1 greater than, less than or equal to the distance between the circumferences in example 2?
+
+B0362 | Behavioral
+BEFORE: Why to attend your school What was your least favorite class?
+AFTER: Why did you choose your school? What was your least favorite class?
+
+B0367 | Behavioral
+BEFORE: What's the difference between the work you've done in M&A and why you want to work in restructuring.
+AFTER: How does your M&A experience relate to your interest in restructuring?
+
+B0369 | Behavioral
+BEFORE: How two identical buildings in the same location could be worth different amounts.
+AFTER: How could two identical buildings in the same location be worth different amounts?
+
+B0371 | Behavioral
+BEFORE: When a project nearly failed because no one took charge and assumed a leadership role.
+AFTER: Describe a project that nearly failed because no one took charge or assumed a leadership role.
+
+B0377 | Behavioral
+BEFORE: Tell me about a time when you were on a team and had to resolve a conflict?
+AFTER: Tell me about a time when you were on a team and had to resolve a conflict.
+
+B0380 | Behavioral
+BEFORE: If you could be doing anything right now, what would it be.
+AFTER: If you could be doing anything right now, what would it be?
+
+B0386 | Behavioral
+BEFORE: Why do you want to work in Equity Capital Markets?
+AFTER: Why do you want to work in equity capital markets?
+
+B0395 | Behavioral
+BEFORE: Tell me about Evercore's values and how you fit them specifically?
+AFTER: Tell me about Evercore's values and how you fit them specifically.
+
+B0396 | Behavioral
+BEFORE: What types of things bankers work on and what the job is like.
+AFTER: What do bankers work on, and what is their job like?
+
+B0408 | Behavioral
+BEFORE: Name a deal you recently have followed?
+AFTER: Name a deal you recently have followed.
+
+B0411 | Behavioral
+BEFORE: A lily pads size doubles every minute. After 60 minutes it fills up 100% of a pond. What is it's size after 59 minutes relative to the size of a pond.
+AFTER: A lily pad doubles in size every minute and covers an entire pond after 60 minutes. What fraction of the pond does it cover after 59 minutes?
+
+B0412 | Behavioral
+BEFORE: What is a weakness you have that may affect team work?
+AFTER: What is a weakness you have that may affect teamwork?
+
+B0417 | Behavioral
+BEFORE: Why I chose not to go back to that firm.
+AFTER: Why did you choose not to return to that firm?
+
+B0422 | Behavioral
+BEFORE: How I would deal with stress on the job and pushed back a lot on my answer.
+AFTER: How would you handle stress on the job?
+
+B0423 | Behavioral
+BEFORE: Why banking and once more pushed back A LOT on my answer.
+AFTER: Why do you want to work in banking?
+
+B0426 | Behavioral
+BEFORE: Tell me about a FT Partners transaction?
+AFTER: Tell me about a FT Partners transaction.
+
+B0429 | Behavioral
+BEFORE: Tell me about a time that you innovated?
+AFTER: Tell me about a time that you innovated.
+
+B0431 | Behavioral
+BEFORE: Why Chicago (and not stay in New York?
+AFTER: Why Chicago rather than staying in New York?
+
+B0433 | Behavioral
+BEFORE: Walk through your deal experience and your roles on your deal teams?
+AFTER: Walk through your deal experience and your roles on your deal teams.
+
+B0440 | Behavioral
+BEFORE: Why specifically do you want to work for General Atlantic.
+AFTER: Why specifically do you want to work for General Atlantic?
+
+B0441 | Behavioral
+BEFORE: If you have a 10-k and can only look at 3 items, what would you do?
+AFTER: If you have a 10-K and can only look at 3 items, what would you do?
+
+B0443 | Behavioral
+BEFORE: Tell me about your experience in the business society?
+AFTER: Tell me about your experience in the business society.
+
+B0445 | Behavioral
+BEFORE: Why MBA, What's a long-term goal?
+AFTER: Why pursue an MBA, and what is your long-term goal?
+
+B0446 | Behavioral
+BEFORE: Why changing a career?
+AFTER: Why are you changing careers?
+
+B0448 | Behavioral
+BEFORE: Name a time when you had to measure the pros and cons between two decisions, and what was your result?
+AFTER: Describe a time you assessed the pros and cons of two options. What was the outcome?
+
+B0456 | Behavioral
+BEFORE: How did you prepare for this interview (unexpected?
+AFTER: How did you prepare for this interview?
+
+B0461 | Behavioral
+BEFORE: Where will the S&P500 be in 12 months - up, down, or flat?
+AFTER: Where will the S&P 500 be in 12 months - up, down, or flat?
+
+B0462 | Behavioral
+BEFORE: Tell me about a time where you had to do something you really didn't want to do?
+AFTER: Tell me about a time where you had to do something you really didn't want to do.
+
+B0464 | Behavioral
+BEFORE: If you were a worker here, how would you design a email software so that we can improve the efficiency around here?
+AFTER: If you were a worker here, how would you design an email software so that we can improve the efficiency around here?
+
+B0492 | Behavioral
+BEFORE: Tell me about a recent news event?
+AFTER: Tell me about a recent news event.
+
+B0494 | Behavioral
+BEFORE: Tell me about a time when something didn't as expected-- what did you do to resolve the situation?
+AFTER: Tell me about a time something did not go as expected. What did you do to resolve the situation?
+
+B0495 | Behavioral
+BEFORE: Why banking, who have you spoken to, what are you planning to do in the future.
+AFTER: Why banking? Who have you spoken to? What are your future plans?
+
+B0499 | Behavioral
+BEFORE: How much you would pay for this item that pays you a fixed amount.
+AFTER: How much would you pay for an asset that pays a fixed amount? [Payment amount, timing and discount rate not recorded.]
+
+B0506 | Behavioral
+BEFORE: How many degrees between the hands when the clock reads 3:25.
+AFTER: How many degrees are between the hands of a clock at 3:25?
+
+B0516 | Behavioral
+BEFORE: Walk me through how you would create an expense model?
+AFTER: Walk me through how you would create an expense model.
+
+B0518 | Behavioral
+BEFORE: What makes b2b SaaS so attractive vs. consumer?
+AFTER: What makes B2B SaaS so attractive vs. consumer?
+
+B0519 | Behavioral
+BEFORE: Why I wanted to do private equity or venture capital.
+AFTER: Why do you want to work in private equity or venture capital?
+
+B0522 | Behavioral
+BEFORE: Walk me through a typical day of an Intrepid Analyst?
+AFTER: Walk me through a typical day for an Intrepid analyst.
+
+B0543 | Behavioral
+BEFORE: Tell me why you want to work here and not in a proper finance role?
+AFTER: Tell me why you want to work here and not in a proper finance role.
+
+B0545 | Behavioral
+BEFORE: Why a rotational program.
+AFTER: Why a rotational program?
+
+B0546 | Behavioral
+BEFORE: If they are not engaged you are NOT going to get the job.
+AFTER: If they are not engaged you are not going to get the job.
+
+B0550 | Behavioral
+BEFORE: How do i know you will not leave in a year?
+AFTER: How do I know you will not leave in a year?
+
+B0553 | Behavioral
+BEFORE: Describe how I would utilize a v-lookup to reorganize that information onto a separate list.
+AFTER: Describe how you would use VLOOKUP to reorganize that information into a separate list.
+
+B0562 | Behavioral
+BEFORE: Why you want to participate in the program?
+AFTER: Why do you want to participate in the program?
+
+B0563 | Behavioral
+BEFORE: Calculate the weighted average of 25% of X, 50% of Y, and 25% of Z?
+AFTER: Calculate the weighted average of 25% of X, 50% of Y, and 25% of Z.
+
+B0564 | Behavioral
+BEFORE: How many closets are still open after the all the 100 people complete their dumb tasks?
+AFTER: How many closets remain open after all 100 people have completed the process? [The process is not included in this question.]
+
+B0573 | Behavioral
+BEFORE: What parts of the cap structure I like within any of the companies under my current coverage.
+AFTER: Which parts of the capital structures of companies you currently cover interest you most?
+
+B0574 | Behavioral
+BEFORE: Why are you interested in Fixed Income?
+AFTER: Why are you interested in fixed income?
+
+B0578 | Behavioral
+BEFORE: Where you had to work in a group and the outcome of that.
+AFTER: When have you worked in a group, and what was the outcome?
+
+B0586 | Behavioral
+BEFORE: Walk me through one of your transactions on your resume?
+AFTER: Walk me through one of your transactions on your resume.
+
+B0595 | Behavioral
+BEFORE: If i'm aware that i'll need to work crazy hours and on very very silly things sometimes.
+AFTER: Are you prepared to work very demanding hours and perform repetitive tasks?
+
+B0602 | Behavioral
+BEFORE: Tell me about your background and past experiences managing people?
+AFTER: Tell me about your background and past experiences managing people.
+
+B0607 | Behavioral
+BEFORE: Tell me a time when you rose above your peers?
+AFTER: Tell me a time when you rose above your peers.
+
+B0608 | Behavioral
+BEFORE: Tell me about what makes you the best candidate?
+AFTER: Tell me about what makes you the best candidate.
+
+B0612 | Behavioral
+BEFORE: What I will be worried about if I will get the job.
+AFTER: What would worry you most if you got the job?
+
+B0613 | Behavioral
+BEFORE: Why you want to join a Boutique and not a BB.
+AFTER: Why do you want to join a boutique rather than a bulge-bracket bank?
+
+B0624 | Behavioral
+BEFORE: Walk me through the deal process and how you understand this works?
+AFTER: Walk me through the deal process and how you understand this works.
+
+B0625 | Behavioral
+BEFORE: Why are you interested in renewables, and how would you value a solar project.
+AFTER: Why are you interested in renewables? How would you value a solar project?
+
+B0629 | Behavioral
+BEFORE: When did you take iniative?
+AFTER: When did you take initiative?
+
+B0633 | Behavioral
+BEFORE: Tell me about yourself/why you think you will be a good fit" type questions.
+AFTER: Tell me about yourself and explain why you would be a good fit.
+
+B0649 | Behavioral
+BEFORE: Why liontree, what do i know about liontree, what my life goals were?
+AFTER: Why LionTree? What do you know about the firm? What are your life goals?
+
+B0651 | Behavioral
+BEFORE: Tell me about a time you were in the zone?
+AFTER: Tell me about a time you were in the zone.
+
+B0658 | Behavioral
+BEFORE: Why did I apply for my group, who do I look up to, and why did l apply for this company.
+AFTER: Why did you apply to this group and company? Who do you look up to?
+
+B0660 | Behavioral
+BEFORE: Why I wanted to join MUFG, why I chose them over other banks.
+AFTER: Why do you want to join MUFG rather than another bank?
+
+B0669 | Behavioral
+BEFORE: Why I choose to go to USC, why I choose to international internships.
+AFTER: Why did you choose USC, and why did you pursue international internships?
+
+B0676 | Behavioral
+BEFORE: How do you cut a cake into 8 equally sized slices using only 3 cuts? (There are two solutions)?
+AFTER: How would you cut a cake into eight equal pieces using only three cuts? Give two possible solutions.
+
+B0684 | Behavioral
+BEFORE: What makes you interested in Restructuring as opposed to M&A or Capital Markets?
+AFTER: What makes you interested in Restructuring as opposed to M&A or capital markets?
+
+B0693 | Behavioral
+BEFORE: Tell us about a time you insisted to do something right?
+AFTER: Tell us about a time you insisted to do something right.
+
+B0698 | Behavioral
+BEFORE: Tell me about a time you reached outside of your comfort zone Explain to me purchase accounting rules - what are the accounting adjustments made in an M&A situation?
+AFTER: Tell me about a time you stepped outside your comfort zone. Separately, explain purchase accounting and the accounting adjustments in an M&A transaction.
+
+B0709 | Behavioral
+BEFORE: Describe a situation where you had a setback in a team project, how did you act and what was the outcome of your actions).
+AFTER: Describe a setback in a team project. How did you respond, and what was the outcome?
+
+B0713 | Behavioral
+BEFORE: Why the firm is going to do well in the future.
+AFTER: Why do you think the firm will perform well in the future?
+
+B0715 | Behavioral
+BEFORE: What are some of the qualities that make an analyst successful from your previous experience ?
+AFTER: What are some of the qualities that make an analyst successful from your previous experience?
+
+B0717 | Behavioral
+BEFORE: Why are you interested in the fintech industry.
+AFTER: Why are you interested in the fintech industry?
+
+B0718 | Behavioral
+BEFORE: Tell me something not on your resume, something that you are passionate about How many cups of water does the coffee stand across the street go through in a week?
+AFTER: Tell me about a passion that is not on your resume. How many cups of water does the coffee stand across the street use in a week?
+
+B0719 | Behavioral
+BEFORE: Tell us about a time something slipped through the cracks?
+AFTER: Tell us about a time something slipped through the cracks.
+
+B0728 | Behavioral
+BEFORE: Why singapore why not your hometown.
+AFTER: Why Singapore rather than your hometown?
+
+B0732 | Behavioral
+BEFORE: What are the problems and downsides or this formula?
+AFTER: What are the problems and limitations of this formula? [Formula not identified.]
+
+B0735 | Behavioral
+BEFORE: Can you tell me something about Brexit ?
+AFTER: Can you tell me something about Brexit?
+
+B0736 | Behavioral
+BEFORE: What is soft Brexit ?
+AFTER: What is soft Brexit?
+
+B0737 | Behavioral
+BEFORE: What is the trick part you think within Brexit ?
+AFTER: What is the trick part you think within Brexit?
+
+B0738 | Behavioral
+BEFORE: What websites/newspapers I read everyday to stay updated with the news.
+AFTER: Which websites and newspapers do you read daily to stay informed?
+
+B0750 | Behavioral
+BEFORE: What two items I would take to my grave.
+AFTER: Which two items would you take to your grave?
+
+B0755 | Behavioral
+BEFORE: How many barbers would be needed in all of New York city if they were all to disappear in one go somehow.
+AFTER: How many barbers would New York City need if all its barbers disappeared at once?
+
+B0759 | Behavioral
+BEFORE: Tell me about 2 companies that may exist for the next 100 years?
+AFTER: Tell me about 2 companies that may exist for the next 100 years.
+
+B0773 | Behavioral
+BEFORE: Name a time you worked in a time and what that dynamic was like.
+AFTER: Describe a time you worked in a group and explain the group dynamics.
+
+B0774 | Behavioral
+BEFORE: What's the most interesting things you've learned in your classes?
+AFTER: What are the most interesting things you have learned in your classes?
+
+B0775 | Behavioral
+BEFORE: Tell me about a deal you thought went badly?
+AFTER: Tell me about a deal you thought went badly.
+
+B0777 | Behavioral
+BEFORE: Tell me about a time you solved a problem with very little information?
+AFTER: Tell me about a time you solved a problem with very little information.
+
+B0778 | Behavioral
+BEFORE: Tell me about a time you contributed uniquely to a team?
+AFTER: Tell me about a time you contributed uniquely to a team.
+
+B0779 | Behavioral
+BEFORE: Tell me about a time you were unhappy with an outcome in a deal?
+AFTER: Tell me about a time you were unhappy with an outcome in a deal.
+
+B0783 | Behavioral
+BEFORE: What a mid-period adjustment is.
+AFTER: What is a mid-period adjustment?
+
+B0785 | Behavioral
+BEFORE: Tell me smth you geek out about?
+AFTER: Tell me something you geek out about.
+
+B0796 | Behavioral
+BEFORE: What I'd like to be doing 10+ years from now and what one of my personal life goals is.
+AFTER: What would you like to be doing in ten or more years, and what is one of your personal life goals?
+
+B0799 | Behavioral
+BEFORE: When was a time you ran into a an ethical issue?
+AFTER: When was a time you ran into an ethical issue?
+
+B0804 | Behavioral
+BEFORE: If a client asked you do reduce your fees or otherwise pull his account, what would you say/do?
+AFTER: How would you respond if a client demanded lower fees or threatened to move their account?
+
+B0817 | Behavioral
+BEFORE: What work are you most looking forward to do?
+AFTER: Which work are you most looking forward to doing?
+
+B0818 | Behavioral
+BEFORE: Walk me through a deal you worked on as summer analyst?
+AFTER: Walk me through a deal you worked on as summer analyst.
+
+B0821 | Behavioral
+BEFORE: Do l think HFs are a good biz?
+AFTER: Do you think hedge funds are good businesses?
+
+B0827 | Behavioral
+BEFORE: Give me an example of something you think we don't understand and explain it in simple terms?
+AFTER: Give me an example of something you think we don't understand and explain it in simple terms.
+
+B0830 | Behavioral
+BEFORE: Tell me about your least favourite class you've taken?
+AFTER: Tell me about your least favourite class you've taken.
+
+B0834 | Behavioral
+BEFORE: Tell me about a specific mentorship experience you've had where you acted as a mentor?
+AFTER: Tell me about a specific mentorship experience you've had where you acted as a mentor.
+
+B0836 | Behavioral
+BEFORE: Tell me about your time at [previous firm] last summer?
+AFTER: Tell me about your time at [previous firm] last summer.
+
+B0853 | Behavioral
+BEFORE: Walk me through your excel/powerpoint skills.
+AFTER: Walk me through your Excel/PowerPoint skills.
+
+B0868 | Behavioral
+BEFORE: Why are you interested in Saas?
+AFTER: Why are you interested in SaaS?
+
+B0876 | Behavioral
+BEFORE: Tell me something personal about you that isnt on your resume?
+AFTER: Tell me something personal about yourself that is not on your resume.
+
+B0879 | Behavioral
+BEFORE: How many ping pong balls can fit in a boeing aircraft?
+AFTER: How many ping pong balls can fit in a Boeing aircraft?
+
+B0883 | Behavioral
+BEFORE: Tell me what you know about Stephens?
+AFTER: Tell me what you know about Stephens.
+
+B0887 | Behavioral
+BEFORE: How can you handle an extreme work load under pressure?
+AFTER: How can you handle an extreme workload under pressure?
+
+B0899 | Behavioral
+BEFORE: Why I would or wouldn't invest in the company and key diligence questions I would ask.
+AFTER: Why would you invest or not invest in the company, and which diligence questions would you ask?
+
+B0900 | Behavioral
+BEFORE: Tell me a time where you didn't know where to start on a project?
+AFTER: Tell me a time where you didn't know where to start on a project.
+
+B0911 | Behavioral
+BEFORE: Could you go into more detail on what makes it different than the other statements.
+AFTER: Could you go into more detail on what makes it different than the other statements?
+
+B0914 | Behavioral
+BEFORE: Tell me about a time you had a difficult customer What did you do in high school?
+AFTER: Tell me about a time you dealt with a difficult customer. What did you do in high school?
+
+B0915 | Behavioral
+BEFORE: How do you lead and how do you follow in a group setting.
+AFTER: How do you lead and how do you follow in a group setting?
+
+B0916 | Behavioral
+BEFORE: What advantage does your major give you for investment banking.
+AFTER: What advantage does your major give you for investment banking?
+
+B0917 | Behavioral
+BEFORE: What do you think of the healthcare space right now.
+AFTER: What do you think of the healthcare space right now?
+
+B0936 | Behavioral
+BEFORE: Tell me about a tech verticle you have been following?
+AFTER: Tell me about a tech vertical you have been following.
+
+B0950 | Behavioral
+BEFORE: Tell me how your current internship experience has prepared you for a career in Investment Banking.
+AFTER: Tell me how your current internship experience has prepared you for a career in investment banking.
+
+B0951 | Behavioral
+BEFORE: How many coffee shops in US Tell me about yourself?
+AFTER: How many coffee shops are there in the United States? Tell me about yourself.
+
+B0965 | Behavioral
+BEFORE: Why not VC.
+AFTER: Why not VC?
+
+B0970 | Behavioral
+BEFORE: What I would do to improve it, things like that.
+AFTER: How would you improve it? [Subject not identified.]
+
+B0976 | Behavioral
+BEFORE: What's the most biggest mistake you've made?
+AFTER: What is the biggest mistake you have made?
+
+B0978 | Behavioral
+BEFORE: Tell us about Sirius XM?
+AFTER: Tell us about Sirius XM.
+
+B0981 | Behavioral
+BEFORE: Tell me about a time where you went through change and how did you handle it?
+AFTER: Tell me about a time where you went through change and how did you handle it.
+
+B0986 | Behavioral
+BEFORE: Tell us about a time you failed in a group project?
+AFTER: Tell us about a time you failed in a group project.
+
+B1023 | Behavioral
+BEFORE: Who would be watching a football game Sunday night and practicing/learning excel shortcuts?
+AFTER: Who would be watching a football game Sunday night and practicing/learning Excel shortcuts?
+
+B1024 | Behavioral
+BEFORE: Tell me about a time you had a conflict in a team?
+AFTER: Tell me about a time you had a conflict in a team.
+
+B1030 | Behavioral
+BEFORE: How does major apply to this line of work?
+AFTER: How does your major apply to this work?
+
+B1031 | Behavioral
+BEFORE: Tell me about a time you or someone you worked with had an issue with another co worker?
+AFTER: Tell me about a time you or someone you worked with had an issue with another co worker.
+
+B1033 | Behavioral
+BEFORE: How do you think the current mkt environment will effect what we do?
+AFTER: How do you think the current market environment will affect our work?
+
+B1034 | Behavioral
+BEFORE: Why are you interested in Capital Markets?
+AFTER: Why are you interested in capital markets?
+
+B1036 | Behavioral
+BEFORE: Describe a time when you disagreed with a colleague?
+AFTER: Describe a time when you disagreed with a colleague.
+
+B1037 | Behavioral
+BEFORE: How would you allocate 1 million in the current climate.
+AFTER: How would you allocate 1 million in the current climate?
+
+B1044 | Behavioral
+BEFORE: What's a deal that Evercore has worked on? (Find 2)?
+AFTER: Describe a deal that Evercore has worked on, then give a second example.
+
+B1046 | Behavioral
+BEFORE: Tell me about a time you had a difficult situation?
+AFTER: Tell me about a time you had a difficult situation.
+
+B1052 | Behavioral
+BEFORE: You are tasked with advising a laundromat with a sale, how do you approach this situation?.
+AFTER: You are advising a laundromat on a sale. How would you approach the engagement?
+
+B1053 | Behavioral
+BEFORE: Talk about a time you had to work with someone difficult and how you dealt with it?
+AFTER: Talk about a time you had to work with someone difficult and how you dealt with it.
+
+B1056 | Behavioral
+BEFORE: One major world event you've been following?
+AFTER: What major world event have you been following?
+
+B1057 | Behavioral
+BEFORE: Problem you faced and how you overcame?
+AFTER: Describe a problem you faced and how you overcame it.
+
+B1063 | Behavioral
+BEFORE: If you were to explain a complex concept to someone. What steps would you take?
+AFTER: If you were asked to explain a complex concept to someone, what steps would you take?
+
+B1068 | Behavioral
+BEFORE: What skill sets do you think will help you exceed this job?
+AFTER: Which skills would help you succeed in this job?
+
+B1070 | Behavioral
+BEFORE: Explain a time you had a difficult situation and what you did to overcome it?
+AFTER: Explain a time you had a difficult situation and what you did to overcome it.
+
+B1073 | Behavioral
+BEFORE: Describe a time when you have been able to demonstrate flexibility?
+AFTER: Describe a time when you have been able to demonstrate flexibility.
+
+B1083 | Behavioral
+BEFORE: Tell me about a deal that JP Morgan has done?
+AFTER: Tell me about a deal that JP Morgan has done.
+
+B1086 | Behavioral
+BEFORE: Tell me about a time you were on a team?
+AFTER: Tell me about a time you were on a team.
+
+B1089 | Behavioral
+BEFORE: Who pays more-a strategic or a sponsor?
+AFTER: Who typically pays more for an acquisition: a strategic buyer or a financial sponsor?
+
+B1092 | Behavioral
+BEFORE: You have eight coins. They all look identical, but one is a fake and is slightly lighter than the others. Explain how you can use a balance scale to determine which coin is the fake in exactly a) two weighings; and b) three weighings?
+AFTER: You have eight coins that look identical, but one is fake and slightly lighter. Explain how to identify the fake using a balance scale in (a) exactly two weighings and (b) exactly three weighings.
+
+B1096 | Behavioral
+BEFORE: Tell me about a time you worked on a project and someone disagreed with your ideas?
+AFTER: Tell me about a time you worked on a project and someone disagreed with your ideas.
+
+B1097 | Behavioral
+BEFORE: Tell me about a time you worked on a project and things didn't go as planned?
+AFTER: Tell me about a time you worked on a project and things didn't go as planned.
+
+B1098 | Behavioral
+BEFORE: Tell me about a time you missed a deadline?
+AFTER: Tell me about a time you missed a deadline.
+
+B1100 | Behavioral
+BEFORE: Tell me a skill you have that your peers do not and makes you stand out?
+AFTER: Tell me a skill you have that your peers do not and makes you stand out.
+
+B1102 | Behavioral
+BEFORE: Tell me about a time you had to compromise your values for a desired outcome, and how did you approach this?
+AFTER: Tell me about a time you had to compromise your values for a desired outcome, and how did you approach this.
+
+B1107 | Behavioral
+BEFORE: How do you know you've made the right decision and tell me about a time when you did?
+AFTER: How do you know you have made the right decision? Describe a time when you did.
+
+B1108 | Behavioral
+BEFORE: Tell me about a time you had to present complex information?
+AFTER: Tell me about a time you had to present complex information.
+
+B1110 | Behavioral
+BEFORE: Tell me about a time you shared your perspective?
+AFTER: Tell me about a time you shared your perspective.
+
+B1120 | Behavioral
+BEFORE: Why don't you want to go back to X firm? (if you have a sophomore offer)?
+AFTER: Why do you not want to return to your previous firm, if you have an offer to do so?
+
+B1124 | Behavioral
+BEFORE: Talk about a complex project you worked on using outside informaiton, and what was the outcome?
+AFTER: Discuss a complex project that required outside information. What was the outcome?
+
+B1171 | Behavioral
+BEFORE: You completed an investment banking internship but then accepted a full-time role in Financial Planning & Analysis (FP&A) in corporate finance after graduation. Why? Did you fail to get a return offer from your internship?
+AFTER: You completed an investment banking internship but then accepted a full-time role in financial planning & analysis (FP&A) in corporate finance after graduation. Why? Did you fail to get a return offer from your internship?
+
+B1183 | Behavioral
+BEFORE: You have $1 million, but you are NOT allowed to invest it or use it to make more money. How would you spend the money?
+AFTER: You have $1 million, but you are not allowed to invest it or use it to make more money. How would you spend the money?

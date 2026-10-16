@@ -1,0 +1,56 @@
+QUESTION WORDING REVIEW — 16 October 2026
+
+Reviewed all 3,238 active questions: 2,053 technical and 1,185 behavioral.
+Applied 688 wording corrections: 488 technical and 200 behavioral.
+All answers, question IDs, source attributions and technical-answer metadata are unchanged.
+No new numerical assumptions were introduced. No cards were split, deleted or added.
+The archived master list includes inactive questions; this review covers the active deck.
+
+835 unique questions have at least one editorial or completeness flag. This is NOT a count of incorrect questions. Categories overlap.
+506 are multipart prompts without an explicit follow-up label. Many are coherent and related; review sequencing before splitting.
+35 are likely merged prompts; another 10 concern separate behavioral prompts, concepts or scenarios.
+131 have missing practice inputs. Symbolic questions can remain symbolic; numerical practice versions need supplied assumptions.
+
+COUNTS BY FLAG CATEGORY
+Multiple asks; no follow-up label: 506
+Missing practice inputs: 131
+Missing context/materials: 112
+Invalid fragment: 37
+Likely merged prompts: 35
+Missing context: 15
+Conflicting inputs: 8
+Source clarification: 7
+Separate behavioral prompts: 7
+Answer text in question: 6
+Corrupted wording: 6
+Run-on wording: 3
+Unbalanced punctuation: 2
+Separate concepts: 2
+Duplicate after cleanup: 2
+Separate scenarios: 1
+Underdetermined numerical question: 1
+Ambiguous numerical wording: 1
+
+YOUR EXAMPLES
+F1205: What is the biggest challenge in valuing young startups?
+F0389: What are some common valuation multiples, where do you find their inputs, and when is each useful?
+  The original “Give examples...” was an instruction and could correctly end with a period. The revised version is a direct question.
+F0792: Wording simplified; flagged as underdetermined. Cost of debt and cost of equity do not uniquely specify the convertible coupon. Existing answer retained.
+F1348: Still flagged as merged. Accretion/dilution, cash preservation and candidate fit should be reviewed as separate prompts. The unrecorded brainteaser cannot be reconstructed from this text.
+F0112: Depreciation amount and X% tax rate remain unspecified and flagged.
+F0832: LBO recap remains flagged for missing inputs and holding period; no practice figures invented.
+
+ADDITIONAL PRIORITIES
+B0110, B0645, B0646, B0652, B0838, B0982: corrupted wording contains “Tell me about a time” where a sector or subject appears to be missing. Recover from source.
+B0413 and B0456: identical after cleanup; retained and flagged for source-aware consolidation.
+F0944 / B0564 and B0979 / B0980: potentially separated setup/question pairs; review together before combining.
+
+INTERPRETATION
+This is an editorial review, not a renewed verification of financial answers. Automated screens supported a full reading of the active inventory. Flags are review candidates, not declarations that the question is wrong. Missing-input flags distinguish incomplete practice cases from open-ended concepts where possible.
+Direct questions take question marks; instructions such as “Walk me through...” may correctly end with periods. Acronyms and proper names retain capitals.
+Some malformed source fragments remain flagged rather than being rewritten into invented questions.
+
+FILES
+Questions_to_Review.txt: grouped flags, question IDs, reasons, current wording and source labels. A question can appear in multiple sections.
+Question_Wording_Changes.txt: every before-and-after correction.
+question_wording_flags.json: machine-readable flags keyed by existing ID.

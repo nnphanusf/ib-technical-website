@@ -277,7 +277,7 @@ def tidy_punctuation(text):
     # "pitchbook., Which is higher" - two questions joined by a stray comma
     text = re.sub(r"([a-z])([.?!]),\s+([A-Z])", r"\1\2 \3", text)
     # "private company ?" / "Fintech ?"
-    text = re.sub(r"\s+([,.?!;:])", r"\1", text)
+    text = re.sub(r"\s+([,?!;:]|\.(?!\d))", r"\1", text)
     # "5x....what" - keep the ellipsis, drop the extra stops
     text = re.sub(r"\.{4,}", "...", text)
     text = re.sub(r"\s{2,}", " ", text).strip()
