@@ -27809,7 +27809,7 @@
     },
     {
       "question_id": "F1338",
-      "question": "Why DCF can be not useful (which scenarios) Why you over any other candidate?",
+      "question": "When is a DCF less useful, and why?",
       "question_sources": [
         "PJT Partners M&A"
       ],
@@ -27819,7 +27819,7 @@
         "PJT Partners M&A Insights III/PJT M&A Interview Insight 17.png"
       ],
       "answer_type": "Concept explanation / solution framework",
-      "answer": "Value equals the present value of expected cash flows. For an operating company, forecast FCFF from revenue, margins, taxes, reinvestment and working capital, discount at WACC, and add a consistently estimated terminal value. EV = sum[FCFF_t/(1+WACC)^t] + TV_N/(1+WACC)^N. Bridge to equity by adding excess cash/non-operating assets and subtracting debt, preferred claims and NCI; divide by diluted shares if needed. For a tree or other asset, forecast sale proceeds less maintenance, taxes and reinvestment over its actual economic life. A level end-of-year perpetuity is C/r; a growing one is next-period C/(r-g). Cash flow today is not the same as next-period cash flow.",
+      "answer": "A DCF is less useful when you cannot make credible forecasts of future cash flows or when a standard going-concern model does not fit the business. Examples include:\n\n1. Early-stage or pre-revenue companies: revenue, margins, funding needs and survival are highly uncertain. Use probability-weighted scenarios and milestones; do not assume profitability is guaranteed.\n2. Highly cyclical or commodity-driven businesses: peak or trough earnings can distort forecasts and terminal value. Model a full cycle, normalize margins and test different commodity prices.\n3. Distressed or liquidating companies: a standard going-concern DCF can overstate value if it ignores failure, restructuring costs or asset sales. Incorporate those scenarios and compare with liquidation/recovery values.\n4. Banks and insurers: a conventional FCFF/WACC model is often a poor fit because debt is part of operations and reinvestment is difficult to define. Equity-based approaches, such as dividends or distributable cash flow discounted at the cost of equity, are often more appropriate.\n5. Businesses whose estimated value depends overwhelmingly on uncertain terminal assumptions: small changes in long-term margins, WACC or terminal growth can cause large valuation swings. Use sensitivity analysis and cross-check against suitable market evidence.\n\nNegative near-term cash flow alone does not make a DCF invalid. The issue is whether the assumptions are defensible and the model reflects the risks; comparable-company multiples also require judgment and are not automatically more reliable.",
       "notes": [],
       "topic": "dcf",
       "original_question_ids": [

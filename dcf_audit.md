@@ -270,3 +270,9 @@ included 9 advanced-valuation cards; those were re-read here as part of the full
 correct. Remaining unaudited topics: Enterprise & Equity Value (100), Accretion / Dilution (58),
 Merger Model & M&A (116), LBO & Private Equity (109), Debt/Credit & Restructuring (261),
 Valuation & Comps (153), and the non-technical topics.
+
+## Follow-up correction — F1338 (October 15, 2026)
+
+The previously noted generic F1338 answer has now been replaced with scenarios explaining when a DCF is less useful: uncertain early-stage forecasts, cyclicality, distress, financial institutions and sensitivity to terminal assumptions. Negative near-term cash flow alone does not invalidate a DCF. Removed the unrelated “Why you over any other candidate?” fragment from the question and synchronized its text copies. This resolves this one prior incomplete-answer finding; it does not change the original audit's error count or claim to resolve other incomplete cards.
+
+The old answer described general DCF mechanics rather than the requested limitations. The bank-model distinction is supported by [Damodaran's financial-service-company notes](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/littlebook/financialsvccompanies.htm); the distress qualification is supported by [his distress-valuation discussion](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/valquestions/distresspaper.htm).

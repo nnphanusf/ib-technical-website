@@ -7587,7 +7587,7 @@ Sources: PJT Partners M&A
 F1337. Compare EBIT and EBITDA multiples.
 Sources: PJT Partners M&A
 
-F1338. Why DCF can be not useful (which scenarios) Why you over any other candidate?
+F1338. When is a DCF less useful, and why?
 Sources: PJT Partners M&A
 
 F1339. How would you value Twitter? Discuss the DCF forecast period, mid-year convention and terminal value method.
