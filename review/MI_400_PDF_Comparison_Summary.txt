@@ -1,0 +1,38 @@
+PDF ANSWER COMPARISON AND STATEMENT FORMATTING
+16 October 2026
+
+SOURCE
+M&I 2025 400 IB Questions-2.pdf, 207 pages. Freshly extracted from the PDF in the question-bank folder; checked every guide-tagged card against its source references. PDF navigation, page headers/footers and section introductions are excluded from answer text. Whitespace is normalized; mathematical symbols, words and punctuation are otherwise compared exactly. Bold opening words accidentally included in extracted question headings were restored to their answer blocks. Pages 60–61 (F1972) and 72 were also inspected visually.
+
+RESULT BEFORE THIS TURN'S FORMATTING
+340 technical answers:
+  301 match the PDF wording after ignoring whitespace.
+    3 differ only in apostrophe/dash typography: F2088, F2089, F2140.
+    1 combines two complete guide answers: F0116 (pages 95 and 99).
+   35 contain rewritten/corrected wording rather than the guide's original answer.
+44 behavioral answers:
+   All 44 use prepared response frameworks; none is verbatim from the PDF.
+
+The 35 rewritten technical answers include F1950 (cash-flow timing), F2019 (historical/projected metrics), F2061 (risk-free benchmark wording), and 32 answers labeled as prepared model answers. Difference from the PDF does not itself mean an answer is wrong. Conversely, copying the PDF does not independently establish correctness. Previously flagged concerns such as F2031, F2083 and F2135 also match the guide's original wording and remain review issues.
+F1972 MATCHES THE GUIDE (pages 60–61).
+
+COVERAGE
+All 340 technical + 44 behavioral cards in “IB Fundamentals (M&I 400)” were compared. Their stored references cover 399 of the PDF's 400 numbered entries because some cards consolidate multiple entries. The remaining entry is page 45, “What is the status of this deal? Has it closed?” (master ID F1945); it has no active card/source mapping in this collection. It was not silently added.
+
+FORMATTING CHANGES
+25 answers were reformatted: 21 guide-tagged answers and 4 other three-statement answers. Income statement, cash flow statement and balance sheet sections now have separate paragraphs; introductions, intuition and repeated scenario steps retain their own paragraphs where appropriate. The website now respects authored blank lines instead of collapsing them, including the many answers already formatted in earlier work.
+23 changes add paragraph boundaries only. F1978 and F1980 also make tiny grammatical changes to split compound sentences into readable statement paragraphs. No figures, formulas or financial assumptions were changed, and no answer was restored from the PDF.
+After these two sentence-join edits, 299 technical answers remain exact wording matches (whitespace ignored); F1978 and F1980 are formatting-only adaptations of the other two originally matching answers.
+
+VALIDATION
+All 3,238 card IDs, question wording, sources, labels and non-answer card metadata are unchanged. Rendered text preservation was checked for every card against the proposed source; separate sections were checked for single- and multi-step examples. F1972's five paragraphs (introduction, IS, CFS, BS, intuition) were rendered and visually inspected in a browser.
+
+FILES
+MI_400_PDF_Comparison_Details.txt — each of the 384 card results; full side-by-side current/PDF text for differences.
+MI_400_PDF_Comparison.json — comparison ledger, references and current answers.
+
+REFORMATTED IDS
+F0112, F0905, F1714, F1873, F1963, F1970, F1971, F1972, F1973, F1974, F1975, F1976, F1977, F1978, F1979, F1980, F1981, F1982, F1983, F1984, F1985, F1986, F1987, F2009, F2155
+
+REWRITTEN TECHNICAL IDS
+F0007, F0017, F0021, F0037, F0091, F0113, F0130, F0238, F0383, F0461, F1114, F1408, F1939, F1940, F1941, F1942, F1943, F1948, F1950, F2000, F2001, F2004, F2005, F2006, F2019, F2038, F2061, F2093, F2117, F2151, F2154, F2212, F2222, F2236, F2246

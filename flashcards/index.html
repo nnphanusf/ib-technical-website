@@ -1024,7 +1024,14 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   }
 
   function paragraphs(text) {
-    var ss = splitSentences(String(text || "").replace(/\s+/g, " ").trim());
+    var raw = String(text || "").trim();
+    // Preserve authored statement sections, including multi-step walkthroughs.
+    if (/\n\s*\n/.test(raw)) {
+      return raw.split(/\n\s*\n/).map(function (p) {
+        return p.replace(/\s+/g, " ").trim();
+      }).filter(Boolean);
+    }
+    var ss = splitSentences(raw.replace(/\s+/g, " "));
     var paras = [], cur = [], len = 0;
     ss.forEach(function (sent) {
       /* a bulleted step reads as its own paragraph, as the guide answers are written */
