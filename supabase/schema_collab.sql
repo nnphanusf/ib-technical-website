@@ -71,8 +71,12 @@ create policy "teachers read history" on public.card_override_history
 create or replace function public.log_card_override()
 returns trigger language plpgsql security definer set search_path = public as $$
 begin
-  insert into public.card_override_history (card_id, question, answer, sources, origin, edited_by)
-  values (new.card_id, new.question, new.answer, new.sources, new.origin, auth.uid());
+  -- On an update, file the version being replaced. On the first edit there is
+  -- nothing to file: the original wording is still in the deck file.
+  if TG_OP = 'UPDATE' then
+    insert into public.card_override_history (card_id, question, answer, sources, origin, edited_by)
+    values (old.card_id, old.question, old.answer, old.sources, old.origin, old.edited_by);
+  end if;
   new.updated_at := now();
   new.edited_by := auth.uid();
   return new;
@@ -102,10 +106,14 @@ drop policy if exists "own highlights" on public.highlights;
 create policy "own highlights" on public.highlights
   for all using (user_id = auth.uid()) with check (user_id = auth.uid());
 
+drop policy if exists "teachers clear reports" on public.card_reports;
+create policy "teachers clear reports" on public.card_reports
+  for delete using (public.is_teacher());
+
 -- --------------------------------------------------------------- grants --
 -- Without these every request comes back 42501, whatever the policies say.
 grant select, insert                 on public.card_reports          to authenticated;
-grant update                         on public.card_reports          to authenticated;
+grant update, delete                 on public.card_reports          to authenticated;
 grant select, insert, update, delete on public.card_overrides        to authenticated;
 grant select                         on public.card_override_history to authenticated;
 grant select, insert, update, delete on public.highlights            to authenticated;
