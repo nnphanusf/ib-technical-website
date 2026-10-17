@@ -58,7 +58,10 @@ create policy "teachers update profiles" on public.profiles
   for update using (public.is_teacher()) with check (public.is_teacher());
 
 -- The class view carries the tag, so the teacher can group by cohort.
-create or replace view public.class_summary with (security_invoker = on) as
+-- Dropped and recreated rather than replaced: "create or replace view" can only
+-- add columns at the end, and tag belongs beside the other profile fields.
+drop view if exists public.class_summary;
+create view public.class_summary with (security_invoker = on) as
 select
   p.id,
   p.name,
