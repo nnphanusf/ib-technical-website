@@ -1,5 +1,5 @@
 -- Reporting, teacher edits and highlights
--- Run after schema.sql, in the project's SQL editor. Safe to re-run.
+-- Run after 01_core.sql, in the project's SQL editor. Safe to re-run.
 
 -- ------------------------------------------------------------- reports --
 -- A student flags a card; teachers see the queue.

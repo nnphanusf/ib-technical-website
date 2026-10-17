@@ -16,7 +16,7 @@ Roughly 15 minutes, no cost: the Supabase free tier covers a class comfortably.
 ## 2. Create the tables
 
 1. Open **SQL Editor** → **New query**
-2. Paste the whole of [`schema.sql`](schema.sql) and press **Run**
+2. Paste the whole of [`01_core.sql`](01_core.sql) and press **Run**
 
 That creates the profiles and progress tables, the row-level-security policies,
 the class summary view, and the signup trigger that checks registration codes.
@@ -49,7 +49,7 @@ from browser storage to Supabase on its own.
 
 That key belongs in the page — it is designed to be public, and carries no more
 privilege than an anonymous visitor. The row-level security policies in
-`schema.sql` are what protect the data, not the key.
+`01_core.sql` are what protect the data, not the key.
 
 ## 5. Check it
 

@@ -1,9 +1,9 @@
 -- Scoped editors: who an editor may see and change
--- Run after schema_access.sql. Safe to re-run.
+-- Run after 03_access.sql. Safe to re-run.
 --
--- JLA2026@ creates the owner: sees everyone, every code, every editor.
--- WEditorFTP and BTNFF_TCH create scoped editors: each sees only the cohorts
--- in their scope, and can only hand out tags from that scope.
+-- The code marked is_owner creates the owner: sees everyone, every code,
+-- every editor. A code carrying an admin_scope creates a scoped editor, who
+-- sees only the cohorts in that scope and can only hand out tags from it.
 -- All of it is enforced by row level security, not by hiding buttons.
 
 -- ------------------------------------------------- people carry several tags --
@@ -18,23 +18,14 @@ update public.profiles
 alter table public.access_codes add column if not exists admin_scope text[] not null default '{}';
 alter table public.access_codes add column if not exists is_owner    boolean not null default false;
 
-update public.access_codes set admin_scope = array['USF Finance Talent Pathway', 'FTP Teacher']
- where code = 'WEditorFTP';
-update public.access_codes set admin_scope = array['BTNFF Fellow', 'BTNFF Mentor/Editor']
- where code = 'BTNFF_TCH';
-update public.access_codes set is_owner = true, admin_scope = '{}'
- where code = 'JLA2026@';
+-- Which code grants which scope, and which one is the owner, is set in
+-- seed_codes.local.sql rather than here.
 
 -- whoever already holds the owner code keeps the rights
 update public.profiles p set is_owner = true
  where p.role = 'teacher' and 'My Love' = any (p.tags);
 
--- Accounts made before tags existed have no tag, so the line above finds
--- nobody. Name yourself here, or this migration leaves the school with no
--- owner and the access codes visible to no one.
-update public.profiles
-   set is_owner = true, role = 'teacher', tags = array['My Love']
- where email = 'nnphan@usf.edu';
+-- Naming the owner is also in seed_codes.local.sql: it needs a real address.
 
 -- Editors who were promoted before scopes existed get one from their tags.
 update public.profiles p
@@ -94,7 +85,7 @@ declare
 begin
   -- Promoting someone to editor has to give them a scope, or they would sign
   -- in able to see nobody. Derive it from the codes that grant their tags:
-  -- "FTP Teacher" comes from WEditorFTP, so it carries that code's scope.
+  -- an editor tag carries the scope of the code that grants it.
   if new.role = 'teacher' and coalesce(array_length(new.admin_scope, 1), 0) = 0 then
     select coalesce(array_agg(distinct sc), '{}')
       into new.admin_scope

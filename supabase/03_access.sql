@@ -1,5 +1,5 @@
 -- Access codes, cohort tags, and hiding a card
--- Run after schema.sql and schema_collab.sql. Safe to re-run.
+-- Run after 01_core.sql and 02_collab.sql. Safe to re-run.
 
 -- --------------------------------------------------------- cohort tags --
 alter table public.profiles add column if not exists tag text;
@@ -21,17 +21,9 @@ drop policy if exists "teachers manage codes" on public.access_codes;
 create policy "teachers manage codes" on public.access_codes
   for all using (public.is_teacher()) with check (public.is_teacher());
 
-insert into public.access_codes (code, tag, role, note) values
-  ('USFFTP2026', 'USF Finance Talent Pathway', 'student', 'Cohort 2026'),
-  ('USFFTP',     'USF Finance Talent Pathway', 'student', null),
-  ('WEditorFTP', 'FTP Teacher',                'teacher', 'Editing rights'),
-  ('JLA2026',    'My Love',                    'student', null),
-  ('JLA2026@',   'My Love',                    'teacher', 'The original teacher code'),
-  ('BTNFF_ST',   'BTNFF Fellow',               'student', null),
-  ('BTNFF_TCH',  'BTNFF Mentor/Editor',        'teacher', 'Editing rights'),
-  ('INV_ONLY',   'By Personal Invitation',     'student', null)
-on conflict (code) do update
-  set tag = excluded.tag, role = excluded.role, note = excluded.note, active = true;
+-- Codes live in seed_codes.local.sql, which is deliberately not in this
+-- repository: anyone holding one can register. Copy seed_codes.example.sql,
+-- put your real codes in it, and run it after this file.
 
 -- The signup gate now reads that table instead of two fixed codes.
 create or replace function public.handle_new_user()

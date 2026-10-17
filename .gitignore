@@ -9,3 +9,10 @@
 # Python
 __pycache__/
 *.pyc
+
+# Real registration codes and anything else private
+supabase/seed_codes.local.sql
+*.local.sql
+
+# Source material that is not ours to publish
+*.pdf

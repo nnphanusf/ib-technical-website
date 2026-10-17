@@ -17,12 +17,13 @@ import json
 import os
 import re
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.dirname(HERE)
+HERE = os.path.dirname(os.path.abspath(__file__))     # build/
+ROOT = os.path.dirname(HERE)
+SRC = os.path.join(ROOT, "data")
 TECH_JSON = os.path.join(SRC, "Technical_Questions_and_Answers.json")
-DATA_JSON = os.path.join(HERE, "data.json")
+DATA_JSON = os.path.join(ROOT, "flashcards", "data.json")
 TXT = os.path.join(SRC, "Technical_Questions_and_Answers.txt")
-REVIEW = os.path.join(SRC, "review")
+REVIEW = os.path.join(ROOT, "docs", "review")
 CSV_OUT = os.path.join(REVIEW, "all_questions.csv")
 
 RULE = "-" * 88

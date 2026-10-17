@@ -12,11 +12,8 @@ create table if not exists public.app_config (
 );
 alter table public.app_config enable row level security;
 
-insert into public.app_config (key, value) values
-  ('join_code',    'JLA2026'),
-  ('join_code_usf', 'USFFTP2026'),
-  ('teacher_code', 'JLA2026@')
-on conflict (key) do update set value = excluded.value;
+-- The codes themselves are not in this repository. Apply seed_codes.local.sql
+-- (kept out of git) after 03_access.sql to create them.
 
 -- ------------------------------------------------------------- profiles --
 create table if not exists public.profiles (

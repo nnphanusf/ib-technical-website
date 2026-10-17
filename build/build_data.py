@@ -17,11 +17,13 @@ import os
 import re
 from collections import Counter
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.dirname(HERE)
+HERE = os.path.dirname(os.path.abspath(__file__))     # build/
+ROOT = os.path.dirname(HERE)                          # the repository
+SRC = os.path.join(ROOT, "data")                      # the question bank
+SITE = os.path.join(ROOT, "flashcards")               # what gets served
 TECH_JSON = os.path.join(SRC, "Technical_Questions_and_Answers.json")
 BEHAV_TXT = os.path.join(SRC, "IB_Behavioral_Questions.txt")
-OUT = os.path.join(HERE, "data.json")
+OUT = os.path.join(SITE, "data.json")
 
 # ---------------------------------------------------------------- firms ----
 
@@ -1477,7 +1479,7 @@ def main():
     with open(OUT, "w") as fh:
         fh.write(blob)
     # data.js lets index.html open straight from the filesystem (no server, no CORS)
-    with open(os.path.join(HERE, "data.js"), "w") as fh:
+    with open(os.path.join(SITE, "data.js"), "w") as fh:
         fh.write("window.DECK=" + blob + ";\n")
 
     print(f"wrote {OUT}  {os.path.getsize(OUT)/1e6:.2f} MB  {len(cards)} cards")
