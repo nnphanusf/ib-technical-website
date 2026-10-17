@@ -172,8 +172,8 @@ a{color:var(--accent)}
 .rep-acts{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
 .edit-grid{display:flex;flex-direction:column;gap:12px}
 .edit-grid label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:600;color:var(--ink-2)}
-.edit-grid textarea,.edit-grid input{font-family:inherit;font-size:14px;padding:9px 11px;border:1px solid var(--line-2);border-radius:10px;background:var(--panel-2);color:var(--ink);resize:vertical;width:100%}
-.edit-grid textarea:focus,.edit-grid input:focus{outline:none;border-color:var(--accent);background:var(--panel)}
+.edit-grid textarea,.edit-grid input,.edit-grid select{font-family:inherit;font-size:14px;padding:9px 11px;border:1px solid var(--line-2);border-radius:10px;background:var(--panel-2);color:var(--ink);resize:vertical;width:100%}
+.edit-grid textarea:focus,.edit-grid input:focus,.edit-grid select:focus{outline:none;border-color:var(--accent);background:var(--panel)}
 .dlg-wide{width:min(640px,100%)}
 .act.on.flag{color:var(--warn);background:var(--warn-soft)}
 .act svg{width:16px;height:16px}
@@ -372,7 +372,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   <h3>Access for <span id="personName"></span></h3>
   <p class="note" style="margin:0 0 10px" id="personEmail"></p>
   <div class="edit-grid">
-    <label>Cohort tag<input id="personTag" type="text" list="tagList" placeholder="e.g. USF Finance Talent Pathway"></label>
+    <label>Cohort tag<select id="personTag"></select></label>
+    <label id="personTagNewWrap" hidden>New tag name<input id="personTagNew" type="text" placeholder="e.g. BTNFF Cohort 2"></label>
     <label>Rights
       <select id="personRole">
         <option value="student">Student — studies the deck</option>
@@ -380,7 +381,6 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       </select>
     </label>
   </div>
-  <datalist id="tagList"></datalist>
   <div style="margin-top:14px;display:flex;gap:8px;justify-content:flex-end">
     <button class="btn" value="cancel">Cancel</button>
     <button class="btn primary" value="save">Save</button>
@@ -917,18 +917,40 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 
   var classTag = null, knownTags = [], personFor = null, codeFor = null;
 
+  var codeTags = [];
+
+  function allTags() {
+    var out = [];
+    codeTags.concat(knownTags).forEach(function (t) {
+      if (t && out.indexOf(t) === -1) out.push(t);
+    });
+    return out.sort();
+  }
+
   function openPerson(p) {
     $("#personName").textContent = p.name || p.email;
     $("#personEmail").textContent = p.email + (p.tag ? " · " + p.tag : "");
-    $("#personTag").value = p.tag || "";
     $("#personRole").value = p.role || "student";
-    $("#tagList").innerHTML = knownTags.map(function (t) { return '<option value="' + esc(t) + '">'; }).join("");
+    var cur = p.tag || "";
+    $("#personTag").innerHTML = '<option value="">No tag</option>' +
+      allTags().map(function (t) {
+        return '<option value="' + esc(t) + '"' + (t === cur ? " selected" : "") + ">" + esc(t) + "</option>";
+      }).join("") + '<option value="__new__">Something else…</option>';
+    $("#personTagNewWrap").hidden = true;
+    $("#personTagNew").value = "";
     personFor = p;
     $("#personDlg").showModal();
   }
+  $("#personTag").addEventListener("change", function () {
+    var custom = $("#personTag").value === "__new__";
+    $("#personTagNewWrap").hidden = !custom;
+    if (custom) $("#personTagNew").focus();
+  });
   $("#personDlg").addEventListener("close", function () {
     if ($("#personDlg").returnValue !== "save" || !personFor) return;
-    var p = personFor, patch = {tag: $("#personTag").value.trim() || null, role: $("#personRole").value};
+    var picked = $("#personTag").value;
+    if (picked === "__new__") picked = $("#personTagNew").value.trim();
+    var p = personFor, patch = {tag: picked || null, role: $("#personRole").value};
     personFor = null;
     cloud.from("profiles").update(patch).eq("id", p.id).then(function (r) {
       if (r && r.error) return alert2("Could not update access: " + r.error.message);
@@ -976,6 +998,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         return;
       }
       var rows = r.data || [];
+      codeTags = rows.map(function (c) { return c.tag; });
       box.innerHTML = '<table class="codes"><tr><th>Code</th><th>Tag</th><th>Rights</th><th></th></tr>' +
         rows.map(function (c) {
           return '<tr class="' + (c.active ? "" : "off") + '"><td><code>' + esc(c.code) + "</code></td>" +
