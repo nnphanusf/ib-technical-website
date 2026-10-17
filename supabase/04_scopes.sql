@@ -20,7 +20,21 @@ begin
   end if;
 end $$;
 
+-- The view, the policies and the helper all read the old array column, so they
+-- have to go before it does. Everything here is recreated further down.
 drop view if exists public.class_summary;
+
+drop policy if exists "profiles visible" on public.profiles;
+drop policy if exists "profiles editable" on public.profiles;
+drop policy if exists "profiles readable by owner or teacher" on public.profiles;
+drop policy if exists "read own profile" on public.profiles;
+drop policy if exists "profiles updatable by owner" on public.profiles;
+drop policy if exists "update own profile" on public.profiles;
+drop policy if exists "teachers update profiles" on public.profiles;
+drop policy if exists "progress readable" on public.progress;
+drop policy if exists "progress readable by owner or teacher" on public.progress;
+drop function if exists public.can_see(text[]);
+
 alter table public.profiles drop column if exists tags;
 
 alter table public.access_codes add column if not exists admin_scope text[] not null default '{}';
