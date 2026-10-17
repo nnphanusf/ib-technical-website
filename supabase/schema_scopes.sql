@@ -29,6 +29,13 @@ update public.access_codes set is_owner = true, admin_scope = '{}'
 update public.profiles p set is_owner = true
  where p.role = 'teacher' and 'My Love' = any (p.tags);
 
+-- Accounts made before tags existed have no tag, so the line above finds
+-- nobody. Name yourself here, or this migration leaves the school with no
+-- owner and the access codes visible to no one.
+update public.profiles
+   set is_owner = true, role = 'teacher', tags = array['My Love']
+ where email = 'nnphan@usf.edu';
+
 -- --------------------------------------------------------------- helpers --
 create or replace function public.is_owner()
 returns boolean language sql stable security definer set search_path = public as $$
