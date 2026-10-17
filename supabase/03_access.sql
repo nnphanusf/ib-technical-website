@@ -2,6 +2,7 @@
 -- Run after 01_core.sql and 02_collab.sql. Safe to re-run.
 
 -- --------------------------------------------------------- cohort tags --
+-- One tag per person: it names the cohort they belong to.
 alter table public.profiles add column if not exists tag text;
 
 -- Each registration code carries the cohort tag it grants and whether it

@@ -23,5 +23,5 @@ on conflict (code) do update
 -- Name the owner. An account made before tags existed has none, so the owner
 -- flag has to be set by address.
 update public.profiles
-   set is_owner = true, role = 'teacher', tags = array['Owner']
+   set is_owner = true, role = 'teacher', tag = 'Owner'
  where email = 'you@example.com';
