@@ -153,6 +153,11 @@ a{color:var(--accent)}
 .act.report:hover{background:var(--alarm-soft);color:var(--alarm)}
 .act.report .dotlit{fill:var(--alarm)}
 .tag.edited{background:var(--accent-soft);color:var(--accent)}
+.tagpick{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line-2);border-radius:10px;padding:8px 10px;background:var(--panel-2)}
+.tagpick-row{flex-direction:row!important;align-items:center;gap:8px;font-weight:400;font-size:13.5px;color:var(--ink)}
+.tagpick-row input{width:auto}
+.tagpick-row.locked{color:var(--muted)}
+.tagpick-row span{font-size:11.5px}
 .cohorts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
 .cohorts button{border:1px solid var(--line-2);background:var(--panel);border-radius:999px;padding:5px 11px;font-size:12px;cursor:pointer;color:var(--ink-2)}
 .cohorts button.on{background:var(--accent);border-color:var(--accent);color:var(--paper);font-weight:600}
@@ -372,8 +377,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   <h3>Access for <span id="personName"></span></h3>
   <p class="note" style="margin:0 0 10px" id="personEmail"></p>
   <div class="edit-grid">
-    <label>Cohort tag<select id="personTag"></select></label>
-    <label id="personTagNewWrap" hidden>New tag name<input id="personTagNew" type="text" placeholder="e.g. BTNFF Cohort 2"></label>
+    <label>Cohort tags<div id="personTags" class="tagpick"></div></label>
+    <label id="personTagNewWrap" hidden>Add a new tag<input id="personTagNew" type="text" placeholder="e.g. BTNFF Cohort 2"></label>
     <label>Rights
       <select id="personRole">
         <option value="student">Student — studies the deck</option>
@@ -663,6 +668,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     persistUI();
     user = null;
     role = "student";
+    isOwner = false;
+    myScope = [];
     save = blankSave();
     whoBtn.hidden = true;
     pomoBox.hidden = true;
@@ -720,6 +727,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
      follow the student to any device. With it empty, everything above keeps
      working against localStorage and none of this runs. */
   var cloud = null, cloudReady = false, dirtyIds = {}, cloudTimer = null;
+  var isOwner = false, myScope = [];
   var alertBox = $("#alert");
 
   function cloudTrouble(err) {
@@ -850,12 +858,22 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     loadCloudSave();
     loadOverrides();
 
-    cloud.from("profiles").select("name,email,role").eq("id", session.user.id).maybeSingle()
+    cloud.from("profiles").select("name,email,role,tags,admin_scope,is_owner").eq("id", session.user.id).maybeSingle()
       .then(function (r) {
-        if (r && r.error) { cloudTrouble(r.error); return; }
+        if (r && r.error) {
+          alertBox.innerHTML = "Your access level could not be read." +
+            "<span>" + esc(r.error.message || "") +
+            " — the deck works, but editing rights and cohorts will not show until the latest " +
+            "SQL in supabase/ has been run.</span>";
+          alertBox.hidden = false;
+          return;
+        }
         var prof = (r && r.data) || {};
         role = prof.role || "student";
-        whoName.textContent = (prof.name || session.user.email) + (role === "teacher" ? " · teacher" : "");
+        isOwner = !!prof.is_owner;
+        myScope = prof.admin_scope || [];
+        whoName.textContent = (prof.name || session.user.email) +
+          (isOwner ? " · owner" : role === "teacher" ? " · editor" : "");
         $("#tab-Class").hidden = role !== "teacher";
         $("#tab-Reports").hidden = role !== "teacher";
         if (role !== "teacher" && (ui.tab === "Class" || ui.tab === "Reports")) ui.tab = "Technical";
@@ -927,34 +945,42 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     return out.sort();
   }
 
+  function editableTags() {
+    return isOwner ? allTags() : myScope.slice().sort();
+  }
+
   function openPerson(p) {
+    var has = p.tags || [];
     $("#personName").textContent = p.name || p.email;
-    $("#personEmail").textContent = p.email + (p.tag ? " · " + p.tag : "");
+    $("#personEmail").textContent = p.email;
     $("#personRole").value = p.role || "student";
-    var cur = p.tag || "";
-    $("#personTag").innerHTML = '<option value="">No tag</option>' +
-      allTags().map(function (t) {
-        return '<option value="' + esc(t) + '"' + (t === cur ? " selected" : "") + ">" + esc(t) + "</option>";
-      }).join("") + '<option value="__new__">Something else…</option>';
-    $("#personTagNewWrap").hidden = true;
+    var list = editableTags();
+    has.forEach(function (t) { if (list.indexOf(t) === -1) list.push(t); });
+    $("#personTags").innerHTML = list.map(function (t) {
+      var mine = isOwner || myScope.indexOf(t) > -1;
+      return '<label class="tagpick-row' + (mine ? "" : " locked") + '">' +
+        '<input type="checkbox" value="' + esc(t) + '"' +
+        (has.indexOf(t) > -1 ? " checked" : "") + (mine ? "" : " disabled") + ">" +
+        esc(t) + (mine ? "" : " <span>— outside your scope</span>") + "</label>";
+    }).join("") || '<div class="empty">No tags available to you.</div>';
+    $("#personTagNewWrap").hidden = !isOwner;
     $("#personTagNew").value = "";
+    $("#personRole").disabled = false;
     personFor = p;
     $("#personDlg").showModal();
   }
-  $("#personTag").addEventListener("change", function () {
-    var custom = $("#personTag").value === "__new__";
-    $("#personTagNewWrap").hidden = !custom;
-    if (custom) $("#personTagNew").focus();
-  });
   $("#personDlg").addEventListener("close", function () {
     if ($("#personDlg").returnValue !== "save" || !personFor) return;
-    var picked = $("#personTag").value;
-    if (picked === "__new__") picked = $("#personTagNew").value.trim();
-    var p = personFor, patch = {tag: picked || null, role: $("#personRole").value};
+    var chosen = [].map.call($("#personTags").querySelectorAll("input:checked"), function (i) { return i.value; });
+    var extra = $("#personTagNew").value.trim();
+    if (extra && chosen.indexOf(extra) === -1) chosen.push(extra);
+    var p = personFor, patch = {tags: chosen, role: $("#personRole").value};
     personFor = null;
-    cloud.from("profiles").update(patch).eq("id", p.id).then(function (r) {
+    cloud.from("profiles").update(patch).eq("id", p.id).select("tags,role").then(function (r) {
       if (r && r.error) return alert2("Could not update access: " + r.error.message);
-      alert2((p.name || p.email) + " is now a " + patch.role + (patch.tag ? ", tagged " + patch.tag : "") + ".");
+      var saved = (r.data && r.data[0]) || patch;
+      alert2((p.name || p.email) + " is now a " + saved.role +
+        ((saved.tags || []).length ? ", tagged " + saved.tags.join(", ") : ", with no tag") + ".");
       renderClassCloud();
     });
   });
@@ -1017,14 +1043,22 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     cloud.from("class_summary").select("*").then(function (r) {
       var all = r.data || [];
       knownTags = [];
-      all.forEach(function (x) { if (x.tag && knownTags.indexOf(x.tag) === -1) knownTags.push(x.tag); });
+      all.forEach(function (x) {
+        (x.tags || []).forEach(function (t) { if (knownTags.indexOf(t) === -1) knownTags.push(t); });
+      });
       var rows = all.filter(function (x) { return x.role !== "teacher"; });
-      if (classTag) rows = rows.filter(function (x) { return (x.tag || "No tag") === classTag; });
+      if (classTag) {
+        rows = rows.filter(function (x) {
+          return classTag === "No tag" ? !(x.tags || []).length : (x.tags || []).indexOf(classTag) > -1;
+        });
+      }
       var total = DATA.cards.length;
       var sumMastered = rows.reduce(function (a, x) { return a + (x.mastered || 0); }, 0);
       var avg = rows.length ? sumMastered / rows.length / total * 100 : 0;
 
-      var h = '<div class="panel"><h3>Class summary</h3><div class="stats">' +
+      var h = '<div class="panel"><h3>Class summary</h3>' +
+        '<div style="margin:-6px 0 12px"><button class="btn" data-act="class-refresh">Refresh</button></div>' +
+        '<div class="stats">' +
         '<div class="stat"><div class="v">' + rows.length + '</div><div class="k">Students registered</div></div>' +
         '<div class="stat"><div class="v">' + avg.toFixed(1) + '%</div><div class="k">Average completion</div></div>' +
         '<div class="stat"><div class="v">' + sumMastered + '</div><div class="k">Cards mastered in total</div></div>' +
@@ -1034,8 +1068,9 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       var tagCount = {};
       all.forEach(function (x) {
         if (x.role === "teacher") return;
-        var k = x.tag || "No tag";
-        tagCount[k] = (tagCount[k] || 0) + 1;
+        var ts = (x.tags || []);
+        if (!ts.length) tagCount["No tag"] = (tagCount["No tag"] || 0) + 1;
+        ts.forEach(function (t) { tagCount[t] = (tagCount[t] || 0) + 1; });
       });
       h += '<div class="panel"><h3>Students</h3><div class="cohorts">' +
         '<button data-act="cohort" data-tag="" class="' + (classTag ? "" : "on") + '">Everyone \u00b7 ' +
@@ -1052,7 +1087,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
           var pct = (x.mastered || 0) / total * 100;
           return '<div class="bar"><span class="name">' + esc(x.name || x.email) +
             '<button class="rowbtn" data-act="person" data-id="' + esc(x.id) + '">' +
-            esc(x.tag || "no tag") + " \u00b7 edit</button>" +
+            esc((x.tags || []).join(", ") || "no tag") + " \u00b7 edit</button>" +
             '<span class="sub">' + esc(x.email) + ' · ' + (x.seen || 0) + ' seen · ' +
             (x.flagged || 0) + ' flagged · ' + (x.notes || 0) + ' notes' +
             (x.last_studied ? ' · last studied ' + new Date(x.last_studied).toLocaleDateString() : "") +
@@ -1072,13 +1107,19 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
                 esc(x.email) + "</span></span></div>";
             }).join("")
           : '<div class="empty">No teacher profiles yet.</div>') + "</div>";
-      h += '<div class="panel"><h3>Access codes</h3><div id="codesBox"><div class="empty">Loading…</div></div>' +
-        '<p class="note">A code decides the tag and the rights someone gets when they register with it. ' +
-        "Close a code to stop new registrations without affecting anyone who already used it.</p></div>";
+      if (isOwner) {
+        h += '<div class="panel"><h3>Access codes</h3><div id="codesBox"><div class="empty">Loading…</div></div>' +
+          '<p class="note">A code decides the tag and the rights someone gets when they register with it. ' +
+          "Close a code to stop new registrations without affecting anyone who already used it.</p></div>";
+      } else {
+        h += '<div class="panel"><h3>Your scope</h3><p class="note">You see and edit ' +
+          (myScope.length ? esc(myScope.join(" and ")) : "no cohorts yet") +
+          ". Other cohorts, their learners and the access codes belong to the owner.</p></div>";
+      }
 
       main.innerHTML = h;
       main.__people = all;
-      codesPanel();
+      if (isOwner) codesPanel();
 
       /* second pass: what the class flags most */
       cloud.from("progress").select("card_id").eq("flagged", true).then(function (f) {
@@ -1659,6 +1700,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     else if (a === "rep-done") { setReportStatus(b.dataset.rid, "resolved"); }
     else if (a === "rep-drop") { setReportStatus(b.dataset.rid, "dismissed"); }
     else if (a === "cohort") { classTag = b.dataset.tag || null; renderClassCloud(); }
+    else if (a === "class-refresh") { refreshRights(); renderClassCloud(); }
     else if (a === "person") {
       var people = main.__people || [];
       var who2 = people.filter(function (x) { return x.id === b.dataset.id; })[0];
@@ -1907,6 +1949,37 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       alert2("Reverted " + id + " to the original text.");
       render();
     });
+  });
+
+  /* Rights can change while someone is signed in — a tag added, an editor
+     promoted. Re-read them whenever the window comes back to the front, so a
+     change lands without anyone being told to reload. */
+  function refreshRights() {
+    if (!cloudReady || !user) return;
+    cloud.from("profiles").select("name,role,tags,admin_scope,is_owner").eq("id", user).maybeSingle()
+      .then(function (r) {
+        if (!r || r.error || !r.data) return;
+        var p = r.data;
+        var changed = (p.role || "student") !== role || !!p.is_owner !== isOwner ||
+          (p.admin_scope || []).join("|") !== myScope.join("|");
+        role = p.role || "student";
+        isOwner = !!p.is_owner;
+        myScope = p.admin_scope || [];
+        whoName.textContent = (p.name || "") + (isOwner ? " · owner" : role === "teacher" ? " · editor" : "");
+        $("#tab-Class").hidden = role !== "teacher";
+        $("#tab-Reports").hidden = !(cloudReady && role === "teacher");
+        if (role !== "teacher" && (ui.tab === "Class" || ui.tab === "Reports")) ui.tab = "Technical";
+        if (changed) {
+          alert2("Your access changed. The page is showing what you can see now.");
+          render();
+        } else if (ui.tab === "Class" || ui.tab === "Reports") {
+          render();
+        }
+      });
+  }
+  window.addEventListener("focus", function () {
+    refreshRights();
+    loadOverrides();
   });
 
   /* ---- the teacher queue ---- */
