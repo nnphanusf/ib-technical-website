@@ -18,6 +18,7 @@
   --accent:#006747; --accent-soft:#E2EFE9;
   --good:#007A60; --good-soft:#DEF1EC;
   --warn:#7C6A1E; --warn-soft:#F2EFDB;
+  --alarm:#D4453F; --alarm-soft:#FBE6E5;
   --dot:#DCE5E0;
   --shadow:0 1px 2px rgba(0,103,71,.08), 0 10px 26px -16px rgba(0,84,50,.40);
   --sans:"Quicksand",ui-rounded,-apple-system,"Segoe UI",sans-serif;
@@ -25,6 +26,7 @@
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --alarm:#FF8B86; --alarm-soft:#3A1E1D;
   --paper:#121E1A; --panel:#192A24; --panel-2:#20372E;
   --ink:#EDF2EE; --ink-2:#C2D3CB; --muted:#92A9A0;
   --line:#253B33; --line-2:#325245;
@@ -36,6 +38,7 @@
   color-scheme:dark;
 }}
 :root[data-theme="dark"]{
+  --alarm:#FF8B86; --alarm-soft:#3A1E1D;
   --paper:#121E1A; --panel:#192A24; --panel-2:#20372E;
   --ink:#EDF2EE; --ink-2:#C2D3CB; --muted:#92A9A0;
   --line:#253B33; --line-2:#325245;
@@ -143,6 +146,22 @@ a{color:var(--accent)}
 .act{border:0;background:none;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;cursor:pointer;color:var(--muted)}
 .act:hover{background:var(--panel-2);color:var(--ink)}
 .act.on{color:var(--accent);background:var(--accent-soft)}
+.act.report{color:var(--alarm)}
+.act.report:hover{background:var(--alarm-soft);color:var(--alarm)}
+.act.report .dotlit{fill:var(--alarm)}
+.tag.edited{background:var(--accent-soft);color:var(--accent)}
+.rep{border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin-bottom:10px;background:var(--panel)}
+.rep.resolved{opacity:.55}
+.rep-top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.rep-top b{color:var(--ink);font-size:13px}
+.rep-q{font-family:var(--serif);font-size:15px;margin:7px 0 6px;line-height:1.45}
+.rep-why{font-size:13.5px;background:var(--alarm-soft);color:var(--ink);padding:8px 11px;border-radius:10px;white-space:pre-wrap}
+.rep-acts{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.edit-grid{display:flex;flex-direction:column;gap:12px}
+.edit-grid label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:600;color:var(--ink-2)}
+.edit-grid textarea,.edit-grid input{font-family:inherit;font-size:14px;padding:9px 11px;border:1px solid var(--line-2);border-radius:10px;background:var(--panel-2);color:var(--ink);resize:vertical;width:100%}
+.edit-grid textarea:focus,.edit-grid input:focus{outline:none;border-color:var(--accent);background:var(--panel)}
+.dlg-wide{width:min(640px,100%)}
 .act.on.flag{color:var(--warn);background:var(--warn-soft)}
 .act svg{width:16px;height:16px}
 .q{font-family:var(--serif);font-size:21px;line-height:1.4;padding:6px 18px 0;letter-spacing:-.005em}
@@ -262,6 +281,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       <button role="tab" id="tab-Behavioral" aria-selected="false">Behaviorals</button>
       <button role="tab" id="tab-Mastery" aria-selected="false">Mastery</button>
       <button role="tab" id="tab-Class" aria-selected="false" hidden>Class</button>
+      <button role="tab" id="tab-Reports" aria-selected="false" hidden>Reports</button>
     </div>
     <div class="grow"></div>
     <label class="search">
@@ -303,6 +323,36 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     <button type="button" class="linkbtn" id="gateForgot">Forgot password?</button>
   </form>
 </div>
+
+<dialog id="reportDlg"><form class="dlg" id="reportForm" method="dialog">
+  <h3>Report a problem</h3>
+  <p class="note" style="margin:0 0 10px" id="reportCard"></p>
+  <div class="edit-grid">
+    <label>What is wrong with this card?
+      <textarea id="reportWhy" rows="4" placeholder="The answer is wrong, the question is cut off, the numbers do not work..."></textarea>
+    </label>
+  </div>
+  <div style="margin-top:14px;display:flex;gap:8px;justify-content:flex-end">
+    <button class="btn" value="cancel">Cancel</button>
+    <button class="btn primary" id="reportSend" value="send">Send to the teacher</button>
+  </div>
+</form></dialog>
+
+<dialog id="editDlg"><form class="dlg dlg-wide" id="editForm" method="dialog">
+  <h3>Edit card <span id="editCardId"></span></h3>
+  <div class="edit-grid">
+    <label>Question<textarea id="editQ" rows="3"></textarea></label>
+    <label>Answer<textarea id="editA" rows="10"></textarea></label>
+    <label>Reported by (separate with semicolons)<input id="editSrc" type="text"></label>
+    <label>Where the answer came from<input id="editOrigin" type="text"></label>
+  </div>
+  <p class="note" style="margin:12px 0 0">Saving replaces this card for every learner on their next load. The previous text is kept in the edit history.</p>
+  <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap">
+    <button class="btn" value="cancel">Cancel</button>
+    <button class="btn" id="editRevert" value="revert" type="button">Revert to original</button>
+    <button class="btn primary" id="editSave" value="save">Save for everyone</button>
+  </div>
+</form></dialog>
 
 <dialog id="help"><div class="dlg">
   <h3>Keyboard shortcuts</h3>
@@ -436,6 +486,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       book: '<path d="M18 21l-6-4.2L6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/>',
       check: '<path d="M20 6 9 17l-5-5"/>',
       pen: '<path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17z"/>',
+      pen2: '<path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17z"/><path d="M2 22h20"/>',
+      dot: '<circle cx="12" cy="12" r="6" class="dotlit" stroke="none"/><circle cx="12" cy="12" r="9"/>',
       left: '<path d="m15 18-6-6 6-6"/>',
       right: '<path d="m9 6 6 6-6 6"/>',
       chev: '<path d="m6 9 6 6 6-6"/>'
@@ -562,6 +614,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     whoBtn.hidden = true;
     pomoBox.hidden = true;
     $("#tab-Class").hidden = true;
+    $("#tab-Reports").hidden = true;
     gate.hidden = false;
     setMode("signin");
     main.innerHTML = "";
@@ -742,6 +795,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     loadUI();
     if (DATA) render();
     loadCloudSave();
+    loadOverrides();
 
     cloud.from("profiles").select("name,email,role").eq("id", session.user.id).maybeSingle()
       .then(function (r) {
@@ -750,7 +804,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         role = prof.role || "student";
         whoName.textContent = (prof.name || session.user.email) + (role === "teacher" ? " · teacher" : "");
         $("#tab-Class").hidden = role !== "teacher";
-        if (role !== "teacher" && ui.tab === "Class") ui.tab = "Technical";
+        $("#tab-Reports").hidden = role !== "teacher";
+        if (role !== "teacher" && (ui.tab === "Class" || ui.tab === "Reports")) ui.tab = "Technical";
         render();
       }, function (err) {
         cloudTrouble({message: (err && err.message) || "Could not reach the database."});
@@ -941,7 +996,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   /* ---------------- filter rail ---------------- */
   var openGroups = {};
   function renderRail() {
-    if (ui.tab === "Mastery" || ui.tab === "Class") { rail.innerHTML = ""; return; }
+    if (ui.tab === "Mastery" || ui.tab === "Class" || ui.tab === "Reports") { rail.innerHTML = ""; return; }
     var f = ui.filters[ui.tab];
     var n = FACETS.reduce(function (a, x) { return a + f[x.id].length; }, 0) + f.mastery.length;
     var h = '<div class="rail-head"><h2>Filters</h2>' +
@@ -1096,6 +1151,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       if (c.f.length > 3) t += '<span class="tag firm">+' + (c.f.length - 3) + "</span>";
     }
     (c.iss || []).forEach(function (x) { t += '<span class="tag issue">' + esc(x) + "</span>"; });
+    if (c.ed) t += '<span class="tag edited">Teacher edit</span>';
     if (c.t === "Technical" && !(c.iss || []).length) t += '<span class="tag ok">\u2713 Verified</span>';
     if (save.mastered[c.id]) t += '<span class="tag mastered">Mastered</span>';
     return t;
@@ -1127,6 +1183,12 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       '<button class="act' + (save.bookmarked[c.id] ? " on" : "") + '" data-act="book" title="Bookmark (B)">' + icon("book") + "</button>" +
       '<button class="act' + (save.mastered[c.id] ? " on" : "") + '" data-act="master" title="Mastered (M)">' + icon("check") + "</button>" +
       '<button class="act' + (save.notes[c.id] ? " on" : "") + '" data-act="note" title="Your notes (E)">' + icon("pen") + "</button>" +
+      (cloudReady && role === "teacher"
+        ? '<button class="act" data-act="edit" title="Edit this card for everyone">' + icon("pen2") + "</button>"
+        : "") +
+      (cloudReady
+        ? '<button class="act report" data-act="report" title="Report a problem with this card">' + icon("dot") + "</button>"
+        : "") +
       "</div></div>" +
       '<h2 class="q' + (ui.alwaysShow ? "" : " tappable") + '" data-act="toggle"' +
         (ui.alwaysShow ? "" : ' title="Tap to show or hide the answer"') + ">" +
@@ -1393,6 +1455,11 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       if (ui.revealed) hideAnswer(); else { ui.revealed = true; render(); }
     }
     else if (a === "hide") { hideAnswer(); }
+    else if (a === "report") { var rc = current(); if (rc) openReport(rc); }
+    else if (a === "edit") { var ec = current(); if (ec) openEdit(ec); }
+    else if (a === "rep-edit") { var tc = byId[b.dataset.id]; if (tc) openEdit(tc); }
+    else if (a === "rep-done") { setReportStatus(b.dataset.rid, "resolved"); }
+    else if (a === "rep-drop") { setReportStatus(b.dataset.rid, "dismissed"); }
     else if (a === "retry") { location.reload(); }
     else if (a === "prev") go(-1);
     else if (a === "next") go(1);
@@ -1478,7 +1545,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (e.key === "/" && !typing) { e.preventDefault(); si.focus(); return; }
     if (e.key === "?" && !typing) { e.preventDefault(); $("#help").showModal(); return; }
     if (typing || e.metaKey || e.ctrlKey || e.altKey) return;
-    if (ui.tab === "Mastery" || ui.tab === "Class" || ui.cardView) return;
+    if (ui.tab === "Mastery" || ui.tab === "Class" || ui.tab === "Reports" || ui.cardView) return;
     var c = current();
     if (e.key === " ") {
       e.preventDefault();
@@ -1505,6 +1572,181 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       var nb = $("#noteBox"); if (nb) { nb.focus(); nb.setSelectionRange(nb.value.length, nb.value.length); }
     }
   });
+
+  /* ---------------- teacher edits and reports ----------------
+     The deck ships as data.json. Teacher edits live in card_overrides and are
+     laid over the shipped cards at load, so an edit reaches every learner
+     without rebuilding or redeploying anything. */
+  var overrides = {};
+
+  function applyOverride(row) {
+    var c = byId[row.card_id];
+    if (!c) return;
+    if (!c.__orig) c.__orig = {q: c.q, a: c.a, sr: c.sr, ao: c.ao};
+    if (row.question) c.q = row.question;
+    if (row.answer) c.a = row.answer;
+    if (row.sources) c.sr = row.sources.split(/\s*;\s*/).filter(Boolean);
+    if (row.origin) c.ao = row.origin;
+    c.ed = true;
+    overrides[row.card_id] = row;
+  }
+
+  function dropOverride(cardId) {
+    var c = byId[cardId];
+    if (c && c.__orig) {
+      c.q = c.__orig.q; c.a = c.__orig.a; c.sr = c.__orig.sr; c.ao = c.__orig.ao;
+      c.ed = false;
+    }
+    delete overrides[cardId];
+  }
+
+  function loadOverrides() {
+    if (!cloudReady || !user) return;
+    cloud.from("card_overrides").select("card_id,question,answer,sources,origin,updated_at")
+      .then(function (r) {
+        if (r.error) return;                 /* table not created yet: ignore */
+        (r.data || []).forEach(applyOverride);
+        if (DATA && (r.data || []).length) render();
+      });
+  }
+
+  /* ---- reporting ---- */
+  var reportDlg = $("#reportDlg"), editDlg = $("#editDlg");
+  var reportFor = null, editFor = null;
+
+  function openReport(c) {
+    if (!cloudReady) return alert2("Reporting needs the hosted site, where the database is reachable.");
+    reportFor = c;
+    $("#reportCard").textContent = c.id + " — " + c.q.slice(0, 120);
+    $("#reportWhy").value = "";
+    reportDlg.showModal();
+  }
+  function alert2(msg) {
+    alertBox.innerHTML = esc(msg);
+    alertBox.hidden = false;
+    setTimeout(function () { alertBox.hidden = true; }, 6000);
+  }
+  reportDlg.addEventListener("close", function () {
+    if (reportDlg.returnValue !== "send" || !reportFor) return;
+    var why = $("#reportWhy").value.trim();
+    var card = reportFor;
+    reportFor = null;
+    cloud.from("card_reports").insert({card_id: card.id, reported_by: user, reason: why})
+      .then(function (r) {
+        alert2(r && r.error ? "The report could not be sent: " + r.error.message
+                            : "Reported " + card.id + ". Your teacher will see it.");
+      });
+  });
+
+  /* ---- the edit form ---- */
+  function openEdit(c) {
+    editFor = c;
+    $("#editCardId").textContent = c.id;
+    $("#editQ").value = c.q;
+    $("#editA").value = c.a;
+    $("#editSrc").value = (c.sr || []).join("; ");
+    $("#editOrigin").value = c.ao || "";
+    $("#editRevert").hidden = !c.ed;
+    editDlg.showModal();
+  }
+  editDlg.addEventListener("close", function () {
+    if (editDlg.returnValue !== "save" || !editFor) return;
+    var c = editFor, row = {
+      card_id: c.id,
+      question: $("#editQ").value.trim(),
+      answer: $("#editA").value.trim(),
+      sources: $("#editSrc").value.trim(),
+      origin: $("#editOrigin").value.trim()
+    };
+    editFor = null;
+    cloud.from("card_overrides").upsert(row, {onConflict: "card_id"}).then(function (r) {
+      if (r && r.error) return alert2("The edit could not be saved: " + r.error.message);
+      applyOverride(row);
+      alert2("Saved. Every learner picks this up on their next load.");
+      render();
+    });
+  });
+  $("#editRevert").addEventListener("click", function () {
+    if (!editFor) return;
+    var id = editFor.id;
+    editFor = null;
+    editDlg.close("cancel");
+    cloud.from("card_overrides").delete().eq("card_id", id).then(function (r) {
+      if (r && r.error) return alert2("Could not revert: " + r.error.message);
+      dropOverride(id);
+      alert2("Reverted " + id + " to the original text.");
+      render();
+    });
+  });
+
+  /* ---- the teacher queue ---- */
+  function renderReports() {
+    if (role !== "teacher") {
+      main.innerHTML = '<div class="panel"><h3>Reports</h3><div class="empty">This view is for teacher profiles.</div></div>';
+      return;
+    }
+    if (!cloudReady) {
+      main.innerHTML = '<div class="panel"><h3>Reports</h3><div class="empty">Reports live in the database, so this works on the hosted site rather than this copy.</div></div>';
+      return;
+    }
+    main.innerHTML = '<div class="panel"><h3>Reports</h3><div class="empty">Loading reports…</div></div>';
+    cloud.from("card_reports").select("*").order("created_at", {ascending: false}).limit(200)
+      .then(function (r) {
+        if (r.error) {
+          main.innerHTML = '<div class="panel"><h3>Reports</h3><div class="empty">' +
+            esc(r.error.message) + "<br><br>If this says the table does not exist, run " +
+            "<code>supabase/schema_collab.sql</code> in the SQL editor.</div></div>";
+          return;
+        }
+        var rows = r.data || [];
+        var ids = [];
+        rows.forEach(function (x) { if (ids.indexOf(x.reported_by) === -1) ids.push(x.reported_by); });
+        if (!ids.length) return paintReports(rows, {});
+        cloud.from("profiles").select("id,name,email").in("id", ids).then(function (p) {
+          var who = {};
+          (p.data || []).forEach(function (x) { who[x.id] = x.name || x.email; });
+          paintReports(rows, who);
+        });
+      });
+  }
+
+  function paintReports(rows, who) {
+    var open = rows.filter(function (x) { return x.status === "open"; });
+    var done = rows.filter(function (x) { return x.status !== "open"; });
+    function block(x) {
+      var c = byId[x.card_id];
+      return '<div class="rep' + (x.status === "open" ? "" : " resolved") + '">' +
+        '<div class="rep-top"><b>' + esc(x.card_id) + "</b><span>" +
+        esc(who[x.reported_by] || "a learner") + "</span><span>" +
+        new Date(x.created_at).toLocaleString() + "</span>" +
+        (x.status === "open" ? "" : "<span>" + esc(x.status) + "</span>") + "</div>" +
+        '<div class="rep-q">' + esc(c ? c.q : "(this card is not in the current deck)") + "</div>" +
+        (x.reason ? '<div class="rep-why">' + esc(x.reason) + "</div>" : "") +
+        '<div class="rep-acts">' +
+        (c ? '<button class="btn" data-act="rep-edit" data-id="' + esc(x.card_id) + '">Edit the card</button>' : "") +
+        (x.status === "open"
+          ? '<button class="btn" data-act="rep-done" data-rid="' + x.id + '">Mark resolved</button>' +
+            '<button class="btn" data-act="rep-drop" data-rid="' + x.id + '">Dismiss</button>'
+          : "") + "</div></div>";
+    }
+    var h = '<div class="panel"><h3>Open reports — ' + open.length + "</h3>" +
+      (open.length ? open.map(block).join("") : '<div class="empty">Nothing reported.</div>') + "</div>";
+    if (done.length) {
+      h += '<div class="panel"><h3>Closed — ' + done.length + "</h3>" + done.slice(0, 30).map(block).join("") + "</div>";
+    }
+    h += '<div class="panel"><h3>How edits travel</h3><p class="note">Saving an edit writes it to the ' +
+      "database, not to the deck file. Every learner sees it the next time they load the page, and the " +
+      "previous wording is kept in the edit history. Revert on any edited card puts the original back.</p></div>";
+    main.innerHTML = h;
+  }
+
+  function setReportStatus(id, status) {
+    cloud.from("card_reports").update({status: status, resolved_by: user, resolved_at: new Date().toISOString()})
+      .eq("id", id).then(function (r) {
+        if (r && r.error) return alert2("Could not update the report: " + r.error.message);
+        renderReports();
+      });
+  }
 
   /* ---------------- pomodoro ---------------- */
   var pomoBox = $("#pomo");
@@ -1638,12 +1880,14 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   function render() {
     if (!user) return;
     clearTimeout(bootWatchdog);
-    pomoBox.hidden = ui.tab === "Class";
+    pomoBox.hidden = ui.tab === "Class" || ui.tab === "Reports";
+    $("#tab-Reports").hidden = !(cloudReady && role === "teacher");
     document.querySelectorAll('[role="tab"]').forEach(function (t) {
       t.setAttribute("aria-selected", t.id === "tab-" + ui.tab ? "true" : "false");
     });
     renderRail();
-    if (ui.tab === "Class") renderClass();
+    if (ui.tab === "Reports") renderReports();
+    else if (ui.tab === "Class") renderClass();
     else if (ui.tab === "Mastery") renderMastery();
     else {
       var d = deck();
