@@ -36,6 +36,22 @@ update public.profiles
    set is_owner = true, role = 'teacher', tags = array['My Love']
  where email = 'nnphan@usf.edu';
 
+-- Editors who were promoted before scopes existed get one from their tags.
+update public.profiles p
+   set admin_scope = sub.scope
+  from (
+    select pr.id,
+           coalesce(array_agg(distinct sc), '{}') as scope
+      from public.profiles pr
+      left join public.access_codes c on c.tag = any (pr.tags)
+      left join lateral unnest(c.admin_scope) sc on true
+     where pr.role = 'teacher'
+     group by pr.id
+  ) sub
+ where p.id = sub.id
+   and p.is_owner = false
+   and coalesce(array_length(p.admin_scope, 1), 0) = 0;
+
 -- --------------------------------------------------------------- helpers --
 create or replace function public.is_owner()
 returns boolean language sql stable security definer set search_path = public as $$
@@ -76,6 +92,18 @@ declare
   untouched text[];
   chosen   text[];
 begin
+  -- Promoting someone to editor has to give them a scope, or they would sign
+  -- in able to see nobody. Derive it from the codes that grant their tags:
+  -- "FTP Teacher" comes from WEditorFTP, so it carries that code's scope.
+  if new.role = 'teacher' and coalesce(array_length(new.admin_scope, 1), 0) = 0 then
+    select coalesce(array_agg(distinct sc), '{}')
+      into new.admin_scope
+      from public.access_codes c, unnest(c.admin_scope) sc
+     where c.tag = any (new.tags);
+  elsif new.role <> 'teacher' then
+    new.admin_scope := '{}';
+  end if;
+
   if public.is_owner() then
     return new;                                   -- the owner may set anything
   end if;
