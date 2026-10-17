@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Banking Interview Prep Website</title>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="logo.png" type="image/png">
@@ -77,8 +78,9 @@ a{color:var(--accent)}
 @media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr);gap:16px}}
 
 /* ---------- filters ---------- */
-.rail{display:flex;flex-direction:column;gap:12px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px)}
-@media (max-width:900px){.rail{position:static}}
+.side{display:flex;flex-direction:column;gap:12px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px)}
+.rail{display:flex;flex-direction:column;gap:12px}
+@media (max-width:900px){.side{position:static;order:2}.layout>main{order:1}}
 .rail-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .rail-head h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .linkbtn{border:0;background:none;color:var(--accent);cursor:pointer;font-size:12.5px;padding:2px 4px;border-radius:6px;text-decoration:underline;text-underline-offset:3px}
@@ -102,6 +104,23 @@ a{color:var(--accent)}
 .chip{font-size:11px;padding:3px 8px;border-radius:999px;background:var(--accent);color:var(--paper);display:inline-flex;align-items:center;gap:5px;font-weight:600}
 .chip button{border:0;background:none;color:inherit;cursor:pointer;padding:0;line-height:1;opacity:.7}
 .chip button:hover{opacity:1}
+.pomo{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:14px}
+.pomo-top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.pomo-phase{font-size:12.5px;font-weight:600}
+.pomo-round{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.pomo-time{font-family:var(--mono);font-size:34px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums;text-align:center;margin:6px 0 10px;line-height:1}
+.pomo.break .pomo-time,.pomo.break .pomo-phase{color:var(--good)}
+.pomo.done .pomo-time{color:var(--muted)}
+.pomo-actions{display:flex;gap:8px}
+.pomo-actions .btn{flex:1 1 auto;padding:8px 10px}
+.pomo-set{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:7px}
+.pomo-row{display:flex;align-items:center;gap:8px;font-size:12.5px}
+.pomo-row span{flex:1 1 auto;color:var(--ink-2)}
+.pomo-row b{font-family:var(--mono);font-size:12px;min-width:34px;text-align:center;font-variant-numeric:tabular-nums}
+.pomo-step{border:1px solid var(--line-2);background:var(--panel);width:26px;height:26px;border-radius:50%;cursor:pointer;display:grid;place-items:center;font-size:15px;line-height:1;color:var(--ink-2);flex:none;padding:0}
+.pomo-step:hover{border-color:var(--accent);color:var(--accent)}
+.pomo-step:disabled{opacity:.35;cursor:not-allowed}
+.q.tappable{cursor:pointer}
 .toggles{display:flex;flex-direction:column;gap:9px;padding:12px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
 .tog{display:flex;align-items:center;gap:9px;cursor:pointer;font-size:13px}
 .tog input{position:absolute;opacity:0;pointer-events:none}
@@ -261,7 +280,10 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
 <div class="alert" id="alert" hidden></div>
 
 <div class="layout">
-  <aside class="rail" id="rail"></aside>
+  <div class="side">
+    <section class="pomo" id="pomo" hidden></section>
+    <aside class="rail" id="rail"></aside>
+  </div>
   <main id="main"><div class="loading">Loading 3,200+ cards…</div></main>
 </div>
 
@@ -538,6 +560,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     role = "student";
     save = blankSave();
     whoBtn.hidden = true;
+    pomoBox.hidden = true;
     $("#tab-Class").hidden = true;
     gate.hidden = false;
     setMode("signin");
@@ -1105,7 +1128,9 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       '<button class="act' + (save.mastered[c.id] ? " on" : "") + '" data-act="master" title="Mastered (M)">' + icon("check") + "</button>" +
       '<button class="act' + (save.notes[c.id] ? " on" : "") + '" data-act="note" title="Your notes (E)">' + icon("pen") + "</button>" +
       "</div></div>" +
-      '<h2 class="q">' + c.q.split(/\n\s*\n/).map(function (p) {
+      '<h2 class="q' + (ui.alwaysShow ? "" : " tappable") + '" data-act="toggle"' +
+        (ui.alwaysShow ? "" : ' title="Tap to show or hide the answer"') + ">" +
+        c.q.split(/\n\s*\n/).map(function (p) {
           return '<span class="qp">' + esc(p.trim()) + "</span>";
         }).join("") + "</h2>" +
       '<div class="tagrow">' + tagsHTML(c, true) + "</div>";
@@ -1363,6 +1388,10 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (!b) return;
     var a = b.dataset.act, c2 = current();
     if (a === "reveal") { ui.revealed = true; render(); }
+    else if (a === "toggle") {
+      if (ui.alwaysShow) return;
+      if (ui.revealed) hideAnswer(); else { ui.revealed = true; render(); }
+    }
     else if (a === "hide") { hideAnswer(); }
     else if (a === "retry") { location.reload(); }
     else if (a === "prev") go(-1);
@@ -1477,10 +1506,139 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     }
   });
 
+  /* ---------------- pomodoro ---------------- */
+  var pomoBox = $("#pomo");
+  var POMO_KEY = KEY + ".pomo";
+  var pomo = {focus: 25, brk: 5, rounds: 4, phase: "focus", round: 1, left: 25 * 60,
+              running: false, endAt: 0, done: false};
+  try {
+    var ps = JSON.parse(localStorage.getItem(POMO_KEY) || "null");
+    if (ps) {
+      if (ps.focus) pomo.focus = ps.focus;
+      if (ps.brk) pomo.brk = ps.brk;
+      if (ps.rounds) pomo.rounds = ps.rounds;
+      pomo.left = pomo.focus * 60;
+    }
+  } catch (e) {}
+
+  function pomoSave() {
+    try {
+      localStorage.setItem(POMO_KEY, JSON.stringify({focus: pomo.focus, brk: pomo.brk, rounds: pomo.rounds}));
+    } catch (e) {}
+  }
+  function mmss(sec) {
+    var m = Math.floor(sec / 60), s2 = sec % 60;
+    return (m < 10 ? "0" : "") + m + ":" + (s2 < 10 ? "0" : "") + s2;
+  }
+  function chime() {
+    try {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      var ctx = chime.ctx || (chime.ctx = new AC());
+      var o = ctx.createOscillator(), g = ctx.createGain();
+      o.type = "sine";
+      o.frequency.value = pomo.phase === "focus" ? 740 : 560;
+      o.connect(g); g.connect(ctx.destination);
+      g.gain.setValueAtTime(0.0001, ctx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.18, ctx.currentTime + 0.01);
+      g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.8);
+      o.start(); o.stop(ctx.currentTime + 0.82);
+    } catch (e) {}
+  }
+
+  function pomoHTML() {
+    var phase = pomo.done ? "All rounds done" : (pomo.phase === "focus" ? "Focus" : "Break");
+    function row(label, key, value, unit) {
+      return '<div class="pomo-row"><span>' + label + "</span>" +
+        '<button class="pomo-step" data-p="' + key + '-" aria-label="Less ' + label + '">\u2212</button>' +
+        "<b>" + value + unit + "</b>" +
+        '<button class="pomo-step" data-p="' + key + '+" aria-label="More ' + label + '">+</button></div>';
+    }
+    return '<div class="pomo-top"><span class="pomo-phase" id="pomoPhase">' + phase + "</span>" +
+      '<span class="pomo-round" id="pomoRound">' + pomo.round + " of " + pomo.rounds + "</span></div>" +
+      '<div class="pomo-time" id="pomoTime">' + mmss(pomo.left) + "</div>" +
+      '<div class="pomo-actions">' +
+      '<button class="btn primary" data-p="toggle">' + (pomo.running ? "Pause" : "Start") + "</button>" +
+      '<button class="btn" data-p="reset">Reset</button></div>' +
+      '<div class="pomo-set">' + row("Focus", "focus", pomo.focus, "m") +
+      row("Break", "brk", pomo.brk, "m") + row("Rounds", "rounds", pomo.rounds, "") + "</div>";
+  }
+
+  function pomoRender() {
+    pomoBox.className = "pomo" + (pomo.done ? " done" : pomo.phase === "break" ? " break" : "");
+    pomoBox.innerHTML = pomoHTML();
+  }
+  function pomoFace() {
+    var t = $("#pomoTime"), ph = $("#pomoPhase"), rd = $("#pomoRound");
+    if (!t) return pomoRender();
+    t.textContent = mmss(pomo.left);
+    ph.textContent = pomo.done ? "All rounds done" : (pomo.phase === "focus" ? "Focus" : "Break");
+    rd.textContent = pomo.round + " of " + pomo.rounds;
+    pomoBox.className = "pomo" + (pomo.done ? " done" : pomo.phase === "break" ? " break" : "");
+  }
+
+  setInterval(function () {
+    if (!pomo.running) return;
+    pomo.left = Math.max(0, Math.round((pomo.endAt - Date.now()) / 1000));
+    if (pomo.left > 0) return pomoFace();
+    chime();
+    if (pomo.phase === "focus") {
+      if (pomo.round >= pomo.rounds) {       /* last focus block finished */
+        pomo.running = false; pomo.done = true; pomo.left = 0;
+        return pomoRender();
+      }
+      pomo.phase = "break";
+      pomo.left = pomo.brk * 60;
+    } else {
+      pomo.phase = "focus";
+      pomo.round += 1;
+      pomo.left = pomo.focus * 60;
+    }
+    pomo.endAt = Date.now() + pomo.left * 1000;
+    pomoRender();
+  }, 250);
+
+  function pomoReset() {
+    pomo.running = false; pomo.done = false; pomo.phase = "focus";
+    pomo.round = 1; pomo.left = pomo.focus * 60;
+    pomoRender();
+  }
+
+  pomoBox.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-p]");
+    if (!b) return;
+    var a = b.dataset.p;
+    if (a === "toggle") {
+      if (pomo.done) return pomoReset();
+      pomo.running = !pomo.running;
+      if (pomo.running) { pomo.endAt = Date.now() + pomo.left * 1000; chime.ctx || chime(); }
+      return pomoRender();
+    }
+    if (a === "reset") return pomoReset();
+    var steps = {"focus+": ["focus", 5, 5, 90], "focus-": ["focus", -5, 5, 90],
+                 "brk+": ["brk", 1, 1, 30], "brk-": ["brk", -1, 1, 30],
+                 "rounds+": ["rounds", 1, 1, 12], "rounds-": ["rounds", -1, 1, 12]};
+    var st = steps[a];
+    if (!st) return;
+    pomo[st[0]] = Math.min(st[3], Math.max(st[2], pomo[st[0]] + st[1]));
+    pomoSave();
+    /* a running clock keeps its countdown; a stopped one picks up the new length */
+    if (!pomo.running) {
+      pomo.done = false;
+      if (st[0] === "focus" && pomo.phase === "focus") pomo.left = pomo.focus * 60;
+      if (st[0] === "brk" && pomo.phase === "break") pomo.left = pomo.brk * 60;
+    }
+    if (pomo.round > pomo.rounds) pomo.round = pomo.rounds;
+    pomoRender();
+  });
+
+  pomoRender();
+
   /* ---------------- render ---------------- */
   function render() {
     if (!user) return;
     clearTimeout(bootWatchdog);
+    pomoBox.hidden = ui.tab === "Class";
     document.querySelectorAll('[role="tab"]').forEach(function (t) {
       t.setAttribute("aria-selected", t.id === "tab-" + ui.tab ? "true" : "false");
     });
