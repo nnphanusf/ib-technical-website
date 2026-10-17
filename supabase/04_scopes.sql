@@ -20,8 +20,11 @@ begin
   end if;
 end $$;
 
--- The view, the policies and the helper all read the old array column, so they
--- have to go before it does. Everything here is recreated further down.
+-- The view, the policies, the helper and the guard trigger all read the old
+-- array column, so they have to go before it does. The updates further down
+-- this file would otherwise fire a trigger whose body no longer compiles.
+-- Everything dropped here is recreated below.
+drop trigger if exists profiles_guarded on public.profiles;
 drop view if exists public.class_summary;
 
 drop policy if exists "profiles visible" on public.profiles;
