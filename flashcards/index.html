@@ -93,6 +93,9 @@ a{color:var(--accent)}
 .fgroup>summary::-webkit-details-marker{display:none}
 .fgroup[open]>summary{border-bottom:1px solid var(--line);border-radius:12px 12px 0 0}
 .fname{font-size:12.5px;font-weight:600;letter-spacing:.01em}
+.fpick{display:flex;gap:6px;padding:0 10px 8px}
+.fpick button{border:0;background:none;color:var(--accent);font-size:11.5px;cursor:pointer;padding:2px 6px;border-radius:6px;text-decoration:underline;text-underline-offset:3px}
+.fpick button:hover{background:var(--accent-soft)}
 .fsum{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:auto;white-space:nowrap}
 .chev{width:13px;height:13px;color:var(--muted);transition:transform .15s}
 .fgroup[open] .chev{transform:rotate(180deg)}
@@ -150,6 +153,16 @@ a{color:var(--accent)}
 .act.report:hover{background:var(--alarm-soft);color:var(--alarm)}
 .act.report .dotlit{fill:var(--alarm)}
 .tag.edited{background:var(--accent-soft);color:var(--accent)}
+.cohorts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.cohorts button{border:1px solid var(--line-2);background:var(--panel);border-radius:999px;padding:5px 11px;font-size:12px;cursor:pointer;color:var(--ink-2)}
+.cohorts button.on{background:var(--accent);border-color:var(--accent);color:var(--paper);font-weight:600}
+.codes{width:100%;border-collapse:collapse;font-size:13px}
+.codes th{text-align:left;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:0 8px 7px 0}
+.codes td{padding:7px 8px 7px 0;border-top:1px solid var(--line);vertical-align:middle}
+.codes code{font-family:var(--mono);font-size:12px}
+.codes .off{opacity:.5}
+.rowbtn{border:1px solid var(--line-2);background:var(--panel);border-radius:999px;padding:3px 10px;font-size:11.5px;cursor:pointer;margin-left:6px}
+.rowbtn:hover{border-color:var(--accent);color:var(--accent)}
 .rep{border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin-bottom:10px;background:var(--panel)}
 .rep.resolved{opacity:.55}
 .rep-top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:12px;color:var(--muted)}
@@ -349,8 +362,48 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
   <p class="note" style="margin:12px 0 0">Saving replaces this card for every learner on their next load. The previous text is kept in the edit history.</p>
   <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap">
     <button class="btn" value="cancel">Cancel</button>
+    <button class="btn" id="editHide" value="hide" type="button">Hide from the deck</button>
     <button class="btn" id="editRevert" value="revert" type="button">Revert to original</button>
     <button class="btn primary" id="editSave" value="save">Save for everyone</button>
+  </div>
+</form></dialog>
+
+<dialog id="personDlg"><form class="dlg" id="personForm" method="dialog">
+  <h3>Access for <span id="personName"></span></h3>
+  <p class="note" style="margin:0 0 10px" id="personEmail"></p>
+  <div class="edit-grid">
+    <label>Cohort tag<input id="personTag" type="text" list="tagList" placeholder="e.g. USF Finance Talent Pathway"></label>
+    <label>Rights
+      <select id="personRole">
+        <option value="student">Student — studies the deck</option>
+        <option value="teacher">Teacher — edits cards, sees the class and reports</option>
+      </select>
+    </label>
+  </div>
+  <datalist id="tagList"></datalist>
+  <div style="margin-top:14px;display:flex;gap:8px;justify-content:flex-end">
+    <button class="btn" value="cancel">Cancel</button>
+    <button class="btn primary" value="save">Save</button>
+  </div>
+</form></dialog>
+
+<dialog id="codeDlg"><form class="dlg" id="codeForm" method="dialog">
+  <h3 id="codeTitle">Access code</h3>
+  <div class="edit-grid">
+    <label>Code<input id="codeCode" type="text" placeholder="USFFTP2026"></label>
+    <label>Tag it grants<input id="codeTag" type="text" placeholder="USF Finance Talent Pathway"></label>
+    <label>Rights
+      <select id="codeRole"><option value="student">Student</option><option value="teacher">Teacher</option></select>
+    </label>
+    <label>Note (optional)<input id="codeNote" type="text"></label>
+    <label style="flex-direction:row;align-items:center;gap:8px">
+      <input id="codeActive" type="checkbox" checked style="width:auto">Still accepted for new registrations
+    </label>
+  </div>
+  <p class="note" style="margin:12px 0 0">Changing a code affects who registers with it from now on. People who already used it keep the tag they were given — change those from the class list.</p>
+  <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end">
+    <button class="btn" value="cancel">Cancel</button>
+    <button class="btn primary" value="save">Save code</button>
   </div>
 </form></dialog>
 
@@ -862,10 +915,88 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     }, 700);
   }
 
+  var classTag = null, knownTags = [], personFor = null, codeFor = null;
+
+  function openPerson(p) {
+    $("#personName").textContent = p.name || p.email;
+    $("#personEmail").textContent = p.email + (p.tag ? " · " + p.tag : "");
+    $("#personTag").value = p.tag || "";
+    $("#personRole").value = p.role || "student";
+    $("#tagList").innerHTML = knownTags.map(function (t) { return '<option value="' + esc(t) + '">'; }).join("");
+    personFor = p;
+    $("#personDlg").showModal();
+  }
+  $("#personDlg").addEventListener("close", function () {
+    if ($("#personDlg").returnValue !== "save" || !personFor) return;
+    var p = personFor, patch = {tag: $("#personTag").value.trim() || null, role: $("#personRole").value};
+    personFor = null;
+    cloud.from("profiles").update(patch).eq("id", p.id).then(function (r) {
+      if (r && r.error) return alert2("Could not update access: " + r.error.message);
+      alert2((p.name || p.email) + " is now a " + patch.role + (patch.tag ? ", tagged " + patch.tag : "") + ".");
+      renderClassCloud();
+    });
+  });
+
+  function openCode(c) {
+    codeFor = c || null;
+    $("#codeTitle").textContent = c ? "Edit code" : "New access code";
+    $("#codeCode").value = c ? c.code : "";
+    $("#codeCode").readOnly = !!c;
+    $("#codeTag").value = c ? c.tag : "";
+    $("#codeRole").value = c ? c.role : "student";
+    $("#codeNote").value = (c && c.note) || "";
+    $("#codeActive").checked = c ? !!c.active : true;
+    $("#codeDlg").showModal();
+  }
+  $("#codeDlg").addEventListener("close", function () {
+    if ($("#codeDlg").returnValue !== "save") return;
+    var row = {
+      code: $("#codeCode").value.trim(),
+      tag: $("#codeTag").value.trim(),
+      role: $("#codeRole").value,
+      note: $("#codeNote").value.trim() || null,
+      active: $("#codeActive").checked
+    };
+    codeFor = null;
+    if (!row.code || !row.tag) return alert2("A code needs both a code and a tag.");
+    cloud.from("access_codes").upsert(row, {onConflict: "code"}).then(function (r) {
+      if (r && r.error) return alert2("Could not save the code: " + r.error.message);
+      alert2(row.code + " now grants " + row.tag + " as " + row.role + ".");
+      renderClassCloud();
+    });
+  });
+
+  function codesPanel() {
+    cloud.from("access_codes").select("*").order("code").then(function (r) {
+      var box = $("#codesBox");
+      if (!box) return;
+      if (r.error) {
+        box.innerHTML = '<div class="empty">' + esc(r.error.message) +
+          "<br><br>Run <code>supabase/schema_access.sql</code> in the SQL editor to add access codes.</div>";
+        return;
+      }
+      var rows = r.data || [];
+      box.innerHTML = '<table class="codes"><tr><th>Code</th><th>Tag</th><th>Rights</th><th></th></tr>' +
+        rows.map(function (c) {
+          return '<tr class="' + (c.active ? "" : "off") + '"><td><code>' + esc(c.code) + "</code></td>" +
+            "<td>" + esc(c.tag) + (c.note ? '<br><span class="count">' + esc(c.note) + "</span>" : "") + "</td>" +
+            "<td>" + esc(c.role) + (c.active ? "" : " · closed") + "</td>" +
+            '<td style="text-align:right"><button class="rowbtn" data-act="code-edit" data-code="' +
+            esc(c.code) + '">Edit</button></td></tr>';
+        }).join("") + "</table>" +
+        '<div style="margin-top:12px"><button class="btn" data-act="code-new">Add a code</button></div>';
+      box.__codes = rows;
+    });
+  }
+
   function renderClassCloud() {
     main.innerHTML = '<div class="panel"><h3>Class</h3><div class="empty">Loading class progress…</div></div>';
     cloud.from("class_summary").select("*").then(function (r) {
-      var rows = (r.data || []).filter(function (x) { return x.role !== "teacher"; });
+      var all = r.data || [];
+      knownTags = [];
+      all.forEach(function (x) { if (x.tag && knownTags.indexOf(x.tag) === -1) knownTags.push(x.tag); });
+      var rows = all.filter(function (x) { return x.role !== "teacher"; });
+      if (classTag) rows = rows.filter(function (x) { return (x.tag || "No tag") === classTag; });
       var total = DATA.cards.length;
       var sumMastered = rows.reduce(function (a, x) { return a + (x.mastered || 0); }, 0);
       var avg = rows.length ? sumMastered / rows.length / total * 100 : 0;
@@ -877,7 +1008,19 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         '<div class="stat"><div class="v">' + rows.reduce(function (a, x) { return a + (x.flagged || 0); }, 0) +
         '</div><div class="k">Cards flagged</div></div></div></div>';
 
-      h += '<div class="panel"><h3>Students</h3>';
+      var tagCount = {};
+      all.forEach(function (x) {
+        if (x.role === "teacher") return;
+        var k = x.tag || "No tag";
+        tagCount[k] = (tagCount[k] || 0) + 1;
+      });
+      h += '<div class="panel"><h3>Students</h3><div class="cohorts">' +
+        '<button data-act="cohort" data-tag="" class="' + (classTag ? "" : "on") + '">Everyone \u00b7 ' +
+        all.filter(function (x) { return x.role !== "teacher"; }).length + "</button>" +
+        Object.keys(tagCount).sort().map(function (t) {
+          return '<button data-act="cohort" data-tag="' + esc(t) + '" class="' +
+            (classTag === t ? "on" : "") + '">' + esc(t) + " \u00b7 " + tagCount[t] + "</button>";
+        }).join("") + "</div>";
       if (!rows.length) {
         h += '<div class="empty">Nobody has registered yet.</div>';
       } else {
@@ -885,6 +1028,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         h += '<div class="bars">' + rows.map(function (x) {
           var pct = (x.mastered || 0) / total * 100;
           return '<div class="bar"><span class="name">' + esc(x.name || x.email) +
+            '<button class="rowbtn" data-act="person" data-id="' + esc(x.id) + '">' +
+            esc(x.tag || "no tag") + " \u00b7 edit</button>" +
             '<span class="sub">' + esc(x.email) + ' · ' + (x.seen || 0) + ' seen · ' +
             (x.flagged || 0) + ' flagged · ' + (x.notes || 0) + ' notes' +
             (x.last_studied ? ' · last studied ' + new Date(x.last_studied).toLocaleDateString() : "") +
@@ -893,7 +1038,24 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         }).join("") + "</div>";
       }
       h += "</div>";
+
+      var teachers = all.filter(function (x) { return x.role === "teacher"; });
+      h += '<div class="panel"><h3>Teachers and editors — ' + teachers.length + "</h3>" +
+        (teachers.length
+          ? teachers.map(function (x) {
+              return '<div class="listrow"><span class="lq">' + esc(x.name || x.email) +
+                '<button class="rowbtn" data-act="person" data-id="' + esc(x.id) + '">' +
+                esc(x.tag || "no tag") + " \u00b7 edit</button><span class=\"yournote\">" +
+                esc(x.email) + "</span></span></div>";
+            }).join("")
+          : '<div class="empty">No teacher profiles yet.</div>') + "</div>";
+      h += '<div class="panel"><h3>Access codes</h3><div id="codesBox"><div class="empty">Loading…</div></div>' +
+        '<p class="note">A code decides the tag and the rights someone gets when they register with it. ' +
+        "Close a code to stop new registrations without affecting anyone who already used it.</p></div>";
+
       main.innerHTML = h;
+      main.__people = all;
+      codesPanel();
 
       /* second pass: what the class flags most */
       cloud.from("progress").select("card_id").eq("flagged", true).then(function (f) {
@@ -957,6 +1119,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     var f = ui.filters[ui.tab];
     var q = ui.search.trim().toLowerCase();
     var out = tabCards().filter(function (c) {
+      if (c.hidden && role !== "teacher") return false;   /* pulled from the deck */
       if (!matchesFacets(c, f)) return false;
       if (q) {
         var hay = (c.q + " " + c.a + " " + c.f.join(" ") + " " + c.tp + " " + c.id).toLowerCase();
@@ -1013,6 +1176,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         '<span class="fsum">' + (sel.length ? sel.length + " selected" : opts.length) + "</span>" +
         '<span class="chev">' + icon("chev") + "</span></summary>" +
         '<div class="fbody">';
+      h += '<div class="fpick"><button data-pick="all" data-g="' + fa.id + '">Select all</button>' +
+        '<button data-pick="none" data-g="' + fa.id + '">Clear</button></div>';
       if (opts.length > 12) h += '<input class="ffilter" type="text" placeholder="Filter ' + fa.name.toLowerCase() + '…" data-of="' + fa.id + '">';
       opts.forEach(function (o) {
         h += '<label class="opt"><input type="checkbox" data-f="' + fa.id + '" value="' + esc(o[0]) + '"' +
@@ -1074,6 +1239,15 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       var i = arr.indexOf(rm.dataset.v);
       if (i > -1) arr.splice(i, 1);
       ui.idx[ui.tab] = 0; persistUI(); render(); return;
+    }
+    var pick = e.target.closest("[data-pick]");
+    if (pick) {
+      var gid = pick.dataset.g;
+      var fa2 = FACETS.filter(function (x) { return x.id === gid; })[0];
+      ui.filters[ui.tab][gid] = pick.dataset.pick === "none" ? []
+        : (fa2 ? optionsFor(fa2).map(function (o) { return o[0]; }) : MASTERY_OPTS.slice());
+      ui.idx[ui.tab] = 0; persistUI(); render();
+      return;
     }
     if (e.target.closest("[data-clear-all]")) {
       ui.filters[ui.tab] = blankFilters();
@@ -1151,6 +1325,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       if (c.f.length > 3) t += '<span class="tag firm">+' + (c.f.length - 3) + "</span>";
     }
     (c.iss || []).forEach(function (x) { t += '<span class="tag issue">' + esc(x) + "</span>"; });
+    if (c.hidden) t += '<span class="tag issue">Hidden from learners</span>';
     if (c.ed) t += '<span class="tag edited">Teacher edit</span>';
     if (c.t === "Technical" && !(c.iss || []).length) t += '<span class="tag ok">\u2713 Verified</span>';
     if (save.mastered[c.id]) t += '<span class="tag mastered">Mastered</span>';
@@ -1460,6 +1635,18 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     else if (a === "rep-edit") { var tc = byId[b.dataset.id]; if (tc) openEdit(tc); }
     else if (a === "rep-done") { setReportStatus(b.dataset.rid, "resolved"); }
     else if (a === "rep-drop") { setReportStatus(b.dataset.rid, "dismissed"); }
+    else if (a === "cohort") { classTag = b.dataset.tag || null; renderClassCloud(); }
+    else if (a === "person") {
+      var people = main.__people || [];
+      var who2 = people.filter(function (x) { return x.id === b.dataset.id; })[0];
+      if (who2) openPerson(who2);
+    }
+    else if (a === "code-new") { openCode(null); }
+    else if (a === "code-edit") {
+      var box2 = $("#codesBox"), list = (box2 && box2.__codes) || [];
+      var cd = list.filter(function (x) { return x.code === b.dataset.code; })[0];
+      if (cd) openCode(cd);
+    }
     else if (a === "retry") { location.reload(); }
     else if (a === "prev") go(-1);
     else if (a === "next") go(1);
@@ -1587,7 +1774,8 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     if (row.answer) c.a = row.answer;
     if (row.sources) c.sr = row.sources.split(/\s*;\s*/).filter(Boolean);
     if (row.origin) c.ao = row.origin;
-    c.ed = true;
+    c.hidden = !!row.hidden;
+    c.ed = !!(row.question || row.answer || row.sources || row.origin);
     overrides[row.card_id] = row;
   }
 
@@ -1595,14 +1783,14 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     var c = byId[cardId];
     if (c && c.__orig) {
       c.q = c.__orig.q; c.a = c.__orig.a; c.sr = c.__orig.sr; c.ao = c.__orig.ao;
-      c.ed = false;
+      c.ed = false; c.hidden = false;
     }
     delete overrides[cardId];
   }
 
   function loadOverrides() {
     if (!cloudReady || !user) return;
-    cloud.from("card_overrides").select("card_id,question,answer,sources,origin,updated_at")
+    cloud.from("card_overrides").select("card_id,question,answer,sources,origin,hidden,updated_at")
       .then(function (r) {
         if (r.error) return;                 /* table not created yet: ignore */
         (r.data || []).forEach(applyOverride);
@@ -1647,6 +1835,7 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
     $("#editSrc").value = (c.sr || []).join("; ");
     $("#editOrigin").value = c.ao || "";
     $("#editRevert").hidden = !c.ed;
+    $("#editHide").textContent = c.hidden ? "Put back in the deck" : "Hide from the deck";
     editDlg.showModal();
   }
   editDlg.addEventListener("close", function () {
@@ -1666,6 +1855,24 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
       render();
     });
   });
+  $("#editHide").addEventListener("click", function () {
+    if (!editFor) return;
+    var c = editFor, makeHidden = !c.hidden;
+    editFor = null;
+    editDlg.close("cancel");
+    cloud.from("card_overrides").upsert({card_id: c.id, hidden: makeHidden}, {onConflict: "card_id"})
+      .then(function (r) {
+        if (r && r.error) return alert2("Could not change the card: " + r.error.message);
+        c.hidden = makeHidden;
+        overrides[c.id] = overrides[c.id] || {card_id: c.id};
+        overrides[c.id].hidden = makeHidden;
+        alert2(makeHidden
+          ? c.id + " is hidden. Learners no longer see it; you still do, marked hidden."
+          : c.id + " is back in the deck for everyone.");
+        render();
+      });
+  });
+
   $("#editRevert").addEventListener("click", function () {
     if (!editFor) return;
     var id = editFor.id;
@@ -1700,7 +1907,10 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         }
         var rows = r.data || [];
         var ids = [];
-        rows.forEach(function (x) { if (ids.indexOf(x.reported_by) === -1) ids.push(x.reported_by); });
+        rows.forEach(function (x) {
+          if (ids.indexOf(x.reported_by) === -1) ids.push(x.reported_by);
+          if (x.resolved_by && ids.indexOf(x.resolved_by) === -1) ids.push(x.resolved_by);
+        });
         if (!ids.length) return paintReports(rows, {});
         cloud.from("profiles").select("id,name,email").in("id", ids).then(function (p) {
           var who = {};
@@ -1719,7 +1929,10 @@ kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);border
         '<div class="rep-top"><b>' + esc(x.card_id) + "</b><span>" +
         esc(who[x.reported_by] || "a learner") + "</span><span>" +
         new Date(x.created_at).toLocaleString() + "</span>" +
-        (x.status === "open" ? "" : "<span>" + esc(x.status) + "</span>") + "</div>" +
+        (x.status === "open" ? "" : "<span>" + esc(x.status) +
+          (x.resolved_by ? " by " + esc(who[x.resolved_by] || "a teacher") : "") +
+          (x.resolved_at ? " on " + new Date(x.resolved_at).toLocaleDateString() : "") +
+          "</span>") + "</div>" +
         '<div class="rep-q">' + esc(c ? c.q : "(this card is not in the current deck)") + "</div>" +
         (x.reason ? '<div class="rep-why">' + esc(x.reason) + "</div>" : "") +
         '<div class="rep-acts">' +
